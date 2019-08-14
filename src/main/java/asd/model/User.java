@@ -4,33 +4,35 @@ import java.io.Serializable;
 
 public class User  implements Serializable{
 
-    private String name;
+    private String firstName;
+    private String lastName;
     private String email;
     private String password;
     private String dob;
-    private String favcol;
+    private String phoneNumber;
 
     public User() {
     }
 
-    public User(String name, String email, String password, String dob, String favcol) {
-        this.name = name;
+    public User(String firstName, String lastName, String email, String password, String dob, String phoneNumber) {
+        this.firstName = firstName;
+        this.lastName = lastName;
         this.email = email;
         this.password = password;
         this.dob = dob;
-        this.favcol = favcol;
+        this.phoneNumber = phoneNumber;
     }
 
     public boolean match(String email){
         return this.email.equalsIgnoreCase(email.trim());
     }
     
-    public String getFavcol() {
-        return favcol;
+    public String getPhoneNumber() {
+        return phoneNumber;
     }
 
-    public void getFavcol(String favcol) {
-        this.favcol = favcol;
+    public void getPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
     }
     
     public String getDob() {
@@ -40,12 +42,20 @@ public class User  implements Serializable{
     public void setDob(String dob) {
         this.dob = dob;
     }
-    public String getName() {
-        return name;
+    public String getFirstName() {
+        return firstName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+    
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
     public String getEmail() {

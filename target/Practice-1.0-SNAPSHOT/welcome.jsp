@@ -9,20 +9,24 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="animation.js"></script>
-        <link rel="stylesheet" type="text/css" href="css/demo.css">
+        <link rel="stylesheet" href="./css/style.css"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Welcome Page</title>
     </head>   
     <%
-        String name = request.getParameter("name");
+        String firstName = request.getParameter("firstName");
+        String lastName = request.getParameter("lastName");
         String email = request.getParameter("email");
         String password = request.getParameter("password");
         String dob = request.getParameter("dob");
-        
-        String fav = request.getParameter("favcol");
+        String phoneNumber = request.getParameter("phone");
 
-        User user = new User(name, email, password, dob, fav);
+        User user = new User(firstName, lastName, email, password, dob, phoneNumber);
         session.setAttribute("user", user);        
         
         String adminemail = (String)session.getAttribute("adminemail");
@@ -31,15 +35,19 @@
         if(connector != null ) connector.add(user); else out.print("Cannot add user");
 
     %>
-    <body style="background:none transparent;"> 
+    <body> 
 
-        <p class="form_title">Your Information have been updated.</p>
-        <table class="table">
-            <tr><td>Name: </td><td class="text"><%=name%></td></tr>
-            <tr><td>Email: </td><td class="text"><%=email%></td></tr>
-            <tr><td>Password: </td><td class="text"><%= password%></td></tr>
-            <tr><td>Phone: </td><td class="text"><%=dob%></td></tr>
-        </table>       
+        <div class="details-container">
+            <h3 class="form_title">Account created successfully!</h3>
+            <table class="table">
+                <tr><td>First Name: </td><td class="text"><%=firstName%></td></tr>
+                <tr><td>Last Name: </td><td class="text"><%=lastName%></td></tr>
+                <tr><td>Email: </td><td class="text"><%=email%></td></tr>
+                <tr><td>Password: </td><td class="text"><%=password%></td></tr>
+                <tr><td>DOB: </td><td class="text"><%=dob%></td></tr>
+                <tr><td>Phone: </td><td class="text"><%=phoneNumber%></td></tr>
+            </table> 
+        </div>   
     </body>
     <p class="p">Click <a href="main.jsp" class="link" target="_parent"> here </a> to go to main page.</p>
 

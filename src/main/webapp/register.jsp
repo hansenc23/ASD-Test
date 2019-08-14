@@ -47,12 +47,12 @@
         
         <form action="welcome.jsp" method="post">
                 <table id="form-table">
-                    <tr><td>Name:</td><td><input size="23" type="text" name="name"></td></tr>
+                    <tr><td>First Name:</td><td><input size="23" type="text" name="firstName"></td></tr>
+                    <tr><td>Last Name:</td><td><input size="23" type="text" name="lastName"></td></tr>
                     <tr><td>Email:</td><td><input size="23" type="text" name="email"></td></tr>
                     <tr><td>Password:</td><td><input size="23" type="password" name="password"></td></tr>
                     <tr><td>Date of Birth:</td><td><input type="date" name="dob"></td></tr>  
-                    <tr><td>Favorite Color:</td><td> <input type="color" name ="favcol"></td></tr>
-                    <tr><td>Agree to TOS</td><td><input type="checkbox" name="tos"></td></tr>
+                    <tr><td>Phone Number:</td><td> <input type="text" name ="phone"></td></tr>
                     <tr><td></td>
                         <td>
                             <input class="button" type="submit" value="Register"> 
