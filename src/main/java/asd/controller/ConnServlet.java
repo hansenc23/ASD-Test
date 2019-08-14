@@ -26,9 +26,7 @@ public class ConnServlet extends HttpServlet {
         connector = new MongoDBConnector(adminemail, adminpass);        
         response.setContentType("text/html;charset=UTF-8");  
         HttpSession session = request.getSession();              
-        String status = (connector != null) ? "Connected to mLab" : "Disconnected from mLab";        
         
-        session.setAttribute("status", status); 
         session.setAttribute("adminemail", adminemail);
         session.setAttribute("adminpassword", adminpass);
           
