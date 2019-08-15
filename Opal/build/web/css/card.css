@@ -9,29 +9,41 @@ and open the template in the editor.
 */
 
 .box {
-                padding: 20px;
-                border: 1px solid #00B1F5;
-                /*background-color: #e6f7ff;*/
-                /*background-color: white;*/
-                border-radius: 5px;
-                /*margin: 0 auto;*/
-                max-width: 60%;
-                
-                margin-right: 20px;
-                margin-left: 240px;
-                color: #0088cc;
-            }
+    padding: 20px 5px 10px 20px;
+    border: 1px solid #00B1F5;
+    /*background-color: #e6f7ff;*/
+    /*background-color: white;*/
+    border-radius: 5px;
+    /*margin: 0 auto;*/
+    max-width: 60%;  
+    margin-right: 20px;
+    margin-left: 240px;
+    color: #0088cc;
+}
 
-            .box th, td {
-                text-align: left;
-                color: #0088cc;
-                width: 50%;
-                height: 50px;
-            }
+.box th, td {
+    text-align: left;
+    color: #0088cc;
+    width: 50%;
+    height: 50px;
+}
             
-            .box table {
-                width: 70%;
-            }
+.box table {
+    width: 80%;
+}
 
+.box td input[type=submit]{
+    width: 70%;
+    background-color: #004d80;
+    margin-left: 80px;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border: 0;
+}
+
+.box td input[type=submit]:hover{
+    opacity: 0.7;
+}
 
 

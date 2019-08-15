@@ -1,6 +1,0 @@
-asd\model\User.class
-asd\controller\Validator.class
-asd\model\Users.class
-asd\model\dao\MongoDBConnector.class
-asd\controller\ConnServlet.class
-asd\controller\ValidatorServlet.class

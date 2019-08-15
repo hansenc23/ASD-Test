@@ -6,7 +6,6 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@include file="navbar.jsp" %>
-<%@page import="asd.model.*" %>
 <!DOCTYPE html>
 <html>
     <head>
@@ -19,9 +18,7 @@
             String opalID = request.getParameter("ID1") + " " + request.getParameter("ID2") + " "
                           + request.getParameter("ID3") + " " +request.getParameter("ID4");
             String securityCode = request.getParameter("securityCode");
-            OpalCard card = new OpalCard(opalID, securityCode);
-        %>
-        <%
+            double balance = 0.00;
             if (opalID != null && securityCode != null) {
         %>
             <div class="box">
@@ -31,11 +28,19 @@
                         <th>Card Type</th>
                         <th>Opal Number</th>
                         <th>Balance</th>
+                        <th></th>
                     </tr>
                     <tr>
                         <td><img src="image/card_adult_large.png" width="30px">&ensp;&ensp;Adult</td>
                         <td><%=opalID%></td>
-                        <td>$0.00</td>
+                        <td>$<%=balance%></td>
+                        <td>
+                            <form method='POST' action='cardDetail.jsp'>
+                                <input type="hidden" value="<%=opalID%>" name="opalID">
+                                <input type="hidden" value="<%=balance%>" name="balance">
+                                <input type="Submit" value="Details">
+                            </form>
+                        </td>
                     </tr>
                 </table>
             </div>

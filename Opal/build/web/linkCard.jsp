@@ -33,37 +33,5 @@
                 </table>
             </form>
         </div>
-        <%!
-            public String valid(String in1, String in2, 
-                                String in3, String in4, String in5){
-                String error = "";
-                String input = in1 + in2 + in3 + in4 + in5;
-                try{
-                    int test = Integer.parseInt(input);
-                }
-                catch (NumberFormatException ex){
-                    error = "Invalid";
-                }
-                return error;
-            }
-        
-        %>
-        <%
-            if (request.getParameter("link") != null){
-                String ID1 = request.getParameter("ID1");
-                String ID2 = request.getParameter("ID2");
-                String ID3 = request.getParameter("ID3");
-                String ID4 = request.getParameter("ID4");
-                String sc = request.getParameter("securityCode");
-                String valid = valid(ID1, ID2, ID3, ID4, sc);
-                if (valid.equalsIgnoreCase("Invalid")){
-                    %>
-                    <script>
-                        alert("Invalid input");
-                    </script>
-                    <%
-                }
-            }
-        %>
     </body>
 </html>

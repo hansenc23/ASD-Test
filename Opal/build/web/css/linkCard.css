@@ -9,13 +9,13 @@ and open the template in the editor.
 */
 
 h2 {
-    margin-left: 220px;
+    margin-left: 240px;
     color: #005580;
 }
             
 .cardDetails {
-    margin-left: 220px;
-    max-width: 30%;
+    margin-left: 240px;
+    max-width: 25%;
     border: 1px solid #005580;
     border-radius: 5px;
     padding: 20px;
@@ -31,7 +31,7 @@ h2 {
 }
             
 .cardDetails input[type=text] {
-    width: 50px;
+    width: 60px;
     padding: 5px 10px;
     margin-right: 5px;
     display: inline-block;

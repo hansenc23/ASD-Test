@@ -9,22 +9,22 @@ and open the template in the editor.
 */
 
 .sidenav {
-                width: 160px;
-                position: fixed;
-                margin-left: 40px;
-                margin-right: 20px;
-                background-color: #e6f7ff; 
-              }
+    width: 160px;
+    position: fixed;
+    margin-left: 40px;
+    margin-right: 20px;
+    background-color: #e6f7ff; 
+}
 
-              .sidenav a {
-                padding: 12px 8px 12px 16px;
-                text-decoration: none;
-                font-size: 15px;
-                color: #0088cc;
-                display: block;
-              }
+.sidenav a {
+    padding: 12px 8px 12px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #0088cc;
+    display: block;
+}
 
-              .sidenav a:hover {
-                color: white;
-                background-color: #004d80;
-              }
+.sidenav a:hover {
+    color: white;
+    background-color: #004d80;
+}
