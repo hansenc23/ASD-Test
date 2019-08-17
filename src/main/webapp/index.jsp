@@ -35,7 +35,7 @@
         </nav>
         <div class="reg">
             <ul class="reg-links">
-                <li><a class="nav-link" href="#">Login</a></li>
+                <li><a class="nav-link" href="login.jsp">Login</a></li>
                 <li><a class="nav-link" href="register.jsp">Register</a></li>
             </ul>
             

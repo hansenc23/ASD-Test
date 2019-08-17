@@ -84,6 +84,23 @@ public class MongoDBConnector {
         return users;
     }
 
+     public ArrayList<User> loadAllUsers() {
+        MongoClientURI uri = new MongoClientURI("mongodb://" + this.owner + ":" + this.password + "@ds031965.mlab.com:31965/heroku_5s97hssp");
+        ArrayList<User> users;
+        try (MongoClient client = new MongoClient(uri)) {
+            MongoDatabase db = client.getDatabase(uri.getDatabase());
+            users = new ArrayList<User>();
+            MongoCollection<Document> userlist = db.getCollection("ASD-app-users");
+            for (Document doc : userlist.find()) {
+                User user = new User((String) doc.get("FirstName"), (String) doc.get("LastName"), (String) doc.get("Username"), (String) doc.get("Password"), (String) doc.get("Dob"),(String) doc.get("PhoneNumber"));
+                users.add(user);
+            }
+        }
+        return users;
+    }
+    
+    
+    
     public User user(String email, String password) {
         MongoClientURI uri = new MongoClientURI("mongodb://" + this.owner + ":" + this.password + "@ds031965.mlab.com:31965/heroku_5s97hssp");
         User user;
