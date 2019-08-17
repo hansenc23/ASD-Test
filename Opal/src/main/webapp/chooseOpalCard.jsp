@@ -25,7 +25,7 @@
                 <h5>Adult</h5>
                 <p>if you're 16 years of age, or older, and normally 
                      pay full fare</p>
-                <a class = "button" href = "orderDetail.jsp">order</a>
+                <a class = "button" href = "contactDetail.jsp">order</a>
             </div>
             
             <div class = "box">
@@ -35,7 +35,7 @@
                 <p>if you're aged 4-15 years old, or a full 
                     time NSW/ACT school student aged 16 years 
                     or older</p>
-                <a class = "button" href = "orderDetail.jsp">order</a>
+                <a class = "button" href = "contactDetail.jsp">order</a>
             </div>
             
             <div class = "box">
@@ -44,7 +44,7 @@
                 <h5>Pensioner</h5>
                 <p>for eligible NSW seniors, interstate 
                     seniors, pensioners and asylum seekers</p>
-                <a class = "button" href = "orderDetail.jsp">order</a>
+                <a class = "button" href = "contactDetail.jsp">order</a>
             </div>
             
             <div class = "box">
@@ -54,7 +54,7 @@
                 <p>for eligible tertiary students, apprentices 
                     and trainees, job seekers and Centrelink 
                     customers</p>
-                <a class = "button" href = "orderDetail.jsp">order</a>
+                <a class = "button" href = "contactDetail.jsp">order</a>
             </div>
         </div>
     </body>

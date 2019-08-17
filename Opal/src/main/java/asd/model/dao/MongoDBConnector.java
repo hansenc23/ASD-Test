@@ -1,4 +1,4 @@
-/*
+ /*
  * Author: Georges Bou Ghantous
  *
  * This class provides the methods to establish connection between ASD-Demo-app
@@ -51,7 +51,7 @@ public class MongoDBConnector {
         MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
         try (MongoClient client = new MongoClient(uri)) {
             MongoDatabase db = client.getDatabase(uri.getDatabase());
-            users.add(new Document("Username", user.getEmail()).append("Password", user.getPassword()).append("First Name", user.getFirstName()).append("Last Name", user.getLastName()).append("Dob", user.getDob()).append("Phone", user.getPhoneNumber()));
+            users.add(new Document("Username", user.getEmail()).append("Password", user.getPassword()).append("First Name", user.getFirstName()).append("Last Name", user.getLastName()).append("Dob", user.getAddress()).append("Phone", user.getPhoneNumber()));
             MongoCollection<Document> userlist = db.getCollection("ASD-app-users"); //Create a collection ASD-app-users on mLab
             userlist.insertMany(users);
         }
@@ -96,6 +96,34 @@ public class MongoDBConnector {
         }
         return user;
     }
+    
+    //Add paymenthod to a particular User 
+    public void addPayment(Paymentmethod paymt, User user){
+        MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
+        try(MongoClient client = new MongoClient(uri)){
+            MongoDatabase db = client.getDatabase(uri.getDatabase());
+            MongoCollection<Document> userlist = db.getCollection("ASD-app-users");
+            Document doc = new Document().append("FirstName", paymt.getFirstName()).append("LastName", paymt.getLastName()).append("CardNumber", paymt.getCardNumber()).append("ExpiryMonth", paymt.getExpiryMonth()).append("ExpiryYear", paymt.getExpiryYear()).append("CVV", paymt.getCvv());
+            userlist.updateOne(eq("Username", user.getEmail()), new Document("$set", new Document("PaymentMethod",doc)));          
+        }
+    }
+    //add a payment to payment record
+    public void addTopUpPayment(TopUpPayment tpmt, User user){
+         MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
+           try(MongoClient client = new MongoClient(uri)){
+            MongoDatabase db = client.getDatabase(uri.getDatabase());
+            MongoCollection<Document> userlist = db.getCollection("ASD-app-users");
+            MongoCollection<Document> paymentlist = db.getCollection("ASD-app-payments");
+            Document userdoc = userlist.find(and(eq("Username", user.getEmail()), eq("Password", user.getPassword()))).first();
+            String userId = (String) userdoc.get("_id").toString();
+            Document paymentdoc = new Document().append("UserId", userId).append("OpalId", tpmt.getOpalId()).append("FirstName", tpmt.getFirstName()).append("LastName", tpmt.getLastName()).append("CardNumber", tpmt.getCardNumber())
+                    .append("ExpiryMonth", tpmt.getExpiryMonth()).append("ExpiryYear", tpmt.getExpiryYear()).append("CVV", tpmt.getCvv()).append("PaymentDate", tpmt.getCurrentDate());
+            paymentlist.insertOne(paymentdoc);
+            //userlist.updateOne(eq("Username", user.getEmail()), new Document("$set", new Document("PaymentMethod",doc)));                     
+        }
+         
+    }
+
 
     public int add(int a, int b) {
         return a + b;

@@ -7,6 +7,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@include file="navbar.jsp"%>
 <%@include file="sidebar.jsp" %>
+<%@page import="asd.model.User"%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -17,6 +18,19 @@
         <title>Payment Detail</title>
     </head>
     <body>
+        
+        <%
+            String firstname = request.getParameter("firstname");
+            String lastname = request.getParameter("lastname");
+            String email = request.getParameter("email");
+            String phone = request.getParameter("phone");
+            String password = request.getParameter("password");
+            String address = request.getParameter("address");  
+            
+            User user = new User(firstname, lastname, email, password, address, phone);
+            session.setAttribute("user", user);
+        %>
+        
         <div class = "paymentDetail">        
         <form method = "post" action = "orderConfirmation.jsp" >
             <h4>Add value to your Opal Card</h4>
@@ -32,13 +46,13 @@
         <table>
         <h4>Payment Detail</h4>
         <h6>Your order will be processed securely</h6>
-            <tr><td>First name(s)</td><td><input type = "text" name = "firstname" required></td>
-                <td>Last name</td><td><input type = "text" name = "lastname" required></td></tr>
+            <tr><td>First name(s)</td><td><input type = "text" name = "cardfname" required></td>
+                <td>Last name</td><td><input type = "text" name = "cardlname" required></td></tr>
             <tr><td>Card number</td><td>
-                            <input type ="text" name = "cardNumber" minlength="16" maxlength="16" required></td></tr>
+                            <input type ="text" name = "cardnumber" minlength="16" maxlength="16" required></td></tr>
             <tr><td>Expiry date</td>
                 <td>
-                <select name = "expiryDate">
+                <select name = "expirymonth">
                     <option value="01">January</option>
                     <option value="02">February </option>
                     <option value="03">March</option>
@@ -52,7 +66,7 @@
                     <option value="11">November</option>
                     <option value="12">December</option>
                 </select>
-                <select>
+                <select name = "expiryyear">
                     <option value="19"> 2019</option>
                     <option value="20"> 2020</option>
                     <option value="21"> 2021</option>
