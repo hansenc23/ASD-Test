@@ -18,7 +18,7 @@
     </head>
     <body>
         <div class = "orderDetail">
-        <form method = "post" action = "addValue.jsp" >
+        <form method = "post" action = "orderConfirmation.jsp" >
             <h3>&nbsp;Enter your personal detail</h3>
             &nbsp; 
         <table>
