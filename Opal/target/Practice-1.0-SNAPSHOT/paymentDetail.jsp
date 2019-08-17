@@ -18,8 +18,8 @@
     </head>
     <body>
         <div class = "paymentDetail">        
-        <form method = "post" action = "paymentDetail.jsp" >
-            <h3>Add value to your Opal Card</h3>
+        <form method = "post" action = "orderConfirmation.jsp" >
+            <h4>Add value to your Opal Card</h4>
         <table>
             <tr><td>Top up amount</td><td><select name = "amount" required>
                         <option value = "10.00">$10.00</option>
@@ -30,7 +30,7 @@
         </table>
             <hr>
         <table>
-        <h3>Payment Detail</h3>
+        <h4>Payment Detail</h4>
         <h6>Your order will be processed securely</h6>
             <tr><td>First name(s)</td><td><input type = "text" name = "firstname" required></td>
                 <td>Last name</td><td><input type = "text" name = "lastname" required></td></tr>

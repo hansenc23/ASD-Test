@@ -18,8 +18,8 @@
     </head>
     <body>
         <div class = "orderDetail">
-        <form method = "post" action = "orderConfirmation.jsp" >
-            <h3>&nbsp;Enter your personal detail</h3>
+        <form method = "post" action = "paymentDetail.jsp" >
+            <h4>&nbsp;Enter your personal detail</h4>
             &nbsp; 
         <table>
             <tr><td>First name(s)</td><td><input type = "text" name = "firstname" required></td>
