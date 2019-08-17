@@ -21,7 +21,8 @@
             <h3>&nbsp;&ensp;Choose an Opal card:</h3>
             <div class = "box">
                 <img src = "./image/card_adult_large.png">
-                <h3>Adult</h3>
+                &nbsp;
+                <h5>Adult</h5>
                 <p>if you're 16 years of age, or older, and normally 
                      pay full fare</p>
                 <a class = "button" href = "orderDetail.jsp">order</a>
@@ -29,7 +30,8 @@
             
             <div class = "box">
                 <img src = "./image/card_child_large.png">
-                <h3>Child/Youth</h3>
+                &nbsp;
+                <h5>Child/Youth</h5>
                 <p>if you're aged 4-15 years old, or a full 
                     time NSW/ACT school student aged 16 years 
                     or older</p>
@@ -38,7 +40,8 @@
             
             <div class = "box">
                 <img src = "./image/card_pensioner_large.png">
-                <h3>Pensioner</h3>
+                &nbsp;
+                <h5>Pensioner</h5>
                 <p>for eligible NSW seniors, interstate 
                     seniors, pensioners and asylum seekers</p>
                 <a class = "button" href = "orderDetail.jsp">order</a>
@@ -46,7 +49,8 @@
             
             <div class = "box">
                 <img src = "./image/card_concession_large.png">
-                <h3>Concession</h3>
+                &nbsp;
+                <h5>Concession</h5>
                 <p>for eligible tertiary students, apprentices 
                     and trainees, job seekers and Centrelink 
                     customers</p>

@@ -8,18 +8,23 @@ and open the template in the editor.
     Author     : aasdd
 */
 
-.detail{
+    .paymentDetail{
         float: left;
-        width: 40%;
-        height: 300px;
+        width: 73%;
+        height: 400px;
         padding: 30px;
         margin: 0 240px;
         border-radius: 5px;
         background-color: #e6f7ff;
-        border-top: 1px solid #b3d9ff;  
+        border-top: 1px solid #b3d9ff;   
     } 
-    h3 {
+    .paymentDetail h3 {
         color: #004d80;
+        font-family: Arial;
+    }
+    
+    .paymentDetail h5 {
+        color: #331a00;
         font-family: Arial;
     }
     .button {
@@ -35,14 +40,15 @@ and open the template in the editor.
         border-right: 2px solid #00334d;
         border-bottom: 3px solid #00334d;
     }
-    .detail td, p {
+    .paymentDetail td {
         color: #331a00;
         font-family: Arial;
-        font-size: 13px;
-        padding-top: 10px;
+        font-size: 16px;
+        padding-top: 18px;
         padding-right: 10px;
+        padding-left: 50px;
     }
-    .detail a,.detail input[type=submit]{
+    .paymentDetail a,.paymentDetail input[type=submit]{
         font: 15px Arial;
         background-color: #005580;
         color: #ffffff;
@@ -54,6 +60,7 @@ and open the template in the editor.
         border-bottom: 3px solid #00334d;
     }
             
-    A:hover, .detail input[type=submit]:hover{
+    A:hover, .paymentDetail input[type=submit]:hover{
         background-color: #0088cc;
+        text-decoration: none;
     }

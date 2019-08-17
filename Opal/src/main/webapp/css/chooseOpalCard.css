@@ -9,7 +9,7 @@ and open the template in the editor.
 */
     .box{
         float: left;
-        width: 17%;
+        width: 20%;
         height: 350px;
         padding: 25px;
         margin: 15px;
@@ -17,18 +17,22 @@ and open the template in the editor.
         background-color: #e6f7ff;
         border-top: 1px solid #b3d9ff;  
     } 
+    
     .clearfix::after{
         content: "";
         clear: both;
         width: 100%;
     }
+    
     .clearfix{
         margin-left: 240px;
     }
+    
     .box img {
         width: 158.4px; 
         height: 99.6px;
     }
+    
     .button {
         font: 15px Arial;
         text-decoration: none;
@@ -41,20 +45,24 @@ and open the template in the editor.
         border-right: 2px solid #00334d;
         border-bottom: 3px solid #00334d;
     }
+    
     h3{
         color: #004d80;
         font-family: Arial;
     }
-    div div h3{
+    
+    .clearfix .box h5{
         color: #004d80;
         font-family: Arial;
     }
+    
     p {
         color: #331a00;
         font-family: Arial;
-        font-size: 13px;
+        font-size: 14px;
     }
     A:hover{
         background-color: #0088cc;
+        text-decoration: none;
     }
 
