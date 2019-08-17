@@ -11,7 +11,7 @@ import javax.servlet.http.HttpSession;
 
 /**
  *
- * @author George
+ * 
  */
 public class ValidatorServlet extends HttpServlet {
 

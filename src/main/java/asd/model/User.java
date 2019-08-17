@@ -8,18 +8,18 @@ public class User  implements Serializable{
     private String lastName;
     private String email;
     private String password;
-    private String dob;
+    private String address;
     private String phoneNumber;
 
     public User() {
     }
 
-    public User(String firstName, String lastName, String email, String password, String dob, String phoneNumber) {
+    public User(String firstName, String lastName, String email, String password, String address, String phoneNumber) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
         this.password = password;
-        this.dob = dob;
+        this.address = address;
         this.phoneNumber = phoneNumber;
     }
 
@@ -35,12 +35,12 @@ public class User  implements Serializable{
         this.phoneNumber = phoneNumber;
     }
     
-    public String getDob() {
-        return dob;
+    public String getAddress() {
+        return address;
     }
 
-    public void setDob(String dob) {
-        this.dob = dob;
+    public void setAddress(String address) {
+        this.address = address;
     }
     public String getFirstName() {
         return firstName;

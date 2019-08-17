@@ -1,8 +1,4 @@
-<%-- 
-    Document   : welcome
-    Created on : 23/03/2018, 3:13:21 PM
-    Author     : george
---%>
+
 
 <%@page import="asd.model.dao.MongoDBConnector"%>
 <%@page contentType="text/html" pageEncoding="UTF-8" import="asd.model.*"%>
@@ -23,10 +19,10 @@
         String lastName = request.getParameter("lastName");
         String email = request.getParameter("email");
         String password = request.getParameter("password");
-        String dob = request.getParameter("dob");
+        String address = request.getParameter("address");
         String phoneNumber = request.getParameter("phone");
 
-        User user = new User(firstName, lastName, email, password, dob, phoneNumber);
+        User user = new User(firstName, lastName, email, password, address, phoneNumber);
         session.setAttribute("user", user);        
         
         String adminemail = (String)session.getAttribute("adminemail");
@@ -44,7 +40,7 @@
                 <tr><td>Last Name: </td><td class="text"><%=lastName%></td></tr>
                 <tr><td>Email: </td><td class="text"><%=email%></td></tr>
                 <tr><td>Password: </td><td class="text"><%=password%></td></tr>
-                <tr><td>DOB: </td><td class="text"><%=dob%></td></tr>
+                <tr><td>Address: </td><td class="text"><%=address%></td></tr>
                 <tr><td>Phone: </td><td class="text"><%=phoneNumber%></td></tr>
             </table> 
         </div>   

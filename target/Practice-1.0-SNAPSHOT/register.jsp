@@ -51,7 +51,7 @@
                     <tr><td>Last Name:</td><td><input size="23" type="text" name="lastName"></td></tr>
                     <tr><td>Email:</td><td><input size="23" type="text" name="email"></td></tr>
                     <tr><td>Password:</td><td><input size="23" type="password" name="password"></td></tr>
-                    <tr><td>Date of Birth:</td><td><input type="date" name="dob"></td></tr>  
+                    <tr><td>Address:</td><td><input type="text" name="address"></td></tr>  
                     <tr><td>Phone Number:</td><td> <input type="text" name ="phone"></td></tr>
                     <tr><td></td>
                         <td>
