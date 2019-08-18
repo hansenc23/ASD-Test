@@ -1,9 +1,4 @@
-/*
- *
- * This class provides the methods to establish connection between ASD-Demo-app
- * and MongoDBLab cloud Database. The data is saved dynamically on mLab cloud database as
- * as JSON format.
- */
+
 package asd.model.dao;
 
 import java.net.UnknownHostException;

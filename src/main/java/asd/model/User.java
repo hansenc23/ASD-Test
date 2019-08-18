@@ -1,6 +1,12 @@
-package asd.model;
 
+package asd.model;
 import java.io.Serializable;
+
+/**
+ *
+ * @author hansen
+ */
+
 
 public class User  implements Serializable{
 
