@@ -5,6 +5,7 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page import="asd.model.dao.MongoDBConnector"%>
 <%@include file="navbar.jsp"%>
 <%@include file="sidebar.jsp" %>
 <%@page import="asd.model.User"%>
@@ -29,6 +30,11 @@
             
             User user = new User(firstname, lastname, email, password, address, phone);
             session.setAttribute("user", user);
+            
+            String adminemail = (String)session.getAttribute("adminemail");
+            String adminpass = (String)session.getAttribute("adminpassword");
+            MongoDBConnector connector = new MongoDBConnector(adminemail, adminpass);
+            connector.add(user);
         %>
         
         <div class = "paymentDetail">        
@@ -79,7 +85,7 @@
                 </select>
                 </td>
                 <td>CVV</td>
-                <td><input type = "text" name = "cvv" minlength="3" maxlength="3" size = "1" required></td></tr>
+                <td><input type = "number" name = "cvv" minlength="3" maxlength="3" size = "1" required></td></tr>
             <tr><td colspan = "3"><a class = "button" href = "contactDetail.jsp">Back</a></td><td align = "right"><input type =  "submit" value = "Continue"></td></tr>
             <tr><td><a class = "button" href = "orderCancelled.jsp">Cancel</a></tr>
         </table>

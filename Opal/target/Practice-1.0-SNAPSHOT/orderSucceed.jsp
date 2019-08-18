@@ -7,6 +7,13 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@include file="navbar.jsp"%>
 <%@include file="sidebar.jsp" %>
+<%@page import="asd.model.dao.MongoDBConnector"%>
+<%@page import="java.util.Random"%>
+<%@page import="asd.model.User"%>
+<%@page import="asd.model.OrderPayment"%>
+<%@page import="asd.model.Order"%>
+<%@page import="java.text.SimpleDateFormat"%>
+<%@page import="java.text.DateFormat"%>
 <!DOCTYPE html>
 <html>
     <head>

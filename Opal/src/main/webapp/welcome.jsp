@@ -32,7 +32,7 @@
         String adminemail = (String)session.getAttribute("adminemail");
         String adminpass = (String)session.getAttribute("adminpassword");
         MongoDBConnector connector = new MongoDBConnector(adminemail, adminpass);
-        if(connector != null ) connector.add(user); else out.print("Cannot add user");
+        connector.add(user);
     %>
     <body> 
         <div class="details-container">

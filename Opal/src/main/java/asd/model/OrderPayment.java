@@ -15,7 +15,7 @@ import java.io.Serializable;
 public class OrderPayment implements Serializable{
     
     private String paymentId;
-    private String customerId;
+    private String orderId;
     private String firstName;
     private String lastName;
     private String cardNumber;
@@ -26,9 +26,9 @@ public class OrderPayment implements Serializable{
     public OrderPayment() {
     }
 
-    public OrderPayment(String paymentId, String customerId, String firstName, String lastName, String cardNumber, int expiryMonth, int expiryYear, int cvv) {
+    public OrderPayment(String paymentId, String orderId, String firstName, String lastName, String cardNumber, int expiryMonth, int expiryYear, int cvv) {
         this.paymentId = paymentId;
-        this.customerId = customerId;
+        this.orderId = orderId;
         this.firstName = firstName;
         this.lastName = lastName;
         this.cardNumber = cardNumber;
@@ -45,12 +45,12 @@ public class OrderPayment implements Serializable{
         this.paymentId = paymentId;
     }
 
-    public String getCustomerId() {
-        return customerId;
+    public String getOrderId() {
+        return orderId;
     }
 
-    public void setCustomerId(String customerId) {
-        this.customerId = customerId;
+    public void setOrderId(String orderId) {
+        this.orderId = orderId;
     }
 
     public String getFirstName() {
