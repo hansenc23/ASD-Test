@@ -43,7 +43,7 @@
                         <td>$<%=balance%></td>
                     </tr>
                     <tr>
-                        <td>Type</td>
+                        <td>Types</td>
                         <td><%=type%></td>
                     </tr>
                 </table>
