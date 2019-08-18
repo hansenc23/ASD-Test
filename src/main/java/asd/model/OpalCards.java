@@ -37,14 +37,4 @@ public class OpalCards implements Serializable {
             }
             return null;
         }
-        
-        public ArrayList<OpalCard> getCards(String customerID) {
-            ArrayList<OpalCard> userCards = new ArrayList<>();
-            for (OpalCard card : cards) {
-                if (card.getCustomerID().equalsIgnoreCase(customerID)) {
-                    userCards.add(card);
-                }
-            }
-            return userCards;
-        }
 }

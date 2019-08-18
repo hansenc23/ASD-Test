@@ -25,28 +25,28 @@
                 session.removeAttribute("card");
             }
             else{
-            if (card != null) {
+                if (card != null) {
         %>
-            <div class="box">
-                <h3>Select the opal card you would like to unlink</h3>
-                <table>
-                    <tr>
-                        <th>Opal Number</th>
-                        <th>Balance</th>
-                    </tr>
-                    <tr>
-                        <td><%=card.getOpalID()%></td>
-                        <td>$<%=card.getBalance()%></td>
-                        <td>
-                            <form method="POST" action="unlinkCard.jsp">
-                                <input type="Submit" value="Unlink" name="unlink">
-                            </form>
-                        </td>
-                    </tr>
-                </table>
-            </div>
+                <div class="box">
+                    <h3>Select the opal card you would like to unlink</h3>
+                    <table>
+                        <tr>
+                            <th>Opal Number</th>
+                            <th>Balance</th>
+                        </tr>
+                        <tr>
+                            <td><%=card.getOpalID()%></td>
+                            <td>$<%=card.getBalance()%></td>
+                            <td>
+                                <form method="POST" action="unlinkCard.jsp">
+                                    <input type="Submit" value="Unlink" name="unlink">
+                                </form>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
         <%
-            }
+                }
             }
         %>
     </body>
