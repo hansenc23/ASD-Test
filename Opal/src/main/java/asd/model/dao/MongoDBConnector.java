@@ -23,6 +23,7 @@ public class MongoDBConnector {
 
     private List<Document> users = new ArrayList();
     private List<Document> cards = new ArrayList();
+    private List<Document> orderPayments = new ArrayList();
     private String owner;
     private String password;
 
@@ -166,5 +167,17 @@ public class MongoDBConnector {
         }
         return opalCard;
     }
+    
+    public void add(OrderPayment orderPayment) {
+        MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
+        try (MongoClient client = new MongoClient(uri)) {
+            MongoDatabase db = client.getDatabase(uri.getDatabase());
+            orderPayments.add(new Document("PaymentID", orderPayment.getPaymentId()).append("CustomerID", orderPayment.getCustomerId()).append("FirstName", orderPayment.getFirstName()).append("LastName", orderPayment.getLastName()).append("CardNumber", orderPayment.getCardNumber()).append("ExpiryMonth", orderPayment.getExpiryMonth()).append("ExpiryYear", orderPayment.getExpiryYear()).append("CVV", orderPayment.getCvv()));
+            MongoCollection<Document> userlist = db.getCollection("ASD-app-orderPayment"); //Create a collection ASD-app-users on mLab
+            userlist.insertMany(orderPayments);
+        }
+    }
+    
+    
     
 }

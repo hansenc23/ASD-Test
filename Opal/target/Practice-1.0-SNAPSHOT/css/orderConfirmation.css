@@ -12,16 +12,19 @@ and open the template in the editor.
      .orderConfirmation{
         float: left;
         width: 73%;
-        height: 550px;
+        height: 520px;
         padding: 30px;
-        margin: 0 240px;
+        margin: 10px 250px;
         border-radius: 5px;
         background-color: #e6f7ff;
         border-top: 1px solid #b3d9ff;   
     } 
-    .orderConfirmation h4 {
+    
+    h3 {
         color: #004d80;
         font-family: Arial;
+        margin-left: 240px;
+      
     }
     
     .orderConfirmation h6 {

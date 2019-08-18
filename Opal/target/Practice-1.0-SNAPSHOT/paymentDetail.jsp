@@ -80,8 +80,8 @@
                 </td>
                 <td>CVV</td>
                 <td><input type = "text" name = "cvv" minlength="3" maxlength="3" size = "1" required></td></tr>
-            <tr><td><input type =  "submit" value = "Continue"></td></tr>
-            <tr><td><a class = "button" href = "orderDetail.jsp">Back</a></td></tr>
+            <tr><td colspan = "3"><a class = "button" href = "contactDetail.jsp">Back</a></td><td align = "right"><input type =  "submit" value = "Continue"></td></tr>
+            <tr><td><a class = "button" href = "orderCancelled.jsp">Cancel</a></tr>
         </table>
         </form>
         </div>

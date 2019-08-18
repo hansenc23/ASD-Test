@@ -11,17 +11,18 @@ and open the template in the editor.
     .orderDetail{
         float: left;
         width: 73%;
-        height: 450px;
+        height: 380px;
         padding: 30px;
-        margin: 0 240px;
+        margin: 10px 250px;
         border-radius: 5px;
         background-color: #e6f7ff;
         border-top: 1px solid #b3d9ff;  
     } 
-    .orderDetail h4 {
+    h3 {
         color: #004d80;
         font-family: Arial;
-        
+        margin-left: 240px;
+      
     }
     .button {
         font: 15px Arial;

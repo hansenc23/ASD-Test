@@ -21,11 +21,12 @@ public class OrderPayment implements Serializable{
     private String cardNumber;
     private int expiryMonth;
     private int expiryYear;
+    private int cvv;
 
     public OrderPayment() {
     }
 
-    public OrderPayment(String paymentId, String customerId, String firstName, String lastName, String cardNumber, int expiryMonth, int expiryYear) {
+    public OrderPayment(String paymentId, String customerId, String firstName, String lastName, String cardNumber, int expiryMonth, int expiryYear, int cvv) {
         this.paymentId = paymentId;
         this.customerId = customerId;
         this.firstName = firstName;
@@ -33,62 +34,72 @@ public class OrderPayment implements Serializable{
         this.cardNumber = cardNumber;
         this.expiryMonth = expiryMonth;
         this.expiryYear = expiryYear;
-    }
-
-    public void setPaymentId(String paymentId) {
-        this.paymentId = paymentId;
-    }
-
-    public void setCustomerId(String customerId) {
-        this.customerId = customerId;
-    }
-
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
-
-    public void setCardNumber(String cardNumber) {
-        this.cardNumber = cardNumber;
-    }
-
-    public void setExpiryMonth(int expiryMonth) {
-        this.expiryMonth = expiryMonth;
-    }
-
-    public void setExpiryYear(int expiryYear) {
-        this.expiryYear = expiryYear;
+        this.cvv = cvv;
     }
 
     public String getPaymentId() {
         return paymentId;
     }
 
+    public void setPaymentId(String paymentId) {
+        this.paymentId = paymentId;
+    }
+
     public String getCustomerId() {
         return customerId;
+    }
+
+    public void setCustomerId(String customerId) {
+        this.customerId = customerId;
     }
 
     public String getFirstName() {
         return firstName;
     }
 
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
     public String getLastName() {
         return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
     public String getCardNumber() {
         return cardNumber;
     }
 
+    public void setCardNumber(String cardNumber) {
+        this.cardNumber = cardNumber;
+    }
+
     public int getExpiryMonth() {
         return expiryMonth;
+    }
+
+    public void setExpiryMonth(int expiryMonth) {
+        this.expiryMonth = expiryMonth;
     }
 
     public int getExpiryYear() {
         return expiryYear;
     }
-    
+
+    public void setExpiryYear(int expiryYear) {
+        this.expiryYear = expiryYear;
+    }
+
+    public int getCvv() {
+        return cvv;
+    }
+
+    public void setCvv(int cvv) {
+        this.cvv = cvv;
+    }
+
+
 }

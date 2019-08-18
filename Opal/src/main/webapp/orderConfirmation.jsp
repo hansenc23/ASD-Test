@@ -29,8 +29,8 @@
             
             User user = (User)session.getAttribute("user");
         %>
-        <div class = "orderConfirmation">
-            <h4>Order Detail</h4>
+        <h3>&nbsp;&ensp;Order Confirmation</h3>
+        <div class = "orderConfirmation">    
         <form method = "post" action = "orderSucceed.jsp" >
         <table>
             <tr><td>Name : </td><td><%= user.getFirstName()%><%= user.getLastName()%></td></tr>
@@ -45,8 +45,8 @@
                 <td>Last name :</td><td><%= cardlname%></td></tr>
             <tr><td>Card number :</td><td><%= cardnumber%></td></tr>
             <tr><td>Expiry date :</td><td><%= expirymonth%><%= expiryyear%></td><td>CVV :</td><td><%= cvv%></td></tr>
-            <td><input type="submit" value="Confirm" name = "confirm"></td><tr>
-            <tr><td><a class = "button" href = "paymentDetail.jsp">Back</a></td></tr>
+            <tr><td colspan = "3"><a class = "button" href = "paymentDetail.jsp">Back</a></td><td align = "right"><input type="submit" value="Confirm" name = "confirm"></td></tr>
+            <tr><td><a class = "button" href = "orderCancelled.jsp">Cancel</a></tr>
         </table>
         </form>
         </div>
