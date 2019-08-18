@@ -4,47 +4,6 @@
     Author     : hanse
 --%>
 
-<<<<<<< HEAD
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
-    <link rel="stylesheet" href="./css/style.css"/>
-
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Home</title>
-</head>
-<body>
-    <header>
-        <div class="logo-container">
-            <a href="index.jsp"><img src="./img/opal-logo.png" alt="logo"/></a>
-        </div>
-        <nav>
-            <ul class="nav-links">
-                <li><a class="nav-link" href="#">Opal News</a></li>
-                <li><a class="nav-link" href="#">Get an Opal Card</a></li>
-                <li><a class="nav-link" href="#">FAQs</a></li>
-                
-            </ul>
-            
-        </nav>
-        <div class="reg">
-            <ul class="reg-links">
-                <li><a class="nav-link" href="login.jsp">Login</a></li>
-                <li><a class="nav-link" href="register.jsp">Register</a></li>
-            </ul>
-            
-        </div>
-    </header>
-</body>
-</html>
-=======
 <%@page import="asd.model.dao.MongoDBConnector"%>
 <%@page contentType="text/html" pageEncoding="UTF-8" import="asd.model.*"%>
 <%@include file="navbar.jsp" %>
@@ -59,6 +18,7 @@
         <title>Card Page</title>
     </head>
     <body>
+        
         <%
             User user = (User)session.getAttribute("user");
             
@@ -77,11 +37,13 @@
         connector.addPayment(paymt, user);
         }
             
+
             String opalID = request.getParameter("ID1") + " " + request.getParameter("ID2") + " "
                           + request.getParameter("ID3") + " " +request.getParameter("ID4");
             String securityCode = request.getParameter("securityCode");
             double balance = 0.00;
             String type = "Adult";
+
             
             String adminemail = (String)session.getAttribute("adminemail");
             String adminpass = (String)session.getAttribute("adminpassword");
@@ -130,4 +92,3 @@
     </body>
 </html>
 
->>>>>>> a36a79820da9b9c77014c338aedbbba8719aee1c

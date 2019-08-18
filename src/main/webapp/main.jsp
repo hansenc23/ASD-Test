@@ -18,6 +18,7 @@
         <title>Card Page</title>
     </head>
     <body>
+        
         <%
             User user = (User)session.getAttribute("user");
             
@@ -36,20 +37,13 @@
         connector.addPayment(paymt, user);
         }
             
-<<<<<<< HEAD
-        </nav>
-        <div class="reg">
-            <ul class="reg-links">
-                <li><a class="nav-link" href="login.jsp">Login</a></li>
-                <li><a class="nav-link" href="register.jsp">Register</a></li>
-            </ul>
-=======
+
             String opalID = request.getParameter("ID1") + " " + request.getParameter("ID2") + " "
                           + request.getParameter("ID3") + " " +request.getParameter("ID4");
             String securityCode = request.getParameter("securityCode");
             double balance = 0.00;
             String type = "Adult";
->>>>>>> a36a79820da9b9c77014c338aedbbba8719aee1c
+
             
             String adminemail = (String)session.getAttribute("adminemail");
             String adminpass = (String)session.getAttribute("adminpassword");

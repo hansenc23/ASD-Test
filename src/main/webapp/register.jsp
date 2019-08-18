@@ -29,10 +29,10 @@
         
         <form action="welcome.jsp" method="post">
                 <table id="form-table">
-                    <tr><td>First Name:</td><td><input size="23" type="text" name="firstName"></td></tr>
-                    <tr><td>Last Name:</td><td><input size="23" type="text" name="lastName"></td></tr>
-                    <tr><td>Email:</td><td><input size="23" type="text" name="email"></td></tr>
-                    <tr><td>Password:</td><td><input size="23" type="password" name="password"></td></tr>
+                    <tr><td>First Name:</td><td><input size="23" type="text" name="firstName" required></td></tr>
+                    <tr><td>Last Name:</td><td><input size="23" type="text" name="lastName" required></td></tr>
+                    <tr><td>Email:</td><td><input size="23" type="text" name="email" required></td></tr>
+                    <tr><td>Password:</td><td><input size="23" type="password" name="password" required></td></tr>
                     <tr><td>Address:</td><td><input type="text" name="address"></td></tr>  
                     <tr><td>Phone Number:</td><td> <input type="text" name ="phone"></td></tr>
                     <tr><td></td>

@@ -19,34 +19,5 @@
     </head>
     <body>
 
-<<<<<<< HEAD
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Home</title>
-</head>
-<body>
-    <header>
-        <div class="logo-container">
-            <a href="index.jsp"><img src="./img/opal-logo.png" alt="logo"/></a>
-        </div>
-        <nav>
-            <ul class="nav-links">
-                <li><a class="nav-link" href="#">Opal News</a></li>
-                <li><a class="nav-link" href="#">Get an Opal Card</a></li>
-                <li><a class="nav-link" href="#">FAQs</a></li>
-                
-            </ul>
-            
-        </nav>
-        <div class="reg">
-            <ul class="reg-links">
-                <li><a class="nav-link" href="login.jsp">Login</a></li>
-                <li><a class="nav-link" href="register.jsp">Register</a></li>
-            </ul>
-            
-        </div>
-    </header>
-</body>
-=======
-    </body>
->>>>>>> a36a79820da9b9c77014c338aedbbba8719aee1c
+
 </html>

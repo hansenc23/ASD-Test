@@ -1,21 +1,12 @@
-<<<<<<< HEAD
-D:\Work Document ASD\ASD-Test\src\main\java\asd\controller\ConnServlet.java
-D:\Work Document ASD\ASD-Test\src\main\java\asd\controller\Validator.java
-D:\Work Document ASD\ASD-Test\src\main\java\asd\model\User.java
-D:\Work Document ASD\ASD-Test\src\main\java\asd\model\Users.java
-D:\Work Document ASD\ASD-Test\src\main\java\asd\model\dao\MongoDBConnector.java
-D:\Work Document ASD\ASD-Test\src\main\java\asd\controller\ValidatorServlet.java
-=======
-C:\Users\Michelle\Desktop\Advanced Software Development\ASD-Test\ASD-Test\src\main\java\asd\controller\ValidatorServlet.java
-C:\Users\Michelle\Desktop\Advanced Software Development\ASD-Test\ASD-Test\src\main\java\asd\model\Users.java
-C:\Users\Michelle\Desktop\Advanced Software Development\ASD-Test\ASD-Test\src\main\java\asd\model\OrderPayment.java
-C:\Users\Michelle\Desktop\Advanced Software Development\ASD-Test\ASD-Test\src\main\java\asd\model\OpalCard.java
-C:\Users\Michelle\Desktop\Advanced Software Development\ASD-Test\ASD-Test\src\main\java\asd\model\Order.java
-C:\Users\Michelle\Desktop\Advanced Software Development\ASD-Test\ASD-Test\src\main\java\asd\model\dao\MongoDBConnector.java
-C:\Users\Michelle\Desktop\Advanced Software Development\ASD-Test\ASD-Test\src\main\java\asd\controller\ConnServlet.java
-C:\Users\Michelle\Desktop\Advanced Software Development\ASD-Test\ASD-Test\src\main\java\asd\controller\Validator.java
-C:\Users\Michelle\Desktop\Advanced Software Development\ASD-Test\ASD-Test\src\main\java\asd\model\OpalCards.java
-C:\Users\Michelle\Desktop\Advanced Software Development\ASD-Test\ASD-Test\src\main\java\asd\model\TopUpPayment.java
-C:\Users\Michelle\Desktop\Advanced Software Development\ASD-Test\ASD-Test\src\main\java\asd\model\User.java
-C:\Users\Michelle\Desktop\Advanced Software Development\ASD-Test\ASD-Test\src\main\java\asd\model\Paymentmethod.java
->>>>>>> a36a79820da9b9c77014c338aedbbba8719aee1c
+G:\ASD-Test\src\main\java\asd\model\OrderPayment.java
+G:\ASD-Test\src\main\java\asd\model\Users.java
+G:\ASD-Test\src\main\java\asd\controller\Validator.java
+G:\ASD-Test\src\main\java\asd\model\Order.java
+G:\ASD-Test\src\main\java\asd\controller\ConnServlet.java
+G:\ASD-Test\src\main\java\asd\model\User.java
+G:\ASD-Test\src\main\java\asd\model\dao\MongoDBConnector.java
+G:\ASD-Test\src\main\java\asd\model\OpalCards.java
+G:\ASD-Test\src\main\java\asd\model\Paymentmethod.java
+G:\ASD-Test\src\main\java\asd\model\TopUpPayment.java
+G:\ASD-Test\src\main\java\asd\controller\ValidatorServlet.java
+G:\ASD-Test\src\main\java\asd\model\OpalCard.java
