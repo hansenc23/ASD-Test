@@ -20,22 +20,23 @@
          
     <body>
       
-        <% String email = request.getParameter("email");
+        <% 
+        String email = request.getParameter("email");
         String password = request.getParameter("password");
      
-       String adminemail = (String)session.getAttribute("adminemail");
+        String adminemail = (String)session.getAttribute("adminemail");
         String adminpass = (String)session.getAttribute("adminpassword");
         MongoDBConnector connector = new MongoDBConnector(adminemail, adminpass);
-            for (User u : connector.loadAllUsers() ) {
-                Users.addUser(u);
-            }
-            User us = Users.login(email, password);
+            Users u = connector.loadUsers();  
+           
+            User us = u.login(email, password);
             session.setAttribute("user", us);
+
      %>
          <%
             if (us != null) {
                 session.setAttribute("customer", us);%>
-         <p>Login successful. Click<a href = "Main.jsp" > here </a> to return to the main page.</p>
+         <p>Login successful. Click<a href = "index.jsp" > here </a> to return to the main page.</p>
         <%} else {%>
          <p> Password incorrect. Click<a href = "login.jsp" > here </a> to try again.</p>
         <%}
