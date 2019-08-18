@@ -21,7 +21,10 @@ import static com.mongodb.client.model.Filters.eq;
 
 public class MongoDBConnector {
 
-    private List<Document> users = new ArrayList();
+     private List<Document> users = new ArrayList();
+    private List<Document> cards = new ArrayList();
+    private List<Document> orderPayments = new ArrayList();
+    private List<Document> orders = new ArrayList();
     private String owner;
     private String password;
 
@@ -102,5 +105,85 @@ public class MongoDBConnector {
 
     public int subtract(int a, int b) {
         return a - b;
+    }
+    
+     //Add paymenthod to a particular User 
+    public void addPayment(Paymentmethod paymt, User user){
+        MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
+        try(MongoClient client = new MongoClient(uri)){
+            MongoDatabase db = client.getDatabase(uri.getDatabase());
+            MongoCollection<Document> userlist = db.getCollection("ASD-app-users");
+            Document doc = new Document().append("FirstName", paymt.getFirstName()).append("LastName", paymt.getLastName()).append("CardNumber", paymt.getCardNumber()).append("ExpiryMonth", paymt.getExpiryMonth()).append("ExpiryYear", paymt.getExpiryYear()).append("CVV", paymt.getCvv());
+            userlist.updateOne(eq("Username", user.getEmail()), new Document("$set", new Document("PaymentMethod",doc)));          
+        }
+    }
+    //add a payment to payment record
+    public void addTopUpPayment(TopUpPayment tpmt, User user){
+         MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
+           try(MongoClient client = new MongoClient(uri)){
+            MongoDatabase db = client.getDatabase(uri.getDatabase());
+            MongoCollection<Document> userlist = db.getCollection("ASD-app-users");
+            MongoCollection<Document> paymentlist = db.getCollection("ASD-app-payments");
+            Document userdoc = userlist.find(and(eq("Username", user.getEmail()), eq("Password", user.getPassword()))).first();
+            String userId = (String) userdoc.get("_id").toString();
+            Document paymentdoc = new Document().append("UserId", userId).append("OpalId", tpmt.getOpalId()).append("FirstName", tpmt.getFirstName()).append("LastName", tpmt.getLastName()).append("CardNumber", tpmt.getCardNumber())
+                    .append("ExpiryMonth", tpmt.getExpiryMonth()).append("ExpiryYear", tpmt.getExpiryYear()).append("CVV", tpmt.getCvv()).append("PaymentDate", tpmt.getCurrentDate());
+            paymentlist.insertOne(paymentdoc);
+            //userlist.updateOne(eq("Username", user.getEmail()), new Document("$set", new Document("PaymentMethod",doc)));                     
+        }
+         
+    }
+    
+    public String getCustomerID(String email, String password) {
+        MongoClientURI uri = new MongoClientURI("mongodb://" + this.owner + ":" + this.password + "@ds031965.mlab.com:31965/heroku_5s97hssp");
+        String customerID;
+        try (MongoClient client = new MongoClient(uri)) {
+            MongoDatabase db = client.getDatabase(uri.getDatabase());
+            MongoCollection<Document> userlist = db.getCollection("ASD-app-users");
+            Document doc = userlist.find(and(eq("Username", email), eq("Password", password))).first();
+            customerID = (String) doc.get("_id");
+        }
+        return customerID;
+    }
+    
+    public void add(OpalCard card) {
+        MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
+        try (MongoClient client = new MongoClient(uri)) {
+            MongoDatabase db = client.getDatabase(uri.getDatabase());
+            cards.add(new Document("OpalID", card.getOpalID()).append("CustomerID", card.getCustomerID()).append("Balance", card.getBalance()).append("Type", card.getType()).append("SecurityCode", card.getSecurityCode()));
+            MongoCollection<Document> userlist = db.getCollection("ASD-app-opalCards"); //Create a collection ASD-app-users on mLab
+            userlist.insertMany(cards);
+        }
+    }
+    
+    public OpalCard getOpalCard(String opalID) {
+        MongoClientURI uri = new MongoClientURI("mongodb://" + this.owner + ":" + this.password + "@ds031965.mlab.com:31965/heroku_5s97hssp");
+        OpalCard opalCard;
+        try (MongoClient client = new MongoClient(uri)) {
+            MongoDatabase db = client.getDatabase(uri.getDatabase());
+            MongoCollection<Document> userlist = db.getCollection("ASD-app-opalCards");
+            Document doc = userlist.find(and(eq("OpalID", opalID))).first();
+            opalCard = new OpalCard((String) doc.get("OpalID"), (String) doc.get("CustomerID"), (double) doc.get("Balance"), (String) doc.get("Type"), (String) doc.get("SecurityCode"));
+        }
+        return opalCard;
+    }
+        public void add(OrderPayment orderPayment) {
+        MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
+        try (MongoClient client = new MongoClient(uri)) {
+            MongoDatabase db = client.getDatabase(uri.getDatabase());
+            orderPayments.add(new Document("PaymentID", orderPayment.getPaymentId()).append("OrderID", orderPayment.getOrderId()).append("FirstName", orderPayment.getFirstName()).append("LastName", orderPayment.getLastName()).append("CardNumber", orderPayment.getCardNumber()).append("ExpiryMonth", orderPayment.getExpiryMonth()).append("ExpiryYear", orderPayment.getExpiryYear()).append("CVV", orderPayment.getCvv()));
+            MongoCollection<Document> userlist = db.getCollection("ASD-app-orderPayments"); //Create a collection ASD-app-users on mLab
+            userlist.insertMany(orderPayments);
+        }
+    }
+    
+    public void add(Order order) {
+        MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
+        try (MongoClient client = new MongoClient(uri)) {
+            MongoDatabase db = client.getDatabase(uri.getDatabase());
+            orders.add(new Document("OrderID", order.getOrderId()).append("CustomerID", order.getCustomerId()).append("OpalID", order.getOpalId()).append("OpalType", order.getOpalType()).append("OrderDate", order.getOrderDate()).append("Value", order.getValue()).append("Status", order.getStatus()));
+            MongoCollection<Document> userlist = db.getCollection("ASD-app-orders"); //Create a collection ASD-app-users on mLab
+            userlist.insertMany(orders);
+        }
     }
 }
