@@ -1,0 +1,79 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 17/08/2019, 7:30:48 PM
+    Author     : aasdd
+*/
+
+
+     .orderConfirmation{
+        float: left;
+        width: 73%;
+        height: 520px;
+        padding: 30px;
+        margin: 10px 250px;
+        border-radius: 5px;
+        background-color: #e6f7ff;
+        border-top: 1px solid #b3d9ff;   
+    } 
+    
+    h3 {
+        color: #004d80;
+        font-family: Arial;
+        margin-left: 240px;
+      
+    }
+    
+    .orderConfirmation h6 {
+        color: #331a00;
+        font-family: Arial;
+    }
+    .button {
+        font: 15px Arial;
+        text-decoration: none;
+        background-color: #005580;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 5px 7px 5px 7px;
+        margin-top: 50px;
+        border-top: 2px solid #ffffff;
+        border-left: 2px solid #ffffff;
+        border-right: 2px solid #00334d;
+        border-bottom: 3px solid #00334d;
+    }
+    .orderConfirmation td {
+        color: #331a00;
+        font-family: Arial;
+        font-size: 16px;
+        padding-top: 18px;
+        padding-right: 10px;
+        padding-left: 50px;
+    }
+    .orderConfirmation a,.orderConfirmation input[type=submit]{
+        font: 15px Arial;
+        background-color: #005580;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 5px 7px 5px 7px;
+        margin-top: 10px;
+        margin-bottom:10px;
+        border-right: 2px solid #00334d;
+        border-bottom: 3px solid #00334d;
+    }
+            
+    A:hover, .orderConfirmation input[type=submit]:hover{
+        background-color: #0088cc;
+        text-decoration: none;
+    }
+    
+    .orderConfirmation hr {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        border-width: 1px;
+    }
+    
