@@ -24,7 +24,7 @@
             <tr><td>First name(s)</td><td><input type = "text" name = "firstname" required></td>
             <td>Last name</td><td><input type = "text" name = "lastname" required></td></tr>
             <tr><td>Email Address</td><td><input type = "email" name = "email" required></td>
-                <td>Mobile Phone</td><td><input type = "number" name = "phone" required></td></tr>
+                <td>Mobile Phone</td><td><input type = "text" name = "phone" required></td></tr>
             <tr><td>Password</td><td><input type = "password" name = "password" required></td></tr>
             <tr><td>Address</td><td><input type = "text" name = "address" required></td></tr>
             <tr><td>I read <a href = 'asdf.jsp'>the tos</a></td><td><input type = "checkbox" name = "tos" required></td></tr>

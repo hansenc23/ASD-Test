@@ -25,7 +25,7 @@
             String type = request.getParameter("type");
             double balance = Double.parseDouble(request.getParameter("balance"));
             String name = user.getFirstName() + " " + user.getLastName();
-            //DAO return a card using (opalID) as parameter
+
         %>
         <div class="card">
             <h3>Card Details</h3>

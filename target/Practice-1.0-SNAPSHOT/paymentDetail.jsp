@@ -85,7 +85,7 @@
                 </select>
                 </td>
                 <td>CVV</td>
-                <td><input type = "number" name = "cvv" minlength="3" maxlength="3" size = "1" required></td></tr>
+                <td><input type = "text" name = "cvv" minlength="3" maxlength="3" size = "1" required></td></tr>
             <tr><td colspan = "3"><a class = "button" href = "contactDetail.jsp">Back</a></td><td align = "right"><input type =  "submit" value = "Continue"></td></tr>
             <tr><td><a class = "button" href = "orderCancelled.jsp">Cancel</a></tr>
         </table>

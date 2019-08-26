@@ -18,9 +18,10 @@
         <title>Card Page</title>
     </head>
     <body>
+        
         <%
             User user = (User)session.getAttribute("user");
-            //OpalCard card = (OpalCard)session.getAttribute("card");
+            
             //Add paymentmethod to user 
             if (request.getParameter("firstname") != null){
         String firstname = request.getParameter("firstname");
@@ -36,17 +37,23 @@
         connector.addPayment(paymt, user);
         }
             
+
             String opalID = request.getParameter("ID1") + " " + request.getParameter("ID2") + " "
                           + request.getParameter("ID3") + " " +request.getParameter("ID4");
             String securityCode = request.getParameter("securityCode");
             double balance = 0.00;
             String type = "Adult";
-            String customerID = user.getEmail();
+
             
-            OpalCard card = new OpalCard(opalID, customerID, balance, type, securityCode);
-            session.setAttribute("card", card);
+            String adminemail = (String)session.getAttribute("adminemail");
+            String adminpass = (String)session.getAttribute("adminpassword");
+            MongoDBConnector connector = new MongoDBConnector(adminemail, adminpass);
             
             if (securityCode != null) {
+                OpalCard card = new OpalCard(opalID, balance, type, securityCode);
+                session.setAttribute("card", card);
+
+                connector.add(card, user);
         %>
             <div class="box">
                 <h2>Opal cards</h2>
@@ -73,10 +80,10 @@
                 </table>
             </div>
         <%
-            }
-        else{
+        }
+        else {
         %>
-            <div class="box">
+            <div class="box">    
                 <h2>Welcome to Opal Card Management website!</h2>
             </div>
         <%
@@ -84,3 +91,4 @@
         %>
     </body>
 </html>
+

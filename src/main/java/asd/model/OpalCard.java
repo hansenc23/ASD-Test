@@ -12,7 +12,6 @@ import java.io.Serializable;
  */
 public class OpalCard implements Serializable {
     private String opalID;
-    private String customerID;
     private double balance;
     private String type;
     private String securityCode;
@@ -20,9 +19,8 @@ public class OpalCard implements Serializable {
     public OpalCard() {
     }
 
-    public OpalCard(String opalID, String customerID, double balance, String type, String securityCode) {
+    public OpalCard(String opalID, double balance, String type, String securityCode) {
         this.opalID = opalID;
-        this.customerID = customerID;
         this.balance = balance;
         this.type = type;
         this.securityCode = securityCode;
@@ -34,14 +32,6 @@ public class OpalCard implements Serializable {
 
     public void setOpalID(String opalID) {
         this.opalID = opalID;
-    }
-
-    public String getCustomerID() {
-        return customerID;
-    }
-
-    public void setCustomerID(String customerID) {
-        this.customerID = customerID;
     }
 
     public double getBalance() {

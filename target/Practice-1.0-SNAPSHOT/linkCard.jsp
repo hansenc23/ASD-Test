@@ -28,14 +28,14 @@
                     <tr><td colspan="3">Opal card number</td></tr>
                     <tr>
                         <td>
-                            <input type ="text" name = "ID1" minlength="4" maxlength="4" required>
-                            <input type ="text" name = "ID2" minlength="4" maxlength="4" required>
-                            <input type ="text" name = "ID3" minlength="4" maxlength="4" required>
-                            <input type ="text" name = "ID4" minlength="4" maxlength="4" required>
+                            <input type ="text" name = "ID1" minlength="4" maxlength="4" pattern="\d*" required>
+                            <input type ="text" name = "ID2" minlength="4" maxlength="4" pattern="\d*" required>
+                            <input type ="text" name = "ID3" minlength="4" maxlength="4" pattern="\d*" required>
+                            <input type ="text" name = "ID4" minlength="4" maxlength="4" pattern="\d*" required>
                         </td>
                     </tr>
                     <tr><td>Security code</td></tr>
-                    <tr><td><input type ="text" name = "securityCode" minlength="4" maxlength="4" required></td></tr>
+                    <tr><td><input type ="text" name = "securityCode" minlength="4" maxlength="4" pattern="\d*" required></td></tr>
                     <tr><td><input type ="submit" value = "Link" name="link"></td></tr>
                 </table>
             </form>
