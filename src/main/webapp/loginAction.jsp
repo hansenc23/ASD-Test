@@ -25,6 +25,8 @@
         <% 
         String email = request.getParameter("email");
         String password = request.getParameter("password");
+        
+        
      
         String adminemail = (String)session.getAttribute("adminemail");
         String adminpass = (String)session.getAttribute("adminpassword");

@@ -5,6 +5,8 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page import="asd.model.dao.MongoDBConnector"%>
+<%@page import="asd.model.*"%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -13,6 +15,12 @@
         
     </head>
     <body>
+          <%
+         User user = (User) session.getAttribute("user");
+         //String name = user.getFirstName();
+         if (user ==null){
+            
+        %>
         <div class="navigation-bar">
             <ul>
                 <li><a href="#">FAQs</a></li>
@@ -25,5 +33,19 @@
                 <li id="logo"><img height="70px" src="image/opal_logo.png"></li>
             </ul>
         </div>
+        <%}else{
+        String name = user.getFirstName();%>
+         <div class="navigation-bar">
+             <ul>
+                <li><a>Welcome <%=name%></a></li>
+                <li><a href="logout.jsp">Logout</a></li>
+                <li><a href="main.jsp">Home</a></li>
+              
+                
+                <li id="logo"><img height="70px" src="image/nsw_logo.png"></li>
+                <li id="logo"><img height="70px" src="image/opal_logo.png"></li>
+                </ul>
+          </div>
+        <%}%>
     </body>
 </html>

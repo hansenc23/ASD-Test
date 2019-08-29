@@ -18,8 +18,7 @@
         <title>Link Card</title>
     </head>
     <body>
-        <%
-            User user = (User)session.getAttribute("user");
+        <%// User user = (User)session.getAttribute("user");
         %>
         <h2>Link existing Opal card to account</h2>
         <div class="cardDetails">

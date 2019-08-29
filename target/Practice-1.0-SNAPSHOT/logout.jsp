@@ -16,6 +16,6 @@
         <% session.removeAttribute("customer");         
         session.invalidate(); %>
         <p>You have been logged out</p>
-        <p>Click here to return to <a href="Main.jsp"> main page</a> </p>
+        <p>Click here to return to <a href="main.jsp"> main page</a> </p>
     </body>
 </html>
