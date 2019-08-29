@@ -37,7 +37,7 @@
         String cvv = request.getParameter("cvv");
         String cardNumber = request.getParameter("cardnumber");
         String currentDate = new SimpleDateFormat("yyyy-MM-dd").format(new Date());
-        User user = (User) session.getAttribute("user"); 
+        //User user = (User) session.getAttribute("user"); 
         String opalId = "123123123";
         TopUpPayment tpmt = new TopUpPayment(firstname,lastname,cardNumber, expiryMonth, expiryYear, cvv, amount, opalId, currentDate); 
         String adminemail = (String)session.getAttribute("adminemail");

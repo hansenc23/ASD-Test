@@ -20,7 +20,7 @@
     <body>
         
         <%
-            User user = (User)session.getAttribute("user");
+            //User user = (User)session.getAttribute("user");
             
             //Add paymentmethod to user 
             if (request.getParameter("firstname") != null){

@@ -28,7 +28,7 @@
             String password = request.getParameter("password");
             String address = request.getParameter("address");  
             
-            User user = new User(firstname, lastname, email, password, address, phone);
+            //User user = new User(firstname, lastname, email, password, address, phone);
             session.setAttribute("user", user);
             
             String adminemail = (String)session.getAttribute("adminemail");

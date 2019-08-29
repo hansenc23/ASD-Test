@@ -18,7 +18,7 @@
     </head>
     <body>
         <%
-            User user = (User)session.getAttribute("user");
+            //User user = (User)session.getAttribute("user");
             OpalCard card = (OpalCard)session.getAttribute("card");
             
             String opalID = request.getParameter("opalID");

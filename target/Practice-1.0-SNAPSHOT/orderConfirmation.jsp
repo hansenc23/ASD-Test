@@ -32,7 +32,7 @@
             int expiryyear = Integer.parseInt(request.getParameter("expiryyear"));
             int cvv = Integer.parseInt(request.getParameter("cvv"));  
             
-            User user = (User)session.getAttribute("user");
+            //User user = (User)session.getAttribute("user");
             
             OrderPayment orderpayment = new OrderPayment(paymentID, orderID, cardfname, cardlname, cardnumber, expirymonth, expiryyear, cvv);
             session.setAttribute("orderpayment", orderpayment);
