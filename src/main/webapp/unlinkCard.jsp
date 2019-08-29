@@ -18,7 +18,9 @@
     </head>
     <body>
         <%
+
            //User user = (User)session.getAttribute("user");
+
             OpalCard card = (OpalCard)session.getAttribute("card"); 
             
             if (request.getParameter("unlink") != null){

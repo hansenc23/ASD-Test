@@ -25,8 +25,9 @@
         String password = request.getParameter("password");
         String address = request.getParameter("address");
         String phoneNumber = request.getParameter("phone");
-
-        User user = new User(firstName, lastName, email, password, address, phoneNumber);
+        boolean isAdmin = Boolean.parseBoolean( request.getParameter("isAdmin") );
+        
+        User user = new User(firstName, lastName, email, password, address, phoneNumber, isAdmin);
         session.setAttribute("user", user);        
         
         String adminemail = (String)session.getAttribute("adminemail");
@@ -46,6 +47,7 @@
                 <tr><td>Password: </td><td class="text"><%=password%></td></tr>
                 <tr><td>Address: </td><td class="text"><%=address%></td></tr>
                 <tr><td>Phone: </td><td class="text"><%=phoneNumber%></td></tr>
+                <tr><td>Admin? </td><td class="text"><%=isAdmin%></td></tr>
             </table> 
         </div>   
     </body>
