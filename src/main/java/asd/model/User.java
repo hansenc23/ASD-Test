@@ -16,21 +16,31 @@ public class User  implements Serializable{
     private String password;
     private String address;
     private String phoneNumber;
+    private String isStaff;
 
     public User() {
     }
 
-    public User(String firstName, String lastName, String email, String password, String address, String phoneNumber) {
+    public User(String firstName, String lastName, String email, String password, String address, String phoneNumber, String isStaff) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
         this.password = password;
         this.address = address;
         this.phoneNumber = phoneNumber;
+        this.isStaff = isStaff;
     }
 
     public boolean match(String email){
         return this.email.equalsIgnoreCase(email.trim());
+    }
+    
+    public String getIsStaff(){
+        return isStaff;
+    }
+    
+    public void getIsStaff(String isStaff){
+        this.isStaff = isStaff;
     }
     
     public String getPhoneNumber() {
