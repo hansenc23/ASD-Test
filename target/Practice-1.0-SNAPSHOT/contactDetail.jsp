@@ -7,6 +7,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page import="asd.model.dao.MongoDBConnector"%>
 <%@page import="asd.model.*"%>
+<%@page import="java.util.Random"%>
 <%@include file="navbar.jsp" %>
 <%@include file="sidebar.jsp" %>
 <!DOCTYPE html>
@@ -20,12 +21,34 @@
     </head>
     <body>
         <%
-            String type = request.getParameter("order");
+            String type;
             
-            String adminemail = (String)session.getAttribute("adminemail");
-            String adminpass = (String)session.getAttribute("adminpassword");
-            MongoDBConnector connector = new MongoDBConnector(adminemail, adminpass);
-            connector.add();
+            String adult = request.getParameter("adult");
+            String child = request.getParameter("child");
+            String pensioner = request.getParameter("pensioner");
+            String concession = request.getParameter("concession");
+            
+            //assign the type by checking whether the value is null
+            if(adult!= null){
+                type = "adult";
+            }
+            else if(child != null){
+                type = "child";
+            }
+            else if (pensioner != null){
+                type = "pensioner";
+            }
+            else{
+                type = "concession";
+            }
+            
+            //random the opalID
+            String opalID = "" + (new Random()).nextInt(99999999) + (new Random()).nextInt(99999999);;
+           
+            //add the opalId and type
+            Order addType = new Order("", opalID, type, "", 0, "");
+            session.setAttribute("addType", addType);
+            
         %>
         <h3>&nbsp;&ensp;Enter your personal detail</h3>
         <div class = "orderDetail">

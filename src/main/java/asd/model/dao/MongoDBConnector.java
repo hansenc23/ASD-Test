@@ -143,7 +143,7 @@ public class MongoDBConnector {
     
     //Get a customerID using user's email and password
     public String getCustomerID(String email, String password) {
-        MongoClientURI uri = new MongoClientURI("mongodb://" + this.owner + ":" + this.password + "@ds031965.mlab.com:31965/heroku_5s97hssp");
+        MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
         String customerID;
         try (MongoClient client = new MongoClient(uri)) {
             MongoDatabase db = client.getDatabase(uri.getDatabase());
@@ -228,7 +228,7 @@ public class MongoDBConnector {
         return opalCards;   
     }
    
-//  If Opal Card is already exist in DB    
+    //If Opal Card is already exist in DB    
     public boolean isExist(OpalCard card) {
         MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
         boolean exist = false;
@@ -284,7 +284,7 @@ public class MongoDBConnector {
         MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
         try (MongoClient client = new MongoClient(uri)) {
             MongoDatabase db = client.getDatabase(uri.getDatabase());
-            orders.add(new Document("OrderID", order.getOrderId()).append("CustomerID", order.getCustomerId()).append("OpalID", order.getOpalId()).append("OpalType", order.getOpalType()).append("OrderDate", order.getOrderDate()).append("Value", order.getValue()).append("Status", order.getStatus()));
+            orders.add(new Document("CustomerID", order.getCustomerId()).append("OpalID", order.getOpalId()).append("OpalType", order.getOpalType()).append("OrderDate", order.getOrderDate()).append("Value", order.getValue()).append("Status", order.getStatus()));
             MongoCollection<Document> orderlist = db.getCollection("ASD-app-orders");
             orderlist.insertMany(orders);
         }

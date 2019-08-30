@@ -11,7 +11,6 @@ package asd.model;
  */
 public class Order {
     
-    private String orderId;
     private String customerId;
     private String opalId;
     private String opalType;
@@ -23,8 +22,7 @@ public class Order {
     public Order() {
     }
     
-    public Order(String orderId, String customerId, String opalId, String opalType, String orderDate, double value, String status) {
-        this.orderId = orderId;
+    public Order(String customerId, String opalId, String opalType, String orderDate, double value, String status) {
         this.customerId = customerId;
         this.opalId = opalId;
         this.opalType = opalType;
@@ -33,14 +31,6 @@ public class Order {
         this.status = status;
     }
 
-
-    public String getOrderId() {
-        return orderId;
-    }
-
-    public void setOrderId(String orderId) {
-        this.orderId = orderId;
-    }
 
     public String getCustomerId() {
         return customerId;
