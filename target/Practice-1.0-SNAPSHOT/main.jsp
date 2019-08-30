@@ -38,11 +38,9 @@
                     MongoDBConnector connector = new MongoDBConnector(adminemail, adminpass);
                     connector.addPayment(paymt, user);
                 }
-
                 String adminemail = (String)session.getAttribute("adminemail");
                 String adminpass = (String)session.getAttribute("adminpassword");
                 MongoDBConnector connector = new MongoDBConnector(adminemail, adminpass);
-
                 OpalCards dbCards = new OpalCards();
                 ArrayList<OpalCard> cards = new ArrayList<OpalCard>();
                 dbCards = connector.getOpalCards(user);
@@ -74,7 +72,6 @@
                         else if (cardType.equalsIgnoreCase("Concession")) {
                             imgURL = "image/card_concession_large.png";
                         }
-
         %>        
                         <tr>
                             <td><img src=<%=imgURL%> width="30px">&ensp;&ensp;<%=cardType%></td>
@@ -107,4 +104,3 @@
         %>
     </body>
 </html>
-

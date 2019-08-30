@@ -12,11 +12,13 @@ import com.mongodb.client.MongoCursor;
 import com.mongodb.client.MongoDatabase;
 import static com.mongodb.client.model.Filters.and;
 import static com.mongodb.client.model.Filters.eq;
+import com.mongodb.client.model.Updates;
 
 public class MongoDBConnector {
 
     private List<Document> users = new ArrayList();
     private List<Document> cards = new ArrayList();
+    private List<Document> paymentMethods = new ArrayList();
     private List<Document> orders = new ArrayList();
     private String owner;
     private String password;
@@ -121,8 +123,20 @@ public class MongoDBConnector {
         try(MongoClient client = new MongoClient(uri)){
             MongoDatabase db = client.getDatabase(uri.getDatabase());
             MongoCollection<Document> userlist = db.getCollection("ASD-app-users");
+            Document userdoc =  userlist.find(eq("Username", user.getEmail())).first();
+            paymentMethods = (List<Document>) userdoc.get("PaymentMethod");
+            int i = 1;
+            for (Document paymentmethod : paymentMethods){
+                i++;
+            }
+            
             Document doc = new Document().append("FirstName", paymt.getFirstName()).append("LastName", paymt.getLastName()).append("CardNumber", paymt.getCardNumber()).append("ExpiryMonth", paymt.getExpiryMonth()).append("ExpiryYear", paymt.getExpiryYear()).append("CVV", paymt.getCvv());
-            userlist.updateOne(eq("Username", user.getEmail()), new Document("$set", new Document("PaymentMethod",doc)));          
+            
+            if(i <= 3 ){
+                 userlist.updateOne(eq("Username", user.getEmail()),Updates.addToSet("PaymentMethod", doc) );
+            }
+           
+            //new Document("$set", new Document("PaymentMethod",doc))
         }
     }
     //add a payment to payment record
@@ -140,6 +154,8 @@ public class MongoDBConnector {
         }
          
     }
+    
+    
     
     //Get a customerID using user's email and password
     public String getCustomerID(String email, String password) {
@@ -228,7 +244,7 @@ public class MongoDBConnector {
         return opalCards;   
     }
    
-//  If Opal Card is already exist in DB    
+    //If Opal Card is already exist in DB    
     public boolean isExist(OpalCard card) {
         MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
         boolean exist = false;
@@ -284,7 +300,7 @@ public class MongoDBConnector {
         MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
         try (MongoClient client = new MongoClient(uri)) {
             MongoDatabase db = client.getDatabase(uri.getDatabase());
-            orders.add(new Document("OrderID", order.getOrderId()).append("CustomerID", order.getCustomerId()).append("OpalID", order.getOpalId()).append("OpalType", order.getOpalType()).append("OrderDate", order.getOrderDate()).append("Value", order.getValue()).append("Status", order.getStatus()));
+            orders.add(new Document("CustomerID", order.getCustomerId()).append("OpalID", order.getOpalId()).append("OpalType", order.getOpalType()).append("OrderDate", order.getOrderDate()).append("Value", order.getValue()).append("Status", order.getStatus()));
             MongoCollection<Document> orderlist = db.getCollection("ASD-app-orders");
             orderlist.insertMany(orders);
         }

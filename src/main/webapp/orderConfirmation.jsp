@@ -9,8 +9,7 @@
 <%@page import="java.util.Random"%>
 <%@include file="navbar.jsp"%>
 <%@include file="sidebar.jsp" %>
-<%@page import="asd.model.User"%>
-<%@page import="asd.model.OrderPayment"%>
+<%@page import="asd.model.*"%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -22,25 +21,18 @@
     </head>
     <body>
         <%
-            String paymentID = "P" + (new Random()).nextInt(999999);
-            String orderID = "O" + (new Random()).nextInt(999999);
             double amount = Double.parseDouble(request.getParameter("amount"));
             String cardfname = request.getParameter("cardfname");
             String cardlname = request.getParameter("cardlname");
             String cardnumber = request.getParameter("cardnumber");
             int expirymonth = Integer.parseInt(request.getParameter("expirymonth"));
             int expiryyear = Integer.parseInt(request.getParameter("expiryyear"));
-            int cvv = Integer.parseInt(request.getParameter("cvv"));  
+            int cvv = Integer.parseInt(request.getParameter("cvv")); 
             
-            //User user = (User)session.getAttribute("user");
-            
-            OrderPayment orderpayment = new OrderPayment(paymentID, orderID, cardfname, cardlname, cardnumber, expirymonth, expiryyear, cvv);
-            session.setAttribute("orderpayment", orderpayment);
             
             String adminemail = (String)session.getAttribute("adminemail");
             String adminpass = (String)session.getAttribute("adminpassword");
             MongoDBConnector connector = new MongoDBConnector(adminemail, adminpass);
-            connector.add(orderpayment);
                         
         %>
         <h3>&nbsp;&ensp;Order Confirmation</h3>
