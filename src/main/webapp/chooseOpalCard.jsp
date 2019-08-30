@@ -20,13 +20,11 @@
     <body>
         <div class = "clearfix">
             <%
-                //check whether the user login, if no then go to contactDetail.jsp
                 if(user==null){
             %>
                     <form method = "post" action = "contactDetail.jsp" >
             <%
                 }
-                //if yes then go to paymentDetail.jsp
                 if(user!=null){
             %>
                     <form method = "post" action = "paymentDetail.jsp" >
