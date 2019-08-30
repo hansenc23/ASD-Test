@@ -5,6 +5,8 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page import="asd.model.dao.MongoDBConnector"%>
+<%@page import="asd.model.*"%>
 <%@include file="navbar.jsp" %>
 <%@include file="sidebar.jsp" %>
 <!DOCTYPE html>
@@ -17,6 +19,14 @@
         <title>Order Detail</title>
     </head>
     <body>
+        <%
+            String type = request.getParameter("order");
+            
+            String adminemail = (String)session.getAttribute("adminemail");
+            String adminpass = (String)session.getAttribute("adminpassword");
+            MongoDBConnector connector = new MongoDBConnector(adminemail, adminpass);
+            connector.add();
+        %>
         <h3>&nbsp;&ensp;Enter your personal detail</h3>
         <div class = "orderDetail">
         <form method = "post" action = "paymentDetail.jsp" > 

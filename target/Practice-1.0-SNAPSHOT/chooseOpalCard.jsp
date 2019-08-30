@@ -5,7 +5,7 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@page import="asd.model.User"%>
+<%@page import="asd.model.*"%>
 <%@include file="navbar.jsp" %>
 <%@include file="sidebar.jsp" %>
 <!DOCTYPE html>
@@ -22,15 +22,13 @@
             <%
                 if(user==null){
             %>
-            <form method = "post" action = "contactDetail.jsp" >
+                    <form method = "post" action = "contactDetail.jsp" >
             <%
                 }
                 if(user!=null){
             %>
-            <form method = "post" action = "paymentDetail.jsp" >
-            <%
-                }
-            %>
+                    <form method = "post" action = "paymentDetail.jsp" >
+            <%  }%>
             <h3>&nbsp;&ensp;Choose an Opal card:</h3>
             <div class = "box">
                 <img src = "./image/card_adult_large.png">

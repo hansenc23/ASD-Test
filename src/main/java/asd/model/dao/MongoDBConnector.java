@@ -108,8 +108,14 @@ public class MongoDBConnector {
         }
         return user;
     }
+  
     
-     //Add paymenthod to a particular User 
+    
+    
+
+//Payment and topup management
+    
+    //Add paymenthod to a particular User 
     public void addPayment(Paymentmethod paymt, User user){
         MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
         try(MongoClient client = new MongoClient(uri)){
@@ -148,7 +154,12 @@ public class MongoDBConnector {
         return customerID;
     }
     
-    //CARD MANAGEMENT
+//
+    
+
+    
+    
+//CARD MANAGEMENT
     
     // Staff register opal cards to the db
     public void registerCard(OpalCard card) {
@@ -263,8 +274,11 @@ public class MongoDBConnector {
         return correct;
     }
     
- // 
- 
+// 
+
+    
+//Order Management
+    
     //add order
     public void add(Order order) {
         MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
@@ -275,4 +289,6 @@ public class MongoDBConnector {
             orderlist.insertMany(orders);
         }
     }
+
+//
 }
