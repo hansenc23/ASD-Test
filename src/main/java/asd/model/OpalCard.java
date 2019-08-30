@@ -19,6 +19,15 @@ public class OpalCard implements Serializable {
     public OpalCard() {
     }
 
+    public OpalCard(String opalID) {
+        this.opalID = opalID;
+    }
+
+    public OpalCard(String opalID, String securityCode) {
+        this.opalID = opalID;
+        this.securityCode = securityCode;
+    }
+    
     public OpalCard(String opalID, double balance, String type, String securityCode) {
         this.opalID = opalID;
         this.balance = balance;

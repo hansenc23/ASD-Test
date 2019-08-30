@@ -148,18 +148,56 @@ public class MongoDBConnector {
         return customerID;
     }
     
-    //Add an opal card
-    public void add(OpalCard card, User user) {
+    //CARD MANAGEMENT
+    
+    // Staff register opal cards to the db
+    public void registerCard(OpalCard card) {
+        MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
+        try (MongoClient client = new MongoClient(uri)) {
+            MongoDatabase db = client.getDatabase(uri.getDatabase());
+            MongoCollection<Document> opallist = db.getCollection("ASD-app-opalCards");
+            Document doc = new Document().append("OpalID", card.getOpalID()).append("Balance", card.getBalance()).append("Type", card.getType()).append("SecurityCode", card.getSecurityCode());
+            opallist.insertOne(doc);
+        }
+    }
+    
+    // Update registered opal card's customer ID from null to user's ID
+    public void linkCard(OpalCard card, User user) {
         MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
         try (MongoClient client = new MongoClient(uri)) {
             MongoDatabase db = client.getDatabase(uri.getDatabase());
             MongoCollection<Document> opallist = db.getCollection("ASD-app-opalCards");
             MongoCollection<Document> userlist = db.getCollection("ASD-app-users");
-            Document doc = userlist.find(and(eq("Username", user.getEmail()), eq("Password", user.getPassword()))).first();
-            String customerID = (String) doc.get("_id").toString();
-            cards.add(new Document("OpalID", card.getOpalID()).append("CustomerID", customerID).append("Balance", card.getBalance()).append("Type", card.getType()).append("SecurityCode", card.getSecurityCode()));
-            opallist.insertMany(cards);
+            String customerID = getCustomerID(user.getEmail(), user.getPassword());
+            opallist.updateOne(eq("OpalID", card.getOpalID()), new Document("$set", new Document("CustomerID", customerID))); 
         }
+    }
+    
+    // Update the linked opal card's customer ID from user's ID to null
+    public void unlinkCard(OpalCard card, User user) {
+        MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
+        try (MongoClient client = new MongoClient(uri)) {
+            MongoDatabase db = client.getDatabase(uri.getDatabase());
+            MongoCollection<Document> opallist = db.getCollection("ASD-app-opalCards");
+            MongoCollection<Document> userlist = db.getCollection("ASD-app-users");
+            opallist.updateOne(eq("OpalID", card.getOpalID()), new Document("$unset", new Document("CustomerID", null))); 
+        }
+    }
+    
+    // For staff to show all opal cards
+    public OpalCards showAllCards() {
+        MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
+        OpalCards opalCards;
+        try (MongoClient client = new MongoClient(uri)) {
+            MongoDatabase db = client.getDatabase(uri.getDatabase());
+            opalCards = new OpalCards();
+            MongoCollection<Document> opallist = db.getCollection("ASD-app-opalCards");
+            for (Document doc : opallist.find()) {
+                OpalCard card = new OpalCard((String) doc.get("OpalID"), (double) doc.get("Balance"), (String) doc.get("Type"), (String) doc.get("SecurityCode"));
+                opalCards.addCard(card);
+            }
+        }
+        return opalCards;
     }
     
     //Get all opal card(s) of a particular user
@@ -170,16 +208,63 @@ public class MongoDBConnector {
             MongoDatabase db = client.getDatabase(uri.getDatabase());
             MongoCollection<Document> opallist = db.getCollection("ASD-app-opalCards");
             MongoCollection<Document> userlist = db.getCollection("ASD-app-users");
-            Document userdoc = userlist.find(and(eq("Username", user.getEmail()), eq("Password", user.getPassword()))).first();
-            String customerID = (String) userdoc.get("_id").toString();
-            for (Document doc : opallist.find((and(eq("CustomerID", customerID))))) {
+            String customerID = getCustomerID(user.getEmail(), user.getPassword());
+            for (Document doc : opallist.find(eq("CustomerID", customerID))) {
                 OpalCard card = new OpalCard((String) doc.get("OpalID"), (double) doc.get("Balance"), (String) doc.get("Type"), (String) doc.get("SecurityCode"));
                 opalCards.addCard(card);
             }
         }
         return opalCards;   
     }
+   
+//  If Opal Card is already exist in DB    
+    public boolean isExist(OpalCard card) {
+        MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
+        boolean exist = false;
+        try (MongoClient client = new MongoClient(uri)) {
+            MongoDatabase db = client.getDatabase(uri.getDatabase());
+            MongoCollection<Document> opallist = db.getCollection("ASD-app-opalCards");
+            Document doc = opallist.find(eq("OpalID", card.getOpalID())).first();
+            if (doc != null) {
+                exist = true;
+            }
+        }
+        return exist;
+    }
     
+    // Whether the card that the user want to link already been linked to their account
+    public boolean isLinked(OpalCard card, User user) {
+        MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
+        boolean linked = false;
+        try (MongoClient client = new MongoClient(uri)) {
+            MongoDatabase db = client.getDatabase(uri.getDatabase());
+            MongoCollection<Document> opallist = db.getCollection("ASD-app-opalCards");
+            String customerID = getCustomerID(user.getEmail(), user.getPassword());
+            Document doc = opallist.find(and(eq("OpalID", card.getOpalID()), eq("CustomerID", customerID))).first();
+            if (doc != null) {
+                linked = true;
+            }
+        }
+        return linked;
+    }
+    
+    // Check if the card is registered in db and match with its security code (true if it's registered and correct)
+    public boolean isAvailable(OpalCard card) {
+        MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
+        boolean correct = false;
+        try (MongoClient client = new MongoClient(uri)) {
+            MongoDatabase db = client.getDatabase(uri.getDatabase());
+            MongoCollection<Document> opallist = db.getCollection("ASD-app-opalCards");
+            Document doc = opallist.find(and(eq("OpalID", card.getOpalID()), eq("SecurityCode", card.getSecurityCode()))).first();
+            if (doc != null) {
+                correct = true;
+            }
+        }
+        return correct;
+    }
+    
+ // 
+ 
     //add order
     public void add(Order order) {
         MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
