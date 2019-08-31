@@ -107,6 +107,8 @@
                             p = paymentMethod;
                         }
                     }
+                    Order addcardnum = new Order(getAmount.getCustomerId(), getAmount.getOpalId(), p.getCardNumber(), getAmount.getOpalType(), "", getAmount.getValue(), "");
+                    session.setAttribute("addCardNum", addcardnum);
         %>
                     <table>
                         <tr><td>First name(s) :</td><td><%= p.getFirstName()%></td>
