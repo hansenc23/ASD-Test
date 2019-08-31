@@ -36,6 +36,7 @@
                     <tr><td>Address:</td><td><input type="text" name="address"></td></tr>  
                     <tr><td>Phone Number:</td><td> <input type="text" name ="phone"></td></tr>
                     <tr><td>Admin</td><td> <input type="checkbox" name ="isStaff" value="true"></td></tr>
+                     
                     <tr><td></td>
                         <td>
                             <input class="button" type="submit" value="Register"> 
