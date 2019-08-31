@@ -21,10 +21,14 @@
     </head>
     <body>
         <%
+            String adminemail = (String)session.getAttribute("adminemail");
+            String adminpass = (String)session.getAttribute("adminpassword");
+            MongoDBConnector connector = new MongoDBConnector(adminemail, adminpass);
+            
             double amount = Double.parseDouble(request.getParameter("amount"));
             
             Order getCusId = (Order)session.getAttribute("addCusId");
-            Order addAmount = new Order(getCusId.getCustomerId(), getCusId.getOpalId(), getCusId.getOpalType(), "", amount, "");
+            Order addAmount = new Order(getCusId.getCustomerId(), getCusId.getOpalId(), "", getCusId.getOpalType(), "", amount, "");
             session.setAttribute("addAmounta", addAmount);
             
             String cardfname = request.getParameter("cardfname");
@@ -37,10 +41,8 @@
             Paymentmethod payment = new Paymentmethod(cardfname, cardlname, cardnumber, expirymonth, expiryyear, cvv);
             session.setAttribute("orderPayment", payment);
             
-            String adminemail = (String)session.getAttribute("adminemail");
-            String adminpass = (String)session.getAttribute("adminpassword");
-            MongoDBConnector connector = new MongoDBConnector(adminemail, adminpass);
-            connector.addPayment(payment, user);
+            
+            connector.add(payment, getCusId);
             
             
             

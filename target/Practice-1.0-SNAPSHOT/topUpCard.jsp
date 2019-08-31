@@ -76,7 +76,7 @@
             ArrayList<Paymentmethod> paymentMethods = new ArrayList<Paymentmethod>();
             pmtmethods  =  connector.getPaymentMethods(user);
             paymentMethods = pmtmethods.getList();
-            if(paymentMethods != null){
+            if(!paymentMethods.isEmpty()){
                 for (Paymentmethod paymentMethod: paymentMethods){
         %>
             <p> <%= paymentMethod.getCardNumber()%></p>

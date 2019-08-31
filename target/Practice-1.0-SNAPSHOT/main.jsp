@@ -45,7 +45,7 @@
                 ArrayList<OpalCard> cards = new ArrayList<OpalCard>();
                 dbCards = connector.getOpalCards(user);
                 cards = dbCards.getList(); 
-                if (cards != null) {
+                if (!cards.isEmpty()) {
         %>
                     <div class="box">
                     <h1>Opal Cards</h1>
