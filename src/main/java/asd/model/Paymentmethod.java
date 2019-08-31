@@ -14,12 +14,12 @@ public class Paymentmethod implements Serializable {
     
     private String firstName;
     private String lastName; 
-    private int cardNumber;
+    private String cardNumber;
     private int expiryMonth;
     private int expiryYear;
     private int cvv;
     
-    public Paymentmethod(String firstName, String lastName, int cardNumber, int expiryMonth, int expiryYear, int cvv) {
+    public Paymentmethod(String firstName, String lastName, String cardNumber, int expiryMonth, int expiryYear, int cvv) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.cardNumber = cardNumber;
@@ -59,14 +59,14 @@ public class Paymentmethod implements Serializable {
     /**
      * @return the cardNumber
      */
-    public int getCardNumber() {
+    public String getCardNumber() {
         return cardNumber;
     }
 
     /**
      * @param cardNumber the cardNumber to set
      */
-    public void setCardNumber(int cardNumber) {
+    public void setCardNumber(String cardNumber) {
         this.cardNumber = cardNumber;
     }
 

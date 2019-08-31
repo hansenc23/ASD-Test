@@ -28,7 +28,7 @@
                 if (request.getParameter("firstname") != null){
                     String firstname = request.getParameter("firstname");
                     String lastname = request.getParameter("lastname");
-                    int cardnumber = Integer.parseInt(request.getParameter("cardnumber"));
+                    String cardnumber = request.getParameter("cardnumber");
                     int expiryMonth = Integer.parseInt(request.getParameter("expiryMonth"));
                     int expiryYear = Integer.parseInt(request.getParameter("expiryYear"));
                     int cvv = Integer.parseInt(request.getParameter("cvv"));

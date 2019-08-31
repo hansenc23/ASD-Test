@@ -22,6 +22,11 @@
     <body>
         <%
             double amount = Double.parseDouble(request.getParameter("amount"));
+            
+            Order getCusId = (Order)session.getAttribute("addCusId");
+            Order addAmount = new Order(getCusId.getCustomerId(), getCusId.getOpalId(), getCusId.getOpalType(), "", amount, "");
+            session.setAttribute("addAmounta", addAmount);
+            
             String cardfname = request.getParameter("cardfname");
             String cardlname = request.getParameter("cardlname");
             String cardnumber = request.getParameter("cardnumber");
@@ -29,11 +34,18 @@
             int expiryyear = Integer.parseInt(request.getParameter("expiryyear"));
             int cvv = Integer.parseInt(request.getParameter("cvv")); 
             
+            Paymentmethod payment = new Paymentmethod(cardfname, cardlname, cardnumber, expirymonth, expiryyear, cvv);
+            session.setAttribute("orderPayment", payment);
             
             String adminemail = (String)session.getAttribute("adminemail");
             String adminpass = (String)session.getAttribute("adminpassword");
             MongoDBConnector connector = new MongoDBConnector(adminemail, adminpass);
-                        
+            connector.addPayment(payment, user);
+            
+            
+            
+            
+            session.removeAttribute("addCusId");           
         %>
         <h3>&nbsp;&ensp;Order Confirmation</h3>
         <div class = "orderConfirmation">    

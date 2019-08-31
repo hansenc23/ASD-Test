@@ -118,27 +118,63 @@ public class MongoDBConnector {
 //Payment and topup management
     
     //Add paymenthod to a particular User 
-    public void addPayment(Paymentmethod paymt, User user){
+     public void addPayment(Paymentmethod paymt, User user){
         MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
         try(MongoClient client = new MongoClient(uri)){
             MongoDatabase db = client.getDatabase(uri.getDatabase());
             MongoCollection<Document> userlist = db.getCollection("ASD-app-users");
             Document userdoc =  userlist.find(eq("Username", user.getEmail())).first();
+            Document doc = new Document().append("FirstName", paymt.getFirstName()).append("LastName", paymt.getLastName()).append("CardNumber", paymt.getCardNumber()).append("ExpiryMonth", paymt.getExpiryMonth()).append("ExpiryYear", paymt.getExpiryYear()).append("CVV", paymt.getCvv());
+            //Check for existing paymentmethod array
+            if(userdoc.get("PaymentMethod") != null){
             paymentMethods = (List<Document>) userdoc.get("PaymentMethod");
             int i = 1;
+            int j = 0; 
+            //count the number of payments
             for (Document paymentmethod : paymentMethods){
                 i++;
+                //check for duplicate card number inside PaymentMethod array
+                if(paymentmethod.getString("CardNumber").equals(paymt.getCardNumber())){
+                    j++;
+                }
             }
             
-            Document doc = new Document().append("FirstName", paymt.getFirstName()).append("LastName", paymt.getLastName()).append("CardNumber", paymt.getCardNumber()).append("ExpiryMonth", paymt.getExpiryMonth()).append("ExpiryYear", paymt.getExpiryYear()).append("CVV", paymt.getCvv());
-            
-            if(i <= 3 ){
+            if(i <= 3 || j >0){
                  userlist.updateOne(eq("Username", user.getEmail()),Updates.addToSet("PaymentMethod", doc) );
+            }
+            } else {
+                userlist.updateOne(eq("Username", user.getEmail()),Updates.addToSet("PaymentMethod", doc) );
             }
            
             //new Document("$set", new Document("PaymentMethod",doc))
         }
     }
+    //Get payment methods
+      public Paymentmethods getPaymentMethods(User user){
+       MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
+       Paymentmethods pmtMethods = new Paymentmethods();
+        try (MongoClient client = new MongoClient(uri)) {
+            MongoDatabase db = client.getDatabase(uri.getDatabase());
+            MongoCollection<Document> userlist = db.getCollection("ASD-app-users");
+            String customerID = getCustomerID(user.getEmail(), user.getPassword());
+            //get userdoc 
+            Document userdoc =  userlist.find(eq("Username", user.getEmail())).first();  
+            //check if the payment methods attribute already exists in the user doc
+            if(userdoc.get("PaymentMethod") != null){
+                paymentMethods = (List<Document>) userdoc.get("PaymentMethod");
+                for (Document pmtdoc : paymentMethods) {
+                Paymentmethod pmtMethod = new Paymentmethod((String) pmtdoc.get("FirstName"), (String) pmtdoc.get("LastName") ,(String) pmtdoc.get("CardNumber"), (int) pmtdoc.get("ExpiryMonth"), (int) pmtdoc.get("ExpiryYear"), (int) pmtdoc.get("CVV") );
+                pmtMethods.addPaymentMethods(pmtMethod);
+            }
+            
+            
+        }
+        }
+        return pmtMethods;   
+       
+   }
+    
+    
     //add a payment to payment record
     public void addTopUpPayment(TopUpPayment tpmt, User user){
          MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
@@ -300,7 +336,7 @@ public class MongoDBConnector {
         MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
         try (MongoClient client = new MongoClient(uri)) {
             MongoDatabase db = client.getDatabase(uri.getDatabase());
-            orders.add(new Document("CustomerID", order.getCustomerId()).append("OpalID", order.getOpalId()).append("OpalType", order.getOpalType()).append("OrderDate", order.getOrderDate()).append("Value", order.getValue()).append("Status", order.getStatus()));
+            orders.add(new Document("CustomerID", order.getCustomerId()).append("OpalID", order.getOpalId()).append("PaymentCard", order.getPaymentCard()).append("OpalType", order.getOpalType()).append("OrderDate", order.getOrderDate()).append("Value", order.getValue()).append("Status", order.getStatus()));
             MongoCollection<Document> orderlist = db.getCollection("ASD-app-orders");
             orderlist.insertMany(orders);
         }

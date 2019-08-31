@@ -46,7 +46,7 @@
             String opalID = "" + (new Random()).nextInt(99999999) + (new Random()).nextInt(99999999);;
            
             //add the opalId and type
-            Order addType = new Order("", opalID, type, "", 0, "");
+            Order addType = new Order("", opalID, "", type, "", 0, "");
             session.setAttribute("addType", addType);
             
         %>

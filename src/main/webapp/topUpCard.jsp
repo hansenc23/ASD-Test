@@ -1,8 +1,12 @@
+    
 <%-- 
     Document   : topUpCard
     Created on : Aug 15, 2019, 1:09:56 AM
     Author     : Hieu
 --%>
+<%@page import="java.util.ArrayList"%>
+<%@page import="asd.model.dao.MongoDBConnector"%>
+<%@page import="asd.model.*"%>
 <%@include file="navbar.jsp"%>
 <%@include file="sidebar.jsp" %>
 <!DOCTYPE html>
@@ -64,5 +68,21 @@
                     </table>
                 </form>
         </div>
+        <%
+            String adminemail = (String)session.getAttribute("adminemail");
+            String adminpass = (String)session.getAttribute("adminpassword");
+            MongoDBConnector connector = new MongoDBConnector(adminemail, adminpass);
+            Paymentmethods pmtmethods = new Paymentmethods();
+            ArrayList<Paymentmethod> paymentMethods = new ArrayList<Paymentmethod>();
+            pmtmethods  =  connector.getPaymentMethods(user);
+            paymentMethods = pmtmethods.getList();
+            if(paymentMethods != null){
+                for (Paymentmethod paymentMethod: paymentMethods){
+        %>
+            <p> <%= paymentMethod.getCardNumber()%></p>
+        <%
+            }
+                }
+        %>
     </body>
 </html>

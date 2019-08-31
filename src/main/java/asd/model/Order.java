@@ -13,6 +13,7 @@ public class Order {
     
     private String customerId;
     private String opalId;
+    private String paymentCard;
     private String opalType;
     private String orderDate;
     private double value;
@@ -21,15 +22,18 @@ public class Order {
     
     public Order() {
     }
-    
-    public Order(String customerId, String opalId, String opalType, String orderDate, double value, String status) {
+
+    public Order(String customerId, String opalId, String paymentCard, String opalType, String orderDate, double value, String status) {
         this.customerId = customerId;
         this.opalId = opalId;
+        this.paymentCard = paymentCard;
         this.opalType = opalType;
         this.orderDate = orderDate;
         this.value = value;
         this.status = status;
     }
+    
+    
 
 
     public String getCustomerId() {
@@ -48,6 +52,14 @@ public class Order {
         this.opalId = opalId;
     }
 
+    public String getPaymentCard() {
+        return paymentCard;
+    }
+
+    public void setPaymentCard(String paymentCard) {
+        this.paymentCard = paymentCard;
+    }
+    
     public String getOpalType() {
         return opalType;
     }
