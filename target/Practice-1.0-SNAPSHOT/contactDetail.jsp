@@ -52,7 +52,7 @@
         %>
         <h3>&nbsp;&ensp;Enter your personal detail</h3>
         <div class = "orderDetail">
-        <form method = "post" action = "paymentDetail.jsp" > 
+        <form method = "post" action = "orderValue.jsp" > 
         <table>
             <tr><td>First name(s)</td><td><input type = "text" name = "firstname" required></td>
             <td>Last name</td><td><input type = "text" name = "lastname" required></td></tr>

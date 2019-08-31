@@ -29,7 +29,7 @@
                 //if yes then go to paymentDetail.jsp
                 if(user!=null){
             %>
-                    <form method = "post" action = "paymentDetail.jsp" >
+                    <form method = "post" action = "orderValue.jsp" >
             <%  }%>
             <h3>&nbsp;&ensp;Choose an Opal card:</h3>
             <div class = "box">
