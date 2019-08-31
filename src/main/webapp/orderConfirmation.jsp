@@ -80,7 +80,7 @@
                 pmtmethods  =  connector.getPaymentMethods(user);
                 paymentMethods = pmtmethods.getList(); 
                 
-                if(!paymentMethods.isEmpty()){
+                if(paymentMethods.isEmpty()){
                     
                     String cardfname = request.getParameter("cardfname");
                     String cardlname = request.getParameter("cardlname");
