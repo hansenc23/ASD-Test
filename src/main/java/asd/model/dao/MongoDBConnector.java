@@ -18,6 +18,7 @@ public class MongoDBConnector {
     private List<Document> users = new ArrayList();
     private List<Document> cards = new ArrayList();
     private List<Document> orders = new ArrayList();
+       private List<Document> times = new ArrayList();
     private String owner;
     private String password;
 
@@ -289,6 +290,45 @@ public class MongoDBConnector {
             orderlist.insertMany(orders);
         }
     }
+//timeManager
+    public void add(Time time) {
+        MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
+        try (MongoClient client = new MongoClient(uri)) {
+            MongoDatabase db = client.getDatabase(uri.getDatabase());
+            times.add(new Document("customerID", time.getCustomerID()).append("loginID", time. getloginID()).append("loginT", time.getLoginT()).append("loginT", time.getLogoutT()));
+            MongoCollection<Document> timelist = db.getCollection("ASD-app-times"); //Create a collection ASD-app-times on mLab
+            timelist.insertMany(times);
+        }
+    }
 
+      public ArrayList<Time> loadAllTime() {
+         MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqnl:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
+         ArrayList<Time> tim;
+         try (MongoClient client = new MongoClient(uri)) {
+             MongoDatabase db = client.getDatabase(uri.getDatabase());
+             tim = new ArrayList<Time>();
+             MongoCollection<Document> timelist = db.getCollection("ASD-app-times");
+                for (Document doc : timelist.find()) {
+                Time time = new Time((String) doc.get("customerID"), (String) doc.get("loginID"), (String) doc.get("loginT"), (String) doc.get("loginT"));
+                tim.add(time);
+        }
+      }
+       return tim;
+   }
+      
+       public Times loadTimes() {
+        MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
+        Times times;
+        try (MongoClient client = new MongoClient(uri)) {
+            MongoDatabase db = client.getDatabase(uri.getDatabase());
+            times = new Times();
+            MongoCollection<Document> timelist = db.getCollection("ASD-app-times");
+            for (Document doc : timelist.find()) {
+                Time time = new Time((String) doc.get("customerID"), (String) doc.get("loginID"), (String) doc.get("loginT"), (String) doc.get("logoutT"));
+                times.addTime(time);
+            }
+        }
+        return times;
+    }
 //
 }

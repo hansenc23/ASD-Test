@@ -5,7 +5,9 @@
 --%>
 <%@page import="asd.model.dao.MongoDBConnector"%>
 <%@page contentType="text/html" pageEncoding="UTF-8" import="asd.model.*"%>
-
+<%@page import="java.util.Date"%>
+<%@page import="java.util.*"%>
+<%@page import="java.text.SimpleDateFormat"%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -15,8 +17,26 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <% session.removeAttribute("customer");         
-        session.invalidate(); %>
+        <%
+        String adminemail = (String)session.getAttribute("adminemail");
+        String adminpass = (String)session.getAttribute("adminpassword");
+        MongoDBConnector connector = new MongoDBConnector(adminemail, adminpass);
+        
+            SimpleDateFormat formatter= new SimpleDateFormat("yyyy-MM-dd 'at' HH:mm:ss z");//Record the time of logout
+            Date date = new Date(System.currentTimeMillis());
+            String logoutT = new String (formatter.format(date));
+            
+            
+            String loginT = (String)session.getAttribute("loginT");//getting the login time
+            //String userID = (String)session.getAttribute("email");//getting the login time
+            String userID = request.getParameter("email");
+            String ID = "" + (new Random()).nextInt(999999);
+            Time time = new Time(userID,ID,loginT,logoutT);
+            connector.add(time);
+            
+        session.removeAttribute("user");         
+        session.invalidate();
+        %>
         <p>You have been logged out</p>
         <p>Click here to return to <a href="main.jsp"> main page</a> </p>
     </body>
