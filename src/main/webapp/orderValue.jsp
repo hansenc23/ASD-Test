@@ -93,7 +93,7 @@
                 session.setAttribute("addCusId", addCusId);
                 
                 //after add the value from addType to addCusId, remove the session
-                session.removeAttribute( "addType" );
+//                session.removeAttribute( "addType" );
             
         %>
         <div class="h3">

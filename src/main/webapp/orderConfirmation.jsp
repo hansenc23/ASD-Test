@@ -27,13 +27,6 @@
             MongoDBConnector connector = new MongoDBConnector(adminemail, adminpass);    
             
             Order getAmount = (Order)session.getAttribute("addAmount");
-            
-//            String cardfname = request.getParameter("cardfname");
-//            String cardlname = request.getParameter("cardlname");
-//            String cardnumber = request.getParameter("cardnumber");
-//            int expirymonth = Integer.parseInt(request.getParameter("expirymonth"));
-//            int expiryyear = Integer.parseInt(request.getParameter("expiryyear"));
-//            int cvv = Integer.parseInt(request.getParameter("cvv"));  
                 
             if(user == null){    
                 

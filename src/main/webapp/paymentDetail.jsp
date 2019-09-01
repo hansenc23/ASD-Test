@@ -38,7 +38,7 @@
             session.setAttribute("addAmount", addAmount);
             
             //remove the session from orderaValue
-            session.removeAttribute("addCusId"); 
+//            session.removeAttribute("addCusId"); 
             
         %>
         <div class = "h3">
@@ -112,7 +112,7 @@
                         </td>
                         <td>CVV</td>
                         <td><input id = "cvv" type = "text" name = "cvv" minlength="3" maxlength="3" size = "1" required></td></tr>
-                    <tr><td colspan = "3"><a class = "button" href = "contactDetail.jsp">Back</a></td>
+                    <tr><td colspan = "3"><a class = "button" href = "orderValue.jsp">Back</a></td>
                         <td align = "right"><input type =  "submit" value = "Continue"></td></tr>
                     <tr><td><a class = "button" href = "orderCancelled.jsp">Cancel</a></tr>                
                 </table>
