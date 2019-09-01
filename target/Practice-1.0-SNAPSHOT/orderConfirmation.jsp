@@ -28,21 +28,21 @@
             
             Order getAmount = (Order)session.getAttribute("addAmount");
             
-            String cardfname = request.getParameter("cardfname");
-            String cardlname = request.getParameter("cardlname");
-            String cardnumber = request.getParameter("cardnumber");
-            int expirymonth = Integer.parseInt(request.getParameter("expirymonth"));
-            int expiryyear = Integer.parseInt(request.getParameter("expiryyear"));
-            int cvv = Integer.parseInt(request.getParameter("cvv"));  
+//            String cardfname = request.getParameter("cardfname");
+//            String cardlname = request.getParameter("cardlname");
+//            String cardnumber = request.getParameter("cardnumber");
+//            int expirymonth = Integer.parseInt(request.getParameter("expirymonth"));
+//            int expiryyear = Integer.parseInt(request.getParameter("expiryyear"));
+//            int cvv = Integer.parseInt(request.getParameter("cvv"));  
                 
             if(user == null){    
-                            
-//                String cardfname = request.getParameter("cardfname");
-//                String cardlname = request.getParameter("cardlname");
-//                String cardnumber = request.getParameter("cardnumber");
-//                int expirymonth = Integer.parseInt(request.getParameter("expirymonth"));
-//                int expiryyear = Integer.parseInt(request.getParameter("expiryyear"));
-//                int cvv = Integer.parseInt(request.getParameter("cvv"));  
+                
+                String cardfname = request.getParameter("cardfname");
+                String cardlname = request.getParameter("cardlname");
+                String cardnumber = request.getParameter("cardnumber");
+                int expirymonth = Integer.parseInt(request.getParameter("expirymonth"));
+                int expiryyear = Integer.parseInt(request.getParameter("expiryyear"));
+                int cvv = Integer.parseInt(request.getParameter("cvv")); 
 
                 Paymentmethod payment = new Paymentmethod(cardfname, cardlname, cardnumber, expirymonth, expiryyear, cvv);
                 session.setAttribute("orderPayment", payment);
@@ -86,26 +86,28 @@
                 ArrayList<Paymentmethod> paymentMethods = new ArrayList<Paymentmethod>();
                 pmtmethods  =  connector.getPaymentMethods(user);
                 paymentMethods = pmtmethods.getList(); 
-                
-                if(paymentMethods.isEmpty()){
+                 
+                if(paymentMethods.isEmpty() || request.getParameter("cardnumber") != null){
                     
-//                    String cardfname = request.getParameter("cardfname");
-//                    String cardlname = request.getParameter("cardlname");
-//                    String cardnumber = request.getParameter("cardnumber");
-//                    int expirymonth = Integer.parseInt(request.getParameter("expirymonth"));
-//                    int expiryyear = Integer.parseInt(request.getParameter("expiryyear"));
-//                    int cvv = Integer.parseInt(request.getParameter("cvv"));  
+                    String cardfname = request.getParameter("cardfname");
+                    String cardlname = request.getParameter("cardlname");
+                    String cardnumber = request.getParameter("cardnumber");
+                    int expirymonth = Integer.parseInt(request.getParameter("expirymonth"));
+                    int expiryyear = Integer.parseInt(request.getParameter("expiryyear"));
+                    int cvv = Integer.parseInt(request.getParameter("cvv")); 
+                    
                     Paymentmethod payment = new Paymentmethod(cardfname, cardlname, cardnumber, expirymonth, expiryyear, cvv);
                     session.setAttribute("orderPayment", payment);
         %>
                     <table>
+                        <input type="hidden" value="another" name="another">
                         <tr><td>First name(s) :</td><td><%=cardfname%></td>
                             <td>Last name :</td><td><%=cardlname%></td></tr>
                         <tr><td>Card number :</td><td><%=cardnumber%></td></tr>
                         <tr><td>Expiry date :</td><td><%=expirymonth%><%= expiryyear%></td><td>CVV :</td><td><%= cvv%></td></tr>
         <%
                 }
-                else{
+                else {
                     Paymentmethod p = new Paymentmethod("","","", 0, 0, 0);
                     for (Paymentmethod paymentMethod: paymentMethods){ 
                         String ordercard = request.getParameter(paymentMethod.getCardNumber());

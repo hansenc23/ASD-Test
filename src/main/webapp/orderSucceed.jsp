@@ -14,6 +14,7 @@
 <%@page import="asd.model.Order"%>
 <%@page import="java.text.SimpleDateFormat"%>
 <%@page import="java.text.DateFormat"%>
+<%@page import="java.util.Random"%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -27,12 +28,16 @@
         <%
             String adminemail = (String)session.getAttribute("adminemail");
             String adminpass = (String)session.getAttribute("adminpassword");
-            MongoDBConnector connector = new MongoDBConnector(adminemail, adminpass);    
+            MongoDBConnector connector = new MongoDBConnector(adminemail, adminpass); 
+            
+            String securitycode = "" + (new Random()).nextInt(9999);
             
             Order getAmount = (Order)session.getAttribute("addAmount");
-                        
+            OpalCard opalcard = new OpalCard(getAmount.getOpalId(), getAmount.getValue(), getAmount.getOpalType(), securitycode);
+            connector.registerCard(opalcard);
+            
             java.util.Date sysdate = new java.util.Date();
-            DateFormat dateformat = new SimpleDateFormat("dd/MM/yyyy");
+            DateFormat dateformat = new SimpleDateFormat("yyyy-mm-dd");
             
             String date = dateformat.format(sysdate);
                    
@@ -48,7 +53,7 @@
                 pmtmethods  =  connector.getPaymentMethods(user);
                 paymentMethods = pmtmethods.getList();    
                 
-                if(paymentMethods.isEmpty()){
+                if(paymentMethods.isEmpty() || request.getParameter("another") != null){
                     Order order = new Order(getAmount.getCustomerId(), getAmount.getOpalId(), getAmount.getPaymentCard(), getAmount.getOpalType(), date, getAmount.getValue(), "Processing");
                     connector.add(order);
                     Paymentmethod getpayment = (Paymentmethod)session.getAttribute("orderPayment");
@@ -58,7 +63,8 @@
                     Order getCardnum = (Order)session.getAttribute("addCardNum");
                     Order order = new Order(getCardnum.getCustomerId(), getCardnum.getOpalId(), getCardnum.getPaymentCard(), getCardnum.getOpalType(), date, getCardnum.getValue(), "Processing");
                     connector.add(order);
-                }            
+                }
+                connector.linkCard(opalcard, user);
             }
             
             session.removeAttribute("addAmount");

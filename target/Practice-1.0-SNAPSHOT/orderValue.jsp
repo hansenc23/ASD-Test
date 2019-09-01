@@ -57,20 +57,20 @@
                 String concession = request.getParameter("concession");
 
                 if(adult!= null){
-                    type = "adult";
+                    type = "Adult";
                 }
                 else if(child != null){
-                    type = "child";
+                    type = "Child";
                 }
                 else if (pensioner != null){
-                    type = "pensioner";
+                    type = "Pensioner";
                 }
                 else{
-                    type = "concession";
+                    type = "Concession";
                 }
                 
                 //random the opalid
-                String opalID = "" + (new Random()).nextInt(99999999) + (new Random()).nextInt(99999999);
+                String opalID = "" + (new Random()).nextInt(9999) + (new Random()).nextInt(9999) + (new Random()).nextInt(9999) + (new Random()).nextInt(9999);
                 
                 //assign the opalid and the type
                 Order addType = new Order("", opalID, "", type, "", 0, "");
@@ -96,9 +96,11 @@
                 session.removeAttribute( "addType" );
             
         %>
+        <div class="h3">
+        <h3>Add value to your Opal Card</h3>
+        </div>
         <div class = "paymentDetail">        
             <form method = "post" action = "paymentDetail.jsp" >
-                <h4>Add value to your Opal Card</h4>
                 <table>
                     <tr><td>Top up amount</td><td><select name = "amount" required>
                                 <option value = "10.00">$10.00</option>

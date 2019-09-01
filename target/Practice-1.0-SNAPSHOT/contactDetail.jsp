@@ -30,20 +30,20 @@
             
             //assign the type by checking whether the value is null
             if(adult!= null){
-                type = "adult";
+                type = "Adult";
             }
             else if(child != null){
-                type = "child";
+                type = "Child";
             }
             else if (pensioner != null){
-                type = "pensioner";
+                type = "Pensioner";
             }
             else{
-                type = "concession";
+                type = "Concession";
             }
             
             //random the opalID
-            String opalID = "" + (new Random()).nextInt(99999999) + (new Random()).nextInt(99999999);;
+            String opalID = "" + (new Random()).nextInt(9999) + (new Random()).nextInt(9999) + (new Random()).nextInt(9999) + (new Random()).nextInt(9999);
            
             //add the opalId and type
             Order addType = new Order("", opalID, "", type, "", 0, "");

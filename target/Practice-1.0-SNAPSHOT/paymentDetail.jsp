@@ -41,10 +41,12 @@
             session.removeAttribute("addCusId"); 
             
         %>
+        <div class = "h3">
+            <h3>Payment Detail</h3>
+        </div>
         <div class = "paymentDetail">        
             <form method = "post" action = "orderConfirmation.jsp" >
                 <table>
-                    <h4>Payment Detail</h4>
                     <h6>Your order will be processed securely</h6>
         <%
             if(user != null){
