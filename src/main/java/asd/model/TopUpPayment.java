@@ -20,7 +20,7 @@ public class TopUpPayment {
     public TopUpPayment() {
     }
 
-    public TopUpPayment(String customerId, String paymentId, String opalId, double value, String date) {
+    public TopUpPayment(String customerId, String opalId, double value, String date) {
         this.customerId = customerId;
         this.opalId = opalId;
         this.value = value;
