@@ -16,6 +16,7 @@ public class User  implements Serializable{
     private String password;
     private String address;
     private String phoneNumber;
+    private String position;
     private String isStaff;
 
     public User() {
@@ -30,9 +31,28 @@ public class User  implements Serializable{
         this.phoneNumber = phoneNumber;
         this.isStaff = isStaff;
     }
+    
+    public User(String firstName, String lastName, String email, String password, String address, String phoneNumber, String isStaff, String position) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.password = password;
+        this.address = address;
+        this.phoneNumber = phoneNumber;
+        this.isStaff = isStaff;
+        this.position = position;
+    }
 
     public boolean match(String email){
         return this.email.equalsIgnoreCase(email.trim());
+    }
+    
+    public String getPosition(){
+        return position;
+    }
+    
+    public void getPosition(String position){
+        this.position = position;
     }
     
     public String getIsStaff(){

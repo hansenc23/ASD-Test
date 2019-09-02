@@ -16,7 +16,7 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Welcome Page</title>
+        <title>Welcome Staff</title>
     </head>   
     <%
         String firstName = request.getParameter("firstName");
@@ -25,9 +25,10 @@
         String password = request.getParameter("password");
         String address = request.getParameter("address");
         String phoneNumber = request.getParameter("phone");
+        String position = request.getParameter("position");
         String isStaff = request.getParameter("isStaff");
 
-        User user = new User(firstName, lastName, email, password, address, phoneNumber, isStaff);
+        User user = new User(firstName, lastName, email, password, address, phoneNumber, isStaff, position);
         session.setAttribute("user", user);        
         
         String adminemail = (String)session.getAttribute("adminemail");
@@ -47,9 +48,10 @@
                 <tr><td>Password: </td><td class="text"><%=password%></td></tr>
                 <tr><td>Address: </td><td class="text"><%=address%></td></tr>
                 <tr><td>Phone: </td><td class="text"><%=phoneNumber%></td></tr> 
+                <tr><td>Position: </td><td class="text"><%=position%></td></tr>
             </table> 
         </div>   
-                <p class="p">Click <a href="main.jsp" class="link" target="_parent"> here </a> to go to Home page.</p>
+                <p class="p">Click <a href="adminPage.jsp" class="link" target="_parent"> here </a> to go to Admin page.</p>
     </body>
    
     
