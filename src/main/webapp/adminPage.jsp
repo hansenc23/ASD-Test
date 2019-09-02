@@ -4,8 +4,6 @@
     Author     : hanse
 --%>
 
-
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@include file="adminNavbar.jsp" %>
 <%@include file="adminSidebar.jsp" %>
@@ -19,21 +17,8 @@
         <title>Admin Page</title>
     </head>
     <body>
-        
-         <% 
-            if(user != null && user.getIsStaff().equals("false")){
-            String redirectURL = "notStaff.jsp";
-            response.sendRedirect(redirectURL);
-            
-         }else if(user == null){
-             String redirectURL = "adminRegister.jsp";
-            response.sendRedirect(redirectURL);
-         }
-            
-         %>
         <div class="box">
             <h2>Welcome to Admin Page!</h2>
         </div>
-        
     </body>
 </html>

@@ -15,15 +15,15 @@
     <body>
         <%User user = (User)session.getAttribute("user");%>
     <body>
-        <% if (user == null){
+        <% if (user ==null){
             
         %>
         <div class="navigation-bar">
             <ul>
                 
                 <li><a href="login.jsp">Login</a></li>
-                <li><a href="adminRegister.jsp">Register</a></li>
-                <li><a href="adminPage.jsp">Home</a></li>
+                <li><a href="register.jsp">Register</a></li>
+                <li><a href="main.jsp">Home</a></li>
               
                 
                 <li id="logo"><img height="70px" src="image/nsw_logo.png"></li>
@@ -36,7 +36,7 @@
              <ul>
                 <li><a>Welcome <%=name%></a></li>
                 <li><a href="logout.jsp">Logout</a></li>
-                <li><a href="adminPage.jsp">Home</a></li>
+                <li><a href="main.jsp">Home</a></li>
               
                 
                 <li id="logo"><img height="70px" src="image/nsw_logo.png"></li>
