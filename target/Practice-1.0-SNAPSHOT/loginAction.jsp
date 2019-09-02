@@ -27,7 +27,7 @@ alert("Form has been submitted");
     
          
     <body>
-      <script type="text/javascript"> window.onload = alertName; </script>
+     
         <% 
         String email = request.getParameter("email");
         String password = request.getParameter("password");
@@ -47,10 +47,10 @@ alert("Form has been submitted");
             session.setAttribute("loginT",loginT);
             session.setAttribute("email",email);
      %>
-     <script type="text/javascript"> window.onload = alertName; </script>
+   
          <%
             if (us != null) {              
-                if(us.getIsStaff() == null){%>
+                if(us.getIsStaff().equals("false")){%>
                  <p>Login successful. Click<a href = "main.jsp" > here </a> to return to the main page.</p>   
                 <%}else if(us.getIsStaff().equals("true")){%>
                        <p>Login successful. Click<a href = "adminPage.jsp" > here </a> to return to the admin page.</p>

@@ -73,7 +73,7 @@
                         <td width="10%"><input type="submit" onclick="refresh()" value="delete" name="delete" ></td>
                <input type="hidden" id="loginT" name="loginT" value= <%=time.getloginID()%> >
                     </tr>
-                     <script>function refresh(){
+              <script>function refresh(){
                  location.reload();
              }</script>
                     

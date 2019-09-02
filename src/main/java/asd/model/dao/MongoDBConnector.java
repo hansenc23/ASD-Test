@@ -37,6 +37,7 @@ public class MongoDBConnector {
     public MongoDBConnector(String owner, String password) throws UnknownHostException {
         this.owner = owner;
         this.password = password;
+        // MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
     }
 
     public void showall(Users users) {
