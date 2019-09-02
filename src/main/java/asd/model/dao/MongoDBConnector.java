@@ -12,6 +12,8 @@ import com.mongodb.client.MongoCursor;
 import com.mongodb.client.MongoDatabase;
 import static com.mongodb.client.model.Filters.and;
 import static com.mongodb.client.model.Filters.eq;
+import com.mongodb.BasicDBObject;
+import java.util.regex.Pattern;
 
 public class MongoDBConnector {
 
@@ -104,8 +106,8 @@ public class MongoDBConnector {
         try (MongoClient client = new MongoClient(uri)) {
             MongoDatabase db = client.getDatabase(uri.getDatabase());
             MongoCollection<Document> userlist = db.getCollection("ASD-app-users");
-            Document doc = userlist.find(and(eq("Username", email), eq("Password", password))).first();
-            user = new User((String) doc.get("FirstName"), (String) doc.get("LastName"), (String) doc.get("Username"), (String) doc.get("Password"), (String) doc.get("Address"), (String) doc.get("PhoneNumber"), (String) doc.get("isStaff"));
+            Document doc = userlist.find(and(eq("Email", email), eq("Password", password))).first();
+            user = new User((String) doc.get("FirstName"), (String) doc.get("LastName"), (String) doc.get("Email"), (String) doc.get("Password"), (String) doc.get("Address"), (String) doc.get("PhoneNumber"), (String) doc.get("isStaff"));
         }
         return user;
     }
@@ -295,26 +297,26 @@ public class MongoDBConnector {
         MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
         try (MongoClient client = new MongoClient(uri)) {
             MongoDatabase db = client.getDatabase(uri.getDatabase());
-            times.add(new Document("customerID", time.getCustomerID()).append("loginID", time. getloginID()).append("loginT", time.getLoginT()).append("loginT", time.getLogoutT()));
+            times.add(new Document("customerID", time.getCustomerID()).append("loginID", time. getloginID()).append("loginT", time.getLoginT()).append("logoutT", time.getLogoutT()));
             MongoCollection<Document> timelist = db.getCollection("ASD-app-times"); //Create a collection ASD-app-times on mLab
             timelist.insertMany(times);
         }
     }
 
-      public ArrayList<Time> loadAllTime() {
-         MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqnl:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
-         ArrayList<Time> tim;
-         try (MongoClient client = new MongoClient(uri)) {
-             MongoDatabase db = client.getDatabase(uri.getDatabase());
-             tim = new ArrayList<Time>();
-             MongoCollection<Document> timelist = db.getCollection("ASD-app-times");
-                for (Document doc : timelist.find()) {
-                Time time = new Time((String) doc.get("customerID"), (String) doc.get("loginID"), (String) doc.get("loginT"), (String) doc.get("loginT"));
-                tim.add(time);
-        }
-      }
-       return tim;
-   }
+//      public ArrayList<Time> loadAllTime() {
+//         MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqnl:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
+//         ArrayList<Time> tim;
+//         try (MongoClient client = new MongoClient(uri)) {
+//             MongoDatabase db = client.getDatabase(uri.getDatabase());
+//             tim = new ArrayList<Time>();
+//             MongoCollection<Document> timelist = db.getCollection("ASD-app-times");
+//                for (Document doc : timelist.find()) {
+//                Time time = new Time((String) doc.get("customerID"), (String) doc.get("loginID"), (String) doc.get("loginT"), (String) doc.get("loginT"));
+//                tim.add(time);
+//        }
+//      }
+//       return tim;
+//   }
       
        public Times loadTimes() {
         MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
@@ -330,5 +332,31 @@ public class MongoDBConnector {
         }
         return times;
     }
+       public Times findTimes(String loginT) {
+        MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
+        Times times;
+        BasicDBObject query = new BasicDBObject();
+        try (MongoClient client = new MongoClient(uri)) {
+            MongoDatabase db = client.getDatabase(uri.getDatabase());   
+            times = new Times();
+            Pattern p = Pattern.compile(loginT +".*");
+            query.append("loginT", p);
+            MongoCollection<Document> timelist = db.getCollection("ASD-app-times");
+            for (Document doc : timelist.find(query)) {
+                Time time = new Time((String) doc.get("customerID"), (String) doc.get("loginID"), (String) doc.get("loginT"), (String) doc.get("logoutT"));
+                times.addTime(time);
+            }
+        }
+        return times;
+    }
 //
+           public void removeTime(String loginID) {
+        MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
+        try (MongoClient client = new MongoClient(uri)) {
+            MongoDatabase db = client.getDatabase(uri.getDatabase());
+            
+            MongoCollection<Document> timelist = db.getCollection("ASD-app-times"); //Create a collection ASD-app-times on mLab
+            timelist.deleteOne(new Document("loginID", loginID));
+        }
+    }
 }

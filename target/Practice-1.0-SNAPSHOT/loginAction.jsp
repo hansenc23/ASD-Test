@@ -35,6 +35,7 @@ alert("Form has been submitted");
         String adminemail = (String)session.getAttribute("adminemail");
         String adminpass = (String)session.getAttribute("adminpassword");
         MongoDBConnector connector = new MongoDBConnector(adminemail, adminpass);
+       
         Users u = connector.loadUsers();  
            
             User us = u.login(email, password);
@@ -44,7 +45,7 @@ alert("Form has been submitted");
             Date date = new Date(System.currentTimeMillis());
             String loginT = new String (formatter.format(date));
             session.setAttribute("loginT",loginT);
-            
+            session.setAttribute("email",email);
      %>
      <script type="text/javascript"> window.onload = alertName; </script>
          <%

@@ -28,8 +28,9 @@
             
             
             String loginT = (String)session.getAttribute("loginT");//getting the login time
-            //String userID = (String)session.getAttribute("email");//getting the login time
-            String userID = request.getParameter("email");
+            String userID = (String)session.getAttribute("email");//getting the login time
+            //System.out.println(userID);
+            //String userID = request.getParameter("email");
             String ID = "" + (new Random()).nextInt(999999);
             Time time = new Time(userID,ID,loginT,logoutT);
             connector.add(time);

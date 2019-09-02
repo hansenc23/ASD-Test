@@ -11,20 +11,20 @@ import java.io.Serializable;
  * @author kevin
  */
 public class Time implements Serializable {
-      private String customerEmail;
+      private String customerID;
       private String loginID;
        private String loginT;
        private String logoutT;
        
-    public Time(String customerEmail,String loginID, String loginT, String logoutT) {
-        this.customerEmail = customerEmail;
+    public Time(String customerID,String loginID, String loginT, String logoutT) {
+        this.customerID = customerID;
         this.loginID = loginID;
         this.loginT = loginT;
         this.logoutT = logoutT;
     }
 
     public String getCustomerID() {
-        return customerEmail;
+        return customerID;
     }
      public String getloginID() {
         return loginID;
@@ -34,8 +34,8 @@ public class Time implements Serializable {
         return loginT;
     }
 
-    public void setCustomerID(String customerEmail) {
-        this.customerEmail = customerEmail;
+    public void setCustomerID(String customerID) {
+        this.customerID = customerID;
     }
   
     public void setLoginID(String loginID) {
