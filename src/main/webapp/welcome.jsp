@@ -51,17 +51,7 @@
             </table> 
         </div>   
     </body>
-    <%
-        if(isStaff == null){
-    %>
-        <p class="p">Click <a href="main.jsp" class="link" target="_parent"> here </a> to go to Admin page.</p>
-    <%
-        }else if(isStaff.equals("true")){
-    %>
-        <p class="p">Click <a href="adminPage.jsp" class="link" target="_parent"> here </a> to go to Home page.</p>
-    <%
-        }
-    %>
+    
     
 
 </html>
