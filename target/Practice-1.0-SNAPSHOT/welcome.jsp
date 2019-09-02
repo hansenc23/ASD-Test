@@ -49,7 +49,8 @@
                 <tr><td>Phone: </td><td class="text"><%=phoneNumber%></td></tr>
                 
             </table> 
-        </div>   
+        </div>  
+                <p class="p">Click <a href="main.jsp" class="link" target="_parent"> here </a> to go to Home page.</p>
     </body>
 
     
