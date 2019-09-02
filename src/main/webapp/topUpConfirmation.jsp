@@ -22,6 +22,7 @@
     </head>
     <body>
         <div class = "topup">
+             <form method = "post" action = "paymentHistory.jsp" >
     <%  
          String adminemail = (String)session.getAttribute("adminemail");
          String adminpass = (String)session.getAttribute("adminpassword");
@@ -31,7 +32,7 @@
         pmtmethods  =  connector.getPaymentMethods(user);
         paymentMethods = pmtmethods.getList();
         if(paymentMethods.isEmpty() || request.getParameter("cardnumber") != null){
-        Double amount = Double.parseDouble(request.getParameter("amount"));
+        double amount = Double.parseDouble(request.getParameter("amount"));
         String firstname = request.getParameter("firstname");
         String lastname = request.getParameter("lastname");
         String expiryMonth = request.getParameter("expiryMonth");
@@ -39,7 +40,7 @@
         String cvv = request.getParameter("cvv");
         String cardNumber = request.getParameter("cardnumber");
             %>
-            <form method = "post" action = "paymentHistory.jsp" >
+           
           <table>
               <tr><th>Confirm Payment</th></tr>
               <tr><td>Top up amount: </td><td><input type="price" value="<%=amount%>" name="amount" readonly></td>
@@ -65,13 +66,13 @@
                             p = paymentMethod;
                         }
                     }
-        Double amount =  (double)(session.getAttribute("yourAmount"));
+        double amount =  Double.parseDouble(session.getAttribute("yourAmount").toString());
       
         %>
         <table>
               <tr><th>Confirm Payment</th></tr>
               <tr><td>Top up amount: </td><td><input type="price" value="<%=amount%>" name="amount" readonly></td>
-                  <td><input type="text" value="<%=p.getCardNumber()%>" name="amount" readonly></td>
+                  
                 </tr>
             <tr><td>First name(s):</td><td><input type="text" value="<%=p.getFirstName()%>" name = "firstname" readonly></td>
                 <td>Last name:</td><td><input type = "text" value="<%=p.getLastName()%>" name = "lastname" readonly></td></tr>

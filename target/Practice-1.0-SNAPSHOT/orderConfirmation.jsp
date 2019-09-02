@@ -41,6 +41,9 @@
                 session.setAttribute("orderPayment", payment);
                 
                 User getAnonymous = (User)session.getAttribute("anonymous");
+//                String customerId;
+//                customerId = connector.getCustomerID(email, password);
+
         %>    
                 <h3>&nbsp;&ensp;Order Confirmation</h3>
                 <div class = "orderConfirmation">    

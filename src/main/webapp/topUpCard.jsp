@@ -19,7 +19,7 @@
     </head>
     <body>
         <%
-            Double amount = Double.parseDouble(request.getParameter("amount"));
+            double amount = Double.parseDouble(request.getParameter("amount"));
             session.setAttribute("yourAmount", amount);
             String id = request.getParameter("cardNumber");
 //             OpalCards dbCards = new OpalCards();

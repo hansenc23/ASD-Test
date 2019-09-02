@@ -33,7 +33,7 @@
         String adminpass = (String)session.getAttribute("adminpassword");
         MongoDBConnector connector = new MongoDBConnector(adminemail, adminpass);
         String cusId = connector.getCustomerID(user.getEmail(), user.getPassword());
-        Double amount = Double.parseDouble(request.getParameter("amount"));
+        double amount = Double.parseDouble(request.getParameter("amount"));
         String firstname = request.getParameter("firstname");
         String lastname = request.getParameter("lastname");
         String expiryMonth = request.getParameter("expiryMonth");

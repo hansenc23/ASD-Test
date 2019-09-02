@@ -70,7 +70,7 @@
                 }
                 
                 //random the opalid
-                String opalID = "" + (new Random()).nextInt(9999) + (new Random()).nextInt(9999) + (new Random()).nextInt(9999) + (new Random()).nextInt(9999);
+                String opalID = "" + (new Random()).nextInt(9999) + " " + (new Random()).nextInt(9999) + " " + (new Random()).nextInt(9999) + " " + (new Random()).nextInt(9999);
                 
                 //assign the opalid and the type
                 Order addType = new Order("", opalID, "", type, "", 0, "");
