@@ -12,7 +12,11 @@ and open the template in the editor.
      .orderConfirmation{
         float: left;
         width: 73%;
+<<<<<<< HEAD
         height: 520px;
+=======
+        height: auto;
+>>>>>>> 8b114fb21f29c58ca4183902c63ea25ec77c8b7d
         padding: 30px;
         margin: 10px 250px;
         border-radius: 5px;

@@ -6,12 +6,16 @@
 package asd.model;
 
 import java.io.Serializable;
+<<<<<<< HEAD
 import java.util.Date;
+=======
+>>>>>>> 8b114fb21f29c58ca4183902c63ea25ec77c8b7d
 /**
  *
  * @author Hieu
  */
 public class Paymentmethod implements Serializable {
+<<<<<<< HEAD
     private String firstName;
     private String lastName; 
     private String cardNumber;
@@ -19,6 +23,17 @@ public class Paymentmethod implements Serializable {
     private String expiryYear;
     private String cvv;
     public Paymentmethod(String firstName, String lastName, String cardNumber, String expiryMonth, String expiryYear, String cvv) {
+=======
+    
+    private String firstName;
+    private String lastName; 
+    private String cardNumber;
+    private int expiryMonth;
+    private int expiryYear;
+    private int cvv;
+    
+    public Paymentmethod(String firstName, String lastName, String cardNumber, int expiryMonth, int expiryYear, int cvv) {
+>>>>>>> 8b114fb21f29c58ca4183902c63ea25ec77c8b7d
         this.firstName = firstName;
         this.lastName = lastName;
         this.cardNumber = cardNumber;
@@ -74,42 +89,66 @@ public class Paymentmethod implements Serializable {
     /**
      * @return the cvv
      */
+<<<<<<< HEAD
     public String getCvv() {
+=======
+    public int getCvv() {
+>>>>>>> 8b114fb21f29c58ca4183902c63ea25ec77c8b7d
         return cvv;
     }
 
     /**
      * @param cvv the cvv to set
      */
+<<<<<<< HEAD
     public void setCvv(String cvv) {
+=======
+    public void setCvv(int cvv) {
+>>>>>>> 8b114fb21f29c58ca4183902c63ea25ec77c8b7d
         this.cvv = cvv;
     }
 
     /**
      * @return the expiryMonth
      */
+<<<<<<< HEAD
     public String getExpiryMonth() {
+=======
+    public int getExpiryMonth() {
+>>>>>>> 8b114fb21f29c58ca4183902c63ea25ec77c8b7d
         return expiryMonth;
     }
 
     /**
      * @param expiryMonth the expiryMonth to set
      */
+<<<<<<< HEAD
     public void setExpiryMonth(String expiryMonth) {
+=======
+    public void setExpiryMonth(int expiryMonth) {
+>>>>>>> 8b114fb21f29c58ca4183902c63ea25ec77c8b7d
         this.expiryMonth = expiryMonth;
     }
 
     /**
      * @return the expiryYear
      */
+<<<<<<< HEAD
     public String getExpiryYear() {
+=======
+    public int getExpiryYear() {
+>>>>>>> 8b114fb21f29c58ca4183902c63ea25ec77c8b7d
         return expiryYear;
     }
 
     /**
      * @param expiryYear the expiryYear to set
      */
+<<<<<<< HEAD
     public void setExpiryYear(String expiryYear) {
+=======
+    public void setExpiryYear(int expiryYear) {
+>>>>>>> 8b114fb21f29c58ca4183902c63ea25ec77c8b7d
         this.expiryYear = expiryYear;
     }
     

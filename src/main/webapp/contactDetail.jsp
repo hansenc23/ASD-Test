@@ -5,6 +5,12 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<<<<<<< HEAD
+=======
+<%@page import="asd.model.dao.MongoDBConnector"%>
+<%@page import="asd.model.*"%>
+<%@page import="java.util.Random"%>
+>>>>>>> 8b114fb21f29c58ca4183902c63ea25ec77c8b7d
 <%@include file="navbar.jsp" %>
 <%@include file="sidebar.jsp" %>
 <!DOCTYPE html>
@@ -17,9 +23,45 @@
         <title>Order Detail</title>
     </head>
     <body>
+<<<<<<< HEAD
         <h3>&nbsp;&ensp;Enter your personal detail</h3>
         <div class = "orderDetail">
         <form method = "post" action = "paymentDetail.jsp" > 
+=======
+        <%
+            String type;
+            
+            String adult = request.getParameter("adult");
+            String child = request.getParameter("child");
+            String pensioner = request.getParameter("pensioner");
+            String concession = request.getParameter("concession");
+            
+            //assign the type by checking whether the value is null
+            if(adult!= null){
+                type = "Adult";
+            }
+            else if(child != null){
+                type = "Child";
+            }
+            else if (pensioner != null){
+                type = "Pensioner";
+            }
+            else{
+                type = "Concession";
+            }
+            
+            //random the opalID
+            String opalID = "" + (new Random()).nextInt(9999) + (new Random()).nextInt(9999) + (new Random()).nextInt(9999) + (new Random()).nextInt(9999);
+           
+            //add the opalId and type
+            Order addType = new Order("", opalID, "", type, "", 0, "");
+            session.setAttribute("addType", addType);
+            
+        %>
+        <h3>&nbsp;&ensp;Enter your personal detail</h3>
+        <div class = "orderDetail">
+        <form method = "post" action = "orderValue.jsp" > 
+>>>>>>> 8b114fb21f29c58ca4183902c63ea25ec77c8b7d
         <table>
             <tr><td>First name(s)</td><td><input type = "text" name = "firstname" required></td>
             <td>Last name</td><td><input type = "text" name = "lastname" required></td></tr>

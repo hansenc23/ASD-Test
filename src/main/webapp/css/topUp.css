@@ -57,4 +57,31 @@ and open the template in the editor.
             
     A:hover, .topup input[type=submit]:hover{
         background-color: #0088cc;
+<<<<<<< HEAD
+=======
+    }
+    
+    .clearfix .paymentmethod {
+        padding: 10px 10px 10px 10px;
+        border: 1px solid #005580;
+        border-radius: 5px;
+        width: 30%;  
+        height: auto;
+        margin-right: 20px;
+        color: #0088cc;
+        font-family: Arial;
+        float: left;
+        background-color: #FFFFFF;
+    }
+    
+    .clearfix::after{
+        content: "";
+        clear: both;
+        width: 100%;
+    }
+    
+    .clearfix{
+        margin-top: 20px;
+        margin-bottom: 20px;
+>>>>>>> 8b114fb21f29c58ca4183902c63ea25ec77c8b7d
     }

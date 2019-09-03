@@ -51,4 +51,29 @@ h2 {
 
 .cardDetails input[type=submit]:hover{
     opacity: 0.7;
+<<<<<<< HEAD
 }                        
+=======
+}              
+
+
+.fail { 
+  padding: 10px;
+  background-color: #ed5249;
+  color: white;
+  opacity: 1;
+  margin: 20px 5px 15px 240px;
+  max-width: 25%;
+  font-size: 16px;
+}
+
+.success {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  opacity: 1;
+  margin: 20px 5px 15px 240px;
+  max-width: 25%;
+  font-size: 16px;
+}
+>>>>>>> 8b114fb21f29c58ca4183902c63ea25ec77c8b7d

@@ -10,7 +10,11 @@ and open the template in the editor.
 
 .sidenav {
     width: 160px;
+<<<<<<< HEAD
     position: fixed;
+=======
+    position: absolute;
+>>>>>>> 8b114fb21f29c58ca4183902c63ea25ec77c8b7d
     margin-left: 40px;
     margin-right: 20px;
     background-color: #e6f7ff; 

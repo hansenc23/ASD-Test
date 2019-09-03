@@ -5,11 +5,16 @@
  */
 package asd.model;
 
+<<<<<<< HEAD
+=======
+import java.io.Serializable;
+>>>>>>> 8b114fb21f29c58ca4183902c63ea25ec77c8b7d
 /**
  *
  * @author Hieu
  */
 public class TopUpPayment {
+<<<<<<< HEAD
     private String firstName;
     private String lastName; 
     private String cardNumber;
@@ -119,17 +124,47 @@ public class TopUpPayment {
     /**
      * @return the opalId
      */
+=======
+    
+    private String customerId;
+    private String opalId;
+    private double value;
+    private String date;
+
+    public TopUpPayment() {
+    }
+
+    public TopUpPayment(String customerId, String opalId, double value, String date) {
+        this.customerId = customerId;
+        this.opalId = opalId;
+        this.value = value;
+        this.date = date;
+    }
+
+    public String getCustomerId() {
+        return customerId;
+    }
+
+    public void setCustomerId(String customerId) {
+        this.customerId = customerId;
+    }
+
+>>>>>>> 8b114fb21f29c58ca4183902c63ea25ec77c8b7d
     public String getOpalId() {
         return opalId;
     }
 
+<<<<<<< HEAD
     /**
      * @param opalId the opalId to set
      */
+=======
+>>>>>>> 8b114fb21f29c58ca4183902c63ea25ec77c8b7d
     public void setOpalId(String opalId) {
         this.opalId = opalId;
     }
 
+<<<<<<< HEAD
     /**
      * @return the expiryMonth
      */
@@ -160,4 +195,23 @@ public class TopUpPayment {
     
     
     
+=======
+    public double getValue() {
+        return value;
+    }
+
+    public void setValue(double value) {
+        this.value = value;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+    
+    
+>>>>>>> 8b114fb21f29c58ca4183902c63ea25ec77c8b7d
 }

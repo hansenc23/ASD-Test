@@ -8,19 +8,37 @@ and open the template in the editor.
     Author     : aasdd
 */
 
+<<<<<<< HEAD
      .paymentDetail{
         float: left;
         width: 73%;
         height: 500px;
+=======
+    .paymentDetail{
+        float: left;
+        width: 73%;
+        height: auto;
+>>>>>>> 8b114fb21f29c58ca4183902c63ea25ec77c8b7d
         padding: 30px;
         margin: 0 240px;
         border-radius: 5px;
         background-color: #e6f7ff;
         border-top: 1px solid #b3d9ff;   
     } 
+<<<<<<< HEAD
     .paymentDetail h4 {
         color: #004d80;
         font-family: Arial;
+=======
+    .h3{
+        margin-left: 250px;
+        margin-bottom: 10px;
+    }
+    .h3 h3 {
+        color: #004d80;
+        font-family: Arial;
+      
+>>>>>>> 8b114fb21f29c58ca4183902c63ea25ec77c8b7d
     }
     
     .paymentDetail h6 {
@@ -72,4 +90,31 @@ and open the template in the editor.
         margin-right: auto;
         border-width: 1px;
     }
+<<<<<<< HEAD
+=======
+    
+    .clearfix .paymentmethod {
+        padding: 10px 10px 10px 10px;
+        border: 1px solid #005580;
+        border-radius: 5px;
+        width: 30%;  
+        height: auto;
+        margin-right: 20px;
+        color: #0088cc;
+        font-family: Arial;
+        float: left;
+        background-color: #FFFFFF;
+    }
+    
+    .clearfix::after{
+        content: "";
+        clear: both;
+        width: 100%;
+    }
+    
+    .clearfix{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+>>>>>>> 8b114fb21f29c58ca4183902c63ea25ec77c8b7d
     
