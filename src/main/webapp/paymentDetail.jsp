@@ -65,7 +65,7 @@
                             <p>First Name: <%=paymentMethod.getFirstName()%></p>
                             <p>Last Name:<%=paymentMethod.getLastName()%></p>
                             <p>Card Number:<%=cardnum.substring(0, 4)%>************ </p>
-                            <input type ="submit" value = "Select" name = "<%=cardnum%>" id ="<%=cardnum%>">
+                            <input type ="submit" value = "Select" name = "<%=cardnum%>" >
                         </div>
         <%              
                     }
