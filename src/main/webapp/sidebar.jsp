@@ -23,7 +23,6 @@
             %>
                     <a href="linkCard.jsp">Link existing Opal card to your account</a>
                     <a href="unlinkCard.jsp">Unlink Opal card from your account</a>
-                    <a href="topUpCard.jsp">Top-up Opal card</a>
                     <a href="addPaymentMethod.jsp">Add payment method</a>
                     <a href="topUpValue.jsp">Top-up Opal card</a>
             <%  
