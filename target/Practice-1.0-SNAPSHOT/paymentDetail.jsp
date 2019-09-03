@@ -8,7 +8,7 @@
 <%@page import="asd.model.dao.MongoDBConnector"%>
 <%@include file="navbar.jsp"%>
 <%@include file="sidebar.jsp" %>
-<%@page import="asd.model.User"%>
+<%@page import="asd.model.*"%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -93,3 +93,4 @@
         </div>
     </body>
 </html>
+

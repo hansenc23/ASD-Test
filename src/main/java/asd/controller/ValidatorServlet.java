@@ -1,3 +1,4 @@
+
 package asd.controller;
 
 import asd.model.User;
@@ -43,3 +44,4 @@ public class ValidatorServlet extends HttpServlet {
         }
     }
 }
+

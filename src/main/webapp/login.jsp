@@ -23,10 +23,7 @@
 
 
 </html>
-    
-    
-   
-       <div class="reg-form">
+   <div class="reg-form">
         <form method="post" action="loginAction.jsp">
             <h3 id="title" style="text-align: center">Log In</h3>
             <table id="form-table">
@@ -44,3 +41,4 @@
       
     </body>
 </html>
+
