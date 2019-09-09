@@ -1,0 +1,131 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 06/09/2019, 5:56:23 PM
+    Author     : hanse
+*/
+
+
+/*
+.mydetails{
+    float: left;
+    width: 73%;
+    height: 450px;
+    padding: 30px;
+    margin: 0 240px;
+    border-radius: 5px;
+    background-color: #e6f7ff;
+    border-top: 1px solid #b3d9ff;  
+    
+    
+}
+
+
+.final{
+    background-color: #97d6db;
+    width: 50%;
+    padding: 25px;
+    position: relative;
+    left: 25%;
+    top: 20px;
+    border-collapse: collapse;
+    
+    
+}
+
+
+
+.edit{
+    float: left;
+    width: 50%;
+    height: 450px;
+    padding: 30px;
+    margin: 0 240px;
+    border-radius: 5px;
+    background-color: #e6f7ff;
+    border-top: 1px solid #b3d9ff;  
+    
+    
+}
+
+.field{
+    padding-left: 5px;
+}
+
+
+
+.editdetails {
+  background-color: #E6F7FF;
+  width: 0%;
+  padding: 1px;
+  position: relative;
+  left: 25%;
+  top: 20px;
+  border-collapse: collapse;
+  
+}
+
+
+
+.button{
+    position: relative;
+    top: 35px;
+    width: 60px;
+    left: 25.3%;
+    background-color: #004d80;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+    border: 0;
+}
+
+.button:hover{
+    opacity: 0.7;
+}
+
+
+
+table {
+  
+  background-color: #E6F7FF;
+  width: 10%;
+  padding: 10px;
+  position: relative;
+  top: 20px;
+  border-collapse: collapse;
+}
+
+table td, table th {
+  
+  padding: 10px;
+}
+
+table, table th{
+    border: 2px solid #008ED0;
+}
+
+.security{
+    background-color: black;
+}
+
+
+h3 {
+        color: #004d80;
+        font-family: Arial;
+    }
+
+*/
+    
+/*
+.mydetails td {
+        color: #331a00;
+        font-family: Arial;
+        font-size: 16px;
+        padding-top: 18px;
+        padding-right: 5px;
+        padding-left: 50px;
+        
+}*/

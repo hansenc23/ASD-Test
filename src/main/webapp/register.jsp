@@ -6,7 +6,7 @@
 --%>
 
 
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page contentType="text/html" pageEncoding="UTF-8" import="java.util.*"%>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -22,6 +22,12 @@
     </head>
     <body>
         
+        <%
+            Random rand = new Random();
+            int n = rand.nextInt(90000) + 10000;
+            
+        %>
+        
         <br>
         <h2 style="text-align: center">Create Opal Account</h2>
         <br>
@@ -36,7 +42,10 @@
                     <tr><td>Password:</td><td><input size="23" type="password" name="password" required></td></tr>
                     <tr><td>Address:</td><td><input type="text" name="address"></td></tr>  
                     <tr><td>Phone Number:</td><td> <input type="text" name ="phone"></td></tr>
+                    <input type="hidden" name ="userID" value="<%=n%>">
                     <input type="hidden" name ="isStaff" value = "false">
+                    
+                    
                      
                     <tr><td></td>
                         <td>

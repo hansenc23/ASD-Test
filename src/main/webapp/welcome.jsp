@@ -27,8 +27,9 @@
         String address = request.getParameter("address");
         String phoneNumber = request.getParameter("phone");
         String isStaff = request.getParameter("isStaff");
+        String userID = request.getParameter("userID");
 
-        User user = new User(firstName, lastName, email, password, address, phoneNumber, isStaff);
+        User user = new User(firstName, lastName, email, password, address, phoneNumber, isStaff, userID);
         session.setAttribute("user", user);        
         
         String adminemail = (String)session.getAttribute("adminemail");
@@ -47,14 +48,11 @@
                 <tr><td>Email: </td><td class="text"><%=email%></td></tr>
                 <tr><td>Password: </td><td class="text"><%=password%></td></tr>
                 <tr><td>Address: </td><td class="text"><%=address%></td></tr>
-                <tr><td>Phone: </td><td class="text"><%=phoneNumber%></td></tr>
-                
+                <tr><td>Phone: </td><td class="text"><%=phoneNumber%></td></tr>              
             </table> 
         </div>  
                 <p class="p">Click <a href="main.jsp" class="link" target="_parent"> here </a> to go to Home page.</p>
     </body>
-
-    
 
 </html>
 

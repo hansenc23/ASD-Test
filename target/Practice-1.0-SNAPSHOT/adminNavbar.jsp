@@ -15,26 +15,23 @@
     <body>
         <%User user = (User)session.getAttribute("user");%>
     <body>
-        <% if (user ==null){
-            
-        %>
-        <div class="navigation-bar">
-            <ul>
-                
-                <li><a href="login.jsp">Login</a></li>
-                <li><a href="register.jsp">Register</a></li>
-                <li><a href="adminPage.jsp">Home</a></li>
-              
-                
-                <li id="logo"><img height="70px" src="image/nsw_logo.png"></li>
-                <li id="logo"><img height="70px" src="image/opal_logo.png"></li>
-            </ul>
-        </div>
-        <%}else{
+        
+        
+         
+        <% if (user != null && user.getIsStaff().equals("false")){
+            String redirectURL = "notStaff.jsp";
+            response.sendRedirect(redirectURL);
+        } else if(user == null){
+            String redirectURL = "adminRegister.jsp";
+            response.sendRedirect(redirectURL);
+        }else{
+        
+        
+        
         String name = user.getFirstName();%>
          <div class="navigation-bar">
              <ul>
-                <li><a>Welcome <%=name%></a></li>
+                <li><a href="accountProfile.jsp">Welcome <%=name%></a></li>
                 <li><a href="logout.jsp">Logout</a></li>
                 <li><a href="adminPage.jsp">Home</a></li>
               
@@ -44,6 +41,8 @@
                 </ul>
           </div>
         <%}%>
+        
+        
     </body>
 </html>
 
