@@ -36,7 +36,7 @@
                 type = "Child";
             }
             else if (pensioner != null){
-                type = "Pensioner";
+                type = "Senior";
             }
             else{
                 type = "Concession";
@@ -58,11 +58,9 @@
             <td>Last name</td><td><input type = "text" name = "lastname" required></td></tr>
             <tr><td>Email Address</td><td><input type = "email" name = "email" required></td>
                 <td>Mobile Phone</td><td><input type = "text" name = "phone" required></td></tr>
-            <tr><td>Password</td><td><input type = "password" name = "password" required></td></tr>
             <tr><td>Address</td><td><input type = "text" name = "address" required></td></tr>
             <tr><td>I read <a href = 'asdf.jsp'>the tos</a></td><td><input type = "checkbox" name = "tos" required></td></tr>
-            <tr><td colspan = "3"><a class = "button" href = "chooseOpalCard.jsp">Back</a></td><td align = "right"><input type =  "submit" value = "Continue"></td></tr>
-            <tr><td><a class = "button" href = "orderCancelled.jsp">Cancel</a></tr>
+            <tr><td colspan = "3"></td><td align = "right"><input type =  "submit" value = "Continue"></td></tr>
         </table>
         </form>
         </div>

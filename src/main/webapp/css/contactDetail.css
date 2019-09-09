@@ -61,3 +61,13 @@ and open the template in the editor.
         background-color: #0088cc;
         text-decoration: none;
     }
+    
+    .fail { 
+        padding: 10px;
+        background-color: #ed5249;
+        color: white;
+        opacity: 1;
+        margin: 20px 5px 15px 240px;
+        max-width: 25%;
+        font-size: 16px;
+    }

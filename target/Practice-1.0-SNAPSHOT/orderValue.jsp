@@ -63,7 +63,7 @@
                     type = "Child";
                 }
                 else if (pensioner != null){
-                    type = "Pensioner";
+                    type = "Senior";
                 }
                 else{
                     type = "Concession";
@@ -103,25 +103,13 @@
             <form method = "post" action = "paymentDetail.jsp" >
                 <table>
                     <tr><td>Top up amount</td><td><select name = "amount" required>
-                                <option value = "10.00">$10.00</option>
-                                <option value = "15.00">$15.00</option>
-                                <option value = "30.00">$30.00</option>
-                                <option value = "50.00">$50.00</option>
+                                <option value = "10.0">$10.00</option>
+                                <option value = "15.0">$15.00</option>
+                                <option value = "30.0">$30.00</option>
+                                <option value = "50.0">$50.00</option>
                             </select></td></tr>
-        <%
-            if(user == null){
-        %>            
-                    <tr><td colspan = "3"><a class = "button" href = "contactDetail.jsp">Back</a></td>
-        <%
-            }
-            else{
-        %>
-                    <tr><td colspan = "3"><a class = "button" href = "chooseOpalCard.jsp">Back</a></td>
-        <%
-            }
-        %>
-                        <td align = "right"><input type =  "submit" value = "Continue"></td></tr>
-                    <tr><td><a class = "button" href = "orderCancelled.jsp">Cancel</a></tr>                
+                    <tr><td colspan = "3"></td>
+                        <td align = "right"><input type =  "submit" value = "Continue"></td></tr>          
                 </table>
                 </form>
             </form>

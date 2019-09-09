@@ -7,7 +7,7 @@ package asd.model;
 
 /**
  *
- * @author aasdd
+ * @author anita
  */
 public class Order {
     
@@ -91,6 +91,16 @@ public class Order {
     public void setStatus(String status) {
         this.status = status;
     }
-
+    
+    public String valid(String qty){
+        String error = qty;
+        try{
+            int x = Integer.parseInt(qty);
+        }
+        catch (NumberFormatException ex){
+            error = "Invalid";
+        }
+        return error;
+    }
 
 }
