@@ -14,6 +14,17 @@ import static com.mongodb.client.model.Filters.eq;
 import com.mongodb.BasicDBObject;
 import java.util.regex.Pattern;
 
+import java.util.logging.Logger; 
+
+import com.mongodb.client.model.Filters;
+import static com.mongodb.client.model.Filters.and;
+import static com.mongodb.client.model.Filters.eq;
+import com.mongodb.client.model.Updates;
+import static com.mongodb.client.model.Updates.combine;
+import static com.mongodb.client.model.Updates.pull;
+import org.bson.conversions.Bson;
+import org.bson.types.ObjectId;
+
 public class MongoDBConnector {
 
     private List<Document> users = new ArrayList();

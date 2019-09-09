@@ -12,6 +12,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="./css/aManger.css"/>
         <title>JSP Page</title>
     </head>
     <body>
@@ -32,7 +33,10 @@
           </div>
     <%String loginL = request.getParameter("date");%>
          <p><%=loginL%></p>
+       <div class ="title">
          <h1>Opal Cards</h1>
+       </div>
+          <div class="table"> 
             <table>
                 <thead>
                     <th>User</th>
@@ -48,45 +52,49 @@
                 for (Time time: times)
                 {
         %>        
+        
                     <tr>
                         <td><%=time.getCustomerID()%></td>
                         <td><%=time.getLoginT()%></td>
-                        <td><%=time.getLogoutT()%></td>
-                         <td width="10%"><input type="submit" value="delete" name="delete" ></td>
+                        <td><%=time.getLogoutT()%> <%=time.getloginID()%></td>
+                    <form  method="POST">
+                         <td width="10%"><input type="submit"  onclick="refresh()" value="delete" name="Remove" ></td>
                <input type="hidden" id="loginT" name="loginT" value= <%=time.getloginID()%> >
+                    </form>       
+               
                     </tr>
         <%
                 }
         }
                   else{
-
+                  
                     String loginD = request.getParameter("date");
                     dbTimes = connector.findTimes(loginD);
                     times = dbTimes.getList(); 
                     
                      for (Time time: times){
-        %>
+        %>  
+     
                   <tr>
                         <td><%=time.getCustomerID()%></td>
                         <td><%=time.getLoginT()%></td>
                         <td><%=time.getLogoutT()%></td>
-                        <td width="10%"><input type="submit" onclick="refresh()" value="delete" name="delete" ></td>
-               <input type="hidden" id="loginT" name="loginT" value= <%=time.getloginID()%> >
+                      <form  method="POST">  <td width="10%"><input type="submit" onclick="refresh()" value="delete" name="Remove" ></td>
+               <input type="hidden" id="loginT" name="loginT" value= <%=time.getloginID()%> ><form>
                     </tr>
-              <script>function refresh(){
-                 location.reload();
-             }</script>
-                    
+            
                     <%  }
                     }%>
             </table>
-            <% if(request.getParameter("delete")!=null)
+            </div>
+                <% if(request.getParameter("Remove")!=null)
              {  
                  
-                  String loginT = request.getParameter("loginT") ;     
+                 String loginT = request.getParameter("loginT") ;     
                  connector.removeTime(loginT);%><%--delete the databse entry withe the specific info --%>
-                 
-             <%}%>
-            
+             <%}%> 
+             <script>function refresh(){
+                 location.reload();
+             }</script>
     </body>
 </html>
