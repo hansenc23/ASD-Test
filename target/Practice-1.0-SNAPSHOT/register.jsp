@@ -23,6 +23,7 @@
     <body>
         
         <%
+            
             Random rand = new Random();
             int n = rand.nextInt(90000) + 10000;
             
