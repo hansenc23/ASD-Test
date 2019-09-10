@@ -13,7 +13,7 @@ and open the template in the editor.
 .mydetails{
         float: left;
         width: 73%;
-        height: 450px;
+        height: 700px;
         padding: 30px;
         margin: 0 240px;
         border-radius: 5px;
@@ -51,6 +51,8 @@ table#password{
     float: right;
     
 }
+
+
 
 .edit{
     float: right;

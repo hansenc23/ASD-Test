@@ -173,8 +173,63 @@ public class MongoDBConnector {
         }
         return user;
     }
-  
     
+     public void addSecurityQuestion(Question question, User user){
+        MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
+        try(MongoClient client = new MongoClient(uri)){
+            MongoDatabase db = client.getDatabase(uri.getDatabase());
+            MongoCollection<Document> userlist = db.getCollection("ASD-app-users");
+            Document doc = new Document().append("Question", question.getQuestion()).append("Answer", question.getAnswer());
+            userlist.updateOne(eq("Username", user.getEmail()), new Document("$set", new Document("SecurityQuestion",doc)));          
+        }
+    }
+     
+     public String getSecurityQuestion(String email, String password){
+            MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
+            String question="";
+            String exception="";
+           try (MongoClient client = new MongoClient(uri)) {
+               MongoDatabase db = client.getDatabase(uri.getDatabase());
+               MongoCollection<Document> userlist = db.getCollection("ASD-app-users");
+               Document doc = userlist.find(and(eq("Username", email), eq("Password", password))).first();
+               Document doc_security_question = doc.get("SecurityQuestion", Document.class);
+               question = doc_security_question.getString("Question");
+               
+               if(doc_security_question.isEmpty()){
+                   throw new Exception("no question");
+               }
+        
+     }catch(Exception ex){
+         return ex.getMessage();
+     }
+           return question;
+     }
+        
+     
+        public String getAnswer(String email, String password){
+         MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
+         String answer;
+        try (MongoClient client = new MongoClient(uri)) {
+            MongoDatabase db = client.getDatabase(uri.getDatabase());
+            MongoCollection<Document> userlist = db.getCollection("ASD-app-users");
+            Document doc = userlist.find(and(eq("Username", email), eq("Password", password))).first();
+            Document doc_security_question = doc.get("SecurityQuestion", Document.class);
+            answer = doc_security_question.getString("Answer");
+            
+            if(doc_security_question.isEmpty()){
+                throw new Exception("no question");
+            }
+         
+         
+
+            }catch(Exception ex){
+                return ex.getMessage();
+            }
+        
+        return answer;
+        }   
+        
+
     
     
 
@@ -420,5 +475,7 @@ public class MongoDBConnector {
             timelist.deleteOne(eq("loginID", loginID));
         }
     }
+           
+          
 }
 

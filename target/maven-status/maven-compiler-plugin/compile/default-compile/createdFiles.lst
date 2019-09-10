@@ -2,7 +2,6 @@ asd\model\Paymentmethod.class
 asd\controller\ConnServlet.class
 asd\model\Time.class
 asd\model\User.class
-asd\model\dao\MongoDBConnector.class
 asd\model\Times.class
 asd\model\TopUpPayment.class
 asd\model\OrderPayment.class
@@ -12,3 +11,4 @@ asd\model\OpalCards.class
 asd\controller\Validator.class
 asd\model\Users.class
 asd\controller\ValidatorServlet.class
+asd\model\Question.class
