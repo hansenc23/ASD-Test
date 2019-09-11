@@ -226,7 +226,7 @@
                 }
             } 
         %>
-                        <tr><td colspan = "3"><input type="submit" formaction="orderEdit.jsp" value="Edit" name="edit"></td><td align = "right"><input type="submit" value="Confirm" name = "confirm"></td></tr>
+                        <tr><td colspan = "3"><input type="submit" formaction="orderEdit.jsp" value="Edit" name="edit"></td><td align = "right"><input id="orderConfirmation_confirm" type="submit" value="Confirm" name = "confirm"></td></tr>
                         <tr><td><a class = "button" href = "orderCancelled.jsp">Cancel</a></tr>
                     </table>
             </form>

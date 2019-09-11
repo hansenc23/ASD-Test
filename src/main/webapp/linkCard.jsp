@@ -40,6 +40,7 @@
         </div>
         <%
             // IF FORM IS ALREADY SUBMITTED
+            if(request.getParameter("link") != null) {
             String adminemail = (String)session.getAttribute("adminemail");
             String adminpass = (String)session.getAttribute("adminpassword");
             MongoDBConnector connector = new MongoDBConnector(adminemail, adminpass);
@@ -55,14 +56,14 @@
             available = connector.isAvailable(card);
             
             // Card is already linked to user's account
-            if (linked && request.getParameter("link") != null) {
+            if (linked) {
         %>
         <div class="fail">
             <p>Cannot link the Opal Card, card is already exist in your account</p>
         </div>
         <%
             // Card is new to the user's account
-            } else if (!linked && request.getParameter("link") != null && available) {
+            } else if (!linked && available) {
                 connector.linkCard(linkedCard, user);
         %>
         <div class="success">
@@ -70,13 +71,14 @@
         </div>    
         <%
             // Opal ID and or security code is wrong
-            } else if (request.getParameter("link") != null && !available) {
+            } else if (!available) {
         %>
         <div class="fail">
             <p>Incorrect Opal Card number or security code</p>
         </div>
         <%
             }
+        }
         %>
     </body>
 </html>

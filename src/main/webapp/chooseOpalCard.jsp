@@ -38,7 +38,7 @@
                 <h5>Adult</h5>
                 <p>if you're 16 years of age, or older, and normally 
                      pay full fare</p>
-                <input type = "submit" value = "order" name = "adult">
+                <input type = "submit" value = "order" name = "adult" id="type_adult">
             </div>
             <div class = "box">
                 <img src = "./image/card_child_large.png">
@@ -47,7 +47,7 @@
                 <p>if you're aged 4-15 years old, or a full 
                     time NSW/ACT school student aged 16 years 
                     or older</p>
-                <input type = "submit" value = "order" name = "child">
+                <input type = "submit" value = "order" name = "child" id="type_child">
             </div>
             
             <div class = "box">
@@ -56,7 +56,7 @@
                 <h5>Pensioner</h5>
                 <p>for eligible NSW seniors, interstate 
                     seniors, pensioners and asylum seekers</p>
-                <input type = "submit" value = "order" name = "pensioner">
+                <input type = "submit" value = "order" name = "pensioner" id="type_pensioner">
             </div>
             
             <div class = "box">
@@ -66,7 +66,7 @@
                 <p>for eligible tertiary students, apprentices 
                     and trainees, job seekers and Centrelink 
                     customers</p>
-                <input type = "submit" value = "order" name = "concession">
+                <input type = "submit" value = "order" name = "concession" id="type_concession">
             </div>
         </div>
     </body>

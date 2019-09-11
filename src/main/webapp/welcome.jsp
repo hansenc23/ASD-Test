@@ -25,16 +25,16 @@
         String password = request.getParameter("password");
         String address = request.getParameter("address");
         String phoneNumber = request.getParameter("phone");
-        String isStaff = request.getParameter("isStaff");
+        String isStaff = (request.getParameter("isStaff"));
 
         User user = new User(firstName, lastName, email, password, address, phoneNumber, isStaff);
-        session.setAttribute("user", user);        
+             
         
         String adminemail = (String)session.getAttribute("adminemail");
         String adminpass = (String)session.getAttribute("adminpassword");
         MongoDBConnector connector = new MongoDBConnector(adminemail, adminpass);
-        if(connector != null ) connector.add(user); else out.print("Cannot add user");
-
+        if(connector != null ) { connector.add(user);session.setAttribute("user", user);   } else out.print("Cannot add user");
+        
     %>
     <body> 
 
@@ -52,5 +52,12 @@
         </div>   
     </body>
     <p class="p">Click <a href="main.jsp" class="link" target="_parent"> here </a> to go to main page.</p>
-
+<%
+    if (isStaff.equalsIgnoreCase("true")) {
+        session.setAttribute("staff", user);   
+%>
+<a href="adminPage.jsp">Here</a>
+    <%
+        }
+    %>
 </html>

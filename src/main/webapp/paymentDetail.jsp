@@ -78,13 +78,13 @@
             }
         %>
             <form method = "post" action = "orderConfirmation.jsp" >
-                    <tr><td>First name(s)</td><td><input type = "text" name = "cardfname" required></td>
-                        <td>Last name</td><td><input type = "text" name = "cardlname" required></td></tr>
+                    <tr><td>First name(s)</td><td><input id="paymentDetail_first_name" type = "text" name = "cardfname" required></td>
+                        <td>Last name</td><td><input id="paymentDetail_last_name" type = "text" name = "cardlname" required></td></tr>
                     <tr><td>Card number</td><td>
-                                    <input type ="text" name = "cardnumber" minlength="16" maxlength="16" required></td></tr>
+                                    <input id="paymentDetail_card_number" type ="text" name = "cardnumber" minlength="16" maxlength="16" required></td></tr>
                     <tr><td>Expiry date</td>
                         <td>
-                        <select name = "expirymonth">
+                        <select id="paymentDetail_expiry_month" name = "expirymonth">
                             <option value="01">January</option>
                             <option value="02">February </option>
                             <option value="03">March</option>
@@ -98,7 +98,7 @@
                             <option value="11">November</option>
                             <option value="12">December</option>
                         </select>
-                        <select name = "expiryyear">
+                        <select id="paymentDetail_expiry_year" name = "expiryyear">
                             <option value="19"> 2019</option>
                             <option value="20"> 2020</option>
                             <option value="21"> 2021</option>
@@ -111,9 +111,9 @@
                         </select>
                         </td>
                         <td>CVV</td>
-                        <td><input type = "text" name = "cvv" minlength="3" maxlength="3" size = "1" required></td></tr>
+                        <td><input id="paymentDetail_cvv" type = "text" name = "cvv" minlength="3" maxlength="3" size = "1" required></td></tr>
                     <tr><td colspan = "3"></td>
-                        <td align = "right"><input type =  "submit" value = "Continue"></td></tr>             
+                        <td align = "right"><input id="paymentDetail_continue" type =  "submit" value = "Continue"></td></tr>             
                 </table>
             </form>
         </div>

@@ -54,13 +54,13 @@
         <div class = "orderDetail">
         <form method = "post" action = "orderValue.jsp" > 
         <table>
-            <tr><td>First name(s)</td><td><input type = "text" name = "firstname" required></td>
-            <td>Last name</td><td><input type = "text" name = "lastname" required></td></tr>
-            <tr><td>Email Address</td><td><input type = "email" name = "email" required></td>
-                <td>Mobile Phone</td><td><input type = "text" name = "phone" required></td></tr>
-            <tr><td>Address</td><td><input type = "text" name = "address" required></td></tr>
-            <tr><td>I read <a href = 'asdf.jsp'>the tos</a></td><td><input type = "checkbox" name = "tos" required></td></tr>
-            <tr><td colspan = "3"></td><td align = "right"><input type =  "submit" value = "Continue"></td></tr>
+            <tr><td>First name(s)</td><td><input type = "text" name = "firstname" id="contact_first_name" required></td>
+            <td>Last name</td><td><input type = "text" name = "lastname" id="contact_last_name" required></td></tr>
+            <tr><td>Email Address</td><td><input type = "email" name = "email" id="contact_email_address" required></td>
+                <td>Mobile Phone</td><td><input type = "text" name = "phone" id="contact_mobile_phone" required></td></tr>
+            <tr><td>Address</td><td><input type = "text" name = "address" id="contact_address" required></td></tr>
+            <tr><td>I read <a href = 'asdf.jsp'>the tos</a></td><td><input type = "checkbox" name = "tos" id = "contact_tos" required></td></tr>
+            <tr><td colspan = "3"></td><td align = "right"><input id = "contact_continue" type =  "submit" value = "Continue"></td></tr>
         </table>
         </form>
         </div>

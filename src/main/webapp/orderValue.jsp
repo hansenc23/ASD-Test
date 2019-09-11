@@ -102,14 +102,14 @@
         <div class = "paymentDetail">        
             <form method = "post" action = "paymentDetail.jsp" >
                 <table>
-                    <tr><td>Top up amount</td><td><select name = "amount" required>
+                    <tr><td>Top up amount</td><td><select name = "amount" id="oder_value_select" required>
                                 <option value = "10.0">$10.00</option>
                                 <option value = "15.0">$15.00</option>
                                 <option value = "30.0">$30.00</option>
                                 <option value = "50.0">$50.00</option>
                             </select></td></tr>
                     <tr><td colspan = "3"></td>
-                        <td align = "right"><input type =  "submit" value = "Continue"></td></tr>          
+                        <td align = "right"><input id = "order_value_continue" type =  "submit" value = "Continue"></td></tr>          
                 </table>
                 </form>
             </form>
