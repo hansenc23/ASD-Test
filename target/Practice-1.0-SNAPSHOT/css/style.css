@@ -2,8 +2,8 @@
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
-
- 
+*/
+/* 
     Created on : 12/08/2019, 10:14:39 PM
     Author     : hanse
 */
@@ -58,7 +58,7 @@ header{
 
 
 
-.logo-container,
+/*.logo-container,
 .nav-links,
 .reg {
     
@@ -95,4 +95,4 @@ img {
 	
 	justify-content: flex-end;
         list-style: none;
-}
+}*/

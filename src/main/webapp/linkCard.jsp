@@ -4,7 +4,6 @@
     Author     : Michelle
 --%>
 
-<%@page import="asd.model.dao.MongoDBConnector"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@include file="navbar.jsp" %>
 <%@include file="sidebar.jsp" %>
@@ -19,9 +18,12 @@
         <title>Link Card</title>
     </head>
     <body>
+        <%
+            //User user = (User)session.getAttribute("user");
+        %>
         <h2>Link existing Opal card to account</h2>
         <div class="cardDetails">
-            <form method = "POST" action = "linkCard.jsp" >
+            <form method = "POST" action = "main.jsp" >
                 <table>
                     <tr><td colspan="3">Opal card number</td></tr>
                     <tr>
@@ -38,47 +40,5 @@
                 </table>
             </form>
         </div>
-        <%
-            // IF FORM IS ALREADY SUBMITTED
-            if(request.getParameter("link") != null) {
-            String adminemail = (String)session.getAttribute("adminemail");
-            String adminpass = (String)session.getAttribute("adminpassword");
-            MongoDBConnector connector = new MongoDBConnector(adminemail, adminpass);
-            
-            String opalID = request.getParameter("ID1") + " " + request.getParameter("ID2") + " "
-                          + request.getParameter("ID3") + " " +request.getParameter("ID4");
-            String securityCode = request.getParameter("securityCode");
-            
-            OpalCard linkedCard = new OpalCard(opalID);
-            OpalCard card = new OpalCard(opalID, securityCode);
-            boolean linked, available = false;
-            linked = connector.isLinked(linkedCard, user);
-            available = connector.isAvailable(card);
-            
-            // Card is already linked to user's account
-            if (linked) {
-        %>
-        <div class="fail">
-            <p>Cannot link the Opal Card, card is already exist in your account</p>
-        </div>
-        <%
-            // Card is new to the user's account
-            } else if (!linked && available) {
-                connector.linkCard(linkedCard, user);
-        %>
-        <div class="success">
-            <p>Card is successfully linked to your account!</p>
-        </div>    
-        <%
-            // Opal ID and or security code is wrong
-            } else if (!available) {
-        %>
-        <div class="fail">
-            <p>Incorrect Opal Card number or security code</p>
-        </div>
-        <%
-            }
-        }
-        %>
     </body>
 </html>

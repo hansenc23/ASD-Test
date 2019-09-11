@@ -5,7 +5,6 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@page import="asd.model.*"%>
 <%@include file="navbar.jsp" %>
 <%@include file="sidebar.jsp" %>
 <!DOCTYPE html>
@@ -19,18 +18,6 @@
     </head>
     <body>
         <div class = "clearfix">
-            <%
-                //check whether the user login, if no then go to contactDetail.jsp
-                if(user==null){
-            %>
-                    <form method = "post" action = "contactDetail.jsp" >
-            <%
-                }
-                //if yes then go to paymentDetail.jsp
-                if(user!=null){
-            %>
-                    <form method = "post" action = "orderValue.jsp" >
-            <%  }%>
             <h3>&nbsp;&ensp;Choose an Opal card:</h3>
             <div class = "box">
                 <img src = "./image/card_adult_large.png">
@@ -38,8 +25,9 @@
                 <h5>Adult</h5>
                 <p>if you're 16 years of age, or older, and normally 
                      pay full fare</p>
-                <input type = "submit" value = "order" name = "adult" id="type_adult">
+                <a class = "button" href = "contactDetail.jsp">order</a>
             </div>
+            
             <div class = "box">
                 <img src = "./image/card_child_large.png">
                 &nbsp;
@@ -47,7 +35,7 @@
                 <p>if you're aged 4-15 years old, or a full 
                     time NSW/ACT school student aged 16 years 
                     or older</p>
-                <input type = "submit" value = "order" name = "child" id="type_child">
+                <a class = "button" href = "contactDetail.jsp">order</a>
             </div>
             
             <div class = "box">
@@ -56,7 +44,7 @@
                 <h5>Pensioner</h5>
                 <p>for eligible NSW seniors, interstate 
                     seniors, pensioners and asylum seekers</p>
-                <input type = "submit" value = "order" name = "pensioner" id="type_pensioner">
+                <a class = "button" href = "contactDetail.jsp">order</a>
             </div>
             
             <div class = "box">
@@ -66,7 +54,7 @@
                 <p>for eligible tertiary students, apprentices 
                     and trainees, job seekers and Centrelink 
                     customers</p>
-                <input type = "submit" value = "order" name = "concession" id="type_concession">
+                <a class = "button" href = "contactDetail.jsp">order</a>
             </div>
         </div>
     </body>

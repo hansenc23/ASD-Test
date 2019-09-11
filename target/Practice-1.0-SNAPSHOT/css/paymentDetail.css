@@ -8,24 +8,19 @@ and open the template in the editor.
     Author     : aasdd
 */
 
-    .paymentDetail{
+     .paymentDetail{
         float: left;
         width: 73%;
-        height: auto;
+        height: 500px;
         padding: 30px;
         margin: 0 240px;
         border-radius: 5px;
         background-color: #e6f7ff;
         border-top: 1px solid #b3d9ff;   
     } 
-    .h3{
-        margin-left: 250px;
-        margin-bottom: 10px;
-    }
-    .h3 h3 {
+    .paymentDetail h4 {
         color: #004d80;
         font-family: Arial;
-      
     }
     
     .paymentDetail h6 {
@@ -76,29 +71,5 @@ and open the template in the editor.
         margin-left: auto;
         margin-right: auto;
         border-width: 1px;
-    }
-    
-    .clearfix .paymentmethod {
-        padding: 10px 10px 10px 10px;
-        border: 1px solid #005580;
-        border-radius: 5px;
-        width: 30%;  
-        height: auto;
-        margin-right: 20px;
-        color: #0088cc;
-        font-family: Arial;
-        float: left;
-        background-color: #FFFFFF;
-    }
-    
-    .clearfix::after{
-        content: "";
-        clear: both;
-        width: 100%;
-    }
-    
-    .clearfix{
-        margin-top: 20px;
-        margin-bottom: 20px;
     }
     

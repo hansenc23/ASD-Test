@@ -7,11 +7,7 @@ and open the template in the editor.
     Created on : Aug 15, 2019, 1:52:50 AM
     Author     : Hieu
 */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
     .topup{
         float: left;
         width: 73%;
@@ -22,17 +18,10 @@ and open the template in the editor.
         background-color: #e6f7ff;
         border-top: 1px solid #b3d9ff;  
     } 
-    .h3 h3 {
+    h3 {
         color: #004d80;
-        font-family: Arial;     
+        font-family: Arial;
     }
-    .h3{
-        margin-left: 250px;
-/*        display: flex;
-        justify-content: flex-start;*/
-/*        padding: 0rem 0rem 0rem 15rem;*/
-    }
-    
     .button {
         font: 15px Arial;
         text-decoration: none;
@@ -51,7 +40,7 @@ and open the template in the editor.
         font-family: Arial;
         font-size: 16px;
         padding-top: 18px;
-        padding-right: 10px;
+        padding-right: 5px;
         padding-left: 50px;
     }
     .topup a,.topup input[type=submit]{
@@ -68,28 +57,4 @@ and open the template in the editor.
             
     A:hover, .topup input[type=submit]:hover{
         background-color: #0088cc;
-    }
-    
-    .clearfix .paymentmethod {
-        padding: 10px 10px 10px 10px;
-        border: 1px solid #005580;
-        border-radius: 5px;
-        width: 30%;  
-        height: auto;
-        margin-right: 20px;
-        color: #0088cc;
-        font-family: Arial;
-        float: left;
-        background-color: #FFFFFF;
-    }
-    
-    .clearfix::after{
-        content: "";
-        clear: both;
-        width: 100%;
-    }
-    
-    .clearfix{
-        margin-top: 20px;
-        margin-bottom: 20px;
     }

@@ -34,7 +34,6 @@
          <div class="navigation-bar">
              <ul>
                 <li><a>Welcome <%=name%></a></li>
-                <li><a href="orderHistory.jsp">Order History</a></li>
                 <li><a href="logout.jsp">Logout</a></li>
                 <li><a href="main.jsp">Home</a></li>
               
