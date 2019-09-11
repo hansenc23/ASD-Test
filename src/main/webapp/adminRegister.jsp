@@ -4,7 +4,7 @@
     Author     : hanse
 --%>
 
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page contentType="text/html" pageEncoding="UTF-8" import="java.util.*"%>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -19,6 +19,12 @@
         <title>Home</title>
     </head>
     <body>
+        <%
+            
+            Random rand = new Random();
+            int n = rand.nextInt(90000) + 10000;
+            
+        %>
 
         <br>
         <h2 style="text-align: center">Create Staff Account</h2>
@@ -36,6 +42,7 @@
                     <tr><td>Phone Number:</td><td> <input type="text" name ="phone"></td></tr>
                     <tr><td>Position:</td><td> <input type="text" name ="position"></td></tr>
                     <input type="hidden" name ="isStaff" value="true"></td></tr>
+                    <input type="hidden" name ="userID" value="<%=n%>">
 
                     <tr><td></td>
                         <td>
