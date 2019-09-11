@@ -8,8 +8,6 @@ Feature: Order Opal Card Feature
     And User click "contact_continue"
     And User select the top up value
     And User click "order_value_continue"
-    And User select the top up value
-    And User click "order_value_continue"
     And User fill in payment detail
     And User click "paymentDetail_continue"
     And User click "orderConfirmation_edit"

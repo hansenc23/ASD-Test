@@ -3,17 +3,17 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2019-09-11T09:22:23.237Z",
-        "line": 10,
-        "name": "Choose an Opal Card",
+        "start_timestamp": "2019-09-11T09:45:13.843Z",
+        "line": 20,
+        "name": "Successfully order an Opal Card",
         "description": "",
-        "id": "order-opal-card-feature;choose-an-opal-card;;2",
+        "id": "order-opal-card-feature;successfully-order-an-opal-card;;2",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 9477696700,
+              "duration": 7877743500,
               "status": "passed"
             },
             "line": 4,
@@ -31,7 +31,7 @@
           },
           {
             "result": {
-              "duration": 1095394500,
+              "duration": 978118800,
               "status": "passed"
             },
             "line": 5,
@@ -49,7 +49,7 @@
           },
           {
             "result": {
-              "duration": 749015000,
+              "duration": 545093600,
               "status": "passed"
             },
             "line": 6,
@@ -67,181 +67,171 @@
           },
           {
             "result": {
-              "duration": 29542000,
+              "duration": 326350400,
               "status": "passed"
             },
             "line": 7,
-            "name": "The page should be navigated to \"Contact Detail\"",
+            "name": "User fill in contact detail",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"Contact Detail\"",
-                  "offset": 32
-                }
-              ],
-              "location": "OrderFeature.the_page_should_be_navigated_to(String)"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2019-09-11T09:22:34.595Z",
-        "line": 11,
-        "name": "Choose an Opal Card",
-        "description": "",
-        "id": "order-opal-card-feature;choose-an-opal-card;;3",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 7512298700,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "User is in the \"main.jsp\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"main.jsp\"",
-                  "offset": 15
-                }
-              ],
-              "location": "OrderFeature.user_is_in_the(String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 977465800,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "User Click on \"order_opal_card\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"order_opal_card\"",
-                  "offset": 14
-                }
-              ],
-              "location": "OrderFeature.user_Click_on(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 594871600,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "User Click on \"type_child\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"type_child\"",
-                  "offset": 14
-                }
-              ],
-              "location": "OrderFeature.user_Click_on(String)"
+              "location": "OrderFeature.user_fill_in_contact_detail()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 13475200,
+              "duration": 720328700,
               "status": "passed"
             },
-            "line": 7,
-            "name": "The page should be navigated to \"Contact Detail\"",
+            "line": 8,
+            "name": "User click \"contact_continue\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Contact Detail\"",
-                  "offset": 32
+                  "val": "\"contact_continue\"",
+                  "offset": 11
                 }
               ],
-              "location": "OrderFeature.the_page_should_be_navigated_to(String)"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2019-09-11T09:22:43.695Z",
-        "line": 12,
-        "name": "Choose an Opal Card",
-        "description": "",
-        "id": "order-opal-card-feature;choose-an-opal-card;;4",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 7325179000,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "User is in the \"main.jsp\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"main.jsp\"",
-                  "offset": 15
-                }
-              ],
-              "location": "OrderFeature.user_is_in_the(String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 1101890900,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "User Click on \"order_opal_card\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"order_opal_card\"",
-                  "offset": 14
-                }
-              ],
-              "location": "OrderFeature.user_Click_on(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 722309900,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "User Click on \"type_pensioner\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"type_pensioner\"",
-                  "offset": 14
-                }
-              ],
-              "location": "OrderFeature.user_Click_on(String)"
+              "location": "OrderFeature.user_click(String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 21279600,
+              "duration": 100442300,
               "status": "passed"
             },
-            "line": 7,
-            "name": "The page should be navigated to \"Contact Detail\"",
+            "line": 9,
+            "name": "User select the top up value",
+            "match": {
+              "location": "OrderFeature.user_select_the_top_up_value()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 313549100,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User click \"order_value_continue\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Contact Detail\"",
+                  "val": "\"order_value_continue\"",
+                  "offset": 11
+                }
+              ],
+              "location": "OrderFeature.user_click(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 337497700,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User fill in payment detail",
+            "match": {
+              "location": "OrderFeature.user_fill_in_payment_detail()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 521574000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User click \"paymentDetail_continue\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"paymentDetail_continue\"",
+                  "offset": 11
+                }
+              ],
+              "location": "OrderFeature.user_click(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 331966300,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User click \"orderConfirmation_edit\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"orderConfirmation_edit\"",
+                  "offset": 11
+                }
+              ],
+              "location": "OrderFeature.user_click(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 661022200,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User fill in edit detail",
+            "match": {
+              "location": "OrderFeature.user_fill_in_edit_detail()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 317117400,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User click \"edit_continue\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"edit_continue\"",
+                  "offset": 11
+                }
+              ],
+              "location": "OrderFeature.user_click(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1515370300,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User click \"orderConfirmation_confirm\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"orderConfirmation_confirm\"",
+                  "offset": 11
+                }
+              ],
+              "location": "OrderFeature.user_click(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6344500,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "The page should be navigated to \"Order Succeed\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Order Succeed\"",
                   "offset": 32
                 }
               ],
@@ -252,17 +242,17 @@
         ]
       },
       {
-        "start_timestamp": "2019-09-11T09:22:52.882Z",
-        "line": 13,
-        "name": "Choose an Opal Card",
+        "start_timestamp": "2019-09-11T09:45:28.398Z",
+        "line": 21,
+        "name": "Successfully order an Opal Card",
         "description": "",
-        "id": "order-opal-card-feature;choose-an-opal-card;;5",
+        "id": "order-opal-card-feature;successfully-order-an-opal-card;;3",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 7560605700,
+              "duration": 7074390600,
               "status": "passed"
             },
             "line": 4,
@@ -280,7 +270,7 @@
           },
           {
             "result": {
-              "duration": 982112000,
+              "duration": 946452700,
               "status": "passed"
             },
             "line": 5,
@@ -298,7 +288,7 @@
           },
           {
             "result": {
-              "duration": 566570200,
+              "duration": 520089700,
               "status": "passed"
             },
             "line": 6,
@@ -316,69 +306,22 @@
           },
           {
             "result": {
-              "duration": 10638400,
+              "duration": 350686100,
               "status": "passed"
             },
             "line": 7,
-            "name": "The page should be navigated to \"Contact Detail\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Contact Detail\"",
-                  "offset": 32
-                }
-              ],
-              "location": "OrderFeature.the_page_should_be_navigated_to(String)"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2019-09-11T09:23:02.004Z",
-        "line": 15,
-        "name": "Successfully fill in the contact detail",
-        "description": "",
-        "id": "order-opal-card-feature;successfully-fill-in-the-contact-detail",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 7215396800,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "User is in the \"contactDetail.jsp\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"contactDetail.jsp\"",
-                  "offset": 15
-                }
-              ],
-              "location": "OrderFeature.user_is_in_the(String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 652338500,
-              "status": "passed"
-            },
-            "line": 17,
             "name": "User fill in contact detail",
             "match": {
               "location": "OrderFeature.user_fill_in_contact_detail()"
             },
-            "keyword": "When "
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 1375073400,
+              "duration": 667605800,
               "status": "passed"
             },
-            "line": 18,
+            "line": 8,
             "name": "User click \"contact_continue\"",
             "match": {
               "arguments": [
@@ -393,70 +336,22 @@
           },
           {
             "result": {
-              "duration": 10895700,
+              "duration": 90886900,
               "status": "passed"
             },
-            "line": 19,
-            "name": "The page should be navigated to \"Order Value\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Order Value\"",
-                  "offset": 32
-                }
-              ],
-              "location": "OrderFeature.the_page_should_be_navigated_to(String)"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2019-09-11T09:23:11.259Z",
-        "line": 21,
-        "name": "Successfully add value to the opal card",
-        "description": "",
-        "id": "order-opal-card-feature;successfully-add-value-to-the-opal-card",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 6989281000,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "User is in the \"orderValue.jsp\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"orderValue.jsp\"",
-                  "offset": 15
-                }
-              ],
-              "location": "OrderFeature.user_is_in_the(String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#order_value_continue\"}\n  (Session info: chrome\u003d76.0.3809.132)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-P3652T2\u0027, ip: \u0027172.19.10.17\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_212\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\\Users\\aasdd\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51904}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 3601bad4936bf277fe1ed64216c82ccf\n*** Element info: {Using\u003did, value\u003dorder_value_continue}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\r\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat asd.test.OrderFeature.user_select_the_top_up_value(OrderFeature.java:58)\r\n\tat ✽.User select the top up value(file:opalFeatures/OrderFeature.feature:23)\r\n",
-              "duration": 63544300,
-              "status": "failed"
-            },
-            "line": 23,
+            "line": 9,
             "name": "User select the top up value",
             "match": {
               "location": "OrderFeature.user_select_the_top_up_value()"
             },
-            "keyword": "When "
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 28400,
-              "status": "skipped"
+              "duration": 307642100,
+              "status": "passed"
             },
-            "line": 24,
+            "line": 10,
             "name": "User click \"order_value_continue\"",
             "match": {
               "arguments": [
@@ -471,70 +366,22 @@
           },
           {
             "result": {
-              "duration": 18700,
-              "status": "skipped"
-            },
-            "line": 25,
-            "name": "The page should be navigated to \"Payment Detail\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Payment Detail\"",
-                  "offset": 32
-                }
-              ],
-              "location": "OrderFeature.the_page_should_be_navigated_to(String)"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2019-09-11T09:23:18.319Z",
-        "line": 27,
-        "name": "Successfully fill in the payment detail",
-        "description": "",
-        "id": "order-opal-card-feature;successfully-fill-in-the-payment-detail",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 6587591900,
+              "duration": 329386600,
               "status": "passed"
             },
-            "line": 28,
-            "name": "User is in the \"paymentDetail.jsp\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"paymentDetail.jsp\"",
-                  "offset": 15
-                }
-              ],
-              "location": "OrderFeature.user_is_in_the(String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#paymentDetail_first_name\"}\n  (Session info: chrome\u003d76.0.3809.132)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-P3652T2\u0027, ip: \u0027172.19.10.17\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_212\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\\Users\\aasdd\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51928}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: b3890442688ecb04a7641ee01203a698\n*** Element info: {Using\u003did, value\u003dpaymentDetail_first_name}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\r\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat asd.test.OrderFeature.user_fill_in_payment_detail(OrderFeature.java:64)\r\n\tat ✽.User fill in payment detail(file:opalFeatures/OrderFeature.feature:29)\r\n",
-              "duration": 33923300,
-              "status": "failed"
-            },
-            "line": 29,
+            "line": 11,
             "name": "User fill in payment detail",
             "match": {
               "location": "OrderFeature.user_fill_in_payment_detail()"
             },
-            "keyword": "When "
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 12500,
-              "status": "skipped"
+              "duration": 538830500,
+              "status": "passed"
             },
-            "line": 30,
+            "line": 12,
             "name": "User click \"paymentDetail_continue\"",
             "match": {
               "arguments": [
@@ -549,58 +396,10 @@
           },
           {
             "result": {
-              "duration": 10600,
-              "status": "skipped"
-            },
-            "line": 31,
-            "name": "The page should be navigated to \"Order Confirmation\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Order Confirmation\"",
-                  "offset": 32
-                }
-              ],
-              "location": "OrderFeature.the_page_should_be_navigated_to(String)"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2019-09-11T09:23:24.942Z",
-        "line": 33,
-        "name": "Successfully edit the order",
-        "description": "",
-        "id": "order-opal-card-feature;successfully-edit-the-order",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 6355894000,
+              "duration": 333917700,
               "status": "passed"
             },
-            "line": 34,
-            "name": "User is in the \"orderConfirmation.jsp\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"orderConfirmation.jsp\"",
-                  "offset": 15
-                }
-              ],
-              "location": "OrderFeature.user_is_in_the(String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#orderConfirmation_edit\"}\n  (Session info: chrome\u003d76.0.3809.132)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-P3652T2\u0027, ip: \u0027172.19.10.17\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_212\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\\Users\\aasdd\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51945}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 1e25865ec672e83b621d5b8f5f9c230d\n*** Element info: {Using\u003did, value\u003dorderConfirmation_edit}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\r\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat asd.test.OrderFeature.user_click(OrderFeature.java:95)\r\n\tat ✽.User click \"orderConfirmation_edit\"(file:opalFeatures/OrderFeature.feature:35)\r\n",
-              "duration": 20323600,
-              "status": "failed"
-            },
-            "line": 35,
+            "line": 13,
             "name": "User click \"orderConfirmation_edit\"",
             "match": {
               "arguments": [
@@ -611,14 +410,14 @@
               ],
               "location": "OrderFeature.user_click(String)"
             },
-            "keyword": "When "
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 8200,
-              "status": "skipped"
+              "duration": 652028700,
+              "status": "passed"
             },
-            "line": 36,
+            "line": 14,
             "name": "User fill in edit detail",
             "match": {
               "location": "OrderFeature.user_fill_in_edit_detail()"
@@ -627,10 +426,10 @@
           },
           {
             "result": {
-              "duration": 9400,
-              "status": "skipped"
+              "duration": 302220100,
+              "status": "passed"
             },
-            "line": 37,
+            "line": 15,
             "name": "User click \"edit_continue\"",
             "match": {
               "arguments": [
@@ -642,109 +441,13 @@
               "location": "OrderFeature.user_click(String)"
             },
             "keyword": "And "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2019-09-11T09:23:31.320Z",
-        "line": 39,
-        "name": "Successfully order",
-        "description": "",
-        "id": "order-opal-card-feature;successfully-order",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
+          },
           {
             "result": {
-              "duration": 6322518100,
+              "duration": 773857400,
               "status": "passed"
             },
-            "line": 40,
-            "name": "User is in the \"orderConfirmation.jsp\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"orderConfirmation.jsp\"",
-                  "offset": 15
-                }
-              ],
-              "location": "OrderFeature.user_is_in_the(String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#orderConfirmation_cancelled\"}\n  (Session info: chrome\u003d76.0.3809.132)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-P3652T2\u0027, ip: \u0027172.19.10.17\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_212\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\\Users\\aasdd\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51963}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 25a50f8417eb6f5888dda45c3d2bb5cb\n*** Element info: {Using\u003did, value\u003dorderConfirmation_cancelled}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\r\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat asd.test.OrderFeature.user_click(OrderFeature.java:95)\r\n\tat ✽.User click \"orderConfirmation_cancelled\"(file:opalFeatures/OrderFeature.feature:41)\r\n",
-              "duration": 31804400,
-              "status": "failed"
-            },
-            "line": 41,
-            "name": "User click \"orderConfirmation_cancelled\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"orderConfirmation_cancelled\"",
-                  "offset": 11
-                }
-              ],
-              "location": "OrderFeature.user_click(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 10300,
-              "status": "skipped"
-            },
-            "line": 42,
-            "name": "The page should be navigated to \"Order Cancelled\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Order Cancelled\"",
-                  "offset": 32
-                }
-              ],
-              "location": "OrderFeature.the_page_should_be_navigated_to(String)"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2019-09-11T09:23:37.676Z",
-        "line": 44,
-        "name": "Successfully order",
-        "description": "",
-        "id": "order-opal-card-feature;successfully-order",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 6496335400,
-              "status": "passed"
-            },
-            "line": 45,
-            "name": "User is in the \"orderConfirmation.jsp\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"orderConfirmation.jsp\"",
-                  "offset": 15
-                }
-              ],
-              "location": "OrderFeature.user_is_in_the(String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#orderConfirmation_confirm\"}\n  (Session info: chrome\u003d76.0.3809.132)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-P3652T2\u0027, ip: \u0027172.19.10.17\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_212\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\\Users\\aasdd\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51982}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 7c875cafa8b74ce52fb0ed1a3ef24fc2\n*** Element info: {Using\u003did, value\u003dorderConfirmation_confirm}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\r\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat asd.test.OrderFeature.user_click(OrderFeature.java:95)\r\n\tat ✽.User click \"orderConfirmation_confirm\"(file:opalFeatures/OrderFeature.feature:46)\r\n",
-              "duration": 21075600,
-              "status": "failed"
-            },
-            "line": 46,
+            "line": 16,
             "name": "User click \"orderConfirmation_confirm\"",
             "match": {
               "arguments": [
@@ -755,14 +458,14 @@
               ],
               "location": "OrderFeature.user_click(String)"
             },
-            "keyword": "When "
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 12100,
-              "status": "skipped"
+              "duration": 8242200,
+              "status": "passed"
             },
-            "line": 47,
+            "line": 17,
             "name": "The page should be navigated to \"Order Succeed\"",
             "match": {
               "arguments": [
