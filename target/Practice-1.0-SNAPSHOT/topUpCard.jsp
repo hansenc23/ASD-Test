@@ -81,7 +81,7 @@
                 <form method = "post" action = "topUpConfirmation.jsp" >
                         <tr><td>First name(s)</td><td><input type = "text" name = "firstname" required></td>
                             <td>Last name</td><td><input type = "text" name = "lastname" required></td></tr>
-                        <tr><td>Card number</td><td><input type = "text" name = "cardnumber" minlength="16" maxlength="16" size="1" required></td></tr>
+                        <tr><td>Card number</td><td><input type = "text" name = "cardnumber" minlength="16" maxlength="16"  required></td></tr>
                         <tr><td>Expiry date</td>
                             <td>
                             <select name = "expiryMonth">

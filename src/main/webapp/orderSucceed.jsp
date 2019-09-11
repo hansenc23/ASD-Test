@@ -45,7 +45,7 @@
                     connector.registerCard(opalcard);
                     Order order = new Order(getAmount.getCustomerId(), getAmount.getOpalId(), getAmount.getPaymentCard(), getAmount.getOpalType(), date, getAmount.getValue(), "Processing");
                     connector.add(order);
-                    Paymentmethod getpayment = (Paymentmethod)session.getAttribute("orderPayment");
+                    Paymentmethod getpayment = (Paymentmethod)session.getAttribute("anonpay");
                     connector.add(getpayment, order);
                 }
                 else{

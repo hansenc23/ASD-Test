@@ -41,7 +41,7 @@
                 if(request.getParameter("change") == null){ 
                     Order order = new Order(getAmount.getCustomerId(), getAmount.getOpalId(), getAmount.getPaymentCard(), getAmount.getOpalType(), date, getAmount.getValue(), "Cancelled");
                     connector.add(order);
-                    Paymentmethod getpayment = (Paymentmethod)session.getAttribute("orderPayment");
+                    Paymentmethod getpayment = (Paymentmethod)session.getAttribute("anonpay");
                     connector.add(getpayment, order);
                 }
                 else{
