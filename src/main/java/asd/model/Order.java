@@ -7,13 +7,13 @@ package asd.model;
 
 /**
  *
- * @author aasdd
+ * @author anita
  */
 public class Order {
     
-    private String orderId;
     private String customerId;
     private String opalId;
+    private String paymentCard;
     private String opalType;
     private String orderDate;
     private double value;
@@ -22,25 +22,19 @@ public class Order {
     
     public Order() {
     }
-    
-    public Order(String orderId, String customerId, String opalId, String opalType, String orderDate, double value, String status) {
-        this.orderId = orderId;
+
+    public Order(String customerId, String opalId, String paymentCard, String opalType, String orderDate, double value, String status) {
         this.customerId = customerId;
         this.opalId = opalId;
+        this.paymentCard = paymentCard;
         this.opalType = opalType;
         this.orderDate = orderDate;
         this.value = value;
         this.status = status;
     }
+    
+    
 
-
-    public String getOrderId() {
-        return orderId;
-    }
-
-    public void setOrderId(String orderId) {
-        this.orderId = orderId;
-    }
 
     public String getCustomerId() {
         return customerId;
@@ -58,6 +52,14 @@ public class Order {
         this.opalId = opalId;
     }
 
+    public String getPaymentCard() {
+        return paymentCard;
+    }
+
+    public void setPaymentCard(String paymentCard) {
+        this.paymentCard = paymentCard;
+    }
+    
     public String getOpalType() {
         return opalType;
     }
@@ -89,6 +91,16 @@ public class Order {
     public void setStatus(String status) {
         this.status = status;
     }
-
+    
+    public String valid(String qty){
+        String error = qty;
+        try{
+            int x = Integer.parseInt(qty);
+        }
+        catch (NumberFormatException ex){
+            error = "Invalid";
+        }
+        return error;
+    }
 
 }

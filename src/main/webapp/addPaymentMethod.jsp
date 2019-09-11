@@ -21,12 +21,12 @@
         <div class= "topup" >
         <h3>Add Payment Detail</h3>
         <p>Adding payment will help you check-out faster</p>
-        <form method = "post" action = "main.jsp" >
+        <form method = "post" action = "addPaymentMethodOutcome.jsp" >
         <table>
             
             <tr><td>First name(s)</td><td><input type = "text" name = "firstname" required></td>
                 <td>Last name</td><td><input type = "text" name = "lastname" required></td></tr>
-            <tr><td>Card number</td><td><input type = "text" name = "cardnumber" required></td></tr>
+            <tr><td>Card number</td><td><input type = "text" name = "cardnumber"  minlength="16" maxlength="16" required></td></tr>
             <tr><td>Expiry Month</td> <td>
                 <select name = "expiryMonth">
                     <option value="01">January</option>
@@ -55,7 +55,7 @@
                 </select>
                 </td>
                 <td>CVV</td>
-                <td><input type = "text" name = "cvv" required></td></tr>
+                <td><input type = "text" name = "cvv"  minlength="3" maxlength="3" size="1" required></td></tr>
             <tr><td><input type =  "submit" value = "Submit"></td>
             <td><a class = "button" href = "main.jsp">Back</a></td></tr>
         </table>
