@@ -1,3 +1,4 @@
+
 <%-- 
     Document   : index
     Created on : 12/08/2019, 9:56:44 PM
@@ -47,11 +48,13 @@
                 <tr><td>Password: </td><td class="text"><%=password%></td></tr>
                 <tr><td>Address: </td><td class="text"><%=address%></td></tr>
                 <tr><td>Phone: </td><td class="text"><%=phoneNumber%></td></tr>
-                <tr><td>Admin: </td><td class="text"><%=isStaff%></td></tr>
+                
             </table> 
-        </div>   
+        </div>  
+                <p class="p">Click <a href="main.jsp" class="link" target="_parent"> here </a> to go to Home page.</p>
     </body>
-    <p class="p">Click <a href="main.jsp" class="link" target="_parent"> here </a> to go to main page.</p>
+
+    
 
 </html>
 
