@@ -1,3 +1,4 @@
-asd\demo\test\LinkCardFeature.class
-asd\demo\test\RunTest.class
-asd\demo\test\OrderFeature.class
+asd\test\Driver.class
+asd\test\OrderFeature.class
+asd\test\LinkCardFeature.class
+asd\test\RunTest.class
