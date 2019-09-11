@@ -52,7 +52,7 @@
                     Order getUpAmount = (Order)session.getAttribute("updateOrder");
                     OpalCard opalcard = new OpalCard(getAmount.getOpalId(), getUpAmount.getValue(), getAmount.getOpalType(), securitycode);
                     connector.registerCard(opalcard);
-                    Paymentmethod getUppayment = (Paymentmethod)session.getAttribute("updateanonpayment");
+                    Paymentmethod getUppayment = (Paymentmethod)session.getAttribute("anonpay");
                     Order order = new Order(getAmount.getCustomerId(), getAmount.getOpalId(), getUpAmount.getPaymentCard(), getAmount.getOpalType(), date, getUpAmount.getValue(), "Processing");
                     connector.add(order);
                     connector.add(getUppayment, order);

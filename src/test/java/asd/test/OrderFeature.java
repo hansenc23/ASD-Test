@@ -9,6 +9,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
 
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -19,17 +20,17 @@ import org.openqa.selenium.support.ui.Select;
  *
  * @author aasdd
  */
-public class OrderFeature extends Driver {
+public class OrderFeature extends Driver{
     
     WebDriver driver;
 
     public OrderFeature() {
-        this.driver = super.getDriver();
+        driver = super.getDriver();
     }
     
     @Given("User is in the {string}")
     public void user_is_in_the(String url) {
-        driver.get("https://asd-test-app.herokuapp.com/" + url);
+        driver.get("https://asd-test-app.herokuapp.com/"+url);
     }
 
     @When("User Click on {string}")
@@ -54,8 +55,8 @@ public class OrderFeature extends Driver {
     
     @When("User select the top up value")
     public void user_select_the_top_up_value() {
-        Select amount = new Select(driver.findElement(By.id("order_value_continue")));
-        amount.selectByValue("30.0");
+        Select amount = new Select(driver.findElement(By.id("order_value_select")));
+        amount.selectByIndex(1);
     }
 
     @When("User fill in payment detail")
