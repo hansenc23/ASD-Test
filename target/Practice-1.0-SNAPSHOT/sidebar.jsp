@@ -16,7 +16,7 @@
     <body>
         <div class="sidenav">
             <a href="main.jsp">Home</a>
-            <a href="chooseOpalCard.jsp">Order an additional Opal card</a>
+            <a id="order_opal_card" href="chooseOpalCard.jsp">Order an additional Opal card</a>
             <% 
                 User userno = (User)session.getAttribute("user");
                 if(userno != null){
