@@ -65,7 +65,7 @@ public class OrderFeature extends Driver{
         driver.findElement(By.id("paymentDetail_last_name")).sendKeys("Chen");
         driver.findElement(By.id("paymentDetail_card_number")).sendKeys("2345678912345678");
         Select expirymonth = new Select(driver.findElement(By.id("paymentDetail_expiry_month")));
-        expirymonth.selectByValue("July");
+        expirymonth.selectByValue("07");
         Select expiryyear = new Select(driver.findElement(By.id("paymentDetail_expiry_year")));
         expiryyear.selectByValue("24");
         driver.findElement(By.id("paymentDetail_cvv")).sendKeys("453");
@@ -84,7 +84,7 @@ public class OrderFeature extends Driver{
         driver.findElement(By.id("edit_payment_last_name")).sendKeys("Hsu");
         driver.findElement(By.id("edit_payment_card_number")).sendKeys("9876765454326789");
         Select expirymonth = new Select(driver.findElement(By.id("edit_payment_expiry_month")));
-        expirymonth.selectByValue("November");
+        expirymonth.selectByValue("11");
         Select expiryyear = new Select(driver.findElement(By.id("edit_payment_expiry_year")));
         expiryyear.selectByValue("26");
         driver.findElement(By.id("edit_payment_cvv")).sendKeys("374");
