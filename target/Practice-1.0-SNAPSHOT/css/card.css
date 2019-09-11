@@ -13,9 +13,11 @@ and open the template in the editor.
     border: 1px solid #00B1F5;
     border-radius: 5px;
     max-width: 60%;  
-    margin-right: 20px;
     margin-left: 240px;
+    margin-bottom: 100px;
+    display: inline-block;
     color: #0088cc;
+    height: auto;
 }
 
 .box th, td {
@@ -24,9 +26,13 @@ and open the template in the editor.
     width: 50%;
     height: 50px;
 }
-            
+       
+.box h2 {
+    margin-right: 10px;
+}
+
 .box table {
-    width: 80%;
+    width: 90%;
 }
 
 .box td input[type=submit]{
@@ -35,7 +41,7 @@ and open the template in the editor.
     margin-left: 80px;
     color: white;
     cursor: pointer;
-    padding: 10px;
+    padding: 4px 10px;
     border: 0;
 }
 
