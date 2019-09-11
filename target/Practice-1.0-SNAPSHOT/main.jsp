@@ -21,7 +21,23 @@
     <body>
         
         <%
+            //User user = (User)session.getAttribute("user");
+            
+            //Add paymentmethod to user 
             if(user != null){
+                if (request.getParameter("firstname") != null){
+                    String firstname = request.getParameter("firstname");
+                    String lastname = request.getParameter("lastname");
+                    String cardnumber = request.getParameter("cardnumber");
+                    int expiryMonth = Integer.parseInt(request.getParameter("expiryMonth"));
+                    int expiryYear = Integer.parseInt(request.getParameter("expiryYear"));
+                    int cvv = Integer.parseInt(request.getParameter("cvv"));
+                    Paymentmethod paymt = new Paymentmethod(firstname,lastname,cardnumber,expiryMonth,expiryYear,cvv);
+                    String adminemail = (String)session.getAttribute("adminemail");
+                    String adminpass = (String)session.getAttribute("adminpassword");
+                    MongoDBConnector connector = new MongoDBConnector(adminemail, adminpass);
+                    connector.addPayment(paymt, user);
+                }
                 String adminemail = (String)session.getAttribute("adminemail");
                 String adminpass = (String)session.getAttribute("adminpassword");
                 MongoDBConnector connector = new MongoDBConnector(adminemail, adminpass);
@@ -84,8 +100,7 @@
                     </div>
         <%
                 }
-}
-            
+            }
         %>
     </body>
 </html>

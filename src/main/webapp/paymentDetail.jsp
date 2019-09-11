@@ -6,9 +6,10 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page import="asd.model.dao.MongoDBConnector"%>
+<%@page import="asd.model.*"%>
+<%@page import="java.util.ArrayList"%>
 <%@include file="navbar.jsp"%>
 <%@include file="sidebar.jsp" %>
-<%@page import="asd.model.User"%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -21,75 +22,100 @@
     <body>
         
         <%
-            String firstname = request.getParameter("firstname");
-            String lastname = request.getParameter("lastname");
-            String email = request.getParameter("email");
-            String phone = request.getParameter("phone");
-            String password = request.getParameter("password");
-            String address = request.getParameter("address");  
-            
-            //User user = new User(firstname, lastname, email, password, address, phone);
-            session.setAttribute("user", user);
-            
             String adminemail = (String)session.getAttribute("adminemail");
             String adminpass = (String)session.getAttribute("adminpassword");
             MongoDBConnector connector = new MongoDBConnector(adminemail, adminpass);
-            connector.add(user);
+             
+            //get the amount from orderValue
+            double amount = Double.parseDouble(request.getParameter("amount"));
+            String paymentCard = "";
+            
+            //get the session from orderValue
+            Order getCusId = (Order)session.getAttribute("addCusId");
+            
+            //set the amount to new session
+            Order addAmount = new Order(getCusId.getCustomerId(), getCusId.getOpalId(), paymentCard, getCusId.getOpalType(), "", amount, "");
+            session.setAttribute("addAmount", addAmount);
+            
+            //remove the session from orderaValue
+//            session.removeAttribute("addCusId"); 
+            
         %>
-        
+        <div class = "h3">
+            <h3>Payment Detail</h3>
+        </div>
         <div class = "paymentDetail">        
-        <form method = "post" action = "orderConfirmation.jsp" >
-            <h4>Add value to your Opal Card</h4>
-        <table>
-            <tr><td>Top up amount</td><td><select name = "amount" required>
-                        <option value = "10.00">$10.00</option>
-                        <option value = "15.00">$15.00</option>
-                        <option value = "30.00">$30.00</option>
-                        <option value = "50.00">$50.00</option>
-                    </select></td></tr>
-        </table>
-            <hr>
-        <table>
-        <h4>Payment Detail</h4>
-        <h6>Your order will be processed securely</h6>
-            <tr><td>First name(s)</td><td><input type = "text" name = "cardfname" required></td>
-                <td>Last name</td><td><input type = "text" name = "cardlname" required></td></tr>
-            <tr><td>Card number</td><td>
-                            <input type ="text" name = "cardnumber" minlength="16" maxlength="16" required></td></tr>
-            <tr><td>Expiry date</td>
-                <td>
-                <select name = "expirymonth">
-                    <option value="01">January</option>
-                    <option value="02">February </option>
-                    <option value="03">March</option>
-                    <option value="04">April</option>
-                    <option value="05">May</option>
-                    <option value="06">June</option>
-                    <option value="07">July</option>
-                    <option value="08">August</option>
-                    <option value="09">September</option>
-                    <option value="10">October</option>
-                    <option value="11">November</option>
-                    <option value="12">December</option>
-                </select>
-                <select name = "expiryyear">
-                    <option value="19"> 2019</option>
-                    <option value="20"> 2020</option>
-                    <option value="21"> 2021</option>
-                    <option value="22"> 2022</option>
-                    <option value="23"> 2023</option>
-                    <option value="24"> 2024</option>
-                    <option value="25"> 2025</option>
-                    <option value="26"> 2026</option>
-                    
-                </select>
-                </td>
-                <td>CVV</td>
-                <td><input type = "text" name = "cvv" minlength="3" maxlength="3" size = "1" required></td></tr>
-            <tr><td colspan = "3"><a class = "button" href = "contactDetail.jsp">Back</a></td><td align = "right"><input type =  "submit" value = "Continue"></td></tr>
-            <tr><td><a class = "button" href = "orderCancelled.jsp">Cancel</a></tr>
-        </table>
-        </form>
+            <form method = "post" action = "orderConfirmation.jsp" >
+                <table>
+                    <h6>Your order will be processed securely</h6>
+        <%
+            if(user != null){
+                Paymentmethods pmtmethods = new Paymentmethods();
+                ArrayList<Paymentmethod> paymentMethods = new ArrayList<Paymentmethod>();
+                pmtmethods  =  connector.getPaymentMethods(user);
+                paymentMethods = pmtmethods.getList();
+                if(!paymentMethods.isEmpty()){
+        %>    
+                    <div class = "clearfix">
+        <%
+                    for (Paymentmethod paymentMethod: paymentMethods){  
+                        String cardnum = paymentMethod.getCardNumber();   
+        %>
+                            <div class = "paymentmethod">
+                            <p>First Name: <%=paymentMethod.getFirstName()%></p>
+                            <p>Last Name:<%=paymentMethod.getLastName()%></p>
+                            <p>Card Number:<%=cardnum.substring(0, 4)%>************ </p>
+                            <input type ="submit" value = "Select" name = "<%=cardnum%>" id ="<%=cardnum%>">
+                        </div>
+        <%              
+                    }
+        %>
+                    </div>
+            </form>
+                    <h6>Use Another Payment Method</h6>
+        <%
+                }
+            }
+        %>
+            <form method = "post" action = "orderConfirmation.jsp" >
+                    <tr><td>First name(s)</td><td><input id="paymentDetail_first_name" type = "text" name = "cardfname" required></td>
+                        <td>Last name</td><td><input id="paymentDetail_last_name" type = "text" name = "cardlname" required></td></tr>
+                    <tr><td>Card number</td><td>
+                                    <input id="paymentDetail_card_number" type ="text" name = "cardnumber" minlength="16" maxlength="16" required></td></tr>
+                    <tr><td>Expiry date</td>
+                        <td>
+                        <select id="paymentDetail_expiry_month" name = "expirymonth">
+                            <option value="01">January</option>
+                            <option value="02">February </option>
+                            <option value="03">March</option>
+                            <option value="04">April</option>
+                            <option value="05">May</option>
+                            <option value="06">June</option>
+                            <option value="07">July</option>
+                            <option value="08">August</option>
+                            <option value="09">September</option>
+                            <option value="10">October</option>
+                            <option value="11">November</option>
+                            <option value="12">December</option>
+                        </select>
+                        <select id="paymentDetail_expiry_year" name = "expiryyear">
+                            <option value="19"> 2019</option>
+                            <option value="20"> 2020</option>
+                            <option value="21"> 2021</option>
+                            <option value="22"> 2022</option>
+                            <option value="23"> 2023</option>
+                            <option value="24"> 2024</option>
+                            <option value="25"> 2025</option>
+                            <option value="26"> 2026</option>
+
+                        </select>
+                        </td>
+                        <td>CVV</td>
+                        <td><input id="paymentDetail_cvv" type = "text" name = "cvv" minlength="3" maxlength="3" size = "1" required></td></tr>
+                    <tr><td colspan = "3"></td>
+                        <td align = "right"><input id="paymentDetail_continue" type =  "submit" value = "Continue"></td></tr>             
+                </table>
+            </form>
         </div>
     </body>
 </html>

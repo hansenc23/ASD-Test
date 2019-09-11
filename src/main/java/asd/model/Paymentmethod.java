@@ -6,19 +6,20 @@
 package asd.model;
 
 import java.io.Serializable;
-import java.util.Date;
 /**
  *
  * @author Hieu
  */
 public class Paymentmethod implements Serializable {
+    
     private String firstName;
     private String lastName; 
     private String cardNumber;
-    private String expiryMonth;
-    private String expiryYear;
-    private String cvv;
-    public Paymentmethod(String firstName, String lastName, String cardNumber, String expiryMonth, String expiryYear, String cvv) {
+    private int expiryMonth;
+    private int expiryYear;
+    private int cvv;
+    
+    public Paymentmethod(String firstName, String lastName, String cardNumber, int expiryMonth, int expiryYear, int cvv) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.cardNumber = cardNumber;
@@ -74,42 +75,42 @@ public class Paymentmethod implements Serializable {
     /**
      * @return the cvv
      */
-    public String getCvv() {
+    public int getCvv() {
         return cvv;
     }
 
     /**
      * @param cvv the cvv to set
      */
-    public void setCvv(String cvv) {
+    public void setCvv(int cvv) {
         this.cvv = cvv;
     }
 
     /**
      * @return the expiryMonth
      */
-    public String getExpiryMonth() {
+    public int getExpiryMonth() {
         return expiryMonth;
     }
 
     /**
      * @param expiryMonth the expiryMonth to set
      */
-    public void setExpiryMonth(String expiryMonth) {
+    public void setExpiryMonth(int expiryMonth) {
         this.expiryMonth = expiryMonth;
     }
 
     /**
      * @return the expiryYear
      */
-    public String getExpiryYear() {
+    public int getExpiryYear() {
         return expiryYear;
     }
 
     /**
      * @param expiryYear the expiryYear to set
      */
-    public void setExpiryYear(String expiryYear) {
+    public void setExpiryYear(int expiryYear) {
         this.expiryYear = expiryYear;
     }
     
