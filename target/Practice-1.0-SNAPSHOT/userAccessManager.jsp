@@ -1,13 +1,13 @@
 <%-- 
-    Document   : accessManager
-    Created on : 01/09/2019, 8:33:33 AM
+    Document   : userAccessManager
+    Created on : 09/09/2019, 4:55:51 PM
     Author     : kevin
 --%>
 <%@page import="java.util.ArrayList"%>
 <%@page import="asd.model.dao.MongoDBConnector"%>
 <%@page contentType="text/html" pageEncoding="UTF-8" import="asd.model.*"%>
-<%@include file="adminNavbar.jsp" %>
-<%@include file="adminSidebar.jsp" %>
+<%@include file="navbar.jsp" %>
+<%@include file="sidebar.jsp" %>
 <!DOCTYPE html>
 <html>
     <head>
@@ -19,17 +19,18 @@
     </head>
     <body>
          <%
+           String email = user.getEmail();
            String adminemail = (String)session.getAttribute("adminemail");
            String adminpass = (String)session.getAttribute("adminpassword");
            MongoDBConnector connector = new MongoDBConnector(adminemail, adminpass);
            Times dbTimes = new Times();
-          ArrayList<Time> times = new ArrayList<Time>();
+           ArrayList<Time> times = new ArrayList<Time>();
+         
          %>
 
          <div class="searchT">
              <form  method="POST">
-                <input type="date" name="date">   
-                <input type="text" name="email"> 
+                <input type="date" name="date">                     
                 <button value ="searchT" name="searchT"type="submit"><i class="fa fa-search"></i></button>
               </form>
           </div>
@@ -48,30 +49,14 @@
         <%
             if(request.getParameter("searchT") == null)
             {
-                dbTimes = connector.loadTimes();
+                dbTimes = connector.loadUserTimes(email);
                 times = dbTimes.getList(); 
 %>        
         <%}else{
-                if (request.getParameter("date") != null && request.getParameter("email") == null){
-                        String loginD = request.getParameter("date");
-                        dbTimes = connector.findTimes(loginD);
-                        times = dbTimes.getList(); 
-                    }
-                    else if (request.getParameter("date") == null && request.getParameter("email") != null){
-                        String email = request.getParameter("email");
-                        dbTimes = connector.loadUserTimes(email);
-                        times = dbTimes.getList(); 
-                    }
-                    else if (request.getParameter("date") != null && request.getParameter("email") != null){
-                        String loginD = request.getParameter("date");
-                        String email = request.getParameter("email");
-                        dbTimes = connector.userSearchTimes(email,loginD);
-                        times = dbTimes.getList(); 
-                    }else{
-                        dbTimes = connector.loadTimes();
-                        times = dbTimes.getList();
-                    }    
-               }%>
+                    String loginT = request.getParameter("date");
+                    dbTimes = connector.userSearchTimes(email,loginT);
+                    times = dbTimes.getList(); 
+                    }%>
 
   <%for (Time time: times){%>        
     <tr>
