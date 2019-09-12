@@ -13,12 +13,12 @@ Feature: Order Opal Card Feature
     And User click "orderConfirmation_edit"
     And User fill in edit detail
     And User click "edit_continue"
-    And User click "orderConfirmation_confirm"
-    Then The page should be navigated to "Order Succeed"
+    And User click "<succeed_or_cancelled>"
+    Then The page should be navigated to "<succeed_or_cancelled_page>"
     Examples:
-    |opal_type|
-    |type_adult|
-    |type_concession|
+    |opal_type|succeed_or_cancelled|succeed_or_cancelled_page
+    |type_adult|orderConfirmation_confirm|Order Succeed
+    |type_concession|orderConfirmation_cancelled|Order Cancelled
 
 
   
