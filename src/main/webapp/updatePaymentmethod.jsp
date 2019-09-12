@@ -45,12 +45,12 @@
         <form  method = "post" action = "updatePaymentmethod.jsp" >
             <table>
                    
-                        <tr><td>First name(s)</td><td><input type = "text" value="<%=p.getFirstName() %>" name = "firstname" required></td>
-                            <td>Last name</td><td><input type = "text"value="<%=p.getLastName() %>" name = "lastname" required></td></tr>
-                        <tr><td>Card number</td><td><input type = "text" value="<%=p.getCardNumber() %>"  name = "cardnumber" required></td></tr>
+                        <tr><td>First name(s)</td><td><input id="updatePaymentmethod_firstName" type = "text" value="<%=p.getFirstName() %>" name = "firstname" required></td>
+                            <td>Last name</td><td><input id="updatePaymentmethod_lastName"type = "text"value="<%=p.getLastName() %>" name = "lastname" required></td></tr>
+                        <tr><td>Card number</td><td><input id="updatePaymentmethod_cn"type = "text" value="<%=p.getCardNumber() %>"  name = "cardnumber" required></td></tr>
                         <tr><td>Expiry date</td>
                             <td>
-                            <select value="<%=p.getExpiryMonth()%>" name = "expiryMonth">
+                            <select id="updatePaymentmethod_expiryMonth" value="<%=p.getExpiryMonth()%>" name = "expiryMonth">
                                 <option value="01">January</option>
                                 <option value="02">February </option>
                                 <option value="03">March</option>
@@ -64,7 +64,7 @@
                                 <option value="11">November</option>
                                 <option value="12">December</option>
                             </select>
-                            <select value="<%=p.getExpiryYear()%>" name = "expiryYear">
+                            <select id="updatePaymentmethod_expiryYear" value="<%=p.getExpiryYear()%>" name = "expiryYear">
                                 <option value="19"> 2019</option>
                                 <option value="20"> 2020</option>
                                 <option value="21"> 2021</option>
@@ -76,9 +76,9 @@
                             </select>
                             </td>
                             <td>CVV</td>
-                            <td><input type = "text" value="<%=p.getCvv()%>" name = "cvv" required></td></tr>
-                        <tr><td><input class = "button" type =  "submit" name="Updated" value = "Update"> </td>
-                            <td><input class = "button" type =  "submit" name="Removed" value = "Remove"></td>
+                            <td><input id="updatePaymentmethod_cvv" type = "text" value="<%=p.getCvv()%>" name = "cvv" required></td></tr>
+                        <tr><td><input id="updatePaymentmethod_update" class = "button" type =  "submit" name="Updated" value = "Update"> </td>
+                            <td><input id="updatePaymentmethod_delete" class = "button" type =  "submit" name="Removed" value = "Remove"></td>
                             <td><a class = "button" href = "paymentMethodManagement.jsp">Back</a></td></tr>
                     </table>
                 </form>
@@ -100,7 +100,7 @@
                                     %>
                                     <div class = "topup">
                                         <h3><%= outcome %></h3>
-                                        <a class = "button" href = "paymentMethodManagement.jsp">Back</a>
+                                        <a id="updatePaymentmethod_back"class = "button" href = "paymentMethodManagement.jsp">Back</a>
                                     </div>
                                     <%
                                         //Remove the payment methods. 
@@ -113,14 +113,14 @@
                                             %>
                                              <div class = "topup">
                                         <h3><%= outcome %></h3>
-                                        <a class = "button" href = "paymentMethodManagement.jsp">Back</a>
+                                        <a id="updatePaymentmethod_back"class = "button" href = "paymentMethodManagement.jsp">Back</a>
                                     </div>
                                             <%
                                         } else {
                                     %>
                                            <div class = "topup">
                                         <h3>Please select a valid payment method </h3>
-                                        <a class = "button" href = "paymentMethodManagement.jsp">Back</a>
+                                        <a id="updatePaymentmethod_back" class = "button" href = "paymentMethodManagement.jsp">Back</a>
                                     </div>
                                     <%
 }

@@ -46,13 +46,13 @@
         <div class = "topup">        
             <form method = "post" action = "topUpCard.jsp" >
                 <table>
-                    <tr><td>Top up amount</td><td><select name = "amount" required>
+                    <tr><td>Top up amount</td><td><select id="topUpValue_amount" name = "amount" required>
                                 <option value = "10.00">$10.00</option>
                                 <option value = "15.00">$15.00</option>
                                 <option value = "30.00">$30.00</option>
                                 <option value = "50.00">$50.00</option>
                             </select></td></tr>
-                    <tr><td>Opal card</td><td><select name="cardNumber" required/>
+                    <tr><td>Opal card</td><td><select id="topUpValue_cardNumber" name="cardNumber" required/>
                             <%
                               if (cards.isEmpty()) {
                                  %>
@@ -72,7 +72,7 @@
                     </tr>
                     <tr>
        
-                        <td align = "right"><input type =  "submit" value = "Continue"></td>
+                        <td align = "right"><input id="topUpValue_submit" type =  "submit" value = "Continue"></td>
                     <td><a class = "button" href = "main.jsp">Cancel</a></tr>                
                 </table>
                 </form>

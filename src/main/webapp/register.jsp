@@ -29,16 +29,16 @@
         
         <form action="welcome.jsp" method="post">
                 <table id="form-table">
-                    <tr><td>First Name:</td><td><input size="23" type="text" name="firstName" required></td></tr>
-                    <tr><td>Last Name:</td><td><input size="23" type="text" name="lastName" required></td></tr>
-                    <tr><td>Email:</td><td><input size="23" type="text" name="email" required></td></tr>
-                    <tr><td>Password:</td><td><input size="23" type="password" name="password" required></td></tr>
-                    <tr><td>Address:</td><td><input type="text" name="address"></td></tr>  
-                    <tr><td>Phone Number:</td><td> <input type="text" name ="phone"></td></tr>
-                    <tr><td>Admin</td><td> <input type="checkbox" name ="isStaff" value="true"></td></tr>
+                    <tr><td>First Name:</td><td><input id="register_firstName" size="23" type="text" name="firstName" required></td></tr>
+                    <tr><td>Last Name:</td><td><input id="register_lastName"size="23" type="text" name="lastName" required></td></tr>
+                    <tr><td>Email:</td><td><input id="register_email" size="23" type="text" name="email" required></td></tr>
+                    <tr><td>Password:</td><td><input id="register_password" size="23" type="password" name="password" required></td></tr>
+                    <tr><td>Address:</td><td><input id="register_address" type="text" name="address"></td></tr>  
+                    <tr><td>Phone Number:</td><td> <input id="register_phoneNumber" type="text" name ="phone"></td></tr>
+                    <tr><td>Admin</td><td> <input id="register_admin" type="checkbox" name ="isStaff" value="true"></td></tr>
                     <tr><td></td>
                         <td>
-                            <input class="button" type="submit" value="Register"> 
+                            <input id="register_submit" class="button" type="submit" value="Register"> 
                             &nbsp; 
                             <button class="button" type="button" onclick="location.href = 'index.jsp'" > Home Page </button>
                         </td>

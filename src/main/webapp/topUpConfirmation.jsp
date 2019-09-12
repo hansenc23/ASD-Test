@@ -47,8 +47,8 @@
             %>
            <h4>Confirm Payment</h4>
           <table>
-              <tr><td>Top up amount: </td><td><input type="price" value="<%=amount%>" name="amount" readonly></td>
-                  <td>Card number: </td><td><input type = "text"  value="<%=opalId%>" name = "opalnumber" readonly></td>
+              <tr><td>Top up amount: </td><td><%=amount%></td>
+                  <td>Card number: </td><td><%=opalId%></td>
                 </tr>
             <tr><td>First name(s):</td><td><%=payment.getFirstName()%></td>
                 <td>Last name:</td><td><%=payment.getLastName()%></td></tr>
@@ -57,7 +57,7 @@
                 /<%=payment.getExpiryYear()%></td>
                 <td>CVV:</td>
                 <td><%=payment.getCvv()%></td>
-                <td><input type="hidden" value="confirmed" name="confirmed" ></td>
+                <td><input  type="hidden" value="confirmed" name="confirmed" ></td>
             </tr>
             
             
@@ -85,13 +85,13 @@
                 /<%=p.getExpiryYear()%></td>
                 <td>CVV:</td>
                 <td><%=p.getCvv()%></td>
-                <td><input type="hidden" value="confirmed" name="confirmed" ></td>
+                <td><input  type="hidden" value="confirmed" name="confirmed" ></td>
             </tr>
         <%
         
         }
     %>
-    <tr><td><input type="submit" value="confirm payment"></td></tr>
+    <tr><td><input id="topUpConfirmation_confirm" type="submit" value="confirm payment"></td></tr>
             <tr><td><a class = "button" href = "topUpCard.jsp">Back</a></td></tr>
         </table>
         </form>

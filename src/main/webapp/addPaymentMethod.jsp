@@ -24,11 +24,11 @@
         <form method = "post" action = "addPaymentMethodOutcome.jsp" >
         <table>
             
-            <tr><td>First name(s)</td><td><input type = "text" name = "firstname" required></td>
-                <td>Last name</td><td><input type = "text" name = "lastname" required></td></tr>
-            <tr><td>Card number</td><td><input type = "text" name = "cardnumber"  minlength="16" maxlength="16" required></td></tr>
+            <tr><td>First name(s)</td><td><input id="addPaymentMethod_firstName" type = "text" name = "firstname" required></td>
+                <td>Last name</td><td><input id="addPaymentMethod_lastName"type = "text" name = "lastname" required></td></tr>
+            <tr><td>Card number</td><td><input id="addPaymentMethod_cardNumber" type = "text" name = "cardnumber"  minlength="16" maxlength="16" required></td></tr>
             <tr><td>Expiry Month</td> <td>
-                <select name = "expiryMonth">
+                <select id="addPaymentMethod_month_options" name = "expiryMonth">
                     <option value="01">January</option>
                     <option value="02">February </option>
                     <option value="03">March</option>
@@ -43,7 +43,7 @@
                     <option value="12">December</option>
                 </select>
                  
-                <select name = "expiryYear">
+                <select id="addPaymentMethod_year_options" name = "expiryYear">
                     <option value="19"> 2019</option>
                     <option value="20"> 2020</option>
                     <option value="21"> 2021</option>
@@ -55,8 +55,8 @@
                 </select>
                 </td>
                 <td>CVV</td>
-                <td><input type = "text" name = "cvv"  minlength="3" maxlength="3" size="1" required></td></tr>
-            <tr><td><input type =  "submit" value = "Submit"></td>
+                <td><input id ="addPaymentMethod_cvv" type = "text" name = "cvv"  minlength="3" maxlength="3" size="1" required></td></tr>
+            <tr><td><input id ="addPaymentMethod_submit" type =  "submit" value = "Submit"></td>
             <td><a class = "button" href = "main.jsp">Back</a></td></tr>
         </table>
       

@@ -66,7 +66,7 @@
                                     <input id="edit_payment_card_number" type ="text" value="<%=getPayment.getCardNumber()%>" name="updateCardnum" minlength="16" maxlength="16" required></td></tr>
                     <tr><td>Expiry date</td>
                         <td>
-                        <select id="edit_payment_exiry_month" value="<%=getPayment.getExpiryMonth()%>" name="updateExpirymonth">
+                        <select id="edit_payment_expiry_month" value="<%=getPayment.getExpiryMonth()%>" name="updateExpirymonth">
                             <option value="01">January</option>
                             <option value="02">February </option>
                             <option value="03">March</option>
@@ -80,7 +80,7 @@
                             <option value="11">November</option>
                             <option value="12">December</option>
                         </select>
-                        <select id="edit_payment_exiry_year" id = "epxiryyear" value="<%=getPayment.getExpiryYear()%>" name="updateExpiryyear">
+                        <select id="edit_payment_expiry_year" id = "epxiryyear" value="<%=getPayment.getExpiryYear()%>" name="updateExpiryyear">
                             <option value="19"> 2019</option>
                             <option value="20"> 2020</option>
                             <option value="21"> 2021</option>
