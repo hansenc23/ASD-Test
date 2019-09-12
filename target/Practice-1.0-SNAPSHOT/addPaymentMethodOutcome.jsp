@@ -46,7 +46,7 @@
         %>                          
         <div class = "topup">
             <h3><%= outcome %></h3>
-                <a class = "button" href = "paymentMethodManagement.jsp">Back</a>
+                <a id="addPaymentMethodOutcome_back" class = "button" href = "paymentMethodManagement.jsp">Back</a>
         </div> <%
                } }%>
     </body>

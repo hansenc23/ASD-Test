@@ -48,14 +48,14 @@
                     }
                     if(i< 3){
                         %>
-                        <div class = "addmethod">
-                            <a  href = "addPaymentMethod.jsp"> <span>Add your new payment method here !</span> </a>
+                        <div  class = "addmethod">
+                            <a id="paymentMethodManagement_addMethod" href = "addPaymentMethod.jsp"> <span>Add your new payment method here !</span> </a>
                      </div>
                         <%
                     }
 } else {
                         %>
-                        <h3>You do not have any payment methods. Please <a  href = "addPaymentMethod.jsp"> <span>Add your new payment method here !</span> </a></h3>
+                        <h3>You do not have any payment methods. Please <a id="paymentMethodManagement_addMethod" href = "addPaymentMethod.jsp"> <span>Add your new payment method here !</span> </a></h3>
                          
                      
                        

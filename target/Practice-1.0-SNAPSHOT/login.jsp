@@ -31,11 +31,11 @@
             <h3 id="title" style="text-align: center">Log In</h3>
             <table id="form-table">
                 <tr><td id="stitle">Email</td></tr>
-                <tr><td><input type="text" placeholder="Enter Email" name="email" required></td></tr>
+                <tr><td><input id="login_email" type="text" placeholder="Enter Email" name="email" required></td></tr>
                 <tr><td id="stitle">Password</td></tr>
-                <tr><td><input type="password" placeholder="Enter password" name="password" required></td></tr>
+                <tr><td><input id="login_password" type="password" placeholder="Enter password" name="password" required></td></tr>
                 <tr><td>
-                        <input type="submit" value="Log In">
+                        <input id="login_submit" type="submit" value="Log In">
                       <button class="button" type="button" onclick="location.href = 'index.jsp'" > Home Page </button>
                     </td></tr>
             </table>

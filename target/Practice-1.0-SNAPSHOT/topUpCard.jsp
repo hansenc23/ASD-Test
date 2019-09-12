@@ -79,12 +79,12 @@
         
          
                 <form method = "post" action = "topUpConfirmation.jsp" >
-                        <tr><td>First name(s)</td><td><input type = "text" name = "firstname" required></td>
-                            <td>Last name</td><td><input type = "text" name = "lastname" required></td></tr>
-                        <tr><td>Card number</td><td><input type = "text" name = "cardnumber" minlength="16" maxlength="16"  required></td></tr>
+                        <tr><td>First name(s)</td><td><input id="topUpCard_firstName" type = "text" name = "firstname" required></td>
+                            <td>Last name</td><td><input id="topUpCard_lastName" type = "text" name = "lastname" required></td></tr>
+                        <tr><td>Card number</td><td><input id="topUpCard_cardNumber" type = "text" name = "cardnumber" minlength="16" maxlength="16"  required></td></tr>
                         <tr><td>Expiry date</td>
                             <td>
-                            <select name = "expiryMonth">
+                            <select id="topUpCard_month" name = "expiryMonth">
                                 <option value="01">January</option>
                                 <option value="02">February </option>
                                 <option value="03">March</option>
@@ -98,7 +98,7 @@
                                 <option value="11">November</option>
                                 <option value="12">December</option>
                             </select>
-                            <select name = "expiryYear">
+                            <select id="topUpCard_year" name = "expiryYear">
                                 <option value="19"> 2019</option>
                                 <option value="20"> 2020</option>
                                 <option value="21"> 2021</option>
@@ -110,8 +110,8 @@
                             </select>
                             </td>
                             <td>CVV</td>
-                            <td><input type = "text" name = "cvv" minlength="3" maxlength="3" size = "1" required></td></tr>
-                        <tr><td><input class = "button" type =  "submit" value = "Checkout"></td>
+                            <td><input id="topUpCard_cvv" type = "text" name = "cvv" minlength="3" maxlength="3" size = "1" required></td></tr>
+                        <tr><td><input id="topUpCard_submit" class = "button" type =  "submit" value = "Checkout"></td>
                             <td><a class = "button" href = "topUpValue.jsp">Back</a></td></tr>
                     </table>
                 </form>

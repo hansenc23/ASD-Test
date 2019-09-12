@@ -51,7 +51,7 @@
             </table> 
         </div>   
     </body>
-    <p class="p">Click <a href="main.jsp" class="link" target="_parent"> here </a> to go to main page.</p>
+    <p class="p">Click <a href="main.jsp" id="welcome_mainpage" class="link" target="_parent"> here </a> to go to main page.</p>
 <%
     if (isStaff.equalsIgnoreCase("true")) {
         session.setAttribute("staff", user);   

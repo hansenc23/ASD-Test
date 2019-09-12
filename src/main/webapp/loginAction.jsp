@@ -38,7 +38,7 @@
          <%
             if (us != null) {
                 session.setAttribute("customer", us);%>
-         <p>Login successful. Click<a href = "main.jsp" > here </a> to return to the main page.</p>
+         <p>Login successful. Click<a id="loginAction_success" href = "main.jsp" > here </a> to return to the main page.</p>
         <%} else {%>
          <p> Password incorrect. Click<a href = "login.jsp" > here </a> to try again.</p>
         <%}
