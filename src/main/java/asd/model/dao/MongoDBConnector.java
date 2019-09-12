@@ -10,13 +10,9 @@ import com.mongodb.MongoClient;
 import com.mongodb.MongoClientURI;
 import com.mongodb.client.MongoCursor;
 import com.mongodb.client.MongoDatabase;
-import com.mongodb.client.model.Filters;
 import static com.mongodb.client.model.Filters.and;
 import static com.mongodb.client.model.Filters.eq;
 import com.mongodb.client.model.Updates;
-import static com.mongodb.client.model.Updates.combine;
-import org.bson.conversions.Bson;
-import org.bson.types.ObjectId;
 
 public class MongoDBConnector {
 
@@ -137,9 +133,8 @@ public class MongoDBConnector {
 //Payment and topup management
     
     //Add paymenthod to a particular User 
-     public String addPayment(Paymentmethod paymt, User user){
+     public void addPayment(Paymentmethod paymt, User user){
         MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
-        String outcome = "There is an error when adding your payment method. Try again later!";
         try(MongoClient client = new MongoClient(uri)){
             MongoDatabase db = client.getDatabase(uri.getDatabase());
             MongoCollection<Document> userlist = db.getCollection("ASD-app-users");
@@ -159,74 +154,16 @@ public class MongoDBConnector {
                 }
             }
             
-            if(i <= 3 && j <= 0){
+            if(i <= 3 || j >0){
                  userlist.updateOne(eq("Username", user.getEmail()),Updates.addToSet("PaymentMethod", doc) );
-                 outcome = "Your payment method has been successfully added !";
-            } else if (j >0 ){
-                outcome = "Your payment method has already been registered to your account !";
-            } else {
-                outcome = "You can only have a maximum of 3 payment methods. Please delete your existing payment method to continue!";
             }
-            } 
-            return outcome;
+            } else {
+                userlist.updateOne(eq("Username", user.getEmail()),Updates.addToSet("PaymentMethod", doc) );
+            }
            
             //new Document("$set", new Document("PaymentMethod",doc))
         }
     }
-     //Edit payment methods 
-     public String editPaymentMethod(String initPaymentId,Paymentmethod paymt, User user){
-         MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
-         String outcome = "There was an error updating your payment method. Please try again later !";
-         try(MongoClient client = new MongoClient(uri)){
-             MongoDatabase db = client.getDatabase(uri.getDatabase());
-            MongoCollection<Document> userlist = db.getCollection("ASD-app-users");
-            Document userdoc =  userlist.find(eq("Username", user.getEmail())).first();
-            if(userdoc.get("PaymentMethod") != null){
-            paymentMethods = (List<Document>) userdoc.get("PaymentMethod");
-            int j = 0;
-            for (Document paymentmethod : paymentMethods){
-                //check for duplicate card number inside PaymentMethod array
-                if(paymentmethod.getString("CardNumber").equals(paymt.getCardNumber()) && !paymt.getCardNumber().equals(initPaymentId)){
-                    j++;
-                }
-            }
-            if(j == 0){
-            //Document doc = new Document().append("FirstName", paymt.getFirstName()).append("LastName", paymt.getLastName()).append("CardNumber", paymt.getCardNumber()).append("ExpiryMonth", paymt.getExpiryMonth()).append("ExpiryYear", paymt.getExpiryYear()).append("CVV", paymt.getCvv());
-                    ObjectId _id = new ObjectId(userdoc.get("_id").toString());
-            
-                    Bson filter = Filters.and(Filters.eq("_id",_id),Filters.eq("PaymentMethod.CardNumber",initPaymentId));
-                    Bson updateFirstName = Updates.set("PaymentMethod.$.FirstName",paymt.getFirstName());
-                    Bson updateLastName = Updates.set("PaymentMethod.$.LastName",paymt.getLastName());
-                    Bson updateCardNumber = Updates.set("PaymentMethod.$.CardNumber",paymt.getCardNumber());
-                    Bson updateExpiryMonth= Updates.set("PaymentMethod.$.ExpiryMonth",paymt.getExpiryMonth());
-                    Bson updateExpiryYear = Updates.set("PaymentMethod.$.ExpiryYear",paymt.getExpiryYear());
-                    Bson updateCVV= Updates.set("PaymentMethod.$.CVV",paymt.getCvv());
-                    userlist.updateOne(filter, combine(updateFirstName,updateLastName,updateCardNumber,updateExpiryMonth,updateExpiryYear,updateCVV));      
-                    outcome = "Update was successful !";
-            } else {
-                outcome = "Your updated details contains duplicated card number with other payment methods. Please put a valid method !";
-                }
-            }
-        }
-    return outcome;
-}
-     //Remove payment method 
-     public String deletePaymentMethods(String paymentId, User user){
-         MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
-         String outcome = "There was an error deleting your payment method. Please select a valid payment method !";
-         try(MongoClient client = new MongoClient(uri)){
-          MongoDatabase db = client.getDatabase(uri.getDatabase());
-          MongoCollection<Document> userlist = db.getCollection("ASD-app-users");
-          Document userdoc =  userlist.find(eq("Username", user.getEmail())).first();
-          ObjectId _id = new ObjectId(userdoc.get("_id").toString());
-          Bson filter = Filters.eq("_id",_id);
-          Bson delete = Updates.pull("PaymentMethod",new Document("CardNumber",paymentId));
-          userlist.updateOne(filter,delete);
-          outcome = "Your payment details were deleted successfully !";
-         }
-         return outcome;
-     }
-     
     //Get payment methods
       public Paymentmethods getPaymentMethods(User user){
        MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
@@ -243,29 +180,12 @@ public class MongoDBConnector {
                 for (Document pmtdoc : paymentMethods) {
                 Paymentmethod pmtMethod = new Paymentmethod((String) pmtdoc.get("FirstName"), (String) pmtdoc.get("LastName") ,(String) pmtdoc.get("CardNumber"), (int) pmtdoc.get("ExpiryMonth"), (int) pmtdoc.get("ExpiryYear"), (int) pmtdoc.get("CVV") );
                 pmtMethods.addPaymentMethods(pmtMethod);
+                }
             }
-            
-            
-        }
         }
         return pmtMethods;   
        
-   }
-   //Increase value of a specific card 
-      public String addValue(String opalId, double amount){
-          MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
-          String  outCome = "Payment fails, Please try again";
-           try(MongoClient client = new MongoClient(uri)){
-            MongoDatabase db = client.getDatabase(uri.getDatabase());
-            MongoCollection<Document> opallist = db.getCollection("ASD-app-opalCards");
-            Document doc = opallist.find(eq("OpalID", opalId)).first();
-            if (doc != null) {
-                opallist.updateOne(eq("OpalID", opalId), new Document("$inc",new Document("Balance",amount)));
-                outCome = "Payment Successful";
-            }
-           }
-          return outCome;
-      }
+    }
     
     
     //add a payment to payment record
@@ -429,9 +349,9 @@ public class MongoDBConnector {
         MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
         try (MongoClient client = new MongoClient(uri)) {
             MongoDatabase db = client.getDatabase(uri.getDatabase());
-            orders.add(new Document("CustomerID", order.getCustomerId()).append("OpalID", order.getOpalId()).append("PaymentCard", order.getPaymentCard()).append("OpalType", order.getOpalType()).append("OrderDate", order.getOrderDate()).append("Value", order.getValue()).append("Status", order.getStatus()));
             MongoCollection<Document> orderlist = db.getCollection("ASD-app-orders");
-            orderlist.insertMany(orders);
+            Document doc = new Document().append("CustomerID", order.getCustomerId()).append("OpalID", order.getOpalId()).append("PaymentCard", order.getPaymentCard()).append("OpalType", order.getOpalType()).append("OrderDate", order.getOrderDate()).append("Value", order.getValue()).append("Status", order.getStatus());
+            orderlist.insertOne(doc);
         }
     }
     
@@ -504,5 +424,109 @@ public class MongoDBConnector {
         }
         return payment;       
    }
+    
+    //For testing
+    
+    public String testAdd(Order order) {
+        MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
+        String test;
+        try (MongoClient client = new MongoClient(uri)) {
+            MongoDatabase db = client.getDatabase(uri.getDatabase());
+            MongoCollection<Document> orderlist = db.getCollection("ASD-app-orders");
+            Document doc = new Document().append("CustomerID", order.getCustomerId()).append("OpalID", order.getOpalId()).append("PaymentCard", order.getPaymentCard()).append("OpalType", order.getOpalType()).append("OrderDate", order.getOrderDate()).append("Value", order.getValue()).append("Status", order.getStatus());
+            orderlist.insertOne(doc);
+            test = "test succeed";
+        }catch(Exception error){
+            test = "error";
+        }
+        return test;
+    }
+    
+    public String testAdd(Paymentmethod payment, Order order){
+        MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
+        String test;
+        try(MongoClient client = new MongoClient(uri)){
+            MongoDatabase db = client.getDatabase(uri.getDatabase());
+            MongoCollection<Document> orderlist = db.getCollection("ASD-app-orders");
+            Document doc = new Document().append("FirstName", payment.getFirstName()).append("LastName", payment.getLastName()).append("CardNumber", payment.getCardNumber()).append("ExpiryMonth", payment.getExpiryMonth()).append("ExpiryYear", payment.getExpiryYear()).append("CVV", payment.getCvv());     
+            orderlist.updateOne(eq("OpalID", order.getOpalId()), new Document("$set", new Document("PaymentMethod",doc))); 
+            test = "test succeed";
+        }catch(Exception error){
+            test = "error";
+        }
+        return test;
+    }
+    
+    public String testListOrder() {
+        MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
+        Orders orders = new Orders();
+        String test;
+        try (MongoClient client = new MongoClient(uri)) {
+            MongoDatabase db = client.getDatabase(uri.getDatabase());
+            MongoCollection<Document> orderlist = db.getCollection("ASD-app-orders");
+            for (Document ord : orderlist.find()) {
+                Order order = new Order((String) ord.get("CustomerID"), (String) ord.get("OpalID"), (String) ord.get("PaymentCard"), (String) ord.get("OpalType"), (String) ord.get("OrderDate"), (double) ord.get("Value"), (String) ord.get("Status"));
+                orders.addOrder(order);
+            }
+        test = "test succeed";
+        }catch(Exception error){
+            test = "error";
+        }
+        return test;
+    }
+    
+    public String testGetOrders(User user) {
+        MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
+        Orders orders = new Orders();
+        String test;
+        try (MongoClient client = new MongoClient(uri)) {
+            MongoDatabase db = client.getDatabase(uri.getDatabase());
+            MongoCollection<Document> orderlist = db.getCollection("ASD-app-orders");
+            MongoCollection<Document> userlist = db.getCollection("ASD-app-users");
+            String customerID = getCustomerID(user.getEmail(), user.getPassword());
+            for (Document ord : orderlist.find(eq("CustomerID", customerID))) {
+                Order order = new Order((String) ord.get("CustimerID"), (String) ord.get("OpalID"), (String) ord.get("PaymentCard"), (String) ord.get("OpalType"), (String) ord.get("OrderDate"), (double) ord.get("Value"), (String) ord.get("Status"));
+                orders.addOrder(order);
+            }
+        test = "test succeed";
+        }catch(Exception error){
+            test = "error";
+        }
+        return test;   
+    }
+    
+    public String testGetOrderID(Order order) {
+        MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
+        String orderID;
+        String test;
+        try (MongoClient client = new MongoClient(uri)) {
+            MongoDatabase db = client.getDatabase(uri.getDatabase());
+            MongoCollection<Document> orderlist = db.getCollection("ASD-app-orders");
+            Document ord = orderlist.find((eq("OpalID", order.getOpalId()))).first();
+            orderID = (String) ord.get("_id").toString();
+            test = "test succeed";
+        }catch(Exception error){
+            test = "error";
+        }
+        return test;  
+    }
+    
+    public String testGetOrderPayment(Order order){
+       MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
+       Paymentmethod payment;
+       String test;
+        try (MongoClient client = new MongoClient(uri)) {
+            MongoDatabase db = client.getDatabase(uri.getDatabase());
+            MongoCollection<Document> orderlist = db.getCollection("ASD-app-orders");
+            Document ordoc =  orderlist.find(eq("OpalID", order.getOpalId())).first();
+            Document paydoc = (Document)ordoc.get("PaymentMethod");
+            payment = new Paymentmethod((String) paydoc.get("FirstName"), (String) paydoc.get("LastName") ,(String) paydoc.get("CardNumber"), (int) paydoc.get("ExpiryMonth"), (int) paydoc.get("ExpiryYear"), (int) paydoc.get("CVV") );
+            test = "test succeed";
+        }catch(Exception error){
+            test = "error";
+        }
+        return test;      
+   }
 //
+    
 }

@@ -50,7 +50,7 @@
                             <tr><td>Card Number: <%=order.getPaymentCard()%></td></tr>
         <%
                     }
-                    else{
+                    else if(!order.getStatus().equalsIgnoreCase("testing")){
                         Paymentmethod orderpayment = connector.getOrderPayment(order);
         %>
                             <tr><td>First Name: <%=orderpayment.getFirstName()%></td><td>Last Name <%=orderpayment.getLastName()%></td></tr>
