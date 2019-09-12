@@ -1,6 +1,6 @@
 Feature: Order Opal Card Feature
 
-  Scenario Outline: Successfully order an Opal Card
+  Scenario Outline: Successfully order and cancel an Opal Card
     Given User is in the "main.jsp"
     When User Click on "order_opal_card"
     And User Click on "<opal_type>"
@@ -16,9 +16,11 @@ Feature: Order Opal Card Feature
     And User click "<succeed_or_cancelled>"
     Then The page should be navigated to "<succeed_or_cancelled_page>"
     Examples:
-    |opal_type|succeed_or_cancelled|succeed_or_cancelled_page
-    |type_adult|orderConfirmation_confirm|Order Succeed
-    |type_concession|orderConfirmation_cancelled|Order Cancelled
+    |opal_type      |succeed_or_cancelled       |succeed_or_cancelled_page  |
+    |type_adult     |orderConfirmation_confirm  |Order Succeed              |
+    |type_concession|orderConfirmation_cancelled|Order Cancelled            |
+
+  
 
 
   

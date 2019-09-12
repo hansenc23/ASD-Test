@@ -424,5 +424,102 @@ public class MongoDBConnector {
         }
         return payment;       
    }
+    
+   //Order Management
+    
+    //add order
+    public String testAdd(Order order) {
+        MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
+        String test = "error";
+        try (MongoClient client = new MongoClient(uri)) {
+            MongoDatabase db = client.getDatabase(uri.getDatabase());
+            orders.add(new Document("CustomerID", order.getCustomerId()).append("OpalID", order.getOpalId()).append("PaymentCard", order.getPaymentCard()).append("OpalType", order.getOpalType()).append("OrderDate", order.getOrderDate()).append("Value", order.getValue()).append("Status", order.getStatus()));
+            MongoCollection<Document> orderlist = db.getCollection("ASD-app-orders");
+            orderlist.insertMany(orders);
+            test = "test succeed";
+        }
+        return test;
+    }
+    
+    //add the paymentmethod in an order
+    public String testAdd(Paymentmethod payment, Order order){
+        MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
+        String test = "error";
+        try(MongoClient client = new MongoClient(uri)){
+            MongoDatabase db = client.getDatabase(uri.getDatabase());
+            MongoCollection<Document> orderlist = db.getCollection("ASD-app-orders");
+            Document doc = new Document().append("FirstName", payment.getFirstName()).append("LastName", payment.getLastName()).append("CardNumber", payment.getCardNumber()).append("ExpiryMonth", payment.getExpiryMonth()).append("ExpiryYear", payment.getExpiryYear()).append("CVV", payment.getCvv());     
+            orderlist.updateOne(eq("OpalID", order.getOpalId()), new Document("$set", new Document("PaymentMethod",doc))); 
+            test = "test succeed";
+        }
+        return test;
+    }
+    
+    //list all the orders
+    public String testListOrder() {
+        MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
+        Orders orders = new Orders();
+        String test = "error";
+        try (MongoClient client = new MongoClient(uri)) {
+            MongoDatabase db = client.getDatabase(uri.getDatabase());
+            MongoCollection<Document> orderlist = db.getCollection("ASD-app-orders");
+            for (Document ord : orderlist.find()) {
+                Order order = new Order((String) ord.get("CustomerID"), (String) ord.get("OpalID"), (String) ord.get("PaymentCard"), (String) ord.get("OpalType"), (String) ord.get("OrderDate"), (double) ord.get("Value"), (String) ord.get("Status"));
+                orders.addOrder(order);
+            }
+            test = "test succeed";
+        }
+        return test;
+    }
+    
+    //get the order from the specific user
+    public String testGetOrders(User user) {
+        MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
+        Orders orders = new Orders();
+        String test = "error";
+        try (MongoClient client = new MongoClient(uri)) {
+            MongoDatabase db = client.getDatabase(uri.getDatabase());
+            MongoCollection<Document> orderlist = db.getCollection("ASD-app-orders");
+            MongoCollection<Document> userlist = db.getCollection("ASD-app-users");
+            String customerID = getCustomerID(user.getEmail(), user.getPassword());
+            for (Document ord : orderlist.find(eq("CustomerID", customerID))) {
+                Order order = new Order((String) ord.get("CustimerID"), (String) ord.get("OpalID"), (String) ord.get("PaymentCard"), (String) ord.get("OpalType"), (String) ord.get("OrderDate"), (double) ord.get("Value"), (String) ord.get("Status"));
+                orders.addOrder(order);
+            }
+            test = "test succeed";
+        }
+        return test;   
+    }
+    
+    //get the orderID in mongodb  
+    public String testGetOrderID(Order order) {
+        MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
+        String orderID;
+        String test = "error";
+        try (MongoClient client = new MongoClient(uri)) {
+            MongoDatabase db = client.getDatabase(uri.getDatabase());
+            MongoCollection<Document> orderlist = db.getCollection("ASD-app-orders");
+            Document ord = orderlist.find((eq("OpalID", order.getOpalId()))).first();
+            orderID = (String) ord.get("_id").toString();
+            test = "test succeed";
+        }
+        return test;  
+    }
+    
+    //get order payment method
+    public String testGetOrderPayment(Order order){
+       MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
+       Paymentmethod payment;
+       String test = "error";
+        try (MongoClient client = new MongoClient(uri)) {
+            MongoDatabase db = client.getDatabase(uri.getDatabase());
+            MongoCollection<Document> orderlist = db.getCollection("ASD-app-orders");
+            Document ordoc =  orderlist.find(eq("OpalID", order.getOpalId())).first();
+            Document paydoc = (Document)ordoc.get("PaymentMethod");
+            payment = new Paymentmethod((String) paydoc.get("FirstName"), (String) paydoc.get("LastName") ,(String) paydoc.get("CardNumber"), (int) paydoc.get("ExpiryMonth"), (int) paydoc.get("ExpiryYear"), (int) paydoc.get("CVV") );
+            test = "test succeed";
+        }
+        return test;      
+   }
 //
 }

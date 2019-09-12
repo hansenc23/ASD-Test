@@ -3,17 +3,17 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2019-09-11T09:45:13.843Z",
+        "start_timestamp": "2019-09-12T11:45:36.131Z",
         "line": 20,
-        "name": "Successfully order an Opal Card",
+        "name": "Successfully order and cancel an Opal Card",
         "description": "",
-        "id": "order-opal-card-feature;successfully-order-an-opal-card;;2",
+        "id": "order-opal-card-feature;successfully-order-and-cancel-an-opal-card;;2",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 7877743500,
+              "duration": 7636177900,
               "status": "passed"
             },
             "line": 4,
@@ -31,7 +31,7 @@
           },
           {
             "result": {
-              "duration": 978118800,
+              "duration": 6110764900,
               "status": "passed"
             },
             "line": 5,
@@ -49,7 +49,7 @@
           },
           {
             "result": {
-              "duration": 545093600,
+              "duration": 5639490400,
               "status": "passed"
             },
             "line": 6,
@@ -67,7 +67,7 @@
           },
           {
             "result": {
-              "duration": 326350400,
+              "duration": 5346103600,
               "status": "passed"
             },
             "line": 7,
@@ -79,7 +79,7 @@
           },
           {
             "result": {
-              "duration": 720328700,
+              "duration": 5750777100,
               "status": "passed"
             },
             "line": 8,
@@ -97,7 +97,7 @@
           },
           {
             "result": {
-              "duration": 100442300,
+              "duration": 101354900,
               "status": "passed"
             },
             "line": 9,
@@ -109,7 +109,7 @@
           },
           {
             "result": {
-              "duration": 313549100,
+              "duration": 5333099900,
               "status": "passed"
             },
             "line": 10,
@@ -127,7 +127,7 @@
           },
           {
             "result": {
-              "duration": 337497700,
+              "duration": 342618000,
               "status": "passed"
             },
             "line": 11,
@@ -139,7 +139,7 @@
           },
           {
             "result": {
-              "duration": 521574000,
+              "duration": 5615432500,
               "status": "passed"
             },
             "line": 12,
@@ -157,7 +157,7 @@
           },
           {
             "result": {
-              "duration": 331966300,
+              "duration": 5328683900,
               "status": "passed"
             },
             "line": 13,
@@ -175,7 +175,7 @@
           },
           {
             "result": {
-              "duration": 661022200,
+              "duration": 679930600,
               "status": "passed"
             },
             "line": 14,
@@ -187,7 +187,7 @@
           },
           {
             "result": {
-              "duration": 317117400,
+              "duration": 5328405400,
               "status": "passed"
             },
             "line": 15,
@@ -205,7 +205,7 @@
           },
           {
             "result": {
-              "duration": 1515370300,
+              "duration": 5980543200,
               "status": "passed"
             },
             "line": 16,
@@ -223,7 +223,7 @@
           },
           {
             "result": {
-              "duration": 6344500,
+              "duration": 595473200,
               "status": "passed"
             },
             "line": 17,
@@ -242,17 +242,17 @@
         ]
       },
       {
-        "start_timestamp": "2019-09-11T09:45:28.398Z",
+        "start_timestamp": "2019-09-12T11:46:35.924Z",
         "line": 21,
-        "name": "Successfully order an Opal Card",
+        "name": "Successfully order and cancel an Opal Card",
         "description": "",
-        "id": "order-opal-card-feature;successfully-order-an-opal-card;;3",
+        "id": "order-opal-card-feature;successfully-order-and-cancel-an-opal-card;;3",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 7074390600,
+              "duration": 7171912000,
               "status": "passed"
             },
             "line": 4,
@@ -270,7 +270,7 @@
           },
           {
             "result": {
-              "duration": 946452700,
+              "duration": 6136766700,
               "status": "passed"
             },
             "line": 5,
@@ -288,7 +288,7 @@
           },
           {
             "result": {
-              "duration": 520089700,
+              "duration": 5646658100,
               "status": "passed"
             },
             "line": 6,
@@ -306,7 +306,7 @@
           },
           {
             "result": {
-              "duration": 350686100,
+              "duration": 5327717400,
               "status": "passed"
             },
             "line": 7,
@@ -318,7 +318,7 @@
           },
           {
             "result": {
-              "duration": 667605800,
+              "duration": 5795500100,
               "status": "passed"
             },
             "line": 8,
@@ -336,7 +336,7 @@
           },
           {
             "result": {
-              "duration": 90886900,
+              "duration": 88998100,
               "status": "passed"
             },
             "line": 9,
@@ -348,7 +348,7 @@
           },
           {
             "result": {
-              "duration": 307642100,
+              "duration": 5357703500,
               "status": "passed"
             },
             "line": 10,
@@ -366,7 +366,7 @@
           },
           {
             "result": {
-              "duration": 329386600,
+              "duration": 346756600,
               "status": "passed"
             },
             "line": 11,
@@ -378,7 +378,7 @@
           },
           {
             "result": {
-              "duration": 538830500,
+              "duration": 5613304500,
               "status": "passed"
             },
             "line": 12,
@@ -396,7 +396,7 @@
           },
           {
             "result": {
-              "duration": 333917700,
+              "duration": 5359309700,
               "status": "passed"
             },
             "line": 13,
@@ -414,7 +414,7 @@
           },
           {
             "result": {
-              "duration": 652028700,
+              "duration": 711642200,
               "status": "passed"
             },
             "line": 14,
@@ -426,7 +426,7 @@
           },
           {
             "result": {
-              "duration": 302220100,
+              "duration": 5349769600,
               "status": "passed"
             },
             "line": 15,
@@ -444,15 +444,15 @@
           },
           {
             "result": {
-              "duration": 773857400,
+              "duration": 5831423200,
               "status": "passed"
             },
             "line": 16,
-            "name": "User click \"orderConfirmation_confirm\"",
+            "name": "User click \"orderConfirmation_cancelled\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"orderConfirmation_confirm\"",
+                  "val": "\"orderConfirmation_cancelled\"",
                   "offset": 11
                 }
               ],
@@ -462,15 +462,15 @@
           },
           {
             "result": {
-              "duration": 8242200,
+              "duration": 600509200,
               "status": "passed"
             },
             "line": 17,
-            "name": "The page should be navigated to \"Order Succeed\"",
+            "name": "The page should be navigated to \"Order Cancelled\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Order Succeed\"",
+                  "val": "\"Order Cancelled\"",
                   "offset": 32
                 }
               ],

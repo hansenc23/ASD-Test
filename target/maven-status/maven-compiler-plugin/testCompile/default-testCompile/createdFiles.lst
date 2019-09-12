@@ -1,4 +1,5 @@
 asd\test\Driver.class
 asd\test\OrderFeature.class
+asd\test\OrderUnitTest.class
 asd\test\LinkCardFeature.class
 asd\test\RunTest.class

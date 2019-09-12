@@ -38,11 +38,6 @@ public class OrderFeature extends Driver{
         driver.findElement(By.id(type)).click();
     }
     
-    @Then("The page should be navigated to {string}")
-    public void the_page_should_be_navigated_to(String title) {
-        Assert.assertTrue(driver.getTitle().contains(title));
-    }
-
     @When("User fill in contact detail")
     public void user_fill_in_contact_detail() {
         driver.findElement(By.id("contact_first_name")).sendKeys("MelSun");
@@ -93,5 +88,11 @@ public class OrderFeature extends Driver{
     @When("User click {string}")
     public void user_click(String button) {
         driver.findElement(By.id(button)).click();
+    }
+    
+    @Then("The page should be navigated to {string}")
+    public void the_page_should_be_navigated_to(String title) {
+        Assert.assertTrue(driver.getTitle().contains(title));
+        driver.quit();
     }
 }

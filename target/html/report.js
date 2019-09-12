@@ -5,7 +5,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.scenarioOutline({
-  "name": "Successfully order an Opal Card",
+  "name": "Successfully order and cancel an Opal Card",
   "description": "",
   "keyword": "Scenario Outline"
 });
@@ -58,11 +58,11 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
-  "name": "User click \"orderConfirmation_confirm\"",
+  "name": "User click \"\u003csucceed_or_cancelled\u003e\"",
   "keyword": "And "
 });
 formatter.step({
-  "name": "The page should be navigated to \"Order Succeed\"",
+  "name": "The page should be navigated to \"\u003csucceed_or_cancelled_page\u003e\"",
   "keyword": "Then "
 });
 formatter.examples({
@@ -72,23 +72,29 @@ formatter.examples({
   "rows": [
     {
       "cells": [
-        "opal_type"
+        "opal_type",
+        "succeed_or_cancelled",
+        "succeed_or_cancelled_page"
       ]
     },
     {
       "cells": [
-        "type_adult"
+        "type_adult",
+        "orderConfirmation_confirm",
+        "Order Succeed"
       ]
     },
     {
       "cells": [
-        "type_concession"
+        "type_concession",
+        "orderConfirmation_cancelled",
+        "Order Cancelled"
       ]
     }
   ]
 });
 formatter.scenario({
-  "name": "Successfully order an Opal Card",
+  "name": "Successfully order and cancel an Opal Card",
   "description": "",
   "keyword": "Scenario Outline"
 });
@@ -233,7 +239,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "Successfully order an Opal Card",
+  "name": "Successfully order and cancel an Opal Card",
   "description": "",
   "keyword": "Scenario Outline"
 });
@@ -358,7 +364,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User click \"orderConfirmation_confirm\"",
+  "name": "User click \"orderConfirmation_cancelled\"",
   "keyword": "And "
 });
 formatter.match({
@@ -368,7 +374,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "The page should be navigated to \"Order Succeed\"",
+  "name": "The page should be navigated to \"Order Cancelled\"",
   "keyword": "Then "
 });
 formatter.match({
