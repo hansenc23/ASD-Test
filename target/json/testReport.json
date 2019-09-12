@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2019-09-12T13:36:00.720Z",
+        "start_timestamp": "2019-09-12T14:22:15.332Z",
         "line": 20,
         "name": "Successfully order an Opal Card, cancel an order, and edit an order",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 7512925500,
+              "duration": 7329582900,
               "status": "passed"
             },
             "line": 4,
@@ -31,7 +31,7 @@
           },
           {
             "result": {
-              "duration": 6100711200,
+              "duration": 1113134400,
               "status": "passed"
             },
             "line": 5,
@@ -49,7 +49,7 @@
           },
           {
             "result": {
-              "duration": 5632333100,
+              "duration": 606268700,
               "status": "passed"
             },
             "line": 6,
@@ -67,7 +67,7 @@
           },
           {
             "result": {
-              "duration": 5325898300,
+              "duration": 353026700,
               "status": "passed"
             },
             "line": 7,
@@ -79,7 +79,7 @@
           },
           {
             "result": {
-              "duration": 5763700900,
+              "duration": 736447000,
               "status": "passed"
             },
             "line": 8,
@@ -97,7 +97,7 @@
           },
           {
             "result": {
-              "duration": 99039900,
+              "duration": 106741300,
               "status": "passed"
             },
             "line": 9,
@@ -109,7 +109,7 @@
           },
           {
             "result": {
-              "duration": 5359957700,
+              "duration": 361382700,
               "status": "passed"
             },
             "line": 10,
@@ -127,7 +127,7 @@
           },
           {
             "result": {
-              "duration": 335844100,
+              "duration": 348010400,
               "status": "passed"
             },
             "line": 11,
@@ -139,7 +139,7 @@
           },
           {
             "result": {
-              "duration": 5621840800,
+              "duration": 634046100,
               "status": "passed"
             },
             "line": 12,
@@ -157,7 +157,7 @@
           },
           {
             "result": {
-              "duration": 5347163700,
+              "duration": 347234900,
               "status": "passed"
             },
             "line": 13,
@@ -175,7 +175,7 @@
           },
           {
             "result": {
-              "duration": 642308400,
+              "duration": 766261900,
               "status": "passed"
             },
             "line": 14,
@@ -187,7 +187,7 @@
           },
           {
             "result": {
-              "duration": 5331428900,
+              "duration": 354751700,
               "status": "passed"
             },
             "line": 15,
@@ -205,7 +205,7 @@
           },
           {
             "result": {
-              "duration": 5769972900,
+              "duration": 796344100,
               "status": "passed"
             },
             "line": 16,
@@ -223,7 +223,7 @@
           },
           {
             "result": {
-              "duration": 594885600,
+              "duration": 625327200,
               "status": "passed"
             },
             "line": 17,
@@ -242,7 +242,7 @@
         ]
       },
       {
-        "start_timestamp": "2019-09-12T13:37:00.161Z",
+        "start_timestamp": "2019-09-12T14:22:29.813Z",
         "line": 21,
         "name": "Successfully order an Opal Card, cancel an order, and edit an order",
         "description": "",
@@ -252,7 +252,7 @@
         "steps": [
           {
             "result": {
-              "duration": 7175990300,
+              "duration": 6858031500,
               "status": "passed"
             },
             "line": 4,
@@ -270,7 +270,7 @@
           },
           {
             "result": {
-              "duration": 6115695400,
+              "duration": 1096556500,
               "status": "passed"
             },
             "line": 5,
@@ -288,7 +288,7 @@
           },
           {
             "result": {
-              "duration": 5596894900,
+              "duration": 597669000,
               "status": "passed"
             },
             "line": 6,
@@ -306,7 +306,7 @@
           },
           {
             "result": {
-              "duration": 5308908600,
+              "duration": 332175100,
               "status": "passed"
             },
             "line": 7,
@@ -318,7 +318,7 @@
           },
           {
             "result": {
-              "duration": 6031384400,
+              "duration": 703476800,
               "status": "passed"
             },
             "line": 8,
@@ -336,7 +336,7 @@
           },
           {
             "result": {
-              "duration": 97778700,
+              "duration": 89127600,
               "status": "passed"
             },
             "line": 9,
@@ -348,7 +348,7 @@
           },
           {
             "result": {
-              "duration": 5330572800,
+              "duration": 339831200,
               "status": "passed"
             },
             "line": 10,
@@ -366,7 +366,7 @@
           },
           {
             "result": {
-              "duration": 340377200,
+              "duration": 340247500,
               "status": "passed"
             },
             "line": 11,
@@ -378,7 +378,7 @@
           },
           {
             "result": {
-              "duration": 5591556400,
+              "duration": 589348100,
               "status": "passed"
             },
             "line": 12,
@@ -396,7 +396,7 @@
           },
           {
             "result": {
-              "duration": 5325954800,
+              "duration": 355152600,
               "status": "passed"
             },
             "line": 13,
@@ -414,7 +414,7 @@
           },
           {
             "result": {
-              "duration": 645806700,
+              "duration": 690912000,
               "status": "passed"
             },
             "line": 14,
@@ -426,7 +426,7 @@
           },
           {
             "result": {
-              "duration": 5336795000,
+              "duration": 335451900,
               "status": "passed"
             },
             "line": 15,
@@ -444,7 +444,7 @@
           },
           {
             "result": {
-              "duration": 5721955400,
+              "duration": 691195800,
               "status": "passed"
             },
             "line": 16,
@@ -462,7 +462,7 @@
           },
           {
             "result": {
-              "duration": 599283400,
+              "duration": 603943800,
               "status": "passed"
             },
             "line": 17,

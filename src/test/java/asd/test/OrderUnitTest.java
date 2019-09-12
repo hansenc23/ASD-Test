@@ -37,7 +37,7 @@ public class OrderUnitTest {
     public void addOrder ()throws UnknownHostException{
         String opalID = "" + (new Random()).nextInt(9999) + " " + (new Random()).nextInt(9999) + " " + (new Random()).nextInt(9999) + " " + (new Random()).nextInt(9999);
         String cusID = dbconnector.getCustomerID("Zrush@gmail.com", "rdrr");
-        Order order = new Order(cusID, opalID, "", "Adult", "2019-11-01",15.0,"Proccessing");
+        Order order = new Order(cusID, opalID, "", "Adult", "2019-11-01",15.0,"testing");
         String testOutcome = dbconnector.testAdd(order);
         assertEquals("test succeed", testOutcome);
     }
@@ -47,7 +47,7 @@ public class OrderUnitTest {
         Paymentmethod payment = new Paymentmethod("Rush","Z","4678954625635279", 9, 24, 345);
         String opalID = "" + (new Random()).nextInt(9999) + " " + (new Random()).nextInt(9999) + " " + (new Random()).nextInt(9999) + " " + (new Random()).nextInt(9999);
         String cusID = dbconnector.getCustomerID("Zrush@gmail.com", "rdrr");
-        Order order = new Order(cusID, opalID, "", "Adult", "2019-11-01",15.0,"Proccessing");
+        Order order = new Order(cusID, opalID, "", "Adult", "2019-11-01",15.0,"testing");
         String testOutcome = dbconnector.testAdd(payment, order);
         assertEquals("test succeed", testOutcome);
     }
@@ -69,7 +69,7 @@ public class OrderUnitTest {
     public void getOrderID ()throws UnknownHostException {
         String opalID = "" + (new Random()).nextInt(9999) + " " + (new Random()).nextInt(9999) + " " + (new Random()).nextInt(9999) + " " + (new Random()).nextInt(9999);
         String cusID = dbconnector.getCustomerID("Zrush@gmail.com", "rdrr");
-        Order order = new Order(cusID, opalID, "", "Adult", "2019-11-01", 15.0,"Proccessing");
+        Order order = new Order(cusID, opalID, "", "Adult", "2019-11-01", 15.0,"testing");
         dbconnector.add(order);
         String testOutcome = dbconnector.testGetOrderID(order);
         assertEquals("test succeed", testOutcome);
@@ -79,7 +79,7 @@ public class OrderUnitTest {
     public void getOrderPayment ()throws UnknownHostException{
         String opalID = "" + (new Random()).nextInt(9999) + " " + (new Random()).nextInt(9999) + " " + (new Random()).nextInt(9999) + " " + (new Random()).nextInt(9999);
         String cusID = dbconnector.getCustomerID("Zrush@gmail.com", "rdrr");
-        Order order = new Order(cusID, opalID, "", "Adult", "2019-11-01",15.0,"Proccessing");
+        Order order = new Order(cusID, opalID, "", "Adult", "2019-11-01",15.0,"testing");
         dbconnector.add(order);
         Paymentmethod payment = new Paymentmethod("Rush","Z","4678954625635279", 9, 24, 345);
         dbconnector.add(payment, order);
