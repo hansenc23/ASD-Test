@@ -21,6 +21,7 @@ Feature: Order Opal Card Feature
     |type_concession|orderConfirmation_cancelled|Order Cancelled            |
 
   Scenario: Successfully order an Opal Card as a customer
+    Given User is in the "login.jsp"
     Given User is login as a customer
     When User Click on "order_opal_card"
     And User Click on "type_child"
@@ -28,7 +29,7 @@ Feature: Order Opal Card Feature
     And User click "order_value_continue"
     And User fill in payment detail
     And User click "paymentDetail_continue"
-    And User click "orderConrimation_confirm"
+    And User click "orderConfirmation_confirm"
     Then The page should be navigated to "Order Succeed"
 
    Scenario: Successfully view the order history

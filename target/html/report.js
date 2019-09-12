@@ -389,12 +389,24 @@ formatter.scenario({
   "keyword": "Scenario"
 });
 formatter.step({
+  "name": "User is in the \"login.jsp\"",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "OrderFeature.user_is_in_the(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
   "name": "User is login as a customer",
   "keyword": "Given "
 });
-formatter.match({});
+formatter.match({
+  "location": "OrderFeature.user_is_login_as_a_customer()"
+});
 formatter.result({
-  "status": "undefined"
+  "status": "passed"
 });
 formatter.step({
   "name": "User Click on \"order_opal_card\"",
@@ -404,7 +416,7 @@ formatter.match({
   "location": "OrderFeature.user_Click_on(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "User Click on \"type_child\"",
@@ -414,7 +426,7 @@ formatter.match({
   "location": "OrderFeature.user_Click_on(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "User select the top up value",
@@ -424,7 +436,7 @@ formatter.match({
   "location": "OrderFeature.user_select_the_top_up_value()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "User click \"order_value_continue\"",
@@ -434,7 +446,7 @@ formatter.match({
   "location": "OrderFeature.user_click(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "User fill in payment detail",
@@ -444,7 +456,7 @@ formatter.match({
   "location": "OrderFeature.user_fill_in_payment_detail()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "User click \"paymentDetail_continue\"",
@@ -454,17 +466,17 @@ formatter.match({
   "location": "OrderFeature.user_click(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
-  "name": "User click \"orderConrimation_confirm\"",
+  "name": "User click \"orderConfirmation_confirm\"",
   "keyword": "And "
 });
 formatter.match({
   "location": "OrderFeature.user_click(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "The page should be navigated to \"Order Succeed\"",
@@ -474,7 +486,7 @@ formatter.match({
   "location": "OrderFeature.the_page_should_be_navigated_to(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.scenario({
   "name": "Successfully view the order history",
@@ -482,12 +494,24 @@ formatter.scenario({
   "keyword": "Scenario"
 });
 formatter.step({
+  "name": "User is in the \"login.jsp\"",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "OrderFeature.user_is_in_the(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
   "name": "User is login as a customer",
   "keyword": "Given "
 });
-formatter.match({});
+formatter.match({
+  "location": "OrderFeature.user_is_login_as_a_customer()"
+});
 formatter.result({
-  "status": "undefined"
+  "status": "passed"
 });
 formatter.step({
   "name": "User Click on \"order_history\"",
@@ -497,7 +521,7 @@ formatter.match({
   "location": "OrderFeature.user_Click_on(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "The page should be navigated to \"Order History\"",
@@ -507,7 +531,7 @@ formatter.match({
   "location": "OrderFeature.the_page_should_be_navigated_to(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.scenario({
   "name": "Successfully view all the order",
@@ -518,9 +542,11 @@ formatter.step({
   "name": "User is login as an admin",
   "keyword": "Given "
 });
-formatter.match({});
+formatter.match({
+  "location": "OrderFeature.user_is_login_as_an_admin()"
+});
 formatter.result({
-  "status": "undefined"
+  "status": "passed"
 });
 formatter.step({
   "name": "User Click on \"order_management\"",
@@ -530,7 +556,7 @@ formatter.match({
   "location": "OrderFeature.user_Click_on(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "The page should be navigated to \"Order Management\"",
@@ -540,6 +566,6 @@ formatter.match({
   "location": "OrderFeature.the_page_should_be_navigated_to(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 });

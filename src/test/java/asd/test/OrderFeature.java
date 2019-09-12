@@ -101,6 +101,7 @@ public class OrderFeature extends Driver{
         driver.findElement(By.id("login_email")).sendKeys("anita@gmail.com");
         driver.findElement(By.id("login_password")).sendKeys("anita");
         driver.findElement(By.id("login_submit")).click();
+        driver.findElement(By.id("loginAction_success")).click();
     }
 
     @Given("User is login as an admin")
