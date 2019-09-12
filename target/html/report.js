@@ -5,7 +5,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.scenarioOutline({
-  "name": "Successfully order and cancel an Opal Card",
+  "name": "Successfully order an Opal Card, cancel an order, and edit an order",
   "description": "",
   "keyword": "Scenario Outline"
 });
@@ -94,7 +94,7 @@ formatter.examples({
   ]
 });
 formatter.scenario({
-  "name": "Successfully order and cancel an Opal Card",
+  "name": "Successfully order an Opal Card, cancel an order, and edit an order",
   "description": "",
   "keyword": "Scenario Outline"
 });
@@ -239,7 +239,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "Successfully order and cancel an Opal Card",
+  "name": "Successfully order an Opal Card, cancel an order, and edit an order",
   "description": "",
   "keyword": "Scenario Outline"
 });
