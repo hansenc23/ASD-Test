@@ -31,14 +31,14 @@
             String securitycode = "" + (new Random()).nextInt(9999);
                         
             java.util.Date sysdate = new java.util.Date();
-            DateFormat dateformat = new SimpleDateFormat("yyyy-mm-dd");
+            DateFormat dateformat = new SimpleDateFormat("yyyy-MM-dd");
             String date = dateformat.format(sysdate);
             
             Order getAmount = (Order)session.getAttribute("addAmount");
                   
             if(user == null){
                 
-                if(request.getParameter("change") == null){ 
+                if(request.getParameter("isChange") == null){ 
                     OpalCard opalcard = new OpalCard(getAmount.getOpalId(), getAmount.getValue(), getAmount.getOpalType(), securitycode);
                     connector.registerCard(opalcard);
                     Order order = new Order(getAmount.getCustomerId(), getAmount.getOpalId(), getAmount.getPaymentCard(), getAmount.getOpalType(), date, getAmount.getValue(), "Processing");

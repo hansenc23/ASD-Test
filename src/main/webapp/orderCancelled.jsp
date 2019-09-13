@@ -30,7 +30,7 @@
             Order getAmount = (Order)session.getAttribute("addAmount");
             
             java.util.Date sysdate = new java.util.Date();
-            DateFormat dateformat = new SimpleDateFormat("yyyy-mm-dd");
+            DateFormat dateformat = new SimpleDateFormat("yyyy-MM-dd");
             
             String date = dateformat.format(sysdate);
                    
