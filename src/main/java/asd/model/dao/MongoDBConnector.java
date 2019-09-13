@@ -419,6 +419,8 @@ public class MongoDBConnector {
             } else {
                 outcome = "Your updated details contains duplicated card number with other payment methods. Please put a valid method !";
                 }
+            } else {
+                outcome = "You do not have any payment methods yet !";
             }
         }
     return outcome;
