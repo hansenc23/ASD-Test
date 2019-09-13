@@ -23,12 +23,28 @@ import org.bson.types.ObjectId;
 
 
 
+import java.util.logging.Logger; 
+
+import com.mongodb.client.model.Filters;
+import static com.mongodb.client.model.Filters.and;
+import static com.mongodb.client.model.Filters.eq;
+import com.mongodb.client.model.Updates;
+import static com.mongodb.client.model.Updates.combine;
+import static com.mongodb.client.model.Updates.pull;
+import org.bson.conversions.Bson;
+import org.bson.types.ObjectId;
+
 public class MongoDBConnector {
 
     private List<Document> users = new ArrayList();
     private List<Document> cards = new ArrayList();
     private List<Document> orders = new ArrayList();
+
     private List<Document> times = new ArrayList();
+
+       
+    private List<Document> enqiries = new ArrayList();
+
     private String owner;
     private String password;
 
@@ -626,7 +642,80 @@ public class MongoDBConnector {
         }
         
     }
+
            
           
+
+            public Times loadUserTimes(String customerID) {
+        MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
+        Times times;
+        BasicDBObject query = new BasicDBObject();
+        try (MongoClient client = new MongoClient(uri)) {
+            MongoDatabase db = client.getDatabase(uri.getDatabase());   
+            times = new Times();
+            Pattern p = Pattern.compile(customerID);
+            query.append("customerID", p);
+            MongoCollection<Document> timelist = db.getCollection("ASD-app-times");
+            for (Document doc : timelist.find(query)) {
+                Time time = new Time((String) doc.get("customerID"), (String) doc.get("loginID"), (String) doc.get("loginT"), (String) doc.get("logoutT"));
+                times.addTime(time);
+            }
+        }
+        return times;
+    }
+              public Times userSearchTimes(String customerID,String loginT) {
+        MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
+        Times times;
+        BasicDBObject query = new BasicDBObject();
+        try (MongoClient client = new MongoClient(uri)) {
+            MongoDatabase db = client.getDatabase(uri.getDatabase());   
+            times = new Times();
+            Pattern p = Pattern.compile(customerID);
+            Pattern t = Pattern.compile(loginT +".*");
+            query.append("loginT",t);
+            query.append("customerID", p);
+            MongoCollection<Document> timelist = db.getCollection("ASD-app-times");
+            for (Document doc : timelist.find(query)) {
+                Time time = new Time((String) doc.get("customerID"), (String) doc.get("loginID"), (String) doc.get("loginT"), (String) doc.get("logoutT"));
+                times.addTime(time);
+            }
+        }
+        return times;
+    }
+              //Enqiry Manager
+                public void add(Enqiry enqiry) {
+        MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
+        try (MongoClient client = new MongoClient(uri)) {
+            MongoDatabase db = client.getDatabase(uri.getDatabase());
+            enqiries.add(new Document("customerID", enqiry.getCustomerID()).append("question", enqiry. getQuestion()).append("answer", enqiry.getAnswer()).append("enqiryID", enqiry.getEnqiryID()).append("title", enqiry.getTitle()));
+            MongoCollection<Document> enqirylist = db.getCollection("ASD-app-enqiries"); //Create a collection ASD-app-times on mLab
+           enqirylist.insertMany(enqiries);
+        }
+    }  
+            public Enqiries loadEnqiries() {
+        MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
+        Enqiries enqiries;
+        try (MongoClient client = new MongoClient(uri)) {
+            MongoDatabase db = client.getDatabase(uri.getDatabase());
+            enqiries = new Enqiries();
+            MongoCollection<Document> enqirylist = db.getCollection("ASD-app-enqiries");
+            for (Document doc : enqirylist.find()) {
+                Enqiry enqiry = new Enqiry((String) doc.get("customerID"), (String) doc.get("question"), (String) doc.get("answer"), (String) doc.get("enqiryID"),(String) doc.get("title"));
+                enqiries.addEnqiry(enqiry);
+            }
+        }
+        return enqiries;
+    }
+             public void removeEnqiries(String enqiryID) {
+        MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
+        try (MongoClient client = new MongoClient(uri)) {
+            MongoDatabase db = client.getDatabase(uri.getDatabase());
+            
+            MongoCollection<Document> enqirylist = db.getCollection("ASD-app-enqiries"); //Create a collection ASD-app-times on mLab
+            enqirylist.deleteOne(new Document("enqiryID", enqiryID));
+        }
+    }
+
 }
 
+   

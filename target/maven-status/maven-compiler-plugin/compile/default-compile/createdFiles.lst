@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 asd/model/TopUpPayment.class
 asd/model/Paymentmethod.class
 asd/model/OrderPayment.class
@@ -13,3 +14,21 @@ asd/model/OpalCards.class
 asd/model/dao/MongoDBConnector.class
 asd/controller/Validator.class
 asd/model/Users.class
+=======
+asd\model\Enqiry.class
+asd\model\Paymentmethod.class
+asd\controller\ConnServlet.class
+asd\model\Time.class
+asd\model\User.class
+asd\model\dao\MongoDBConnector.class
+asd\model\Times.class
+asd\model\TopUpPayment.class
+asd\model\OrderPayment.class
+asd\model\OpalCard.class
+asd\model\Order.class
+asd\model\OpalCards.class
+asd\model\Enqiries.class
+asd\controller\Validator.class
+asd\model\Users.class
+asd\controller\ValidatorServlet.class
+>>>>>>> 4b2cf3f61fc9d3699c9d28bea1c3c782dcf9ddb0

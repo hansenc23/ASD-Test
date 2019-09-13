@@ -4,7 +4,11 @@
     Author     : hanse
 --%>
 
+<<<<<<< HEAD
 <%@page contentType="text/html" pageEncoding="UTF-8" import="java.util.*"%>
+=======
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+>>>>>>> 4b2cf3f61fc9d3699c9d28bea1c3c782dcf9ddb0
 
 <!DOCTYPE html>
 <html lang="en">
@@ -19,12 +23,15 @@
         <title>Home</title>
     </head>
     <body>
+<<<<<<< HEAD
         <%
             
             Random rand = new Random();
             int n = rand.nextInt(90000) + 10000;
             
         %>
+=======
+>>>>>>> 4b2cf3f61fc9d3699c9d28bea1c3c782dcf9ddb0
 
         <br>
         <h2 style="text-align: center">Create Staff Account</h2>
@@ -42,7 +49,10 @@
                     <tr><td>Phone Number:</td><td> <input type="text" name ="phone"></td></tr>
                     <tr><td>Position:</td><td> <input type="text" name ="position"></td></tr>
                     <input type="hidden" name ="isStaff" value="true"></td></tr>
+<<<<<<< HEAD
                     <input type="hidden" name ="userID" value="<%=n%>">
+=======
+>>>>>>> 4b2cf3f61fc9d3699c9d28bea1c3c782dcf9ddb0
 
                     <tr><td></td>
                         <td>
