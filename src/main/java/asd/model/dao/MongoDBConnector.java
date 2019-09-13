@@ -339,6 +339,19 @@ public class MongoDBConnector {
         }
         return exist;
     }
+   // delete user
+    public void deleteUser(User user){
+        MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
+        try (MongoClient client = new MongoClient(uri)) {
+            MongoDatabase db = client.getDatabase(uri.getDatabase());
+            MongoCollection<Document> userlist = db.getCollection("ASD-app-users");
+            Document userdoc = userlist.find(eq("Username", user.getEmail())).first();
+            if (userdoc!=null){
+            ObjectId _id = new ObjectId(userdoc.get("_id").toString());
+            userlist.deleteOne(new Document("_id", _id));
+            }
+        }
+    }
   
     
     
@@ -387,6 +400,7 @@ public class MongoDBConnector {
         }
     }
           //Edit payment methods 
+              //Edit payment methods 
      public String editPaymentMethod(String initPaymentId,Paymentmethod paymt, User user){
          MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
          String outcome = "There was an error updating your payment method. Please try again later !";
@@ -396,8 +410,10 @@ public class MongoDBConnector {
             Document userdoc =  userlist.find(eq("Username", user.getEmail())).first();
             if(userdoc.get("PaymentMethod") != null){
             paymentMethods = (List<Document>) userdoc.get("PaymentMethod");
+            int i =0;
             int j = 0;
             for (Document paymentmethod : paymentMethods){
+                i++;
                 //check for duplicate card number inside PaymentMethod array
                 if(paymentmethod.getString("CardNumber").equals(paymt.getCardNumber()) && !paymt.getCardNumber().equals(initPaymentId)){
                     j++;
@@ -416,9 +432,11 @@ public class MongoDBConnector {
                     Bson updateCVV= Updates.set("PaymentMethod.$.CVV",paymt.getCvv());
                     userlist.updateOne(filter, combine(updateFirstName,updateLastName,updateCardNumber,updateExpiryMonth,updateExpiryYear,updateCVV));      
                     outcome = "Update was successful !";
-            } else {
-                outcome = "Your updated details contains duplicated card number with other payment methods. Please put a valid method !";
-                }
+            } else if(i == 0) {
+                outcome = "You do not have any payment methods yet !";
+                } else {
+                outcome= "Your updated details contains duplicated card number with other payment methods. Please put a valid method !";
+            }
             } else {
                 outcome = "You do not have any payment methods yet !";
             }
