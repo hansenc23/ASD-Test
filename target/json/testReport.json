@@ -3,9 +3,15 @@
     "line": 1,
     "elements": [
       {
+<<<<<<< HEAD
         "start_timestamp": "2019-09-13T05:16:53.624Z",
         "line": 4,
         "name": "Successfully order an Opal Card and edit an order as an anonymous user",
+=======
+        "start_timestamp": "2019-09-13T04:30:03.238Z",
+        "line": 20,
+        "name": "Successfully order an Opal Card, cancel an order, and edit an order as an anonymous user",
+>>>>>>> 180eb8c2743879f33b15c5be5c802ef6b356f199
         "description": "",
         "id": "order-opal-card-feature;successfully-order-an-opal-card-and-edit-an-order-as-an-anonymous-user",
         "type": "scenario",
@@ -13,242 +19,354 @@
         "steps": [
           {
             "result": {
+<<<<<<< HEAD
               "duration": 7839781700,
               "status": "passed"
+=======
+              "status": "undefined"
+>>>>>>> 180eb8c2743879f33b15c5be5c802ef6b356f199
             },
             "line": 5,
             "name": "User is in the \"main.jsp\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"main.jsp\"",
-                  "offset": 15
-                }
-              ],
-              "location": "OrderFeature.user_is_in_the(String)"
-            },
+            "match": {},
             "keyword": "Given "
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 1021457300,
               "status": "passed"
+=======
+              "status": "undefined"
+>>>>>>> 180eb8c2743879f33b15c5be5c802ef6b356f199
             },
             "line": 6,
             "name": "User Click on \"order_opal_card\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"order_opal_card\"",
-                  "offset": 14
-                }
-              ],
-              "location": "OrderFeature.user_Click_on(String)"
-            },
+            "match": {},
             "keyword": "When "
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 717409700,
               "status": "passed"
+=======
+              "status": "undefined"
+>>>>>>> 180eb8c2743879f33b15c5be5c802ef6b356f199
             },
             "line": 7,
             "name": "User Click on \"type_adult\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"type_adult\"",
-                  "offset": 14
-                }
-              ],
-              "location": "OrderFeature.user_Click_on(String)"
-            },
+            "match": {},
             "keyword": "And "
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 1387270900,
               "status": "passed"
+=======
+              "status": "undefined"
+>>>>>>> 180eb8c2743879f33b15c5be5c802ef6b356f199
             },
             "line": 8,
             "name": "User fill in contact detail",
-            "match": {
-              "location": "OrderFeature.user_fill_in_contact_detail()"
-            },
+            "match": {},
             "keyword": "And "
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 825816100,
               "status": "passed"
+=======
+              "status": "undefined"
+>>>>>>> 180eb8c2743879f33b15c5be5c802ef6b356f199
             },
             "line": 9,
             "name": "User click \"contact_continue\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"contact_continue\"",
-                  "offset": 11
-                }
-              ],
-              "location": "OrderFeature.user_click(String)"
-            },
+            "match": {},
             "keyword": "And "
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 378020700,
               "status": "passed"
+=======
+              "status": "undefined"
+>>>>>>> 180eb8c2743879f33b15c5be5c802ef6b356f199
             },
             "line": 10,
             "name": "User select the top up value",
-            "match": {
-              "location": "OrderFeature.user_select_the_top_up_value()"
-            },
+            "match": {},
             "keyword": "And "
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 490608200,
               "status": "passed"
+=======
+              "status": "undefined"
+>>>>>>> 180eb8c2743879f33b15c5be5c802ef6b356f199
             },
             "line": 11,
             "name": "User click \"order_value_continue\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"order_value_continue\"",
-                  "offset": 11
-                }
-              ],
-              "location": "OrderFeature.user_click(String)"
-            },
+            "match": {},
             "keyword": "And "
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 1018642700,
               "status": "passed"
+=======
+              "status": "undefined"
+>>>>>>> 180eb8c2743879f33b15c5be5c802ef6b356f199
             },
             "line": 12,
             "name": "User fill in payment detail",
-            "match": {
-              "location": "OrderFeature.user_fill_in_payment_detail()"
-            },
+            "match": {},
             "keyword": "And "
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 630356800,
               "status": "passed"
+=======
+              "status": "undefined"
+>>>>>>> 180eb8c2743879f33b15c5be5c802ef6b356f199
             },
             "line": 13,
             "name": "User click \"paymentDetail_continue\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"paymentDetail_continue\"",
-                  "offset": 11
-                }
-              ],
-              "location": "OrderFeature.user_click(String)"
-            },
+            "match": {},
             "keyword": "And "
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 421521100,
               "status": "passed"
+=======
+              "status": "undefined"
+>>>>>>> 180eb8c2743879f33b15c5be5c802ef6b356f199
             },
             "line": 14,
             "name": "User click \"orderConfirmation_edit\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"orderConfirmation_edit\"",
-                  "offset": 11
-                }
-              ],
-              "location": "OrderFeature.user_click(String)"
-            },
+            "match": {},
             "keyword": "And "
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 1757211000,
               "status": "passed"
+=======
+              "status": "undefined"
+>>>>>>> 180eb8c2743879f33b15c5be5c802ef6b356f199
             },
             "line": 15,
             "name": "User fill in edit detail",
-            "match": {
-              "location": "OrderFeature.user_fill_in_edit_detail()"
-            },
+            "match": {},
             "keyword": "And "
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 5383985800,
               "status": "passed"
+=======
+              "status": "undefined"
+>>>>>>> 180eb8c2743879f33b15c5be5c802ef6b356f199
             },
             "line": 16,
             "name": "User click \"edit_continue\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"edit_continue\"",
-                  "offset": 11
-                }
-              ],
-              "location": "OrderFeature.user_click(String)"
-            },
+            "match": {},
             "keyword": "And "
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 5802439200,
               "status": "passed"
+=======
+              "status": "undefined"
+>>>>>>> 180eb8c2743879f33b15c5be5c802ef6b356f199
             },
             "line": 17,
             "name": "User click \"orderConfirmation_confirm\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"orderConfirmation_confirm\"",
-                  "offset": 11
-                }
-              ],
-              "location": "OrderFeature.user_click(String)"
-            },
+            "match": {},
             "keyword": "And "
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 781070100,
               "status": "passed"
+=======
+              "status": "undefined"
+>>>>>>> 180eb8c2743879f33b15c5be5c802ef6b356f199
             },
             "line": 18,
             "name": "The page should be navigated to \"Order Succeed\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Order Succeed\"",
-                  "offset": 32
-                }
-              ],
-              "location": "OrderFeature.the_page_should_be_navigated_to(String)"
-            },
+            "match": {},
             "keyword": "Then "
           }
+<<<<<<< HEAD
         ],
         "tags": [
           {
             "name": "@removeAnonymousUser"
+=======
+        ]
+      },
+      {
+        "start_timestamp": "2019-09-13T04:30:03.248Z",
+        "line": 21,
+        "name": "Successfully order an Opal Card, cancel an order, and edit an order as an anonymous user",
+        "description": "",
+        "id": "order-opal-card-feature;successfully-order-an-opal-card--cancel-an-order--and-edit-an-order-as-an-anonymous-user;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 4,
+            "name": "User is in the \"main.jsp\"",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "User Click on \"order_opal_card\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "User Click on \"type_concession\"",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 7,
+            "name": "User fill in contact detail",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8,
+            "name": "User click \"contact_continue\"",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 9,
+            "name": "User select the top up value",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 10,
+            "name": "User click \"order_value_continue\"",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 11,
+            "name": "User fill in payment detail",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 12,
+            "name": "User click \"paymentDetail_continue\"",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 13,
+            "name": "User click \"orderConfirmation_edit\"",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 14,
+            "name": "User fill in edit detail",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 15,
+            "name": "User click \"edit_continue\"",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 16,
+            "name": "User click \"orderConfirmation_cancelled\"",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 17,
+            "name": "The page should be navigated to \"Order Cancelled\"",
+            "match": {},
+            "keyword": "Then "
+>>>>>>> 180eb8c2743879f33b15c5be5c802ef6b356f199
           }
         ]
       },
       {
+<<<<<<< HEAD
         "start_timestamp": "2019-09-13T05:17:22.085Z",
         "line": 21,
+=======
+        "start_timestamp": "2019-09-13T04:30:03.252Z",
+        "line": 23,
+>>>>>>> 180eb8c2743879f33b15c5be5c802ef6b356f199
         "name": "Successfully order an Opal Card as a customer",
         "description": "",
         "id": "order-opal-card-feature;successfully-order-an-opal-card-as-a-customer",
@@ -257,132 +375,119 @@
         "steps": [
           {
             "result": {
+<<<<<<< HEAD
               "duration": 7909054800,
               "status": "passed"
+=======
+              "status": "undefined"
+>>>>>>> 180eb8c2743879f33b15c5be5c802ef6b356f199
             },
             "line": 22,
             "name": "User is in the \"login.jsp\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"login.jsp\"",
-                  "offset": 15
-                }
-              ],
-              "location": "OrderFeature.user_is_in_the(String)"
-            },
+            "match": {},
             "keyword": "Given "
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 12141571200,
               "status": "passed"
+=======
+              "status": "undefined"
+>>>>>>> 180eb8c2743879f33b15c5be5c802ef6b356f199
             },
             "line": 23,
             "name": "User is login as a customer",
-            "match": {
-              "location": "OrderFeature.user_is_login_as_a_customer()"
-            },
+            "match": {},
             "keyword": "Given "
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 5949508900,
               "status": "passed"
+=======
+              "status": "undefined"
+>>>>>>> 180eb8c2743879f33b15c5be5c802ef6b356f199
             },
             "line": 24,
             "name": "User Click on \"order_opal_card\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"order_opal_card\"",
-                  "offset": 14
-                }
-              ],
-              "location": "OrderFeature.user_Click_on(String)"
-            },
+            "match": {},
             "keyword": "When "
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 5772081800,
               "status": "passed"
+=======
+              "status": "undefined"
+>>>>>>> 180eb8c2743879f33b15c5be5c802ef6b356f199
             },
             "line": 25,
             "name": "User Click on \"type_child\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"type_child\"",
-                  "offset": 14
-                }
-              ],
-              "location": "OrderFeature.user_Click_on(String)"
-            },
+            "match": {},
             "keyword": "And "
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 273828800,
               "status": "passed"
+=======
+              "status": "undefined"
+>>>>>>> 180eb8c2743879f33b15c5be5c802ef6b356f199
             },
             "line": 26,
             "name": "User select the top up value",
-            "match": {
-              "location": "OrderFeature.user_select_the_top_up_value()"
-            },
+            "match": {},
             "keyword": "And "
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 5479050100,
               "status": "passed"
+=======
+              "status": "undefined"
+>>>>>>> 180eb8c2743879f33b15c5be5c802ef6b356f199
             },
             "line": 27,
             "name": "User click \"order_value_continue\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"order_value_continue\"",
-                  "offset": 11
-                }
-              ],
-              "location": "OrderFeature.user_click(String)"
-            },
+            "match": {},
             "keyword": "And "
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 847639600,
               "status": "passed"
+=======
+              "status": "undefined"
+>>>>>>> 180eb8c2743879f33b15c5be5c802ef6b356f199
             },
             "line": 28,
             "name": "User fill in payment detail",
-            "match": {
-              "location": "OrderFeature.user_fill_in_payment_detail()"
-            },
+            "match": {},
             "keyword": "And "
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 5692338600,
               "status": "passed"
+=======
+              "status": "undefined"
+>>>>>>> 180eb8c2743879f33b15c5be5c802ef6b356f199
             },
             "line": 29,
             "name": "User click \"paymentDetail_continue\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"paymentDetail_continue\"",
-                  "offset": 11
-                }
-              ],
-              "location": "OrderFeature.user_click(String)"
-            },
+            "match": {},
             "keyword": "And "
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 5515994500,
               "status": "passed"
             },
@@ -397,10 +502,18 @@
               ],
               "location": "OrderFeature.user_click(String)"
             },
+=======
+              "status": "undefined"
+            },
+            "line": 32,
+            "name": "User click \"orderConfirmation_confirm\"",
+            "match": {},
+>>>>>>> 180eb8c2743879f33b15c5be5c802ef6b356f199
             "keyword": "And "
           },
           {
             "result": {
+<<<<<<< HEAD
               "error_message": "junit.framework.AssertionFailedError\r\n\tat junit.framework.Assert.fail(Assert.java:55)\r\n\tat junit.framework.Assert.assertTrue(Assert.java:22)\r\n\tat junit.framework.Assert.assertTrue(Assert.java:31)\r\n\tat asd.test.OrderFeature.the_page_should_be_navigated_to(OrderFeature.java:103)\r\n\tat ✽.The page should be navigated to \"Order Cancelled\"(file:opalFeatures/OrderFeature.feature:31)\r\n",
               "duration": 9945600,
               "status": "failed"
@@ -416,6 +529,13 @@
               ],
               "location": "OrderFeature.the_page_should_be_navigated_to(String)"
             },
+=======
+              "status": "undefined"
+            },
+            "line": 33,
+            "name": "The page should be navigated to \"Order Succeed\"",
+            "match": {},
+>>>>>>> 180eb8c2743879f33b15c5be5c802ef6b356f199
             "keyword": "Then "
           }
         ],
@@ -426,8 +546,13 @@
         ]
       },
       {
+<<<<<<< HEAD
         "start_timestamp": "2019-09-13T05:18:11.680Z",
         "line": 33,
+=======
+        "start_timestamp": "2019-09-13T04:30:03.254Z",
+        "line": 35,
+>>>>>>> 180eb8c2743879f33b15c5be5c802ef6b356f199
         "name": "Successfully view the order history",
         "description": "",
         "id": "order-opal-card-feature;successfully-view-the-order-history",
@@ -436,76 +561,71 @@
         "steps": [
           {
             "result": {
+<<<<<<< HEAD
               "duration": 7580264000,
               "status": "passed"
+=======
+              "status": "undefined"
+>>>>>>> 180eb8c2743879f33b15c5be5c802ef6b356f199
             },
             "line": 34,
             "name": "User is in the \"login.jsp\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"login.jsp\"",
-                  "offset": 15
-                }
-              ],
-              "location": "OrderFeature.user_is_in_the(String)"
-            },
+            "match": {},
             "keyword": "Given "
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 18221705000,
               "status": "passed"
+=======
+              "status": "undefined"
+>>>>>>> 180eb8c2743879f33b15c5be5c802ef6b356f199
             },
             "line": 35,
             "name": "User is login as a customer",
-            "match": {
-              "location": "OrderFeature.user_is_login_as_a_customer()"
-            },
+            "match": {},
             "keyword": "Given "
           },
           {
             "result": {
+<<<<<<< HEAD
               "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#order_history\"}\n  (Session info: chrome\u003d76.0.3809.132)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-P3652T2\u0027, ip: \u0027172.19.162.223\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_212\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\\Users\\aasdd\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49866}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 94cbe1a3723564e2eecc520c9200e596\n*** Element info: {Using\u003did, value\u003dorder_history}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\r\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat asd.test.OrderFeature.user_Click_on(OrderFeature.java:46)\r\n\tat ✽.User Click on \"order_history\"(file:opalFeatures/OrderFeature.feature:36)\r\n",
               "duration": 75244800,
               "status": "failed"
+=======
+              "status": "undefined"
+>>>>>>> 180eb8c2743879f33b15c5be5c802ef6b356f199
             },
             "line": 36,
             "name": "User Click on \"order_history\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"order_history\"",
-                  "offset": 14
-                }
-              ],
-              "location": "OrderFeature.user_Click_on(String)"
-            },
+            "match": {},
             "keyword": "When "
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 45000,
               "status": "skipped"
+=======
+              "status": "undefined"
+>>>>>>> 180eb8c2743879f33b15c5be5c802ef6b356f199
             },
             "line": 37,
             "name": "The page should be navigated to \"Order History\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Order History\"",
-                  "offset": 32
-                }
-              ],
-              "location": "OrderFeature.the_page_should_be_navigated_to(String)"
-            },
+            "match": {},
             "keyword": "Then "
           }
         ]
       },
       {
+<<<<<<< HEAD
         "start_timestamp": "2019-09-13T05:18:37.560Z",
         "line": 39,
+=======
+        "start_timestamp": "2019-09-13T04:30:03.256Z",
+        "line": 41,
+>>>>>>> 180eb8c2743879f33b15c5be5c802ef6b356f199
         "name": "Successfully view all the order",
         "description": "",
         "id": "order-opal-card-feature;successfully-view-all-the-order",
@@ -514,50 +634,44 @@
         "steps": [
           {
             "result": {
+<<<<<<< HEAD
               "duration": 7659432400,
               "status": "passed"
+=======
+              "status": "undefined"
+>>>>>>> 180eb8c2743879f33b15c5be5c802ef6b356f199
             },
             "line": 40,
             "name": "User is login as an admin",
-            "match": {
-              "location": "OrderFeature.user_is_login_as_an_admin()"
-            },
+            "match": {},
             "keyword": "Given "
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 6966962900,
               "status": "passed"
+=======
+              "status": "undefined"
+>>>>>>> 180eb8c2743879f33b15c5be5c802ef6b356f199
             },
             "line": 41,
             "name": "User Click on \"order_management\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"order_management\"",
-                  "offset": 14
-                }
-              ],
-              "location": "OrderFeature.user_Click_on(String)"
-            },
+            "match": {},
             "keyword": "When "
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 641316400,
               "status": "passed"
+=======
+              "status": "undefined"
+>>>>>>> 180eb8c2743879f33b15c5be5c802ef6b356f199
             },
             "line": 42,
             "name": "The page should be navigated to \"Order Management\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Order Management\"",
-                  "offset": 32
-                }
-              ],
-              "location": "OrderFeature.the_page_should_be_navigated_to(String)"
-            },
+            "match": {},
             "keyword": "Then "
           }
         ]
