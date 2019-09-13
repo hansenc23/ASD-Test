@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2019-09-13T08:14:09.364Z",
+        "start_timestamp": "2019-09-13T11:27:18.847Z",
         "line": 7,
         "name": "Successfully link Opal card to account",
         "description": "",
@@ -58,7 +58,7 @@
           },
           {
             "result": {
-              "duration": 9000,
+              "duration": 4800,
               "status": "skipped"
             },
             "line": 13,
@@ -86,7 +86,7 @@
         ]
       },
       {
-        "start_timestamp": "2019-09-13T08:14:09.373Z",
+        "start_timestamp": "2019-09-13T11:27:18.851Z",
         "line": 26,
         "name": "Failed linking Opal card with wrong Opal details",
         "description": "",
@@ -141,7 +141,7 @@
           },
           {
             "result": {
-              "duration": 5300,
+              "duration": 3700,
               "status": "skipped"
             },
             "line": 22,
@@ -180,7 +180,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2019-09-13T08:14:09.377Z",
+        "start_timestamp": "2019-09-13T11:27:18.853Z",
         "line": 6,
         "name": "Successfully list all Opal cards",
         "description": "",
@@ -238,7 +238,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2019-09-13T08:14:09.386Z",
+        "start_timestamp": "2019-09-13T11:27:18.854Z",
         "line": 8,
         "name": "Successfully list linked Opal Cards",
         "description": "",
@@ -296,8 +296,8 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2019-09-13T08:14:09.388Z",
-        "line": 4,
+        "start_timestamp": "2019-09-13T11:27:18.854Z",
+        "line": 3,
         "name": "Successfully order an Opal Card and edit an order as an anonymous user",
         "description": "",
         "id": "order-opal-card-feature;successfully-order-an-opal-card-and-edit-an-order-as-an-anonymous-user",
@@ -306,10 +306,10 @@
         "steps": [
           {
             "result": {
-              "duration": 8510509500,
+              "duration": 7611851800,
               "status": "passed"
             },
-            "line": 5,
+            "line": 4,
             "name": "User is in the \"main.jsp\"",
             "match": {
               "arguments": [
@@ -324,10 +324,10 @@
           },
           {
             "result": {
-              "duration": 6159446000,
+              "duration": 6148054600,
               "status": "passed"
             },
-            "line": 6,
+            "line": 5,
             "name": "User Click on \"order_opal_card\"",
             "match": {
               "arguments": [
@@ -342,10 +342,10 @@
           },
           {
             "result": {
-              "duration": 5652030600,
+              "duration": 5625211800,
               "status": "passed"
             },
-            "line": 7,
+            "line": 6,
             "name": "User Click on \"type_adult\"",
             "match": {
               "arguments": [
@@ -360,10 +360,10 @@
           },
           {
             "result": {
-              "duration": 5788506600,
+              "duration": 5325519000,
               "status": "passed"
             },
-            "line": 8,
+            "line": 7,
             "name": "User fill in contact detail",
             "match": {
               "location": "OrderFeature.user_fill_in_contact_detail()"
@@ -372,10 +372,10 @@
           },
           {
             "result": {
-              "duration": 5862775900,
+              "duration": 5800071100,
               "status": "passed"
             },
-            "line": 9,
+            "line": 8,
             "name": "User click \"contact_continue\"",
             "match": {
               "arguments": [
@@ -390,10 +390,10 @@
           },
           {
             "result": {
-              "duration": 234533700,
+              "duration": 96742200,
               "status": "passed"
             },
-            "line": 10,
+            "line": 9,
             "name": "User select the top up value",
             "match": {
               "location": "OrderFeature.user_select_the_top_up_value()"
@@ -402,10 +402,10 @@
           },
           {
             "result": {
-              "duration": 5396414800,
+              "duration": 5349198600,
               "status": "passed"
             },
-            "line": 11,
+            "line": 10,
             "name": "User click \"order_value_continue\"",
             "match": {
               "arguments": [
@@ -420,10 +420,10 @@
           },
           {
             "result": {
-              "duration": 802712100,
+              "duration": 330448000,
               "status": "passed"
             },
-            "line": 12,
+            "line": 11,
             "name": "User fill in payment detail",
             "match": {
               "location": "OrderFeature.user_fill_in_payment_detail()"
@@ -432,10 +432,10 @@
           },
           {
             "result": {
-              "duration": 5642180200,
+              "duration": 5633391800,
               "status": "passed"
             },
-            "line": 13,
+            "line": 12,
             "name": "User click \"paymentDetail_continue\"",
             "match": {
               "arguments": [
@@ -450,10 +450,10 @@
           },
           {
             "result": {
-              "duration": 5485392400,
+              "duration": 5366709700,
               "status": "passed"
             },
-            "line": 14,
+            "line": 13,
             "name": "User click \"orderConfirmation_edit\"",
             "match": {
               "arguments": [
@@ -468,10 +468,10 @@
           },
           {
             "result": {
-              "duration": 1570316100,
+              "duration": 649325400,
               "status": "passed"
             },
-            "line": 15,
+            "line": 14,
             "name": "User fill in edit detail",
             "match": {
               "location": "OrderFeature.user_fill_in_edit_detail()"
@@ -480,10 +480,10 @@
           },
           {
             "result": {
-              "duration": 5431352900,
+              "duration": 5349734800,
               "status": "passed"
             },
-            "line": 16,
+            "line": 15,
             "name": "User click \"edit_continue\"",
             "match": {
               "arguments": [
@@ -498,10 +498,10 @@
           },
           {
             "result": {
-              "duration": 5825724900,
+              "duration": 6013327600,
               "status": "passed"
             },
-            "line": 17,
+            "line": 16,
             "name": "User click \"orderConfirmation_confirm\"",
             "match": {
               "arguments": [
@@ -516,10 +516,10 @@
           },
           {
             "result": {
-              "duration": 727001000,
+              "duration": 601026900,
               "status": "passed"
             },
-            "line": 18,
+            "line": 17,
             "name": "The page should be navigated to \"Order Succeed\"",
             "match": {
               "arguments": [
@@ -532,16 +532,11 @@
             },
             "keyword": "Then "
           }
-        ],
-        "tags": [
-          {
-            "name": "@removeAnonymousUser"
-          }
         ]
       },
       {
-        "start_timestamp": "2019-09-13T08:15:12.481Z",
-        "line": 21,
+        "start_timestamp": "2019-09-13T11:28:18.757Z",
+        "line": 19,
         "name": "Successfully order an Opal Card as a customer",
         "description": "",
         "id": "order-opal-card-feature;successfully-order-an-opal-card-as-a-customer",
@@ -550,10 +545,10 @@
         "steps": [
           {
             "result": {
-              "duration": 7541880800,
+              "duration": 7129847900,
               "status": "passed"
             },
-            "line": 22,
+            "line": 20,
             "name": "User is in the \"login.jsp\"",
             "match": {
               "arguments": [
@@ -568,10 +563,10 @@
           },
           {
             "result": {
-              "duration": 1797546600,
+              "duration": 11809185900,
               "status": "passed"
             },
-            "line": 23,
+            "line": 21,
             "name": "User is login as a customer",
             "match": {
               "location": "OrderFeature.user_is_login_as_a_customer()"
@@ -580,10 +575,10 @@
           },
           {
             "result": {
-              "duration": 799324300,
+              "duration": 5608197800,
               "status": "passed"
             },
-            "line": 24,
+            "line": 22,
             "name": "User Click on \"order_opal_card\"",
             "match": {
               "arguments": [
@@ -598,10 +593,10 @@
           },
           {
             "result": {
-              "duration": 624055200,
+              "duration": 5670754600,
               "status": "passed"
             },
-            "line": 25,
+            "line": 23,
             "name": "User Click on \"type_child\"",
             "match": {
               "arguments": [
@@ -616,10 +611,10 @@
           },
           {
             "result": {
-              "duration": 177824200,
+              "duration": 87821600,
               "status": "passed"
             },
-            "line": 26,
+            "line": 24,
             "name": "User select the top up value",
             "match": {
               "location": "OrderFeature.user_select_the_top_up_value()"
@@ -628,10 +623,10 @@
           },
           {
             "result": {
-              "duration": 477644100,
+              "duration": 5436387700,
               "status": "passed"
             },
-            "line": 27,
+            "line": 25,
             "name": "User click \"order_value_continue\"",
             "match": {
               "arguments": [
@@ -646,10 +641,10 @@
           },
           {
             "result": {
-              "duration": 627350900,
+              "duration": 332814800,
               "status": "passed"
             },
-            "line": 28,
+            "line": 26,
             "name": "User fill in payment detail",
             "match": {
               "location": "OrderFeature.user_fill_in_payment_detail()"
@@ -658,10 +653,10 @@
           },
           {
             "result": {
-              "duration": 708752500,
+              "duration": 5732342700,
               "status": "passed"
             },
-            "line": 29,
+            "line": 27,
             "name": "User click \"paymentDetail_continue\"",
             "match": {
               "arguments": [
@@ -676,10 +671,10 @@
           },
           {
             "result": {
-              "duration": 714504300,
+              "duration": 3007295300,
               "status": "passed"
             },
-            "line": 30,
+            "line": 28,
             "name": "User click \"orderConfirmation_cancelled\"",
             "match": {
               "arguments": [
@@ -694,10 +689,10 @@
           },
           {
             "result": {
-              "duration": 709067700,
+              "duration": 601205200,
               "status": "passed"
             },
-            "line": 31,
+            "line": 29,
             "name": "The page should be navigated to \"Order Cancelled\"",
             "match": {
               "arguments": [
@@ -710,16 +705,11 @@
             },
             "keyword": "Then "
           }
-        ],
-        "tags": [
-          {
-            "name": "@removeOrder"
-          }
         ]
       },
       {
-        "start_timestamp": "2019-09-13T08:15:26.663Z",
-        "line": 33,
+        "start_timestamp": "2019-09-13T11:29:04.175Z",
+        "line": 31,
         "name": "Successfully view the order history",
         "description": "",
         "id": "order-opal-card-feature;successfully-view-the-order-history",
@@ -728,10 +718,10 @@
         "steps": [
           {
             "result": {
-              "duration": 7477658700,
+              "duration": 6952471300,
               "status": "passed"
             },
-            "line": 34,
+            "line": 32,
             "name": "User is in the \"login.jsp\"",
             "match": {
               "arguments": [
@@ -746,10 +736,10 @@
           },
           {
             "result": {
-              "duration": 1771968400,
+              "duration": 1804542900,
               "status": "passed"
             },
-            "line": 35,
+            "line": 33,
             "name": "User is login as a customer",
             "match": {
               "location": "OrderFeature.user_is_login_as_a_customer()"
@@ -758,10 +748,10 @@
           },
           {
             "result": {
-              "duration": 1491144700,
+              "duration": 866605400,
               "status": "passed"
             },
-            "line": 36,
+            "line": 34,
             "name": "User Click on \"order_history\"",
             "match": {
               "arguments": [
@@ -776,10 +766,10 @@
           },
           {
             "result": {
-              "duration": 719100000,
+              "duration": 598940200,
               "status": "passed"
             },
-            "line": 37,
+            "line": 35,
             "name": "The page should be navigated to \"Order History\"",
             "match": {
               "arguments": [
@@ -795,8 +785,8 @@
         ]
       },
       {
-        "start_timestamp": "2019-09-13T08:15:38.124Z",
-        "line": 39,
+        "start_timestamp": "2019-09-13T11:29:14.398Z",
+        "line": 37,
         "name": "Successfully view all the order",
         "description": "",
         "id": "order-opal-card-feature;successfully-view-all-the-order",
@@ -805,10 +795,28 @@
         "steps": [
           {
             "result": {
-              "duration": 7306713100,
+              "duration": 6918198700,
               "status": "passed"
             },
-            "line": 40,
+            "line": 38,
+            "name": "User is in the \"login.jsp\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"login.jsp\"",
+                  "offset": 15
+                }
+              ],
+              "location": "OrderFeature.user_is_in_the(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1393314800,
+              "status": "passed"
+            },
+            "line": 39,
             "name": "User is login as an admin",
             "match": {
               "location": "OrderFeature.user_is_login_as_an_admin()"
@@ -817,10 +825,10 @@
           },
           {
             "result": {
-              "duration": 3490842600,
+              "duration": 2031675900,
               "status": "passed"
             },
-            "line": 41,
+            "line": 40,
             "name": "User Click on \"order_management\"",
             "match": {
               "arguments": [
@@ -835,10 +843,10 @@
           },
           {
             "result": {
-              "duration": 667457000,
+              "duration": 601925100,
               "status": "passed"
             },
-            "line": 42,
+            "line": 41,
             "name": "The page should be navigated to \"Order Management\"",
             "match": {
               "arguments": [
@@ -865,7 +873,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2019-09-13T08:15:49.598Z",
+        "start_timestamp": "2019-09-13T11:29:25.344Z",
         "line": 7,
         "name": "Successfully register an Opal Card",
         "description": "",
@@ -930,7 +938,7 @@
         ]
       },
       {
-        "start_timestamp": "2019-09-13T08:15:49.609Z",
+        "start_timestamp": "2019-09-13T11:29:25.346Z",
         "line": 24,
         "name": "Failed register an Opal Card",
         "description": "",
@@ -1006,7 +1014,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2019-09-13T08:15:49.620Z",
+        "start_timestamp": "2019-09-13T11:29:25.347Z",
         "line": 6,
         "name": "Successfully unlink Opal card from account",
         "description": "",
@@ -1073,7 +1081,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2019-09-13T08:15:49.637Z",
+        "start_timestamp": "2019-09-13T11:29:25.349Z",
         "line": 6,
         "name": "Successfully view the details of the Opal card",
         "description": "",

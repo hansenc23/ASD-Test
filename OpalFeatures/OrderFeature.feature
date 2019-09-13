@@ -1,6 +1,5 @@
 Feature: Order Opal Card Feature
-    
-  @removeAnonymousUser
+
   Scenario: Successfully order an Opal Card and edit an order as an anonymous user
     Given User is in the "main.jsp"
     When User Click on "order_opal_card"
@@ -17,7 +16,6 @@ Feature: Order Opal Card Feature
     And User click "orderConfirmation_confirm"
     Then The page should be navigated to "Order Succeed"
     
-  @removeOrder
   Scenario: Successfully order an Opal Card as a customer
     Given User is in the "login.jsp"
     Given User is login as a customer
@@ -37,6 +35,7 @@ Feature: Order Opal Card Feature
     Then The page should be navigated to "Order History"
 
    Scenario: Successfully view all the order
+    Given User is in the "login.jsp"
     Given User is login as an admin
     When User Click on "order_management"
     Then The page should be navigated to "Order Management"

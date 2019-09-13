@@ -277,12 +277,7 @@ formatter.feature({
 formatter.scenario({
   "name": "Successfully order an Opal Card and edit an order as an anonymous user",
   "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@removeAnonymousUser"
-    }
-  ]
+  "keyword": "Scenario"
 });
 formatter.step({
   "name": "User is in the \"main.jsp\"",
@@ -427,12 +422,7 @@ formatter.result({
 formatter.scenario({
   "name": "Successfully order an Opal Card as a customer",
   "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@removeOrder"
-    }
-  ]
+  "keyword": "Scenario"
 });
 formatter.step({
   "name": "User is in the \"login.jsp\"",
@@ -583,6 +573,16 @@ formatter.scenario({
   "name": "Successfully view all the order",
   "description": "",
   "keyword": "Scenario"
+});
+formatter.step({
+  "name": "User is in the \"login.jsp\"",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "OrderFeature.user_is_in_the(String)"
+});
+formatter.result({
+  "status": "passed"
 });
 formatter.step({
   "name": "User is login as an admin",

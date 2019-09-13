@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="45" failures="0" name="asd.test.RunTest" time="101.169" errors="0" skipped="41">
+<testsuite tests="45" failures="0" name="asd.test.RunTest" time="126.822" errors="0" skipped="41">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_212\jre\bin"/>
@@ -61,22 +61,22 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="Link Card Feature" name="Successfully link Opal card to account" time="0.005">
+  <testcase classname="Link Card Feature" name="Successfully link Opal card to account" time="0.003">
     <skipped/>
   </testcase>
-  <testcase classname="Link Card Feature" name="Successfully link Opal card to account" time="0.005">
+  <testcase classname="Link Card Feature" name="Successfully link Opal card to account" time="0.003">
     <skipped/>
   </testcase>
-  <testcase classname="Link Card Feature" name="Successfully link Opal card to account" time="0.005">
+  <testcase classname="Link Card Feature" name="Successfully link Opal card to account" time="0.003">
     <skipped/>
   </testcase>
-  <testcase classname="Link Card Feature" name="Successfully link Opal card to account" time="0.005">
+  <testcase classname="Link Card Feature" name="Successfully link Opal card to account" time="0.003">
     <skipped/>
   </testcase>
-  <testcase classname="Link Card Feature" name="Successfully link Opal card to account" time="0.005">
+  <testcase classname="Link Card Feature" name="Successfully link Opal card to account" time="0.003">
     <skipped/>
   </testcase>
-  <testcase classname="Link Card Feature" name="Successfully link Opal card to account" time="0.005">
+  <testcase classname="Link Card Feature" name="Successfully link Opal card to account" time="0.003">
     <skipped/>
   </testcase>
   <testcase classname="Link Card Feature" name="Failed linking Opal card with wrong Opal details" time="0">
@@ -109,41 +109,38 @@
   <testcase classname="List all Opal cards" name="Successfully list all Opal cards" time="0">
     <skipped/>
   </testcase>
-  <testcase classname="List Linked Opal Cards" name="Successfully list linked Opal Cards" time="0.002">
+  <testcase classname="List Linked Opal Cards" name="Successfully list linked Opal Cards" time="0">
     <skipped/>
   </testcase>
-  <testcase classname="List Linked Opal Cards" name="Successfully list linked Opal Cards" time="0.002">
+  <testcase classname="List Linked Opal Cards" name="Successfully list linked Opal Cards" time="0">
     <skipped/>
   </testcase>
-  <testcase classname="List Linked Opal Cards" name="Successfully list linked Opal Cards" time="0.002">
+  <testcase classname="List Linked Opal Cards" name="Successfully list linked Opal Cards" time="0">
     <skipped/>
   </testcase>
-  <testcase classname="List Linked Opal Cards" name="Successfully list linked Opal Cards" time="0.002">
+  <testcase classname="List Linked Opal Cards" name="Successfully list linked Opal Cards" time="0">
     <skipped/>
   </testcase>
-  <testcase classname="Order Opal Card Feature" name="Successfully order an Opal Card and edit an order as an anonymous user" time="63.091"/>
-  <testcase classname="Order Opal Card Feature" name="Successfully order an Opal Card as a customer" time="14.179"/>
-  <testcase classname="Order Opal Card Feature" name="Successfully view the order history" time="11.461"/>
-  <testcase classname="Order Opal Card Feature" name="Successfully view all the order" time="11.465"/>
-  <testcase classname="Register an Opal Card" name="Successfully register an Opal Card" time="0.002">
+  <testcase classname="Order Opal Card Feature" name="Successfully order an Opal Card and edit an order as an anonymous user" time="59.902"/>
+  <testcase classname="Order Opal Card Feature" name="Successfully order an Opal Card as a customer" time="45.416"/>
+  <testcase classname="Order Opal Card Feature" name="Successfully view the order history" time="10.223"/>
+  <testcase classname="Order Opal Card Feature" name="Successfully view all the order" time="10.945"/>
+  <testcase classname="Register an Opal Card" name="Successfully register an Opal Card" time="0.001">
     <skipped/>
   </testcase>
-  <testcase classname="Register an Opal Card" name="Successfully register an Opal Card" time="0.03">
+  <testcase classname="Register an Opal Card" name="Successfully register an Opal Card" time="0.001">
     <skipped/>
   </testcase>
-  <testcase classname="Register an Opal Card" name="Successfully register an Opal Card" time="0.03">
+  <testcase classname="Register an Opal Card" name="Successfully register an Opal Card" time="0.001">
     <skipped/>
   </testcase>
-  <testcase classname="Register an Opal Card" name="Successfully register an Opal Card" time="0.03">
+  <testcase classname="Register an Opal Card" name="Successfully register an Opal Card" time="0.001">
     <skipped/>
   </testcase>
-  <testcase classname="Register an Opal Card" name="Successfully register an Opal Card" time="0.031">
+  <testcase classname="Register an Opal Card" name="Successfully register an Opal Card" time="0.001">
     <skipped/>
   </testcase>
-  <testcase classname="Register an Opal Card" name="Successfully register an Opal Card" time="0.031">
-    <skipped/>
-  </testcase>
-  <testcase classname="Register an Opal Card" name="Failed register an Opal Card" time="0">
+  <testcase classname="Register an Opal Card" name="Successfully register an Opal Card" time="0.001">
     <skipped/>
   </testcase>
   <testcase classname="Register an Opal Card" name="Failed register an Opal Card" time="0">
@@ -155,37 +152,40 @@
   <testcase classname="Register an Opal Card" name="Failed register an Opal Card" time="0">
     <skipped/>
   </testcase>
-  <testcase classname="Register an Opal Card" name="Failed register an Opal Card" time="0.001">
+  <testcase classname="Register an Opal Card" name="Failed register an Opal Card" time="0">
     <skipped/>
   </testcase>
-  <testcase classname="Register an Opal Card" name="Failed register an Opal Card" time="0.001">
+  <testcase classname="Register an Opal Card" name="Failed register an Opal Card" time="0">
     <skipped/>
   </testcase>
-  <testcase classname="Unlink Opal Card" name="Successfully unlink Opal card from account" time="0">
+  <testcase classname="Register an Opal Card" name="Failed register an Opal Card" time="0">
     <skipped/>
   </testcase>
-  <testcase classname="Unlink Opal Card" name="Successfully unlink Opal card from account" time="0">
+  <testcase classname="Unlink Opal Card" name="Successfully unlink Opal card from account" time="0.001">
     <skipped/>
   </testcase>
-  <testcase classname="Unlink Opal Card" name="Successfully unlink Opal card from account" time="0">
+  <testcase classname="Unlink Opal Card" name="Successfully unlink Opal card from account" time="0.001">
     <skipped/>
   </testcase>
-  <testcase classname="Unlink Opal Card" name="Successfully unlink Opal card from account" time="0.002">
+  <testcase classname="Unlink Opal Card" name="Successfully unlink Opal card from account" time="0.001">
     <skipped/>
   </testcase>
-  <testcase classname="Unlink Opal Card" name="Successfully unlink Opal card from account" time="0.002">
+  <testcase classname="Unlink Opal Card" name="Successfully unlink Opal card from account" time="0.001">
     <skipped/>
   </testcase>
-  <testcase classname="View Details of an Opal Card" name="Successfully view the details of the Opal card" time="0.001">
+  <testcase classname="Unlink Opal Card" name="Successfully unlink Opal card from account" time="0.001">
     <skipped/>
   </testcase>
-  <testcase classname="View Details of an Opal Card" name="Successfully view the details of the Opal card" time="0.002">
+  <testcase classname="View Details of an Opal Card" name="Successfully view the details of the Opal card" time="0">
     <skipped/>
   </testcase>
-  <testcase classname="View Details of an Opal Card" name="Successfully view the details of the Opal card" time="0.002">
+  <testcase classname="View Details of an Opal Card" name="Successfully view the details of the Opal card" time="0">
     <skipped/>
   </testcase>
-  <testcase classname="View Details of an Opal Card" name="Successfully view the details of the Opal card" time="0.002">
+  <testcase classname="View Details of an Opal Card" name="Successfully view the details of the Opal card" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="View Details of an Opal Card" name="Successfully view the details of the Opal card" time="0">
     <skipped/>
   </testcase>
 </testsuite>
