@@ -12,8 +12,6 @@ import asd.model.Users;
 import asd.model.dao.MongoDBConnector;
 import java.net.UnknownHostException;
 import java.util.ArrayList;
-import java.util.Random;
-import junit.framework.Assert;
 import org.junit.After;
 import org.junit.Test;
 import static org.junit.Assert.*;
@@ -30,18 +28,14 @@ public class TopUpManagementUnitTest {
      }
     @BeforeClass
     public static void createDbclass() throws UnknownHostException {
-        Random rand = new Random();
-        int n = rand.nextInt(90000) + 10000;
-        String n1 = Integer.toString(n);
         dbconnector = new MongoDBConnector();
-        User user = new User("test","test","kaido1@gmail.com","qwe123456","qwe12","0913470400","false",n1);
-        dbconnector.add(user);
         System.out.println("Establish connection to Db");
+        User user = new User("test","test","kaido1@gmail.com","qwe123456","qwe12","0913470400","false","");
+        dbconnector.add(user);
     }
     //get the paymentmethods  array list
     public  ArrayList<Paymentmethod> getPayments() throws UnknownHostException{
-        Users users =dbconnector.loadUsers(); 
-        User user = users.login("kaido1@gmail.com", "qwe123456");
+        User user = dbconnector.user("kaido1@gmail.com", "qwe123456");
         Paymentmethods pmtmethods = new Paymentmethods();
         ArrayList<Paymentmethod> paymentMethods = new ArrayList<Paymentmethod>();
         pmtmethods  =  dbconnector.getPaymentMethods(user);
@@ -65,8 +59,7 @@ public class TopUpManagementUnitTest {
     }
     @Test
     public void getUser() throws UnknownHostException {
-         Users users =dbconnector.loadUsers(); 
-         User user = users.login("kaido1@gmail.com", "qwe123456");
+         User user = dbconnector.user("kaido1@gmail.com", "qwe123456");
          assertEquals("Emails were not matched", "kaido1@gmail.com", user.getEmail());
          System.out.println("This test ran");
          
@@ -79,8 +72,7 @@ public class TopUpManagementUnitTest {
     //Testing add payment methods 
     @Test
     public void addPayment() throws UnknownHostException{
-       Users users =dbconnector.loadUsers(); 
-       User user = users.login("kaido1@gmail.com", "qwe123456");
+       User user = dbconnector.user("kaido1@gmail.com", "qwe123456");
        Paymentmethod paymt = new Paymentmethod("Test","payment","1234123412341234",1,20,333);
 
         int i = getNumberofPayments();
@@ -95,10 +87,10 @@ public class TopUpManagementUnitTest {
         }
        
     }
+    
     @Test
     public void editPayment() throws UnknownHostException{
-        Users users = dbconnector.loadUsers();
-        User user = users.login("kaido1@gmail.com", "qwe123456");
+        User user = dbconnector.user("kaido1@gmail.com", "qwe123456");
         Paymentmethod paymt = new Paymentmethod("Test2","payment2","1234123412341234",2,21,333);
         ArrayList<Paymentmethod> paymentMethods = getPayments();
         int j = 0;
@@ -134,8 +126,7 @@ public class TopUpManagementUnitTest {
     //Remove paymentmethods 
     @After
     public void removePayment() throws UnknownHostException{
-        Users users =dbconnector.loadUsers(); 
-        User user = users.login("kaido1@gmail.com", "qwe123456");
+        User user = dbconnector.user("kaido1@gmail.com", "qwe123456");
         Paymentmethod paymt = new Paymentmethod("Test","payment","1234123412341234",1,20,333);
         ArrayList<Paymentmethod> paymentMethods = getPayments();
         //count the number of current paymentmethod

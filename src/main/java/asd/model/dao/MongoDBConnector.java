@@ -128,9 +128,9 @@ public class MongoDBConnector {
         MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
         try (MongoClient client = new MongoClient(uri)) {
             MongoDatabase db = client.getDatabase(uri.getDatabase());
-            users.add(new Document("Username", user.getEmail()).append("Password", user.getPassword()).append("FirstName", user.getFirstName()).append("LastName", user.getLastName()).append("Address", user.getAddress()).append("PhoneNumber", user.getPhoneNumber()).append("isStaff", user.getIsStaff()).append("Position", user.getPosition()).append("UserID", user.getUserID()));
-            MongoCollection<Document> userlist = db.getCollection("ASD-app-users"); //Create a collection ASD-app-users on mLab
-            userlist.insertMany(users);
+            MongoCollection<Document> userlist = db.getCollection("ASD-app-users"); 
+            Document userdoc = new Document().append("Username", user.getEmail()).append("Password", user.getPassword()).append("FirstName", user.getFirstName()).append("LastName", user.getLastName()).append("Address", user.getAddress()).append("PhoneNumber", user.getPhoneNumber()).append("isStaff", user.getIsStaff()).append("Position", user.getPosition()).append("UserID", user.getUserID());
+            userlist.insertOne(userdoc);
         }
     }
 
@@ -371,25 +371,25 @@ public class MongoDBConnector {
             //Check for existing paymentmethod array
             if(userdoc.get("PaymentMethod") != null){
             paymentMethods = (List<Document>) userdoc.get("PaymentMethod");
-            int i = 1;
-            int j = 0; 
+                int i = 1;
+                int j = 0; 
             //count the number of payments
-            for (Document paymentmethod : paymentMethods){
-                i++;
+                for (Document paymentmethod : paymentMethods){
+                    i++;
                 //check for duplicate card number inside PaymentMethod array
-                if(paymentmethod.getString("CardNumber").equals(paymt.getCardNumber())){
-                    j++;
+                    if(paymentmethod.getString("CardNumber").equals(paymt.getCardNumber())){
+                        j++;
+                    }
                 }
-            }
             
-            if(i <= 3 && j <= 0){
-                 userlist.updateOne(eq("Username", user.getEmail()),Updates.addToSet("PaymentMethod", doc) );
-                 outcome = "Your payment method has been successfully added !";
-            } else if (j >0 ){
-                outcome = "Your payment method has already been registered to your account !";
-            } else {
-                outcome = "You can only have a maximum of 3 payment methods. Please delete your existing payment method to continue!";
-            }
+                if(i <= 3 && j <= 0){
+                    userlist.updateOne(eq("Username", user.getEmail()),Updates.addToSet("PaymentMethod", doc) );
+                    outcome = "Your payment method has been successfully added !";
+                } else if (j >0 ){
+                    outcome = "Your payment method has already been registered to your account !";
+                } else {
+                    outcome = "You can only have a maximum of 3 payment methods. Please delete your existing payment method to continue!";
+                }
             }else {
                 userlist.updateOne(eq("Username", user.getEmail()),Updates.addToSet("PaymentMethod", doc) );
                 outcome = "Your payment method has been successfully added !";
@@ -475,10 +475,8 @@ public class MongoDBConnector {
                 for (Document pmtdoc : paymentMethods) {
                 Paymentmethod pmtMethod = new Paymentmethod((String) pmtdoc.get("FirstName"), (String) pmtdoc.get("LastName") ,(String) pmtdoc.get("CardNumber"), (int) pmtdoc.get("ExpiryMonth"), (int) pmtdoc.get("ExpiryYear"), (int) pmtdoc.get("CVV") );
                 pmtMethods.addPaymentMethods(pmtMethod);
+                }
             }
-            
-            
-        }
         }
         return pmtMethods;   
        
