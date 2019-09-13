@@ -136,7 +136,7 @@
                 // If user's card list is empty
                 else {
         %>
-                    <div class="box">    
+                    <div class="unlinkBox">    
                         <h2>Welcome to Opal Card Management website!</h2>
                     </div>
         <%
