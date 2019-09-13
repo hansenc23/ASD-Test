@@ -22,6 +22,7 @@
             <a href="#">FAQs Management</a>
             <a href="#">Transport News Management</a>
             <a href="#">Notification Management</a>
+            <a href="accessManager.jsp">Access Manager</a>  
         </div>
     </body>
 </html>

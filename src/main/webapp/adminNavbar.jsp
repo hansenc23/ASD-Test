@@ -4,7 +4,7 @@
     Author     : hanse
 --%>
 
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page contentType="text/html" pageEncoding="UTF-8" import="asd.model.*"%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -13,16 +13,47 @@
         
     </head>
     <body>
+        <%User user = (User)session.getAttribute("user");%>
+    <body>
+        
+        
+         
+        <% if (user != null && user.getIsStaff().equals("false")){
+            String redirectURL = "notStaff.jsp";
+            response.sendRedirect(redirectURL);
+           
+        
+        }else if(user == null){%>
         <div class="navigation-bar">
-            <ul>
-                <li><a href="#">Login</a></li>
-                <li><a href="#">Register</a></li>
+             <ul>
+                <li><a href="adminRegister.jsp">Register</a></li>
+                <li><a href="login.jsp">Login</a></li>
                 <li><a href="adminPage.jsp">Home</a></li>
               
                 
                 <li id="logo"><img height="70px" src="image/nsw_logo.png"></li>
                 <li id="logo"><img height="70px" src="image/opal_logo.png"></li>
-            </ul>
-        </div>
+                </ul>
+          </div>
+                
+        <%    
+        }else{String name = user.getFirstName();%>
+        
+        
+         <div class="navigation-bar">
+             <ul>
+                <li><a href="accountProfile.jsp">Welcome <%=name%></a></li>
+                <li><a href="logout.jsp">Logout</a></li>
+                <li><a href="adminPage.jsp">Home</a></li>
+              
+                
+                <li id="logo"><img height="70px" src="image/nsw_logo.png"></li>
+                <li id="logo"><img height="70px" src="image/opal_logo.png"></li>
+                </ul>
+          </div>
+        <%}%>
+        
+        
     </body>
 </html>
+

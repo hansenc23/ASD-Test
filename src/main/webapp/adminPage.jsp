@@ -4,6 +4,8 @@
     Author     : hanse
 --%>
 
+
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@include file="adminNavbar.jsp" %>
 <%@include file="adminSidebar.jsp" %>
@@ -17,8 +19,11 @@
         <title>Admin Page</title>
     </head>
     <body>
+
+         
         <div class="box">
             <h2>Welcome to Admin Page!</h2>
         </div>
+
     </body>
 </html>

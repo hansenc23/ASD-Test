@@ -1,3 +1,4 @@
+
 <%-- 
     Document   : index
     Created on : 12/08/2019, 9:56:44 PM
@@ -5,7 +6,7 @@
 --%>
 
 
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page contentType="text/html" pageEncoding="UTF-8" import="java.util.*"%>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -21,6 +22,13 @@
     </head>
     <body>
         
+        <%
+            
+            Random rand = new Random();
+            int n = rand.nextInt(90000) + 10000;
+            
+        %>
+        
         <br>
         <h2 style="text-align: center">Create Opal Account</h2>
         <br>
@@ -29,16 +37,20 @@
         
         <form action="welcome.jsp" method="post">
                 <table id="form-table">
-                    <tr><td>First Name:</td><td><input id="register_firstName" size="23" type="text" name="firstName" required></td></tr>
-                    <tr><td>Last Name:</td><td><input id="register_lastName"size="23" type="text" name="lastName" required></td></tr>
-                    <tr><td>Email:</td><td><input id="register_email" size="23" type="text" name="email" required></td></tr>
-                    <tr><td>Password:</td><td><input id="register_password" size="23" type="password" name="password" required></td></tr>
-                    <tr><td>Address:</td><td><input id="register_address" type="text" name="address"></td></tr>  
-                    <tr><td>Phone Number:</td><td> <input id="register_phoneNumber" type="text" name ="phone"></td></tr>
-                    <tr><td>Admin</td><td> <input id="register_admin" type="checkbox" name ="isStaff" value="true"></td></tr>
+                    <tr><td>First Name:</td><td><input size="23" type="text" name="firstName" required></td></tr>
+                    <tr><td>Last Name:</td><td><input size="23" type="text" name="lastName" required></td></tr>
+                    <tr><td>Email:</td><td><input size="23" type="email" name="email" required></td></tr>
+                    <tr><td>Password:</td><td><input size="23" type="password" name="password" required></td></tr>
+                    <tr><td>Address:</td><td><input type="text" name="address"></td></tr>  
+                    <tr><td>Phone Number:</td><td> <input type="tel" pattern="[0-9]{10}" placeholder="Enter 10-digit number" name ="phone"></td></tr>
+                    <input type="hidden" name ="userID" value="<%=n%>">
+                    <input type="hidden" name ="isStaff" value = "false">
+                    
+                    
+                     
                     <tr><td></td>
                         <td>
-                            <input id="register_submit" class="button" type="submit" value="Register"> 
+                            <input class="button" type="submit" value="Register"> 
                             &nbsp; 
                             <button class="button" type="button" onclick="location.href = 'index.jsp'" > Home Page </button>
                         </td>
@@ -52,3 +64,4 @@
     
 </body>
 </html>
+

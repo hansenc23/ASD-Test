@@ -26,6 +26,7 @@
                     <a id="sidebar_addPaymentMethod" href="addPaymentMethod.jsp">Add payment method</a>
                     <a id="sidebar_topUpValue" href="topUpValue.jsp">Top-up Opal card</a>
                     <a id="sidebar_paymentMethodManagement"href="paymentMethodManagement.jsp">Manage your payment</a>
+                    <a href="userAccessManager.jsp">See history</a>
             <%  
                 }
                 else{

@@ -1,3 +1,4 @@
+
 <%-- 
     Document   : index
     Created on : 12/08/2019, 9:56:44 PM
@@ -19,24 +20,40 @@
         <title>Welcome Page</title>
     </head>   
     <%
+        
+        String adminemail = (String)session.getAttribute("adminemail");
+        String adminpass = (String)session.getAttribute("adminpassword");
+        MongoDBConnector connector = new MongoDBConnector(adminemail, adminpass);
+         
+        
         String firstName = request.getParameter("firstName");
         String lastName = request.getParameter("lastName");
         String email = request.getParameter("email");
         String password = request.getParameter("password");
         String address = request.getParameter("address");
         String phoneNumber = request.getParameter("phone");
-        String isStaff = (request.getParameter("isStaff"));
-
-        User user = new User(firstName, lastName, email, password, address, phoneNumber, isStaff);
-             
+        String isStaff = request.getParameter("isStaff");
+        String userID = request.getParameter("userID");
+        String warning = "";
+        String checkemail = connector.getUser(email);
         
-        String adminemail = (String)session.getAttribute("adminemail");
-        String adminpass = (String)session.getAttribute("adminpassword");
-        MongoDBConnector connector = new MongoDBConnector(adminemail, adminpass);
-        if(connector != null ) { connector.add(user);session.setAttribute("user", user);   } else out.print("Cannot add user");
-        
+        if(checkemail != null){ 
+            warning = checkemail + " already exist!";
+        }else if(checkemail == null){
+            
+            User user = new User(firstName, lastName, email, password, address, phoneNumber, isStaff, userID);
+            session.setAttribute("user", user);    
+            if(connector != null ) connector.add(user); else out.print("Cannot add user");
+        }
     %>
     <body> 
+        
+        <%if(checkemail != null){%>
+        
+        <h3 style="text-align: center"><%=warning%></h3>
+        <p class="p" style="text-align: center">Click <a href="register.jsp" class="link" target="_parent"> here </a> to go back.</p>
+        
+        <%}else if(checkemail == null){%>
 
         <div class="details-container">
             <h3 class="form_title">Account created successfully!</h3>
@@ -46,18 +63,12 @@
                 <tr><td>Email: </td><td class="text"><%=email%></td></tr>
                 <tr><td>Password: </td><td class="text"><%=password%></td></tr>
                 <tr><td>Address: </td><td class="text"><%=address%></td></tr>
-                <tr><td>Phone: </td><td class="text"><%=phoneNumber%></td></tr>
-                <tr><td>Admin: </td><td class="text"><%=isStaff%></td></tr>
+                <tr><td>Phone: </td><td class="text"><%=phoneNumber%></td></tr>              
             </table> 
-        </div>   
+        </div>  
+                <p class="p">Click <a href="main.jsp" class="link" target="_parent"> here </a> to go to Home page.</p>
+        <%}%>
     </body>
-    <p class="p">Click <a href="main.jsp" id="welcome_mainpage" class="link" target="_parent"> here </a> to go to main page.</p>
-<%
-    if (isStaff.equalsIgnoreCase("true")) {
-        session.setAttribute("staff", user);   
-%>
-<a href="adminPage.jsp">Here</a>
-    <%
-        }
-    %>
+
 </html>
+

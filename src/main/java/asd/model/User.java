@@ -1,4 +1,3 @@
-
 package asd.model;
 import java.io.Serializable;
 
@@ -16,12 +15,27 @@ public class User  implements Serializable{
     private String password;
     private String address;
     private String phoneNumber;
+    private String position;
     private String isStaff;
+    private String userID;
 
     public User() {
     }
+    
+    public User(String firstName, String lastName, String email, String password, String address, String phoneNumber, String isStaff, String position, String userID) {
+        this.userID = userID;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.password = password;
+        this.address = address;
+        this.phoneNumber = phoneNumber;
+        this.isStaff = isStaff;
+        this.position = position;
+    }
 
-    public User(String firstName, String lastName, String email, String password, String address, String phoneNumber, String isStaff) {
+    public User(String firstName, String lastName, String email, String password, String address, String phoneNumber, String isStaff, String userID) {
+        this.userID = userID;
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
@@ -33,6 +47,18 @@ public class User  implements Serializable{
 
     public boolean match(String email){
         return this.email.equalsIgnoreCase(email.trim());
+    }
+    
+    public String getUserID(){
+        return userID;
+    }
+    
+    public String getPosition(){
+        return position;
+    }
+    
+    public void setPosition(String position){
+        this.position = position;
     }
     
     public String getIsStaff(){
@@ -91,3 +117,4 @@ public class User  implements Serializable{
     }
 
 }
+

@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: asd.test.RunTest
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 64.1 sec
+Tests run: 45, Failures: 0, Errors: 0, Skipped: 45, Time elapsed: 0.685 sec
