@@ -1,9 +1,17 @@
 package asd.test;
 
+import com.mongodb.MongoClient;
+import com.mongodb.MongoClientURI;
+import com.mongodb.client.MongoCollection;
+import com.mongodb.client.MongoDatabase;
+import static com.mongodb.client.model.Filters.and;
+import static com.mongodb.client.model.Filters.eq;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import junit.framework.Assert;
+import org.bson.Document;
+import org.junit.After;
 import org.openqa.selenium.By;
 
 import org.openqa.selenium.WebDriver;
@@ -111,5 +119,18 @@ public class OrderFeature extends Driver{
 //        driver.findElement(By.id("login_password")).sendKeys("anita");
 //        driver.findElement(By.id("login_submit")).click();
     }
-
+    
+    @After
+    public void removeData(){
+//        MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
+//        try (MongoClient client = new MongoClient(uri)) {
+//            MongoDatabase db = client.getDatabase(uri.getDatabase());
+//            MongoCollection<Document> orderlist = db.getCollection("ASD-app-orders");
+//            MongoCollection<Document> userlist = db.getCollection("ASD-app-users");
+//            Document userdoc = userlist.find(and(eq("Username", "Zrush@gmail.com"), eq("Password", "rdrr"))).first();
+//            userlist.deleteOne(userdoc);
+//            Document orderdoc = orderlist.find(eq("OpalID", "6666 7777 6666 7777")).first();
+//            orderlist.deleteOne(orderdoc);
+//        }
+    }
 }

@@ -527,6 +527,18 @@ public class MongoDBConnector {
         }
         return test;      
    }
+   //test get order
+   public Order testGetOrder(String opalID) {
+        MongoClientURI uri = new MongoClientURI("mongodb://" + this.owner + ":" + this.password + "@ds031965.mlab.com:31965/heroku_5s97hssp");
+        Order order;
+        try (MongoClient client = new MongoClient(uri)) {
+            MongoDatabase db = client.getDatabase(uri.getDatabase());
+            MongoCollection<Document> orderlist = db.getCollection("ASD-app-orders");
+            Document ord = orderlist.find(eq("OpalID", opalID)).first();
+            order = new Order((String) ord.get("CustimerID"), (String) ord.get("OpalID"), (String) ord.get("PaymentCard"), (String) ord.get("OpalType"), (String) ord.get("OrderDate"), (double) ord.get("Value"), (String) ord.get("Status"));
+        }
+        return order;
+    } 
 //
     
 }
