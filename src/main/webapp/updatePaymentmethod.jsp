@@ -84,9 +84,7 @@
                             <%
                                 } else if (request.getParameter("Updated") != null && user !=null){
                                     String initPaymentId = (String)session.getAttribute("paymentMethodId");
-                                    String adminemail = (String)session.getAttribute("adminemail");
-                                    String adminpass = (String)session.getAttribute("adminpassword");
-                                    MongoDBConnector connector = new MongoDBConnector(adminemail, adminpass); 
+                                    MongoDBConnector connector = new MongoDBConnector(); 
                                     String cardNumber = request.getParameter("cardnumber");
                                     String firstName = request.getParameter("firstname");
                                     String lastName = request.getParameter("lastname");
@@ -104,9 +102,7 @@
                                         //Remove the payment methods. 
                                         } else if(request.getParameter("Removed") != null ){
                                         String initPaymentId = (String)session.getAttribute("paymentMethodId");
-                                        String adminemail = (String)session.getAttribute("adminemail");
-                                        String adminpass = (String)session.getAttribute("adminpassword");
-                                        MongoDBConnector connector = new MongoDBConnector(adminemail, adminpass);
+                                        MongoDBConnector connector = new MongoDBConnector();
                                         String outcome = connector.deletePaymentMethods(initPaymentId, user);
                                             %>
                                              <div class = "topup">
