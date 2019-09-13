@@ -413,7 +413,7 @@ public class MongoDBConnector {
         MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
         try (MongoClient client = new MongoClient(uri)) {
             MongoDatabase db = client.getDatabase(uri.getDatabase());
-            enqiries.add(new Document("customerID", enqiry.getCustomerID()).append("question", enqiry. getQuestion()).append("answer", enqiry.getAnswer()).append("enqiryID", enqiry.getEnqiryID()));
+            enqiries.add(new Document("customerID", enqiry.getCustomerID()).append("question", enqiry. getQuestion()).append("answer", enqiry.getAnswer()).append("enqiryID", enqiry.getEnqiryID()).append("title", enqiry.getTitle()));
             MongoCollection<Document> enqirylist = db.getCollection("ASD-app-enqiries"); //Create a collection ASD-app-times on mLab
            enqirylist.insertMany(enqiries);
         }
@@ -426,7 +426,7 @@ public class MongoDBConnector {
             enqiries = new Enqiries();
             MongoCollection<Document> enqirylist = db.getCollection("ASD-app-enqiries");
             for (Document doc : enqirylist.find()) {
-                Enqiry enqiry = new Enqiry((String) doc.get("customerID"), (String) doc.get("question"), (String) doc.get("answer"), (String) doc.get("enqiryID"));
+                Enqiry enqiry = new Enqiry((String) doc.get("customerID"), (String) doc.get("question"), (String) doc.get("answer"), (String) doc.get("enqiryID"),(String) doc.get("title"));
                 enqiries.addEnqiry(enqiry);
             }
         }

@@ -17,12 +17,23 @@ public class Enqiry implements Serializable{
       private String question;
        private String answer;
        private String enqiryID;
+         private String title;
 
-    public Enqiry(String customerID, String question, String answer, String enqiryID) {
+
+    public Enqiry(String customerID, String question, String answer, String enqiryID, String title) {
         this.customerID = customerID;
         this.question = question;
         this.answer = answer;
         this.enqiryID = enqiryID;
+        this.title = title;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     public String getCustomerID() {
