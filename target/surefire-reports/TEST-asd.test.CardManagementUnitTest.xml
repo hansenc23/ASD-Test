@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="10" failures="0" name="asd.test.CardManagementUnitTest" time="83.097" errors="0" skipped="0">
+<testsuite tests="10" failures="0" name="asd.test.CardManagementUnitTest" time="82.643" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_212\jre\bin"/>
@@ -61,14 +61,14 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="asd.test.CardManagementUnitTest" name="testGetCustomerName" time="10.992"/>
-  <testcase classname="asd.test.CardManagementUnitTest" name="testGetOpalCards" time="9.032"/>
-  <testcase classname="asd.test.CardManagementUnitTest" name="testRegisterCard" time="3.691"/>
-  <testcase classname="asd.test.CardManagementUnitTest" name="testIsExist_OpalCard" time="3.685"/>
-  <testcase classname="asd.test.CardManagementUnitTest" name="testIsAvailable" time="3.632"/>
-  <testcase classname="asd.test.CardManagementUnitTest" name="testGetCardDetails" time="3.618"/>
-  <testcase classname="asd.test.CardManagementUnitTest" name="testIsLinked" time="8.958"/>
-  <testcase classname="asd.test.CardManagementUnitTest" name="testLinkCard" time="12.825"/>
-  <testcase classname="asd.test.CardManagementUnitTest" name="testShowAllCards" time="3.593"/>
-  <testcase classname="asd.test.CardManagementUnitTest" name="testUnlinkCard" time="10.692"/>
+  <testcase classname="asd.test.CardManagementUnitTest" name="testGetCustomerName" time="10.869"/>
+  <testcase classname="asd.test.CardManagementUnitTest" name="testGetOpalCards" time="9.321"/>
+  <testcase classname="asd.test.CardManagementUnitTest" name="testRegisterCard" time="3.814"/>
+  <testcase classname="asd.test.CardManagementUnitTest" name="testIsExist_OpalCard" time="3.502"/>
+  <testcase classname="asd.test.CardManagementUnitTest" name="testIsAvailable" time="3.746"/>
+  <testcase classname="asd.test.CardManagementUnitTest" name="testGetCardDetails" time="3.634"/>
+  <testcase classname="asd.test.CardManagementUnitTest" name="testIsLinked" time="8.916"/>
+  <testcase classname="asd.test.CardManagementUnitTest" name="testLinkCard" time="12.556"/>
+  <testcase classname="asd.test.CardManagementUnitTest" name="testShowAllCards" time="3.588"/>
+  <testcase classname="asd.test.CardManagementUnitTest" name="testUnlinkCard" time="10.771"/>
 </testsuite>
