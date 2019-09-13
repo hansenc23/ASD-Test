@@ -13,52 +13,41 @@ formatter.step({
   "name": "the User is logged in to the website",
   "keyword": "Given "
 });
-formatter.match({
-  "location": "UserCardFeature.the_User_is_logged_in_to_the_website()"
-});
+formatter.match({});
 formatter.result({
-  "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat asd.test.UserCardFeature.the_User_is_logged_in_to_the_website(UserCardFeature.java:36)\r\n\tat ✽.the User is logged in to the website(file:opalFeatures/LinkCardFeature.feature:8)\r\n",
-  "status": "pending"
+  "status": "undefined"
 });
 formatter.step({
   "name": "is in the \"main.jsp\"",
   "keyword": "And "
 });
-formatter.match({
-  "location": "UserCardFeature.is_in_the(String)"
-});
+formatter.match({});
 formatter.result({
-  "status": "skipped"
+  "status": "undefined"
 });
 formatter.step({
   "name": "User click on \"linkCard\"",
   "keyword": "When "
 });
-formatter.match({
-  "location": "UserCardFeature.user_click_on(String)"
-});
+formatter.match({});
 formatter.result({
-  "status": "skipped"
+  "status": "undefined"
 });
 formatter.step({
   "name": "User fill in \"OpalID\" with \"\u003cOpalID\u003e\"",
   "keyword": "And "
 });
-formatter.match({
-  "location": "UserCardFeature.user_fill_in_with(String,String)"
-});
+formatter.match({});
 formatter.result({
-  "status": "skipped"
+  "status": "undefined"
 });
 formatter.step({
   "name": "User fill in \"securityCode\" with \"\u003csecurityCode\u003e\"",
   "keyword": "And "
 });
-formatter.match({
-  "location": "UserCardFeature.user_fill_in_with(String,String)"
-});
+formatter.match({});
 formatter.result({
-  "status": "skipped"
+  "status": "undefined"
 });
 formatter.step({
   "name": "User click \"linkCard_link\"",
@@ -74,11 +63,9 @@ formatter.step({
   "name": "the page should give a green success feedback",
   "keyword": "Then "
 });
-formatter.match({
-  "location": "UserCardFeature.the_page_should_give_a_green_success_feedback()"
-});
+formatter.match({});
 formatter.result({
-  "status": "skipped"
+  "status": "undefined"
 });
 formatter.scenarioOutline({
   "name": "Failed linking Opal card with wrong Opal details",
@@ -141,52 +128,41 @@ formatter.step({
   "name": "the User is logged in to the website",
   "keyword": "Given "
 });
-formatter.match({
-  "location": "UserCardFeature.the_User_is_logged_in_to_the_website()"
-});
+formatter.match({});
 formatter.result({
-  "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat asd.test.UserCardFeature.the_User_is_logged_in_to_the_website(UserCardFeature.java:36)\r\n\tat ✽.the User is logged in to the website(file:opalFeatures/LinkCardFeature.feature:17)\r\n",
-  "status": "pending"
+  "status": "undefined"
 });
 formatter.step({
   "name": "is in the \"main.jsp\"",
   "keyword": "And "
 });
-formatter.match({
-  "location": "UserCardFeature.is_in_the(String)"
-});
+formatter.match({});
 formatter.result({
-  "status": "skipped"
+  "status": "undefined"
 });
 formatter.step({
   "name": "User click on \"linkCard\"",
   "keyword": "When "
 });
-formatter.match({
-  "location": "UserCardFeature.user_click_on(String)"
-});
+formatter.match({});
 formatter.result({
-  "status": "skipped"
+  "status": "undefined"
 });
 formatter.step({
   "name": "User fill in \"OpalID\" with \"0000 0000 0000 0000\"",
   "keyword": "And "
 });
-formatter.match({
-  "location": "UserCardFeature.user_fill_in_with(String,String)"
-});
+formatter.match({});
 formatter.result({
-  "status": "skipped"
+  "status": "undefined"
 });
 formatter.step({
   "name": "User fill in \"securityCode\" with \"0000\"",
   "keyword": "And "
 });
-formatter.match({
-  "location": "UserCardFeature.user_fill_in_with(String,String)"
-});
+formatter.match({});
 formatter.result({
-  "status": "skipped"
+  "status": "undefined"
 });
 formatter.step({
   "name": "User click \"linkCard_link\"",
@@ -202,11 +178,9 @@ formatter.step({
   "name": "the page should give a red fail feedback",
   "keyword": "Then "
 });
-formatter.match({
-  "location": "UserCardFeature.the_page_should_give_a_red_fail_feedback()"
-});
+formatter.match({});
 formatter.result({
-  "status": "skipped"
+  "status": "undefined"
 });
 formatter.uri("file:opalFeatures/ListAllCardsFeature.feature");
 formatter.feature({
@@ -223,42 +197,33 @@ formatter.step({
   "name": "the Staff is in the \"adminPage.jsp\"",
   "keyword": "Given "
 });
-formatter.match({
-  "location": "StaffCardFeature.the_Staff_is_in_the(String)"
-});
+formatter.match({});
 formatter.result({
-  "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat asd.test.StaffCardFeature.the_Staff_is_in_the(StaffCardFeature.java:32)\r\n\tat ✽.the Staff is in the \"adminPage.jsp\"(file:opalFeatures/ListAllCardsFeature.feature:7)\r\n",
-  "status": "pending"
+  "status": "undefined"
 });
 formatter.step({
   "name": "the Staff click on \"cardManagement\"",
   "keyword": "When "
 });
-formatter.match({
-  "location": "StaffCardFeature.the_Staff_click_on(String)"
-});
+formatter.match({});
 formatter.result({
-  "status": "skipped"
+  "status": "undefined"
 });
 formatter.step({
   "name": "the Staff click on \"showCards\"",
   "keyword": "And "
 });
-formatter.match({
-  "location": "StaffCardFeature.the_Staff_click_on(String)"
-});
+formatter.match({});
 formatter.result({
-  "status": "skipped"
+  "status": "undefined"
 });
 formatter.step({
   "name": "the page should show all Opal cards",
   "keyword": "Then "
 });
-formatter.match({
-  "location": "StaffCardFeature.the_page_should_show_all_Opal_cards()"
-});
+formatter.match({});
 formatter.result({
-  "status": "skipped"
+  "status": "undefined"
 });
 formatter.uri("file:opalFeatures/ListCardFeature.feature");
 formatter.feature({
@@ -275,42 +240,33 @@ formatter.step({
   "name": "the User is logged in to the website",
   "keyword": "Given "
 });
-formatter.match({
-  "location": "UserCardFeature.the_User_is_logged_in_to_the_website()"
-});
+formatter.match({});
 formatter.result({
-  "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat asd.test.UserCardFeature.the_User_is_logged_in_to_the_website(UserCardFeature.java:36)\r\n\tat ✽.the User is logged in to the website(file:opalFeatures/ListCardFeature.feature:9)\r\n",
-  "status": "pending"
+  "status": "undefined"
 });
 formatter.step({
   "name": "is in the \"main.jsp\"",
   "keyword": "And "
 });
-formatter.match({
-  "location": "UserCardFeature.is_in_the(String)"
-});
+formatter.match({});
 formatter.result({
-  "status": "skipped"
+  "status": "undefined"
 });
 formatter.step({
   "name": "User click on \"home\"",
   "keyword": "When "
 });
-formatter.match({
-  "location": "UserCardFeature.user_click_on(String)"
-});
+formatter.match({});
 formatter.result({
-  "status": "skipped"
+  "status": "undefined"
 });
 formatter.step({
   "name": "User should see list of their Opal cards",
   "keyword": "Then "
 });
-formatter.match({
-  "location": "UserCardFeature.user_should_see_list_of_their_Opal_cards()"
-});
+formatter.match({});
 formatter.result({
-  "status": "skipped"
+  "status": "undefined"
 });
 formatter.uri("file:opalFeatures/OrderFeature.feature");
 formatter.feature({
@@ -673,62 +629,49 @@ formatter.step({
   "name": "the Staff is in the \"adminPage.jsp\"",
   "keyword": "Given "
 });
-formatter.match({
-  "location": "StaffCardFeature.the_Staff_is_in_the(String)"
-});
+formatter.match({});
 formatter.result({
-  "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat asd.test.StaffCardFeature.the_Staff_is_in_the(StaffCardFeature.java:32)\r\n\tat ✽.the Staff is in the \"adminPage.jsp\"(file:opalFeatures/RegisterCardFeature.feature:8)\r\n",
-  "status": "pending"
+  "status": "undefined"
 });
 formatter.step({
   "name": "the Staff click on \"cardManagement\"",
   "keyword": "When "
 });
-formatter.match({
-  "location": "StaffCardFeature.the_Staff_click_on(String)"
-});
+formatter.match({});
 formatter.result({
-  "status": "skipped"
+  "status": "undefined"
 });
 formatter.step({
   "name": "the Staff click on \"registerCard\"",
   "keyword": "And "
 });
-formatter.match({
-  "location": "StaffCardFeature.the_Staff_click_on(String)"
-});
+formatter.match({});
 formatter.result({
-  "status": "skipped"
+  "status": "undefined"
 });
 formatter.step({
   "name": "the Staff fill in the new Opal Card details for \"OpalID\"",
   "keyword": "And "
 });
-formatter.match({
-  "location": "StaffCardFeature.the_Staff_fill_in_the_new_Opal_Card_details_for(String)"
-});
+formatter.match({});
 formatter.result({
-  "status": "skipped"
+  "status": "undefined"
 });
 formatter.step({
   "name": "the Staff click on \"registerCard_register\"",
   "keyword": "And "
 });
-formatter.match({
-  "location": "StaffCardFeature.the_Staff_click_on(String)"
-});
+formatter.match({});
 formatter.result({
-  "status": "skipped"
+  "status": "undefined"
 });
 formatter.step({
   "name": "the page should give a green success feedback",
   "keyword": "Then "
 });
-formatter.match({
-  "location": "UserCardFeature.the_page_should_give_a_green_success_feedback()"
-});
+formatter.match({});
 formatter.result({
-  "status": "skipped"
+  "status": "undefined"
 });
 formatter.scenarioOutline({
   "name": "Failed register an Opal Card",
@@ -785,62 +728,49 @@ formatter.step({
   "name": "the Staff is in the \"adminPage.jsp\"",
   "keyword": "Given "
 });
-formatter.match({
-  "location": "StaffCardFeature.the_Staff_is_in_the(String)"
-});
+formatter.match({});
 formatter.result({
-  "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat asd.test.StaffCardFeature.the_Staff_is_in_the(StaffCardFeature.java:32)\r\n\tat ✽.the Staff is in the \"adminPage.jsp\"(file:opalFeatures/RegisterCardFeature.feature:16)\r\n",
-  "status": "pending"
+  "status": "undefined"
 });
 formatter.step({
   "name": "the Staff click on \"cardManagement\"",
   "keyword": "When "
 });
-formatter.match({
-  "location": "StaffCardFeature.the_Staff_click_on(String)"
-});
+formatter.match({});
 formatter.result({
-  "status": "skipped"
+  "status": "undefined"
 });
 formatter.step({
   "name": "the Staff click on \"registerCard\"",
   "keyword": "And "
 });
-formatter.match({
-  "location": "StaffCardFeature.the_Staff_click_on(String)"
-});
+formatter.match({});
 formatter.result({
-  "status": "skipped"
+  "status": "undefined"
 });
 formatter.step({
   "name": "the Staff fill in the new Opal Card details for \"8888 8888 8888 8888\"",
   "keyword": "And "
 });
-formatter.match({
-  "location": "StaffCardFeature.the_Staff_fill_in_the_new_Opal_Card_details_for(String)"
-});
+formatter.match({});
 formatter.result({
-  "status": "skipped"
+  "status": "undefined"
 });
 formatter.step({
   "name": "the Staff click on \"registerCard_register\"",
   "keyword": "And "
 });
-formatter.match({
-  "location": "StaffCardFeature.the_Staff_click_on(String)"
-});
+formatter.match({});
 formatter.result({
-  "status": "skipped"
+  "status": "undefined"
 });
 formatter.step({
   "name": "the page should give a red fail feedback",
   "keyword": "Then "
 });
-formatter.match({
-  "location": "UserCardFeature.the_page_should_give_a_red_fail_feedback()"
-});
+formatter.match({});
 formatter.result({
-  "status": "skipped"
+  "status": "undefined"
 });
 formatter.uri("file:opalFeatures/UnlinkCardFeature.feature");
 formatter.feature({
@@ -857,52 +787,41 @@ formatter.step({
   "name": "the User is logged in to the website",
   "keyword": "Given "
 });
-formatter.match({
-  "location": "UserCardFeature.the_User_is_logged_in_to_the_website()"
-});
+formatter.match({});
 formatter.result({
-  "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat asd.test.UserCardFeature.the_User_is_logged_in_to_the_website(UserCardFeature.java:36)\r\n\tat ✽.the User is logged in to the website(file:opalFeatures/UnlinkCardFeature.feature:7)\r\n",
-  "status": "pending"
+  "status": "undefined"
 });
 formatter.step({
   "name": "is in the \"main.jsp\"",
   "keyword": "And "
 });
-formatter.match({
-  "location": "UserCardFeature.is_in_the(String)"
-});
+formatter.match({});
 formatter.result({
-  "status": "skipped"
+  "status": "undefined"
 });
 formatter.step({
   "name": "User click on \"unlinkCard\"",
   "keyword": "When "
 });
-formatter.match({
-  "location": "UserCardFeature.user_click_on(String)"
-});
+formatter.match({});
 formatter.result({
-  "status": "skipped"
+  "status": "undefined"
 });
 formatter.step({
   "name": "User click on \"unlink\" for \"opalID\"",
   "keyword": "And "
 });
-formatter.match({
-  "location": "UserCardFeature.user_click_on_for(String,String)"
-});
+formatter.match({});
 formatter.result({
-  "status": "skipped"
+  "status": "undefined"
 });
 formatter.step({
   "name": "User should not see \"opalID\" in the \"unlink.jsp\"",
   "keyword": "Then "
 });
-formatter.match({
-  "location": "UserCardFeature.user_should_not_see_in_the(String,String)"
-});
+formatter.match({});
 formatter.result({
-  "status": "skipped"
+  "status": "undefined"
 });
 formatter.uri("file:opalFeatures/ViewCardDetails.feature");
 formatter.feature({
@@ -919,41 +838,32 @@ formatter.step({
   "name": "the User is logged in to the website",
   "keyword": "Given "
 });
-formatter.match({
-  "location": "UserCardFeature.the_User_is_logged_in_to_the_website()"
-});
+formatter.match({});
 formatter.result({
-  "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat asd.test.UserCardFeature.the_User_is_logged_in_to_the_website(UserCardFeature.java:36)\r\n\tat ✽.the User is logged in to the website(file:opalFeatures/ViewCardDetails.feature:7)\r\n",
-  "status": "pending"
+  "status": "undefined"
 });
 formatter.step({
   "name": "is in the \"main.jsp\"",
   "keyword": "And "
 });
-formatter.match({
-  "location": "UserCardFeature.is_in_the(String)"
-});
+formatter.match({});
 formatter.result({
-  "status": "skipped"
+  "status": "undefined"
 });
 formatter.step({
   "name": "User click on \"viewDetails\" for \"opalID\"",
   "keyword": "When "
 });
-formatter.match({
-  "location": "UserCardFeature.user_click_on_for(String,String)"
-});
+formatter.match({});
 formatter.result({
-  "status": "skipped"
+  "status": "undefined"
 });
 formatter.step({
   "name": "the page should be navigated to \"Card Details\"",
   "keyword": "Then "
 });
-formatter.match({
-  "location": "UserCardFeature.the_page_should_be_navigated_to(String)"
-});
+formatter.match({});
 formatter.result({
-  "status": "skipped"
+  "status": "undefined"
 });
 });
