@@ -57,7 +57,7 @@
                 paymentMethods = pmtmethods.getList();
                 
                 if(paymentMethods.isEmpty() || request.getParameter("another") != null){
-                    if(request.getParameter("change") == null){ 
+                    if(request.getParameter("isChange") == null){ 
                         Order order = new Order(getAmount.getCustomerId(), getAmount.getOpalId(), getAmount.getPaymentCard(), getAmount.getOpalType(), date, getAmount.getValue(), "Cancelled");
                         connector.add(order);
                         Paymentmethod getpayment = (Paymentmethod)session.getAttribute("orderPayment");
@@ -72,7 +72,7 @@
                     }
                 }
                 else{
-                    if(request.getParameter("change") == null){ 
+                    if(request.getParameter("isChange") == null){ 
                         Order getCardnum = (Order)session.getAttribute("addCardNum");
                         Order order = new Order(getCardnum.getCustomerId(), getCardnum.getOpalId(), getCardnum.getPaymentCard(), getCardnum.getOpalType(), date, getCardnum.getValue(), "Cancelled");
                         connector.add(order);

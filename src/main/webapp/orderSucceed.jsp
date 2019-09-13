@@ -63,7 +63,7 @@
                 paymentMethods = pmtmethods.getList();
                 
                 if(paymentMethods.isEmpty() || request.getParameter("another") != null){
-                    if(request.getParameter("change") == null){ 
+                    if(request.getParameter("isChange") == null){ 
                         OpalCard opalcard = new OpalCard(getAmount.getOpalId(), getAmount.getValue(), getAmount.getOpalType(), securitycode);
                         connector.registerCard(opalcard);
                         Order order = new Order(getAmount.getCustomerId(), getAmount.getOpalId(), getAmount.getPaymentCard(), getAmount.getOpalType(), date, getAmount.getValue(), "Processing");
@@ -84,7 +84,7 @@
                     }
                 }
                 else{
-                    if(request.getParameter("change") == null){ 
+                    if(request.getParameter("isChange") == null){ 
                         OpalCard opalcard = new OpalCard(getAmount.getOpalId(), getAmount.getValue(), getAmount.getOpalType(), securitycode);
                         connector.registerCard(opalcard);
                         Order getCardnum = (Order)session.getAttribute("addCardNum");
