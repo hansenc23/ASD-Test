@@ -15,6 +15,7 @@ public class OpalCard implements Serializable {
     private double balance;
     private String type;
     private String securityCode;
+    private String customerID;
 
     public OpalCard() {
     }
@@ -33,6 +34,14 @@ public class OpalCard implements Serializable {
         this.balance = balance;
         this.type = type;
         this.securityCode = securityCode;
+    }
+
+    public OpalCard(String opalID, double balance, String type, String securityCode, String customerID) {
+        this.opalID = opalID;
+        this.balance = balance;
+        this.type = type;
+        this.securityCode = securityCode;
+        this.customerID = customerID;
     }
 
     public String getOpalID() {
@@ -65,6 +74,14 @@ public class OpalCard implements Serializable {
 
     public void setSecurityCode(String securityCode) {
         this.securityCode = securityCode;
+    }
+
+    public String getCustomerID() {
+        return customerID;
+    }
+
+    public void setCustomerID(String customerID) {
+        this.customerID = customerID;
     }
     
 }

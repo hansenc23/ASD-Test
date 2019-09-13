@@ -19,17 +19,15 @@
     </head>
     <body>
         <%
-            String adminemail = (String)session.getAttribute("adminemail");
-            String adminpass = (String)session.getAttribute("adminpassword");
-            MongoDBConnector connector = new MongoDBConnector(adminemail, adminpass);
+            MongoDBConnector connector = new MongoDBConnector();
 
-            OpalCards dbCards = new OpalCards();
-            ArrayList<OpalCard> cards = new ArrayList<OpalCard>();
-            dbCards = connector.showAllCards();
-            cards = dbCards.getList();   
+            // Get all Opal cards from DB
+            ArrayList<OpalCard> cards = new ArrayList<OpalCard>(); 
+            cards = connector.showAllCards();
         %>    
-        <div class="box" style="max-width: 50%">
+        <div class="unlinkBox" style="max-width: 50%">
             <h1>Opal Cards</h1>
+            <h6><strong><%=cards.size()%></strong>&nbsp;Opal Cards</h6>
             <table>
                 <thead>
                     <th>Card Type</th>
@@ -51,7 +49,7 @@
                         <td><img src=<%=imgURL%> width="30px">&ensp;&ensp;<%=type%></td>
                         <td><%=card.getOpalID()%></td>
                         <td>
-                            <form method='POST' action='cardDetail.jsp'>
+                            <form method='POST' action='adminCardDetail.jsp'>
                                 <input type="hidden" value="<%=card.getOpalID()%>" name="opalID">
                                 <input type="Submit" value="Details">
                             </form>

@@ -22,9 +22,7 @@
         
         <% 
          if(request.getParameter("confirmed") != null){
-             String adminemail = (String)session.getAttribute("adminemail");
-        String adminpass = (String)session.getAttribute("adminpassword");
-        MongoDBConnector connector = new MongoDBConnector(adminemail, adminpass);
+             MongoDBConnector connector = new MongoDBConnector();
         String cusId = connector.getCustomerID(user.getEmail(), user.getPassword());
         double amount =  Double.parseDouble(session.getAttribute("yourAmount").toString());
         String currentDate = new SimpleDateFormat("yyyy-MM-dd").format(new Date());

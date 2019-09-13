@@ -23,13 +23,13 @@
                 <h2>Register an Opal card</h2>
                 <p>Choose this option to register a new
                 Opal card to the database</p>
-                <button onClick="location.href='registerCard.jsp'">Choose</button>
+                <button id="register_card" onClick="location.href='registerCard.jsp'">Choose</button>
             </div>
             <div class="boxShowAll">
                 <h2>List all Opal cards</h2>
                 <p>Choose this option to show all registered
                 Opal cards</p>
-                <button onClick="location.href='listCard.jsp'">Choose</button>
+                <button id="show_all_cards" onClick="location.href='listCard.jsp'">Choose</button>
             </div>
         </div>
     </body>

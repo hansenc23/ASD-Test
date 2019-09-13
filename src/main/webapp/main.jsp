@@ -22,7 +22,7 @@
         
         <%
             //User user = (User)session.getAttribute("user");
-            
+            MongoDBConnector connector = new MongoDBConnector();           
             //Add paymentmethod to user 
             if(user != null){
                 if (request.getParameter("firstname") != null){
@@ -33,33 +33,28 @@
                     int expiryYear = Integer.parseInt(request.getParameter("expiryYear"));
                     int cvv = Integer.parseInt(request.getParameter("cvv"));
                     Paymentmethod paymt = new Paymentmethod(firstname,lastname,cardnumber,expiryMonth,expiryYear,cvv);
-                    String adminemail = (String)session.getAttribute("adminemail");
-                    String adminpass = (String)session.getAttribute("adminpassword");
-                    MongoDBConnector connector = new MongoDBConnector(adminemail, adminpass);
                     connector.addPayment(paymt, user);
                 }
-                String adminemail = (String)session.getAttribute("adminemail");
-                String adminpass = (String)session.getAttribute("adminpassword");
-                MongoDBConnector connector = new MongoDBConnector(adminemail, adminpass);
-                OpalCards dbCards = new OpalCards();
+
                 ArrayList<OpalCard> cards = new ArrayList<OpalCard>();
-                dbCards = connector.getOpalCards(user);
-                cards = dbCards.getList(); 
+                // Get the user's list of linked Opal card(s)
+                cards = connector.getOpalCards(user);
+                // If the user's card list is not empty
                 if (!cards.isEmpty()) {
         %>
-                    <div class="box">
-                    <h1>Opal Cards</h1>
-                    <table>
-                        <thead>
-                            <th>Card Type</th>
-                            <th>Opal Card Number</th>
-                            <th>Balance</th>
-                            <th>&nbsp;</th>
-                        </thead>
+                    <div class="container">
+                        <div class="box">
+                        <h1>Linked Opal Cards</h1>
+                        <table>
+                            <thead>
+                            <th colspan="2">Opal Cards</th>
+                                <th>&nbsp;</th>
+                            </thead>
         <%
-                    for (OpalCard card: cards) {
+                    if (request.getParameter("opalID") != null) {
+                        OpalCard selectedCard = connector.getCardDetails(request.getParameter("opalID"));
                         String imgURL = "";
-                        String cardType = card.getType();
+                        String cardType = selectedCard.getType();
                         if (cardType.equalsIgnoreCase("Child")) {
                             imgURL = "image/card_child_large.png";
                         }
@@ -72,27 +67,73 @@
                         else if (cardType.equalsIgnoreCase("Concession")) {
                             imgURL = "image/card_concession_large.png";
                         }
-        %>        
+        %>
                         <tr>
-                            <td><img src=<%=imgURL%> width="30px">&ensp;&ensp;<%=cardType%></td>
-                            <td><%=card.getOpalID()%></td>
-                            <td>$<%=card.getBalance()%></td>
+                            <td><img src=<%=imgURL%> width="30px"> &nbsp; &nbsp; <%=selectedCard.getOpalID()%></td>
                             <td>
                                 <form method='POST' action='cardDetail.jsp'>
-                                    <input type="hidden" value="<%=card.getBalance()%>" name="balance">
-                                    <input type="hidden" value="<%=card.getType()%>" name="type">
-                                    <input type="hidden" value="<%=card.getOpalID()%>" name="opalID">
+                                    <input type="hidden" value="<%=selectedCard.getOpalID()%>" name="opalID">
                                     <input type="Submit" value="Details">
                                 </form>
                             </td>
                         </tr>
         <%
-                    }               
+                        } else {
+                        // For each card, print card type, opal Id and details button
+                        for (OpalCard card: cards) {
+                            String imgURL = "";
+                            String cardType = card.getType();
+                            if (cardType.equalsIgnoreCase("Child")) {
+                                imgURL = "image/card_child_large.png";
+                            }
+                            else if (cardType.equalsIgnoreCase("Adult")) {
+                                imgURL = "image/card_adult_large.png";
+                            }
+                            else if (cardType.equalsIgnoreCase("Senior")) {
+                                imgURL = "image/card_pensioner_large.png";
+                            }
+                            else if (cardType.equalsIgnoreCase("Concession")) {
+                                imgURL = "image/card_concession_large.png";
+                            }
+        %>        
+                            <tr>
+                                <td><img src=<%=imgURL%> width="30px"> &nbsp; &nbsp; <%=card.getOpalID()%></td>
+                                <td>
+                                    <form method='POST' action='cardDetail.jsp'>
+                                        <input type="hidden" value="<%=card.getOpalID()%>" name="opalID">
+                                        <input type="Submit" value="Details">
+                                    </form>
+                                </td>
+                            </tr>
+        <%
+                        }  
+                    }
         %>
-                </table>
+                        </table>
+                    </div>
+                    <div class="searchBox">
+                        <h3>Search Opal Card</h3>
+                        <h6>Choose an Opal card number</h6>
+                        <form action="main.jsp" method="POST">
+                            <select name = "opalID" required>
+        <%
+                                String opalID = "";
+                                for (OpalCard card: cards) {
+                                    opalID = card.getOpalID();
+        %>
+                            <option value = "<%=opalID%>" ><%=opalID%></option>
+        <%
+                                }
+        %>
+                            </select>
+                            <br>
+                            <input type="submit" value="Search" name="Search">
+                        </form>
+                    </div>
                 </div>
         <%
                 }
+                // If user's card list is empty
                 else {
         %>
                     <div class="box">    

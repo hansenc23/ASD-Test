@@ -22,9 +22,7 @@
     <body>
         
         <%
-            String adminemail = (String)session.getAttribute("adminemail");
-            String adminpass = (String)session.getAttribute("adminpassword");
-            MongoDBConnector connector = new MongoDBConnector(adminemail, adminpass);
+            MongoDBConnector connector = new MongoDBConnector();
              
             //get the amount from orderValue
             double amount = Double.parseDouble(request.getParameter("amount"));

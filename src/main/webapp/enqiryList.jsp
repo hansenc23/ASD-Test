@@ -17,9 +17,7 @@
     </head>
     <body>
          <%
-            String adminemail = (String)session.getAttribute("adminemail");
-            String adminpass = (String)session.getAttribute("adminpassword");
-            MongoDBConnector connector = new MongoDBConnector(adminemail, adminpass);
+            MongoDBConnector connector = new MongoDBConnector();
 
             Enqiries dbEnqiries = new Enqiries();
             ArrayList<Enqiry> enqiries = new ArrayList<Enqiry>();

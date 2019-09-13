@@ -22,9 +22,7 @@
     <body>
         
         <%
-            String adminemail = (String)session.getAttribute("adminemail");
-            String adminpass = (String)session.getAttribute("adminpassword");
-            MongoDBConnector connector = new MongoDBConnector(adminemail, adminpass);
+            MongoDBConnector connector = new MongoDBConnector();
             
             String customerId;
             
@@ -39,7 +37,7 @@
                 String address = request.getParameter("address");  
                 
                 //add the anonymous user detail to the user database
-                User anonymous = new User(firstname, lastname, email, password, address, phone, "");
+                User anonymous = new User(firstname, lastname, email, password, address, phone, "", "");
                 session.setAttribute("anonymous", anonymous);
                 connector.add(anonymous);
                 

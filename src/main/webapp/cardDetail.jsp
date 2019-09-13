@@ -4,6 +4,7 @@
     Author     : Michelle
 --%>
 
+<%@page import="asd.model.dao.MongoDBConnector"%>
 <%@page contentType="text/html" pageEncoding="UTF-8" import="asd.model.*"%>
 <%@include file="navbar.jsp" %>
 <%@include file="sidebar.jsp" %>
@@ -18,36 +19,38 @@
     </head>
     <body>
         <%
-            //User user = (User)session.getAttribute("user");
-            OpalCard card = (OpalCard)session.getAttribute("card");
+            MongoDBConnector connector = new MongoDBConnector();
             
+            //Get the opal ID
             String opalID = request.getParameter("opalID");
-            String type = request.getParameter("type");
-            double balance = Double.parseDouble(request.getParameter("balance"));
-            String name = user.getFirstName() + " " + user.getLastName();
-
+            String fullName = " ";
+            
+            // Get the details of the selected Opal Card
+            OpalCard selectedCard = connector.getCardDetails(opalID);
+            
+            fullName = user.getFirstName() + " " + user.getLastName();
         %>
         <div class="card">
             <h3>Card Details</h3>
                 <table>
                     <tr>
-                        <td>Card Holder</td>
-                        <td><%=name%></td>
+                        <td><b>Card Holder</b></td>
+                        <td><%=fullName%></td>
                     </tr>
                     <tr>
-                        <td>Opal Card Number</td>
+                        <td><b>Opal Card Number</b></td>
                         <td><%=opalID%></td>
                     </tr>
                     <tr>
-                        <td>Balance</td>
-                        <td>$<%=balance%></td>
+                        <td><b>Balance</b></td>
+                        <td>$<%=selectedCard.getBalance()%></td>
                     </tr>
                     <tr>
-                        <td>Type</td>
-                        <td><%=type%></td>
+                        <td><b>Type</b></td>
+                        <td><%=selectedCard.getType()%></td>
                     </tr>
                 </table>
-            <button onclick=location.href="main.jsp">Go back</button>
+            <button onclick=location.href="main.jsp">Go back</button>       
         </div>
     </body>
 </html>

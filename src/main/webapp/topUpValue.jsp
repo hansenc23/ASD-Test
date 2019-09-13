@@ -23,9 +23,7 @@
     <body>
         
         <%
-            String adminemail = (String)session.getAttribute("adminemail");
-            String adminpass = (String)session.getAttribute("adminpassword");
-            MongoDBConnector connector = new MongoDBConnector(adminemail, adminpass);
+            MongoDBConnector connector = new MongoDBConnector();
             
        
                 
@@ -33,10 +31,9 @@
         
                 //assign the customerID as user ID
             //add the customer id to new session
-            OpalCards dbCards = new OpalCards();
             ArrayList<OpalCard> cards = new ArrayList<OpalCard>();
-            dbCards = connector.getOpalCards(user);
-            cards = dbCards.getList();
+            // Get the user's list of linked Opal card(s)
+            cards = connector.getOpalCards(user);
             session.setAttribute("topUpCards", cards);
             
         %>

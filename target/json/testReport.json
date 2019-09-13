@@ -3,282 +3,704 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2019-09-13T04:30:03.238Z",
-        "line": 20,
-        "name": "Successfully order an Opal Card, cancel an order, and edit an order as an anonymous user",
+        "start_timestamp": "2019-09-13T06:13:52.176Z",
+        "line": 7,
+        "name": "Successfully link Opal card to account",
         "description": "",
-        "id": "order-opal-card-feature;successfully-order-an-opal-card--cancel-an-order--and-edit-an-order-as-an-anonymous-user;;2",
+        "id": "link-card-feature;successfully-link-opal-card-to-account",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat asd.test.UserCardFeature.the_User_is_logged_in_to_the_website(UserCardFeature.java:36)\r\n\tat ✽.the User is logged in to the website(file:opalFeatures/LinkCardFeature.feature:8)\r\n",
+              "duration": 36872019500,
+              "status": "pending"
+            },
+            "line": 8,
+            "name": "the User is logged in to the website",
+            "match": {
+              "location": "UserCardFeature.the_User_is_logged_in_to_the_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 27900,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "is in the \"main.jsp\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"main.jsp\"",
+                  "offset": 10
+                }
+              ],
+              "location": "UserCardFeature.is_in_the(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 16500,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "User click on \"linkCard\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"linkCard\"",
+                  "offset": 14
+                }
+              ],
+              "location": "UserCardFeature.user_click_on(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 9300,
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "User fill in \"OpalID\" with \"\u003cOpalID\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"OpalID\"",
+                  "offset": 13
+                },
+                {
+                  "val": "\"\u003cOpalID\u003e\"",
+                  "offset": 27
+                }
+              ],
+              "location": "UserCardFeature.user_fill_in_with(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8700,
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "User fill in \"securityCode\" with \"\u003csecurityCode\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"securityCode\"",
+                  "offset": 13
+                },
+                {
+                  "val": "\"\u003csecurityCode\u003e\"",
+                  "offset": 33
+                }
+              ],
+              "location": "UserCardFeature.user_fill_in_with(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7900,
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "User click \"linkCard_link\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"linkCard_link\"",
+                  "offset": 11
+                }
+              ],
+              "location": "OrderFeature.user_click(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7300,
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "the page should give a green success feedback",
+            "match": {
+              "location": "UserCardFeature.the_page_should_give_a_green_success_feedback()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-09-13T06:14:29.052Z",
+        "line": 26,
+        "name": "Failed linking Opal card with wrong Opal details",
+        "description": "",
+        "id": "link-card-feature;failed-linking-opal-card-with-wrong-opal-details;;2",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat asd.test.UserCardFeature.the_User_is_logged_in_to_the_website(UserCardFeature.java:36)\r\n\tat ✽.the User is logged in to the website(file:opalFeatures/LinkCardFeature.feature:17)\r\n",
+              "duration": 9367129400,
+              "status": "pending"
             },
-            "line": 4,
-            "name": "User is in the \"main.jsp\"",
-            "match": {},
+            "line": 17,
+            "name": "the User is logged in to the website",
+            "match": {
+              "location": "UserCardFeature.the_User_is_logged_in_to_the_website()"
+            },
             "keyword": "Given "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 22300,
+              "status": "skipped"
             },
-            "line": 5,
-            "name": "User Click on \"order_opal_card\"",
-            "match": {},
+            "line": 18,
+            "name": "is in the \"main.jsp\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"main.jsp\"",
+                  "offset": 10
+                }
+              ],
+              "location": "UserCardFeature.is_in_the(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 16600,
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "User click on \"linkCard\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"linkCard\"",
+                  "offset": 14
+                }
+              ],
+              "location": "UserCardFeature.user_click_on(String)"
+            },
             "keyword": "When "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 15200,
+              "status": "skipped"
+            },
+            "line": 20,
+            "name": "User fill in \"OpalID\" with \"0000 0000 0000 0000\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"OpalID\"",
+                  "offset": 13
+                },
+                {
+                  "val": "\"0000 0000 0000 0000\"",
+                  "offset": 27
+                }
+              ],
+              "location": "UserCardFeature.user_fill_in_with(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 27200,
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "User fill in \"securityCode\" with \"0000\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"securityCode\"",
+                  "offset": 13
+                },
+                {
+                  "val": "\"0000\"",
+                  "offset": 33
+                }
+              ],
+              "location": "UserCardFeature.user_fill_in_with(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 19500,
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "User click \"linkCard_link\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"linkCard_link\"",
+                  "offset": 11
+                }
+              ],
+              "location": "OrderFeature.user_click(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 20600,
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "the page should give a red fail feedback",
+            "match": {
+              "location": "UserCardFeature.the_page_should_give_a_red_fail_feedback()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Link Card Feature",
+    "description": "  As a customer\n  I want to link my Opal card to my account\n  In order to manage my Opal card",
+    "id": "link-card-feature",
+    "keyword": "Feature",
+    "uri": "file:opalFeatures/LinkCardFeature.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2019-09-13T06:14:38.422Z",
+        "line": 6,
+        "name": "Successfully list all Opal cards",
+        "description": "",
+        "id": "list-all-opal-cards;successfully-list-all-opal-cards",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "cucumber.runtime.CucumberException: Failed to instantiate class asd.test.StaffCardFeature\r\n\tat cucumber.runtime.java.DefaultJavaObjectFactory.cacheNewInstance(DefaultJavaObjectFactory.java:47)\r\n\tat cucumber.runtime.java.DefaultJavaObjectFactory.getInstance(DefaultJavaObjectFactory.java:33)\r\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:57)\r\n\tat cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)\r\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:65)\r\n\tat cucumber.runner.TestStep.run(TestStep.java:50)\r\n\tat cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)\r\n\tat cucumber.runner.TestCase.run(TestCase.java:46)\r\n\tat cucumber.runner.Runner.runPickle(Runner.java:49)\r\n\tat cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:123)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:65)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat cucumber.api.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:147)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)\r\n\tat org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)\r\n\tat org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)\r\n\tat org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)\r\nCaused by: java.lang.reflect.InvocationTargetException\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat cucumber.runtime.java.DefaultJavaObjectFactory.cacheNewInstance(DefaultJavaObjectFactory.java:41)\r\n\t... 39 more\r\nCaused by: org.openqa.selenium.SessionNotCreatedException: session not created\nfrom chrome not reachable\n  (Session info: chrome\u003d76.0.3809.132)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-P3652T2\u0027, ip: \u0027172.19.162.223\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_212\u0027\nDriver info: driver.version: Driver\nremote stacktrace: Backtrace:\n\tOrdinal0 [0x00A77C53+1473619]\n\tOrdinal0 [0x009FAD71+961905]\n\tOrdinal0 [0x0098415C+475484]\n\tOrdinal0 [0x0097DAEA+449258]\n\tOrdinal0 [0x0097E188+450952]\n\tOrdinal0 [0x0097F295+455317]\n\tOrdinal0 [0x0097B495+439445]\n\tOrdinal0 [0x00984F10+478992]\n\tOrdinal0 [0x009398FE+170238]\n\tOrdinal0 [0x00938D1D+167197]\n\tOrdinal0 [0x0093742B+160811]\n\tOrdinal0 [0x00920AE6+68326]\n\tOrdinal0 [0x00921BF0+72688]\n\tOrdinal0 [0x00921B89+72585]\n\tOrdinal0 [0x00A14B37+1067831]\n\tGetHandleVerifier [0x00B16845+506677]\n\tGetHandleVerifier [0x00B165E0+506064]\n\tGetHandleVerifier [0x00B1D188+533624]\n\tGetHandleVerifier [0x00B1701A+508682]\n\tOrdinal0 [0x00A0C226+1032742]\n\tOrdinal0 [0x00A0C09F+1032351]\n\tOrdinal0 [0x00A16A4B+1075787]\n\tOrdinal0 [0x00A16BB3+1076147]\n\tOrdinal0 [0x00A15B65+1071973]\n\tBaseThreadInitThunk [0x75C06359+25]\n\tRtlGetAppContainerNamedObjectPath [0x773D7A94+228]\n\tRtlGetAppContainerNamedObjectPath [0x773D7A64+180]\n\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)\r\n\tat org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)\r\n\tat java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)\r\n\tat java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)\r\n\tat java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)\r\n\tat java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)\r\n\tat java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)\r\n\tat java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)\r\n\tat java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)\r\n\tat java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\r\n\tat java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:131)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:181)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:168)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:123)\r\n\tat asd.test.Driver.getDriver(Driver.java:22)\r\n\tat asd.test.StaffCardFeature.\u003cinit\u003e(StaffCardFeature.java:26)\r\n\t... 44 more\r\n",
+              "duration": 15334701500,
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "the Staff is in the \"adminPage.jsp\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"adminPage.jsp\"",
+                  "offset": 20
+                }
+              ],
+              "location": "StaffCardFeature.the_Staff_is_in_the(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 36300,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "the Staff click on \"cardManagement\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"cardManagement\"",
+                  "offset": 19
+                }
+              ],
+              "location": "StaffCardFeature.the_Staff_click_on(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 18700,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "the Staff click on \"showCards\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"showCards\"",
+                  "offset": 19
+                }
+              ],
+              "location": "StaffCardFeature.the_Staff_click_on(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 13900,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "the page should show all Opal cards",
+            "match": {
+              "location": "StaffCardFeature.the_page_should_show_all_Opal_cards()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "List all Opal cards",
+    "description": "    As a staff\n    I want to list all Opal cards\n    In order to see the Opal cards from the database",
+    "id": "list-all-opal-cards",
+    "keyword": "Feature",
+    "uri": "file:opalFeatures/ListAllCardsFeature.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2019-09-13T06:14:53.772Z",
+        "line": 8,
+        "name": "Successfully list linked Opal Cards",
+        "description": "",
+        "id": "list-linked-opal-cards;successfully-list-linked-opal-cards",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat asd.test.UserCardFeature.the_User_is_logged_in_to_the_website(UserCardFeature.java:36)\r\n\tat ✽.the User is logged in to the website(file:opalFeatures/ListCardFeature.feature:9)\r\n",
+              "duration": 8416663100,
+              "status": "pending"
+            },
+            "line": 9,
+            "name": "the User is logged in to the website",
+            "match": {
+              "location": "UserCardFeature.the_User_is_logged_in_to_the_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 11600,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "is in the \"main.jsp\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"main.jsp\"",
+                  "offset": 10
+                }
+              ],
+              "location": "UserCardFeature.is_in_the(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7600,
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "User click on \"home\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"home\"",
+                  "offset": 14
+                }
+              ],
+              "location": "UserCardFeature.user_click_on(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 26200,
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "User should see list of their Opal cards",
+            "match": {
+              "location": "UserCardFeature.user_should_see_list_of_their_Opal_cards()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "List Linked Opal Cards",
+    "description": "As a customer\n  I want to link my Opal card to my account\n  In order to manage my Opal card",
+    "id": "list-linked-opal-cards",
+    "keyword": "Feature",
+    "uri": "file:opalFeatures/ListCardFeature.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2019-09-13T06:15:02.191Z",
+        "line": 4,
+        "name": "Successfully order an Opal Card and edit an order as an anonymous user",
+        "description": "",
+        "id": "order-opal-card-feature;successfully-order-an-opal-card-and-edit-an-order-as-an-anonymous-user",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "cucumber.runtime.CucumberException: Failed to instantiate class asd.test.OrderFeature\r\n\tat cucumber.runtime.java.DefaultJavaObjectFactory.cacheNewInstance(DefaultJavaObjectFactory.java:47)\r\n\tat cucumber.runtime.java.DefaultJavaObjectFactory.getInstance(DefaultJavaObjectFactory.java:33)\r\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:57)\r\n\tat cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)\r\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:65)\r\n\tat cucumber.runner.TestStep.run(TestStep.java:50)\r\n\tat cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)\r\n\tat cucumber.runner.TestCase.run(TestCase.java:46)\r\n\tat cucumber.runner.Runner.runPickle(Runner.java:49)\r\n\tat cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:123)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:65)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat cucumber.api.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:147)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)\r\n\tat org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)\r\n\tat org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)\r\n\tat org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)\r\nCaused by: java.lang.reflect.InvocationTargetException\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat cucumber.runtime.java.DefaultJavaObjectFactory.cacheNewInstance(DefaultJavaObjectFactory.java:41)\r\n\t... 39 more\r\nCaused by: org.openqa.selenium.SessionNotCreatedException: session not created\nfrom chrome not reachable\n  (Session info: chrome\u003d76.0.3809.132)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-P3652T2\u0027, ip: \u0027172.19.162.223\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_212\u0027\nDriver info: driver.version: Driver\nremote stacktrace: Backtrace:\n\tOrdinal0 [0x00A77C53+1473619]\n\tOrdinal0 [0x009FAD71+961905]\n\tOrdinal0 [0x0098415C+475484]\n\tOrdinal0 [0x0097DAEA+449258]\n\tOrdinal0 [0x0097E188+450952]\n\tOrdinal0 [0x0097F295+455317]\n\tOrdinal0 [0x0097B495+439445]\n\tOrdinal0 [0x00984F10+478992]\n\tOrdinal0 [0x009398FE+170238]\n\tOrdinal0 [0x00938D1D+167197]\n\tOrdinal0 [0x0093742B+160811]\n\tOrdinal0 [0x00920AE6+68326]\n\tOrdinal0 [0x00921BF0+72688]\n\tOrdinal0 [0x00921B89+72585]\n\tOrdinal0 [0x00A14B37+1067831]\n\tGetHandleVerifier [0x00B16845+506677]\n\tGetHandleVerifier [0x00B165E0+506064]\n\tGetHandleVerifier [0x00B1D188+533624]\n\tGetHandleVerifier [0x00B1701A+508682]\n\tOrdinal0 [0x00A0C226+1032742]\n\tOrdinal0 [0x00A0C09F+1032351]\n\tOrdinal0 [0x00A16A4B+1075787]\n\tOrdinal0 [0x00A16BB3+1076147]\n\tOrdinal0 [0x00A15B65+1071973]\n\tBaseThreadInitThunk [0x75C06359+25]\n\tRtlGetAppContainerNamedObjectPath [0x773D7A94+228]\n\tRtlGetAppContainerNamedObjectPath [0x773D7A64+180]\n\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)\r\n\tat org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)\r\n\tat java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)\r\n\tat java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)\r\n\tat java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)\r\n\tat java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)\r\n\tat java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)\r\n\tat java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)\r\n\tat java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)\r\n\tat java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\r\n\tat java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:131)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:181)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:168)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:123)\r\n\tat asd.test.Driver.getDriver(Driver.java:22)\r\n\tat asd.test.OrderFeature.\u003cinit\u003e(OrderFeature.java:36)\r\n\t... 44 more\r\n",
+              "duration": 15316440800,
+              "status": "failed"
+            },
+            "line": 5,
+            "name": "User is in the \"main.jsp\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"main.jsp\"",
+                  "offset": 15
+                }
+              ],
+              "location": "OrderFeature.user_is_in_the(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 54700,
+              "status": "skipped"
             },
             "line": 6,
+            "name": "User Click on \"order_opal_card\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"order_opal_card\"",
+                  "offset": 14
+                }
+              ],
+              "location": "OrderFeature.user_Click_on(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 25300,
+              "status": "skipped"
+            },
+            "line": 7,
             "name": "User Click on \"type_adult\"",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"type_adult\"",
+                  "offset": 14
+                }
+              ],
+              "location": "OrderFeature.user_Click_on(String)"
             },
-            "line": 7,
-            "name": "User fill in contact detail",
-            "match": {},
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 43900,
+              "status": "skipped"
             },
             "line": 8,
-            "name": "User click \"contact_continue\"",
-            "match": {},
+            "name": "User fill in contact detail",
+            "match": {
+              "location": "OrderFeature.user_fill_in_contact_detail()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 22300,
+              "status": "skipped"
             },
             "line": 9,
-            "name": "User select the top up value",
-            "match": {},
+            "name": "User click \"contact_continue\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"contact_continue\"",
+                  "offset": 11
+                }
+              ],
+              "location": "OrderFeature.user_click(String)"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 29700,
+              "status": "skipped"
             },
             "line": 10,
-            "name": "User click \"order_value_continue\"",
-            "match": {},
+            "name": "User select the top up value",
+            "match": {
+              "location": "OrderFeature.user_select_the_top_up_value()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 40300,
+              "status": "skipped"
             },
             "line": 11,
-            "name": "User fill in payment detail",
-            "match": {},
+            "name": "User click \"order_value_continue\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"order_value_continue\"",
+                  "offset": 11
+                }
+              ],
+              "location": "OrderFeature.user_click(String)"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 29400,
+              "status": "skipped"
             },
             "line": 12,
-            "name": "User click \"paymentDetail_continue\"",
-            "match": {},
+            "name": "User fill in payment detail",
+            "match": {
+              "location": "OrderFeature.user_fill_in_payment_detail()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 37800,
+              "status": "skipped"
             },
             "line": 13,
-            "name": "User click \"orderConfirmation_edit\"",
-            "match": {},
+            "name": "User click \"paymentDetail_continue\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"paymentDetail_continue\"",
+                  "offset": 11
+                }
+              ],
+              "location": "OrderFeature.user_click(String)"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 39100,
+              "status": "skipped"
             },
             "line": 14,
-            "name": "User fill in edit detail",
-            "match": {},
+            "name": "User click \"orderConfirmation_edit\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"orderConfirmation_edit\"",
+                  "offset": 11
+                }
+              ],
+              "location": "OrderFeature.user_click(String)"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 21400,
+              "status": "skipped"
             },
             "line": 15,
-            "name": "User click \"edit_continue\"",
-            "match": {},
+            "name": "User fill in edit detail",
+            "match": {
+              "location": "OrderFeature.user_fill_in_edit_detail()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 38400,
+              "status": "skipped"
             },
             "line": 16,
+            "name": "User click \"edit_continue\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"edit_continue\"",
+                  "offset": 11
+                }
+              ],
+              "location": "OrderFeature.user_click(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 25200,
+              "status": "skipped"
+            },
+            "line": 17,
             "name": "User click \"orderConfirmation_confirm\"",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"orderConfirmation_confirm\"",
+                  "offset": 11
+                }
+              ],
+              "location": "OrderFeature.user_click(String)"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 26200,
+              "status": "skipped"
             },
-            "line": 17,
+            "line": 18,
             "name": "The page should be navigated to \"Order Succeed\"",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Order Succeed\"",
+                  "offset": 32
+                }
+              ],
+              "location": "OrderFeature.the_page_should_be_navigated_to(String)"
+            },
             "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@removeAnonymousUser"
           }
         ]
       },
       {
-        "start_timestamp": "2019-09-13T04:30:03.248Z",
+        "start_timestamp": "2019-09-13T06:15:17.516Z",
         "line": 21,
-        "name": "Successfully order an Opal Card, cancel an order, and edit an order as an anonymous user",
-        "description": "",
-        "id": "order-opal-card-feature;successfully-order-an-opal-card--cancel-an-order--and-edit-an-order-as-an-anonymous-user;;3",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 4,
-            "name": "User is in the \"main.jsp\"",
-            "match": {},
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 5,
-            "name": "User Click on \"order_opal_card\"",
-            "match": {},
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 6,
-            "name": "User Click on \"type_concession\"",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 7,
-            "name": "User fill in contact detail",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 8,
-            "name": "User click \"contact_continue\"",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 9,
-            "name": "User select the top up value",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 10,
-            "name": "User click \"order_value_continue\"",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 11,
-            "name": "User fill in payment detail",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 12,
-            "name": "User click \"paymentDetail_continue\"",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 13,
-            "name": "User click \"orderConfirmation_edit\"",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 14,
-            "name": "User fill in edit detail",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 15,
-            "name": "User click \"edit_continue\"",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 16,
-            "name": "User click \"orderConfirmation_cancelled\"",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 17,
-            "name": "The page should be navigated to \"Order Cancelled\"",
-            "match": {},
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2019-09-13T04:30:03.252Z",
-        "line": 23,
         "name": "Successfully order an Opal Card as a customer",
         "description": "",
         "id": "order-opal-card-feature;successfully-order-an-opal-card-as-a-customer",
@@ -287,99 +709,177 @@
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "error_message": "cucumber.runtime.CucumberException: Failed to instantiate class asd.test.OrderFeature\r\n\tat cucumber.runtime.java.DefaultJavaObjectFactory.cacheNewInstance(DefaultJavaObjectFactory.java:47)\r\n\tat cucumber.runtime.java.DefaultJavaObjectFactory.getInstance(DefaultJavaObjectFactory.java:33)\r\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:57)\r\n\tat cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)\r\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:65)\r\n\tat cucumber.runner.TestStep.run(TestStep.java:50)\r\n\tat cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)\r\n\tat cucumber.runner.TestCase.run(TestCase.java:46)\r\n\tat cucumber.runner.Runner.runPickle(Runner.java:49)\r\n\tat cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:123)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:65)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat cucumber.api.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:147)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)\r\n\tat org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)\r\n\tat org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)\r\n\tat org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)\r\nCaused by: java.lang.reflect.InvocationTargetException\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat cucumber.runtime.java.DefaultJavaObjectFactory.cacheNewInstance(DefaultJavaObjectFactory.java:41)\r\n\t... 39 more\r\nCaused by: org.openqa.selenium.SessionNotCreatedException: session not created\nfrom chrome not reachable\n  (Session info: chrome\u003d76.0.3809.132)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-P3652T2\u0027, ip: \u0027172.19.162.223\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_212\u0027\nDriver info: driver.version: Driver\nremote stacktrace: Backtrace:\n\tOrdinal0 [0x00A77C53+1473619]\n\tOrdinal0 [0x009FAD71+961905]\n\tOrdinal0 [0x0098415C+475484]\n\tOrdinal0 [0x0097DAEA+449258]\n\tOrdinal0 [0x0097E188+450952]\n\tOrdinal0 [0x0097F295+455317]\n\tOrdinal0 [0x0097B495+439445]\n\tOrdinal0 [0x00984F10+478992]\n\tOrdinal0 [0x009398FE+170238]\n\tOrdinal0 [0x00938D1D+167197]\n\tOrdinal0 [0x0093742B+160811]\n\tOrdinal0 [0x00920AE6+68326]\n\tOrdinal0 [0x00921BF0+72688]\n\tOrdinal0 [0x00921B89+72585]\n\tOrdinal0 [0x00A14B37+1067831]\n\tGetHandleVerifier [0x00B16845+506677]\n\tGetHandleVerifier [0x00B165E0+506064]\n\tGetHandleVerifier [0x00B1D188+533624]\n\tGetHandleVerifier [0x00B1701A+508682]\n\tOrdinal0 [0x00A0C226+1032742]\n\tOrdinal0 [0x00A0C09F+1032351]\n\tOrdinal0 [0x00A16A4B+1075787]\n\tOrdinal0 [0x00A16BB3+1076147]\n\tOrdinal0 [0x00A15B65+1071973]\n\tBaseThreadInitThunk [0x75C06359+25]\n\tRtlGetAppContainerNamedObjectPath [0x773D7A94+228]\n\tRtlGetAppContainerNamedObjectPath [0x773D7A64+180]\n\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)\r\n\tat org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)\r\n\tat java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)\r\n\tat java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)\r\n\tat java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)\r\n\tat java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)\r\n\tat java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)\r\n\tat java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)\r\n\tat java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)\r\n\tat java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\r\n\tat java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:131)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:181)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:168)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:123)\r\n\tat asd.test.Driver.getDriver(Driver.java:22)\r\n\tat asd.test.OrderFeature.\u003cinit\u003e(OrderFeature.java:36)\r\n\t... 44 more\r\n",
+              "duration": 15304552200,
+              "status": "failed"
+            },
+            "line": 22,
+            "name": "User is in the \"login.jsp\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"login.jsp\"",
+                  "offset": 15
+                }
+              ],
+              "location": "OrderFeature.user_is_in_the(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 34000,
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "User is login as a customer",
+            "match": {
+              "location": "OrderFeature.user_is_login_as_a_customer()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 32900,
+              "status": "skipped"
             },
             "line": 24,
-            "name": "User is in the \"login.jsp\"",
-            "match": {},
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 25,
-            "name": "User is login as a customer",
-            "match": {},
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 26,
             "name": "User Click on \"order_opal_card\"",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"order_opal_card\"",
+                  "offset": 14
+                }
+              ],
+              "location": "OrderFeature.user_Click_on(String)"
+            },
             "keyword": "When "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 31200,
+              "status": "skipped"
+            },
+            "line": 25,
+            "name": "User Click on \"type_child\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"type_child\"",
+                  "offset": 14
+                }
+              ],
+              "location": "OrderFeature.user_Click_on(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 37400,
+              "status": "skipped"
+            },
+            "line": 26,
+            "name": "User select the top up value",
+            "match": {
+              "location": "OrderFeature.user_select_the_top_up_value()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 36800,
+              "status": "skipped"
             },
             "line": 27,
-            "name": "User Click on \"type_child\"",
-            "match": {},
+            "name": "User click \"order_value_continue\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"order_value_continue\"",
+                  "offset": 11
+                }
+              ],
+              "location": "OrderFeature.user_click(String)"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 38400,
+              "status": "skipped"
             },
             "line": 28,
-            "name": "User select the top up value",
-            "match": {},
+            "name": "User fill in payment detail",
+            "match": {
+              "location": "OrderFeature.user_fill_in_payment_detail()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 47300,
+              "status": "skipped"
             },
             "line": 29,
-            "name": "User click \"order_value_continue\"",
-            "match": {},
+            "name": "User click \"paymentDetail_continue\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"paymentDetail_continue\"",
+                  "offset": 11
+                }
+              ],
+              "location": "OrderFeature.user_click(String)"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 38200,
+              "status": "skipped"
             },
             "line": 30,
-            "name": "User fill in payment detail",
-            "match": {},
+            "name": "User click \"orderConfirmation_cancelled\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"orderConfirmation_cancelled\"",
+                  "offset": 11
+                }
+              ],
+              "location": "OrderFeature.user_click(String)"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 39000,
+              "status": "skipped"
             },
             "line": 31,
-            "name": "User click \"paymentDetail_continue\"",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
+            "name": "The page should be navigated to \"Order Cancelled\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Order Cancelled\"",
+                  "offset": 32
+                }
+              ],
+              "location": "OrderFeature.the_page_should_be_navigated_to(String)"
             },
-            "line": 32,
-            "name": "User click \"orderConfirmation_confirm\"",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 33,
-            "name": "The page should be navigated to \"Order Succeed\"",
-            "match": {},
             "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@removeOrder"
           }
         ]
       },
       {
-        "start_timestamp": "2019-09-13T04:30:03.254Z",
-        "line": 35,
+        "start_timestamp": "2019-09-13T06:15:32.829Z",
+        "line": 33,
         "name": "Successfully view the order history",
         "description": "",
         "id": "order-opal-card-feature;successfully-view-the-order-history",
@@ -388,45 +888,76 @@
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 7427801300,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "User is in the \"login.jsp\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"login.jsp\"",
+                  "offset": 15
+                }
+              ],
+              "location": "OrderFeature.user_is_in_the(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#loginAction_success\"}\n  (Session info: chrome\u003d76.0.3809.132)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-P3652T2\u0027, ip: \u0027172.19.162.223\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_212\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\\Users\\aasdd\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50766}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: adaa0b68d87db410763482c8e09b44ce\n*** Element info: {Using\u003did, value\u003dloginAction_success}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\r\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat asd.test.OrderFeature.user_is_login_as_a_customer(OrderFeature.java:112)\r\n\tat ✽.User is login as a customer(file:opalFeatures/OrderFeature.feature:35)\r\n",
+              "duration": 955985500,
+              "status": "failed"
+            },
+            "line": 35,
+            "name": "User is login as a customer",
+            "match": {
+              "location": "OrderFeature.user_is_login_as_a_customer()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 24700,
+              "status": "skipped"
             },
             "line": 36,
-            "name": "User is in the \"login.jsp\"",
-            "match": {},
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 37,
-            "name": "User is login as a customer",
-            "match": {},
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 38,
             "name": "User Click on \"order_history\"",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"order_history\"",
+                  "offset": 14
+                }
+              ],
+              "location": "OrderFeature.user_Click_on(String)"
+            },
             "keyword": "When "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 12700,
+              "status": "skipped"
             },
-            "line": 39,
+            "line": 37,
             "name": "The page should be navigated to \"Order History\"",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Order History\"",
+                  "offset": 32
+                }
+              ],
+              "location": "OrderFeature.the_page_should_be_navigated_to(String)"
+            },
             "keyword": "Then "
           }
         ]
       },
       {
-        "start_timestamp": "2019-09-13T04:30:03.256Z",
-        "line": 41,
+        "start_timestamp": "2019-09-13T06:15:41.215Z",
+        "line": 39,
         "name": "Successfully view all the order",
         "description": "",
         "id": "order-opal-card-feature;successfully-view-all-the-order",
@@ -435,29 +966,50 @@
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 7626335300,
+              "status": "passed"
             },
-            "line": 42,
+            "line": 40,
             "name": "User is login as an admin",
-            "match": {},
+            "match": {
+              "location": "OrderFeature.user_is_login_as_an_admin()"
+            },
             "keyword": "Given "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 1520192600,
+              "status": "passed"
             },
-            "line": 43,
+            "line": 41,
             "name": "User Click on \"order_management\"",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"order_management\"",
+                  "offset": 14
+                }
+              ],
+              "location": "OrderFeature.user_Click_on(String)"
+            },
             "keyword": "When "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 694066200,
+              "status": "passed"
             },
-            "line": 44,
+            "line": 42,
             "name": "The page should be navigated to \"Order Management\"",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Order Management\"",
+                  "offset": 32
+                }
+              ],
+              "location": "OrderFeature.the_page_should_be_navigated_to(String)"
+            },
             "keyword": "Then "
           }
         ]
@@ -468,6 +1020,453 @@
     "id": "order-opal-card-feature",
     "keyword": "Feature",
     "uri": "file:opalFeatures/OrderFeature.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2019-09-13T06:15:51.057Z",
+        "line": 7,
+        "name": "Successfully register an Opal Card",
+        "description": "",
+        "id": "register-an-opal-card;successfully-register-an-opal-card",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat asd.test.StaffCardFeature.the_Staff_is_in_the(StaffCardFeature.java:32)\r\n\tat ✽.the Staff is in the \"adminPage.jsp\"(file:opalFeatures/RegisterCardFeature.feature:8)\r\n",
+              "duration": 7427821800,
+              "status": "pending"
+            },
+            "line": 8,
+            "name": "the Staff is in the \"adminPage.jsp\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"adminPage.jsp\"",
+                  "offset": 20
+                }
+              ],
+              "location": "StaffCardFeature.the_Staff_is_in_the(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 24800,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "the Staff click on \"cardManagement\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"cardManagement\"",
+                  "offset": 19
+                }
+              ],
+              "location": "StaffCardFeature.the_Staff_click_on(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 13300,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "the Staff click on \"registerCard\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"registerCard\"",
+                  "offset": 19
+                }
+              ],
+              "location": "StaffCardFeature.the_Staff_click_on(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7600,
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "the Staff fill in the new Opal Card details for \"OpalID\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"OpalID\"",
+                  "offset": 48
+                }
+              ],
+              "location": "StaffCardFeature.the_Staff_fill_in_the_new_Opal_Card_details_for(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7800,
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "the Staff click on \"registerCard_register\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"registerCard_register\"",
+                  "offset": 19
+                }
+              ],
+              "location": "StaffCardFeature.the_Staff_click_on(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7700,
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "the page should give a green success feedback",
+            "match": {
+              "location": "UserCardFeature.the_page_should_give_a_green_success_feedback()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-09-13T06:15:58.486Z",
+        "line": 24,
+        "name": "Failed register an Opal Card",
+        "description": "",
+        "id": "register-an-opal-card;failed-register-an-opal-card;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "error_message": "cucumber.runtime.CucumberException: Failed to instantiate class asd.test.StaffCardFeature\r\n\tat cucumber.runtime.java.DefaultJavaObjectFactory.cacheNewInstance(DefaultJavaObjectFactory.java:47)\r\n\tat cucumber.runtime.java.DefaultJavaObjectFactory.getInstance(DefaultJavaObjectFactory.java:33)\r\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:57)\r\n\tat cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)\r\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:65)\r\n\tat cucumber.runner.TestStep.run(TestStep.java:50)\r\n\tat cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)\r\n\tat cucumber.runner.TestCase.run(TestCase.java:46)\r\n\tat cucumber.runner.Runner.runPickle(Runner.java:49)\r\n\tat cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:123)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:65)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat cucumber.api.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:147)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)\r\n\tat org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)\r\n\tat org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)\r\n\tat org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)\r\nCaused by: java.lang.reflect.InvocationTargetException\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat cucumber.runtime.java.DefaultJavaObjectFactory.cacheNewInstance(DefaultJavaObjectFactory.java:41)\r\n\t... 39 more\r\nCaused by: org.openqa.selenium.SessionNotCreatedException: session not created\nfrom chrome not reachable\n  (Session info: chrome\u003d76.0.3809.132)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-P3652T2\u0027, ip: \u0027172.19.162.223\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_212\u0027\nDriver info: driver.version: Driver\nremote stacktrace: Backtrace:\n\tOrdinal0 [0x00A77C53+1473619]\n\tOrdinal0 [0x009FAD71+961905]\n\tOrdinal0 [0x0098415C+475484]\n\tOrdinal0 [0x0097DAEA+449258]\n\tOrdinal0 [0x0097E188+450952]\n\tOrdinal0 [0x0097F295+455317]\n\tOrdinal0 [0x0097B495+439445]\n\tOrdinal0 [0x00984F10+478992]\n\tOrdinal0 [0x009398FE+170238]\n\tOrdinal0 [0x00938D1D+167197]\n\tOrdinal0 [0x0093742B+160811]\n\tOrdinal0 [0x00920AE6+68326]\n\tOrdinal0 [0x00921BF0+72688]\n\tOrdinal0 [0x00921B89+72585]\n\tOrdinal0 [0x00A14B37+1067831]\n\tGetHandleVerifier [0x00B16845+506677]\n\tGetHandleVerifier [0x00B165E0+506064]\n\tGetHandleVerifier [0x00B1D188+533624]\n\tGetHandleVerifier [0x00B1701A+508682]\n\tOrdinal0 [0x00A0C226+1032742]\n\tOrdinal0 [0x00A0C09F+1032351]\n\tOrdinal0 [0x00A16A4B+1075787]\n\tOrdinal0 [0x00A16BB3+1076147]\n\tOrdinal0 [0x00A15B65+1071973]\n\tBaseThreadInitThunk [0x75C06359+25]\n\tRtlGetAppContainerNamedObjectPath [0x773D7A94+228]\n\tRtlGetAppContainerNamedObjectPath [0x773D7A64+180]\n\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)\r\n\tat org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)\r\n\tat java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)\r\n\tat java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)\r\n\tat java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)\r\n\tat java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)\r\n\tat java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)\r\n\tat java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)\r\n\tat java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)\r\n\tat java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\r\n\tat java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:131)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:181)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:168)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:123)\r\n\tat asd.test.Driver.getDriver(Driver.java:22)\r\n\tat asd.test.StaffCardFeature.\u003cinit\u003e(StaffCardFeature.java:26)\r\n\t... 44 more\r\n",
+              "duration": 15295899900,
+              "status": "failed"
+            },
+            "line": 16,
+            "name": "the Staff is in the \"adminPage.jsp\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"adminPage.jsp\"",
+                  "offset": 20
+                }
+              ],
+              "location": "StaffCardFeature.the_Staff_is_in_the(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 12900,
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "the Staff click on \"cardManagement\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"cardManagement\"",
+                  "offset": 19
+                }
+              ],
+              "location": "StaffCardFeature.the_Staff_click_on(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7900,
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "the Staff click on \"registerCard\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"registerCard\"",
+                  "offset": 19
+                }
+              ],
+              "location": "StaffCardFeature.the_Staff_click_on(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10100,
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "the Staff fill in the new Opal Card details for \"8888 8888 8888 8888\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"8888 8888 8888 8888\"",
+                  "offset": 48
+                }
+              ],
+              "location": "StaffCardFeature.the_Staff_fill_in_the_new_Opal_Card_details_for(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 9800,
+              "status": "skipped"
+            },
+            "line": 20,
+            "name": "the Staff click on \"registerCard_register\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"registerCard_register\"",
+                  "offset": 19
+                }
+              ],
+              "location": "StaffCardFeature.the_Staff_click_on(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10000,
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "the page should give a red fail feedback",
+            "match": {
+              "location": "UserCardFeature.the_page_should_give_a_red_fail_feedback()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Register an Opal Card",
+    "description": "    As a staff\n    I want to register an Opal Card to the database\n    So that the customer can link the Opal card",
+    "id": "register-an-opal-card",
+    "keyword": "Feature",
+    "uri": "file:opalFeatures/RegisterCardFeature.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2019-09-13T06:16:13.784Z",
+        "line": 6,
+        "name": "Successfully unlink Opal card from account",
+        "description": "",
+        "id": "unlink-opal-card;successfully-unlink-opal-card-from-account",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat asd.test.UserCardFeature.the_User_is_logged_in_to_the_website(UserCardFeature.java:36)\r\n\tat ✽.the User is logged in to the website(file:opalFeatures/UnlinkCardFeature.feature:7)\r\n",
+              "duration": 9325408100,
+              "status": "pending"
+            },
+            "line": 7,
+            "name": "the User is logged in to the website",
+            "match": {
+              "location": "UserCardFeature.the_User_is_logged_in_to_the_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 14400,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "is in the \"main.jsp\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"main.jsp\"",
+                  "offset": 10
+                }
+              ],
+              "location": "UserCardFeature.is_in_the(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 12600,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "User click on \"unlinkCard\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"unlinkCard\"",
+                  "offset": 14
+                }
+              ],
+              "location": "UserCardFeature.user_click_on(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 10400,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "User click on \"unlink\" for \"opalID\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"unlink\"",
+                  "offset": 14
+                },
+                {
+                  "val": "\"opalID\"",
+                  "offset": 27
+                }
+              ],
+              "location": "UserCardFeature.user_click_on_for(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 15800,
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "User should not see \"opalID\" in the \"unlink.jsp\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"opalID\"",
+                  "offset": 20
+                },
+                {
+                  "val": "\"unlink.jsp\"",
+                  "offset": 36
+                }
+              ],
+              "location": "UserCardFeature.user_should_not_see_in_the(String,String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Unlink Opal Card",
+    "description": "   As a customer\n   I want to unlink my Opal card to my account\n   In order to remove it from my Opal card list",
+    "id": "unlink-opal-card",
+    "keyword": "Feature",
+    "uri": "file:opalFeatures/UnlinkCardFeature.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2019-09-13T06:16:23.112Z",
+        "line": 6,
+        "name": "Successfully view the details of the Opal card",
+        "description": "",
+        "id": "view-details-of-an-opal-card;successfully-view-the-details-of-the-opal-card",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat asd.test.UserCardFeature.the_User_is_logged_in_to_the_website(UserCardFeature.java:36)\r\n\tat ✽.the User is logged in to the website(file:opalFeatures/ViewCardDetails.feature:7)\r\n",
+              "duration": 9519963800,
+              "status": "pending"
+            },
+            "line": 7,
+            "name": "the User is logged in to the website",
+            "match": {
+              "location": "UserCardFeature.the_User_is_logged_in_to_the_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5800,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "is in the \"main.jsp\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"main.jsp\"",
+                  "offset": 10
+                }
+              ],
+              "location": "UserCardFeature.is_in_the(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7600,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "User click on \"viewDetails\" for \"opalID\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"viewDetails\"",
+                  "offset": 14
+                },
+                {
+                  "val": "\"opalID\"",
+                  "offset": 32
+                }
+              ],
+              "location": "UserCardFeature.user_click_on_for(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2800,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "the page should be navigated to \"Card Details\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Card Details\"",
+                  "offset": 32
+                }
+              ],
+              "location": "UserCardFeature.the_page_should_be_navigated_to(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "View Details of an Opal Card",
+    "description": "    As a customer\n    I want to view the details of an Opal Card\n    In order to see the remaining balance",
+    "id": "view-details-of-an-opal-card",
+    "keyword": "Feature",
+    "uri": "file:opalFeatures/ViewCardDetails.feature",
     "tags": []
   }
 ]

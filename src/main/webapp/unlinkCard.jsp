@@ -20,73 +20,72 @@
     </head>
     <body>
         <%                   
-            String adminemail = (String)session.getAttribute("adminemail");
-            String adminpass = (String)session.getAttribute("adminpassword");
-            MongoDBConnector connector = new MongoDBConnector(adminemail, adminpass);
+            MongoDBConnector connector = new MongoDBConnector();
             
+            // If unlink button is clicked, remove card from the user's account
             if (request.getParameter("unlink") != null){
                 OpalCard removedCard = new OpalCard(request.getParameter("opalID"));
                 connector.unlinkCard(removedCard, user);
             }
             
-            OpalCards dbCards = new OpalCards();
             ArrayList<OpalCard> cards = new ArrayList<OpalCard>();
-            dbCards = connector.getOpalCards(user);
-            cards = dbCards.getList(); 
+            cards = connector.getOpalCards(user);
+            // If the user has Opal card(s)
             if (!cards.isEmpty()) {
         %>
-            <div class="box">
-            <h1>Unlink Opal card</h1>
-            <table>
-                <thead>
-                    <th>Card Type</th>
-                    <th>Opal Number</th>
-                    <th>Balance</th>
-                    <th>&nbsp;</th>
-                </thead>
+                <div class="unlinkBox">
+                <h1>Unlink Opal card</h1>
+                    <table>
+                        <thead>
+                            <th>Card Type</th>
+                            <th>Opal Number</th>
+                            <th>Balance</th>
+                            <th>&nbsp;</th>
+                        </thead>
         <%
-            for (OpalCard card: cards) {
-                String imgURL = "";
-                String type = card.getType();
-                if (type.equalsIgnoreCase("Child")) {
-                    imgURL = "image/card_child_large.png";
-                }
-                else if (type.equalsIgnoreCase("Adult")) {
-                    imgURL = "image/card_adult_large.png";
-                }
-                else if (type.equalsIgnoreCase("Senior")) {
-                    imgURL = "image/card_pensioner_large.png";
-                }
-                else if (type.equalsIgnoreCase("Concession")) {
-                    imgURL = "image/card_concession_large.png";
-                }
+                for (OpalCard card: cards) {
+                    String imgURL = "";
+                    String type = card.getType();
+                    if (type.equalsIgnoreCase("Child")) {
+                        imgURL = "image/card_child_large.png";
+                    }
+                    else if (type.equalsIgnoreCase("Adult")) {
+                        imgURL = "image/card_adult_large.png";
+                    }
+                    else if (type.equalsIgnoreCase("Senior")) {
+                        imgURL = "image/card_pensioner_large.png";
+                    }
+                    else if (type.equalsIgnoreCase("Concession")) {
+                        imgURL = "image/card_concession_large.png";
+                    }
                 
         %>        
-                    <tr>
-                        <td><img src=<%=imgURL%> width="30px">&ensp;&ensp;<%=type%></td>
-                        <td><%=card.getOpalID()%></td>
-                        <td>$<%=card.getBalance()%></td>
-                        <td>
-                            <form method='POST' action='unlinkCard.jsp'>
-                                <input type="hidden" value="<%=card.getOpalID()%>" name="opalID">
-                                <input type="Submit" value="Unlink" name="unlink" onClick="return confirm('Are you sure?');">
-                            </form>
-                        </td>
-                    </tr>
+                            <tr>
+                                <td><img src=<%=imgURL%> width="30px">&ensp;&ensp;<%=type%></td>
+                                <td><%=card.getOpalID()%></td>
+                                <td>$<%=card.getBalance()%></td>
+                                <td>
+                                    <form method='POST' action='unlinkCard.jsp'>
+                                        <input type="hidden" value="<%=card.getOpalID()%>" name="opalID">
+                                        <input type="Submit" value="Unlink" name="unlink" onClick="return confirm('Are you sure?');">
+                                    </form>
+                                </td>
+                            </tr>
         <%
-            }               
+                }               
         %>
-            </table>
-            </div>
+                    </table>
+                </div>
         <%
-        }
-        else {
+            }
+            // If the user does not has an Opal cars
+            else {
         %>
             <div class="box">    
                 <h2>Welcome to Opal Card Management website!</h2>
             </div>
         <%
-        }
+            }
         %>
     </body>
 </html>

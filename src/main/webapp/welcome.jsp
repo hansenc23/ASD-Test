@@ -21,9 +21,7 @@
     </head>   
     <%
         
-        String adminemail = (String)session.getAttribute("adminemail");
-        String adminpass = (String)session.getAttribute("adminpassword");
-        MongoDBConnector connector = new MongoDBConnector(adminemail, adminpass);
+        MongoDBConnector connector = new MongoDBConnector();
          
         
         String firstName = request.getParameter("firstName");

@@ -21,9 +21,7 @@
     </head>
     <body>
         <%
-            String adminemail = (String)session.getAttribute("adminemail");
-            String adminpass = (String)session.getAttribute("adminpassword");
-            MongoDBConnector connector = new MongoDBConnector(adminemail, adminpass);
+            MongoDBConnector connector = new MongoDBConnector();
             
             Orders orderlist = new Orders(); 
             ArrayList<Order> orders = new ArrayList<Order>();

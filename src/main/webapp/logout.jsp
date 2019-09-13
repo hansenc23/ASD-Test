@@ -18,9 +18,7 @@
     </head>
     <body>
         <%
-        String adminemail = (String)session.getAttribute("adminemail");
-        String adminpass = (String)session.getAttribute("adminpassword");
-        MongoDBConnector connector = new MongoDBConnector(adminemail, adminpass);
+        MongoDBConnector connector = new MongoDBConnector();
         
             SimpleDateFormat formatter= new SimpleDateFormat("yyyy-MM-dd 'at' HH:mm:ss z");//Record the time of logout
             Date date = new Date(System.currentTimeMillis());

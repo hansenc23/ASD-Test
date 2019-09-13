@@ -21,8 +21,8 @@
                 User userno = (User)session.getAttribute("user");
                 if(userno != null){
             %>
-                    <a href="linkCard.jsp">Link existing Opal card to your account</a>
-                    <a href="unlinkCard.jsp">Unlink Opal card from your account</a>
+                    <a id="sidebar_linkCard" href="linkCard.jsp">Link existing Opal card to your account</a>
+                    <a id="sidebar_unlinkCard" href="unlinkCard.jsp">Unlink Opal card from your account</a>
                     <a id="sidebar_addPaymentMethod" href="addPaymentMethod.jsp">Add payment method</a>
                     <a id="sidebar_topUpValue" href="topUpValue.jsp">Top-up Opal card</a>
                     <a id="sidebar_paymentMethodManagement"href="paymentMethodManagement.jsp">Manage your payment</a>

@@ -39,9 +39,7 @@
                     int expiryYear = Integer.parseInt(request.getParameter("expiryYear"));
                     int cvv = Integer.parseInt(request.getParameter("cvv"));
                     Paymentmethod paymt = new Paymentmethod(firstname,lastname,cardnumber,expiryMonth,expiryYear,cvv);
-                    String adminemail = (String)session.getAttribute("adminemail");
-                    String adminpass = (String)session.getAttribute("adminpassword");
-                    MongoDBConnector connector = new MongoDBConnector(adminemail, adminpass);
+                    MongoDBConnector connector = new MongoDBConnector();
                     String outcome = connector.addPayment(paymt, user);    
         %>                          
         <div class = "topup">

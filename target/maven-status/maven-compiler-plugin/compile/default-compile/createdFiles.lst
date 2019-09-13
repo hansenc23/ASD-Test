@@ -12,7 +12,5 @@ asd\model\Order.class
 asd\model\OpalCards.class
 asd\model\Enqiries.class
 asd\model\Paymentmethods.class
-asd\controller\Validator.class
 asd\model\Users.class
-asd\controller\ValidatorServlet.class
 asd\model\Question.class

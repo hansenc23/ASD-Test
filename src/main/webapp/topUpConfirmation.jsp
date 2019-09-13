@@ -27,9 +27,7 @@
              <form method = "post" action = "paymentOutcome.jsp" >
     <%  
         String opalId = (String)session.getAttribute("opalID");
-        String adminemail = (String)session.getAttribute("adminemail");
-        String adminpass = (String)session.getAttribute("adminpassword");
-        MongoDBConnector connector = new MongoDBConnector(adminemail, adminpass); 
+        MongoDBConnector connector = new MongoDBConnector();
         Paymentmethods pmtmethods = new Paymentmethods();
         ArrayList<Paymentmethod> paymentMethods = new ArrayList<Paymentmethod>();
         pmtmethods  =  connector.getPaymentMethods(user);

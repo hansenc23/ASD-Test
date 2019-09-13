@@ -20,9 +20,7 @@
     <body>
          <%
            String email = user.getEmail();
-           String adminemail = (String)session.getAttribute("adminemail");
-           String adminpass = (String)session.getAttribute("adminpassword");
-           MongoDBConnector connector = new MongoDBConnector(adminemail, adminpass);
+           MongoDBConnector connector = new MongoDBConnector();
            Times dbTimes = new Times();
            ArrayList<Time> times = new ArrayList<Time>();
          

@@ -45,35 +45,38 @@
             </form>
         </div>
         <%
-            String adminemail = (String)session.getAttribute("adminemail");
-            String adminpass = (String)session.getAttribute("adminpassword");
-            MongoDBConnector connector = new MongoDBConnector(adminemail, adminpass);
+            if (request.getParameter("link") != null) {
+                MongoDBConnector connector = new MongoDBConnector();
+                
+                // Get the data from the staff's input (opalID, securityCode, card Type)
+                String opalID = request.getParameter("ID1") + " " + request.getParameter("ID2") + " "
+                              + request.getParameter("ID3") + " " +request.getParameter("ID4");
+                String securityCode = request.getParameter("securityCode");
+                String type = request.getParameter("type");
+                // Initial balance as zero
+                double initialBalance = 0.00;
+
+                OpalCard newCard = new OpalCard(opalID, initialBalance, type, securityCode);
+                boolean exist = false;
+                // Check if the registered card is already exist in DB
+                exist = connector.isExist(newCard);
             
-            String opalID = request.getParameter("ID1") + " " + request.getParameter("ID2") + " "
-                          + request.getParameter("ID3") + " " +request.getParameter("ID4");
-            String securityCode = request.getParameter("securityCode");
-            String type = request.getParameter("type");
-            double initialBalance = 0.00;
-            
-            OpalCard newCard = new OpalCard(opalID, initialBalance, type, securityCode);
-            boolean exist = false;
-            exist = connector.isExist(newCard);
-            
-            // If the form is submitted but card is already exist in DB
-            if (exist && request.getParameter("link") != null) {
+                // If the form is submitted but card is already exist in DB
+                if (exist) {
         %>
-        <div class="fail">
-            <p>Card is already registered in database!</p>
-        </div>
+                    <div class="fail">
+                        <p>Card is already registered in database!</p>
+                    </div>
         <%
-            // If the form is submitted & card is not in DB
-            } else if (!exist && request.getParameter("link") != null) {
-            connector.registerCard(newCard);
+                // If the form is submitted & card is not in DB
+                } else if (!exist) {
+                connector.registerCard(newCard);
         %>
-        <div class="success">
-            <p>Card is successfully registered!</p>
-        </div>    
+                    <div class="success">
+                        <p>Card is successfully registered!</p>
+                    </div>    
         <%
+                }
             }
         %>
     </body>

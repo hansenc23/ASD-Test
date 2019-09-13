@@ -34,9 +34,7 @@ alert("Form has been submitted");
         String email = request.getParameter("email");
         String password = request.getParameter("password");
       
-        String adminemail = (String)session.getAttribute("adminemail");
-        String adminpass = (String)session.getAttribute("adminpassword");
-        MongoDBConnector connector = new MongoDBConnector(adminemail, adminpass);
+        MongoDBConnector connector = new MongoDBConnector();
        
         Users u = connector.loadUsers();  
            

@@ -21,10 +21,8 @@
             
             <form class="methods" method="post" action="updatePaymentmethod.jsp">
               
-                          <%      
-                String adminemail = (String)session.getAttribute("adminemail");
-                String adminpass = (String)session.getAttribute("adminpassword");
-                MongoDBConnector connector = new MongoDBConnector(adminemail, adminpass);
+        <%      
+                MongoDBConnector connector = new MongoDBConnector();
                 Paymentmethods pmtmethods = new Paymentmethods();
                 ArrayList<Paymentmethod> paymentMethods = new ArrayList<Paymentmethod>();
                 pmtmethods  =  connector.getPaymentMethods(user);

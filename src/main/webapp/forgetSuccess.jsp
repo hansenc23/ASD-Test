@@ -26,13 +26,8 @@
         
                 
         
-        String adminemail = (String)session.getAttribute("adminemail");
-        String adminpass = (String)session.getAttribute("adminpassword");
-        MongoDBConnector connector = new MongoDBConnector(adminemail, adminpass);
+        MongoDBConnector connector = new MongoDBConnector();
         //if(connector != null ) connector.update(user); else out.print("Cannot add user");
-        
-        String old
-
 
 
     %>
@@ -44,7 +39,6 @@
 
                     <tr>
                         <td>Password</td>
-                        <td>: <%=name%></td>
                     </tr>
                     
                     
