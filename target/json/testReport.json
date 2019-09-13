@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2019-09-13T07:31:39.080Z",
+        "start_timestamp": "2019-09-13T07:51:25.746Z",
         "line": 7,
         "name": "Successfully link Opal card to account",
         "description": "",
@@ -58,7 +58,7 @@
           },
           {
             "result": {
-              "duration": 9100,
+              "duration": 11900,
               "status": "skipped"
             },
             "line": 13,
@@ -86,7 +86,7 @@
         ]
       },
       {
-        "start_timestamp": "2019-09-13T07:31:39.091Z",
+        "start_timestamp": "2019-09-13T07:51:25.757Z",
         "line": 26,
         "name": "Failed linking Opal card with wrong Opal details",
         "description": "",
@@ -141,7 +141,7 @@
           },
           {
             "result": {
-              "duration": 8900,
+              "duration": 10300,
               "status": "skipped"
             },
             "line": 22,
@@ -180,7 +180,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2019-09-13T07:31:39.094Z",
+        "start_timestamp": "2019-09-13T07:51:25.762Z",
         "line": 6,
         "name": "Successfully list all Opal cards",
         "description": "",
@@ -238,7 +238,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2019-09-13T07:31:39.097Z",
+        "start_timestamp": "2019-09-13T07:51:25.766Z",
         "line": 8,
         "name": "Successfully list linked Opal Cards",
         "description": "",
@@ -296,7 +296,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2019-09-13T07:31:39.099Z",
+        "start_timestamp": "2019-09-13T07:51:25.768Z",
         "line": 4,
         "name": "Successfully order an Opal Card and edit an order as an anonymous user",
         "description": "",
@@ -306,7 +306,7 @@
         "steps": [
           {
             "result": {
-              "duration": 8814315200,
+              "duration": 8691300500,
               "status": "passed"
             },
             "line": 5,
@@ -324,7 +324,7 @@
           },
           {
             "result": {
-              "duration": 1121763400,
+              "duration": 6263441300,
               "status": "passed"
             },
             "line": 6,
@@ -342,7 +342,7 @@
           },
           {
             "result": {
-              "duration": 752199900,
+              "duration": 5763740900,
               "status": "passed"
             },
             "line": 7,
@@ -360,7 +360,7 @@
           },
           {
             "result": {
-              "duration": 702072900,
+              "duration": 5811715900,
               "status": "passed"
             },
             "line": 8,
@@ -372,7 +372,7 @@
           },
           {
             "result": {
-              "duration": 997529600,
+              "duration": 6012338000,
               "status": "passed"
             },
             "line": 9,
@@ -390,7 +390,7 @@
           },
           {
             "result": {
-              "duration": 219893600,
+              "duration": 253455000,
               "status": "passed"
             },
             "line": 10,
@@ -402,7 +402,7 @@
           },
           {
             "result": {
-              "duration": 537784300,
+              "duration": 5515029400,
               "status": "passed"
             },
             "line": 11,
@@ -420,7 +420,7 @@
           },
           {
             "result": {
-              "duration": 808065500,
+              "duration": 1106317400,
               "status": "passed"
             },
             "line": 12,
@@ -432,7 +432,7 @@
           },
           {
             "result": {
-              "duration": 705065200,
+              "duration": 5599555800,
               "status": "passed"
             },
             "line": 13,
@@ -450,7 +450,7 @@
           },
           {
             "result": {
-              "duration": 457515400,
+              "duration": 485442000,
               "status": "passed"
             },
             "line": 14,
@@ -468,7 +468,7 @@
           },
           {
             "result": {
-              "duration": 1367407600,
+              "duration": 1491475000,
               "status": "passed"
             },
             "line": 15,
@@ -480,7 +480,7 @@
           },
           {
             "result": {
-              "duration": 408821600,
+              "duration": 397553900,
               "status": "passed"
             },
             "line": 16,
@@ -498,7 +498,7 @@
           },
           {
             "result": {
-              "duration": 863444600,
+              "duration": 1023152400,
               "status": "passed"
             },
             "line": 17,
@@ -516,7 +516,7 @@
           },
           {
             "result": {
-              "duration": 723000300,
+              "duration": 775039800,
               "status": "passed"
             },
             "line": 18,
@@ -540,7 +540,7 @@
         ]
       },
       {
-        "start_timestamp": "2019-09-13T07:31:57.581Z",
+        "start_timestamp": "2019-09-13T07:52:14.960Z",
         "line": 21,
         "name": "Successfully order an Opal Card as a customer",
         "description": "",
@@ -550,7 +550,7 @@
         "steps": [
           {
             "result": {
-              "duration": 7596129100,
+              "duration": 7613238600,
               "status": "passed"
             },
             "line": 22,
@@ -568,7 +568,7 @@
           },
           {
             "result": {
-              "duration": 1941494100,
+              "duration": 2067326500,
               "status": "passed"
             },
             "line": 23,
@@ -580,7 +580,7 @@
           },
           {
             "result": {
-              "duration": 826202900,
+              "duration": 768188800,
               "status": "passed"
             },
             "line": 24,
@@ -598,7 +598,7 @@
           },
           {
             "result": {
-              "duration": 643676100,
+              "duration": 624523500,
               "status": "passed"
             },
             "line": 25,
@@ -616,7 +616,7 @@
           },
           {
             "result": {
-              "duration": 144839000,
+              "duration": 147196200,
               "status": "passed"
             },
             "line": 26,
@@ -628,7 +628,7 @@
           },
           {
             "result": {
-              "duration": 479455200,
+              "duration": 545947800,
               "status": "passed"
             },
             "line": 27,
@@ -646,7 +646,7 @@
           },
           {
             "result": {
-              "duration": 666902600,
+              "duration": 704878400,
               "status": "passed"
             },
             "line": 28,
@@ -658,7 +658,7 @@
           },
           {
             "result": {
-              "duration": 653655600,
+              "duration": 699238900,
               "status": "passed"
             },
             "line": 29,
@@ -676,7 +676,7 @@
           },
           {
             "result": {
-              "duration": 806147600,
+              "duration": 945507900,
               "status": "passed"
             },
             "line": 30,
@@ -694,7 +694,7 @@
           },
           {
             "result": {
-              "duration": 711867800,
+              "duration": 755880700,
               "status": "passed"
             },
             "line": 31,
@@ -718,7 +718,7 @@
         ]
       },
       {
-        "start_timestamp": "2019-09-13T07:32:12.054Z",
+        "start_timestamp": "2019-09-13T07:52:29.834Z",
         "line": 33,
         "name": "Successfully view the order history",
         "description": "",
@@ -728,7 +728,7 @@
         "steps": [
           {
             "result": {
-              "duration": 7492984100,
+              "duration": 7634283500,
               "status": "passed"
             },
             "line": 34,
@@ -746,7 +746,7 @@
           },
           {
             "result": {
-              "duration": 1982414000,
+              "duration": 1776843200,
               "status": "passed"
             },
             "line": 35,
@@ -758,7 +758,7 @@
           },
           {
             "result": {
-              "duration": 1660299200,
+              "duration": 1365816200,
               "status": "passed"
             },
             "line": 36,
@@ -776,7 +776,7 @@
           },
           {
             "result": {
-              "duration": 715293700,
+              "duration": 714925400,
               "status": "passed"
             },
             "line": 37,
@@ -795,7 +795,7 @@
         ]
       },
       {
-        "start_timestamp": "2019-09-13T07:32:23.906Z",
+        "start_timestamp": "2019-09-13T07:52:41.328Z",
         "line": 39,
         "name": "Successfully view all the order",
         "description": "",
@@ -805,7 +805,7 @@
         "steps": [
           {
             "result": {
-              "duration": 7686442700,
+              "duration": 7577643500,
               "status": "passed"
             },
             "line": 40,
@@ -817,7 +817,7 @@
           },
           {
             "result": {
-              "duration": 2813999700,
+              "duration": 3052346600,
               "status": "passed"
             },
             "line": 41,
@@ -835,7 +835,7 @@
           },
           {
             "result": {
-              "duration": 714685500,
+              "duration": 697709100,
               "status": "passed"
             },
             "line": 42,
@@ -865,7 +865,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2019-09-13T07:32:35.128Z",
+        "start_timestamp": "2019-09-13T07:52:52.663Z",
         "line": 7,
         "name": "Successfully register an Opal Card",
         "description": "",
@@ -930,7 +930,7 @@
         ]
       },
       {
-        "start_timestamp": "2019-09-13T07:32:35.137Z",
+        "start_timestamp": "2019-09-13T07:52:52.673Z",
         "line": 24,
         "name": "Failed register an Opal Card",
         "description": "",
@@ -1006,7 +1006,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2019-09-13T07:32:35.145Z",
+        "start_timestamp": "2019-09-13T07:52:52.686Z",
         "line": 6,
         "name": "Successfully unlink Opal card from account",
         "description": "",
@@ -1073,7 +1073,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2019-09-13T07:32:35.152Z",
+        "start_timestamp": "2019-09-13T07:52:52.694Z",
         "line": 6,
         "name": "Successfully view the details of the Opal card",
         "description": "",
