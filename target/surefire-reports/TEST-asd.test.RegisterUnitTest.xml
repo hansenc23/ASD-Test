@@ -1,5 +1,15 @@
+<<<<<<< HEAD:target/surefire-reports/TEST-asd.test.RunTest.xml
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuite tests="1" failures="0" name="asd.test.RunTest" time="38.238" errors="0" skipped="0">
+=======
+<<<<<<< HEAD:target/surefire-reports/TEST-asd.test.RegisterUnitTest.xml
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="5" failures="0" name="asd.test.RegisterUnitTest" time="33.59" errors="0" skipped="0">
+=======
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="22" failures="0" name="asd.test.RunTest" time="44.701" errors="0" skipped="20">
+>>>>>>> 67e71ea192e812e83e57846e2a80a56d9c8d8df9:target/surefire-reports/TEST-asd.test.RunTest.xml
+>>>>>>> 56006b60823a401fde9e29555019663de3d869c8:target/surefire-reports/TEST-asd.test.RegisterUnitTest.xml
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files (x86)\Java\jdk1.8.0_201\jre\bin"/>
@@ -14,14 +24,27 @@
     <property name="user.country" value="AU"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value=""/>
+    <property name="test" value="asd.test.RegisterUnitTest"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="user.dir" value="C:\Users\kevin\OneDrive\Desktop\ASD\ASD-Test"/>
     <property name="java.runtime.version" value="1.8.0_201-b09"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+<<<<<<< HEAD:target/surefire-reports/TEST-asd.test.RunTest.xml
     <property name="java.endorsed.dirs" value="C:\Program Files (x86)\Java\jdk1.8.0_201\jre\lib\endorsed"/>
     <property name="os.arch" value="x86"/>
     <property name="java.io.tmpdir" value="C:\Users\kevin\AppData\Local\Temp\"/>
     <property name="line.separator" value="
+=======
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_201\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+<<<<<<< HEAD:target/surefire-reports/TEST-asd.test.RegisterUnitTest.xml
+    <property name="java.io.tmpdir" value="C:\Users\hanse\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+=======
+    <property name="java.io.tmpdir" value="C:\Users\Hieu\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+>>>>>>> 67e71ea192e812e83e57846e2a80a56d9c8d8df9:target/surefire-reports/TEST-asd.test.RunTest.xml
+>>>>>>> 56006b60823a401fde9e29555019663de3d869c8:target/surefire-reports/TEST-asd.test.RegisterUnitTest.xml
 "/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
@@ -42,9 +65,20 @@
     <property name="user.name" value="kevin"/>
     <property name="java.class.path" value="C:\Program Files (x86)\NetBeans 8.1\java\maven\boot\plexus-classworlds-2.4.jar"/>
     <property name="java.vm.specification.version" value="1.8"/>
+<<<<<<< HEAD:target/surefire-reports/TEST-asd.test.RunTest.xml
     <property name="sun.arch.data.model" value="32"/>
     <property name="java.home" value="C:\Program Files (x86)\Java\jdk1.8.0_201\jre"/>
     <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dmaven.ext.class.path=C:\Program Files (x86)\NetBeans 8.1\java\maven-nblib\netbeans-eventspy.jar -Dfile.encoding=UTF-8 test"/>
+=======
+    <property name="sun.arch.data.model" value="64"/>
+<<<<<<< HEAD:target/surefire-reports/TEST-asd.test.RegisterUnitTest.xml
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_221\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dtest=asd.test.RegisterUnitTest -Dmaven.ext.class.path=C:\Program Files\NetBeans 8.2\java\maven-nblib\netbeans-eventspy.jar -Dfile.encoding=UTF-8 surefire:test"/>
+=======
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_201\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dmaven.ext.class.path=C:\Program Files\NetBeans 8.2\java\maven-nblib\netbeans-eventspy.jar -Dfile.encoding=UTF-8 test"/>
+>>>>>>> 67e71ea192e812e83e57846e2a80a56d9c8d8df9:target/surefire-reports/TEST-asd.test.RunTest.xml
+>>>>>>> 56006b60823a401fde9e29555019663de3d869c8:target/surefire-reports/TEST-asd.test.RegisterUnitTest.xml
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -61,5 +95,78 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"/>
   </properties>
+<<<<<<< HEAD:target/surefire-reports/TEST-asd.test.RunTest.xml
   <testcase classname="Access Manager" name="A user want to delete their access history" time="37.831"/>
+=======
+<<<<<<< HEAD:target/surefire-reports/TEST-asd.test.RegisterUnitTest.xml
+  <testcase classname="asd.test.RegisterUnitTest" name="updateDetails" time="7.619"/>
+  <testcase classname="asd.test.RegisterUnitTest" name="addSecurityQuestion" time="7.185"/>
+  <testcase classname="asd.test.RegisterUnitTest" name="getUserID" time="7.207"/>
+  <testcase classname="asd.test.RegisterUnitTest" name="listUser" time="3.805"/>
+  <testcase classname="asd.test.RegisterUnitTest" name="updatePassword" time="7.774"/>
+=======
+  <testcase classname="TopUpManagementFeature" name="Successfully create\/update\/delete preffered payment method" time="21.461"/>
+  <testcase classname="TopUpManagementFeature" name="Successfully create top up card" time="14.948"/>
+  <testcase classname="Online User Registration" name="Successfully created an account" time="7.319">
+    <skipped/>
+  </testcase>
+  <testcase classname="Online User Registration" name="Successfully created an account" time="7.319">
+    <skipped/>
+  </testcase>
+  <testcase classname="Online User Registration" name="Successfully created an account" time="7.319">
+    <skipped/>
+  </testcase>
+  <testcase classname="Online User Registration" name="Successfully update account details" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="Online User Registration" name="Successfully update account details" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="Online User Registration" name="Successfully update account details" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="Online User Registration" name="Successfully update account details" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="Online User Registration" name="Successfully update account details" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="Online User Registration" name="Successfully update account details" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="Online User Registration" name="Successfully update account details" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="Online User Registration" name="Successfully update account details" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="Online User Registration" name="Successfully update account details" time="0">
+    <skipped/>
+  </testcase>
+  <testcase classname="Online User Registration" name="Successfully update account details" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase classname="Online User Registration" name="Successfully update account details" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase classname="Online User Registration" name="Successfully update account details" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase classname="Online User Registration" name="Successfully update account details" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase classname="Online User Registration" name="Successfully forget password" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase classname="Online User Registration" name="Successfully forget password" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase classname="Online User Registration" name="Successfully forget password" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase classname="Online User Registration" name="Successfully forget password" time="0.001">
+    <skipped/>
+  </testcase>
+>>>>>>> 67e71ea192e812e83e57846e2a80a56d9c8d8df9:target/surefire-reports/TEST-asd.test.RunTest.xml
+>>>>>>> 56006b60823a401fde9e29555019663de3d869c8:target/surefire-reports/TEST-asd.test.RegisterUnitTest.xml
 </testsuite>
