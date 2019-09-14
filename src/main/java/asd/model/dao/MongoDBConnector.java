@@ -690,7 +690,6 @@ public class MongoDBConnector {
         return test;
     }
     
-    // Update registered opal card's customer ID from null to user's ID
     public String testLinkCard(OpalCard card, User user) {
         MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
         String test;
@@ -706,7 +705,6 @@ public class MongoDBConnector {
         return test;
     }
     
-    // Update the linked opal card's customer ID from user's ID to null
     public String testUnlinkCard(OpalCard card, User user) {
         MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
         String test;
@@ -721,7 +719,6 @@ public class MongoDBConnector {
         return test;
     }
     
-    // For staff to show all opal cards
     public String testShowAllCards() {
         MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
         ArrayList<OpalCard> opalCards = new ArrayList<OpalCard>();
@@ -740,8 +737,6 @@ public class MongoDBConnector {
         return test;
     }
     
-    
-    //Get all opal card(s) of a particular user
     public String testGetOpalCards(User user) {
         MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
         ArrayList<OpalCard> opalCards = new ArrayList<OpalCard>();
@@ -761,7 +756,6 @@ public class MongoDBConnector {
         return test;
     }
    
-    // Get the details of a card
     public String testGetCardDetails(String opalID) {
         MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
         OpalCard card;
@@ -778,7 +772,6 @@ public class MongoDBConnector {
         return test;
     }
     
-    // Get customer's name for staff to see in the card details page
     public String testGetCustomerName(String customerID) {
         MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
         String name = " ";
@@ -797,7 +790,6 @@ public class MongoDBConnector {
         return test;
     }
     
-    //If Opal Card is already exist in DB    
     public String testIsExist(OpalCard card) {
         MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
         boolean exist = false;
@@ -816,7 +808,6 @@ public class MongoDBConnector {
         return test;
     }
     
-    // Whether the card that the user want to link already been linked to their account
     public String testIsLinked(OpalCard card, User user) {
         MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
         boolean linked = false;
@@ -836,7 +827,6 @@ public class MongoDBConnector {
         return test;
     }
     
-    // Check if the card is registered in db and match with its security code (true if it's registered and correct)
     public String testIsAvailable(OpalCard card) {
         MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
         boolean correct = false;

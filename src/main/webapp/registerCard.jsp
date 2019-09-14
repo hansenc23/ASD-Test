@@ -15,7 +15,7 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="css/linkCard.css">
-        <title>Link Card</title>
+        <title>Register Card</title>
     </head>
     <body>
         <h2>Register an Opal Card</h2>
@@ -40,7 +40,7 @@
                                 <option value = "Senior">Senior</option>
                                 <option value = "Concession">Concession</option>
                             </select></td></tr>
-                    <tr><td><input type ="submit" value = "Link" name="link"></td></tr> 
+                    <tr><td><input type ="submit" value = "Register" name="link"></td></tr> 
                 </table>
             </form>
         </div>

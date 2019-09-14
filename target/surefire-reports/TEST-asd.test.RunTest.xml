@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="45" failures="0" name="asd.test.RunTest" time="160.458" errors="0" skipped="41">
+<testsuite tests="9" failures="0" name="asd.test.RunTest" time="113.05" errors="5" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
-    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_212\jre\bin"/>
-    <property name="java.vm.version" value="25.212-b10"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_202\jre\bin"/>
+    <property name="java.vm.version" value="25.202-b08"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=";"/>
@@ -15,12 +15,12 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="C:\Users\aasdd\Desktop\Advanced Software Development\ASD-Project-2"/>
-    <property name="java.runtime.version" value="1.8.0_212-b10"/>
+    <property name="user.dir" value="C:\Users\Michelle\Desktop\Advanced Software Development\R1\FinalR1Master"/>
+    <property name="java.runtime.version" value="1.8.0_202-b08"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_212\jre\lib\endorsed"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_202\jre\lib\endorsed"/>
     <property name="os.arch" value="amd64"/>
-    <property name="java.io.tmpdir" value="C:\Users\aasdd\AppData\Local\Temp\"/>
+    <property name="java.io.tmpdir" value="C:\Users\Michelle\AppData\Local\Temp\"/>
     <property name="line.separator" value="
 "/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
@@ -29,29 +29,29 @@
     <property name="maven.ext.class.path" value="C:\Program Files\NetBeans 8.2\java\maven-nblib\netbeans-eventspy.jar"/>
     <property name="classworlds.conf" value="C:\Program Files\NetBeans 8.2\java\maven\bin\m2.conf"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_212\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\PuTTY\;C:\Program Files\PuTTY\;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Users\aasdd\AppData\Local\Microsoft\WindowsApps;;C:\Users\aasdd\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\aasdd\AppData\Roaming\npm;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_202\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\PuTTY\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Users\Michelle\AppData\Local\Microsoft\WindowsApps;;C:\Users\Michelle\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Michelle\AppData\Roaming\npm;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="os.version" value="10.0"/>
-    <property name="user.home" value="C:\Users\aasdd"/>
-    <property name="user.timezone" value="GMT+10:00"/>
+    <property name="user.home" value="C:\Users\Michelle"/>
+    <property name="user.timezone" value="Australia/Sydney"/>
     <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
     <property name="java.specification.version" value="1.8"/>
     <property name="file.encoding" value="UTF-8"/>
-    <property name="user.name" value="aasdd"/>
+    <property name="user.name" value="Michelle"/>
     <property name="java.class.path" value="C:\Program Files\NetBeans 8.2\java\maven\boot\plexus-classworlds-2.4.jar"/>
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_212\jre"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_202\jre"/>
     <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dmaven.ext.class.path=C:\Program Files\NetBeans 8.2\java\maven-nblib\netbeans-eventspy.jar -Dfile.encoding=UTF-8 clean install"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
     <property name="java.vm.info" value="mixed mode"/>
-    <property name="java.version" value="1.8.0_212"/>
-    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_212\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
-    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_212\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_212\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_212\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_212\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_212\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_212\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_212\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_212\jre\classes"/>
+    <property name="java.version" value="1.8.0_202"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_202\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_202\jre\classes"/>
     <property name="java.vendor" value="Oracle Corporation"/>
     <property name="maven.home" value="C:\Program Files\NetBeans 8.2\java\maven"/>
     <property name="file.separator" value="\"/>
@@ -61,131 +61,250 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="Link Card Feature" name="Successfully link Opal card to account" time="0.003">
-    <skipped/>
+  <testcase classname="Card Management Feature" name="Successfully link Opal card to account" time="37.18"/>
+  <testcase classname="Card Management Feature" name="Failed linking Opal card with wrong Opal details" time="13.634"/>
+  <testcase classname="Card Management Feature" name="Successfully unlink Opal card from account" time="14.593"/>
+  <testcase classname="Card Management Feature" name="Successfully search an Opal Card by Opal ID" time="11.327">
+    <error message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#searchID&quot;}
+  (Session info: chrome=77.0.3865.75)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-CBD3LMIB&apos;, ip: &apos;172.19.183.95&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.75, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\Michelle\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50890}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: fb66d500d24b49cce04c7c9b5cfff134
+*** Element info: {Using=id, value=searchID}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#searchID&quot;}
+  (Session info: chrome=77.0.3865.75)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-CBD3LMIB&apos;, ip: &apos;172.19.183.95&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.75, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\Michelle\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50890}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: fb66d500d24b49cce04c7c9b5cfff134
+*** Element info: {Using=id, value=searchID}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at asd.test.CardManagementFeature.user_select_an(CardManagementFeature.java:137)
+	at ✽.User select an &quot;OpalID&quot;(file:opalFeatures/CardManagementFeature.feature:40)
+</error>
+    <system-err>Starting ChromeDriver 76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}) on port 43978
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1568435874.004][WARNING]: This version of ChromeDriver has not been tested with Chrome version 77.
+[1568435876.022][WARNING]: Timed out connecting to Chrome, retrying...
+Sep 14, 2019 2:37:58 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+</system-err>
   </testcase>
-  <testcase classname="Link Card Feature" name="Successfully link Opal card to account" time="0.003">
-    <skipped/>
+  <testcase classname="Card Management Feature" name="Successfully view the details of the Opal card" time="13.766"/>
+  <testcase classname="Card Management Feature" name="Successfully register an Opal Card" time="10.442">
+    <error message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#login_email&quot;}
+  (Session info: chrome=77.0.3865.75)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-CBD3LMIB&apos;, ip: &apos;172.19.183.95&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.75, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\Michelle\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50936}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: be03f1267dd03c43d681297944c7eb8d
+*** Element info: {Using=id, value=login_email}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#login_email&quot;}
+  (Session info: chrome=77.0.3865.75)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-CBD3LMIB&apos;, ip: &apos;172.19.183.95&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.75, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\Michelle\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50936}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: be03f1267dd03c43d681297944c7eb8d
+*** Element info: {Using=id, value=login_email}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at asd.test.CardManagementFeature.the_Staff_is_loggied_in_to_the_website(CardManagementFeature.java:153)
+	at ✽.the Staff is logged in to the website(file:opalFeatures/CardManagementFeature.feature:53)
+</error>
+    <system-err>Starting ChromeDriver 76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}) on port 27183
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1568435899.273][WARNING]: This version of ChromeDriver has not been tested with Chrome version 77.
+[1568435901.281][WARNING]: Timed out connecting to Chrome, retrying...
+Sep 14, 2019 2:38:23 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Sep 14, 2019 2:38:23 PM com.mongodb.diagnostics.logging.JULLogger log
+INFO: Cluster created with settings {hosts=[ds031965.mlab.com:31965], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout=&apos;30000 ms&apos;, maxWaitQueueSize=500}
+Sep 14, 2019 2:38:23 PM com.mongodb.diagnostics.logging.JULLogger log
+INFO: No server chosen by ReadPreferenceServerSelector{readPreference=primary} from cluster description ClusterDescription{type=UNKNOWN, connectionMode=SINGLE, serverDescriptions=[ServerDescription{address=ds031965.mlab.com:31965, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+Sep 14, 2019 2:38:25 PM com.mongodb.diagnostics.logging.JULLogger log
+INFO: Opened connection [connectionId{localValue:49, serverValue:322359}] to ds031965.mlab.com:31965
+Sep 14, 2019 2:38:25 PM com.mongodb.diagnostics.logging.JULLogger log
+INFO: Monitor thread successfully connected to server with description ServerDescription{address=ds031965.mlab.com:31965, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 6, 12]}, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, roundTripTimeNanos=220718400, setName=&apos;rs-ds131965&apos;, canonicalAddress=ds131965-a.mlab.com:31965, hosts=[ds131965-a.mlab.com:31965], passives=[], arbiters=[], primary=&apos;ds131965-a.mlab.com:31965&apos;, tagSet=TagSet{[]}, electionId=7fffffff0000000000000008, setVersion=2, lastWriteDate=Sat Sep 14 14:38:25 AEST 2019, lastUpdateTimeNanos=3204852680800}
+Sep 14, 2019 2:38:27 PM com.mongodb.diagnostics.logging.JULLogger log
+INFO: Opened connection [connectionId{localValue:50, serverValue:322360}] to ds031965.mlab.com:31965
+Sep 14, 2019 2:38:28 PM com.mongodb.diagnostics.logging.JULLogger log
+INFO: Closed connection [connectionId{localValue:50, serverValue:322360}] to ds031965.mlab.com:31965 because the pool has been closed.
+</system-err>
   </testcase>
-  <testcase classname="Link Card Feature" name="Successfully link Opal card to account" time="0.003">
-    <skipped/>
+  <testcase classname="Card Management Feature" name="Successfully register an Opal Card" time="10.443">
+    <error message="filter can not be null" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: filter can not be null
+	at com.mongodb.assertions.Assertions.notNull(Assertions.java:37)
+	at com.mongodb.bulk.DeleteRequest.&lt;init&gt;(DeleteRequest.java:41)
+	at com.mongodb.MongoCollectionImpl.delete(MongoCollectionImpl.java:532)
+	at com.mongodb.MongoCollectionImpl.deleteOne(MongoCollectionImpl.java:349)
+	at com.mongodb.MongoCollectionImpl.deleteOne(MongoCollectionImpl.java:344)
+	at asd.test.CardManagementFeature.removeTestCard(CardManagementFeature.java:220)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:26)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:20)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)
+	at cucumber.runner.TestStep.executeStep(TestStep.java:65)
+	at cucumber.runner.TestStep.run(TestStep.java:50)
+	at cucumber.runner.TestCase.run(TestCase.java:50)
+	at cucumber.runner.Runner.runPickle(Runner.java:49)
+	at cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:123)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:65)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at cucumber.api.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:147)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+</error>
   </testcase>
-  <testcase classname="Link Card Feature" name="Successfully link Opal card to account" time="0.003">
-    <skipped/>
+  <testcase classname="Card Management Feature" name="Failed register an Opal Card" time="5.433">
+    <error message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#login_email&quot;}
+  (Session info: chrome=77.0.3865.75)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-CBD3LMIB&apos;, ip: &apos;172.19.183.95&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.75, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\Michelle\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50952}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6fa8a96ee560667036de826cd770d9a4
+*** Element info: {Using=id, value=login_email}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#login_email&quot;}
+  (Session info: chrome=77.0.3865.75)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-CBD3LMIB&apos;, ip: &apos;172.19.183.95&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.75, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\Michelle\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50952}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6fa8a96ee560667036de826cd770d9a4
+*** Element info: {Using=id, value=login_email}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at asd.test.CardManagementFeature.the_Staff_is_loggied_in_to_the_website(CardManagementFeature.java:153)
+	at ✽.the Staff is logged in to the website(file:opalFeatures/CardManagementFeature.feature:61)
+</error>
+    <system-err>Starting ChromeDriver 76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}) on port 12542
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1568435909.345][WARNING]: This version of ChromeDriver has not been tested with Chrome version 77.
+[1568435911.356][WARNING]: Timed out connecting to Chrome, retrying...
+Sep 14, 2019 2:38:33 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+</system-err>
   </testcase>
-  <testcase classname="Link Card Feature" name="Successfully link Opal card to account" time="0.003">
-    <skipped/>
-  </testcase>
-  <testcase classname="Link Card Feature" name="Successfully link Opal card to account" time="0.003">
-    <skipped/>
-  </testcase>
-  <testcase classname="Link Card Feature" name="Failed linking Opal card with wrong Opal details" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="Link Card Feature" name="Failed linking Opal card with wrong Opal details" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="Link Card Feature" name="Failed linking Opal card with wrong Opal details" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="Link Card Feature" name="Failed linking Opal card with wrong Opal details" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="Link Card Feature" name="Failed linking Opal card with wrong Opal details" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="Link Card Feature" name="Failed linking Opal card with wrong Opal details" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="List all Opal cards" name="Successfully list all Opal cards" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="List all Opal cards" name="Successfully list all Opal cards" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="List all Opal cards" name="Successfully list all Opal cards" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="List all Opal cards" name="Successfully list all Opal cards" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="List Linked Opal Cards" name="Successfully list linked Opal Cards" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="List Linked Opal Cards" name="Successfully list linked Opal Cards" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="List Linked Opal Cards" name="Successfully list linked Opal Cards" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="List Linked Opal Cards" name="Successfully list linked Opal Cards" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="Order Opal Card Feature" name="Successfully order an Opal Card and edit an order as an anonymous user" time="60.206"/>
-  <testcase classname="Order Opal Card Feature" name="Successfully order an Opal Card as a customer" time="48.387"/>
-  <testcase classname="Order Opal Card Feature" name="Successfully view the order history" time="25.497"/>
-  <testcase classname="Order Opal Card Feature" name="Successfully view all the order" time="26.036"/>
-  <testcase classname="Register an Opal Card" name="Successfully register an Opal Card" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="Register an Opal Card" name="Successfully register an Opal Card" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="Register an Opal Card" name="Successfully register an Opal Card" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="Register an Opal Card" name="Successfully register an Opal Card" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="Register an Opal Card" name="Successfully register an Opal Card" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="Register an Opal Card" name="Successfully register an Opal Card" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="Register an Opal Card" name="Failed register an Opal Card" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="Register an Opal Card" name="Failed register an Opal Card" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="Register an Opal Card" name="Failed register an Opal Card" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="Register an Opal Card" name="Failed register an Opal Card" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="Register an Opal Card" name="Failed register an Opal Card" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="Register an Opal Card" name="Failed register an Opal Card" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="Unlink Opal Card" name="Successfully unlink Opal card from account" time="0.001">
-    <skipped/>
-  </testcase>
-  <testcase classname="Unlink Opal Card" name="Successfully unlink Opal card from account" time="0.001">
-    <skipped/>
-  </testcase>
-  <testcase classname="Unlink Opal Card" name="Successfully unlink Opal card from account" time="0.001">
-    <skipped/>
-  </testcase>
-  <testcase classname="Unlink Opal Card" name="Successfully unlink Opal card from account" time="0.001">
-    <skipped/>
-  </testcase>
-  <testcase classname="Unlink Opal Card" name="Successfully unlink Opal card from account" time="0.001">
-    <skipped/>
-  </testcase>
-  <testcase classname="View Details of an Opal Card" name="Successfully view the details of the Opal card" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="View Details of an Opal Card" name="Successfully view the details of the Opal card" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="View Details of an Opal Card" name="Successfully view the details of the Opal card" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="View Details of an Opal Card" name="Successfully view the details of the Opal card" time="0">
-    <skipped/>
+  <testcase classname="Card Management Feature" name="Successfully list all Opal cards" time="5.399">
+    <error message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#login_email&quot;}
+  (Session info: chrome=77.0.3865.75)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-CBD3LMIB&apos;, ip: &apos;172.19.183.95&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.75, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\Michelle\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50966}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: dc9471a931c8e53ce79725f17c08c934
+*** Element info: {Using=id, value=login_email}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#login_email&quot;}
+  (Session info: chrome=77.0.3865.75)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LAPTOP-CBD3LMIB&apos;, ip: &apos;172.19.183.95&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.75, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\Michelle\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50966}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: dc9471a931c8e53ce79725f17c08c934
+*** Element info: {Using=id, value=login_email}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at asd.test.CardManagementFeature.the_Staff_is_loggied_in_to_the_website(CardManagementFeature.java:153)
+	at ✽.the Staff is logged in to the website(file:opalFeatures/CardManagementFeature.feature:72)
+</error>
+    <system-err>Starting ChromeDriver 76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}) on port 22508
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1568435914.738][WARNING]: This version of ChromeDriver has not been tested with Chrome version 77.
+[1568435916.748][WARNING]: Timed out connecting to Chrome, retrying...
+Sep 14, 2019 2:38:38 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+</system-err>
   </testcase>
 </testsuite>

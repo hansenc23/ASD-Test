@@ -115,7 +115,7 @@
                         <h3>Search Opal Card</h3>
                         <h6>Choose an Opal card number</h6>
                         <form action="main.jsp" method="POST">
-                            <select name = "opalID" required>
+                            <select id="searchID" name = "opalID" required>
         <%
                                 String opalID = "";
                                 for (OpalCard card: cards) {
