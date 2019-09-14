@@ -56,7 +56,7 @@
                     </tr>
                     
                     <tr>
-                        <td colspan="2" align="center"><button class="button" type="submit"> Update </button></td>
+                        <td colspan="2" align="center"><button id="submit_password" class="button" type="submit"> Update </button></td>
                         
                         
                     </tr>

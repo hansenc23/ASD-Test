@@ -44,7 +44,7 @@
                     
                     
                     <tr>
-                        <td colspan="2" align="center"><button class="update" onclick="location.href = 'accountProfile.jsp'"> Back </button></td>
+                        <td colspan="2" align="center"><button id="back_to_profile" class="update" onclick="location.href = 'accountProfile.jsp'"> Back </button></td>
                     </tr>
                     
                 </table>
