@@ -20,8 +20,8 @@
         <div class="navigation-bar">
             <ul>
                 <li><a href="#">FAQs</a></li>
-                <li><a href="login.jsp">Login</a></li>
-                <li><a href="register.jsp">Register</a></li>
+                <li><a id="login" href="login.jsp">Login</a></li>
+                <li><a id="register" href="register.jsp">Register</a></li>
                 <li><a href="main.jsp">Home</a></li>
               
                 
