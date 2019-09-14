@@ -14,6 +14,7 @@ import com.mongodb.client.MongoDatabase;
 import com.mongodb.client.model.Filters;
 import static com.mongodb.client.model.Filters.and;
 import static com.mongodb.client.model.Filters.eq;
+import static com.mongodb.client.model.Filters.exists;
 import com.mongodb.client.model.Updates;
 import static com.mongodb.client.model.Updates.combine;
 import java.util.regex.Pattern;
@@ -794,7 +795,7 @@ public class MongoDBConnector {
         try (MongoClient client = new MongoClient(uri)) {
             MongoDatabase db = client.getDatabase(uri.getDatabase());
             MongoCollection<Document> opallist = db.getCollection("ASD-app-opalCards");
-            Document doc = opallist.find(and(eq("OpalID", card.getOpalID()), eq("SecurityCode", card.getSecurityCode()))).first();
+            Document doc = opallist.find(and(eq("OpalID", card.getOpalID()), eq("SecurityCode", card.getSecurityCode()), exists("CustomerID", false))).first();
             if (doc != null) {
                 correct = true;
             }
@@ -963,7 +964,7 @@ public class MongoDBConnector {
         try (MongoClient client = new MongoClient(uri)) {
             MongoDatabase db = client.getDatabase(uri.getDatabase());
             MongoCollection<Document> opallist = db.getCollection("ASD-app-opalCards");
-            Document doc = opallist.find(and(eq("OpalID", card.getOpalID()), eq("SecurityCode", card.getSecurityCode()))).first();
+            Document doc = opallist.find(and(eq("OpalID", card.getOpalID()), eq("SecurityCode", card.getSecurityCode()), exists("CustomerID", false))).first();
             if (doc != null) {
                 correct = true;
             }
