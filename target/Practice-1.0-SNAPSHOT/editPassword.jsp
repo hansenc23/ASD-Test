@@ -56,11 +56,7 @@
                     </tr>
                     
                     <tr>
-<<<<<<< HEAD
                         <td colspan="2" align="center"><button id="submit_password" class="button" type="submit"> Update </button></td>
-=======
-                        <td colspan="2" align="center"><button class="button" type="submit"> Update </button></td>
->>>>>>> 363582452c631d5ebc360415977d13cffe37c882
                         
                         
                     </tr>

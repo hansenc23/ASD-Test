@@ -1,11 +1,308 @@
 [
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
-<<<<<<< HEAD
-        "start_timestamp": "2019-09-14T07:27:35.369Z",
-        "line": 29,
+        "start_timestamp": "2019-09-14T07:53:42.901Z",
+        "line": 11,
+        "name": "Successfully created an account",
+        "description": "",
+        "id": "online-user-registration;successfully-created-an-account",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7824470700,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User is in the \"main.jsp\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"main.jsp\"",
+                  "offset": 15
+                }
+              ],
+              "location": "RegisterFeature.user_is_in_the(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 644725000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User Click on \"navbar_register\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"navbar_register\"",
+                  "offset": 14
+                }
+              ],
+              "location": "RegisterFeature.user_Click_on(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1021963200,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User fill in contact detail",
+            "match": {
+              "location": "RegisterFeature.user_fill_in_contact_detail()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 387800600,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User clicks \"back\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"back\"",
+                  "offset": 12
+                }
+              ],
+              "location": "RegisterFeature.user_Clicks(String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-09-14T07:53:52.783Z",
+        "line": 21,
+        "name": "Successfully update account details",
+        "description": "",
+        "id": "online-user-registration;successfully-update-account-details",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7075358200,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "user is in \"login.jsp\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"login.jsp\"",
+                  "offset": 11
+                }
+              ],
+              "location": "RegisterFeature.user_is_in(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 453499200,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "user fill in login details",
+            "match": {
+              "location": "RegisterFeature.user_fill_in_details()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 595301700,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "user choose \"loginAction_success\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"loginAction_success\"",
+                  "offset": 12
+                }
+              ],
+              "location": "RegisterFeature.user_click(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 679206600,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "User Clicks on \"navbar_profile\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"navbar_profile\"",
+                  "offset": 15
+                }
+              ],
+              "location": "RegisterFeature.user_Clicks_on(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 592098800,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "User edits \"edit_profile\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"edit_profile\"",
+                  "offset": 11
+                }
+              ],
+              "location": "RegisterFeature.user_edits(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 733896800,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "User update details",
+            "match": {
+              "location": "RegisterFeature.user_update_details()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 413595400,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "user click to \"back_to_profile\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"back_to_profile\"",
+                  "offset": 14
+                }
+              ],
+              "location": "RegisterFeature.user_click_to(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 362127800,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "user click change password \"change_password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"change_password\"",
+                  "offset": 27
+                }
+              ],
+              "location": "RegisterFeature.user_click_change_password(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 514697900,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "user update password",
+            "match": {
+              "location": "RegisterFeature.user_update_password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 412311600,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "user is back to profile \"back_to_profile\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"back_to_profile\"",
+                  "offset": 24
+                }
+              ],
+              "location": "RegisterFeature.user_back_to_profile(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 345938200,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "user choose add security question \"add_question\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"add_question\"",
+                  "offset": 34
+                }
+              ],
+              "location": "RegisterFeature.user_add_security_question(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 583761300,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "user choose from a list of question",
+            "match": {
+              "location": "RegisterFeature.user_choose_question()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 435968700,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "user goes back to profile \"back_to_profile\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"back_to_profile\"",
+                  "offset": 26
+                }
+              ],
+              "location": "RegisterFeature.user_goes_to_profile(String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-09-14T07:54:05.982Z",
+        "line": 38,
         "name": "Successfully forget password",
         "description": "",
         "id": "online-user-registration;successfully-forget-password",
@@ -14,10 +311,10 @@
         "steps": [
           {
             "result": {
-              "duration": 5911662300,
+              "duration": 7055630300,
               "status": "passed"
             },
-            "line": 30,
+            "line": 39,
             "name": "user in \"login.jsp\"",
             "match": {
               "arguments": [
@@ -27,148 +324,15 @@
                 }
               ],
               "location": "RegisterFeature.user_in(String)"
-=======
-        "start_timestamp": "2019-09-14T07:25:11.156Z",
-        "line": 4,
-        "name": "Successfully order an Opal Card and edit an order as an anonymous user",
-        "description": "",
-        "id": "order-opal-card-feature;successfully-order-an-opal-card-and-edit-an-order-as-an-anonymous-user",
-        "after": [
-          {
-            "result": {
-              "duration": 7303498500,
-              "status": "passed"
-            },
-            "match": {
-              "location": "OrderFeature.removeUser()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 8105755700,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "User is in the \"main.jsp\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"main.jsp\"",
-                  "offset": 15
-                }
-              ],
-              "location": "OrderFeature.user_is_in_the(String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 6134954300,
+              "duration": 570148100,
               "status": "passed"
             },
-            "line": 6,
-            "name": "User Click on \"order_opal_card\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"order_opal_card\"",
-                  "offset": 14
-                }
-              ],
-              "location": "OrderFeature.user_Click_on(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 5610470700,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "User Click on \"type_adult\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"type_adult\"",
-                  "offset": 14
-                }
-              ],
-              "location": "OrderFeature.user_Click_on(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 5321773400,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "User fill in contact detail",
-            "match": {
-              "location": "OrderFeature.user_fill_in_contact_detail()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 5783640500,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "User click \"contact_continue\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"contact_continue\"",
-                  "offset": 11
-                }
-              ],
-              "location": "OrderFeature.user_click(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 94105800,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "User select the top up value",
-            "match": {
-              "location": "OrderFeature.user_select_the_top_up_value()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 5340067000,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "User click \"order_value_continue\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"order_value_continue\"",
-                  "offset": 11
-                }
-              ],
-              "location": "OrderFeature.user_click(String)"
->>>>>>> 363582452c631d5ebc360415977d13cffe37c882
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-<<<<<<< HEAD
-              "duration": 134022700,
-              "status": "passed"
-            },
-            "line": 31,
+            "line": 40,
             "name": "user chooses \"forget_button\"",
             "match": {
               "arguments": [
@@ -178,773 +342,41 @@
                 }
               ],
               "location": "RegisterFeature.user_chooses(String)"
-=======
-              "duration": 336897400,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "User fill in payment detail",
-            "match": {
-              "location": "OrderFeature.user_fill_in_payment_detail()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 5626503000,
+              "duration": 524837800,
               "status": "passed"
             },
-            "line": 13,
-            "name": "User click \"paymentDetail_continue\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"paymentDetail_continue\"",
-                  "offset": 11
-                }
-              ],
-              "location": "OrderFeature.user_click(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 5379398200,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "User click \"orderConfirmation_edit\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"orderConfirmation_edit\"",
-                  "offset": 11
-                }
-              ],
-              "location": "OrderFeature.user_click(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 661020800,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "User fill in edit detail",
-            "match": {
-              "location": "OrderFeature.user_fill_in_edit_detail()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 5332669700,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "User click \"edit_continue\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"edit_continue\"",
-                  "offset": 11
-                }
-              ],
-              "location": "OrderFeature.user_click(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 5780268700,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "User click \"orderConfirmation_confirm\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"orderConfirmation_confirm\"",
-                  "offset": 11
-                }
-              ],
-              "location": "OrderFeature.user_click(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 604175400,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "The page should be navigated to \"Order Succeed\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Order Succeed\"",
-                  "offset": 32
-                }
-              ],
-              "location": "OrderFeature.the_page_should_be_navigated_to(String)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@revomeUser"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2019-09-14T07:26:18.575Z",
-        "line": 20,
-        "name": "Successfully order an Opal Card as a customer",
-        "description": "",
-        "id": "order-opal-card-feature;successfully-order-an-opal-card-as-a-customer",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 7334115600,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "User is in the \"login.jsp\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"login.jsp\"",
-                  "offset": 15
-                }
-              ],
-              "location": "OrderFeature.user_is_in_the(String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 11949944300,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "User is login as a customer",
-            "match": {
-              "location": "OrderFeature.user_is_login_as_a_customer()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 5647515600,
-              "status": "passed"
-            },
-            "line": 23,
-            "name": "User Click on \"order_opal_card\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"order_opal_card\"",
-                  "offset": 14
-                }
-              ],
-              "location": "OrderFeature.user_Click_on(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 5672952900,
-              "status": "passed"
-            },
-            "line": 24,
-            "name": "User Click on \"type_child\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"type_child\"",
-                  "offset": 14
-                }
-              ],
-              "location": "OrderFeature.user_Click_on(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 95664400,
-              "status": "passed"
-            },
-            "line": 25,
-            "name": "User select the top up value",
-            "match": {
-              "location": "OrderFeature.user_select_the_top_up_value()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 5449819300,
-              "status": "passed"
-            },
-            "line": 26,
-            "name": "User click \"order_value_continue\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"order_value_continue\"",
-                  "offset": 11
-                }
-              ],
-              "location": "OrderFeature.user_click(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 318647500,
-              "status": "passed"
-            },
-            "line": 27,
-            "name": "User fill in payment detail",
-            "match": {
-              "location": "OrderFeature.user_fill_in_payment_detail()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 5724988000,
-              "status": "passed"
-            },
-            "line": 28,
-            "name": "User click \"paymentDetail_continue\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"paymentDetail_continue\"",
-                  "offset": 11
-                }
-              ],
-              "location": "OrderFeature.user_click(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3000701200,
-              "status": "passed"
-            },
-            "line": 29,
-            "name": "User click \"orderConfirmation_cancelled\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"orderConfirmation_cancelled\"",
-                  "offset": 11
-                }
-              ],
-              "location": "OrderFeature.user_click(String)"
->>>>>>> 363582452c631d5ebc360415977d13cffe37c882
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-<<<<<<< HEAD
-              "duration": 7312599100,
-              "status": "passed"
-            },
-            "line": 32,
+            "line": 41,
             "name": "user enter email address",
             "match": {
               "location": "RegisterFeature.user_enter_email_address()"
-=======
-              "duration": 610315400,
-              "status": "passed"
             },
-            "line": 30,
-            "name": "The page should be navigated to \"Order Cancelled\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Order Cancelled\"",
-                  "offset": 32
-                }
-              ],
-              "location": "OrderFeature.the_page_should_be_navigated_to(String)"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2019-09-14T07:27:04.381Z",
-        "line": 32,
-        "name": "Successfully view the order history",
-        "description": "",
-        "id": "order-opal-card-feature;successfully-view-the-order-history",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 6861110000,
-              "status": "passed"
-            },
-            "line": 33,
-            "name": "User is in the \"login.jsp\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"login.jsp\"",
-                  "offset": 15
-                }
-              ],
-              "location": "OrderFeature.user_is_in_the(String)"
-            },
-            "keyword": "Given "
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 1839069400,
+              "duration": 647967700,
               "status": "passed"
             },
-            "line": 34,
-            "name": "User is login as a customer",
-            "match": {
-              "location": "OrderFeature.user_is_login_as_a_customer()"
->>>>>>> 363582452c631d5ebc360415977d13cffe37c882
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-<<<<<<< HEAD
-              "duration": 14606452500,
-              "status": "passed"
-            },
-            "line": 33,
+            "line": 42,
             "name": "user input answer",
             "match": {
               "location": "RegisterFeature.user_input_answer()"
             },
             "keyword": "And "
-=======
-              "duration": 944960900,
-              "status": "passed"
-            },
-            "line": 35,
-            "name": "User Click on \"order_history\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"order_history\"",
-                  "offset": 14
-                }
-              ],
-              "location": "OrderFeature.user_Click_on(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 605665400,
-              "status": "passed"
-            },
-            "line": 36,
-            "name": "The page should be navigated to \"Order History\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Order History\"",
-                  "offset": 32
-                }
-              ],
-              "location": "OrderFeature.the_page_should_be_navigated_to(String)"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2019-09-14T07:27:14.634Z",
-        "line": 38,
-        "name": "Successfully view all the order",
-        "description": "",
-        "id": "order-opal-card-feature;successfully-view-all-the-order",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 6915418600,
-              "status": "passed"
-            },
-            "line": 39,
-            "name": "User is in the \"login.jsp\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"login.jsp\"",
-                  "offset": 15
-                }
-              ],
-              "location": "OrderFeature.user_is_in_the(String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 1161992700,
-              "status": "passed"
-            },
-            "line": 40,
-            "name": "User is login as an admin",
-            "match": {
-              "location": "OrderFeature.user_is_login_as_an_admin()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 976629100,
-              "status": "passed"
-            },
-            "line": 41,
-            "name": "User Click on \"order_management\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"order_management\"",
-                  "offset": 14
-                }
-              ],
-              "location": "OrderFeature.user_Click_on(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 588897100,
-              "status": "passed"
-            },
-            "line": 42,
-            "name": "The page should be navigated to \"Order Management\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Order Management\"",
-                  "offset": 32
-                }
-              ],
-              "location": "OrderFeature.the_page_should_be_navigated_to(String)"
-            },
-            "keyword": "Then "
           }
         ]
       }
     ],
-    "name": "Order Opal Card Feature",
-    "description": "",
-    "id": "order-opal-card-feature",
-    "keyword": "Feature",
-    "uri": "file:opalFeatures/OrderFeature.feature",
-    "tags": []
-  },
-  {
-    "line": 1,
-    "elements": [
-      {
-        "start_timestamp": "2019-09-14T07:27:24.288Z",
-        "line": 6,
-        "name": "Successfully create/update/delete preffered payment method",
-        "description": "",
-        "id": "topupmanagementfeature;successfully-create/update/delete-preffered-payment-method",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 6978601100,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "User is in the \"login.jsp\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"login.jsp\"",
-                  "offset": 15
-                }
-              ],
-              "location": "OrderFeature.user_is_in_the(String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 8,
-            "name": "User fill in user detail",
-            "match": {},
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 10400,
-              "status": "skipped"
-            },
-            "line": 9,
-            "name": "User click \"login_submit\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"login_submit\"",
-                  "offset": 11
-                }
-              ],
-              "location": "OrderFeature.user_click(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 4800,
-              "status": "skipped"
-            },
-            "line": 10,
-            "name": "User click \"loginAction_success\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"loginAction_success\"",
-                  "offset": 11
-                }
-              ],
-              "location": "OrderFeature.user_click(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3700,
-              "status": "skipped"
-            },
-            "line": 11,
-            "name": "User click \"sidebar_paymentMethodManagement\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"sidebar_paymentMethodManagement\"",
-                  "offset": 11
-                }
-              ],
-              "location": "OrderFeature.user_click(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3200,
-              "status": "skipped"
-            },
-            "line": 12,
-            "name": "User click \"paymentMethodManagement_addMethod\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"paymentMethodManagement_addMethod\"",
-                  "offset": 11
-                }
-              ],
-              "location": "OrderFeature.user_click(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 13,
-            "name": "User fill in paymentmethod detail",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3800,
-              "status": "skipped"
-            },
-            "line": 14,
-            "name": "User click \"addPaymentMethod_submit\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"addPaymentMethod_submit\"",
-                  "offset": 11
-                }
-              ],
-              "location": "OrderFeature.user_click(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3000,
-              "status": "skipped"
-            },
-            "line": 15,
-            "name": "User click \"addPaymentMethodOutcome_back\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"addPaymentMethodOutcome_back\"",
-                  "offset": 11
-                }
-              ],
-              "location": "OrderFeature.user_click(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2900,
-              "status": "skipped"
-            },
-            "line": 16,
-            "name": "User click \"9876987698769876\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"9876987698769876\"",
-                  "offset": 11
-                }
-              ],
-              "location": "OrderFeature.user_click(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 17,
-            "name": "User fill in update detail",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 5300,
-              "status": "skipped"
-            },
-            "line": 18,
-            "name": "User click \"updatePaymentmethod_update\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"updatePaymentmethod_update\"",
-                  "offset": 11
-                }
-              ],
-              "location": "OrderFeature.user_click(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3100,
-              "status": "skipped"
-            },
-            "line": 19,
-            "name": "User click \"updatePaymentmethod_back\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"updatePaymentmethod_back\"",
-                  "offset": 11
-                }
-              ],
-              "location": "OrderFeature.user_click(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3100,
-              "status": "skipped"
-            },
-            "line": 20,
-            "name": "User click \"7654765476547654\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"7654765476547654\"",
-                  "offset": 11
-                }
-              ],
-              "location": "OrderFeature.user_click(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3100,
-              "status": "skipped"
-            },
-            "line": 21,
-            "name": "User click \"updatePaymentmethod_delete\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"updatePaymentmethod_delete\"",
-                  "offset": 11
-                }
-              ],
-              "location": "OrderFeature.user_click(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3100,
-              "status": "skipped"
-            },
-            "line": 22,
-            "name": "User click \"updatePaymentmethod_back\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"updatePaymentmethod_back\"",
-                  "offset": 11
-                }
-              ],
-              "location": "OrderFeature.user_click(String)"
-            },
-            "keyword": "Then "
->>>>>>> 363582452c631d5ebc360415977d13cffe37c882
-          }
-        ]
-      }
-    ],
-<<<<<<< HEAD
     "name": "Online User Registration",
     "description": "",
     "id": "online-user-registration",
     "keyword": "Feature",
     "uri": "file:opalFeatures/UserRegistrationFeature.feature",
-=======
-    "name": "TopUpManagementFeature",
-    "description": "    As a user of Opal project \n    I want to create/delete/update payment method\n    So that I can top up my card with my payment method",
-    "id": "topupmanagementfeature",
-    "keyword": "Feature",
-    "uri": "file:opalFeatures/TopUpManagementFeature.feature",
->>>>>>> 363582452c631d5ebc360415977d13cffe37c882
     "tags": []
   }
 ]

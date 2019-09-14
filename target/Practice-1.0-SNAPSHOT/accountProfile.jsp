@@ -75,11 +75,7 @@
                         <td><%=phone%></td>
                     </tr>
                     <tr>
-<<<<<<< HEAD
                         <td colspan="2"><button id="edit_profile" class="edit" type="button" onclick="location.href = 'editProfile.jsp'" > Edit </button></td>
-=======
-                        <td colspan="2"><button class="edit" type="button" onclick="location.href = 'editProfile.jsp'" > Edit </button></td>
->>>>>>> 363582452c631d5ebc360415977d13cffe37c882
                     </tr>
                     
                     
@@ -95,11 +91,7 @@
                         <td class="hidetext"><%=password%></td>
                     </tr>
                     <tr>
-<<<<<<< HEAD
                         <td colspan="2"><button id="change_password" class="password" type="button" onclick="location.href = 'editPassword.jsp'" > Change password </button></td>
-=======
-                        <td colspan="2"><button class="password" type="button" onclick="location.href = 'editPassword.jsp'" > Change password </button></td>
->>>>>>> 363582452c631d5ebc360415977d13cffe37c882
                     </tr>
                 </table>
                     
@@ -116,11 +108,7 @@
                                 <td><%=answer%></td>
                             </tr>
                             <tr>
-<<<<<<< HEAD
                                 <td colspan="2"><button class="password" id="add_question" type="button" onclick="location.href = 'question.jsp'" > Change security question </button></td>
-=======
-                                <td colspan="2"><button class="password" type="button" onclick="location.href = 'question.jsp'" > Change security question </button></td>
->>>>>>> 363582452c631d5ebc360415977d13cffe37c882
                             </tr>
                         </table>
                     <%}else if(question == null && answer == null){%>
@@ -137,11 +125,7 @@
                                 <td><%=answer%></td>
                             </tr>
                             <tr>
-<<<<<<< HEAD
                                 <td colspan="2"><button class="password" id="add_question" type="button" onclick="location.href = 'question.jsp'" > Add security question </button></td>
-=======
-                                <td colspan="2"><button class="password" type="button" onclick="location.href = 'question.jsp'" > Add security question </button></td>
->>>>>>> 363582452c631d5ebc360415977d13cffe37c882
                             </tr>
                         </table>
                         

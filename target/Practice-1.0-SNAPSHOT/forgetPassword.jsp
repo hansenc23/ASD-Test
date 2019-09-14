@@ -29,19 +29,11 @@
                     <tr>
                         <td>Enter your email</td>
                         <td>
-<<<<<<< HEAD
                             <input id="enter_email" class="field" size="20" type="text" name="email">
                         </td>
                     </tr>
                     <tr>
                         <td colspan="2" id="confirm_email" align="center"><button class="update" type="submit"> Confirm </button></td>
-=======
-                            <input class="field" size="20" type="text" name="email">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="2" align="center"><button class="update" type="submit"> Confirm </button></td>
->>>>>>> 363582452c631d5ebc360415977d13cffe37c882
                         
                     </tr>
                     

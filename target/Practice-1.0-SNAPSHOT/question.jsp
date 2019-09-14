@@ -35,11 +35,7 @@
                     <tr>
                         <td>Question</td>
                         <td>
-<<<<<<< HEAD
                             <select id="choose_question" name="question">
-=======
-                            <select name="question">
->>>>>>> 363582452c631d5ebc360415977d13cffe37c882
                                 <option>What was your childhood nickname?</option>
                                 <option>What is your oldest sibling's middle name?</option>
                                 <option>In what city or town did your mother and father meet?</option>
@@ -50,19 +46,11 @@
                     <tr>
                         <td>Answer</td>
                         <td>
-<<<<<<< HEAD
                             <input id="input_answer" class="field" size="20" type="text" name="answer">
                         </td>
                     </tr>
                     <tr>
                         <td colspan="2" align="center"><button id="confirm_question" class="update" type="submit"> Confirm </button></td>
-=======
-                            <input class="field" size="20" type="text" name="answer">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="2" align="center"><button class="update" type="submit"> Confirm </button></td>
->>>>>>> 363582452c631d5ebc360415977d13cffe37c882
                         
                     </tr>
                     

@@ -34,7 +34,6 @@
 
                     <tr>
                         <td>First Name</td>
-<<<<<<< HEAD
                         <td><input class="field" id="update_firstname" size="20" type="text" name="firstName" value="<%=firstName%>"></td>
                     </tr>
                     <tr>
@@ -56,29 +55,6 @@
                     
                     <tr>
                         <td colspan="2" align="center"><button id="update_button" class="update" type="submit"> Update </button></td>
-=======
-                        <td><input class="field" size="20" type="text" name="firstName" value="<%=firstName%>"></td>
-                    </tr>
-                    <tr>
-                        <td>Last Name</td>
-                        <td><input class="field" size="20" type="text" name="lastName" value="<%=lastName%>"></td>
-                    </tr>
-                    <tr>
-                        <td>Email</td>
-                        <td><input class="field" size="20" type="text" name="email" value="<%=email%>"></td>
-                    </tr>
-                    <tr>
-                        <td>Address</td>
-                        <td><input class="field" size="20" type="text" name="address" value="<%=address%>"></td>
-                    </tr>
-                    <tr>
-                        <td>Phone Number</td>
-                        <td><input class="field" size="20" type="text" name="phoneNumber" value="<%=phone%>"></td>
-                    </tr>
-                    
-                    <tr>
-                        <td colspan="2" align="center"><button class="update" type="submit"> Update </button></td>
->>>>>>> 363582452c631d5ebc360415977d13cffe37c882
                         
                     </tr>
                     

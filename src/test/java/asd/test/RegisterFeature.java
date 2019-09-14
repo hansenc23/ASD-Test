@@ -45,7 +45,7 @@ public class RegisterFeature extends Driver{
     public void user_fill_in_contact_detail() {
         driver.findElement(By.id("register_first_name")).sendKeys("Hansen");
         driver.findElement(By.id("register_last_name")).sendKeys("Christian");
-        driver.findElement(By.id("register_email")).sendKeys("fortesting@gmail.com");
+        driver.findElement(By.id("register_email")).sendKeys("fortesting1@gmail.com");
         driver.findElement(By.id("register_password")).sendKeys("qwe123456");
         driver.findElement(By.id("register_phone")).sendKeys("0483329588");
         driver.findElement(By.id("register_address")).sendKeys("UTS");
@@ -70,7 +70,7 @@ public class RegisterFeature extends Driver{
     
     @When("user fill in login details")
     public void user_fill_in_details() {
-        driver.findElement(By.id("login_email")).sendKeys("fortesting@gmail.com");
+        driver.findElement(By.id("login_email")).sendKeys("fortesting1@gmail.com");
         driver.findElement(By.id("login_password")).sendKeys("qwe123456");
         driver.findElement(By.id("login_submit")).click();
     }

@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Feature: Card Management Feature
 #   
 #   Scenario: Successfully link Opal card to account    
@@ -74,7 +74,7 @@
 #         When the Staff click on "card_management"
 #         And the Staff click on "show_all_cards"
 #         Then the page should show all Opal cards
-=======
+
 #Feature: Card Management Feature
   
 #  Scenario: Successfully link Opal card to account    
@@ -150,4 +150,4 @@
 #        When the Staff click on "card_management"
 #        And the Staff click on "show_all_cards"
 #        Then the page should show all Opal cards
->>>>>>> 363582452c631d5ebc360415977d13cffe37c882
+

@@ -1,6 +1,6 @@
 
 Feature: Online User Registration
-=======
+
 #----------------------------------
 # Empty Cucumber .feature file
 #----------------------------------

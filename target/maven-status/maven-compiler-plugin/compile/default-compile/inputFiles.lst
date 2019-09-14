@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 G:\ASD-Test\src\main\java\asd\model\Orders.java
 G:\ASD-Test\src\main\java\asd\model\Users.java
 G:\ASD-Test\src\main\java\asd\model\Order.java
@@ -15,21 +14,3 @@ G:\ASD-Test\src\main\java\asd\model\Time.java
 G:\ASD-Test\src\main\java\asd\model\Paymentmethod.java
 G:\ASD-Test\src\main\java\asd\model\TopUpPayment.java
 G:\ASD-Test\src\main\java\asd\model\OpalCard.java
-=======
-C:\Users\aasdd\Desktop\Advanced Software Development\ASD-Project-2\src\main\java\asd\controller\ConnServlet.java
-C:\Users\aasdd\Desktop\Advanced Software Development\ASD-Project-2\src\main\java\asd\model\Paymentmethod.java
-C:\Users\aasdd\Desktop\Advanced Software Development\ASD-Project-2\src\main\java\asd\model\Time.java
-C:\Users\aasdd\Desktop\Advanced Software Development\ASD-Project-2\src\main\java\asd\model\OpalCards.java
-C:\Users\aasdd\Desktop\Advanced Software Development\ASD-Project-2\src\main\java\asd\model\dao\MongoDBConnector.java
-C:\Users\aasdd\Desktop\Advanced Software Development\ASD-Project-2\src\main\java\asd\model\Orders.java
-C:\Users\aasdd\Desktop\Advanced Software Development\ASD-Project-2\src\main\java\asd\model\Question.java
-C:\Users\aasdd\Desktop\Advanced Software Development\ASD-Project-2\src\main\java\asd\model\Order.java
-C:\Users\aasdd\Desktop\Advanced Software Development\ASD-Project-2\src\main\java\asd\model\OpalCard.java
-C:\Users\aasdd\Desktop\Advanced Software Development\ASD-Project-2\src\main\java\asd\model\User.java
-C:\Users\aasdd\Desktop\Advanced Software Development\ASD-Project-2\src\main\java\asd\model\TopUpPayment.java
-C:\Users\aasdd\Desktop\Advanced Software Development\ASD-Project-2\src\main\java\asd\model\Enqiry.java
-C:\Users\aasdd\Desktop\Advanced Software Development\ASD-Project-2\src\main\java\asd\model\Paymentmethods.java
-C:\Users\aasdd\Desktop\Advanced Software Development\ASD-Project-2\src\main\java\asd\model\Times.java
-C:\Users\aasdd\Desktop\Advanced Software Development\ASD-Project-2\src\main\java\asd\model\Users.java
-C:\Users\aasdd\Desktop\Advanced Software Development\ASD-Project-2\src\main\java\asd\model\Enqiries.java
->>>>>>> 363582452c631d5ebc360415977d13cffe37c882

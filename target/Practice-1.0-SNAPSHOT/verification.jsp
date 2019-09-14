@@ -59,21 +59,13 @@
                     </tr>
                     <tr>
                         <td>Answer:</td>
-<<<<<<< HEAD
                         <td><input id="input_answer" type="text" name="answer"></td>
-=======
-                        <td><input type="text" name="answer"></td>
->>>>>>> 363582452c631d5ebc360415977d13cffe37c882
                         <input type="hidden" name="email" value="<%=email%>">
                     </tr>
                     
                     
                     <tr>
-<<<<<<< HEAD
                         <td colspan="2"  align="center"><button id="confirm_answer" type="submit" class="update" > Confirm </button></td>
-=======
-                        <td colspan="2" align="center"><button type="submit" class="update" > Confirm </button></td>
->>>>>>> 363582452c631d5ebc360415977d13cffe37c882
                     </tr>
                     
                 </table>
