@@ -5,20 +5,13 @@
     <artifactId>Practice</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
-    <name>Practice</name>
+    <name>ASD Project</name>
     <properties>
         <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     
     <dependencies>
-        <!-- GAE SDK dependency -->
-        <dependency>
-            <groupId>com.google.appengine</groupId>
-            <artifactId>appengine-api-1.0-sdk</artifactId>
-            <version>1.9.65</version>
-        </dependency>
-        <!-- mLab MongoDB driver dependency -->
         <dependency>
             <groupId>org.mongodb</groupId>
             <artifactId>mongodb-driver</artifactId>
@@ -36,21 +29,18 @@
             <artifactId>jstl</artifactId>
             <version>1.2</version>
         </dependency> 
-        <!-- Cucumber-Java-annotation dependency -->
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-java</artifactId>
             <version>4.3.1</version>
             <scope>test</scope>
         </dependency> 
-        <!-- Cucumber-JUnit Integration dependency -->
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-junit</artifactId>
             <version>4.3.1</version>
             <scope>test</scope>
         </dependency>
-        <!-- Cucumber JVM core -->
         <dependency>
             <groupId>info.cukes</groupId>
             <artifactId>cucumber-core</artifactId>
@@ -58,7 +48,6 @@
             <scope>test</scope>
             <type>jar</type>
         </dependency>
-        <!-- Cucumber dependency for JUnit Runner -->
         <dependency>
             <groupId>info.cukes</groupId>
             <artifactId>cucumber-java</artifactId>
@@ -66,25 +55,38 @@
             <scope>test</scope>
             <type>jar</type>
         </dependency>
-        <!-- Selenium dependency for firefox webdriver-->
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-firefox-driver</artifactId>
-            <version>3.141.59</version>
-        </dependency>
-        <!-- Selenium dependency for Java-->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
             <version>3.141.59</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.seleniumhq.selenium</groupId>
+                    <artifactId>selenium-firefox-driver</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.seleniumhq.selenium</groupId>
+                    <artifactId>selenium-ie-driver</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.seleniumhq.selenium</groupId>
+                    <artifactId>selenium-opera-driver</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.seleniumhq.selenium</groupId>
+                    <artifactId>selenium-edge-driver</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.seleniumhq.selenium</groupId>
+                    <artifactId>selenium-safari-driver</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
-        <!-- Selenium support dependency for automating multi-browser platforms-->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-support</artifactId>
             <version>3.11.0</version>
         </dependency>
-        <!-- JUnit dependency-->
          <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
@@ -92,7 +94,6 @@
             <type>jar</type>
             <scope>test</scope>
         </dependency>
-        <!-- hamcrest dependency required for JUnit-->
         <dependency>
             <groupId>org.hamcrest</groupId>
             <artifactId>hamcrest-core</artifactId>
@@ -102,21 +103,7 @@
     </dependencies>
     <build>
         <plugins>
-            <plugin>
-                <groupId>com.google.cloud.tools</groupId>
-                <artifactId>appengine-maven-plugin</artifactId>
-                <version>2.0.0-rc2</version>
-            </plugin>
-            <plugin>
-                <groupId>com.google.appengine</groupId>
-                <artifactId>appengine-maven-plugin</artifactId>
-                <version>1.9.65</version>
-                <configuration>
-                    <enableJarClasses>false</enableJarClasses>
-                    <port>8181</port>
-                    <address>0.0.0.0</address>
-                </configuration>
-            </plugin>
+            
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>

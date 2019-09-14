@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" ?>
+<<<<<<< HEAD
 <testsuite tests="6" failures="0" name="asd.test.OrderUnitTest" time="54.362" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files (x86)\Java\jdk1.8.0_201\jre\bin"/>
+=======
+<testsuite tests="6" failures="0" name="asd.test.OrderUnitTest" time="49.601" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_201\jre\bin"/>
+>>>>>>> 67e71ea192e812e83e57846e2a80a56d9c8d8df9
     <property name="java.vm.version" value="25.201-b09"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
@@ -11,16 +18,25 @@
     <property name="java.vm.name" value="Java HotSpot(TM) Client VM"/>
     <property name="file.encoding.pkg" value="sun.io"/>
     <property name="user.script" value=""/>
-    <property name="user.country" value="AU"/>
+    <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+<<<<<<< HEAD
     <property name="user.dir" value="C:\Users\kevin\OneDrive\Desktop\ASD\ASD-Test"/>
     <property name="java.runtime.version" value="1.8.0_201-b09"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="C:\Program Files (x86)\Java\jdk1.8.0_201\jre\lib\endorsed"/>
     <property name="os.arch" value="x86"/>
     <property name="java.io.tmpdir" value="C:\Users\kevin\AppData\Local\Temp\"/>
+=======
+    <property name="user.dir" value="C:\Users\Hieu\Pictures\uni2\ASD-Test"/>
+    <property name="java.runtime.version" value="1.8.0_201-b09"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_201\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\Hieu\AppData\Local\Temp\"/>
+>>>>>>> 67e71ea192e812e83e57846e2a80a56d9c8d8df9
     <property name="line.separator" value="
 "/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
@@ -29,29 +45,51 @@
     <property name="maven.ext.class.path" value="C:\Program Files (x86)\NetBeans 8.1\java\maven-nblib\netbeans-eventspy.jar"/>
     <property name="classworlds.conf" value="C:\Program Files (x86)\NetBeans 8.1\java\maven\bin\m2.conf"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
+<<<<<<< HEAD
     <property name="java.library.path" value="C:\Program Files (x86)\Java\jdk1.8.0_201\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Razer Chroma SDK\bin;C:\Program Files\Razer Chroma SDK\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Users\kevin\AppData\Local\Microsoft\WindowsApps;C:\Program Files\PuTTY\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\pyh\Scripts\;C:\pyh\;C:\Users\kevin\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\kevin\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\kevin\.dotnet\tools;C:\Users\kevin\AppData\Roaming\npm;C:\Program Files\heroku\bin;C:\Users\kevin\AppData\Local\Microsoft\WindowsApps;;."/>
+=======
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_201\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\PuTTY\;C:\Program Files\Git\cmd;C:\Users\Hieu\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Python 3.7;C:\Users\Hieu\AppData\Local\Programs\Python\Python37\;C:\Users\Hieu\AppData\Local\Microsoft\WindowsApps;C:\Users\Hieu\AppData\Local\atom\bin;C:\Users\Hieu\AppData\Local\GitHubDesktop\bin;C:\Users\Hieu\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\heroku\bin;C:\Users\Hieu\AppData\Local\Microsoft\WindowsApps;;."/>
+>>>>>>> 67e71ea192e812e83e57846e2a80a56d9c8d8df9
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot Client Compiler"/>
     <property name="os.version" value="10.0"/>
+<<<<<<< HEAD
     <property name="user.home" value="C:\Users\kevin"/>
+=======
+    <property name="user.home" value="C:\Users\Hieu"/>
+>>>>>>> 67e71ea192e812e83e57846e2a80a56d9c8d8df9
     <property name="user.timezone" value="Australia/Sydney"/>
     <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
     <property name="java.specification.version" value="1.8"/>
     <property name="file.encoding" value="UTF-8"/>
+<<<<<<< HEAD
     <property name="user.name" value="kevin"/>
     <property name="java.class.path" value="C:\Program Files (x86)\NetBeans 8.1\java\maven\boot\plexus-classworlds-2.4.jar"/>
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="32"/>
     <property name="java.home" value="C:\Program Files (x86)\Java\jdk1.8.0_201\jre"/>
     <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dmaven.ext.class.path=C:\Program Files (x86)\NetBeans 8.1\java\maven-nblib\netbeans-eventspy.jar -Dfile.encoding=UTF-8 clean install"/>
+=======
+    <property name="user.name" value="Hieu"/>
+    <property name="java.class.path" value="C:\Program Files\NetBeans 8.2\java\maven\boot\plexus-classworlds-2.4.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_201\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dmaven.ext.class.path=C:\Program Files\NetBeans 8.2\java\maven-nblib\netbeans-eventspy.jar -Dfile.encoding=UTF-8 test"/>
+>>>>>>> 67e71ea192e812e83e57846e2a80a56d9c8d8df9
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
     <property name="java.vm.info" value="mixed mode"/>
     <property name="java.version" value="1.8.0_201"/>
+<<<<<<< HEAD
     <property name="java.ext.dirs" value="C:\Program Files (x86)\Java\jdk1.8.0_201\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
     <property name="sun.boot.class.path" value="C:\Program Files (x86)\Java\jdk1.8.0_201\jre\lib\resources.jar;C:\Program Files (x86)\Java\jdk1.8.0_201\jre\lib\rt.jar;C:\Program Files (x86)\Java\jdk1.8.0_201\jre\lib\sunrsasign.jar;C:\Program Files (x86)\Java\jdk1.8.0_201\jre\lib\jsse.jar;C:\Program Files (x86)\Java\jdk1.8.0_201\jre\lib\jce.jar;C:\Program Files (x86)\Java\jdk1.8.0_201\jre\lib\charsets.jar;C:\Program Files (x86)\Java\jdk1.8.0_201\jre\lib\jfr.jar;C:\Program Files (x86)\Java\jdk1.8.0_201\jre\classes"/>
+=======
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_201\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_201\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_201\jre\classes"/>
+>>>>>>> 67e71ea192e812e83e57846e2a80a56d9c8d8df9
     <property name="java.vendor" value="Oracle Corporation"/>
     <property name="maven.home" value="C:\Program Files (x86)\NetBeans 8.1\java\maven"/>
     <property name="file.separator" value="\"/>
@@ -61,10 +99,19 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"/>
   </properties>
+<<<<<<< HEAD
   <testcase classname="asd.test.OrderUnitTest" name="addOrder" time="6.899"/>
   <testcase classname="asd.test.OrderUnitTest" name="listOrder" time="3.385"/>
   <testcase classname="asd.test.OrderUnitTest" name="getOrderID" time="10.346"/>
   <testcase classname="asd.test.OrderUnitTest" name="addOrderPaymentmethod" time="6.802"/>
   <testcase classname="asd.test.OrderUnitTest" name="getOrders" time="8.524"/>
   <testcase classname="asd.test.OrderUnitTest" name="getOrderPayment" time="13.654"/>
+=======
+  <testcase classname="asd.test.OrderUnitTest" name="addOrder" time="6.982"/>
+  <testcase classname="asd.test.OrderUnitTest" name="listOrder" time="3.464"/>
+  <testcase classname="asd.test.OrderUnitTest" name="getOrderID" time="7.124"/>
+  <testcase classname="asd.test.OrderUnitTest" name="addOrderPaymentmethod" time="6.96"/>
+  <testcase classname="asd.test.OrderUnitTest" name="getOrders" time="8.665"/>
+  <testcase classname="asd.test.OrderUnitTest" name="getOrderPayment" time="7.186"/>
+>>>>>>> 67e71ea192e812e83e57846e2a80a56d9c8d8df9
 </testsuite>
