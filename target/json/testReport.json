@@ -1,9 +1,474 @@
 [
   {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2019-09-14T08:21:33.204Z",
+        "line": 6,
+        "name": "Successfully create/update/delete preffered payment method",
+        "description": "",
+        "id": "topupmanagementfeature;successfully-create/update/delete-preffered-payment-method",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8445385700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User is in the \"login.jsp\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"login.jsp\"",
+                  "offset": 15
+                }
+              ],
+              "location": "TopUpManagementFeature.user_is_in_the(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 346460500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User fill in user detail",
+            "match": {
+              "location": "TopUpManagementFeature.user_fill_in_user_detail()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 523378700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User click \"login_submit\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"login_submit\"",
+                  "offset": 11
+                }
+              ],
+              "location": "TopUpManagementFeature.user_click_loginsuccess(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1139192200,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User click \"loginAction_success\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"loginAction_success\"",
+                  "offset": 11
+                }
+              ],
+              "location": "TopUpManagementFeature.user_click_loginsuccess(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 845590700,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User click \"sidebar_paymentMethodManagement\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"sidebar_paymentMethodManagement\"",
+                  "offset": 11
+                }
+              ],
+              "location": "TopUpManagementFeature.user_click_loginsuccess(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 754271200,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User click \"paymentMethodManagement_addMethod\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"paymentMethodManagement_addMethod\"",
+                  "offset": 11
+                }
+              ],
+              "location": "TopUpManagementFeature.user_click_loginsuccess(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1019211000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User fill in paymentmethod detail",
+            "match": {
+              "location": "TopUpManagementFeature.user_fill_in_paymentmethod_detail()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 543848500,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User click \"addPaymentMethod_submit\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"addPaymentMethod_submit\"",
+                  "offset": 11
+                }
+              ],
+              "location": "TopUpManagementFeature.user_click_loginsuccess(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 525101700,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User click \"addPaymentMethodOutcome_back\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"addPaymentMethodOutcome_back\"",
+                  "offset": 11
+                }
+              ],
+              "location": "TopUpManagementFeature.user_click_loginsuccess(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 549803900,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User click \"9876987698769876\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"9876987698769876\"",
+                  "offset": 11
+                }
+              ],
+              "location": "TopUpManagementFeature.user_click_loginsuccess(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1242813000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User fill in update detail",
+            "match": {
+              "location": "TopUpManagementFeature.user_fill_in_update_detail()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 481443600,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User click \"updatePaymentmethod_update\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"updatePaymentmethod_update\"",
+                  "offset": 11
+                }
+              ],
+              "location": "TopUpManagementFeature.user_click_loginsuccess(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 498577100,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User click \"updatePaymentmethod_back\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"updatePaymentmethod_back\"",
+                  "offset": 11
+                }
+              ],
+              "location": "TopUpManagementFeature.user_click_loginsuccess(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 552572400,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User click \"7654765476547654\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"7654765476547654\"",
+                  "offset": 11
+                }
+              ],
+              "location": "TopUpManagementFeature.user_click_loginsuccess(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 486746700,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User click \"updatePaymentmethod_delete\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"updatePaymentmethod_delete\"",
+                  "offset": 11
+                }
+              ],
+              "location": "TopUpManagementFeature.user_click_loginsuccess(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 535418100,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "User click \"updatePaymentmethod_back\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"updatePaymentmethod_back\"",
+                  "offset": 11
+                }
+              ],
+              "location": "TopUpManagementFeature.user_click_loginsuccess(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-09-14T08:21:51.697Z",
+        "line": 23,
+        "name": "Successfully create top up card",
+        "description": "",
+        "id": "topupmanagementfeature;successfully-create-top-up-card",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7265783500,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User is in the \"login.jsp\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"login.jsp\"",
+                  "offset": 15
+                }
+              ],
+              "location": "TopUpManagementFeature.user_is_in_the(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 328674500,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "User fill in user detail",
+            "match": {
+              "location": "TopUpManagementFeature.user_fill_in_user_detail()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 464835500,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "User click \"login_submit\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"login_submit\"",
+                  "offset": 11
+                }
+              ],
+              "location": "TopUpManagementFeature.user_click_loginsuccess(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1151926900,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "User click \"loginAction_success\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"loginAction_success\"",
+                  "offset": 11
+                }
+              ],
+              "location": "TopUpManagementFeature.user_click_loginsuccess(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 763045500,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "User click \"sidebar_topUpValue\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"sidebar_topUpValue\"",
+                  "offset": 11
+                }
+              ],
+              "location": "TopUpManagementFeature.user_click_loginsuccess(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 418900800,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "User fill in payment amount",
+            "match": {
+              "location": "TopUpManagementFeature.user_fill_in_payment_amount()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 788217500,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "User click \"topUpValue_submit\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"topUpValue_submit\"",
+                  "offset": 11
+                }
+              ],
+              "location": "TopUpManagementFeature.user_click_loginsuccess(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1028260900,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "User fill in the payment detail",
+            "match": {
+              "location": "TopUpManagementFeature.user_fill_in_the_payment_detail()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 596975100,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "User click \"topUpCard_submit\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"topUpCard_submit\"",
+                  "offset": 11
+                }
+              ],
+              "location": "TopUpManagementFeature.user_click_loginsuccess(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 641294400,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "User click \"topUpConfirmation_confirm\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"topUpConfirmation_confirm\"",
+                  "offset": 11
+                }
+              ],
+              "location": "TopUpManagementFeature.user_click_loginsuccess(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "TopUpManagementFeature",
+    "description": "    As a user of Opal project \n    I want to create/delete/update payment method\n    So that I can top up my card with my payment method",
+    "id": "topupmanagementfeature",
+    "keyword": "Feature",
+    "uri": "file:opalFeatures/TopUpManagementFeature.feature",
+    "tags": []
+  },
+  {
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2019-09-14T07:53:42.901Z",
+        "start_timestamp": "2019-09-14T08:22:05.161Z",
         "line": 11,
         "name": "Successfully created an account",
         "description": "",
@@ -13,7 +478,7 @@
         "steps": [
           {
             "result": {
-              "duration": 7824470700,
+              "duration": 7402086000,
               "status": "passed"
             },
             "line": 12,
@@ -25,62 +490,41 @@
                   "offset": 15
                 }
               ],
-              "location": "RegisterFeature.user_is_in_the(String)"
+              "location": "TopUpManagementFeature.user_is_in_the(String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 644725000,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 13,
             "name": "User Click on \"navbar_register\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"navbar_register\"",
-                  "offset": 14
-                }
-              ],
-              "location": "RegisterFeature.user_Click_on(String)"
-            },
+            "match": {},
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 1021963200,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 14,
             "name": "User fill in contact detail",
-            "match": {
-              "location": "RegisterFeature.user_fill_in_contact_detail()"
-            },
+            "match": {},
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 387800600,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 16,
             "name": "User clicks \"back\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"back\"",
-                  "offset": 12
-                }
-              ],
-              "location": "RegisterFeature.user_Clicks(String)"
-            },
+            "match": {},
             "keyword": "And "
           }
         ]
       },
       {
-        "start_timestamp": "2019-09-14T07:53:52.783Z",
+        "start_timestamp": "2019-09-14T08:22:12.581Z",
         "line": 21,
         "name": "Successfully update account details",
         "description": "",
@@ -90,218 +534,125 @@
         "steps": [
           {
             "result": {
-              "duration": 7075358200,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 22,
             "name": "user is in \"login.jsp\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"login.jsp\"",
-                  "offset": 11
-                }
-              ],
-              "location": "RegisterFeature.user_is_in(String)"
-            },
+            "match": {},
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 453499200,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 23,
             "name": "user fill in login details",
-            "match": {
-              "location": "RegisterFeature.user_fill_in_details()"
-            },
+            "match": {},
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 595301700,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 24,
             "name": "user choose \"loginAction_success\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"loginAction_success\"",
-                  "offset": 12
-                }
-              ],
-              "location": "RegisterFeature.user_click(String)"
-            },
+            "match": {},
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 679206600,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 25,
             "name": "User Clicks on \"navbar_profile\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"navbar_profile\"",
-                  "offset": 15
-                }
-              ],
-              "location": "RegisterFeature.user_Clicks_on(String)"
-            },
+            "match": {},
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 592098800,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 26,
             "name": "User edits \"edit_profile\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"edit_profile\"",
-                  "offset": 11
-                }
-              ],
-              "location": "RegisterFeature.user_edits(String)"
-            },
+            "match": {},
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 733896800,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 27,
             "name": "User update details",
-            "match": {
-              "location": "RegisterFeature.user_update_details()"
-            },
+            "match": {},
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 413595400,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 28,
             "name": "user click to \"back_to_profile\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"back_to_profile\"",
-                  "offset": 14
-                }
-              ],
-              "location": "RegisterFeature.user_click_to(String)"
-            },
+            "match": {},
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 362127800,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 29,
             "name": "user click change password \"change_password\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"change_password\"",
-                  "offset": 27
-                }
-              ],
-              "location": "RegisterFeature.user_click_change_password(String)"
-            },
+            "match": {},
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 514697900,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 30,
             "name": "user update password",
-            "match": {
-              "location": "RegisterFeature.user_update_password()"
-            },
+            "match": {},
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 412311600,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 31,
             "name": "user is back to profile \"back_to_profile\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"back_to_profile\"",
-                  "offset": 24
-                }
-              ],
-              "location": "RegisterFeature.user_back_to_profile(String)"
-            },
+            "match": {},
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 345938200,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 32,
             "name": "user choose add security question \"add_question\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"add_question\"",
-                  "offset": 34
-                }
-              ],
-              "location": "RegisterFeature.user_add_security_question(String)"
-            },
+            "match": {},
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 583761300,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 33,
             "name": "user choose from a list of question",
-            "match": {
-              "location": "RegisterFeature.user_choose_question()"
-            },
+            "match": {},
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 435968700,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 34,
             "name": "user goes back to profile \"back_to_profile\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"back_to_profile\"",
-                  "offset": 26
-                }
-              ],
-              "location": "RegisterFeature.user_goes_to_profile(String)"
-            },
+            "match": {},
             "keyword": "And "
           }
         ]
       },
       {
-        "start_timestamp": "2019-09-14T07:54:05.982Z",
+        "start_timestamp": "2019-09-14T08:22:12.583Z",
         "line": 38,
         "name": "Successfully forget password",
         "description": "",
@@ -311,62 +662,38 @@
         "steps": [
           {
             "result": {
-              "duration": 7055630300,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 39,
             "name": "user in \"login.jsp\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"login.jsp\"",
-                  "offset": 8
-                }
-              ],
-              "location": "RegisterFeature.user_in(String)"
-            },
+            "match": {},
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 570148100,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 40,
             "name": "user chooses \"forget_button\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"forget_button\"",
-                  "offset": 13
-                }
-              ],
-              "location": "RegisterFeature.user_chooses(String)"
-            },
+            "match": {},
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 524837800,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 41,
             "name": "user enter email address",
-            "match": {
-              "location": "RegisterFeature.user_enter_email_address()"
-            },
+            "match": {},
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 647967700,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 42,
             "name": "user input answer",
-            "match": {
-              "location": "RegisterFeature.user_input_answer()"
-            },
+            "match": {},
             "keyword": "And "
           }
         ]
