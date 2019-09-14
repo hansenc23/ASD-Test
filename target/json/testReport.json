@@ -3,119 +3,894 @@
     "line": 4,
     "elements": [
       {
+<<<<<<< HEAD
         "start_timestamp": "2019-09-14T03:54:05.849Z",
         "line": 7,
         "name": "Successfully created a customer account",
         "description": "",
         "id": "online-user-registration;successfully-created-a-customer-account",
+=======
+        "start_timestamp": "2019-09-14T04:36:47.098Z",
+        "line": 3,
+        "name": "Successfully link Opal card to account",
+        "description": "",
+        "id": "card-management-feature;successfully-link-opal-card-to-account",
+>>>>>>> 14bbf3e89f56f4919a7dcd1d6d07e3acc67812c1
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 32442684900,
+              "status": "passed"
             },
+<<<<<<< HEAD
             "line": 8,
             "name": "User is in \"main.jsp\"",
             "match": {},
+=======
+            "line": 4,
+            "name": "the User is logged in to the website",
+            "match": {
+              "location": "CardManagementFeature.the_User_is_logged_in_to_the_website()"
+            },
+>>>>>>> 14bbf3e89f56f4919a7dcd1d6d07e3acc67812c1
             "keyword": "Given "
           },
           {
             "result": {
+<<<<<<< HEAD
               "status": "undefined"
             },
             "line": 9,
             "name": "User click on \"register\"",
             "match": {},
+=======
+              "duration": 697950700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "is in the \"main.jsp\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"main.jsp\"",
+                  "offset": 10
+                }
+              ],
+              "location": "CardManagementFeature.is_in_the(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1069159400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User click on \"sidebar_linkCard\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"sidebar_linkCard\"",
+                  "offset": 14
+                }
+              ],
+              "location": "CardManagementFeature.user_click_on(String)"
+            },
             "keyword": "When "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 755909800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User fill in \"OpalID\" with \"\u003cOpalID\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"OpalID\"",
+                  "offset": 13
+                },
+                {
+                  "val": "\"\u003cOpalID\u003e\"",
+                  "offset": 27
+                }
+              ],
+              "location": "CardManagementFeature.user_fill_in_with(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 322288900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User fill in \"securityCode\" with \"\u003csecurityCode\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"securityCode\"",
+                  "offset": 13
+                },
+                {
+                  "val": "\"\u003csecurityCode\u003e\"",
+                  "offset": 33
+                }
+              ],
+              "location": "CardManagementFeature.user_fill_in_with(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1027573000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User submit by clicking \"link\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"link\"",
+                  "offset": 24
+                }
+              ],
+              "location": "CardManagementFeature.user_submit_by_clicking(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 857814100,
+              "status": "passed"
             },
             "line": 10,
-            "name": "the page should be navigated to \"register.jsp\"",
-            "match": {},
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "undefined"
+            "name": "the page should give a green success feedback",
+            "match": {
+              "location": "CardManagementFeature.the_page_should_give_a_green_success_feedback()"
             },
-            "line": 11,
-            "name": "User fill in registration details",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 12,
-            "name": "user click \"register\"",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 13,
-            "name": "The page should be navigated to \"welcome.jsp\"",
-            "match": {},
             "keyword": "Then "
           }
         ]
       },
       {
-        "start_timestamp": "2019-09-14T03:54:05.857Z",
-        "line": 17,
-        "name": "Successfully update account details",
+        "start_timestamp": "2019-09-14T04:37:24.280Z",
+        "line": 22,
+        "name": "Failed linking Opal card with wrong Opal details",
         "description": "",
-        "id": "online-user-registration;successfully-update-account-details",
+        "id": "card-management-feature;failed-linking-opal-card-with-wrong-opal-details;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 10390977900,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "the User is logged in to the website",
+            "match": {
+              "location": "CardManagementFeature.the_User_is_logged_in_to_the_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 568145200,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "is in the \"main.jsp\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"main.jsp\"",
+                  "offset": 10
+                }
+              ],
+              "location": "CardManagementFeature.is_in_the(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 693906200,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User click on \"sidebar_linkCard\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"sidebar_linkCard\"",
+                  "offset": 14
+                }
+              ],
+              "location": "CardManagementFeature.user_click_on(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 392113600,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User fill in \"OpalID\" with \"0000 0000 0000 0000\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"OpalID\"",
+                  "offset": 13
+                },
+                {
+                  "val": "\"0000 0000 0000 0000\"",
+                  "offset": 27
+                }
+              ],
+              "location": "CardManagementFeature.user_fill_in_with(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 164986500,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User fill in \"securityCode\" with \"0000\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"securityCode\"",
+                  "offset": 13
+                },
+                {
+                  "val": "\"0000\"",
+                  "offset": 33
+                }
+              ],
+              "location": "CardManagementFeature.user_fill_in_with(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 695508000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User submit by clicking \"link\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"link\"",
+                  "offset": 24
+                }
+              ],
+              "location": "CardManagementFeature.user_submit_by_clicking(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 726217400,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "the page should give a red fail feedback",
+            "match": {
+              "location": "CardManagementFeature.the_page_should_give_a_red_fail_feedback()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-09-14T04:37:37.914Z",
+        "line": 24,
+        "name": "Successfully unlink Opal card from account",
+        "description": "",
+        "id": "card-management-feature;successfully-unlink-opal-card-from-account",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 10724748700,
+              "status": "passed"
             },
-            "line": 18,
-            "name": "User is in \"login.jsp\"",
-            "match": {},
+            "line": 25,
+            "name": "the User is logged in to the website",
+            "match": {
+              "location": "CardManagementFeature.the_User_is_logged_in_to_the_website()"
+            },
             "keyword": "Given "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 626664800,
+              "status": "passed"
             },
-            "line": 19,
-            "name": "User is logged in",
-            "match": {},
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "status": "undefined"
+            "line": 26,
+            "name": "is in the \"main.jsp\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"main.jsp\"",
+                  "offset": 10
+                }
+              ],
+              "location": "CardManagementFeature.is_in_the(String)"
             },
-            "line": 20,
-            "name": "User click on \"Welcome User\"",
-            "match": {},
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 1205420400,
+              "status": "passed"
             },
+            "line": 27,
+            "name": "User click on \"sidebar_unlinkCard\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"sidebar_unlinkCard\"",
+                  "offset": 14
+                }
+              ],
+              "location": "CardManagementFeature.user_click_on(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 221848400,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "User click on \"unlink\" for \"opalID\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"unlink\"",
+                  "offset": 14
+                },
+                {
+                  "val": "\"opalID\"",
+                  "offset": 27
+                }
+              ],
+              "location": "CardManagementFeature.user_click_on_for(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1813907800,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "User should not see \"opalID\" in the \"Unlink Card Page\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"opalID\"",
+                  "offset": 20
+                },
+                {
+                  "val": "\"Unlink Card Page\"",
+                  "offset": 36
+                }
+              ],
+              "location": "CardManagementFeature.user_should_not_see_in_the(String,String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-09-14T04:37:52.507Z",
+        "line": 37,
+        "name": "Successfully search an Opal Card by Opal ID",
+        "description": "",
+        "id": "card-management-feature;successfully-search-an-opal-card-by-opal-id",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 10644803900,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "the User is logged in to the website",
+            "match": {
+              "location": "CardManagementFeature.the_User_is_logged_in_to_the_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 584102000,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "is in the \"main.jsp\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"main.jsp\"",
+                  "offset": 10
+                }
+              ],
+              "location": "CardManagementFeature.is_in_the(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#searchID\"}\n  (Session info: chrome\u003d77.0.3865.75)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027LAPTOP-CBD3LMIB\u0027, ip: \u0027172.19.183.95\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_202\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.75, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\\Users\\Michelle\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:50890}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: fb66d500d24b49cce04c7c9b5cfff134\n*** Element info: {Using\u003did, value\u003dsearchID}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\r\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat asd.test.CardManagementFeature.user_select_an(CardManagementFeature.java:137)\r\n\tat ✽.User select an \"OpalID\"(file:opalFeatures/CardManagementFeature.feature:40)\r\n",
+              "duration": 85889600,
+              "status": "failed"
+            },
+            "line": 40,
+            "name": "User select an \"OpalID\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"OpalID\"",
+                  "offset": 15
+                }
+              ],
+              "location": "CardManagementFeature.user_select_an(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 20500,
+              "status": "skipped"
+            },
+            "line": 41,
+            "name": "User submit by clicking \"Search\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Search\"",
+                  "offset": 24
+                }
+              ],
+              "location": "CardManagementFeature.user_submit_by_clicking(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10500,
+              "status": "skipped"
+            },
+            "line": 42,
+            "name": "the searched \"OpalID\" should be shown in the page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"OpalID\"",
+                  "offset": 13
+                }
+              ],
+              "location": "CardManagementFeature.the_searched_should_be_shown_in_the_page(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-09-14T04:38:03.830Z",
+        "line": 44,
+        "name": "Successfully view the details of the Opal card",
+        "description": "",
+        "id": "card-management-feature;successfully-view-the-details-of-the-opal-card",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 10694745300,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "the User is logged in to the website",
+            "match": {
+              "location": "CardManagementFeature.the_User_is_logged_in_to_the_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 827413100,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "is in the \"main.jsp\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"main.jsp\"",
+                  "offset": 10
+                }
+              ],
+              "location": "CardManagementFeature.is_in_the(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1533303400,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "User click on \"Details\" for \"opalID\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Details\"",
+                  "offset": 14
+                },
+                {
+                  "val": "\"opalID\"",
+                  "offset": 28
+                }
+              ],
+              "location": "CardManagementFeature.user_click_on_for(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 713542000,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "the page should be navigated to \"Card Details Page\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Card Details Page\"",
+                  "offset": 32
+                }
+              ],
+              "location": "CardManagementFeature.the_page_should_be_navigated_to(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-09-14T04:38:17.603Z",
+        "line": 52,
+        "name": "Successfully register an Opal Card",
+        "description": "",
+        "id": "card-management-feature;successfully-register-an-opal-card",
+        "after": [
+          {
+            "result": {
+              "error_message": "java.lang.IllegalArgumentException: filter can not be null\r\n\tat com.mongodb.assertions.Assertions.notNull(Assertions.java:37)\r\n\tat com.mongodb.bulk.DeleteRequest.\u003cinit\u003e(DeleteRequest.java:41)\r\n\tat com.mongodb.MongoCollectionImpl.delete(MongoCollectionImpl.java:532)\r\n\tat com.mongodb.MongoCollectionImpl.deleteOne(MongoCollectionImpl.java:349)\r\n\tat com.mongodb.MongoCollectionImpl.deleteOne(MongoCollectionImpl.java:344)\r\n\tat asd.test.CardManagementFeature.removeTestCard(CardManagementFeature.java:220)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:26)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:20)\r\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)\r\n\tat cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)\r\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:65)\r\n\tat cucumber.runner.TestStep.run(TestStep.java:50)\r\n\tat cucumber.runner.TestCase.run(TestCase.java:50)\r\n\tat cucumber.runner.Runner.runPickle(Runner.java:49)\r\n\tat cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:123)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:65)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat cucumber.api.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:147)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)\r\n\tat org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)\r\n\tat org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)\r\n\tat org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)\r\n",
+              "duration": 4633411400,
+              "status": "failed"
+            },
+            "match": {
+              "location": "CardManagementFeature.removeTestCard()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#login_email\"}\n  (Session info: chrome\u003d77.0.3865.75)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027LAPTOP-CBD3LMIB\u0027, ip: \u0027172.19.183.95\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_202\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.75, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\\Users\\Michelle\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:50936}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: be03f1267dd03c43d681297944c7eb8d\n*** Element info: {Using\u003did, value\u003dlogin_email}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\r\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat asd.test.CardManagementFeature.the_Staff_is_loggied_in_to_the_website(CardManagementFeature.java:153)\r\n\tat ✽.the Staff is logged in to the website(file:opalFeatures/CardManagementFeature.feature:53)\r\n",
+              "duration": 5805131100,
+              "status": "failed"
+            },
+            "line": 53,
+            "name": "the Staff is logged in to the website",
+            "match": {
+              "location": "CardManagementFeature.the_Staff_is_loggied_in_to_the_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 19800,
+              "status": "skipped"
+            },
+            "line": 54,
+            "name": "the Staff click on \"card_management\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"card_management\"",
+                  "offset": 19
+                }
+              ],
+              "location": "CardManagementFeature.the_Staff_click_on(String)"
+            },
+>>>>>>> 14bbf3e89f56f4919a7dcd1d6d07e3acc67812c1
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 17000,
+              "status": "skipped"
+            },
+            "line": 55,
+            "name": "the Staff click on \"register_card\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"register_card\"",
+                  "offset": 19
+                }
+              ],
+              "location": "CardManagementFeature.the_Staff_click_on(String)"
+            },
+<<<<<<< HEAD
+            "line": 10,
+            "name": "the page should be navigated to \"register.jsp\"",
+            "match": {},
+            "keyword": "Then "
+=======
+            "keyword": "And "
+>>>>>>> 14bbf3e89f56f4919a7dcd1d6d07e3acc67812c1
+          },
+          {
+            "result": {
+              "duration": 16700,
+              "status": "skipped"
+            },
+<<<<<<< HEAD
+            "line": 11,
+            "name": "User fill in registration details",
+            "match": {},
+=======
+            "line": 56,
+            "name": "the Staff fill in the new Opal Card details for \"OpalID\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"OpalID\"",
+                  "offset": 48
+                }
+              ],
+              "location": "CardManagementFeature.the_Staff_fill_in_the_new_Opal_Card_details_for(String)"
+            },
+>>>>>>> 14bbf3e89f56f4919a7dcd1d6d07e3acc67812c1
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 16600,
+              "status": "skipped"
+            },
+            "line": 57,
+            "name": "the Staff submit by clicking \"link\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"link\"",
+                  "offset": 29
+                }
+              ],
+              "location": "CardManagementFeature.the_Staff_submit_by_clicking(String)"
+            },
+<<<<<<< HEAD
+            "line": 12,
+            "name": "user click \"register\"",
+            "match": {},
+=======
+>>>>>>> 14bbf3e89f56f4919a7dcd1d6d07e3acc67812c1
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 16500,
+              "status": "skipped"
+            },
+            "line": 58,
+            "name": "the page should shows a green success feedback",
+            "match": {
+              "location": "CardManagementFeature.the_page_should_shows_a_green_success_feedback()"
+            },
+<<<<<<< HEAD
+            "line": 13,
+            "name": "The page should be navigated to \"welcome.jsp\"",
+            "match": {},
+=======
+>>>>>>> 14bbf3e89f56f4919a7dcd1d6d07e3acc67812c1
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@register_card"
+          }
+        ]
+      },
+      {
+<<<<<<< HEAD
+        "start_timestamp": "2019-09-14T03:54:05.857Z",
+        "line": 17,
+        "name": "Successfully update account details",
+        "description": "",
+        "id": "online-user-registration;successfully-update-account-details",
+=======
+        "start_timestamp": "2019-09-14T04:38:28.046Z",
+        "line": 69,
+        "name": "Failed register an Opal Card",
+        "description": "",
+        "id": "card-management-feature;failed-register-an-opal-card;;2",
+>>>>>>> 14bbf3e89f56f4919a7dcd1d6d07e3acc67812c1
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#login_email\"}\n  (Session info: chrome\u003d77.0.3865.75)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027LAPTOP-CBD3LMIB\u0027, ip: \u0027172.19.183.95\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_202\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.75, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\\Users\\Michelle\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:50952}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 6fa8a96ee560667036de826cd770d9a4\n*** Element info: {Using\u003did, value\u003dlogin_email}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\r\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat asd.test.CardManagementFeature.the_Staff_is_loggied_in_to_the_website(CardManagementFeature.java:153)\r\n\tat ✽.the Staff is logged in to the website(file:opalFeatures/CardManagementFeature.feature:61)\r\n",
+              "duration": 5430093700,
+              "status": "failed"
+            },
+            "line": 61,
+            "name": "the Staff is logged in to the website",
+            "match": {
+              "location": "CardManagementFeature.the_Staff_is_loggied_in_to_the_website()"
+            },
+<<<<<<< HEAD
+            "line": 18,
+            "name": "User is in \"login.jsp\"",
+            "match": {},
+            "keyword": "Given "
+=======
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 17500,
+              "status": "skipped"
+            },
+            "line": 62,
+            "name": "the Staff click on \"card_management\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"card_management\"",
+                  "offset": 19
+                }
+              ],
+              "location": "CardManagementFeature.the_Staff_click_on(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 13900,
+              "status": "skipped"
+            },
+            "line": 63,
+            "name": "the Staff click on \"register_card\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"register_card\"",
+                  "offset": 19
+                }
+              ],
+              "location": "CardManagementFeature.the_Staff_click_on(String)"
+            },
+            "keyword": "And "
+>>>>>>> 14bbf3e89f56f4919a7dcd1d6d07e3acc67812c1
+          },
+          {
+            "result": {
+              "duration": 14900,
+              "status": "skipped"
+            },
+<<<<<<< HEAD
+            "line": 19,
+            "name": "User is logged in",
+            "match": {},
+            "keyword": "Given "
+=======
+            "line": 64,
+            "name": "the Staff fill in the new Opal Card details for \"8888 8888 8888 8888\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"8888 8888 8888 8888\"",
+                  "offset": 48
+                }
+              ],
+              "location": "CardManagementFeature.the_Staff_fill_in_the_new_Opal_Card_details_for(String)"
+            },
+            "keyword": "And "
+>>>>>>> 14bbf3e89f56f4919a7dcd1d6d07e3acc67812c1
+          },
+          {
+            "result": {
+              "duration": 14500,
+              "status": "skipped"
+            },
+            "line": 65,
+            "name": "the Staff submit by clicking \"link\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"link\"",
+                  "offset": 29
+                }
+              ],
+              "location": "CardManagementFeature.the_Staff_submit_by_clicking(String)"
+            },
+<<<<<<< HEAD
+            "line": 20,
+            "name": "User click on \"Welcome User\"",
+            "match": {},
+=======
+>>>>>>> 14bbf3e89f56f4919a7dcd1d6d07e3acc67812c1
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10000,
+              "status": "skipped"
+            },
+            "line": 66,
+            "name": "the page should shows a red fail feedback",
+            "match": {
+              "location": "CardManagementFeature.the_page_should_shows_a_red_fail_feedback()"
+            },
+<<<<<<< HEAD
             "line": 21,
             "name": "the page should be navigated to \"accountProfile.jsp\"",
             "match": {},
             "keyword": "Then "
+=======
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-09-14T04:38:33.478Z",
+        "line": 71,
+        "name": "Successfully list all Opal cards",
+        "description": "",
+        "id": "card-management-feature;successfully-list-all-opal-cards",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#login_email\"}\n  (Session info: chrome\u003d77.0.3865.75)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027LAPTOP-CBD3LMIB\u0027, ip: \u0027172.19.183.95\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_202\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.75, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\\Users\\Michelle\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:50966}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: dc9471a931c8e53ce79725f17c08c934\n*** Element info: {Using\u003did, value\u003dlogin_email}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\r\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat asd.test.CardManagementFeature.the_Staff_is_loggied_in_to_the_website(CardManagementFeature.java:153)\r\n\tat ✽.the Staff is logged in to the website(file:opalFeatures/CardManagementFeature.feature:72)\r\n",
+              "duration": 5396767800,
+              "status": "failed"
+            },
+            "line": 72,
+            "name": "the Staff is logged in to the website",
+            "match": {
+              "location": "CardManagementFeature.the_Staff_is_loggied_in_to_the_website()"
+            },
+            "keyword": "Given "
+>>>>>>> 14bbf3e89f56f4919a7dcd1d6d07e3acc67812c1
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 17400,
+              "status": "skipped"
             },
+<<<<<<< HEAD
             "line": 22,
             "name": "User click on \"edit\"",
             "match": {},
@@ -155,25 +930,73 @@
             "line": 26,
             "name": "user click on back",
             "match": {},
+=======
+            "line": 73,
+            "name": "the Staff click on \"card_management\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"card_management\"",
+                  "offset": 19
+                }
+              ],
+              "location": "CardManagementFeature.the_Staff_click_on(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 18300,
+              "status": "skipped"
+            },
+            "line": 74,
+            "name": "the Staff click on \"show_all_cards\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"show_all_cards\"",
+                  "offset": 19
+                }
+              ],
+              "location": "CardManagementFeature.the_Staff_click_on(String)"
+            },
+>>>>>>> 14bbf3e89f56f4919a7dcd1d6d07e3acc67812c1
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 14000,
+              "status": "skipped"
             },
+<<<<<<< HEAD
             "line": 27,
             "name": "the page should be navigated to \"accountProfile.jsp\"",
             "match": {},
+=======
+            "line": 75,
+            "name": "the page should show all Opal cards",
+            "match": {
+              "location": "CardManagementFeature.the_page_should_show_all_Opal_cards()"
+            },
+>>>>>>> 14bbf3e89f56f4919a7dcd1d6d07e3acc67812c1
             "keyword": "Then "
           }
         ]
       }
     ],
+<<<<<<< HEAD
     "name": "Online User Registration",
     "description": "",
     "id": "online-user-registration",
     "keyword": "Feature",
     "uri": "file:opalFeatures/UserRegistrationFeature.feature",
+=======
+    "name": "Card Management Feature",
+    "description": "",
+    "id": "card-management-feature",
+    "keyword": "Feature",
+    "uri": "file:opalFeatures/CardManagementFeature.feature",
+>>>>>>> 14bbf3e89f56f4919a7dcd1d6d07e3acc67812c1
     "tags": []
   }
 ]

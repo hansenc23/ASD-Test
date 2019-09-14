@@ -1,2 +1,8 @@
+asd\test\CardManagementFeature.class
 asd\test\Driver.class
+<<<<<<< HEAD
+=======
+asd\test\CardManagementUnitTest.class
+asd\test\OrderFeature.class
+>>>>>>> 14bbf3e89f56f4919a7dcd1d6d07e3acc67812c1
 asd\test\RunTest.class
