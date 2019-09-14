@@ -1,4 +1,11 @@
+<<<<<<< HEAD:target/surefire-reports/asd.test.RegisterUnitTest.txt
 -------------------------------------------------------------------------------
 Test set: asd.test.RegisterUnitTest
 -------------------------------------------------------------------------------
 Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 42.186 sec
+=======
+-------------------------------------------------------------------------------
+Test set: asd.test.RunTest
+-------------------------------------------------------------------------------
+Tests run: 22, Failures: 0, Errors: 0, Skipped: 20, Time elapsed: 44.687 sec
+>>>>>>> 67e71ea192e812e83e57846e2a80a56d9c8d8df9:target/surefire-reports/asd.test.RunTest.txt
