@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2019-09-14T08:21:33.204Z",
+        "start_timestamp": "2019-09-14T08:28:09.551Z",
         "line": 6,
         "name": "Successfully create/update/delete preffered payment method",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 8445385700,
+              "duration": 8642513400,
               "status": "passed"
             },
             "line": 7,
@@ -31,7 +31,7 @@
           },
           {
             "result": {
-              "duration": 346460500,
+              "duration": 377276600,
               "status": "passed"
             },
             "line": 8,
@@ -43,7 +43,7 @@
           },
           {
             "result": {
-              "duration": 523378700,
+              "duration": 1666358900,
               "status": "passed"
             },
             "line": 9,
@@ -61,7 +61,7 @@
           },
           {
             "result": {
-              "duration": 1139192200,
+              "duration": 1827892100,
               "status": "passed"
             },
             "line": 10,
@@ -79,7 +79,7 @@
           },
           {
             "result": {
-              "duration": 845590700,
+              "duration": 943022200,
               "status": "passed"
             },
             "line": 11,
@@ -97,7 +97,7 @@
           },
           {
             "result": {
-              "duration": 754271200,
+              "duration": 780001400,
               "status": "passed"
             },
             "line": 12,
@@ -115,7 +115,7 @@
           },
           {
             "result": {
-              "duration": 1019211000,
+              "duration": 980289800,
               "status": "passed"
             },
             "line": 13,
@@ -127,7 +127,7 @@
           },
           {
             "result": {
-              "duration": 543848500,
+              "duration": 767347000,
               "status": "passed"
             },
             "line": 14,
@@ -145,7 +145,7 @@
           },
           {
             "result": {
-              "duration": 525101700,
+              "duration": 547178600,
               "status": "passed"
             },
             "line": 15,
@@ -163,7 +163,7 @@
           },
           {
             "result": {
-              "duration": 549803900,
+              "duration": 885397600,
               "status": "passed"
             },
             "line": 16,
@@ -181,7 +181,7 @@
           },
           {
             "result": {
-              "duration": 1242813000,
+              "duration": 1230379800,
               "status": "passed"
             },
             "line": 17,
@@ -193,7 +193,7 @@
           },
           {
             "result": {
-              "duration": 481443600,
+              "duration": 480206100,
               "status": "passed"
             },
             "line": 18,
@@ -211,7 +211,7 @@
           },
           {
             "result": {
-              "duration": 498577100,
+              "duration": 512835400,
               "status": "passed"
             },
             "line": 19,
@@ -229,7 +229,7 @@
           },
           {
             "result": {
-              "duration": 552572400,
+              "duration": 535694500,
               "status": "passed"
             },
             "line": 20,
@@ -247,7 +247,7 @@
           },
           {
             "result": {
-              "duration": 486746700,
+              "duration": 557912800,
               "status": "passed"
             },
             "line": 21,
@@ -265,7 +265,7 @@
           },
           {
             "result": {
-              "duration": 535418100,
+              "duration": 723350700,
               "status": "passed"
             },
             "line": 22,
@@ -284,7 +284,7 @@
         ]
       },
       {
-        "start_timestamp": "2019-09-14T08:21:51.697Z",
+        "start_timestamp": "2019-09-14T08:28:31.012Z",
         "line": 23,
         "name": "Successfully create top up card",
         "description": "",
@@ -294,7 +294,7 @@
         "steps": [
           {
             "result": {
-              "duration": 7265783500,
+              "duration": 7330645000,
               "status": "passed"
             },
             "line": 24,
@@ -312,7 +312,7 @@
           },
           {
             "result": {
-              "duration": 328674500,
+              "duration": 318649000,
               "status": "passed"
             },
             "line": 25,
@@ -324,7 +324,7 @@
           },
           {
             "result": {
-              "duration": 464835500,
+              "duration": 463849900,
               "status": "passed"
             },
             "line": 26,
@@ -342,7 +342,7 @@
           },
           {
             "result": {
-              "duration": 1151926900,
+              "duration": 1172506400,
               "status": "passed"
             },
             "line": 27,
@@ -360,7 +360,7 @@
           },
           {
             "result": {
-              "duration": 763045500,
+              "duration": 908968100,
               "status": "passed"
             },
             "line": 28,
@@ -378,7 +378,7 @@
           },
           {
             "result": {
-              "duration": 418900800,
+              "duration": 411871000,
               "status": "passed"
             },
             "line": 29,
@@ -390,7 +390,7 @@
           },
           {
             "result": {
-              "duration": 788217500,
+              "duration": 1198194300,
               "status": "passed"
             },
             "line": 30,
@@ -408,7 +408,7 @@
           },
           {
             "result": {
-              "duration": 1028260900,
+              "duration": 1020420000,
               "status": "passed"
             },
             "line": 31,
@@ -420,7 +420,7 @@
           },
           {
             "result": {
-              "duration": 596975100,
+              "duration": 903489900,
               "status": "passed"
             },
             "line": 32,
@@ -438,7 +438,7 @@
           },
           {
             "result": {
-              "duration": 641294400,
+              "duration": 1218915800,
               "status": "passed"
             },
             "line": 33,
@@ -468,7 +468,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2019-09-14T08:22:05.161Z",
+        "start_timestamp": "2019-09-14T08:28:45.974Z",
         "line": 11,
         "name": "Successfully created an account",
         "description": "",
@@ -478,7 +478,7 @@
         "steps": [
           {
             "result": {
-              "duration": 7402086000,
+              "duration": 7316881100,
               "status": "passed"
             },
             "line": 12,
@@ -524,7 +524,7 @@
         ]
       },
       {
-        "start_timestamp": "2019-09-14T08:22:12.581Z",
+        "start_timestamp": "2019-09-14T08:28:53.298Z",
         "line": 21,
         "name": "Successfully update account details",
         "description": "",
@@ -652,7 +652,7 @@
         ]
       },
       {
-        "start_timestamp": "2019-09-14T08:22:12.583Z",
+        "start_timestamp": "2019-09-14T08:28:53.299Z",
         "line": 38,
         "name": "Successfully forget password",
         "description": "",
