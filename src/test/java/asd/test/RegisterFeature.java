@@ -65,7 +65,7 @@ public class RegisterFeature extends Driver{
     
     @Given("user is in {string}")
     public void user_is_in(String url) {
-        driver.get("http://localhost:8080/ASD-Test/"+url);
+        driver.get("https://asd-test-app.herokuapp.com/"+url);
     }
     
     @When("user fill in login details")
@@ -153,7 +153,7 @@ public class RegisterFeature extends Driver{
     @Given("user in {string}")
     public void user_in(String url) {
         // Write code here that turns the phrase above into concrete actions
-        driver.get("http://localhost:8080/ASD-Test/"+url);
+        driver.get("https://asd-test-app.herokuapp.com/"+url);
     }
 
     @When("user chooses {string}")
