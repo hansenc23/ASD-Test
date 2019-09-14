@@ -897,7 +897,7 @@ public class MongoDBConnector {
             MongoCollection<Document> userlist = db.getCollection("ASD-app-users");
             String customerID = getCustomerID(user.getEmail(), user.getPassword());
             for (Document ord : orderlist.find(eq("CustomerID", customerID))) {
-                Order order = new Order((String) ord.get("CustimerID"), (String) ord.get("OpalID"), (String) ord.get("PaymentCard"), (String) ord.get("OpalType"), (String) ord.get("OrderDate"), (double) ord.get("Value"), (String) ord.get("Status"));
+                Order order = new Order((String) ord.get("CustomerID"), (String) ord.get("OpalID"), (String) ord.get("PaymentCard"), (String) ord.get("OpalType"), (String) ord.get("OrderDate"), (double) ord.get("Value"), (String) ord.get("Status"));
                 orders.addOrder(order);
             }
         }
@@ -991,7 +991,7 @@ public class MongoDBConnector {
             MongoCollection<Document> userlist = db.getCollection("ASD-app-users");
             String customerID = getCustomerID(user.getEmail(), user.getPassword());
             for (Document ord : orderlist.find(eq("CustomerID", customerID))) {
-                Order order = new Order((String) ord.get("CustimerID"), (String) ord.get("OpalID"), (String) ord.get("PaymentCard"), (String) ord.get("OpalType"), (String) ord.get("OrderDate"), (double) ord.get("Value"), (String) ord.get("Status"));
+                Order order = new Order((String) ord.get("CustomerID"), (String) ord.get("OpalID"), (String) ord.get("PaymentCard"), (String) ord.get("OpalType"), (String) ord.get("OrderDate"), (double) ord.get("Value"), (String) ord.get("Status"));
                 orders.addOrder(order);
             }
         test = "test succeed";
@@ -1045,6 +1045,17 @@ public class MongoDBConnector {
         }
         return order;
     } 
+    public String testGetCustomerID(String email) {
+        MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
+        String customerID;
+        try (MongoClient client = new MongoClient(uri)) {
+            MongoDatabase db = client.getDatabase(uri.getDatabase());
+            MongoCollection<Document> userlist = db.getCollection("ASD-app-users");
+            Document doc = userlist.find(eq("Username", email)).first();
+            customerID = (String) doc.get("_id").toString();
+        }
+        return customerID;
+    }
 //    
     
 //timeManager
