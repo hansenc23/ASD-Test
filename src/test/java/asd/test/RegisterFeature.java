@@ -73,47 +73,47 @@
 //        driver.quit();
 //        throw new cucumber.api.PendingException();
 //    }
+
+//    @Given("User is logged in")
+//    public void user_is_logged_in() {
+//        // Write code here that turns the phrase above into concrete actions
+//        throw new cucumber.api.PendingException();
+//    }
 //
-////    @Given("User is logged in")
-////    public void user_is_logged_in() {
-////        // Write code here that turns the phrase above into concrete actions
-////        throw new cucumber.api.PendingException();
-////    }
-////
-////    @Given("User click on {string}")
-////    public void user_click_on(String string) {
-////        // Write code here that turns the phrase above into concrete actions
-////        throw new cucumber.api.PendingException();
-////    }
-////
-////    @Then("User click on {string}")
-////    public void user_click_on(String string) {
-////        // Write code here that turns the phrase above into concrete actions
-////        throw new cucumber.api.PendingException();
-////    }
-////
-////    @Then("User update necessary details")
-////    public void user_update_necessary_details() {
-////        // Write code here that turns the phrase above into concrete actions
-////        throw new cucumber.api.PendingException();
-////    }
-////
-////    @Then("user click on update")
-////    public void user_click_on_update() {
-////        // Write code here that turns the phrase above into concrete actions
-////        throw new cucumber.api.PendingException();
-////    }
-////
-////    @Then("User should see {string}")
-////    public void user_should_see(String string) {
-////        // Write code here that turns the phrase above into concrete actions
-////        throw new cucumber.api.PendingException();
-////    }
-////
-////    @Then("user click on back")
-////    public void user_click_on_back() {
-////        // Write code here that turns the phrase above into concrete actions
-////        throw new cucumber.api.PendingException();
-////    }
-//    
+//    @Given("User click on {string}")
+//    public void user_click_on(String string) {
+//        // Write code here that turns the phrase above into concrete actions
+//        throw new cucumber.api.PendingException();
+//    }
+//
+//    @Then("User click on {string}")
+//    public void user_click_on(String string) {
+//        // Write code here that turns the phrase above into concrete actions
+//        throw new cucumber.api.PendingException();
+//    }
+//
+//    @Then("User update necessary details")
+//    public void user_update_necessary_details() {
+//        // Write code here that turns the phrase above into concrete actions
+//        throw new cucumber.api.PendingException();
+//    }
+//
+//    @Then("user click on update")
+//    public void user_click_on_update() {
+//        // Write code here that turns the phrase above into concrete actions
+//        throw new cucumber.api.PendingException();
+//    }
+//
+//    @Then("User should see {string}")
+//    public void user_should_see(String string) {
+//        // Write code here that turns the phrase above into concrete actions
+//        throw new cucumber.api.PendingException();
+//    }
+//
+//    @Then("user click on back")
+//    public void user_click_on_back() {
+//        // Write code here that turns the phrase above into concrete actions
+//        throw new cucumber.api.PendingException();
+//    }
+    
 //}

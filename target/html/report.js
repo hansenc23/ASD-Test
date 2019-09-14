@@ -352,4 +352,169 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.uri("file:opalFeatures/TopUpManagementFeature.feature");
+formatter.feature({
+  "name": "TopUpManagementFeature",
+  "description": "    As a user of Opal project \n    I want to create/delete/update payment method\n    So that I can top up my card with my payment method",
+  "keyword": "Feature"
+});
+formatter.scenario({
+  "name": "Successfully create/update/delete preffered payment method",
+  "description": "",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "name": "User is in the \"login.jsp\"",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "OrderFeature.user_is_in_the(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User fill in user detail",
+  "keyword": "When "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "User click \"login_submit\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "OrderFeature.user_click(String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "User click \"loginAction_success\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "OrderFeature.user_click(String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "User click \"sidebar_paymentMethodManagement\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "OrderFeature.user_click(String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "User click \"paymentMethodManagement_addMethod\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "OrderFeature.user_click(String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "User fill in paymentmethod detail",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "User click \"addPaymentMethod_submit\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "OrderFeature.user_click(String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "User click \"addPaymentMethodOutcome_back\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "OrderFeature.user_click(String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "User click \"9876987698769876\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "OrderFeature.user_click(String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "User fill in update detail",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "User click \"updatePaymentmethod_update\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "OrderFeature.user_click(String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "User click \"updatePaymentmethod_back\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "OrderFeature.user_click(String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "User click \"7654765476547654\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "OrderFeature.user_click(String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "User click \"updatePaymentmethod_delete\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "OrderFeature.user_click(String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "User click \"updatePaymentmethod_back\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "OrderFeature.user_click(String)"
+});
+formatter.result({
+  "status": "skipped"
+});
 });

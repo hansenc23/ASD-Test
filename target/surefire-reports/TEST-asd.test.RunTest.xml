@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="4" failures="0" name="asd.test.RunTest" time="63.794" errors="0" skipped="0">
+<testsuite tests="7" failures="0" name="asd.test.RunTest" time="140.384" errors="0" skipped="3">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_212\jre\bin"/>
@@ -61,8 +61,17 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="Order Opal Card Feature" name="Successfully order an Opal Card and edit an order as an anonymous user" time="21.437"/>
-  <testcase classname="Order Opal Card Feature" name="Successfully order an Opal Card as a customer" time="12.922"/>
-  <testcase classname="Order Opal Card Feature" name="Successfully view the order history" time="19.659"/>
-  <testcase classname="Order Opal Card Feature" name="Successfully view all the order" time="9.509"/>
+  <testcase classname="Order Opal Card Feature" name="Successfully order an Opal Card and edit an order as an anonymous user" time="67.418"/>
+  <testcase classname="Order Opal Card Feature" name="Successfully order an Opal Card as a customer" time="45.805"/>
+  <testcase classname="Order Opal Card Feature" name="Successfully view the order history" time="10.251"/>
+  <testcase classname="Order Opal Card Feature" name="Successfully view all the order" time="9.643"/>
+  <testcase classname="TopUpManagementFeature" name="Successfully create\/update\/delete preffered payment method" time="6.98">
+    <skipped/>
+  </testcase>
+  <testcase classname="TopUpManagementFeature" name="Successfully create\/update\/delete preffered payment method" time="6.98">
+    <skipped/>
+  </testcase>
+  <testcase classname="TopUpManagementFeature" name="Successfully create\/update\/delete preffered payment method" time="6.98">
+    <skipped/>
+  </testcase>
 </testsuite>
