@@ -3,568 +3,20 @@
     "line": 4,
     "elements": [
       {
-<<<<<<< HEAD
-        "start_timestamp": "2019-09-13T05:11:05.077Z",
-        "line": 6,
-        "name": "A user will be able to login , and logout",
+        "start_timestamp": "2019-09-14T14:06:02.301Z",
+        "line": 16,
+        "name": "A user want to delete their access history",
         "description": "",
-        "id": "login-and-logout;a-user-will-be-able-to-login---and-logout",
-=======
-        "start_timestamp": "2019-09-14T08:28:09.551Z",
-        "line": 6,
-        "name": "Successfully create/update/delete preffered payment method",
-        "description": "",
-        "id": "topupmanagementfeature;successfully-create/update/delete-preffered-payment-method",
->>>>>>> 67e71ea192e812e83e57846e2a80a56d9c8d8df9
+        "id": "access-manager;a-user-want-to-delete-their-access-history",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-<<<<<<< HEAD
-              "status": "undefined"
-            },
-            "line": 7,
-            "name": "User is in the \"main.jsp\"",
-            "match": {},
-=======
-              "duration": 8642513400,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "User is in the \"login.jsp\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"login.jsp\"",
-                  "offset": 15
-                }
-              ],
-              "location": "TopUpManagementFeature.user_is_in_the(String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 377276600,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "User fill in user detail",
-            "match": {
-              "location": "TopUpManagementFeature.user_fill_in_user_detail()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1666358900,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "User click \"login_submit\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"login_submit\"",
-                  "offset": 11
-                }
-              ],
-              "location": "TopUpManagementFeature.user_click_loginsuccess(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1827892100,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "User click \"loginAction_success\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"loginAction_success\"",
-                  "offset": 11
-                }
-              ],
-              "location": "TopUpManagementFeature.user_click_loginsuccess(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 943022200,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "User click \"sidebar_paymentMethodManagement\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"sidebar_paymentMethodManagement\"",
-                  "offset": 11
-                }
-              ],
-              "location": "TopUpManagementFeature.user_click_loginsuccess(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 780001400,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "User click \"paymentMethodManagement_addMethod\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"paymentMethodManagement_addMethod\"",
-                  "offset": 11
-                }
-              ],
-              "location": "TopUpManagementFeature.user_click_loginsuccess(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 980289800,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "User fill in paymentmethod detail",
-            "match": {
-              "location": "TopUpManagementFeature.user_fill_in_paymentmethod_detail()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 767347000,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "User click \"addPaymentMethod_submit\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"addPaymentMethod_submit\"",
-                  "offset": 11
-                }
-              ],
-              "location": "TopUpManagementFeature.user_click_loginsuccess(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 547178600,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "User click \"addPaymentMethodOutcome_back\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"addPaymentMethodOutcome_back\"",
-                  "offset": 11
-                }
-              ],
-              "location": "TopUpManagementFeature.user_click_loginsuccess(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 885397600,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "User click \"9876987698769876\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"9876987698769876\"",
-                  "offset": 11
-                }
-              ],
-              "location": "TopUpManagementFeature.user_click_loginsuccess(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1230379800,
+              "duration": 6480630800,
               "status": "passed"
             },
             "line": 17,
-            "name": "User fill in update detail",
-            "match": {
-              "location": "TopUpManagementFeature.user_fill_in_update_detail()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 480206100,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "User click \"updatePaymentmethod_update\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"updatePaymentmethod_update\"",
-                  "offset": 11
-                }
-              ],
-              "location": "TopUpManagementFeature.user_click_loginsuccess(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 512835400,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "User click \"updatePaymentmethod_back\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"updatePaymentmethod_back\"",
-                  "offset": 11
-                }
-              ],
-              "location": "TopUpManagementFeature.user_click_loginsuccess(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 535694500,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "User click \"7654765476547654\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"7654765476547654\"",
-                  "offset": 11
-                }
-              ],
-              "location": "TopUpManagementFeature.user_click_loginsuccess(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 557912800,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "User click \"updatePaymentmethod_delete\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"updatePaymentmethod_delete\"",
-                  "offset": 11
-                }
-              ],
-              "location": "TopUpManagementFeature.user_click_loginsuccess(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 723350700,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "User click \"updatePaymentmethod_back\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"updatePaymentmethod_back\"",
-                  "offset": 11
-                }
-              ],
-              "location": "TopUpManagementFeature.user_click_loginsuccess(String)"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2019-09-14T08:28:31.012Z",
-        "line": 23,
-        "name": "Successfully create top up card",
-        "description": "",
-        "id": "topupmanagementfeature;successfully-create-top-up-card",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 7330645000,
-              "status": "passed"
-            },
-            "line": 24,
-            "name": "User is in the \"login.jsp\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"login.jsp\"",
-                  "offset": 15
-                }
-              ],
-              "location": "TopUpManagementFeature.user_is_in_the(String)"
-            },
->>>>>>> 67e71ea192e812e83e57846e2a80a56d9c8d8df9
-            "keyword": "Given "
-          },
-          {
-            "result": {
-<<<<<<< HEAD
-              "status": "undefined"
-            },
-            "line": 8,
-            "name": "User Click on \"register\"",
-            "match": {},
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 9,
-            "name": "User register as user",
-            "match": {},
-=======
-              "duration": 318649000,
-              "status": "passed"
-            },
-            "line": 25,
-            "name": "User fill in user detail",
-            "match": {
-              "location": "TopUpManagementFeature.user_fill_in_user_detail()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 463849900,
-              "status": "passed"
-            },
-            "line": 26,
-            "name": "User click \"login_submit\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"login_submit\"",
-                  "offset": 11
-                }
-              ],
-              "location": "TopUpManagementFeature.user_click_loginsuccess(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1172506400,
-              "status": "passed"
-            },
-            "line": 27,
-            "name": "User click \"loginAction_success\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"loginAction_success\"",
-                  "offset": 11
-                }
-              ],
-              "location": "TopUpManagementFeature.user_click_loginsuccess(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 908968100,
-              "status": "passed"
-            },
-            "line": 28,
-            "name": "User click \"sidebar_topUpValue\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"sidebar_topUpValue\"",
-                  "offset": 11
-                }
-              ],
-              "location": "TopUpManagementFeature.user_click_loginsuccess(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 411871000,
-              "status": "passed"
-            },
-            "line": 29,
-            "name": "User fill in payment amount",
-            "match": {
-              "location": "TopUpManagementFeature.user_fill_in_payment_amount()"
-            },
->>>>>>> 67e71ea192e812e83e57846e2a80a56d9c8d8df9
-            "keyword": "And "
-          },
-          {
-            "result": {
-<<<<<<< HEAD
-              "status": "undefined"
-            },
-            "line": 10,
-            "name": "User click \"register\"",
-            "match": {},
-=======
-              "duration": 1198194300,
-              "status": "passed"
-            },
-            "line": 30,
-            "name": "User click \"topUpValue_submit\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"topUpValue_submit\"",
-                  "offset": 11
-                }
-              ],
-              "location": "TopUpManagementFeature.user_click_loginsuccess(String)"
-            },
->>>>>>> 67e71ea192e812e83e57846e2a80a56d9c8d8df9
-            "keyword": "And "
-          },
-          {
-            "result": {
-<<<<<<< HEAD
-              "status": "undefined"
-            },
-            "line": 11,
-            "name": "User click \"continue\"",
-            "match": {},
-=======
-              "duration": 1020420000,
-              "status": "passed"
-            },
-            "line": 31,
-            "name": "User fill in the payment detail",
-            "match": {
-              "location": "TopUpManagementFeature.user_fill_in_the_payment_detail()"
-            },
->>>>>>> 67e71ea192e812e83e57846e2a80a56d9c8d8df9
-            "keyword": "And "
-          },
-          {
-            "result": {
-<<<<<<< HEAD
-              "status": "undefined"
-            },
-            "line": 12,
-            "name": "User click \"logout\"",
-            "match": {},
-=======
-              "duration": 903489900,
-              "status": "passed"
-            },
-            "line": 32,
-            "name": "User click \"topUpCard_submit\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"topUpCard_submit\"",
-                  "offset": 11
-                }
-              ],
-              "location": "TopUpManagementFeature.user_click_loginsuccess(String)"
-            },
->>>>>>> 67e71ea192e812e83e57846e2a80a56d9c8d8df9
-            "keyword": "And "
-          },
-          {
-            "result": {
-<<<<<<< HEAD
-              "status": "undefined"
-            },
-            "line": 13,
-            "name": "User click \"main page\"",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 14,
-            "name": "User click \"login\"",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 15,
-            "name": "User fill user information",
-            "match": {},
-            "keyword": "And "
-=======
-              "duration": 1218915800,
-              "status": "passed"
-            },
-            "line": 33,
-            "name": "User click \"topUpConfirmation_confirm\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"topUpConfirmation_confirm\"",
-                  "offset": 11
-                }
-              ],
-              "location": "TopUpManagementFeature.user_click_loginsuccess(String)"
-            },
-            "keyword": "Then "
-          }
-        ]
-      }
-    ],
-    "name": "TopUpManagementFeature",
-    "description": "    As a user of Opal project \n    I want to create/delete/update payment method\n    So that I can top up my card with my payment method",
-    "id": "topupmanagementfeature",
-    "keyword": "Feature",
-    "uri": "file:opalFeatures/TopUpManagementFeature.feature",
-    "tags": []
-  },
-  {
-    "line": 2,
-    "elements": [
-      {
-        "start_timestamp": "2019-09-14T08:28:45.974Z",
-        "line": 11,
-        "name": "Successfully created an account",
-        "description": "",
-        "id": "online-user-registration;successfully-created-an-account",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 7316881100,
-              "status": "passed"
-            },
-            "line": 12,
             "name": "User is in the \"main.jsp\"",
             "match": {
               "arguments": [
@@ -573,246 +25,150 @@
                   "offset": 15
                 }
               ],
-              "location": "TopUpManagementFeature.user_is_in_the(String)"
+              "location": "loginFeature.user_is_in_the(String)"
             },
             "keyword": "Given "
->>>>>>> 67e71ea192e812e83e57846e2a80a56d9c8d8df9
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 114967200,
+              "status": "passed"
             },
-<<<<<<< HEAD
-            "line": 16,
-            "name": "User click \"here to continue\"",
-=======
-            "line": 13,
-            "name": "User Click on \"navbar_register\"",
-            "match": {},
+            "line": 18,
+            "name": "User Click on \"navbar_login\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"navbar_login\"",
+                  "offset": 14
+                }
+              ],
+              "location": "loginFeature.user_Click_on(String)"
+            },
             "keyword": "When "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 157834300,
+              "status": "passed"
             },
-            "line": 14,
-            "name": "User fill in contact detail",
->>>>>>> 67e71ea192e812e83e57846e2a80a56d9c8d8df9
-            "match": {},
+            "line": 19,
+            "name": "User fill user information",
+            "match": {
+              "location": "loginFeature.user_fill_user_information()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 4241959200,
+              "status": "passed"
             },
-<<<<<<< HEAD
-            "line": 17,
-            "name": "User click \"\u003clogout\u003e\"",
-=======
-            "line": 16,
-            "name": "User clicks \"back\"",
-            "match": {},
+            "line": 20,
+            "name": "User Click on \"login_submit\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"login_submit\"",
+                  "offset": 14
+                }
+              ],
+              "location": "loginFeature.user_Click_on(String)"
+            },
             "keyword": "And "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2019-09-14T08:28:53.298Z",
-        "line": 21,
-        "name": "Successfully update account details",
-        "description": "",
-        "id": "online-user-registration;successfully-update-account-details",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
+          },
           {
             "result": {
-              "status": "undefined"
+              "duration": 5944230600,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User Click on \"loginAction_success\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"loginAction_success\"",
+                  "offset": 14
+                }
+              ],
+              "location": "loginFeature.user_Click_on(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4361907100,
+              "status": "passed"
             },
             "line": 22,
-            "name": "user is in \"login.jsp\"",
-            "match": {},
-            "keyword": "Given "
+            "name": "User Click \"sidebar_accessManager\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"sidebar_accessManager\"",
+                  "offset": 11
+                }
+              ],
+              "location": "loginFeature.user_Click(String)"
+            },
+            "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 7931179600,
+              "status": "passed"
             },
             "line": 23,
-            "name": "user fill in login details",
-            "match": {},
+            "name": "User Click on \"delete\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"delete\"",
+                  "offset": 14
+                }
+              ],
+              "location": "loginFeature.user_Click_on(String)"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 7974201500,
+              "status": "passed"
             },
             "line": 24,
-            "name": "user choose \"loginAction_success\"",
-            "match": {},
+            "name": "User refresh page",
+            "match": {
+              "location": "loginFeature.user_refresh_page()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 620855100,
+              "status": "passed"
             },
             "line": 25,
-            "name": "User Clicks on \"navbar_profile\"",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
+            "name": "The page should be navigated to \"Access manager\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Access manager\"",
+                  "offset": 32
+                }
+              ],
+              "location": "loginFeature.the_page_should_be_navigated_to(String)"
             },
-            "line": 26,
-            "name": "User edits \"edit_profile\"",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 27,
-            "name": "User update details",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 28,
-            "name": "user click to \"back_to_profile\"",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 29,
-            "name": "user click change password \"change_password\"",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 30,
-            "name": "user update password",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 31,
-            "name": "user is back to profile \"back_to_profile\"",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 32,
-            "name": "user choose add security question \"add_question\"",
->>>>>>> 67e71ea192e812e83e57846e2a80a56d9c8d8df9
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-<<<<<<< HEAD
-            "line": 18,
-            "name": "The page should be navigated to \"\u003clogout action\u003e\"",
-            "match": {},
             "keyword": "Then "
-=======
-            "line": 33,
-            "name": "user choose from a list of question",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 34,
-            "name": "user goes back to profile \"back_to_profile\"",
-            "match": {},
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2019-09-14T08:28:53.299Z",
-        "line": 38,
-        "name": "Successfully forget password",
-        "description": "",
-        "id": "online-user-registration;successfully-forget-password",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 39,
-            "name": "user in \"login.jsp\"",
-            "match": {},
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 40,
-            "name": "user chooses \"forget_button\"",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 41,
-            "name": "user enter email address",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 42,
-            "name": "user input answer",
-            "match": {},
-            "keyword": "And "
->>>>>>> 67e71ea192e812e83e57846e2a80a56d9c8d8df9
           }
         ]
       }
     ],
-<<<<<<< HEAD
-    "name": "Login and Logout",
+    "name": "Access Manager",
     "description": "",
-    "id": "login-and-logout",
+    "id": "access-manager",
     "keyword": "Feature",
     "uri": "file:opalFeatures/loginFeature.feature",
-=======
-    "name": "Online User Registration",
-    "description": "",
-    "id": "online-user-registration",
-    "keyword": "Feature",
-    "uri": "file:opalFeatures/UserRegistrationFeature.feature",
->>>>>>> 67e71ea192e812e83e57846e2a80a56d9c8d8df9
     "tags": []
   }
 ]

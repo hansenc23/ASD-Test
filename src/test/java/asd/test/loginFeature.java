@@ -20,7 +20,7 @@ public class loginFeature extends Driver{
 WebDriver driver;
 @Given("User is in the {string}")
 public void user_is_in_the(String url) {
-     driver.get("https://asd-test-app.herokuapp.com/"+url);
+     driver.get("http://localhost:8080/ASD-Test/"+url);
      
 }
  public loginFeature() {
@@ -28,11 +28,6 @@ public void user_is_in_the(String url) {
     }
  
  
- 
- @When("User Click on {string}")
-    public void user_Click_on(String type) {
-        driver.findElement(By.id(type)).click();
-    }
 
 
 @When("User register as user")
@@ -49,16 +44,32 @@ public void user_register_as_user() {
     throw new cucumber.api.PendingException();
 }
 
-
+@When("User Click on {string}")
+        public void user_Click_on(String type) {
+       driver.findElement(By.id(type)).click();
+        }
+        
+  
 @When("User fill user information")
 public void user_fill_user_information() {
     
-    throw new cucumber.api.PendingException();
+    driver.findElement(By.id("login_email")).sendKeys("tom@gmail.com");
+    driver.findElement(By.id("login_password")).sendKeys("tomcruise");
+    
 }
-
+@When("User Click {string}")
+        public void user_Click(String type) {
+       driver.findElement(By.id(type)).click();
+        }  
+@When("User refresh page")
+       public void user_refresh_page(){
+           driver.navigate().refresh();
+       }
+               
 @Then("The page should be navigated to {string}")
-public void the_page_should_be_navigated_to(String string) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new cucumber.api.PendingException();
-}
+    public void the_page_should_be_navigated_to(String title) {
+        Assert.assertTrue(driver.getTitle().contains(title));
+       driver.quit();
+   }
+
 }

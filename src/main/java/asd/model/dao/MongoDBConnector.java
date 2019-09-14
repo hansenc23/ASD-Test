@@ -1218,4 +1218,45 @@ public class MongoDBConnector {
         }
     }
     
+
+
+    
+   public String testAdd(Time time) {
+        MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
+        String test;
+        try (MongoClient client = new MongoClient(uri)) {
+            MongoDatabase db = client.getDatabase(uri.getDatabase());
+            times.add(new Document("customerID", time.getCustomerID()).append("loginID", time. getloginID()).append("loginT", time.getLoginT()).append("logoutT", time.getLogoutT()));
+            MongoCollection<Document> timelist = db.getCollection("ASD-app-times"); //Create a collection ASD-app-times on mLab
+            timelist.insertMany(times);
+            test = "test succeed";
+                }catch(Exception error){
+                     test = "error";
+             }
+        return test;
+    }
+     public String testUserSearchTimes(String customerID,String loginT) {
+        MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
+        Times times;
+        String test;
+        BasicDBObject query = new BasicDBObject();
+        try (MongoClient client = new MongoClient(uri)) {
+            MongoDatabase db = client.getDatabase(uri.getDatabase());   
+            times = new Times();
+            Pattern p = Pattern.compile(customerID);
+            Pattern t = Pattern.compile(loginT +".*");
+            query.append("loginT",t);
+            query.append("customerID", p);
+            MongoCollection<Document> timelist = db.getCollection("ASD-app-times");
+            for (Document doc : timelist.find(query)) {
+                Time time = new Time((String) doc.get("customerID"), (String) doc.get("loginID"), (String) doc.get("loginT"), (String) doc.get("logoutT"));
+                times.addTime(time);
+                
+            }
+        test = "test succeed";
+        }catch(Exception error){
+            test = "error";
+        }
+        return test;
+    }
 }
