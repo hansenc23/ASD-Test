@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="6" failures="0" name="asd.test.OrderUnitTest" time="58.342" errors="0" skipped="0">
+<testsuite tests="6" failures="0" name="asd.test.OrderUnitTest" time="58.547" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_212\jre\bin"/>
@@ -61,10 +61,10 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="asd.test.OrderUnitTest" name="addOrder" time="8.419"/>
-  <testcase classname="asd.test.OrderUnitTest" name="listOrder" time="4.249"/>
-  <testcase classname="asd.test.OrderUnitTest" name="getOrderID" time="8.263"/>
-  <testcase classname="asd.test.OrderUnitTest" name="addOrderPaymentmethod" time="8.475"/>
-  <testcase classname="asd.test.OrderUnitTest" name="getOrders" time="10.317"/>
-  <testcase classname="asd.test.OrderUnitTest" name="getOrderPayment" time="8.251"/>
+  <testcase classname="asd.test.OrderUnitTest" name="addOrder" time="8.538"/>
+  <testcase classname="asd.test.OrderUnitTest" name="listOrder" time="4.124"/>
+  <testcase classname="asd.test.OrderUnitTest" name="getOrderID" time="8.34"/>
+  <testcase classname="asd.test.OrderUnitTest" name="addOrderPaymentmethod" time="8.436"/>
+  <testcase classname="asd.test.OrderUnitTest" name="getOrders" time="10.455"/>
+  <testcase classname="asd.test.OrderUnitTest" name="getOrderPayment" time="8.329"/>
 </testsuite>
