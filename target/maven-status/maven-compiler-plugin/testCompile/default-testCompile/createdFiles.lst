@@ -1,3 +1,9 @@
 asd\test\Driver.class
+<<<<<<< HEAD
 asd\test\RegisterFeature.class
+=======
+asd\test\OrderFeature.class
+asd\test\OrderUnitTest.class
+asd\test\TopUpManagementUnitTest.class
+>>>>>>> 363582452c631d5ebc360415977d13cffe37c882
 asd\test\RunTest.class

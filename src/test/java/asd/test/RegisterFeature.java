@@ -1,3 +1,4 @@
+
 package asd.test;
 
 import cucumber.api.java.en.Given;
@@ -167,7 +168,6 @@ public class RegisterFeature extends Driver{
         driver.findElement(By.id("enter_email")).sendKeys("tom@gmail.com");
         driver.findElement(By.id("confirm_email")).click();
     }
-
     @When("user input answer")
     public void user_input_answer() {
         // Write code here that turns the phrase above into concrete actions
@@ -177,3 +177,4 @@ public class RegisterFeature extends Driver{
     
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
 }
+

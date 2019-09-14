@@ -36,7 +36,11 @@
                         <input id="login_submit" type="submit" value="Log In">
                       <button class="button" type="button" onclick="location.href = 'index.jsp'" > Home Page </button>
                     </td></tr>
+<<<<<<< HEAD
                 <tr><td><a id="forget_button" href="forgetPassword.jsp">Forgot your password?</a></td></tr>
+=======
+                <tr><td><a href="forgetPassword.jsp">Forgot your password?</a></td></tr>
+>>>>>>> 363582452c631d5ebc360415977d13cffe37c882
             </table>
          </form>
         </div>
