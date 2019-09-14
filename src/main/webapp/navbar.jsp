@@ -20,8 +20,8 @@
         <div class="navigation-bar">
             <ul>
                 <li><a href="#">FAQs</a></li>
-                <li><a href="login.jsp">Login</a></li>
-                <li><a href="register.jsp">Register</a></li>
+                <li><a id="navbar_login" href="login.jsp">Login</a></li>
+                <li><a id="navbar_register" href="register.jsp">Register</a></li>
                 <li><a href="main.jsp">Home</a></li>
               
                 
@@ -33,7 +33,7 @@
         String name = user.getFirstName();%>
          <div class="navigation-bar">
              <ul>
-                <li><a href="accountProfile.jsp">Welcome <%=name%></a></li>
+                <li><a id="navbar_profile" href="accountProfile.jsp">Welcome <%=name%></a></li>
                 <li><a id="order_history" href="orderHistory.jsp">Order History</a></li>
                 <li><a href="logout.jsp">Logout</a></li>
                 <li><a href="main.jsp">Home</a></li>

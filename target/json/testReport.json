@@ -1,13 +1,13 @@
 [
   {
-    "line": 1,
+    "line": 4,
     "elements": [
       {
-        "start_timestamp": "2019-09-13T15:24:56.232Z",
+        "start_timestamp": "2019-09-14T03:54:05.849Z",
         "line": 7,
-        "name": "Successfully link Opal card to account",
+        "name": "Successfully created a customer account",
         "description": "",
-        "id": "link-card-feature;successfully-link-opal-card-to-account",
+        "id": "online-user-registration;successfully-created-a-customer-account",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
@@ -16,7 +16,7 @@
               "status": "undefined"
             },
             "line": 8,
-            "name": "the User is logged in to the website",
+            "name": "User is in \"main.jsp\"",
             "match": {},
             "keyword": "Given "
           },
@@ -25,16 +25,7 @@
               "status": "undefined"
             },
             "line": 9,
-            "name": "is in the \"main.jsp\"",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 10,
-            "name": "User click on \"linkCard\"",
+            "name": "User click on \"register\"",
             "match": {},
             "keyword": "When "
           },
@@ -42,8 +33,17 @@
             "result": {
               "status": "undefined"
             },
+            "line": 10,
+            "name": "the page should be navigated to \"register.jsp\"",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
             "line": 11,
-            "name": "User fill in \"OpalID\" with \"\u003cOpalID\u003e\"",
+            "name": "User fill in registration details",
             "match": {},
             "keyword": "And "
           },
@@ -52,81 +52,54 @@
               "status": "undefined"
             },
             "line": 12,
-            "name": "User fill in \"securityCode\" with \"\u003csecurityCode\u003e\"",
+            "name": "user click \"register\"",
             "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 4100,
-              "status": "skipped"
-            },
-            "line": 13,
-            "name": "User click \"linkCard_link\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"linkCard_link\"",
-                  "offset": 11
-                }
-              ],
-              "location": "OrderFeature.user_click(String)"
-            },
             "keyword": "And "
           },
           {
             "result": {
               "status": "undefined"
             },
-            "line": 14,
-            "name": "the page should give a green success feedback",
+            "line": 13,
+            "name": "The page should be navigated to \"welcome.jsp\"",
             "match": {},
             "keyword": "Then "
           }
         ]
       },
       {
-        "start_timestamp": "2019-09-13T15:24:56.237Z",
-        "line": 26,
-        "name": "Failed linking Opal card with wrong Opal details",
+        "start_timestamp": "2019-09-14T03:54:05.857Z",
+        "line": 17,
+        "name": "Successfully update account details",
         "description": "",
-        "id": "link-card-feature;failed-linking-opal-card-with-wrong-opal-details;;2",
+        "id": "online-user-registration;successfully-update-account-details",
         "type": "scenario",
-        "keyword": "Scenario Outline",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
               "status": "undefined"
             },
-            "line": 17,
-            "name": "the User is logged in to the website",
+            "line": 18,
+            "name": "User is in \"login.jsp\"",
             "match": {},
             "keyword": "Given "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 18,
-            "name": "is in the \"main.jsp\"",
-            "match": {},
-            "keyword": "And "
           },
           {
             "result": {
               "status": "undefined"
             },
             "line": 19,
-            "name": "User click on \"linkCard\"",
+            "name": "User is logged in",
             "match": {},
-            "keyword": "When "
+            "keyword": "Given "
           },
           {
             "result": {
               "status": "undefined"
             },
             "line": 20,
-            "name": "User fill in \"OpalID\" with \"0000 0000 0000 0000\"",
+            "name": "User click on \"Welcome User\"",
             "match": {},
             "keyword": "And "
           },
@@ -135,26 +108,17 @@
               "status": "undefined"
             },
             "line": 21,
-            "name": "User fill in \"securityCode\" with \"0000\"",
+            "name": "the page should be navigated to \"accountProfile.jsp\"",
             "match": {},
-            "keyword": "And "
+            "keyword": "Then "
           },
           {
             "result": {
-              "duration": 3100,
-              "status": "skipped"
+              "status": "undefined"
             },
             "line": 22,
-            "name": "User click \"linkCard_link\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"linkCard_link\"",
-                  "offset": 11
-                }
-              ],
-              "location": "OrderFeature.user_click(String)"
-            },
+            "name": "User click on \"edit\"",
+            "match": {},
             "keyword": "And "
           },
           {
@@ -162,977 +126,54 @@
               "status": "undefined"
             },
             "line": 23,
-            "name": "the page should give a red fail feedback",
-            "match": {},
-            "keyword": "Then "
-          }
-        ]
-      }
-    ],
-    "name": "Link Card Feature",
-    "description": "  As a customer\n  I want to link my Opal card to my account\n  In order to manage my Opal card",
-    "id": "link-card-feature",
-    "keyword": "Feature",
-    "uri": "file:opalFeatures/LinkCardFeature.feature",
-    "tags": []
-  },
-  {
-    "line": 1,
-    "elements": [
-      {
-        "start_timestamp": "2019-09-13T15:24:56.238Z",
-        "line": 6,
-        "name": "Successfully list all Opal cards",
-        "description": "",
-        "id": "list-all-opal-cards;successfully-list-all-opal-cards",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 7,
-            "name": "the Staff is in the \"adminPage.jsp\"",
-            "match": {},
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 8,
-            "name": "the Staff click on \"cardManagement\"",
-            "match": {},
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 9,
-            "name": "the Staff click on \"showCards\"",
+            "name": "User update necessary details",
             "match": {},
             "keyword": "And "
           },
           {
             "result": {
               "status": "undefined"
-            },
-            "line": 10,
-            "name": "the page should show all Opal cards",
-            "match": {},
-            "keyword": "Then "
-          }
-        ]
-      }
-    ],
-    "name": "List all Opal cards",
-    "description": "    As a staff\n    I want to list all Opal cards\n    In order to see the Opal cards from the database",
-    "id": "list-all-opal-cards",
-    "keyword": "Feature",
-    "uri": "file:opalFeatures/ListAllCardsFeature.feature",
-    "tags": []
-  },
-  {
-    "line": 1,
-    "elements": [
-      {
-        "start_timestamp": "2019-09-13T15:24:56.239Z",
-        "line": 8,
-        "name": "Successfully list linked Opal Cards",
-        "description": "",
-        "id": "list-linked-opal-cards;successfully-list-linked-opal-cards",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 9,
-            "name": "the User is logged in to the website",
-            "match": {},
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 10,
-            "name": "is in the \"main.jsp\"",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 11,
-            "name": "User click on \"home\"",
-            "match": {},
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 12,
-            "name": "User should see list of their Opal cards",
-            "match": {},
-            "keyword": "Then "
-          }
-        ]
-      }
-    ],
-    "name": "List Linked Opal Cards",
-    "description": "As a customer\n  I want to link my Opal card to my account\n  In order to manage my Opal card",
-    "id": "list-linked-opal-cards",
-    "keyword": "Feature",
-    "uri": "file:opalFeatures/ListCardFeature.feature",
-    "tags": []
-  },
-  {
-    "line": 1,
-    "elements": [
-      {
-        "start_timestamp": "2019-09-13T15:24:56.240Z",
-        "line": 3,
-        "name": "Successfully order an Opal Card and edit an order as an anonymous user",
-        "description": "",
-        "id": "order-opal-card-feature;successfully-order-an-opal-card-and-edit-an-order-as-an-anonymous-user",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 8109381300,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "User is in the \"main.jsp\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"main.jsp\"",
-                  "offset": 15
-                }
-              ],
-              "location": "OrderFeature.user_is_in_the(String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 6131200800,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "User Click on \"order_opal_card\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"order_opal_card\"",
-                  "offset": 14
-                }
-              ],
-              "location": "OrderFeature.user_Click_on(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 5602106600,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "User Click on \"type_adult\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"type_adult\"",
-                  "offset": 14
-                }
-              ],
-              "location": "OrderFeature.user_Click_on(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 5335317500,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "User fill in contact detail",
-            "match": {
-              "location": "OrderFeature.user_fill_in_contact_detail()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 5776955500,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "User click \"contact_continue\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"contact_continue\"",
-                  "offset": 11
-                }
-              ],
-              "location": "OrderFeature.user_click(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 106863900,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "User select the top up value",
-            "match": {
-              "location": "OrderFeature.user_select_the_top_up_value()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 5370034800,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "User click \"order_value_continue\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"order_value_continue\"",
-                  "offset": 11
-                }
-              ],
-              "location": "OrderFeature.user_click(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 344815100,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "User fill in payment detail",
-            "match": {
-              "location": "OrderFeature.user_fill_in_payment_detail()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 5623502700,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "User click \"paymentDetail_continue\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"paymentDetail_continue\"",
-                  "offset": 11
-                }
-              ],
-              "location": "OrderFeature.user_click(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 5355281400,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "User click \"orderConfirmation_edit\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"orderConfirmation_edit\"",
-                  "offset": 11
-                }
-              ],
-              "location": "OrderFeature.user_click(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 665027700,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "User fill in edit detail",
-            "match": {
-              "location": "OrderFeature.user_fill_in_edit_detail()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 5354220800,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "User click \"edit_continue\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"edit_continue\"",
-                  "offset": 11
-                }
-              ],
-              "location": "OrderFeature.user_click(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 5818415500,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "User click \"orderConfirmation_confirm\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"orderConfirmation_confirm\"",
-                  "offset": 11
-                }
-              ],
-              "location": "OrderFeature.user_click(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 612184700,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "The page should be navigated to \"Order Succeed\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Order Succeed\"",
-                  "offset": 32
-                }
-              ],
-              "location": "OrderFeature.the_page_should_be_navigated_to(String)"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2019-09-13T15:25:56.447Z",
-        "line": 19,
-        "name": "Successfully order an Opal Card as a customer",
-        "description": "",
-        "id": "order-opal-card-feature;successfully-order-an-opal-card-as-a-customer",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 7207048500,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "User is in the \"login.jsp\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"login.jsp\"",
-                  "offset": 15
-                }
-              ],
-              "location": "OrderFeature.user_is_in_the(String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 11739717400,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "User is login as a customer",
-            "match": {
-              "location": "OrderFeature.user_is_login_as_a_customer()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 5610610900,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "User Click on \"order_opal_card\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"order_opal_card\"",
-                  "offset": 14
-                }
-              ],
-              "location": "OrderFeature.user_Click_on(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 5689553900,
-              "status": "passed"
-            },
-            "line": 23,
-            "name": "User Click on \"type_child\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"type_child\"",
-                  "offset": 14
-                }
-              ],
-              "location": "OrderFeature.user_Click_on(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 92958900,
-              "status": "passed"
             },
             "line": 24,
-            "name": "User select the top up value",
-            "match": {
-              "location": "OrderFeature.user_select_the_top_up_value()"
-            },
+            "name": "user click on update",
+            "match": {},
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 5530580700,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 25,
-            "name": "User click \"order_value_continue\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"order_value_continue\"",
-                  "offset": 11
-                }
-              ],
-              "location": "OrderFeature.user_click(String)"
-            },
-            "keyword": "And "
+            "name": "User should see \"Update was successful\"",
+            "match": {},
+            "keyword": "Then "
           },
           {
             "result": {
-              "duration": 329300200,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 26,
-            "name": "User fill in payment detail",
-            "match": {
-              "location": "OrderFeature.user_fill_in_payment_detail()"
-            },
+            "name": "user click on back",
+            "match": {},
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 5722956800,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 27,
-            "name": "User click \"paymentDetail_continue\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"paymentDetail_continue\"",
-                  "offset": 11
-                }
-              ],
-              "location": "OrderFeature.user_click(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 5863819000,
-              "status": "passed"
-            },
-            "line": 28,
-            "name": "User click \"orderConfirmation_cancelled\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"orderConfirmation_cancelled\"",
-                  "offset": 11
-                }
-              ],
-              "location": "OrderFeature.user_click(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 600182900,
-              "status": "passed"
-            },
-            "line": 29,
-            "name": "The page should be navigated to \"Order Cancelled\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Order Cancelled\"",
-                  "offset": 32
-                }
-              ],
-              "location": "OrderFeature.the_page_should_be_navigated_to(String)"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2019-09-13T15:26:44.835Z",
-        "line": 31,
-        "name": "Successfully view the order history",
-        "description": "",
-        "id": "order-opal-card-feature;successfully-view-the-order-history",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 7173993500,
-              "status": "passed"
-            },
-            "line": 32,
-            "name": "User is in the \"login.jsp\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"login.jsp\"",
-                  "offset": 15
-                }
-              ],
-              "location": "OrderFeature.user_is_in_the(String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 11735023100,
-              "status": "passed"
-            },
-            "line": 33,
-            "name": "User is login as a customer",
-            "match": {
-              "location": "OrderFeature.user_is_login_as_a_customer()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 5989873100,
-              "status": "passed"
-            },
-            "line": 34,
-            "name": "User Click on \"order_history\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"order_history\"",
-                  "offset": 14
-                }
-              ],
-              "location": "OrderFeature.user_Click_on(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 599007700,
-              "status": "passed"
-            },
-            "line": 35,
-            "name": "The page should be navigated to \"Order History\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Order History\"",
-                  "offset": 32
-                }
-              ],
-              "location": "OrderFeature.the_page_should_be_navigated_to(String)"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2019-09-13T15:27:10.332Z",
-        "line": 37,
-        "name": "Successfully view all the order",
-        "description": "",
-        "id": "order-opal-card-feature;successfully-view-all-the-order",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 7280949000,
-              "status": "passed"
-            },
-            "line": 38,
-            "name": "User is in the \"login.jsp\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"login.jsp\"",
-                  "offset": 15
-                }
-              ],
-              "location": "OrderFeature.user_is_in_the(String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 11277719400,
-              "status": "passed"
-            },
-            "line": 39,
-            "name": "User is login as an admin",
-            "match": {
-              "location": "OrderFeature.user_is_login_as_an_admin()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 6884552300,
-              "status": "passed"
-            },
-            "line": 40,
-            "name": "User Click on \"order_management\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"order_management\"",
-                  "offset": 14
-                }
-              ],
-              "location": "OrderFeature.user_Click_on(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 592745700,
-              "status": "passed"
-            },
-            "line": 41,
-            "name": "The page should be navigated to \"Order Management\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Order Management\"",
-                  "offset": 32
-                }
-              ],
-              "location": "OrderFeature.the_page_should_be_navigated_to(String)"
-            },
+            "name": "the page should be navigated to \"accountProfile.jsp\"",
+            "match": {},
             "keyword": "Then "
           }
         ]
       }
     ],
-    "name": "Order Opal Card Feature",
+    "name": "Online User Registration",
     "description": "",
-    "id": "order-opal-card-feature",
+    "id": "online-user-registration",
     "keyword": "Feature",
-    "uri": "file:opalFeatures/OrderFeature.feature",
-    "tags": []
-  },
-  {
-    "line": 1,
-    "elements": [
-      {
-        "start_timestamp": "2019-09-13T15:27:36.370Z",
-        "line": 7,
-        "name": "Successfully register an Opal Card",
-        "description": "",
-        "id": "register-an-opal-card;successfully-register-an-opal-card",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 8,
-            "name": "the Staff is in the \"adminPage.jsp\"",
-            "match": {},
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 9,
-            "name": "the Staff click on \"cardManagement\"",
-            "match": {},
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 10,
-            "name": "the Staff click on \"registerCard\"",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 11,
-            "name": "the Staff fill in the new Opal Card details for \"OpalID\"",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 12,
-            "name": "the Staff click on \"registerCard_register\"",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 13,
-            "name": "the page should give a green success feedback",
-            "match": {},
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2019-09-13T15:27:36.373Z",
-        "line": 24,
-        "name": "Failed register an Opal Card",
-        "description": "",
-        "id": "register-an-opal-card;failed-register-an-opal-card;;2",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 16,
-            "name": "the Staff is in the \"adminPage.jsp\"",
-            "match": {},
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 17,
-            "name": "the Staff click on \"cardManagement\"",
-            "match": {},
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 18,
-            "name": "the Staff click on \"registerCard\"",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 19,
-            "name": "the Staff fill in the new Opal Card details for \"8888 8888 8888 8888\"",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 20,
-            "name": "the Staff click on \"registerCard_register\"",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 21,
-            "name": "the page should give a red fail feedback",
-            "match": {},
-            "keyword": "Then "
-          }
-        ]
-      }
-    ],
-    "name": "Register an Opal Card",
-    "description": "    As a staff\n    I want to register an Opal Card to the database\n    So that the customer can link the Opal card",
-    "id": "register-an-opal-card",
-    "keyword": "Feature",
-    "uri": "file:opalFeatures/RegisterCardFeature.feature",
-    "tags": []
-  },
-  {
-    "line": 1,
-    "elements": [
-      {
-        "start_timestamp": "2019-09-13T15:27:36.374Z",
-        "line": 6,
-        "name": "Successfully unlink Opal card from account",
-        "description": "",
-        "id": "unlink-opal-card;successfully-unlink-opal-card-from-account",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 7,
-            "name": "the User is logged in to the website",
-            "match": {},
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 8,
-            "name": "is in the \"main.jsp\"",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 9,
-            "name": "User click on \"unlinkCard\"",
-            "match": {},
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 10,
-            "name": "User click on \"unlink\" for \"opalID\"",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 11,
-            "name": "User should not see \"opalID\" in the \"unlink.jsp\"",
-            "match": {},
-            "keyword": "Then "
-          }
-        ]
-      }
-    ],
-    "name": "Unlink Opal Card",
-    "description": "   As a customer\n   I want to unlink my Opal card to my account\n   In order to remove it from my Opal card list",
-    "id": "unlink-opal-card",
-    "keyword": "Feature",
-    "uri": "file:opalFeatures/UnlinkCardFeature.feature",
-    "tags": []
-  },
-  {
-    "line": 1,
-    "elements": [
-      {
-        "start_timestamp": "2019-09-13T15:27:36.376Z",
-        "line": 6,
-        "name": "Successfully view the details of the Opal card",
-        "description": "",
-        "id": "view-details-of-an-opal-card;successfully-view-the-details-of-the-opal-card",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 7,
-            "name": "the User is logged in to the website",
-            "match": {},
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 8,
-            "name": "is in the \"main.jsp\"",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 9,
-            "name": "User click on \"viewDetails\" for \"opalID\"",
-            "match": {},
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 10,
-            "name": "the page should be navigated to \"Card Details\"",
-            "match": {},
-            "keyword": "Then "
-          }
-        ]
-      }
-    ],
-    "name": "View Details of an Opal Card",
-    "description": "    As a customer\n    I want to view the details of an Opal Card\n    In order to see the remaining balance",
-    "id": "view-details-of-an-opal-card",
-    "keyword": "Feature",
-    "uri": "file:opalFeatures/ViewCardDetails.feature",
+    "uri": "file:opalFeatures/UserRegistrationFeature.feature",
     "tags": []
   }
 ]
