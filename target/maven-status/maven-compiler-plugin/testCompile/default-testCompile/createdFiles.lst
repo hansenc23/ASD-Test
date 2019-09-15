@@ -1,7 +1,6 @@
 asd\test\CardManagementFeature.class
 asd\test\Driver.class
-asd\test\loginFeature.class
-asd\test\OrderFeature.class
-asd\test\RunTest.class
 asd\test\RegisterFeature.class
+asd\test\loginFeature.class
 asd\test\TopUpManagementFeature.class
+asd\test\RunTest.class

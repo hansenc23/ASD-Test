@@ -49,12 +49,7 @@ public class CardManagementFeature extends Driver {
     public void is_in_the(String url) {
         driver.get("https://asd-test-app.herokuapp.com/"+ url);
     }
-
-//    @When("User click on {string}")
-//    public void user_click_on(String buttonName) {
-//        driver.findElement(By.id(buttonName)).click();
-//    }
-    
+   
         @When("User clicks {string}")
     public void user_clicks(String buttonName) {
         driver.findElement(By.id(buttonName)).click();

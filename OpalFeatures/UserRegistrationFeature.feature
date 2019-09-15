@@ -1,4 +1,6 @@
-# Feature: Online User Registration 
+# 
+# 
+#  Feature: Online User Registration 
 # 
 #     Scenario: Successfully created an account
 #       Given User is at "main.jsp"
@@ -29,3 +31,4 @@
 #        And User types email
 #        And user answer the question
 #        Then page will show old password "Forget Password"
+# 
