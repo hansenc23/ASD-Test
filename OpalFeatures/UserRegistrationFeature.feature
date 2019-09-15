@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Feature: Online User Registration 
 #
 #    Scenario: Successfully created an account
