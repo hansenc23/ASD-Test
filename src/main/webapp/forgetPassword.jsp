@@ -29,11 +29,11 @@
                     <tr>
                         <td>Enter your email</td>
                         <td>
-                            <input class="field" size="20" type="text" name="email">
+                            <input id="enter_email" class="field" size="20" type="text" name="email">
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="2" align="center"><button class="update" type="submit"> Confirm </button></td>
+                        <td colspan="2" id="confirm_email" align="center"><button class="update" type="submit"> Confirm </button></td>
                         
                     </tr>
                     

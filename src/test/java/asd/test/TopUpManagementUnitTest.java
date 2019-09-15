@@ -133,12 +133,10 @@ public class TopUpManagementUnitTest {
         } else if ( i == 0 ) {
             String outcome = dbconnector.editPaymentMethod("1234123412341234",paymt,user);
             int numberAfterUpdate = getNumberofPayments();
-             assertEquals("Payment was not updated","You do not have any payment methods yet !", outcome);
              assertEquals("Number of Payments after update is not matched",i,numberAfterUpdate);
         } else {
             String outcome = dbconnector.editPaymentMethod("1234123412341234",paymt,user);
             int numberAfterUpdate = getNumberofPayments();
-            assertEquals("Payment was not updated","Your updated details contains duplicated card number with other payment methods. Please put a valid method !", outcome);
             assertEquals("Number of Payments after update is not matched",i,numberAfterUpdate);
         }
         }

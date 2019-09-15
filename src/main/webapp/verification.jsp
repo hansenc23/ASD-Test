@@ -59,13 +59,13 @@
                     </tr>
                     <tr>
                         <td>Answer:</td>
-                        <td><input type="text" name="answer"></td>
+                        <td><input id="input_answer" type="text" name="answer"></td>
                         <input type="hidden" name="email" value="<%=email%>">
                     </tr>
                     
                     
                     <tr>
-                        <td colspan="2" align="center"><button type="submit" class="update" > Confirm </button></td>
+                        <td colspan="2"  align="center"><button id="confirm_answer" type="submit" class="update" > Confirm </button></td>
                     </tr>
                     
                 </table>

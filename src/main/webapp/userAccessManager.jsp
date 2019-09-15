@@ -62,7 +62,7 @@
         <td><%=time.getLoginT()%></td>
         <td><%=time.getLogoutT()%> </td>
             <form  method="POST">
-                <td width="10%"><input type="submit"  onclick="refresh()" value="delete" name="Remove" ></td>
+                <td width="10%"><input id="delete" type="submit"  onclick="refresh()" value="delete" name="Remove" ></td>
                 <input type="hidden" id="loginT" name="loginT" value= <%=time.getloginID()%> >
             </form>       
 
