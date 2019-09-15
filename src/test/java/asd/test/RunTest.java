@@ -17,7 +17,7 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         plugin = {"pretty", "json:target/json/testReport.json", "html:target/html/"},
-        features = {"opalFeatures"})
+        features = {"OpalFeatures"})
 public class RunTest {
     
 }
