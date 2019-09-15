@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: asd.test.RegisterUnitTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 40.206 sec - in asd.test.RegisterUnitTest

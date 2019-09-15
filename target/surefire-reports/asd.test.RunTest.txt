@@ -1,4 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: asd.test.RunTest
 -------------------------------------------------------------------------------
+<<<<<<< HEAD
 Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 110.941 sec - in asd.test.RunTest
+=======
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 32.216 sec - in asd.test.RunTest
+>>>>>>> 1f315f6e838869e9f9b642d237d4e2a3b419c7f7

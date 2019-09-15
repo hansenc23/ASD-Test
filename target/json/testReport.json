@@ -3,9 +3,15 @@
     "line": 1,
     "elements": [
       {
+<<<<<<< HEAD
         "start_timestamp": "2019-09-15T15:07:05.607Z",
         "line": 3,
         "name": "Successfully link Opal card to account",
+=======
+        "start_timestamp": "2019-09-15T14:57:19.033Z",
+        "line": 4,
+        "name": "Successfully created an account",
+>>>>>>> 1f315f6e838869e9f9b642d237d4e2a3b419c7f7
         "description": "",
         "id": "card-management-feature;successfully-link-opal-card-to-account",
         "type": "scenario",
@@ -13,6 +19,7 @@
         "steps": [
           {
             "result": {
+<<<<<<< HEAD
               "duration": 9754521100,
               "status": "passed"
             },
@@ -26,6 +33,9 @@
           {
             "result": {
               "duration": 340049700,
+=======
+              "duration": 7395271600,
+>>>>>>> 1f315f6e838869e9f9b642d237d4e2a3b419c7f7
               "status": "passed"
             },
             "line": 5,
@@ -43,7 +53,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 548429900,
+=======
+              "duration": 525246200,
+>>>>>>> 1f315f6e838869e9f9b642d237d4e2a3b419c7f7
               "status": "passed"
             },
             "line": 6,
@@ -61,7 +75,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 210561500,
+=======
+              "duration": 902369900,
+>>>>>>> 1f315f6e838869e9f9b642d237d4e2a3b419c7f7
               "status": "passed"
             },
             "line": 7,
@@ -83,7 +101,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 74381000,
+=======
+              "duration": 346505000,
+>>>>>>> 1f315f6e838869e9f9b642d237d4e2a3b419c7f7
               "status": "passed"
             },
             "line": 8,
@@ -105,7 +127,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 496637400,
+=======
+              "duration": 587705900,
+>>>>>>> 1f315f6e838869e9f9b642d237d4e2a3b419c7f7
               "status": "passed"
             },
             "line": 9,
@@ -136,9 +162,15 @@
         ]
       },
       {
+<<<<<<< HEAD
         "start_timestamp": "2019-09-15T15:07:17.677Z",
         "line": 22,
         "name": "Failed linking Opal card with wrong Opal details",
+=======
+        "start_timestamp": "2019-09-15T14:57:28.792Z",
+        "line": 11,
+        "name": "Successfully update account details",
+>>>>>>> 1f315f6e838869e9f9b642d237d4e2a3b419c7f7
         "description": "",
         "id": "card-management-feature;failed-linking-opal-card-with-wrong-opal-details;;2",
         "type": "scenario",
@@ -146,6 +178,7 @@
         "steps": [
           {
             "result": {
+<<<<<<< HEAD
               "duration": 8630728500,
               "status": "passed"
             },
@@ -177,6 +210,9 @@
           {
             "result": {
               "duration": 525665900,
+=======
+              "duration": 7053832800,
+>>>>>>> 1f315f6e838869e9f9b642d237d4e2a3b419c7f7
               "status": "passed"
             },
             "line": 15,
@@ -194,7 +230,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 214323600,
+=======
+              "duration": 426700900,
+>>>>>>> 1f315f6e838869e9f9b642d237d4e2a3b419c7f7
               "status": "passed"
             },
             "line": 16,
@@ -216,7 +256,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 80969100,
+=======
+              "duration": 596804800,
+>>>>>>> 1f315f6e838869e9f9b642d237d4e2a3b419c7f7
               "status": "passed"
             },
             "line": 17,
@@ -238,7 +282,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 418241500,
+=======
+              "duration": 602805100,
+>>>>>>> 1f315f6e838869e9f9b642d237d4e2a3b419c7f7
               "status": "passed"
             },
             "line": 18,
@@ -256,7 +304,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 640075900,
+=======
+              "duration": 525655900,
+>>>>>>> 1f315f6e838869e9f9b642d237d4e2a3b419c7f7
               "status": "passed"
             },
             "line": 19,
@@ -309,7 +361,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 5369910500,
+=======
+              "duration": 620949100,
+>>>>>>> 1f315f6e838869e9f9b642d237d4e2a3b419c7f7
               "status": "passed"
             },
             "line": 27,
@@ -349,7 +405,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 1029434400,
+=======
+              "duration": 370676800,
+>>>>>>> 1f315f6e838869e9f9b642d237d4e2a3b419c7f7
               "status": "passed"
             },
             "line": 29,
@@ -412,7 +472,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 61037500,
+=======
+              "duration": 298100700,
+>>>>>>> 1f315f6e838869e9f9b642d237d4e2a3b419c7f7
               "status": "passed"
             },
             "line": 34,
@@ -448,6 +512,7 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 666235800,
               "status": "passed"
             },
@@ -490,6 +555,9 @@
           {
             "result": {
               "duration": 319131900,
+=======
+              "duration": 430707600,
+>>>>>>> 1f315f6e838869e9f9b642d237d4e2a3b419c7f7
               "status": "passed"
             },
             "line": 40,
@@ -507,7 +575,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 583387100,
+=======
+              "duration": 368342600,
+>>>>>>> 1f315f6e838869e9f9b642d237d4e2a3b419c7f7
               "status": "passed"
             },
             "line": 41,
@@ -529,7 +601,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 643221400,
+=======
+              "duration": 289438500,
+>>>>>>> 1f315f6e838869e9f9b642d237d4e2a3b419c7f7
               "status": "passed"
             },
             "line": 42,
@@ -581,7 +657,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 517046900,
+=======
+              "duration": 462696900,
+>>>>>>> 1f315f6e838869e9f9b642d237d4e2a3b419c7f7
               "status": "passed"
             },
             "line": 48,
@@ -617,7 +697,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 310260900,
+=======
+              "duration": 379281500,
+>>>>>>> 1f315f6e838869e9f9b642d237d4e2a3b419c7f7
               "status": "passed"
             },
             "line": 50,
@@ -635,7 +719,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 381276100,
+=======
+              "duration": 587103500,
+>>>>>>> 1f315f6e838869e9f9b642d237d4e2a3b419c7f7
               "status": "passed"
             },
             "line": 51,
@@ -671,9 +759,15 @@
         ]
       },
       {
+<<<<<<< HEAD
         "start_timestamp": "2019-09-15T15:08:34.711Z",
         "line": 63,
         "name": "Failed register an Opal Card",
+=======
+        "start_timestamp": "2019-09-15T14:57:41.806Z",
+        "line": 27,
+        "name": "Successfully forget password",
+>>>>>>> 1f315f6e838869e9f9b642d237d4e2a3b419c7f7
         "description": "",
         "id": "card-management-feature;failed-register-an-opal-card;;2",
         "type": "scenario",
@@ -681,7 +775,11 @@
         "steps": [
           {
             "result": {
+<<<<<<< HEAD
               "duration": 8115710100,
+=======
+              "duration": 7067778100,
+>>>>>>> 1f315f6e838869e9f9b642d237d4e2a3b419c7f7
               "status": "passed"
             },
             "line": 55,
@@ -711,7 +809,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 528333200,
+=======
+              "duration": 532404800,
+>>>>>>> 1f315f6e838869e9f9b642d237d4e2a3b419c7f7
               "status": "passed"
             },
             "line": 57,
@@ -729,7 +831,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 294653000,
+=======
+              "duration": 439384300,
+>>>>>>> 1f315f6e838869e9f9b642d237d4e2a3b419c7f7
               "status": "passed"
             },
             "line": 58,
@@ -747,7 +853,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 345296500,
+=======
+              "duration": 517784400,
+>>>>>>> 1f315f6e838869e9f9b642d237d4e2a3b419c7f7
               "status": "passed"
             },
             "line": 59,
@@ -765,7 +875,11 @@
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 653349600,
+=======
+              "duration": 587172300,
+>>>>>>> 1f315f6e838869e9f9b642d237d4e2a3b419c7f7
               "status": "passed"
             },
             "line": 60,
