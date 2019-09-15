@@ -30,4 +30,3 @@
 #         And User click "topUpValue_submit"
 #         And User fill in the payment detail
 #         And User click "topUpCard_submit"
-#         Then User click "topUpConfirmation_confirm"

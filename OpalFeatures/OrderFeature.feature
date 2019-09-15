@@ -1,3 +1,4 @@
+
    Feature: Order Opal Card Feature
       
      @revomeUser 
@@ -40,5 +41,4 @@
        Given User is login as an admin
        When User click on "order_management"
        Then The page should be navigated to "Order Management"
-   
-     
+

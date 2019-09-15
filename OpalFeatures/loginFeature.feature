@@ -1,3 +1,4 @@
+
   Feature: Access Manager
  
   Scenario: A user will be able to login , and logout
@@ -20,3 +21,4 @@
       And User click on "delete"
       And User refresh page
       Then The page should be navigated to "Access manager"
+
