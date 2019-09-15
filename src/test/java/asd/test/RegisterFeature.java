@@ -2,23 +2,23 @@
 package asd.test;
 
 
-import com.mongodb.MongoClient;
-import com.mongodb.MongoClientURI;
-import com.mongodb.client.MongoCollection;
-import com.mongodb.client.MongoDatabase;
-import static com.mongodb.client.model.Filters.and;
-import static com.mongodb.client.model.Filters.eq;
-import cucumber.api.java.After;
+//import com.mongodb.MongoClient;
+//import com.mongodb.MongoClientURI;
+//import com.mongodb.client.MongoCollection;
+//import com.mongodb.client.MongoDatabase;
+//import static com.mongodb.client.model.Filters.and;
+//import static com.mongodb.client.model.Filters.eq;
+//import cucumber.api.java.After;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import junit.framework.Assert;
-import org.bson.Document;
+//import org.bson.Document;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
+//import org.openqa.selenium.Keys;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+//import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
 
@@ -58,7 +58,7 @@ public class RegisterFeature extends Driver{
     public void User_fill_in_the_registration_detail() {
         driver.findElement(By.id("register_first_name")).sendKeys("Hansen");
         driver.findElement(By.id("register_last_name")).sendKeys("Christian");
-        driver.findElement(By.id("register_email")).sendKeys("fortesting155677@gmail.com");
+        driver.findElement(By.id("register_email")).sendKeys("test100@gmail.com");
         driver.findElement(By.id("register_password")).sendKeys("qwe123456");
         driver.findElement(By.id("register_phone")).sendKeys("0483329588");
         driver.findElement(By.id("register_address")).sendKeys("UTS");
@@ -88,7 +88,7 @@ public class RegisterFeature extends Driver{
 
     @When("user fills login credentials")
     public void user_fills_login_credentials() {
-        driver.findElement(By.id("login_email")).sendKeys("fortesting155677@gmail.com");
+        driver.findElement(By.id("login_email")).sendKeys("test100@gmail.com");
         driver.findElement(By.id("login_password")).sendKeys("qwe123456");
         driver.findElement(By.id("login_submit")).click();
     }
