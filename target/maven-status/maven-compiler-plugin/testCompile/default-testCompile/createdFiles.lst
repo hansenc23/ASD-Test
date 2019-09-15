@@ -1,2 +1,5 @@
 asd\test\Driver.class
+asd\test\RegisterFeature.class
+asd\test\loginFeature.class
+asd\test\OrderFeature.class
 asd\test\RunTest.class

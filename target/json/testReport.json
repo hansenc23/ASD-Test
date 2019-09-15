@@ -1,22 +1,33 @@
 [
   {
-    "line": 2,
+    "line": 1,
     "elements": [
       {
-        "start_timestamp": "2019-09-15T07:20:58.111Z",
-        "line": 11,
-        "name": "Successfully created an account",
+        "start_timestamp": "2019-09-15T12:34:49.604Z",
+        "line": 4,
+        "name": "Successfully order an Opal Card and edit an order as an anonymous user",
         "description": "",
-        "id": "online-user-registration;successfully-created-an-account",
+        "id": "order-opal-card-feature;successfully-order-an-opal-card-and-edit-an-order-as-an-anonymous-user",
+        "after": [
+          {
+            "result": {
+              "duration": 7616740300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "OrderFeature.removeUser()"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 7835926701,
+              "duration": 7925259600,
               "status": "passed"
             },
-            "line": 12,
+            "line": 5,
             "name": "User is in the \"main.jsp\"",
             "match": {
               "arguments": [
@@ -25,17 +36,599 @@
                   "offset": 15
                 }
               ],
-              "location": "RegisterFeature.user_is_in_the(String)"
+              "location": "OrderFeature.user_is_in_the(String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 527886700,
+              "duration": 1121098200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User click on \"order_opal_card\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"order_opal_card\"",
+                  "offset": 14
+                }
+              ],
+              "location": "OrderFeature.user_click_on(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 615193300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User click on \"type_adult\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"type_adult\"",
+                  "offset": 14
+                }
+              ],
+              "location": "OrderFeature.user_click_on(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 387437600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User fill in contact detail",
+            "match": {
+              "location": "OrderFeature.user_fill_in_contact_detail()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 691313200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User click on \"contact_continue\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"contact_continue\"",
+                  "offset": 14
+                }
+              ],
+              "location": "OrderFeature.user_click_on(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 105310500,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User select the top up value",
+            "match": {
+              "location": "OrderFeature.user_select_the_top_up_value()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 327131800,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User click on \"order_value_continue\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"order_value_continue\"",
+                  "offset": 14
+                }
+              ],
+              "location": "OrderFeature.user_click_on(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 368836600,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User fill in payment detail",
+            "match": {
+              "location": "OrderFeature.user_fill_in_payment_detail()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 600730400,
               "status": "passed"
             },
             "line": 13,
-            "name": "User Click on \"navbar_register\"",
+            "name": "User click on \"paymentDetail_continue\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"paymentDetail_continue\"",
+                  "offset": 14
+                }
+              ],
+              "location": "OrderFeature.user_click_on(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 343547200,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User click on \"orderConfirmation_edit\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"orderConfirmation_edit\"",
+                  "offset": 14
+                }
+              ],
+              "location": "OrderFeature.user_click_on(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 739263200,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User fill in edit detail",
+            "match": {
+              "location": "OrderFeature.user_fill_in_edit_detail()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 331254300,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User click on \"edit_continue\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"edit_continue\"",
+                  "offset": 14
+                }
+              ],
+              "location": "OrderFeature.user_click_on(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 726729100,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User click on \"orderConfirmation_confirm\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"orderConfirmation_confirm\"",
+                  "offset": 14
+                }
+              ],
+              "location": "OrderFeature.user_click_on(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 620842500,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "The page should be navigated to \"Order Succeed\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Order Succeed\"",
+                  "offset": 32
+                }
+              ],
+              "location": "OrderFeature.the_page_should_be_navigated_to(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@revomeUser"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-09-15T12:35:12.128Z",
+        "line": 20,
+        "name": "Successfully order an Opal Card as a customer",
+        "description": "",
+        "id": "order-opal-card-feature;successfully-order-an-opal-card-as-a-customer",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7561260000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User is in the \"login.jsp\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"login.jsp\"",
+                  "offset": 15
+                }
+              ],
+              "location": "OrderFeature.user_is_in_the(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1690418100,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "User is login as a customer",
+            "match": {
+              "location": "OrderFeature.user_is_login_as_a_customer()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 837906300,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "User click on \"order_opal_card\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"order_opal_card\"",
+                  "offset": 14
+                }
+              ],
+              "location": "OrderFeature.user_click_on(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 615348200,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User click on \"type_child\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"type_child\"",
+                  "offset": 14
+                }
+              ],
+              "location": "OrderFeature.user_click_on(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 93817000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "User select the top up value",
+            "match": {
+              "location": "OrderFeature.user_select_the_top_up_value()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 408246200,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "User click on \"order_value_continue\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"order_value_continue\"",
+                  "offset": 14
+                }
+              ],
+              "location": "OrderFeature.user_click_on(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 364675800,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "User fill in payment detail",
+            "match": {
+              "location": "OrderFeature.user_fill_in_payment_detail()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 669691900,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "User click on \"paymentDetail_continue\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"paymentDetail_continue\"",
+                  "offset": 14
+                }
+              ],
+              "location": "OrderFeature.user_click_on(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 733970300,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "User click on \"orderConfirmation_cancelled\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"orderConfirmation_cancelled\"",
+                  "offset": 14
+                }
+              ],
+              "location": "OrderFeature.user_click_on(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 609588100,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "The page should be navigated to \"Order Cancelled\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Order Cancelled\"",
+                  "offset": 32
+                }
+              ],
+              "location": "OrderFeature.the_page_should_be_navigated_to(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-09-15T12:35:25.715Z",
+        "line": 32,
+        "name": "Successfully view the order history",
+        "description": "",
+        "id": "order-opal-card-feature;successfully-view-the-order-history",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6906279500,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "User is in the \"login.jsp\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"login.jsp\"",
+                  "offset": 15
+                }
+              ],
+              "location": "OrderFeature.user_is_in_the(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1685441300,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "User is login as a customer",
+            "match": {
+              "location": "OrderFeature.user_is_login_as_a_customer()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 987368600,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "User click on \"order_history\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"order_history\"",
+                  "offset": 14
+                }
+              ],
+              "location": "OrderFeature.user_click_on(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 609717100,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "The page should be navigated to \"Order History\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Order History\"",
+                  "offset": 32
+                }
+              ],
+              "location": "OrderFeature.the_page_should_be_navigated_to(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-09-15T12:35:35.905Z",
+        "line": 38,
+        "name": "Successfully view all the order",
+        "description": "",
+        "id": "order-opal-card-feature;successfully-view-all-the-order",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7431605500,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "User is in the \"login.jsp\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"login.jsp\"",
+                  "offset": 15
+                }
+              ],
+              "location": "OrderFeature.user_is_in_the(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1156013000,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "User is login as an admin",
+            "match": {
+              "location": "OrderFeature.user_is_login_as_an_admin()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2472541600,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "User click on \"order_management\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"order_management\"",
+                  "offset": 14
+                }
+              ],
+              "location": "OrderFeature.user_click_on(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 606766400,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "The page should be navigated to \"Order Management\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Order Management\"",
+                  "offset": 32
+                }
+              ],
+              "location": "OrderFeature.the_page_should_be_navigated_to(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Order Opal Card Feature",
+    "description": "",
+    "id": "order-opal-card-feature",
+    "keyword": "Feature",
+    "uri": "file:OpalFeatures/OrderFeature.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2019-09-15T12:35:47.573Z",
+        "line": 3,
+        "name": "Successfully created an account",
+        "description": "",
+        "id": "online-user-registration;successfully-created-an-account",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6917139600,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is in the \"main.jsp\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"main.jsp\"",
+                  "offset": 15
+                }
+              ],
+              "location": "OrderFeature.user_is_in_the(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 583766900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User click on \"navbar_register\"",
             "match": {
               "arguments": [
                 {
@@ -43,47 +636,65 @@
                   "offset": 14
                 }
               ],
-              "location": "RegisterFeature.user_Click_on(String)"
+              "location": "OrderFeature.user_click_on(String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 912901600,
-              "status": "passed"
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#register_first_name\"}\n  (Session info: chrome\u003d77.0.3865.75)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-P3652T2\u0027, ip: \u002710.0.0.2\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_212\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.75, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\\Users\\aasdd\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54928}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 811751cb0e715f49892e3b71f3ee52e4\n*** Element info: {Using\u003did, value\u003dregister_first_name}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\r\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat asd.test.RegisterFeature.User_fill_in_the_register_detail(RegisterFeature.java:34)\r\n\tat ✽.User fill in the register detail(file:OpalFeatures/UserRegistrationFeature.feature:6)\r\n",
+              "duration": 5134506600,
+              "status": "failed"
             },
-            "line": 14,
-            "name": "User fill in contact detail",
+            "line": 6,
+            "name": "User fill in the register detail",
             "match": {
-              "location": "RegisterFeature.user_fill_in_contact_detail()"
+              "location": "RegisterFeature.User_fill_in_the_register_detail()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#back\"}\n  (Session info: chrome\u003d76.0.3809.132)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-CHTED21\u0027, ip: \u0027192.168.2.100\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_221\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\\Users\\hanse\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60932}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: c467a6c8d01421d1921c41f5045d04bc\n*** Element info: {Using\u003did, value\u003dback}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\r\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat asd.test.RegisterFeature.user_Clicks(RegisterFeature.java:58)\r\n\tat ✽.User clicks \"back\"(file:opalFeatures/UserRegistrationFeature.feature:16)\r\n",
-              "duration": 19273301,
-              "status": "failed"
+              "duration": 7200,
+              "status": "skipped"
             },
-            "line": 16,
-            "name": "User clicks \"back\"",
+            "line": 7,
+            "name": "User click on \"register_submit\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"register_submit\"",
+                  "offset": 14
+                }
+              ],
+              "location": "OrderFeature.user_click_on(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3400,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "User click on \"back\"",
             "match": {
               "arguments": [
                 {
                   "val": "\"back\"",
-                  "offset": 12
+                  "offset": 14
                 }
               ],
-              "location": "RegisterFeature.user_Clicks(String)"
+              "location": "OrderFeature.user_click_on(String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 8700,
+              "duration": 2700,
               "status": "skipped"
             },
-            "line": 17,
+            "line": 9,
             "name": "The page should be navigated to \"Home Page\"",
             "match": {
               "arguments": [
@@ -92,15 +703,15 @@
                   "offset": 32
                 }
               ],
-              "location": "RegisterFeature.the_page_should_be_navigated_to(String)"
+              "location": "OrderFeature.the_page_should_be_navigated_to(String)"
             },
             "keyword": "Then "
           }
         ]
       },
       {
-        "start_timestamp": "2019-09-15T07:21:07.413Z",
-        "line": 22,
+        "start_timestamp": "2019-09-15T12:36:00.212Z",
+        "line": 11,
         "name": "Successfully update account details",
         "description": "",
         "id": "online-user-registration;successfully-update-account-details",
@@ -109,28 +720,29 @@
         "steps": [
           {
             "result": {
-              "duration": 7093999999,
+              "duration": 6989949100,
               "status": "passed"
             },
-            "line": 23,
-            "name": "user is in \"login.jsp\"",
+            "line": 12,
+            "name": "User is in the \"login.jsp\"",
             "match": {
               "arguments": [
                 {
                   "val": "\"login.jsp\"",
-                  "offset": 11
+                  "offset": 15
                 }
               ],
-              "location": "RegisterFeature.user_is_in(String)"
+              "location": "OrderFeature.user_is_in_the(String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 1800496599,
-              "status": "passed"
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#login_email\"}\n  (Session info: chrome\u003d77.0.3865.75)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-P3652T2\u0027, ip: \u002710.0.0.2\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_212\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.75, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\\Users\\aasdd\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54972}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 6ec63cb25d1f30e106f2a0063a35900a\n*** Element info: {Using\u003did, value\u003dlogin_email}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\r\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat asd.test.RegisterFeature.user_fill_in_details(RegisterFeature.java:50)\r\n\tat ✽.user fill in login details(file:OpalFeatures/UserRegistrationFeature.feature:13)\r\n",
+              "duration": 5096254600,
+              "status": "failed"
             },
-            "line": 24,
+            "line": 13,
             "name": "user fill in login details",
             "match": {
               "location": "RegisterFeature.user_fill_in_details()"
@@ -139,64 +751,64 @@
           },
           {
             "result": {
-              "duration": 654574300,
-              "status": "passed"
+              "duration": 7300,
+              "status": "skipped"
             },
-            "line": 25,
-            "name": "user choose \"loginAction_success\"",
+            "line": 14,
+            "name": "User click on \"loginAction_success\"",
             "match": {
               "arguments": [
                 {
                   "val": "\"loginAction_success\"",
-                  "offset": 12
+                  "offset": 14
                 }
               ],
-              "location": "RegisterFeature.user_click(String)"
+              "location": "OrderFeature.user_click_on(String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 624578100,
-              "status": "passed"
+              "duration": 67500,
+              "status": "skipped"
             },
-            "line": 26,
-            "name": "User Clicks on \"navbar_profile\"",
+            "line": 15,
+            "name": "User click on \"navbar_profile\"",
             "match": {
               "arguments": [
                 {
                   "val": "\"navbar_profile\"",
-                  "offset": 15
+                  "offset": 14
                 }
               ],
-              "location": "RegisterFeature.user_Clicks_on(String)"
+              "location": "OrderFeature.user_click_on(String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 526372600,
-              "status": "passed"
+              "duration": 7100,
+              "status": "skipped"
             },
-            "line": 27,
-            "name": "User edits \"edit_profile\"",
+            "line": 16,
+            "name": "User click on \"edit_profile\"",
             "match": {
               "arguments": [
                 {
                   "val": "\"edit_profile\"",
-                  "offset": 11
+                  "offset": 14
                 }
               ],
-              "location": "RegisterFeature.user_edits(String)"
+              "location": "OrderFeature.user_click_on(String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 627876599,
-              "status": "passed"
+              "duration": 6300,
+              "status": "skipped"
             },
-            "line": 28,
+            "line": 17,
             "name": "User update details",
             "match": {
               "location": "RegisterFeature.user_update_details()"
@@ -205,11 +817,11 @@
           },
           {
             "result": {
-              "duration": 396956400,
-              "status": "passed"
+              "duration": 6400,
+              "status": "skipped"
             },
-            "line": 29,
-            "name": "user click to \"back_to_profile\"",
+            "line": 18,
+            "name": "User click on \"back_to_profile\"",
             "match": {
               "arguments": [
                 {
@@ -217,34 +829,34 @@
                   "offset": 14
                 }
               ],
-              "location": "RegisterFeature.user_click_to(String)"
+              "location": "OrderFeature.user_click_on(String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 285063500,
-              "status": "passed"
+              "duration": 6300,
+              "status": "skipped"
             },
-            "line": 30,
-            "name": "user click change password \"change_password\"",
+            "line": 19,
+            "name": "User click on \"change_password\"",
             "match": {
               "arguments": [
                 {
                   "val": "\"change_password\"",
-                  "offset": 27
+                  "offset": 14
                 }
               ],
-              "location": "RegisterFeature.user_click_change_password(String)"
+              "location": "OrderFeature.user_click_on(String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 434672600,
-              "status": "passed"
+              "duration": 6100,
+              "status": "skipped"
             },
-            "line": 31,
+            "line": 20,
             "name": "user update password",
             "match": {
               "location": "RegisterFeature.user_update_password()"
@@ -253,46 +865,46 @@
           },
           {
             "result": {
-              "duration": 396489700,
-              "status": "passed"
+              "duration": 6100,
+              "status": "skipped"
             },
-            "line": 32,
-            "name": "user is back to profile \"back_to_profile\"",
+            "line": 21,
+            "name": "User click on \"back_to_profile\"",
             "match": {
               "arguments": [
                 {
                   "val": "\"back_to_profile\"",
-                  "offset": 24
+                  "offset": 14
                 }
               ],
-              "location": "RegisterFeature.user_back_to_profile(String)"
+              "location": "OrderFeature.user_click_on(String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 283580600,
-              "status": "passed"
+              "duration": 13300,
+              "status": "skipped"
             },
-            "line": 33,
-            "name": "user choose add security question \"add_question\"",
+            "line": 22,
+            "name": "User click on \"add_question\"",
             "match": {
               "arguments": [
                 {
                   "val": "\"add_question\"",
-                  "offset": 34
+                  "offset": 14
                 }
               ],
-              "location": "RegisterFeature.user_add_security_question(String)"
+              "location": "OrderFeature.user_click_on(String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 502372599,
-              "status": "passed"
+              "duration": 6200,
+              "status": "skipped"
             },
-            "line": 34,
+            "line": 23,
             "name": "user choose from a list of question",
             "match": {
               "location": "RegisterFeature.user_choose_question()"
@@ -301,45 +913,45 @@
           },
           {
             "result": {
-              "duration": 442493800,
-              "status": "passed"
+              "duration": 6700,
+              "status": "skipped"
             },
-            "line": 35,
-            "name": "user goes back to profile \"back_to_profile\"",
+            "line": 24,
+            "name": "User click on \"back_to_profile\"",
             "match": {
               "arguments": [
                 {
                   "val": "\"back_to_profile\"",
-                  "offset": 26
+                  "offset": 14
                 }
               ],
-              "location": "RegisterFeature.user_goes_to_profile(String)"
+              "location": "OrderFeature.user_click_on(String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 596202201,
-              "status": "passed"
+              "duration": 6100,
+              "status": "skipped"
             },
-            "line": 36,
-            "name": "User should be directed to \"Profile\"",
+            "line": 25,
+            "name": "The page should be navigated to \"Profile\"",
             "match": {
               "arguments": [
                 {
                   "val": "\"Profile\"",
-                  "offset": 27
+                  "offset": 32
                 }
               ],
-              "location": "RegisterFeature.user_should_be_directed_to(String)"
+              "location": "OrderFeature.the_page_should_be_navigated_to(String)"
             },
             "keyword": "Then "
           }
         ]
       },
       {
-        "start_timestamp": "2019-09-15T07:21:22.079Z",
-        "line": 40,
+        "start_timestamp": "2019-09-15T12:36:12.299Z",
+        "line": 27,
         "name": "Successfully forget password",
         "description": "",
         "id": "online-user-registration;successfully-forget-password",
@@ -348,46 +960,47 @@
         "steps": [
           {
             "result": {
-              "duration": 7049913400,
+              "duration": 6946427700,
               "status": "passed"
             },
-            "line": 41,
-            "name": "user in \"login.jsp\"",
+            "line": 28,
+            "name": "User is in the \"login.jsp\"",
             "match": {
               "arguments": [
                 {
                   "val": "\"login.jsp\"",
-                  "offset": 8
+                  "offset": 15
                 }
               ],
-              "location": "RegisterFeature.user_in(String)"
+              "location": "OrderFeature.user_is_in_the(String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 528842200,
+              "duration": 633846000,
               "status": "passed"
             },
-            "line": 42,
-            "name": "user chooses \"forget_button\"",
+            "line": 29,
+            "name": "User click on \"forget_button\"",
             "match": {
               "arguments": [
                 {
                   "val": "\"forget_button\"",
-                  "offset": 13
+                  "offset": 14
                 }
               ],
-              "location": "RegisterFeature.user_chooses(String)"
+              "location": "OrderFeature.user_click_on(String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 452175499,
-              "status": "passed"
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#enter_email\"}\n  (Session info: chrome\u003d77.0.3865.75)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-P3652T2\u0027, ip: \u002710.0.0.2\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_212\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.75, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\\Users\\aasdd\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55020}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: f4c02505c4589c62415c114b02829b66\n*** Element info: {Using\u003did, value\u003denter_email}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\r\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat asd.test.RegisterFeature.user_enter_email_address(RegisterFeature.java:93)\r\n\tat ✽.user enter email address(file:OpalFeatures/UserRegistrationFeature.feature:30)\r\n",
+              "duration": 5116029300,
+              "status": "failed"
             },
-            "line": 43,
+            "line": 30,
             "name": "user enter email address",
             "match": {
               "location": "RegisterFeature.user_enter_email_address()"
@@ -396,10 +1009,10 @@
           },
           {
             "result": {
-              "duration": 510964601,
-              "status": "passed"
+              "duration": 10100,
+              "status": "skipped"
             },
-            "line": 44,
+            "line": 31,
             "name": "user input answer",
             "match": {
               "location": "RegisterFeature.user_input_answer()"
@@ -408,19 +1021,19 @@
           },
           {
             "result": {
-              "duration": 582976799,
-              "status": "passed"
+              "duration": 5300,
+              "status": "skipped"
             },
-            "line": 45,
-            "name": "page should be directed to \"Forget Password\"",
+            "line": 32,
+            "name": "The page should be navigated to \"Forget Password\"",
             "match": {
               "arguments": [
                 {
                   "val": "\"Forget Password\"",
-                  "offset": 27
+                  "offset": 32
                 }
               ],
-              "location": "RegisterFeature.page_should_be_directed_to(String)"
+              "location": "OrderFeature.the_page_should_be_navigated_to(String)"
             },
             "keyword": "Then "
           }
@@ -431,7 +1044,312 @@
     "description": "",
     "id": "online-user-registration",
     "keyword": "Feature",
-    "uri": "file:opalFeatures/UserRegistrationFeature.feature",
+    "uri": "file:OpalFeatures/UserRegistrationFeature.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2019-09-15T12:36:24.996Z",
+        "line": 3,
+        "name": "A user will be able to login , and logout",
+        "description": "",
+        "id": "access-manager;a-user-will-be-able-to-login---and-logout",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6973146900,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is in the \"main.jsp\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"main.jsp\"",
+                  "offset": 15
+                }
+              ],
+              "location": "OrderFeature.user_is_in_the(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 611145100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User click on \"navbar_login\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"navbar_login\"",
+                  "offset": 14
+                }
+              ],
+              "location": "OrderFeature.user_click_on(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#login_email\"}\n  (Session info: chrome\u003d77.0.3865.75)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-P3652T2\u0027, ip: \u002710.0.0.2\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_212\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.75, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\\Users\\aasdd\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55069}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 55f282ce961981f0d17fa1858191ada5\n*** Element info: {Using\u003did, value\u003dlogin_email}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\r\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat asd.test.loginFeature.user_fill_user_information(loginFeature.java:39)\r\n\tat ✽.User fill user information(file:OpalFeatures/loginFeature.feature:6)\r\n",
+              "duration": 5108533000,
+              "status": "failed"
+            },
+            "line": 6,
+            "name": "User fill user information",
+            "match": {
+              "location": "loginFeature.user_fill_user_information()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7000,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "User click on \"login_submit\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"login_submit\"",
+                  "offset": 14
+                }
+              ],
+              "location": "OrderFeature.user_click_on(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4900,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "User click on \"loginAction_success\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"loginAction_success\"",
+                  "offset": 14
+                }
+              ],
+              "location": "OrderFeature.user_click_on(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4200,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "User click on \"navbar_logout\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"navbar_logout\"",
+                  "offset": 14
+                }
+              ],
+              "location": "OrderFeature.user_click_on(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5600,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "The page should be navigated to \"logout.jsp\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"logout.jsp\"",
+                  "offset": 32
+                }
+              ],
+              "location": "OrderFeature.the_page_should_be_navigated_to(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-09-15T12:36:37.691Z",
+        "line": 13,
+        "name": "A user want to delete their access history",
+        "description": "",
+        "id": "access-manager;a-user-want-to-delete-their-access-history",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7472744200,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User is in the \"main.jsp\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"main.jsp\"",
+                  "offset": 15
+                }
+              ],
+              "location": "OrderFeature.user_is_in_the(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5621405000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User click on \"navbar_login\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"navbar_login\"",
+                  "offset": 14
+                }
+              ],
+              "location": "OrderFeature.user_click_on(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#login_email\"}\n  (Session info: chrome\u003d77.0.3865.75)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-P3652T2\u0027, ip: \u002710.0.0.2\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_212\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.75, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\\Users\\aasdd\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55122}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 6ce1d041b8796d3eaf61bfe44a5b68f2\n*** Element info: {Using\u003did, value\u003dlogin_email}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\r\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat asd.test.loginFeature.user_fill_user_information(loginFeature.java:39)\r\n\tat ✽.User fill user information(file:OpalFeatures/loginFeature.feature:16)\r\n",
+              "duration": 5089489100,
+              "status": "failed"
+            },
+            "line": 16,
+            "name": "User fill user information",
+            "match": {
+              "location": "loginFeature.user_fill_user_information()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4300,
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "User click on \"login_submit\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"login_submit\"",
+                  "offset": 14
+                }
+              ],
+              "location": "OrderFeature.user_click_on(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2000,
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "User click on \"loginAction_success\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"loginAction_success\"",
+                  "offset": 14
+                }
+              ],
+              "location": "OrderFeature.user_click_on(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1800,
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "User click on \"sidebar_accessManager\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"sidebar_accessManager\"",
+                  "offset": 14
+                }
+              ],
+              "location": "OrderFeature.user_click_on(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1500,
+              "status": "skipped"
+            },
+            "line": 20,
+            "name": "User click on \"delete\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"delete\"",
+                  "offset": 14
+                }
+              ],
+              "location": "OrderFeature.user_click_on(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1600,
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "User refresh page",
+            "match": {
+              "location": "loginFeature.user_refresh_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1600,
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "The page should be navigated to \"Access manager\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Access manager\"",
+                  "offset": 32
+                }
+              ],
+              "location": "OrderFeature.the_page_should_be_navigated_to(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Access Manager",
+    "description": "",
+    "id": "access-manager",
+    "keyword": "Feature",
+    "uri": "file:OpalFeatures/loginFeature.feature",
     "tags": []
   }
 ]

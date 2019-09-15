@@ -60,9 +60,9 @@ public class OrderFeature extends Driver{
         driver.get("https://asd-test-app.herokuapp.com/"+url);
     }
 
-    @When("User Click on {string}")
-    public void user_Click_on(String type) {
-        driver.findElement(By.id(type)).click();
+    @When("User click on {string}")
+    public void user_click_on(String button) {
+        driver.findElement(By.id(button)).click();
     }
     
     @When("User fill in contact detail")
@@ -110,11 +110,6 @@ public class OrderFeature extends Driver{
         Select expiryyear = new Select(driver.findElement(By.id("edit_payment_expiry_year")));
         expiryyear.selectByValue("26");
         driver.findElement(By.id("edit_payment_cvv")).sendKeys("374");
-    }
-
-    @When("User click {string}")
-    public void user_click(String button) {
-        driver.findElement(By.id(button)).click();
     }
     
     @Then("The page should be navigated to {string}")
