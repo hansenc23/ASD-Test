@@ -36,10 +36,10 @@
                 <table id="form-table">
                     <tr><td>First Name:</td><td><input size="23" type="text" name="firstName" required></td></tr>
                     <tr><td>Last Name:</td><td><input size="23" type="text" name="lastName" required></td></tr>
-                    <tr><td>Email:</td><td><input size="23" type="text" name="email" required></td></tr>
+                    <tr><td>Email:</td><td><input size="23" type="email" name="email" required></td></tr>
                     <tr><td>Password:</td><td><input size="23" type="password" name="password" required></td></tr>
                     <tr><td>Address:</td><td><input type="text" name="address"></td></tr>  
-                    <tr><td>Phone Number:</td><td> <input type="text" name ="phone"></td></tr>
+                    <tr><td>Phone Number:</td><td> <input type="tel" pattern="[0-9]{10}" placeholder="Enter 10-digit number" type="text" name ="phone"></td></tr>
                     <tr><td>Position:</td><td> <input type="text" name ="position"></td></tr>
                     <input type="hidden" name ="isStaff" value="true"></td></tr>
                     <input type="hidden" name ="userID" value="<%=n%>">
