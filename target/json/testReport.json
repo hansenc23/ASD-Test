@@ -1,174 +1,341 @@
 [
   {
-    "line": 4,
+    "line": 2,
     "elements": [
       {
-        "start_timestamp": "2019-09-14T14:06:02.301Z",
-        "line": 16,
-        "name": "A user want to delete their access history",
+        "start_timestamp": "2019-09-15T06:55:27.557Z",
+        "line": 22,
+        "name": "Successfully update account details",
         "description": "",
-        "id": "access-manager;a-user-want-to-delete-their-access-history",
+        "id": "online-user-registration;successfully-update-account-details",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 6480630800,
+              "duration": 5885343800,
               "status": "passed"
             },
-            "line": 17,
-            "name": "User is in the \"main.jsp\"",
+            "line": 23,
+            "name": "user is in \"login.jsp\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"main.jsp\"",
-                  "offset": 15
+                  "val": "\"login.jsp\"",
+                  "offset": 11
                 }
               ],
-              "location": "loginFeature.user_is_in_the(String)"
+              "location": "RegisterFeature.user_is_in(String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 114967200,
+              "duration": 4238795300,
               "status": "passed"
             },
-            "line": 18,
-            "name": "User Click on \"navbar_login\"",
+            "line": 24,
+            "name": "user fill in login details",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"navbar_login\"",
-                  "offset": 14
-                }
-              ],
-              "location": "loginFeature.user_Click_on(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 157834300,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "User fill user information",
-            "match": {
-              "location": "loginFeature.user_fill_user_information()"
+              "location": "RegisterFeature.user_fill_in_details()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 4241959200,
+              "duration": 5525566501,
               "status": "passed"
             },
-            "line": 20,
-            "name": "User Click on \"login_submit\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"login_submit\"",
-                  "offset": 14
-                }
-              ],
-              "location": "loginFeature.user_Click_on(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 5944230600,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "User Click on \"loginAction_success\"",
+            "line": 25,
+            "name": "user choose \"loginAction_success\"",
             "match": {
               "arguments": [
                 {
                   "val": "\"loginAction_success\"",
-                  "offset": 14
+                  "offset": 12
                 }
               ],
-              "location": "loginFeature.user_Click_on(String)"
+              "location": "RegisterFeature.user_click(String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 4361907100,
+              "duration": 8226122700,
               "status": "passed"
             },
-            "line": 22,
-            "name": "User Click \"sidebar_accessManager\"",
+            "line": 26,
+            "name": "User Clicks on \"navbar_profile\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"sidebar_accessManager\"",
+                  "val": "\"navbar_profile\"",
+                  "offset": 15
+                }
+              ],
+              "location": "RegisterFeature.user_Clicks_on(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 200503000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "User edits \"edit_profile\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"edit_profile\"",
                   "offset": 11
                 }
               ],
-              "location": "loginFeature.user_Click(String)"
+              "location": "RegisterFeature.user_edits(String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 7931179600,
+              "duration": 4924472400,
               "status": "passed"
             },
-            "line": 23,
-            "name": "User Click on \"delete\"",
+            "line": 28,
+            "name": "User update details",
+            "match": {
+              "location": "RegisterFeature.user_update_details()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8130040501,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "user click to \"back_to_profile\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"delete\"",
+                  "val": "\"back_to_profile\"",
                   "offset": 14
                 }
               ],
-              "location": "loginFeature.user_Click_on(String)"
+              "location": "RegisterFeature.user_click_to(String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 7974201500,
+              "duration": 209868199,
               "status": "passed"
             },
-            "line": 24,
-            "name": "User refresh page",
-            "match": {
-              "location": "loginFeature.user_refresh_page()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 620855100,
-              "status": "passed"
-            },
-            "line": 25,
-            "name": "The page should be navigated to \"Access manager\"",
+            "line": 30,
+            "name": "user click change password \"change_password\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Access manager\"",
-                  "offset": 32
+                  "val": "\"change_password\"",
+                  "offset": 27
                 }
               ],
-              "location": "loginFeature.the_page_should_be_navigated_to(String)"
+              "location": "RegisterFeature.user_click_change_password(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4426929100,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "user update password",
+            "match": {
+              "location": "RegisterFeature.user_update_password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8052580001,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "user is back to profile \"back_to_profile\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"back_to_profile\"",
+                  "offset": 24
+                }
+              ],
+              "location": "RegisterFeature.user_back_to_profile(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 199915501,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "user choose add security question \"add_question\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"add_question\"",
+                  "offset": 34
+                }
+              ],
+              "location": "RegisterFeature.user_add_security_question(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4364249301,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "user choose from a list of question",
+            "match": {
+              "location": "RegisterFeature.user_choose_question()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7603665500,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "user goes back to profile \"back_to_profile\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"back_to_profile\"",
+                  "offset": 26
+                }
+              ],
+              "location": "RegisterFeature.user_goes_to_profile(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 587533700,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "User should be directed to \"Profile\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Profile\"",
+                  "offset": 27
+                }
+              ],
+              "location": "RegisterFeature.user_should_be_directed_to(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-09-15T06:56:30.136Z",
+        "line": 40,
+        "name": "Successfully forget password",
+        "description": "",
+        "id": "online-user-registration;successfully-forget-password",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5153821400,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "user in \"login.jsp\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"login.jsp\"",
+                  "offset": 8
+                }
+              ],
+              "location": "RegisterFeature.user_in(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 270204900,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "user chooses \"forget_button\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"forget_button\"",
+                  "offset": 13
+                }
+              ],
+              "location": "RegisterFeature.user_chooses(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7445494501,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "user enter email address",
+            "match": {
+              "location": "RegisterFeature.user_enter_email_address()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 14777184100,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "user input answer",
+            "match": {
+              "location": "RegisterFeature.user_input_answer()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 591753201,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "page should be directed to \"Forget Password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Forget Password\"",
+                  "offset": 27
+                }
+              ],
+              "location": "RegisterFeature.page_should_be_directed_to(String)"
             },
             "keyword": "Then "
           }
         ]
       }
     ],
-    "name": "Access Manager",
+    "name": "Online User Registration",
     "description": "",
-    "id": "access-manager",
+    "id": "online-user-registration",
     "keyword": "Feature",
-    "uri": "file:opalFeatures/loginFeature.feature",
+    "uri": "file:opalFeatures/UserRegistrationFeature.feature",
     "tags": []
   }
 ]
