@@ -3,7 +3,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2019-09-15T14:42:41.798Z",
+        "start_timestamp": "2019-09-15T14:57:19.033Z",
         "line": 4,
         "name": "Successfully created an account",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 7387580400,
+              "duration": 7395271600,
               "status": "passed"
             },
             "line": 5,
@@ -31,7 +31,7 @@
           },
           {
             "result": {
-              "duration": 525890100,
+              "duration": 525246200,
               "status": "passed"
             },
             "line": 6,
@@ -49,7 +49,7 @@
           },
           {
             "result": {
-              "duration": 964810300,
+              "duration": 902369900,
               "status": "passed"
             },
             "line": 7,
@@ -61,7 +61,7 @@
           },
           {
             "result": {
-              "duration": 385301900,
+              "duration": 346505000,
               "status": "passed"
             },
             "line": 8,
@@ -79,7 +79,7 @@
           },
           {
             "result": {
-              "duration": 588667700,
+              "duration": 587705900,
               "status": "passed"
             },
             "line": 9,
@@ -98,7 +98,7 @@
         ]
       },
       {
-        "start_timestamp": "2019-09-15T14:42:51.652Z",
+        "start_timestamp": "2019-09-15T14:57:28.792Z",
         "line": 11,
         "name": "Successfully update account details",
         "description": "",
@@ -108,7 +108,7 @@
         "steps": [
           {
             "result": {
-              "duration": 7055071100,
+              "duration": 7053832800,
               "status": "passed"
             },
             "line": 12,
@@ -126,7 +126,7 @@
           },
           {
             "result": {
-              "duration": 464484000,
+              "duration": 426700900,
               "status": "passed"
             },
             "line": 13,
@@ -138,7 +138,7 @@
           },
           {
             "result": {
-              "duration": 583003900,
+              "duration": 596804800,
               "status": "passed"
             },
             "line": 14,
@@ -156,7 +156,7 @@
           },
           {
             "result": {
-              "duration": 647737100,
+              "duration": 602805100,
               "status": "passed"
             },
             "line": 15,
@@ -174,7 +174,7 @@
           },
           {
             "result": {
-              "duration": 515942800,
+              "duration": 525655900,
               "status": "passed"
             },
             "line": 16,
@@ -192,7 +192,7 @@
           },
           {
             "result": {
-              "duration": 620253300,
+              "duration": 620949100,
               "status": "passed"
             },
             "line": 17,
@@ -204,7 +204,7 @@
           },
           {
             "result": {
-              "duration": 375147300,
+              "duration": 370676800,
               "status": "passed"
             },
             "line": 18,
@@ -222,7 +222,7 @@
           },
           {
             "result": {
-              "duration": 283539300,
+              "duration": 298100700,
               "status": "passed"
             },
             "line": 19,
@@ -240,7 +240,7 @@
           },
           {
             "result": {
-              "duration": 431530000,
+              "duration": 430707600,
               "status": "passed"
             },
             "line": 20,
@@ -252,7 +252,7 @@
           },
           {
             "result": {
-              "duration": 381480600,
+              "duration": 368342600,
               "status": "passed"
             },
             "line": 21,
@@ -270,7 +270,7 @@
           },
           {
             "result": {
-              "duration": 282550500,
+              "duration": 289438500,
               "status": "passed"
             },
             "line": 22,
@@ -288,7 +288,7 @@
           },
           {
             "result": {
-              "duration": 467391400,
+              "duration": 462696900,
               "status": "passed"
             },
             "line": 23,
@@ -300,7 +300,7 @@
           },
           {
             "result": {
-              "duration": 375611100,
+              "duration": 379281500,
               "status": "passed"
             },
             "line": 24,
@@ -318,7 +318,7 @@
           },
           {
             "result": {
-              "duration": 589529900,
+              "duration": 587103500,
               "status": "passed"
             },
             "line": 25,
@@ -337,7 +337,7 @@
         ]
       },
       {
-        "start_timestamp": "2019-09-15T14:43:04.726Z",
+        "start_timestamp": "2019-09-15T14:57:41.806Z",
         "line": 27,
         "name": "Successfully forget password",
         "description": "",
@@ -347,7 +347,7 @@
         "steps": [
           {
             "result": {
-              "duration": 7057422200,
+              "duration": 7067778100,
               "status": "passed"
             },
             "line": 28,
@@ -365,7 +365,7 @@
           },
           {
             "result": {
-              "duration": 524112400,
+              "duration": 532404800,
               "status": "passed"
             },
             "line": 29,
@@ -383,7 +383,7 @@
           },
           {
             "result": {
-              "duration": 437765500,
+              "duration": 439384300,
               "status": "passed"
             },
             "line": 30,
@@ -395,7 +395,7 @@
           },
           {
             "result": {
-              "duration": 524096300,
+              "duration": 517784400,
               "status": "passed"
             },
             "line": 31,
@@ -407,7 +407,7 @@
           },
           {
             "result": {
-              "duration": 585515500,
+              "duration": 587172300,
               "status": "passed"
             },
             "line": 32,

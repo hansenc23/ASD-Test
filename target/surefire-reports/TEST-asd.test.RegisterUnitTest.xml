@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="asd.test.RegisterUnitTest" time="40.374" tests="5" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="asd.test.RegisterUnitTest" time="40.206" tests="5" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_221\jre\bin"/>
@@ -63,9 +63,9 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="updateDetails" classname="asd.test.RegisterUnitTest" time="7.623"/>
-  <testcase name="addSecurityQuestion" classname="asd.test.RegisterUnitTest" time="7.192"/>
-  <testcase name="getUserID" classname="asd.test.RegisterUnitTest" time="7.159"/>
-  <testcase name="listUser" classname="asd.test.RegisterUnitTest" time="3.62"/>
-  <testcase name="updatePassword" classname="asd.test.RegisterUnitTest" time="7.409"/>
+  <testcase name="updateDetails" classname="asd.test.RegisterUnitTest" time="7.595"/>
+  <testcase name="addSecurityQuestion" classname="asd.test.RegisterUnitTest" time="7.167"/>
+  <testcase name="getUserID" classname="asd.test.RegisterUnitTest" time="7.157"/>
+  <testcase name="listUser" classname="asd.test.RegisterUnitTest" time="3.578"/>
+  <testcase name="updatePassword" classname="asd.test.RegisterUnitTest" time="7.367"/>
 </testsuite>

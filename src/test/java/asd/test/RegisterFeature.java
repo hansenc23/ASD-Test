@@ -58,7 +58,7 @@ public class RegisterFeature extends Driver{
     public void User_fill_in_the_registration_detail() {
         driver.findElement(By.id("register_first_name")).sendKeys("Hansen");
         driver.findElement(By.id("register_last_name")).sendKeys("Christian");
-        driver.findElement(By.id("register_email")).sendKeys("test100@gmail.com");
+        driver.findElement(By.id("register_email")).sendKeys("test10022@gmail.com");
         driver.findElement(By.id("register_password")).sendKeys("qwe123456");
         driver.findElement(By.id("register_phone")).sendKeys("0483329588");
         driver.findElement(By.id("register_address")).sendKeys("UTS");
@@ -66,12 +66,12 @@ public class RegisterFeature extends Driver{
     }
     
     @When("User backs {string}")
-    public void user_submits(String type) {
+    public void User_backs(String type) {
         driver.findElement(By.id(type)).click();
     }
     
      @Then("user should be directed to {string}")
-    public void the_page_should_be_navigated_to(String title) {
+    public void user_should_be_directed_to(String title) {
         Assert.assertTrue(driver.getTitle().contains(title));
        driver.quit();
    }
@@ -88,7 +88,7 @@ public class RegisterFeature extends Driver{
 
     @When("user fills login credentials")
     public void user_fills_login_credentials() {
-        driver.findElement(By.id("login_email")).sendKeys("test100@gmail.com");
+        driver.findElement(By.id("login_email")).sendKeys("test10022@gmail.com");
         driver.findElement(By.id("login_password")).sendKeys("qwe123456");
         driver.findElement(By.id("login_submit")).click();
     }
