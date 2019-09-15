@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+=======
 $(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:opalFeatures/UserRegistrationFeature.feature");
 formatter.feature({
   "name": "Online User Registration",
@@ -261,3 +263,4 @@ formatter.result({
   "status": "passed"
 });
 });
+>>>>>>> 7a5572d5c8b1d962ed6d6df59cf5e6a0c7c7f7a7
