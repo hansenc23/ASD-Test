@@ -1,8 +1,7 @@
+asd\test\CardManagementFeature.class
 asd\test\Driver.class
-<<<<<<< HEAD
 asd\test\loginFeature.class
 asd\test\OrderFeature.class
-asd\test\TopUpManagementFeature.class
-=======
->>>>>>> 7a5572d5c8b1d962ed6d6df59cf5e6a0c7c7f7a7
 asd\test\RunTest.class
+asd\test\RegisterFeature.class
+asd\test\TopUpManagementFeature.class

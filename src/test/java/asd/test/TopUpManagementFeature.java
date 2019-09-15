@@ -25,11 +25,11 @@ public class TopUpManagementFeature extends Driver {
     public TopUpManagementFeature() {
         driver = super.getDriver();
     }
-    @Given("User is in the {string}")
-public void user_is_in_the(String url) {
-    // Write code here that turns the phrase above into concrete actions
-    driver.get("https://asd-test-app.herokuapp.com/"+url);
-}
+//    @Given("User is in the {string}")
+//public void user_is_in_the(String url) {
+//    // Write code here that turns the phrase above into concrete actions
+//    driver.get("https://asd-test-app.herokuapp.com/"+url);
+//}
 
     @When("User fill in user detail")
     public void user_fill_in_user_detail() {
