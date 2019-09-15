@@ -13,9 +13,9 @@
         <link rel="stylesheet" type="text/css" href="css/navbar.css">
         
     </head>
-    <%User user = (User)session.getAttribute("user");%>
+    <%User user2 = (User)session.getAttribute("user");%>
     <body>
-        <% if (user ==null){
+        <% if (user2 ==null){
             
         %>
         <div class="navigation-bar">
@@ -31,7 +31,7 @@
             </ul>
         </div>
         <%}else{
-        String name = user.getFirstName();%>
+        String name = user2.getFirstName();%>
          <div class="navigation-bar">
              <ul>
                 <li><a id="navbar_profile" href="accountProfile.jsp">Welcome <%=name%></a></li>

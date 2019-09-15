@@ -3,971 +3,449 @@
     "line": 1,
     "elements": [
       {
-<<<<<<< HEAD
-        "start_timestamp": "2019-09-15T15:07:05.607Z",
-        "line": 3,
-        "name": "Successfully link Opal card to account",
-=======
-        "start_timestamp": "2019-09-15T14:57:19.033Z",
-        "line": 4,
-        "name": "Successfully created an account",
->>>>>>> 1f315f6e838869e9f9b642d237d4e2a3b419c7f7
+        "start_timestamp": "2019-09-15T16:39:55.395Z",
+        "line": 6,
+        "name": "Successfully create/update/delete preffered payment method",
         "description": "",
-        "id": "card-management-feature;successfully-link-opal-card-to-account",
+        "id": "topupmanagementfeature;successfully-create/update/delete-preffered-payment-method",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 9754521100,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "the User is logged in to the website",
-            "match": {
-              "location": "CardManagementFeature.the_User_is_logged_in_to_the_website()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 340049700,
-=======
-              "duration": 7395271600,
->>>>>>> 1f315f6e838869e9f9b642d237d4e2a3b419c7f7
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "is in the \"main.jsp\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"main.jsp\"",
-                  "offset": 10
-                }
-              ],
-              "location": "CardManagementFeature.is_in_the(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-<<<<<<< HEAD
-              "duration": 548429900,
-=======
-              "duration": 525246200,
->>>>>>> 1f315f6e838869e9f9b642d237d4e2a3b419c7f7
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "User clicks \"sidebar_linkCard\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"sidebar_linkCard\"",
-                  "offset": 12
-                }
-              ],
-              "location": "CardManagementFeature.user_clicks(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-<<<<<<< HEAD
-              "duration": 210561500,
-=======
-              "duration": 902369900,
->>>>>>> 1f315f6e838869e9f9b642d237d4e2a3b419c7f7
+              "duration": 8273936800,
               "status": "passed"
             },
             "line": 7,
-            "name": "User fill in \"OpalID\" with \"\u003cOpalID\u003e\"",
+            "name": "User is in the \"login.jsp\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"OpalID\"",
-                  "offset": 13
-                },
-                {
-                  "val": "\"\u003cOpalID\u003e\"",
-                  "offset": 27
-                }
-              ],
-              "location": "CardManagementFeature.user_fill_in_with(String,String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-<<<<<<< HEAD
-              "duration": 74381000,
-=======
-              "duration": 346505000,
->>>>>>> 1f315f6e838869e9f9b642d237d4e2a3b419c7f7
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "User fill in \"securityCode\" with \"\u003csecurityCode\u003e\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"securityCode\"",
-                  "offset": 13
-                },
-                {
-                  "val": "\"\u003csecurityCode\u003e\"",
-                  "offset": 33
-                }
-              ],
-              "location": "CardManagementFeature.user_fill_in_with(String,String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-<<<<<<< HEAD
-              "duration": 496637400,
-=======
-              "duration": 587705900,
->>>>>>> 1f315f6e838869e9f9b642d237d4e2a3b419c7f7
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "User submit by clicking \"link\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"link\"",
-                  "offset": 24
-                }
-              ],
-              "location": "CardManagementFeature.user_submit_by_clicking(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 641205300,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "the page should give a green success feedback",
-            "match": {
-              "location": "CardManagementFeature.the_page_should_give_a_green_success_feedback()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-<<<<<<< HEAD
-        "start_timestamp": "2019-09-15T15:07:17.677Z",
-        "line": 22,
-        "name": "Failed linking Opal card with wrong Opal details",
-=======
-        "start_timestamp": "2019-09-15T14:57:28.792Z",
-        "line": 11,
-        "name": "Successfully update account details",
->>>>>>> 1f315f6e838869e9f9b642d237d4e2a3b419c7f7
-        "description": "",
-        "id": "card-management-feature;failed-linking-opal-card-with-wrong-opal-details;;2",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-<<<<<<< HEAD
-              "duration": 8630728500,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "the User is logged in to the website",
-            "match": {
-              "location": "CardManagementFeature.the_User_is_logged_in_to_the_website()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 407849400,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "is in the \"main.jsp\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"main.jsp\"",
-                  "offset": 10
-                }
-              ],
-              "location": "CardManagementFeature.is_in_the(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 525665900,
-=======
-              "duration": 7053832800,
->>>>>>> 1f315f6e838869e9f9b642d237d4e2a3b419c7f7
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "User clicks \"sidebar_linkCard\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"sidebar_linkCard\"",
-                  "offset": 12
-                }
-              ],
-              "location": "CardManagementFeature.user_clicks(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-<<<<<<< HEAD
-              "duration": 214323600,
-=======
-              "duration": 426700900,
->>>>>>> 1f315f6e838869e9f9b642d237d4e2a3b419c7f7
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "User fill in \"OpalID\" with \"0000 0000 0000 0000\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"OpalID\"",
-                  "offset": 13
-                },
-                {
-                  "val": "\"0000 0000 0000 0000\"",
-                  "offset": 27
-                }
-              ],
-              "location": "CardManagementFeature.user_fill_in_with(String,String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-<<<<<<< HEAD
-              "duration": 80969100,
-=======
-              "duration": 596804800,
->>>>>>> 1f315f6e838869e9f9b642d237d4e2a3b419c7f7
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "User fill in \"securityCode\" with \"0000\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"securityCode\"",
-                  "offset": 13
-                },
-                {
-                  "val": "\"0000\"",
-                  "offset": 33
-                }
-              ],
-              "location": "CardManagementFeature.user_fill_in_with(String,String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-<<<<<<< HEAD
-              "duration": 418241500,
-=======
-              "duration": 602805100,
->>>>>>> 1f315f6e838869e9f9b642d237d4e2a3b419c7f7
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "User submit by clicking \"link\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"link\"",
-                  "offset": 24
-                }
-              ],
-              "location": "CardManagementFeature.user_submit_by_clicking(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-<<<<<<< HEAD
-              "duration": 640075900,
-=======
-              "duration": 525655900,
->>>>>>> 1f315f6e838869e9f9b642d237d4e2a3b419c7f7
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "the page should give a red fail feedback",
-            "match": {
-              "location": "CardManagementFeature.the_page_should_give_a_red_fail_feedback()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2019-09-15T15:07:28.595Z",
-        "line": 24,
-        "name": "Successfully unlink Opal card from account",
-        "description": "",
-        "id": "card-management-feature;successfully-unlink-opal-card-from-account",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 19114046300,
-              "status": "passed"
-            },
-            "line": 25,
-            "name": "the User is logged in to the website",
-            "match": {
-              "location": "CardManagementFeature.the_User_is_logged_in_to_the_website()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 299419200,
-              "status": "passed"
-            },
-            "line": 26,
-            "name": "is in the \"main.jsp\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"main.jsp\"",
-                  "offset": 10
-                }
-              ],
-              "location": "CardManagementFeature.is_in_the(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-<<<<<<< HEAD
-              "duration": 5369910500,
-=======
-              "duration": 620949100,
->>>>>>> 1f315f6e838869e9f9b642d237d4e2a3b419c7f7
-              "status": "passed"
-            },
-            "line": 27,
-            "name": "User clicks \"sidebar_unlinkCard\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"sidebar_unlinkCard\"",
-                  "offset": 12
-                }
-              ],
-              "location": "CardManagementFeature.user_clicks(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 5079158500,
-              "status": "passed"
-            },
-            "line": 28,
-            "name": "User click on \"unlink\" for \"opalID\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"unlink\"",
-                  "offset": 14
-                },
-                {
-                  "val": "\"opalID\"",
-                  "offset": 27
-                }
-              ],
-              "location": "CardManagementFeature.user_click_on_for(String,String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-<<<<<<< HEAD
-              "duration": 1029434400,
-=======
-              "duration": 370676800,
->>>>>>> 1f315f6e838869e9f9b642d237d4e2a3b419c7f7
-              "status": "passed"
-            },
-            "line": 29,
-            "name": "User should not see \"opalID\" in the \"Unlink Card Page\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"opalID\"",
-                  "offset": 20
-                },
-                {
-                  "val": "\"Unlink Card Page\"",
-                  "offset": 36
-                }
-              ],
-              "location": "CardManagementFeature.user_should_not_see_in_the(String,String)"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2019-09-15T15:07:59.488Z",
-        "line": 31,
-        "name": "Successfully search an Opal Card by Opal ID",
-        "description": "",
-        "id": "card-management-feature;successfully-search-an-opal-card-by-opal-id",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 8647521100,
-              "status": "passed"
-            },
-            "line": 32,
-            "name": "the User is logged in to the website",
-            "match": {
-              "location": "CardManagementFeature.the_User_is_logged_in_to_the_website()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 314277000,
-              "status": "passed"
-            },
-            "line": 33,
-            "name": "is in the \"main.jsp\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"main.jsp\"",
-                  "offset": 10
-                }
-              ],
-              "location": "CardManagementFeature.is_in_the(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-<<<<<<< HEAD
-              "duration": 61037500,
-=======
-              "duration": 298100700,
->>>>>>> 1f315f6e838869e9f9b642d237d4e2a3b419c7f7
-              "status": "passed"
-            },
-            "line": 34,
-            "name": "User select an \"OpalID\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"OpalID\"",
+                  "val": "\"login.jsp\"",
                   "offset": 15
                 }
               ],
-              "location": "CardManagementFeature.user_select_an(String)"
+              "location": "TopUpManagementFeature.user_is_in_the(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 361331000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User fills all user detail",
+            "match": {
+              "location": "TopUpManagementFeature.user_fills_all_user_detail()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 540876400,
+              "duration": 518440800,
               "status": "passed"
             },
-            "line": 35,
-            "name": "User submit by clicking \"Search\"",
+            "line": 9,
+            "name": "User clicks onto \"login_submit\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Search\"",
-                  "offset": 24
+                  "val": "\"login_submit\"",
+                  "offset": 17
                 }
               ],
-              "location": "CardManagementFeature.user_submit_by_clicking(String)"
+              "location": "TopUpManagementFeature.user_clicks_onto1(String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 666235800,
+              "duration": 574777700,
               "status": "passed"
             },
-            "line": 36,
-            "name": "the searched \"OpalID\" should be shown in the page",
+            "line": 10,
+            "name": "User clicks onto \"loginAction_success\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"OpalID\"",
-                  "offset": 13
+                  "val": "\"loginAction_success\"",
+                  "offset": 17
                 }
               ],
-              "location": "CardManagementFeature.the_searched_should_be_shown_in_the_page(String)"
+              "location": "TopUpManagementFeature.user_clicks_onto1(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#sidebar_paymentMethodManagement\"}\n  (Session info: chrome\u003d76.0.3809.132)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-NDQN486\u0027, ip: \u0027172.19.185.106\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_201\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\\Users\\Hieu\\AppData\\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51503}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: e4ed062f5fa8e02d315429d5635ca98b\n*** Element info: {Using\u003did, value\u003dsidebar_paymentMethodManagement}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\r\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat asd.test.TopUpManagementFeature.user_clicks_onto1(TopUpManagementFeature.java:163)\r\n\tat ✽.User clicks onto \"sidebar_paymentMethodManagement\"(file:OpalFeatures/TopUpManagementFeature.feature:11)\r\n",
+              "duration": 76620800,
+              "status": "failed"
+            },
+            "line": 11,
+            "name": "User clicks onto \"sidebar_paymentMethodManagement\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"sidebar_paymentMethodManagement\"",
+                  "offset": 17
+                }
+              ],
+              "location": "TopUpManagementFeature.user_clicks_onto1(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7200,
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "User clicks onto \"paymentMethodManagement_addMethod\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"paymentMethodManagement_addMethod\"",
+                  "offset": 17
+                }
+              ],
+              "location": "TopUpManagementFeature.user_clicks_onto1(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4000,
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "User fills all paymentmethod detail",
+            "match": {
+              "location": "TopUpManagementFeature.user_fills_all_paymentmethod_detail()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3200,
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "User clicks onto \"addPaymentMethod_submit\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"addPaymentMethod_submit\"",
+                  "offset": 17
+                }
+              ],
+              "location": "TopUpManagementFeature.user_clicks_onto1(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3100,
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "User clicks onto \"addPaymentMethodOutcome_back\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"addPaymentMethodOutcome_back\"",
+                  "offset": 17
+                }
+              ],
+              "location": "TopUpManagementFeature.user_clicks_onto1(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3100,
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "User clicks onto \"9876987698769876\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"9876987698769876\"",
+                  "offset": 17
+                }
+              ],
+              "location": "TopUpManagementFeature.user_clicks_onto1(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2900,
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "User fills all update detail",
+            "match": {
+              "location": "TopUpManagementFeature.user_fills_all_update_detail()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3000,
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "User clicks onto \"updatePaymentmethod_update\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"updatePaymentmethod_update\"",
+                  "offset": 17
+                }
+              ],
+              "location": "TopUpManagementFeature.user_clicks_onto1(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 20800,
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "User clicks onto \"updatePaymentmethod_back\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"updatePaymentmethod_back\"",
+                  "offset": 17
+                }
+              ],
+              "location": "TopUpManagementFeature.user_clicks_onto1(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2900,
+              "status": "skipped"
+            },
+            "line": 20,
+            "name": "User clicks onto \"7654765476547654\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"7654765476547654\"",
+                  "offset": 17
+                }
+              ],
+              "location": "TopUpManagementFeature.user_clicks_onto1(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3100,
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "User clicks onto \"updatePaymentmethod_delete\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"updatePaymentmethod_delete\"",
+                  "offset": 17
+                }
+              ],
+              "location": "TopUpManagementFeature.user_clicks_onto1(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3200,
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "User clicks onto \"updatePaymentmethod_back\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"updatePaymentmethod_back\"",
+                  "offset": 17
+                }
+              ],
+              "location": "TopUpManagementFeature.user_clicks_onto1(String)"
             },
             "keyword": "Then "
           }
         ]
       },
       {
-        "start_timestamp": "2019-09-15T15:08:09.720Z",
-        "line": 38,
-        "name": "Successfully view the details of the Opal card",
+        "start_timestamp": "2019-09-15T16:40:05.212Z",
+        "line": 23,
+        "name": "Successfully create top up card",
         "description": "",
-        "id": "card-management-feature;successfully-view-the-details-of-the-opal-card",
+        "id": "topupmanagementfeature;successfully-create-top-up-card",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 8576798400,
+              "duration": 7308857400,
               "status": "passed"
             },
-            "line": 39,
-            "name": "the User is logged in to the website",
+            "line": 24,
+            "name": "User is in the \"login.jsp\"",
             "match": {
-              "location": "CardManagementFeature.the_User_is_logged_in_to_the_website()"
+              "arguments": [
+                {
+                  "val": "\"login.jsp\"",
+                  "offset": 15
+                }
+              ],
+              "location": "TopUpManagementFeature.user_is_in_the(String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 319131900,
-=======
-              "duration": 430707600,
->>>>>>> 1f315f6e838869e9f9b642d237d4e2a3b419c7f7
+              "duration": 331733600,
               "status": "passed"
             },
-            "line": 40,
-            "name": "is in the \"main.jsp\"",
+            "line": 25,
+            "name": "User fills all user detail",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"main.jsp\"",
-                  "offset": 10
-                }
-              ],
-              "location": "CardManagementFeature.is_in_the(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-<<<<<<< HEAD
-              "duration": 583387100,
-=======
-              "duration": 368342600,
->>>>>>> 1f315f6e838869e9f9b642d237d4e2a3b419c7f7
-              "status": "passed"
-            },
-            "line": 41,
-            "name": "User click on \"Details\" for \"opalID\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Details\"",
-                  "offset": 14
-                },
-                {
-                  "val": "\"opalID\"",
-                  "offset": 28
-                }
-              ],
-              "location": "CardManagementFeature.user_click_on_for(String,String)"
+              "location": "TopUpManagementFeature.user_fills_all_user_detail()"
             },
             "keyword": "When "
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 643221400,
-=======
-              "duration": 289438500,
->>>>>>> 1f315f6e838869e9f9b642d237d4e2a3b419c7f7
+              "duration": 466592200,
               "status": "passed"
             },
-            "line": 42,
-            "name": "the page should be navigated to \"Card Details Page\"",
+            "line": 26,
+            "name": "User clicks onto \"login_submit\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Card Details Page\"",
-                  "offset": 32
+                  "val": "\"login_submit\"",
+                  "offset": 17
                 }
               ],
-              "location": "CardManagementFeature.the_page_should_be_navigated_to(String)"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2019-09-15T15:08:19.847Z",
-        "line": 46,
-        "name": "Successfully register an Opal Card",
-        "description": "",
-        "id": "card-management-feature;successfully-register-an-opal-card",
-        "after": [
-          {
-            "result": {
-              "duration": 4327612900,
-              "status": "passed"
-            },
-            "match": {
-              "location": "CardManagementFeature.removeTestCard()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 8145124900,
-              "status": "passed"
-            },
-            "line": 47,
-            "name": "the Staff is logged in to the website",
-            "match": {
-              "location": "CardManagementFeature.the_Staff_is_loggied_in_to_the_website()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-<<<<<<< HEAD
-              "duration": 517046900,
-=======
-              "duration": 462696900,
->>>>>>> 1f315f6e838869e9f9b642d237d4e2a3b419c7f7
-              "status": "passed"
-            },
-            "line": 48,
-            "name": "the Staff click on \"card_management\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"card_management\"",
-                  "offset": 19
-                }
-              ],
-              "location": "CardManagementFeature.the_Staff_click_on(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 527805700,
-              "status": "passed"
-            },
-            "line": 49,
-            "name": "the Staff click on \"register_card\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"register_card\"",
-                  "offset": 19
-                }
-              ],
-              "location": "CardManagementFeature.the_Staff_click_on(String)"
+              "location": "TopUpManagementFeature.user_clicks_onto1(String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 310260900,
-=======
-              "duration": 379281500,
->>>>>>> 1f315f6e838869e9f9b642d237d4e2a3b419c7f7
+              "duration": 763127000,
               "status": "passed"
             },
-            "line": 50,
-            "name": "the Staff fill in the new Opal Card details for \"OpalID\"",
+            "line": 27,
+            "name": "User clicks onto \"loginAction_success\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"OpalID\"",
-                  "offset": 48
+                  "val": "\"loginAction_success\"",
+                  "offset": 17
                 }
               ],
-              "location": "CardManagementFeature.the_Staff_fill_in_the_new_Opal_Card_details_for(String)"
+              "location": "TopUpManagementFeature.user_clicks_onto1(String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 381276100,
-=======
-              "duration": 587103500,
->>>>>>> 1f315f6e838869e9f9b642d237d4e2a3b419c7f7
-              "status": "passed"
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#sidebar_topUpValue\"}\n  (Session info: chrome\u003d76.0.3809.132)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-NDQN486\u0027, ip: \u0027172.19.185.106\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_201\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\\Users\\Hieu\\AppData\\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51527}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 9574b16a257f50d88ec6b169c5f1dafb\n*** Element info: {Using\u003did, value\u003dsidebar_topUpValue}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\r\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat asd.test.TopUpManagementFeature.user_clicks_onto1(TopUpManagementFeature.java:163)\r\n\tat ✽.User clicks onto \"sidebar_topUpValue\"(file:OpalFeatures/TopUpManagementFeature.feature:28)\r\n",
+              "duration": 60606100,
+              "status": "failed"
             },
-            "line": 51,
-            "name": "the Staff submit by clicking \"link\"",
+            "line": 28,
+            "name": "User clicks onto \"sidebar_topUpValue\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"link\"",
-                  "offset": 29
+                  "val": "\"sidebar_topUpValue\"",
+                  "offset": 17
                 }
               ],
-              "location": "CardManagementFeature.the_Staff_submit_by_clicking(String)"
+              "location": "TopUpManagementFeature.user_clicks_onto1(String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 653895200,
-              "status": "passed"
+              "duration": 6100,
+              "status": "skipped"
             },
-            "line": 52,
-            "name": "the page should shows a green success feedback",
+            "line": 29,
+            "name": "User fills all payment amount",
             "match": {
-              "location": "CardManagementFeature.the_page_should_shows_a_green_success_feedback()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@register_card"
-          }
-        ]
-      },
-      {
-<<<<<<< HEAD
-        "start_timestamp": "2019-09-15T15:08:34.711Z",
-        "line": 63,
-        "name": "Failed register an Opal Card",
-=======
-        "start_timestamp": "2019-09-15T14:57:41.806Z",
-        "line": 27,
-        "name": "Successfully forget password",
->>>>>>> 1f315f6e838869e9f9b642d237d4e2a3b419c7f7
-        "description": "",
-        "id": "card-management-feature;failed-register-an-opal-card;;2",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-<<<<<<< HEAD
-              "duration": 8115710100,
-=======
-              "duration": 7067778100,
->>>>>>> 1f315f6e838869e9f9b642d237d4e2a3b419c7f7
-              "status": "passed"
-            },
-            "line": 55,
-            "name": "the Staff is logged in to the website",
-            "match": {
-              "location": "CardManagementFeature.the_Staff_is_loggied_in_to_the_website()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 518541900,
-              "status": "passed"
-            },
-            "line": 56,
-            "name": "the Staff click on \"card_management\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"card_management\"",
-                  "offset": 19
-                }
-              ],
-              "location": "CardManagementFeature.the_Staff_click_on(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-<<<<<<< HEAD
-              "duration": 528333200,
-=======
-              "duration": 532404800,
->>>>>>> 1f315f6e838869e9f9b642d237d4e2a3b419c7f7
-              "status": "passed"
-            },
-            "line": 57,
-            "name": "the Staff click on \"register_card\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"register_card\"",
-                  "offset": 19
-                }
-              ],
-              "location": "CardManagementFeature.the_Staff_click_on(String)"
+              "location": "TopUpManagementFeature.user_fills_all_payment_amount()"
             },
             "keyword": "And "
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 294653000,
-=======
-              "duration": 439384300,
->>>>>>> 1f315f6e838869e9f9b642d237d4e2a3b419c7f7
-              "status": "passed"
+              "duration": 18800,
+              "status": "skipped"
             },
-            "line": 58,
-            "name": "the Staff fill in the new Opal Card details for \"8888 8888 8888 8888\"",
+            "line": 30,
+            "name": "User clicks onto \"topUpValue_submit\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"8888 8888 8888 8888\"",
-                  "offset": 48
+                  "val": "\"topUpValue_submit\"",
+                  "offset": 17
                 }
               ],
-              "location": "CardManagementFeature.the_Staff_fill_in_the_new_Opal_Card_details_for(String)"
+              "location": "TopUpManagementFeature.user_clicks_onto1(String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 345296500,
-=======
-              "duration": 517784400,
->>>>>>> 1f315f6e838869e9f9b642d237d4e2a3b419c7f7
-              "status": "passed"
+              "duration": 5000,
+              "status": "skipped"
             },
-            "line": 59,
-            "name": "the Staff submit by clicking \"link\"",
+            "line": 31,
+            "name": "User fills all the payment detail",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"link\"",
-                  "offset": 29
-                }
-              ],
-              "location": "CardManagementFeature.the_Staff_submit_by_clicking(String)"
+              "location": "TopUpManagementFeature.user_fills_all_the_payment_detail()"
             },
             "keyword": "And "
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 653349600,
-=======
-              "duration": 587172300,
->>>>>>> 1f315f6e838869e9f9b642d237d4e2a3b419c7f7
-              "status": "passed"
+              "duration": 4800,
+              "status": "skipped"
             },
-            "line": 60,
-            "name": "the page should shows a red fail feedback",
-            "match": {
-              "location": "CardManagementFeature.the_page_should_shows_a_red_fail_feedback()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2019-09-15T15:08:45.168Z",
-        "line": 65,
-        "name": "Successfully list all Opal cards",
-        "description": "",
-        "id": "card-management-feature;successfully-list-all-opal-cards",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 8530655800,
-              "status": "passed"
-            },
-            "line": 66,
-            "name": "the Staff is logged in to the website",
-            "match": {
-              "location": "CardManagementFeature.the_Staff_is_loggied_in_to_the_website()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 507822500,
-              "status": "passed"
-            },
-            "line": 67,
-            "name": "the Staff click on \"card_management\"",
+            "line": 32,
+            "name": "User clicks onto \"topUpCard_submit\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"card_management\"",
-                  "offset": 19
+                  "val": "\"topUpCard_submit\"",
+                  "offset": 17
                 }
               ],
-              "location": "CardManagementFeature.the_Staff_click_on(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1192314000,
-              "status": "passed"
-            },
-            "line": 68,
-            "name": "the Staff click on \"show_all_cards\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"show_all_cards\"",
-                  "offset": 19
-                }
-              ],
-              "location": "CardManagementFeature.the_Staff_click_on(String)"
+              "location": "TopUpManagementFeature.user_clicks_onto1(String)"
             },
             "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 668306700,
-              "status": "passed"
-            },
-            "line": 69,
-            "name": "the page should show all Opal cards",
-            "match": {
-              "location": "CardManagementFeature.the_page_should_show_all_Opal_cards()"
-            },
-            "keyword": "Then "
           }
         ]
       }
     ],
-    "name": "Card Management Feature",
-    "description": "",
-    "id": "card-management-feature",
+    "name": "TopUpManagementFeature",
+    "description": "     As a user of Opal project \n     I want to create/delete/update payment method\n     So that I can top up my card with my payment method",
+    "id": "topupmanagementfeature",
     "keyword": "Feature",
-    "uri": "file:OpalFeatures/CardManagementFeature.feature",
+    "uri": "file:OpalFeatures/TopUpManagementFeature.feature",
     "tags": []
   }
 ]
