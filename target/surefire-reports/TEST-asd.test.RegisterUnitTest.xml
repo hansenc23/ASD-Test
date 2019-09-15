@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="5" failures="0" name="asd.test.RegisterUnitTest" time="33.673" errors="0" skipped="0">
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="asd.test.RegisterUnitTest" time="40.374" tests="5" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_221\jre\bin"/>
     <property name="java.vm.version" value="25.221-b11"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="G:\ASD-Test"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\ASD-Test"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=";"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -15,16 +15,14 @@
     <property name="user.country" value="AU"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value=""/>
-    <property name="test" value="asd.test.RegisterUnitTest"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="G:\ASD-Test"/>
+    <property name="user.dir" value="C:\ASD-Test"/>
     <property name="java.runtime.version" value="1.8.0_221-b11"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_221\jre\lib\endorsed"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.io.tmpdir" value="C:\Users\hanse\AppData\Local\Temp\"/>
-    <property name="line.separator" value="
-"/>
+    <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
@@ -48,7 +46,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_221\jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dtest=asd.test.RegisterUnitTest -Dmaven.ext.class.path=C:\Program Files\NetBeans 8.2\java\maven-nblib\netbeans-eventspy.jar -Dfile.encoding=UTF-8 surefire:test"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dmaven.ext.class.path=C:\Program Files\NetBeans 8.2\java\maven-nblib\netbeans-eventspy.jar -Dfile.encoding=UTF-8 test"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -65,9 +63,9 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="asd.test.RegisterUnitTest" name="updateDetails" time="7.844"/>
-  <testcase classname="asd.test.RegisterUnitTest" name="addSecurityQuestion" time="7.163"/>
-  <testcase classname="asd.test.RegisterUnitTest" name="getUserID" time="7.393"/>
-  <testcase classname="asd.test.RegisterUnitTest" name="listUser" time="3.836"/>
-  <testcase classname="asd.test.RegisterUnitTest" name="updatePassword" time="7.437"/>
+  <testcase name="updateDetails" classname="asd.test.RegisterUnitTest" time="7.623"/>
+  <testcase name="addSecurityQuestion" classname="asd.test.RegisterUnitTest" time="7.192"/>
+  <testcase name="getUserID" classname="asd.test.RegisterUnitTest" time="7.159"/>
+  <testcase name="listUser" classname="asd.test.RegisterUnitTest" time="3.62"/>
+  <testcase name="updatePassword" classname="asd.test.RegisterUnitTest" time="7.409"/>
 </testsuite>

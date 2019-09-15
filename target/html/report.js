@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-=======
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:opalFeatures/UserRegistrationFeature.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:OpalFeatures/UserRegistrationFeature.feature");
 formatter.feature({
   "name": "Online User Registration",
   "description": "",
@@ -12,55 +10,54 @@ formatter.scenario({
   "keyword": "Scenario"
 });
 formatter.step({
-  "name": "User is in the \"main.jsp\"",
+  "name": "User is at \"main.jsp\"",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "RegisterFeature.user_is_in_the(String)"
+  "location": "RegisterFeature.User_is_at(String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User Click on \"navbar_register\"",
+  "name": "User taps \"navbar_register\"",
   "keyword": "When "
 });
 formatter.match({
-  "location": "RegisterFeature.user_Click_on(String)"
+  "location": "RegisterFeature.user_taps(String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User fill in contact detail",
+  "name": "User fill in the registration detail",
   "keyword": "And "
 });
 formatter.match({
-  "location": "RegisterFeature.user_fill_in_contact_detail()"
+  "location": "RegisterFeature.User_fill_in_the_registration_detail()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User clicks \"back\"",
+  "name": "User backs \"back\"",
   "keyword": "And "
 });
 formatter.match({
-  "location": "RegisterFeature.user_Clicks(String)"
+  "location": "RegisterFeature.user_submits(String)"
 });
 formatter.result({
-  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#back\"}\n  (Session info: chrome\u003d76.0.3809.132)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-CHTED21\u0027, ip: \u0027192.168.2.100\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_221\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\\Users\\hanse\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60932}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: c467a6c8d01421d1921c41f5045d04bc\n*** Element info: {Using\u003did, value\u003dback}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\r\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat asd.test.RegisterFeature.user_Clicks(RegisterFeature.java:58)\r\n\tat ✽.User clicks \"back\"(file:opalFeatures/UserRegistrationFeature.feature:16)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.step({
-  "name": "The page should be navigated to \"Home Page\"",
+  "name": "user should be directed to \"Home Page\"",
   "keyword": "Then "
 });
 formatter.match({
   "location": "RegisterFeature.the_page_should_be_navigated_to(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.scenario({
   "name": "Successfully update account details",
@@ -68,27 +65,27 @@ formatter.scenario({
   "keyword": "Scenario"
 });
 formatter.step({
-  "name": "user is in \"login.jsp\"",
+  "name": "page is on \"login.jsp\"",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "RegisterFeature.user_is_in(String)"
+  "location": "RegisterFeature.page_is_on(String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user fill in login details",
+  "name": "user fills login credentials",
   "keyword": "And "
 });
 formatter.match({
-  "location": "RegisterFeature.user_fill_in_details()"
+  "location": "RegisterFeature.user_fills_login_credentials()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user choose \"loginAction_success\"",
+  "name": "user login success \"loginAction_success\"",
   "keyword": "And "
 });
 formatter.match({
@@ -98,111 +95,111 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User Clicks on \"navbar_profile\"",
+  "name": "user open profile \"navbar_profile\"",
   "keyword": "And "
 });
 formatter.match({
-  "location": "RegisterFeature.user_Clicks_on(String)"
+  "location": "RegisterFeature.user_open_profile(String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User edits \"edit_profile\"",
+  "name": "user click edit \"edit_profile\"",
   "keyword": "And "
 });
 formatter.match({
-  "location": "RegisterFeature.user_edits(String)"
+  "location": "RegisterFeature.user_click_edit(String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User update details",
+  "name": "User updates account details",
   "keyword": "And "
 });
 formatter.match({
-  "location": "RegisterFeature.user_update_details()"
+  "location": "RegisterFeature.User_updates_account_details()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user click to \"back_to_profile\"",
+  "name": "user goes back \"back_to_profile\"",
   "keyword": "And "
 });
 formatter.match({
-  "location": "RegisterFeature.user_click_to(String)"
+  "location": "RegisterFeature.user_goes_back(String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user click change password \"change_password\"",
+  "name": "user wants to change password \"change_password\"",
   "keyword": "And "
 });
 formatter.match({
-  "location": "RegisterFeature.user_click_change_password(String)"
+  "location": "RegisterFeature.user_wants_to_change_password(String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user update password",
+  "name": "User fill in new password",
   "keyword": "And "
 });
 formatter.match({
-  "location": "RegisterFeature.user_update_password()"
+  "location": "RegisterFeature.User_fill_in_new_password()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user is back to profile \"back_to_profile\"",
+  "name": "user tap back \"back_to_profile\"",
   "keyword": "And "
 });
 formatter.match({
-  "location": "RegisterFeature.user_back_to_profile(String)"
+  "location": "RegisterFeature.user_tap_back(String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user choose add security question \"add_question\"",
+  "name": "user wants to add question \"add_question\"",
   "keyword": "And "
 });
 formatter.match({
-  "location": "RegisterFeature.user_add_security_question(String)"
+  "location": "RegisterFeature.user_wants_to_add_question(String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user choose from a list of question",
+  "name": "user select the necessary question",
   "keyword": "And "
 });
 formatter.match({
-  "location": "RegisterFeature.user_choose_question()"
+  "location": "RegisterFeature.user_select_the_necessary_question()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user goes back to profile \"back_to_profile\"",
+  "name": "User go previous page \"back_to_profile\"",
   "keyword": "And "
 });
 formatter.match({
-  "location": "RegisterFeature.user_goes_to_profile(String)"
+  "location": "RegisterFeature.User_go_previous_page(String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User should be directed to \"Profile\"",
+  "name": "User should see profile page \"Profile\"",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "RegisterFeature.user_should_be_directed_to(String)"
+  "location": "RegisterFeature.User_should_see_profile_page(String)"
 });
 formatter.result({
   "status": "passed"
@@ -213,54 +210,53 @@ formatter.scenario({
   "keyword": "Scenario"
 });
 formatter.step({
-  "name": "user in \"login.jsp\"",
+  "name": "the page shows \"login.jsp\"",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "RegisterFeature.user_in(String)"
+  "location": "RegisterFeature.the_page_shows(String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user chooses \"forget_button\"",
+  "name": "user forgets \"forget_button\"",
   "keyword": "And "
 });
 formatter.match({
-  "location": "RegisterFeature.user_chooses(String)"
+  "location": "RegisterFeature.user_forgets(String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user enter email address",
+  "name": "User types email",
   "keyword": "And "
 });
 formatter.match({
-  "location": "RegisterFeature.user_enter_email_address()"
+  "location": "RegisterFeature.User_types_email()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user input answer",
+  "name": "user answer the question",
   "keyword": "And "
 });
 formatter.match({
-  "location": "RegisterFeature.user_input_answer()"
+  "location": "RegisterFeature.user_answer_the_question()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "page should be directed to \"Forget Password\"",
+  "name": "page will show old password \"Forget Password\"",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "RegisterFeature.page_should_be_directed_to(String)"
+  "location": "RegisterFeature.page_will_show_old_password(String)"
 });
 formatter.result({
   "status": "passed"
 });
 });
->>>>>>> 7a5572d5c8b1d962ed6d6df59cf5e6a0c7c7f7a7
