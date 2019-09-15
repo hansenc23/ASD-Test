@@ -1,4 +1,3 @@
-
 <%-- 
     Document   : navbar
     Created on : 14/08/2019, 1:42:59 AM
@@ -13,9 +12,9 @@
         <link rel="stylesheet" type="text/css" href="css/navbar.css">
         
     </head>
-    <%User user2 = (User)session.getAttribute("user");%>
+    <%User user = (User)session.getAttribute("user");%>
     <body>
-        <% if (user2 ==null){
+        <% if (user ==null){
             
         %>
         <div class="navigation-bar">
@@ -31,12 +30,12 @@
             </ul>
         </div>
         <%}else{
-        String name = user2.getFirstName();%>
+        String name = user.getFirstName();%>
          <div class="navigation-bar">
              <ul>
                 <li><a id="navbar_profile" href="accountProfile.jsp">Welcome <%=name%></a></li>
                 <li><a id="order_history" href="orderHistory.jsp">Order History</a></li>
-                <li><a id="navbar_logout" href="logout.jsp">Logout</a></li>
+                <li><a href="logout.jsp">Logout</a></li>
                 <li><a href="main.jsp">Home</a></li>
               
                 
@@ -46,4 +45,3 @@
           </div>
         <%}%>    </body>
 </html>
-

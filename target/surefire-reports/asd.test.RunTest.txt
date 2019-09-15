@@ -1,28 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: asd.test.RunTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 19.806 sec <<< FAILURE! - in asd.test.RunTest
-Successfully create/update/delete preffered payment method(TopUpManagementFeature)  Time elapsed: 9.817 sec  <<< ERROR!
-org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"css selector","selector":"#sidebar_paymentMethodManagement"}
-  (Session info: chrome=76.0.3809.132)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-NDQN486', ip: '172.19.185.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\Hieu\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51503}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: e4ed062f5fa8e02d315429d5635ca98b
-*** Element info: {Using=id, value=sidebar_paymentMethodManagement}
-
-Successfully create top up card(TopUpManagementFeature)  Time elapsed: 8.93 sec  <<< ERROR!
-org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"css selector","selector":"#sidebar_topUpValue"}
-  (Session info: chrome=76.0.3809.132)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-NDQN486', ip: '172.19.185.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\Hieu\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51527}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 9574b16a257f50d88ec6b169c5f1dafb
-*** Element info: {Using=id, value=sidebar_topUpValue}
-
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.391 sec - in asd.test.RunTest
