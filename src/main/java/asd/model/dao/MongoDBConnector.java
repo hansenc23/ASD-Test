@@ -803,7 +803,7 @@ public class MongoDBConnector {
         return correct;
     }
     
-// 
+// TEST CARD MANAGEMENT
 
     public String testRegisterCard(OpalCard card) {
         MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
@@ -975,6 +975,67 @@ public class MongoDBConnector {
         return test;
     }
     
+    
+    // TRANSFER BALANCE MANAGEMENT 
+
+    // Check whether the user's cards is valid to do the transfer balance
+   public String validForTransfer(String customerID) {
+        MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
+        String result = "";
+        try (MongoClient client = new MongoClient(uri)) {
+            MongoDatabase db = client.getDatabase(uri.getDatabase());
+            MongoCollection<Document> opallist = db.getCollection("ASD-app-opalCards");
+            int linkedCard = 0;
+            int empty = 0;
+            for (Document doc : opallist.find(and(eq("CustomerID", customerID)))) {
+                if ((double) doc.get("Balance") <= 0){
+                    empty += 1;
+                }
+                linkedCard += 1;
+            }
+            if ((linkedCard >= 2 && empty <= (linkedCard-1)) || (linkedCard == 2 && empty < 2)) {
+                result = "transferOK";
+            } else if (linkedCard < 2) {
+                result = "cardsNO";
+            } else {
+                result = "transferNO";
+            }
+        }
+        return result;
+    } 
+    
+    // Transfer balance
+    public void transferBalance(TransferBalance record) {
+        MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
+        try (MongoClient client = new MongoClient(uri)) {
+            MongoDatabase db = client.getDatabase(uri.getDatabase());
+            MongoCollection<Document> opallist = db.getCollection("ASD-app-opalCards");
+            MongoCollection<Document> transferlist = db.getCollection("ASD-app-transferBalance");
+            // Create new transfer balance record
+            Document transferdoc = new Document().append("FromOpalID", record.getFromOpalID()).append("ToOpalID", record.getToOpalID()).append("Value", record.getValue()).append("CustomerID", record.getCustomerID());
+            transferlist.insertOne(transferdoc);
+            double value = record.getValue();
+            // Deduct value from FromOpalID's balance
+            opallist.updateOne(eq("OpalID", record.getFromOpalID()), new Document("$inc", new Document("Balance", ((double) -value)))); 
+            // Add value to ToOpalID's balance
+            opallist.updateOne(eq("OpalID", record.getToOpalID()), new Document("$inc", new Document("Balance", ((double) value)))); 
+        }
+    }
+     
+    // Get all transfer balance record of a user
+    public ArrayList<TransferBalance> transferHistory(String customerID) {
+        MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
+        ArrayList<TransferBalance> records = new ArrayList<TransferBalance>();
+        try (MongoClient client = new MongoClient(uri)) {
+            MongoDatabase db = client.getDatabase(uri.getDatabase());
+            MongoCollection<Document> transferlist = db.getCollection("ASD-app-transferBalance");
+            for (Document doc : transferlist.find(eq("CustomerID", customerID))) {
+                TransferBalance record = new TransferBalance((String) doc.get("FromOpalID"), (String) doc.get("ToOpalID"), (double) doc.get("Value"), (String) doc.get("CustomerID"));
+                records.add(record);
+            }
+        }
+        return records;
+    } 
 // 
 
     
