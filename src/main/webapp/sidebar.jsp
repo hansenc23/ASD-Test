@@ -11,7 +11,6 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" type="text/css" href="css/sidebar.css">
-        
     </head>
     <body>
         <div class="sidenav">
@@ -26,6 +25,7 @@
                     <a id="sidebar_addPaymentMethod" href="addPaymentMethod.jsp">Add payment method</a>
                     <a id="sidebar_topUpValue" href="topUpValue.jsp">Top-up Opal card</a>
                     <a id="sidebar_paymentMethodManagement"href="paymentMethodManagement.jsp">Manage your payment</a>
+                    <a id="sidebar_transferBalance" href="transferBalance.jsp">Transfer Balance</a>
                     <a href="userAccessManager.jsp">See history</a>
             <%  
                 }
@@ -34,13 +34,10 @@
                     <a href="plsLogin.jsp">Link existing Opal card to your account</a>
                     <a href="plsLogin.jsp">Unlink Opal card from your account</a>
                     <a href="plsLogin.jsp">Top-up Opal card</a>
-                    <a href="plsLogin.jsp">Add payment method</a>
-                    
+                    <a href="plsLogin.jsp">Add payment method</a>                    
             <%
                 }
             %>
-            
-            
         </div>
     </body>
 </html>
