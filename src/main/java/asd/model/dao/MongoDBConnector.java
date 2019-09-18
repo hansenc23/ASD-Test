@@ -151,14 +151,15 @@ public class MongoDBConnector {
         }
     }
 
+    
     public Users loadUsers() {
         MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
         Users users;
         try (MongoClient client = new MongoClient(uri)) {
             MongoDatabase db = client.getDatabase(uri.getDatabase());
             users = new Users();
-            MongoCollection<Document> userlist = db.getCollection("ASD-app-users");
-            for (Document doc : userlist.find()) {
+            MongoCollection<Document> timelist = db.getCollection("ASD-app-users");
+            for (Document doc : timelist.find()) {
                 User user = new User((String) doc.get("FirstName"), (String) doc.get("LastName"), (String) doc.get("Username"), (String) doc.get("Password"), (String) doc.get("Address"),(String) doc.get("PhoneNumber"), (String) doc.get("isStaff"), (String) doc.get("Position"), (String) doc.get("UserID"));
                 users.addUser(user);
             }
@@ -343,6 +344,25 @@ public class MongoDBConnector {
         }
         return exist;
     }
+    
+    public Users loadUser(String userID) {
+        MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
+        Users users;
+        BasicDBObject query = new BasicDBObject();
+        try (MongoClient client = new MongoClient(uri)) {
+            MongoDatabase db = client.getDatabase(uri.getDatabase());   
+            users = new Users();
+            Pattern p = Pattern.compile(userID);
+            query.append("UserID", p);
+            MongoCollection<Document> userlist = db.getCollection("ASD-app-users");
+            for (Document doc : userlist.find(query)) {
+                User user = new User((String) doc.get("FirstName"), (String) doc.get("LastName"), (String) doc.get("Username"), (String) doc.get("Password"), (String) doc.get("Address"), (String) doc.get("PhoneNumber"), (String) doc.get("isStaff"), (String) doc.get("Position"), (String) doc.get("UserID"));
+                users.addUser(user);
+            }
+        }
+        return users;
+    }
+    
    // delete user
     public void deleteUser(User user){
         MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
@@ -1279,6 +1299,7 @@ public class MongoDBConnector {
         }
         return times;
     }
+    
     public Times userSearchTimes(String customerID,String loginT) {
         MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
         Times times;
