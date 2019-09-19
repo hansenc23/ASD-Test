@@ -26,14 +26,18 @@
            ArrayList<User> users = new ArrayList<User>();
            
            dbUsers = connector.loadUsers();
-           users = dbUsers.getList(); 
+           users = dbUsers.getList();
+           int totalAccount = users.size();
+
          %>
 
       <div class="box">
             <h2>Account List</h2>
+            
       </div>
           <div class="list"> 
             <table class="pure-table pure-table-horizontal">
+                <span class="pure-form-message-inline">Total user: <%=totalAccount%></span>
                 <thead>
                     <tr>
                         <th>User ID</th>
@@ -80,6 +84,7 @@
 
                     </tr>
                     <%}%>
+                
             </table>
             
             </div>
