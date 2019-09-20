@@ -1,7 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: asd.test.RunTest
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 33.217 sec <<< FAILURE! - in asd.test.RunTest
-Successfully forget password(Online User Registration)  Time elapsed: 8.909 sec  <<< FAILURE!
-junit.framework.AssertionFailedError
-
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.664 sec - in asd.test.RunTest

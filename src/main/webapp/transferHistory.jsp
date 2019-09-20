@@ -20,31 +20,42 @@
         <title>Transfer Balance</title>
     </head>
     <body>
-        <h2>Transfer Balance</h2>
+        <h3>Transfer Balance History</h3>
         <%
-            String adminemail = (String)session.getAttribute("adminemail");
-            String adminpass = (String)session.getAttribute("adminpassword");
-            MongoDBConnector connector = new MongoDBConnector(adminemail, adminpass);
+            MongoDBConnector connector = new MongoDBConnector();
             
-            String customerID = request.getParameter("customerID");
+            String customerID = connector.getCustomerID(user.getEmail(), user.getPassword());
             ArrayList<TransferBalance> records = new ArrayList<TransferBalance>();
             records = connector.transferHistory(customerID);
+            
+            if (!records.isEmpty()) {
         %>
-            <div class="box">
-            <table>
-                <thead>
-                    <th>From</th>
-                    <th>To</th>
-                    <th>Value</th>
-                </thead>
+                <div class="history">
+                <table>
+                    <thead>
+                        <th>Origin Opal Card</th>
+                        <th>Destination Opal Card</th>
+                        <th>Value</th>
+                        <th>Transfer Date</th>
+                    </thead>
         <%
-            for (TransferBalance record : records) {
+                for (TransferBalance record : records) {
         %>
                     <tr>
                         <td><%=record.getFromOpalID()%></td>
                         <td><%=record.getToOpalID()%></td>
                         <td>$<%=record.getValue()%></td>
+                        <td><%=record.getTransferDate()%></td>
                     </tr>    
+        <%
+                } 
+            // If the user hasn't done any transfer yet
+            } else {
+        %>
+            <div class="box">
+                <p>You do not have any transfer balance record</p>
+                <button onclick="location.href='transferBalance.jsp'">Back</button>
+            </div>
         <%
             }
         %>

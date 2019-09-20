@@ -993,10 +993,14 @@ public class MongoDBConnector {
                 }
                 linkedCard += 1;
             }
+            // If user has more than 2 cards and at least 1 card is not 0
+            // OR user has 2 cards and 0-valued card is 0 or 1 card
             if ((linkedCard >= 2 && empty <= (linkedCard-1)) || (linkedCard == 2 && empty < 2)) {
                 result = "transferOK";
+            // If user has less than 2 cards
             } else if (linkedCard < 2) {
                 result = "cardsNO";
+            // If user has more than 2 cards but all card's value is 0
             } else {
                 result = "transferNO";
             }
@@ -1004,7 +1008,7 @@ public class MongoDBConnector {
         return result;
     } 
     
-    // Transfer balance
+    // Transfer balance from an opal card to another card
     public void transferBalance(TransferBalance record) {
         MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
         try (MongoClient client = new MongoClient(uri)) {
@@ -1012,7 +1016,7 @@ public class MongoDBConnector {
             MongoCollection<Document> opallist = db.getCollection("ASD-app-opalCards");
             MongoCollection<Document> transferlist = db.getCollection("ASD-app-transferBalance");
             // Create new transfer balance record
-            Document transferdoc = new Document().append("FromOpalID", record.getFromOpalID()).append("ToOpalID", record.getToOpalID()).append("Value", record.getValue()).append("CustomerID", record.getCustomerID());
+            Document transferdoc = new Document().append("FromOpalID", record.getFromOpalID()).append("ToOpalID", record.getToOpalID()).append("Value", record.getValue()).append("CustomerID", record.getCustomerID()).append("TransferDate", record.getTransferDate());
             transferlist.insertOne(transferdoc);
             double value = record.getValue();
             // Deduct value from FromOpalID's balance
@@ -1021,7 +1025,7 @@ public class MongoDBConnector {
             opallist.updateOne(eq("OpalID", record.getToOpalID()), new Document("$inc", new Document("Balance", ((double) value)))); 
         }
     }
-     
+    
     // Get all transfer balance record of a user
     public ArrayList<TransferBalance> transferHistory(String customerID) {
         MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
@@ -1030,7 +1034,7 @@ public class MongoDBConnector {
             MongoDatabase db = client.getDatabase(uri.getDatabase());
             MongoCollection<Document> transferlist = db.getCollection("ASD-app-transferBalance");
             for (Document doc : transferlist.find(eq("CustomerID", customerID))) {
-                TransferBalance record = new TransferBalance((String) doc.get("FromOpalID"), (String) doc.get("ToOpalID"), (double) doc.get("Value"), (String) doc.get("CustomerID"));
+                TransferBalance record = new TransferBalance((String) doc.get("FromOpalID"), (String) doc.get("ToOpalID"), (double) doc.get("Value"), (String) doc.get("CustomerID"), (String) doc.get("TransferDate"));
                 records.add(record);
             }
         }

@@ -14,17 +14,27 @@ public class TransferBalance {
     private String toOpalID;
     private double value;
     private String customerID;
+    private String transferDate;
 
     public TransferBalance() {
     }
 
-    public TransferBalance(String fromOpalID, String toOpalID, double value, String customerID) {
+    public TransferBalance(String fromOpalID, String toOpalID, double value, String customerID, String transferDate) {
         this.fromOpalID = fromOpalID;
         this.toOpalID = toOpalID;
         this.value = value;
         this.customerID = customerID;
+        this.transferDate = transferDate;
     }
 
+    public String getTransferDate() {
+        return transferDate;
+    }
+
+    public void setTransferDate(String transferDate) {
+        this.transferDate = transferDate;
+    }
+    
     public String getFromOpalID() {
         return fromOpalID;
     }

@@ -22,55 +22,53 @@
     <body>
         <h2>Transfer Balance</h2>
         <%
-            String adminemail = (String)session.getAttribute("adminemail");
-            String adminpass = (String)session.getAttribute("adminpassword");
-            MongoDBConnector connector = new MongoDBConnector(adminemail, adminpass);
+            MongoDBConnector connector = new MongoDBConnector();
             
             String customerID = connector.getCustomerID(user.getEmail(), user.getPassword());
             String validForTransfer = connector.validForTransfer(customerID);
+            // Customer has min 2 cards and at least 1 card has balance > 0
             if (validForTransfer.equalsIgnoreCase("transferOK")) {
-                OpalCards dbCards = new OpalCards();
                 ArrayList<OpalCard> cards = new ArrayList<OpalCard>();
-//                dbCards = connector.getOpalCards(user);
-//                cards = dbCards.getList(); 
                 cards = connector.getOpalCards(user);
         %>
-        <div class="box">
-            <form action="transferDetail.jsp" method="POST">
-                <p>From :</p>
-                        <select name = "fromOpalID" required>
+                <div class="box">
+                    <form action="transferDetail.jsp" method="POST">
+                        <p>From :</p>
+                            <select name = "fromOpalID" id="fromOpalID" required>
                             <%
                                 String fromOpalID = "";
                                 for (OpalCard card: cards) {
                                     // From Opal card should have balance > 0
                                     if (card.getBalance() > 0) {
-                                    fromOpalID = card.getOpalID();
+                                        fromOpalID = card.getOpalID();
                             %>
-                            <option value = "<%=fromOpalID%>" ><%=fromOpalID%></option>
+                                <option value = "<%=fromOpalID%>"><%=fromOpalID%></option>
                             <%
-                            }}
+                                    }
+                                }
                             %>
-                        </select>
+                            </select>
                         <br>
                         <br>
                         <p>To :</p>
-                        <select name = "toOpalID" required>
+                            <select name = "toOpalID" id="toOpalID" required>
                             <%
                                 String toOpalID = "";
                                 for (OpalCard card: cards) {
                                     toOpalID = card.getOpalID();
                             %>
-                            <option value = "<%=toOpalID%>" ><%=toOpalID%></option>
+                                    <option value = "<%=toOpalID%>" ><%=toOpalID%></option>
                             <%
-                            }
+                                }
                             %>
-                        </select>
+                            </select>
                         <br>
                         <input type="hidden" value="<%=customerID%>" name="customerID">
-                        <input type="submit" value="Continue" name="Continue">
-            </form>
-        </div>
+                        <input type="submit" value="Continue" id="transferContinue" name="Continue">
+                    </form>
+                </div>
         <%        
+            // If the user has less than 2 cards or both cards value are 0
             } else if (validForTransfer.equalsIgnoreCase("transferNo") || validForTransfer.equalsIgnoreCase("cardsNo")){
         %>
         <div class="box">
@@ -83,11 +81,8 @@
         %>
         <h2>Transfer Balance History</h2>
         <div class="box">
-            
-            <form action="transferHistory.jsp" method="POST">
-                <input type="hidden" value="<%=customerID%>" name="customerID">
-                <input type="submit" value="Show History" name="Show">
-            </form>
+            <p>List of all transfer balance history</p>
+            <button onclick="location.href='transferHistory.jsp'" id="showTransferHistory">Show History</button>
         </div>
     </body>
 </html>

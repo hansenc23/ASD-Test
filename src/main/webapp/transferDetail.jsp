@@ -20,22 +20,38 @@
     <body>
         <h2>Transfer Balance</h2>
         <%
-            String adminemail = (String)session.getAttribute("adminemail");
-            String adminpass = (String)session.getAttribute("adminpassword");
-            MongoDBConnector connector = new MongoDBConnector(adminemail, adminpass);
+            MongoDBConnector connector = new MongoDBConnector();
         
             String fromOpalID = request.getParameter("fromOpalID");
             String toOpalID = request.getParameter("toOpalID");
-            OpalCard card = connector.getCardDetails(fromOpalID);
-            String customerID = request.getParameter("customerID");
-            TransferBalance record = new TransferBalance(fromOpalID, toOpalID, 0, customerID);
-            session.setAttribute("record", record); 
+            
+            // Check whether the origin and destination cards are the same card
+            boolean sameCard = (fromOpalID.equals(toOpalID)) ? true : false;
+            
+            // If the origin and destination cards are the same card
+            if (sameCard) {
         %>
-        <div class="box">
-            <form method="POST" action="transferConfirmation.jsp">
-                <p>Available balance to be transfered : <%=card.getBalance()%></p>
-                <input type="number" min="0" max="<%=card.getBalance()%>" name="value" required> <br>
-                <input type="submit" value="Next" name="Next">
-            </form>
-        </div>
+                <div class="box">
+                    <p>Destination Opal Card should not be the same as origin Opal Card</p>
+                    <button onClick="location.href='transferBalance.jsp'" >Back</button>
+                </div>
+        <%
+            // If the cards are different cards
+            } else {
+                OpalCard card = connector.getCardDetails(fromOpalID);
+                String customerID = request.getParameter("customerID");
+                TransferBalance record = new TransferBalance(fromOpalID, toOpalID, 0, customerID, "");
+                session.setAttribute("record", record); 
+        %>
+                <div class="box">
+                    <form method="POST" action="transferConfirmation.jsp">
+                        <p>Available balance to be transfered : <%=card.getBalance()%></p>
+                        <input type="number" min="0" max="<%=card.getBalance()%>" step=".1" maxlength="6"
+                               placeholder="0.00" name="value" required> <br>
+                        <input type="submit" value="Next" name="Next">
+                    </form>
+                </div>
+        <%
+            }
+        %>
 </html>
