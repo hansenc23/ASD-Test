@@ -1,4 +1,3 @@
-
 package asd.model.dao;
 
 import java.net.UnknownHostException;
@@ -151,14 +150,14 @@ public class MongoDBConnector {
         }
     }
 
-    public Users loadUsers() {
+   public Users loadUsers() {
         MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
         Users users;
         try (MongoClient client = new MongoClient(uri)) {
             MongoDatabase db = client.getDatabase(uri.getDatabase());
             users = new Users();
-            MongoCollection<Document> userlist = db.getCollection("ASD-app-users");
-            for (Document doc : userlist.find()) {
+            MongoCollection<Document> timelist = db.getCollection("ASD-app-users");
+            for (Document doc : timelist.find()) {
                 User user = new User((String) doc.get("FirstName"), (String) doc.get("LastName"), (String) doc.get("Username"), (String) doc.get("Password"), (String) doc.get("Address"),(String) doc.get("PhoneNumber"), (String) doc.get("isStaff"), (String) doc.get("Position"), (String) doc.get("UserID"));
                 users.addUser(user);
             }
@@ -1038,7 +1037,7 @@ public class MongoDBConnector {
             }
         }
         return records;
-    } 
+    }     
 // 
 
     
