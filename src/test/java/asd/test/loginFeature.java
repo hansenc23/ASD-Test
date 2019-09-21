@@ -1,21 +1,13 @@
-<<<<<<< HEAD
-//
-=======
->>>>>>> 7d8c2acc8a82907ecac7924ec9620c8c3f6d1626
 ///*
 // * To change this license header, choose License Headers in Project Properties.
 // * To change this template file, choose Tools | Templates
 // * and open the template in the editor.
 // */
 //package asd.test;
-<<<<<<< HEAD
-//import cucumber.api.java.en.When;
-=======
 //import cucumber.api.java.en.Given;
 //import cucumber.api.java.en.Then;
 //import cucumber.api.java.en.When;
 //import junit.framework.Assert;
->>>>>>> 7d8c2acc8a82907ecac7924ec9620c8c3f6d1626
 //import org.openqa.selenium.By;
 //
 //import org.openqa.selenium.WebDriver;
@@ -44,8 +36,6 @@
 //    throw new cucumber.api.PendingException();
 //}
 // 
-<<<<<<< HEAD
-=======
 //    @Given("the User is in the {string}")
 //    public void user_is_in_the(String url) {
 //        driver.get("https://asd-test-app.herokuapp.com/"+url);
@@ -56,7 +46,6 @@
 //        driver.findElement(By.id(button)).click();
 //    }
 //    
->>>>>>> 7d8c2acc8a82907ecac7924ec9620c8c3f6d1626
 //@When("User fill user information")
 //public void user_fill_user_information() {
 //    
@@ -68,9 +57,6 @@
 //       public void user_refresh_page(){
 //           driver.navigate().refresh();
 //       }
-<<<<<<< HEAD
-//}
-=======
 //       
 //        @Then("page should be navigated to {string}")
 //    public void the_page_should_be_navigated_to(String title) {
@@ -78,4 +64,3 @@
 //        driver.quit();
 //    }
 //}
->>>>>>> 7d8c2acc8a82907ecac7924ec9620c8c3f6d1626

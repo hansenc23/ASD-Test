@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-//
-=======
->>>>>>> 7d8c2acc8a82907ecac7924ec9620c8c3f6d1626
 //
 ///*
 // * To change this license header, choose License Headers in Project Properties.

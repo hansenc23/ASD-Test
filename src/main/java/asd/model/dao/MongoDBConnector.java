@@ -1124,75 +1124,7 @@ public class MongoDBConnector {
         return payment;       
    }
     
-//FAQs
-    
-    public void add(FAQ faq) {
-        MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
-        try (MongoClient client = new MongoClient(uri)) {
-            MongoDatabase db = client.getDatabase(uri.getDatabase());
-            MongoCollection<Document> FAQlist = db.getCollection("ASD-app-FAQs");
-            Document doc = new Document().append("Question", faq.getQuestionTitle()).append("Answer", faq.getAnswer());
-            FAQlist.insertOne(doc);
-        }
-    }
-    
-    public ArrayList<FAQ> listFAQs() {
-        MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
-        ArrayList<FAQ> FAQs = new ArrayList<FAQ>();
-        try (MongoClient client = new MongoClient(uri)) {
-            MongoDatabase db = client.getDatabase(uri.getDatabase());
-            MongoCollection<Document> FAQlist = db.getCollection("ASD-app-FAQs");
-            for (Document doc : FAQlist.find()) {
-                FAQ faq = new FAQ((String) doc.get("Question"), (String) doc.get("Answer"));
-                FAQs.add(faq);
-            }
-        }
-        return FAQs;   
-    }
-    
-    public String updateFAQs(FAQ faq){
-         MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
-         String outcome;
-         try(MongoClient client = new MongoClient(uri)){
-            MongoDatabase db = client.getDatabase(uri.getDatabase());
-            MongoCollection<Document> FAQlist = db.getCollection("ASD-app-FAQs");
-            Document doc =  FAQlist.find(eq("Question", faq.getQuestionTitle())).first();
-            
-            ObjectId _id = new ObjectId(doc.get("_id").toString());
-            Bson filter = Filters.and(Filters.eq("_id", _id));
-            Bson updateQuestion = Updates.set("Question", faq.getQuestionTitle());
-            Bson updateAnswer = Updates.set("Answer", faq.getAnswer());
-    
-            FAQlist.updateOne(filter, combine(updateQuestion,updateAnswer));
-            outcome = "Update was successful !";  
-        }catch(Exception error){
-            outcome = "There was an error updating the FAQ. Please try again later !";
-        }
-         
-         
-        return outcome;
-    }
-    
-    public String deleteFAQs(FAQ faq){
-        MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
-        String outcome;
-        try (MongoClient client = new MongoClient(uri)) {
-            MongoDatabase db = client.getDatabase(uri.getDatabase());
-            MongoCollection<Document> FAQlist = db.getCollection("ASD-app-FAQs");
-            Document doc = FAQlist.find(eq("Question", faq.getQuestionTitle())).first();
-            if (doc!=null){
-            ObjectId _id = new ObjectId(doc.get("_id").toString());
-            FAQlist.deleteOne(new Document("_id", _id));
-            }
-            outcome = "Delete was successful !";  
-        }catch(Exception error){
-            outcome = "There was an error deleting the FAQ. Please try again later !";
-        }
-        return outcome;
-    }
-    
-    
-//For testing
+    //For testing
     
     public String testAdd(Order order) {
         MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");

@@ -49,8 +49,8 @@
 //    public void is_in_the(String url) {
 //        driver.get("https://asd-test-app.herokuapp.com/"+ url);
 //    }
-//
-//    @When("User clicks {string}")
+//   
+//        @When("User clicks {string}")
 //    public void user_clicks(String buttonName) {
 //        driver.findElement(By.id(buttonName)).click();
 //    }
@@ -90,6 +90,7 @@
 //        Assert.assertEquals("Link card fail", result);
 //        driver.quit();
 //    }
+////     
 //    @When("User submit by clicking {string}")
 //    public void user_submit_by_clicking(String submitName) {
 //         driver.findElement(By.name(submitName)).click();
@@ -221,3 +222,4 @@
 //            opallist.deleteOne(opaldoc);
 //        }
 //    }
+//}
