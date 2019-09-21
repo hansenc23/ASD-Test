@@ -50,8 +50,8 @@
 //        driver.get("https://asd-test-app.herokuapp.com/"+ url);
 //    }
 //
-//    @When("User click on {string}")
-//    public void user_click_on(String buttonName) {
+//    @When("User clicks {string}")
+//    public void user_clicks(String buttonName) {
 //        driver.findElement(By.id(buttonName)).click();
 //    }
 //
@@ -90,7 +90,6 @@
 //        Assert.assertEquals("Link card fail", result);
 //        driver.quit();
 //    }
-//     
 //    @When("User submit by clicking {string}")
 //    public void user_submit_by_clicking(String submitName) {
 //         driver.findElement(By.name(submitName)).click();
@@ -144,6 +143,7 @@
 //        boolean notfound = driver.findElements(By.xpath("//input[@type='hidden'][@value='9098 9098 9098 9098']")).isEmpty();
 //        Assert.assertEquals(true, found);
 //        Assert.assertEquals(true, notfound);
+//        driver.quit();
 //    }
 //    
 //    
@@ -221,4 +221,3 @@
 //            opallist.deleteOne(opaldoc);
 //        }
 //    }
-//}

@@ -1,4 +1,5 @@
 
+
 <%-- 
     Document   : index
     Created on : 12/08/2019, 9:56:44 PM
@@ -16,8 +17,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
               integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="./css/registerCSS.css"/>
+        <link rel="stylesheet" href="./css/register.css"/>
         <title>Home</title>
     </head>
     <body>
@@ -30,34 +32,44 @@
         %>
         
         <br>
-        <h2 style="text-align: center">Create Opal Account</h2>
+        
         <br>
         
         <div class="reg-form">
-        
-        <form action="welcome.jsp" method="post">
-                <table id="form-table">
-                    <tr><td>First Name:</td><td><input id="register_first_name" size="23" type="text" name="firstName" required></td></tr>
-                    <tr><td>Last Name:</td><td><input id="register_last_name" size="23" type="text" name="lastName" required></td></tr>
-                    <tr><td>Email:</td><td><input id="register_email" size="23" type="email" name="email" required></td></tr>
-                    <tr><td>Password:</td><td><input id="register_password" size="23" type="password" name="password" required></td></tr>
-                    <tr><td>Address:</td><td><input id="register_address" type="text" name="address"></td></tr>  
-                    <tr><td>Phone Number:</td><td> <input type="tel" id="register_phone" pattern="[0-9]{10}" placeholder="Enter 10-digit number" name ="phone"></td></tr>
+        <h2>Create Opal Account</h2>
+            <form class="pure-form pure-form-stacked" action="welcome.jsp" method="post">
+                <br>
+                <fieldset>
+                    
+
+                    <label>First Name</label>
+                    <input id="register_first_name" size="23" type="text" name="firstName" required>
+                    
+
+                    <label>Last Name</label>
+                    <input id="register_last_name" size="23" type="text" name="lastName" required>
+
+                    <label>Email</label>
+                    <input id="register_email" size="23" type="email" name="email" required>
+
+                    <label>Password</label>
+                    <input id="register_password" size="23" type="password" name="password" required>
+
+                    <label>Address</label>
+                    <input id="register_address" size="23" type="text" name="address" required>
+
+                    <label>Phone Number</label>
+                    <input type="tel" id="register_phone" size="23" pattern="[0-9]{10}" placeholder="Enter 10-digit number" name ="phone" required>
                     <input type="hidden" name ="userID" value="<%=n%>">
                     <input type="hidden" name ="isStaff" value = "false">
-                    
-                    
-                     
-                    <tr><td></td>
-                        <td>
-                            <input class="button" id="register_submit" type="submit" value="Register"> 
-                            &nbsp; 
-                            <button class="button" type="button" onclick="location.href = 'index.jsp'" > Home Page </button>
-                        </td>
-                    </tr>
-                </table>
-            </form>
-    </div>
+                    <br>
+
+                    <button type="submit" class="pure-button pure-button-primary">Register</button>
+                    <button class="pure-button pure-button-primary" type="button" onclick="location.href = 'index.jsp'" > Home Page </button>
+                </fieldset>
+
+                </form>
+        </div>
 
     </body>
 

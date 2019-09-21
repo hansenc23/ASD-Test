@@ -18,6 +18,10 @@
 //
 //import org.openqa.selenium.WebDriver;
 //import org.openqa.selenium.support.ui.Select;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 7d8c2acc8a82907ecac7924ec9620c8c3f6d1626
 //
 //
 ///*
@@ -55,8 +59,13 @@
 //        }
 //    }
 //    
+<<<<<<< HEAD
 //    @Given("User is in the {string}")
 //    public void user_is_in_the(String url) {
+=======
+//    @Given("User is in  {string}")
+//    public void user_is_in(String url) {
+>>>>>>> 7d8c2acc8a82907ecac7924ec9620c8c3f6d1626
 //        driver.get("https://asd-test-app.herokuapp.com/"+url);
 //    }
 //
