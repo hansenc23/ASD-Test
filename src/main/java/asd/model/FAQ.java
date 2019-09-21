@@ -12,6 +12,7 @@ package asd.model;
 public class FAQ {
     private String questionTitle;
     private String answer;
+    
     public FAQ(String questionTitle, String answer){
         this.questionTitle = questionTitle;
         this.answer = answer;
