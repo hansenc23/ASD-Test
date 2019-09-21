@@ -28,12 +28,12 @@
         %>
 
         <br>
-        <h2 style="text-align: center">Create Staff Account</h2>
+        
         <br>
 
         
         <div class="reg-form">
-        
+        <h2>Create Staff Account</h2>
             <form class="pure-form pure-form-stacked" action="adminWelcome.jsp" method="post">
                 <br>
                 <fieldset>
@@ -66,7 +66,7 @@
 
                     <button type="submit" class="pure-button pure-button-primary">Register</button>
                     <button class="pure-button pure-button-primary" type="button" onclick="location.href = 'adminPage.jsp'" > Home Page </button>
-                    <p class="existing">Are you an existing staff? Click <a href="login.jsp" class="link" target="_parent"> here </a> to Login</p>
+                    
                     
                 </fieldset>
                     

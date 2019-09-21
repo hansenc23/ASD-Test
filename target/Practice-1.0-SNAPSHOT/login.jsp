@@ -28,12 +28,12 @@
         %>
 
         <br>
-        <h2 style="text-align: center">Login</h2>
+        
         <br>
 
         
         <div class="reg-form">
-        
+        <h2 class="login">Login</h2>
             <form class="pure-form pure-form-stacked" method="post" action="loginAction.jsp">
                 <br>
                 <fieldset>
@@ -55,8 +55,9 @@
                     
                     
                 </fieldset>
-                    
+                    <a id="forget_button" href="forgetPassword.jsp">Forgot your password?</a>
                 </form>
+        
         </div>
 
     </body>

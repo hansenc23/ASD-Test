@@ -32,11 +32,11 @@
         %>
         
         <br>
-        <h2 style="text-align: center">Create Opal Account</h2>
+        
         <br>
         
         <div class="reg-form">
-        
+        <h2>Create Opal Account</h2>
             <form class="pure-form pure-form-stacked" action="welcome.jsp" method="post">
                 <br>
                 <fieldset>

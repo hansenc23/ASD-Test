@@ -16,7 +16,19 @@ and open the template in the editor.
     margin: -100px 0 0 -200px;
     top: 31%;
     left: 55%;
+    align-content: center;
     
+    
+}
+
+form{
+    position: relative;
+    left: 40px;
+}
+
+.login{
+    position: relative;
+    left: 100px;
 }
 
 p{
