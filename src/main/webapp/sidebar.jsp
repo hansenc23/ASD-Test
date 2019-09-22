@@ -27,7 +27,11 @@
                     <a id="sidebar_topUpValue" href="topUpValue.jsp">Top-up Opal card</a>
                     <a id="sidebar_paymentMethodManagement"href="paymentMethodManagement.jsp">Manage your payment</a>
                     <a id="sidebar_transferBalance" href="transferBalance.jsp">Transfer Balance</a>
-                    <a href="enqiryList.jsp">Enqiry</a>
+
+                    <a id ="sidebar_enqiry" href="enqiryList.jsp">Enqiry</a>
+
+                    <a id="sidebar_articleView"href="articleView.jsp">News</a>
+
                     <a href="userAccessManager.jsp">See history</a>
             <%  
                 }
