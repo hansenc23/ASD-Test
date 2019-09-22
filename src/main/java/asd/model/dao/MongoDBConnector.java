@@ -1385,16 +1385,36 @@ public class MongoDBConnector {
         }
         return enqiries;
     }
+    public Enqiry findEnqiry(String enqiryID) {
+        MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
+       
+        try (MongoClient client = new MongoClient(uri)) {
+            MongoDatabase db = client.getDatabase(uri.getDatabase());
+        
+            MongoCollection<Document> enqirylist = db.getCollection("ASD-app-enqiries");
+            Document doc = enqirylist.find(eq("enqiryID", enqiryID)).first();
+            Enqiry enqiry = new Enqiry((String) doc.get("customerID"), (String) doc.get("question"), (String) doc.get("answer"), (String) doc.get("enqiryID"),(String) doc.get("title"));
+            return enqiry;
+        }
+      
+    }
     public void removeEnqiries(String enqiryID) {
         MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
         try (MongoClient client = new MongoClient(uri)) {
             MongoDatabase db = client.getDatabase(uri.getDatabase());
             
-            MongoCollection<Document> enqirylist = db.getCollection("ASD-app-enqiries"); //Create a collection ASD-app-times on mLab
-            enqirylist.deleteOne(new Document("enqiryID", enqiryID));
+            MongoCollection<Document> enqirylist = db.getCollection("ASD-app-enqiries"); //
+            enqirylist.deleteOne(eq("enqiryID", enqiryID));
         }
     }
-    
+     public void answerEnqiries(String enqiryID, String answer) {
+        MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
+        try (MongoClient client = new MongoClient(uri)) {
+            MongoDatabase db = client.getDatabase(uri.getDatabase());            
+            MongoCollection<Document> enqirylist = db.getCollection("ASD-app-enqiries"); //
+            enqirylist.updateOne(eq("enqiryID", enqiryID),new Document("$set", new Document("answer",answer)));
+        }
+    }
 
 
     

@@ -9,6 +9,7 @@ asd\model\TopUpPayment.class
 asd\model\Orders.class
 asd\model\Article.class
 asd\model\OpalCard.class
+asd\model\TransferBalance.class
 asd\model\Order.class
 asd\model\OpalCards.class
 asd\model\Enqiries.class
