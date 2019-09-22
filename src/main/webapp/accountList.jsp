@@ -32,10 +32,11 @@
          %>
 
       <div class="box">
-            <h2>Account List</h2>
+            
             
       </div>
           <div class="list"> 
+              <h2>Account List</h2>
             <table class="pure-table pure-table-horizontal">
                 <span class="pure-form-message-inline">Total user: <%=totalAccount%></span>
                 <thead>
