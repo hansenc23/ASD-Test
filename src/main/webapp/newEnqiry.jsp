@@ -17,7 +17,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel="stylesheet" href="./css/aManger.css"/>
+        <link rel="stylesheet" href="./css/enqiry.css"/>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <title>New enqiry</title>
@@ -27,14 +27,18 @@
         
         
         %>
-        <h1>new enqiry</h1>
+        <h1 class ="title">new enqiry</h1>
         
         <form  method="post" action="newEnqiry.jsp">
+            <div class ="new"   >
             <label>Title</label>
-                    <input id="enqiry title" type="text" placeholder="Enter title" name="title" required>
+                    <input id="enqiry_title" type="text" placeholder="Enter title" name="title" required>
+            </div>
+            <div class ="new"  >           
             <label>Question</label>        
-                <textarea id="enqiry text" type="text" placeholder="enter your enqiry" name="question" required></textarea>
-            <button type="submit" class="pure-button pure-button-primary" name ="submitB">Add new</button>
+                <textarea  rows="4" cols="80" id="enqiry_text" type="text" placeholder="enter your enqiry" name="question" required></textarea>
+            </div>    
+            <div ><button type="submit" id="submit" class="button" name ="submitB">Add new</button></div>
         </form>
         
         
