@@ -15,7 +15,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+              <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="./css/enqiry.css"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <title>User enqiry</title>
          <%
             MongoDBConnector connector = new MongoDBConnector();
@@ -36,23 +39,26 @@
         %>  
     </head>
     <body>
-       <div>
-           <h1>
+       
+           <h1 class = "title">
             <%=title%>
            </h1>
-            <p><%=customerID%></p>
+       <div class = "new">   
+            <p ><%=customerID%></p>
        </div>
        
         <div id = question >
-            <table><tr><%=question%><tr/></table>
-        </div>
+            <table><th><%=question%></th></table>
+        
         <%if(answer != null)
           {%>
-        <div id = answer >
-            <table><tr><%=answer%><tr/></table>
-        </div>
+       
+            <table><th><%=answer%></th></table>
+        
         <%}else{%>
-        <p>There are currently no answer</p>
+        
+              <table><th>there are currently no answer</th></table>
         <%}%>
+        </div>
     </body>
 </html>

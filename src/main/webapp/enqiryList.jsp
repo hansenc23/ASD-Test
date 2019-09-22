@@ -30,8 +30,8 @@
             enqiries = dbEnqiries.getList();   
         %>    
                 <div class="table" style="max-width: 50%">
-            <h1>Users enqiries </h1>
-            <p>click here to Create new <a href="newEnqiry.jsp"> enqiry</a> </p>
+            <h1 class ="title">Users enqiries </h1>
+            <p class ="new">Create new <a href="newEnqiry.jsp"> enqiry</a> </p>
             <table>
                 <thead>
                     <th>Title</th>
