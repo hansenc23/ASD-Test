@@ -642,6 +642,71 @@ public class MongoDBConnector {
         }
         return test;
     }
+          //Add Article 
+    public String addArticle(Article article){
+         String outcome = "There is an error creating article please try again later!";
+         MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
+         try (MongoClient client = new MongoClient(uri)){
+            MongoDatabase db = client.getDatabase(uri.getDatabase());
+            MongoCollection<Document> articleList = db.getCollection("ASD-app-articles");
+            Document doc = new Document().append("ArticleTitle", article.getArticleName()).append("ArticleContent", article.getArticleContent()).append("ArticleDate", article.getArticleDate());
+            articleList.insertOne(doc);
+            outcome = "Article has been created !";
+         }
+         return outcome;
+     }
+    // Get Articles
+    public ArrayList<Article> getArticles(){
+         MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
+          ArrayList<Article> articles = new ArrayList<Article>();
+         try (MongoClient client = new MongoClient(uri)){
+            MongoDatabase db = client.getDatabase(uri.getDatabase());
+            MongoCollection<Document> articleList = db.getCollection("ASD-app-articles");
+             for (Document art : articleList.find()) {
+                String id = (String) art.get("_id").toString();
+                Article article = new Article(id,(String) art.get("ArticleTitle"), (String) art.get("ArticleContent"), (String) art.get("ArticleDate"));
+                articles.add(article);
+            }
+          
+         }
+         return articles;
+    }
+    // Delete an article
+    public String deleteoneArticle(String articleId){
+         String outcome = "There is an error delete article please try again later!";
+         MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
+         try (MongoClient client = new MongoClient(uri)){
+            MongoDatabase db = client.getDatabase(uri.getDatabase());
+            MongoCollection<Document> articleList = db.getCollection("ASD-app-articles");
+            Document article = articleList.find(eq("_id",new ObjectId(articleId))).first();
+            if(article!=null){
+            ObjectId _id = new ObjectId(article.get("_id").toString());
+            articleList.deleteOne(new Document("_id", _id));
+            outcome = "Article has been deleted!";
+            }
+         }
+         return outcome;
+     }
+    //Update an article
+    public String updateoneArticle(Article article){
+         String outcome = "There is an error updating your article please try again later!";
+         MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
+         try (MongoClient client = new MongoClient(uri)){
+            MongoDatabase db = client.getDatabase(uri.getDatabase());
+            MongoCollection<Document> articleList = db.getCollection("ASD-app-articles");
+            Document articledoc = articleList.find(eq("_id",new ObjectId(article.getArticleID()))).first();
+            if(articledoc!=null){
+            ObjectId _id = new ObjectId(articledoc.get("_id").toString());
+            Bson filter = Filters.and(Filters.eq("_id", _id));
+            Bson updateArticleTitle = Updates.set("ArticleTitle", article.getArticleName());
+            Bson updateArticleContent = Updates.set("ArticleContent", article.getArticleContent());
+            Bson updateDate = Updates.set("ArticleDate", article.getArticleDate());
+            articleList.updateOne(filter, combine(updateArticleTitle,updateArticleContent,updateDate));      
+            outcome = "Update was successful !";
+            }
+         }
+         return outcome;
+     }
     
     
     //Get a customerID using user's email and password
@@ -1453,16 +1518,36 @@ public class MongoDBConnector {
         }
         return enqiries;
     }
+    public Enqiry findEnqiry(String enqiryID) {
+        MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
+       
+        try (MongoClient client = new MongoClient(uri)) {
+            MongoDatabase db = client.getDatabase(uri.getDatabase());
+        
+            MongoCollection<Document> enqirylist = db.getCollection("ASD-app-enqiries");
+            Document doc = enqirylist.find(eq("enqiryID", enqiryID)).first();
+            Enqiry enqiry = new Enqiry((String) doc.get("customerID"), (String) doc.get("question"), (String) doc.get("answer"), (String) doc.get("enqiryID"),(String) doc.get("title"));
+            return enqiry;
+        }
+      
+    }
     public void removeEnqiries(String enqiryID) {
         MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
         try (MongoClient client = new MongoClient(uri)) {
             MongoDatabase db = client.getDatabase(uri.getDatabase());
             
-            MongoCollection<Document> enqirylist = db.getCollection("ASD-app-enqiries"); //Create a collection ASD-app-times on mLab
-            enqirylist.deleteOne(new Document("enqiryID", enqiryID));
+            MongoCollection<Document> enqirylist = db.getCollection("ASD-app-enqiries"); //
+            enqirylist.deleteOne(eq("enqiryID", enqiryID));
         }
     }
-    
+     public void answerEnqiries(String enqiryID, String answer) {
+        MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
+        try (MongoClient client = new MongoClient(uri)) {
+            MongoDatabase db = client.getDatabase(uri.getDatabase());            
+            MongoCollection<Document> enqirylist = db.getCollection("ASD-app-enqiries"); //
+            enqirylist.updateOne(eq("enqiryID", enqiryID),new Document("$set", new Document("answer",answer)));
+        }
+    }
 
 
     

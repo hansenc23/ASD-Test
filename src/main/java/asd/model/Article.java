@@ -10,10 +10,12 @@ package asd.model;
  * @author Hieu
  */
 public class Article {
+    private String articleID;
     private String articleName;
     private String articleContent; 
     private String articleDate;
-    public Article(String articleName, String articleContent, String articleDate){
+    public Article(String articleID,String articleName, String articleContent, String articleDate){
+        this.articleID = articleID;
         this.articleName = articleName;
         this.articleContent= articleContent;
         this.articleDate = articleDate;    
@@ -59,6 +61,20 @@ public class Article {
      */
     public void setArticleDate(String articleDate) {
         this.articleDate = articleDate;
+    }
+
+    /**
+     * @return the articleID
+     */
+    public String getArticleID() {
+        return articleID;
+    }
+
+    /**
+     * @param articleID the articleID to set
+     */
+    public void setArticleID(String articleID) {
+        this.articleID = articleID;
     }
     
     

@@ -1,6 +1,6 @@
 <%-- 
-    Document   : enqiryPage
-    Created on : 11/09/2019, 7:50:48 PM
+    Document   : enqiryPageAnswer
+    Created on : 21/09/2019, 10:18:38 PM
     Author     : kevin
 --%>
 
@@ -19,46 +19,43 @@
         <link rel="stylesheet" href="./css/enqiry.css"/>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <title>User enqiry</title>
-         <%
-            MongoDBConnector connector = new MongoDBConnector();
+        <title>answer enqiry</title>
+    </head>
+    <body>
+          <% MongoDBConnector connector = new MongoDBConnector();
 
-            //Enqiries dbEnqiries = new Enqiries();
-            //ArrayList<Enqiry> enqiries = new ArrayList<Enqiry>();
-            //dbEnqiries = connector.loadEnqiries();
-            //enqiries = dbEnqiries.getList();   
-
+         
 
             String enqiryID = request.getParameter("EnqiryID");
             //String fullName = " ";
             Enqiry selectedEnqiry = connector.findEnqiry(enqiryID);
+            
             String title = selectedEnqiry.getTitle();
             String question = selectedEnqiry.getQuestion();
-            String answer = selectedEnqiry.getAnswer();
+            //String answer = selectedEnqiry.getAnswer();
             String customerID = selectedEnqiry.getCustomerID();
-        %>  
-    </head>
-    <body>
-       
-           <h1 class = "title">
-            <%=title%>
-           </h1>
-       <div class = "new">   
-            <p ><%=customerID%></p>
-       </div>
-       
-        <div id = question >
-            <table><th><%=question%></th></table>
+          %>
+              <div>          
+                <h1>
+                   <%=title%>
+                </h1>
+                   <p><%=customerID%></p>
+              </div>
+
+               <div id = question >
+                   <table><tr><%=question%><tr/></table>
+               </div>
+        <p>insert your answer here<P>
+        <form method='POST' action='enqiryPageAnswer.jsp'>
+            <textarea rows="7" cols="50" name="theAnswer" >
+            </textarea>
+            <%String answer = request.getParameter("theAnswer"); %>
+            <input type="submit" value="AEnqiry" name="AEnqiry" >         
+        </form>
         
-        <%if(answer != null)
-          {%>
-       
-            <table><th><%=answer%></th></table>
-        
-        <%}else{%>
-        
-              <table><th>there are currently no answer</th></table>
-        <%}%>
-        </div>
+          <% if(request.getParameter("AEnqiry")!=null)
+             {  
+                  connector.answerEnqiries(enqiryID,answer);
+             }%> 
     </body>
 </html>
