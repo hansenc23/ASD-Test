@@ -1,3 +1,11 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+asd\model\Articles.class
+>>>>>>> 7670af71775f0d7cb464bbd5e7a75f0cb87df2ff
+>>>>>>> f9305501d24e5e4e30c5472f7d14c8d989853023
 asd\model\Enqiry.class
 asd\model\Paymentmethod.class
 asd\controller\ConnServlet.class
@@ -17,3 +25,30 @@ asd\model\Paymentmethods.class
 asd\model\FAQ.class
 asd\model\Users.class
 asd\model\Question.class
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+asd/model/TopUpPayment.class
+asd/model/Paymentmethod.class
+asd/model/Order.class
+asd/model/Enqiry.class
+asd/model/Question.class
+asd/model/Times.class
+asd/model/FAQ.class
+asd/model/Orders.class
+asd/model/User.class
+asd/model/Time.class
+asd/controller/ConnServlet.class
+asd/model/OpalCard.class
+asd/model/TransferBalance.class
+asd/model/OpalCards.class
+asd/model/Enqiries.class
+asd/model/dao/MongoDBConnector.class
+asd/model/Article.class
+asd/model/Paymentmethods.class
+asd/model/Users.class
+>>>>>>> 5a797bb51a537ae8fe867659b5897f4d91ec2e95
+=======
+>>>>>>> 7670af71775f0d7cb464bbd5e7a75f0cb87df2ff
+>>>>>>> f9305501d24e5e4e30c5472f7d14c8d989853023
