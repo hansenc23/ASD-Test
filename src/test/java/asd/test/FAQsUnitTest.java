@@ -77,7 +77,7 @@ public class FAQsUnitTest {
         FAQ updateFAQ = new FAQ(updateQuestion, updateAnswer);
         String testOutcome = dbconnector.updateFAQs(id, updateFAQ);
         assertEquals("Update was successful !", testOutcome);
-        dbconnector.deleteFAQs(faq);
+        dbconnector.deleteFAQs(updateFAQ);
     }
     
     @Test
