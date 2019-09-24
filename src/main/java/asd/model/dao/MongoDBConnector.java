@@ -1189,6 +1189,7 @@ public class MongoDBConnector {
         return payment;       
    }
     
+    
 //FAQs
     
     public void add(FAQ faq) {
@@ -1215,15 +1216,25 @@ public class MongoDBConnector {
         return FAQs;   
     }
     
-    public String updateFAQs(FAQ faq){
+    public String getFAQid(FAQ faq) {
+        MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
+        String FAQid;
+        try (MongoClient client = new MongoClient(uri)) {
+            MongoDatabase db = client.getDatabase(uri.getDatabase());
+            MongoCollection<Document> FAQlist = db.getCollection("ASD-app-FAQs");
+            Document doc = FAQlist.find(eq("Question", faq.getQuestionTitle())).first();
+            FAQid = (String) doc.get("_id").toString();
+        }
+        return FAQid;
+    }
+    
+    public String updateFAQs(String id, FAQ faq){
          MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
          String outcome;
          try(MongoClient client = new MongoClient(uri)){
             MongoDatabase db = client.getDatabase(uri.getDatabase());
             MongoCollection<Document> FAQlist = db.getCollection("ASD-app-FAQs");
-            Document doc =  FAQlist.find(eq("Question", faq.getQuestionTitle())).first();
-            
-            ObjectId _id = new ObjectId(doc.get("_id").toString());
+            ObjectId _id = new ObjectId(id);           
             Bson filter = Filters.and(Filters.eq("_id", _id));
             Bson updateQuestion = Updates.set("Question", faq.getQuestionTitle());
             Bson updateAnswer = Updates.set("Answer", faq.getAnswer());
@@ -1232,12 +1243,13 @@ public class MongoDBConnector {
             outcome = "Update was successful !";  
         }catch(Exception error){
             outcome = "There was an error updating the FAQ. Please try again later !";
+            
         }
          
          
         return outcome;
     }
-    
+
     public String deleteFAQs(FAQ faq){
         MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
         String outcome;
@@ -1258,6 +1270,55 @@ public class MongoDBConnector {
     
      
 //For testing
+    
+    public String addFAQ(FAQ faq) {
+        MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
+        String outcome;
+        try (MongoClient client = new MongoClient(uri)) {
+            MongoDatabase db = client.getDatabase(uri.getDatabase());
+            MongoCollection<Document> FAQlist = db.getCollection("ASD-app-FAQs");
+            Document doc = new Document().append("Question", faq.getQuestionTitle()).append("Answer", faq.getAnswer());
+            FAQlist.insertOne(doc);
+            outcome = "test succeed";
+        }catch(Exception error){
+            outcome = "error";
+        }
+        return outcome;
+    }
+    
+    public String testListFAQs() {
+        MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
+        ArrayList<FAQ> FAQs = new ArrayList<FAQ>();
+        String outcome;
+        try (MongoClient client = new MongoClient(uri)) {
+            MongoDatabase db = client.getDatabase(uri.getDatabase());
+            MongoCollection<Document> FAQlist = db.getCollection("ASD-app-FAQs");
+            for (Document doc : FAQlist.find()) {
+                FAQ faq = new FAQ((String) doc.get("Question"), (String) doc.get("Answer"));
+                FAQs.add(faq);
+            }
+            outcome = "test succeed";
+        }catch(Exception error){
+            outcome = "error";
+        }
+        return outcome;   
+    }
+    
+    public String testGetFAQid(FAQ faq) {
+        MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
+        String FAQid;
+        String outcome;
+        try (MongoClient client = new MongoClient(uri)) {
+            MongoDatabase db = client.getDatabase(uri.getDatabase());
+            MongoCollection<Document> FAQlist = db.getCollection("ASD-app-FAQs");
+            Document doc = FAQlist.find(eq("Question", faq.getQuestionTitle())).first();
+            FAQid = (String) doc.get("_id").toString();
+            outcome = "test succeed";
+        }catch(Exception error){
+            outcome = "error";
+        }
+        return outcome;   
+    }
     
     public String testAdd(Order order) {
         MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");

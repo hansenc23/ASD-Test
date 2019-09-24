@@ -44,8 +44,7 @@
                     <a href="plsLogin.jsp">Top-up Opal card</a>
                     <a href="plsLogin.jsp">Manage your payment</a>
                     <a href="plsLogin.jsp">Transfer Balance</a>
-                    <a href="plsLogin.jsp">See history</a>
-                    
+                    <a href="plsLogin.jsp">See history</a>   
             <%
                 }
             %>
