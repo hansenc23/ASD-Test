@@ -100,7 +100,7 @@
                      <div class="row">
                         
                             <input type="hidden"  name="<%=art.getArticleID()%>" value="<%=art.getArticleID()%>"/>
-                            <input id="createArticle_submit" name="submit" type ="submit" value="Update">
+                            <input id="<%=art.getArticleName()%>" name="submit" type ="submit" value="Update">
                         
                     </div>
                    
