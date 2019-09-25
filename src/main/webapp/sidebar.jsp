@@ -18,6 +18,7 @@
             <a id="sidebar_main" href="main.jsp">Home</a>
             <a id="order_opal_card" href="chooseOpalCard.jsp">Order an additional Opal card</a>
             <a id="sidebar_FAQ" href="FAQsView.jsp">FAQs</a>
+            <a id="sidebar_articleView"href="articleView.jsp">News</a>
             <% 
                 User userno = (User)session.getAttribute("user");
                 if(userno != null){
@@ -31,7 +32,7 @@
 
                     <a id ="sidebar_enqiry" href="enqiryList.jsp">Enqiry</a>
 
-                    <a id="sidebar_articleView"href="articleView.jsp">News</a>
+                    
 
                     <a href="userAccessManager.jsp">See history</a>
             <%  
