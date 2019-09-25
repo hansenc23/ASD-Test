@@ -15,9 +15,9 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel="stylesheet" href="./css/topUp.css"/>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+          <link rel="stylesheet" href="./css/ArticleCreate.css"/>
         <title>Update Article</title>
     </head>
     <body>
@@ -33,42 +33,42 @@
                         }
                     }
             %>
-         <div class="h3">
-        <h3>Update or Remove article</h3>
-        </div>
-        <div class = "topup">
+        <div class = "container">
             <form method = "post"  action = "articleUpdate.jsp">
-                <table>
-                    <tr>
-                        <td> Article title: </td> 
-                    </tr>
-                    <tr>
-                        <td><textarea  id="titletxt"  rows="3" cols="70" name="titletxt"><%= art.getArticleName()%></textarea></td>
-                    </tr>
-                    <tr>
-                        <td> Article content: </td>
-                    </tr>
-                    <tr>
-                        <td><textarea  id="contenttxt" rows="4" cols="70" name="contenttxt"><%= art.getArticleContent()%></textarea></td>
-                    </tr>
-                    
-                    <tr>
-                        <td>
-                            <input type="hidden"  name="artId" value="<%=art.getArticleID()%>"/>
+                <div class="row">
+                   <div class="col-25">
+                        <label for="titletxt">Article</label>
+                   </div>
+                    <div class="col-75">
+                        <textarea id="titletxt"  rows="1" cols="50" name="titletxt"><%=art.getArticleName()%></textarea>
+                    </div>
+                </div>
+                <div class="row"> 
+                  <div class="col-25">
+                    <label for="contenttxt">Article</label>
+                     </div>
+                       <div class="col-75">
+                        <textarea id="contenttxt" rows="4" cols="10" name="contenttxt"><%=art.getArticleContent()%></textarea>
+                       </div>
+                 
+                 </div>
+                      <div class="row"> 
+                            <input  type="hidden"  name="artId" value="<%=art.getArticleID()%>"/>
                             <input id="updateArticle_update" name="updateone" type ="submit" value="Update">
-                            <input id="updateArticle_delete" name="deleteone" type ="submit" value="Delete">    
-                        </td>
-                    </tr>
-                </table>      
+                            <input id="updateArticle_delete" name="deleteone" type ="submit" value="Delete"> 
+                       
+                   </div>     
             </form>
+        </div>
+                            
                         <%
                             } else if (request.getParameter("deleteone")!=null){
                              String artId = request.getParameter("artId");
                              String outcome = conn.deleteoneArticle(artId);
                         %>
-                             <div class = "topup">
+                             <div class = "container">
                         <h3><%= outcome %></h3>
-                     <a id="addPaymentMethodOutcome_back" class = "button" href = "articleCreate.jsp">Back</a>
+                     <a id="articleUpdate_back" class="btn btn-primary" href = "articleCreate.jsp">Back</a>
                             </div>
                         <%
                             }else if (request.getParameter("updateone")!=null){
@@ -79,9 +79,9 @@
                                 Article article = new Article(artId,titletxt, contenttxt, currentDate);
                                 String outcome = conn.updateoneArticle(article);
                                 %>
-                                  <div class = "topup">
+                                  <div class = "container">
                         <h3><%= outcome %></h3>
-                     <a id="addPaymentMethodOutcome_back" class = "button" href = "articleCreate.jsp">Back</a>
+                     <a id="articleUpdate_back" class="btn btn-primary" href = "articleCreate.jsp">Back</a>
                             </div>
                                 <%
                             }

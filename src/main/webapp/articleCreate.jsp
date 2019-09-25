@@ -15,9 +15,9 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel="stylesheet" href="./css/topUp.css"/>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+              <link rel="stylesheet" href="./css/ArticleCreate.css"/>
         <title>Create Article</title>
     </head>
 
@@ -32,33 +32,30 @@
             conn.addArticle(article);
             }
             %>
-
-         <div class="h3">
-        <h3>Create an article!</h3>
-        </div>
-        <div class = "topup">
+        <div class ="container">
             <form method = "post"  action = "articleCreate.jsp">
-                <table>
-                    <tr>
-                        <td> Article title: </td> 
-                    </tr>
-                    <tr>
-                        <td><textarea id="titletxt"  rows="1" cols="70" name="titletxt"></textarea></td>
-                    </tr>
-                    <tr>
-                        <td> Article content: </td>
-                    </tr>
-                    <tr>
-                        <td><textarea id="contenttxt" rows="4" cols="70" name="contenttxt"></textarea></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input id="it" type="text" name = "title" style="display:none"/>
-                            <input id="ic" type="text" name = "content"  style="display:none"/>
+                <div class="row">
+                   <div class="col-25">
+                                <label for="titletxt">Article</label>
+                   </div>
+                    <div class="col-75">
+                        <textarea id="titletxt"  rows="1" cols="50" name="titletxt"></textarea>
+                    </div>
+                </div>
+                <div class="row"> 
+                  <div class="col-25">
+                    <label for="contenttxt">Article</label>
+                     </div>
+                       <div class="col-75">
+                        <textarea id="contenttxt" rows="4" cols="10" name="contenttxt"></textarea>
+                       </div>
+                 
+                 </div>
+                      <div class="row"> 
                             <input id="createArticle_submit" name="submit" type ="submit" value="Submit">
-                        </td>
-                    </tr>
-                </table>      
+                       
+                      </div>
+                
             </form>
             
         </div>
@@ -68,29 +65,45 @@
             if (!arts.isEmpty()){
             for(Article art: arts){
                 %>
-                <div class = "topup">
-            <form method = "post"  action = "articleUpdate.jsp">
-                <table>
-                    <tr>
-                        <td> Article title: </td> 
-                    </tr>
-                    <tr>
-                        <td><p><%=art.getArticleName()%></p></td>
-                    </tr>
-                    <tr>
-                        <td> Article content: </td>
-                    </tr>
-                    <tr>
-                        <td><p><%=art.getArticleContent()%> </p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
+                <div class = "container">
+                <form method = "post"  action = "articleUpdate.jsp">
+                 <div class="row">
+                    <div class="col-25">
+                        <p>
+                        Article title
+                        </p>
+                    </div>
+                    
+                    <div class="col-75">
+                        <p><%=art.getArticleName()%></p>
+                    </div>
+                 </div>  
+                <div class="row">
+                    <div class="col-25">
+                           <p>
+                        Last updated
+                            </p>  
+                    </div>
+                    <div class="col-75">
+                        <p><%=art.getArticleDate()%></p>
+                    </div>
+                    </div>
+                     <div class="row">
+                        <div class="col-25">
+                         <p> Article content: </p>
+                         
+                        </div>
+                        <div class="col-75">
+                        <p><%=art.getArticleContent()%> </p>
+                        </div>
+                     </div>
+                     <div class="row">
+                        
                             <input type="hidden"  name="<%=art.getArticleID()%>" value="<%=art.getArticleID()%>"/>
                             <input id="createArticle_submit" name="submit" type ="submit" value="Update">
-                        </td>
-                    </tr>
-                </table>      
+                        
+                    </div>
+                   
             </form>
         </div>
                 

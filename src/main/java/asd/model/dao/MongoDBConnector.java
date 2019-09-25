@@ -14,6 +14,7 @@ import com.mongodb.client.model.Filters;
 import static com.mongodb.client.model.Filters.and;
 import static com.mongodb.client.model.Filters.eq;
 import static com.mongodb.client.model.Filters.exists;
+import com.mongodb.client.model.Sorts;
 import com.mongodb.client.model.Updates;
 import static com.mongodb.client.model.Updates.combine;
 import java.util.regex.Pattern;
@@ -655,14 +656,14 @@ public class MongoDBConnector {
          }
          return outcome;
      }
-    // Get Articles
+      // Get Articles
     public ArrayList<Article> getArticles(){
          MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
           ArrayList<Article> articles = new ArrayList<Article>();
          try (MongoClient client = new MongoClient(uri)){
             MongoDatabase db = client.getDatabase(uri.getDatabase());
             MongoCollection<Document> articleList = db.getCollection("ASD-app-articles");
-             for (Document art : articleList.find()) {
+             for (Document art : articleList.find().sort(Sorts.descending("$natural"))) {
                 String id = (String) art.get("_id").toString();
                 Article article = new Article(id,(String) art.get("ArticleTitle"), (String) art.get("ArticleContent"), (String) art.get("ArticleDate"));
                 articles.add(article);
@@ -670,6 +671,24 @@ public class MongoDBConnector {
           
          }
          return articles;
+    }
+    //test get articles
+    public String testGetArticles(){
+        String outcome = "There is an error fetching articles please try again later!";
+         MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
+          ArrayList<Article> articles = new ArrayList<Article>();
+         try (MongoClient client = new MongoClient(uri)){
+            MongoDatabase db = client.getDatabase(uri.getDatabase());
+            MongoCollection<Document> articleList = db.getCollection("ASD-app-articles");
+             for (Document art : articleList.find().sort(Sorts.descending("$natural"))) {
+                String id = (String) art.get("_id").toString();
+                Article article = new Article(id,(String) art.get("ArticleTitle"), (String) art.get("ArticleContent"), (String) art.get("ArticleDate"));
+                articles.add(article);
+            }
+              outcome = "Article has been fetched";
+          
+         }
+         return outcome;
     }
     // Delete an article
     public String deleteoneArticle(String articleId){
@@ -700,8 +719,7 @@ public class MongoDBConnector {
             Bson filter = Filters.and(Filters.eq("_id", _id));
             Bson updateArticleTitle = Updates.set("ArticleTitle", article.getArticleName());
             Bson updateArticleContent = Updates.set("ArticleContent", article.getArticleContent());
-            Bson updateDate = Updates.set("ArticleDate", article.getArticleDate());
-            articleList.updateOne(filter, combine(updateArticleTitle,updateArticleContent,updateDate));      
+            articleList.updateOne(filter, combine(updateArticleTitle,updateArticleContent));      
             outcome = "Update was successful !";
             }
          }

@@ -15,9 +15,9 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel="stylesheet" href="./css/topUp.css"/>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/ArticleCreate.css"/>
         <title>Create Article</title>
     </head>
 
@@ -28,25 +28,41 @@
             if (!arts.isEmpty()){
             for(Article art: arts){
                 %>
-                <div class = "topup">
-            <form method = "post"  action = "articleUpdate.jsp">
-                <table>
-                 
-                    <tr>
-                        <td><h4><%=art.getArticleName()%> <p>(<%= art.getArticleDate()%>)</p></h4></td>
-                    </tr>
-                    <tr>
-                        <td><p><%=art.getArticleContent()%></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="text" name = "id" name="<%=art.getArticleID()%>" value="<%= art.getArticleID() %>"style="display:none"/>
-                        </td>
-                    </tr>
-                </table>      
-            </form>
-        </div>
+            <div class = "container">
+              
+                 <div class="row">
+                    <div class="col-25">
+                        <p>
+                        Article title
+                        </p>
+                    </div>
+                    
+                    <div class="col-75">
+                        <p><%=art.getArticleName()%></p>
+                    </div>
+                 </div>  
+                <div class="row">
+                    <div class="col-25">
+                           <p>
+                        Last updated
+                            </p>  
+                    </div>
+                    <div class="col-75">
+                        <p><%=art.getArticleDate()%></p>
+                    </div>
+                    </div>
+                     <div class="row">
+                        <div class="col-25">
+                         <p> Article content: </p>
+                         
+                        </div>
+                        <div class="col-75">
+                        <p><%=art.getArticleContent()%> </p>
+                        </div>
+                     </div>
+                   
+                   
+                </div>
                 
                 <%
               }

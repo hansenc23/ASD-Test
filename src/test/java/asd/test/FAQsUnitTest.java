@@ -34,8 +34,6 @@ public class FAQsUnitTest {
     public static void createDbclass() throws UnknownHostException {
         dbconnector = new MongoDBConnector();
         System.out.println("Establish connection to Db");
-        User user = new User("Rush","Z","Zrush@gmail.com","rdrr","twitch","098765332","false","");
-        dbconnector.add(user); 
     }
             
     @Test
