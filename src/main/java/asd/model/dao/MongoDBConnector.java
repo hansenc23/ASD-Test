@@ -47,6 +47,80 @@ public class MongoDBConnector {
     public MongoDBConnector() throws UnknownHostException {
         
     }
+    
+    public Users findUsersByID(String userID) {
+        MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
+        Users users;
+        BasicDBObject query = new BasicDBObject();
+        try (MongoClient client = new MongoClient(uri)) {
+            MongoDatabase db = client.getDatabase(uri.getDatabase());   
+            users = new Users();
+            Pattern p = Pattern.compile(userID +".*");
+            query.append("UserID", p);
+            MongoCollection<Document> userlist = db.getCollection("ASD-app-users");
+            for (Document doc : userlist.find(query)) {
+                User user = new User((String) doc.get("FirstName"), (String) doc.get("LastName"), (String) doc.get("Username"), (String) doc.get("Password"), (String) doc.get("Address"),(String) doc.get("PhoneNumber"), (String) doc.get("isStaff"), (String) doc.get("Position"), (String) doc.get("UserID"));
+                users.addUser(user);
+            }
+        }
+        return users;
+    }
+    
+    public Users findUsersByFirstName(String firstName) {
+        MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
+        Users users;
+        BasicDBObject query = new BasicDBObject();
+        try (MongoClient client = new MongoClient(uri)) {
+            MongoDatabase db = client.getDatabase(uri.getDatabase());   
+            users = new Users();
+            Pattern p = Pattern.compile(firstName +".*");
+            query.append("FirstName", p);
+            MongoCollection<Document> userlist = db.getCollection("ASD-app-users");
+            for (Document doc : userlist.find(query)) {
+                User user = new User((String) doc.get("FirstName"), (String) doc.get("LastName"), (String) doc.get("Username"), (String) doc.get("Password"), (String) doc.get("Address"),(String) doc.get("PhoneNumber"), (String) doc.get("isStaff"), (String) doc.get("Position"), (String) doc.get("UserID"));
+                users.addUser(user);
+            }
+        }
+        return users;
+    }
+    
+    public Users findUsersByLastName(String lastName) {
+        MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
+        Users users;
+        BasicDBObject query = new BasicDBObject();
+        try (MongoClient client = new MongoClient(uri)) {
+            MongoDatabase db = client.getDatabase(uri.getDatabase());   
+            users = new Users();
+            Pattern p = Pattern.compile(lastName +".*");
+            query.append("LastName", p);
+            MongoCollection<Document> userlist = db.getCollection("ASD-app-users");
+            for (Document doc : userlist.find(query)) {
+                User user = new User((String) doc.get("FirstName"), (String) doc.get("LastName"), (String) doc.get("Username"), (String) doc.get("Password"), (String) doc.get("Address"),(String) doc.get("PhoneNumber"), (String) doc.get("isStaff"), (String) doc.get("Position"), (String) doc.get("UserID"));
+                users.addUser(user);
+            }
+        }
+        return users;
+    }
+    
+    public Users findUsersByEmail(String email) {
+        MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
+        Users users;
+        BasicDBObject query = new BasicDBObject();
+        try (MongoClient client = new MongoClient(uri)) {
+            MongoDatabase db = client.getDatabase(uri.getDatabase());   
+            users = new Users();
+            Pattern p = Pattern.compile(email +".*");
+            query.append("Username", p);
+            MongoCollection<Document> userlist = db.getCollection("ASD-app-users");
+            for (Document doc : userlist.find(query)) {
+                User user = new User((String) doc.get("FirstName"), (String) doc.get("LastName"), (String) doc.get("Username"), (String) doc.get("Password"), (String) doc.get("Address"),(String) doc.get("PhoneNumber"), (String) doc.get("isStaff"), (String) doc.get("Position"), (String) doc.get("UserID"));
+                users.addUser(user);
+            }
+        }
+        return users;
+    }
+    
+    
 
     //Update account details
     public String updateUser(User user){

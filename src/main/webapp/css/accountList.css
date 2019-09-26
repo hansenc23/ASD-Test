@@ -50,3 +50,10 @@ and open the template in the editor.
     .button-success {
             background: rgb(28, 184, 65); /* this is a green */
     }
+    
+    .tablesearch tr,
+    .tablesearch td,
+    .tablesearch th{
+        padding: 7px;
+        border-bottom: 1px solid black;
+    }

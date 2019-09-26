@@ -25,18 +25,81 @@
            Users dbUsers = new Users();
            ArrayList<User> users = new ArrayList<User>();
            
-           dbUsers = connector.loadUsers();
-           users = dbUsers.getList();
-           int totalAccount = users.size();
-
+           
+           int totalAccount = 0;
          %>
 
-      <div class="box">
-            
-            
-      </div>
+      
           <div class="list"> 
+              <div class="search">
+                  <table class="tablesearch">
+                      <thead>
+                          <tr>
+                              <th colspan="5">Search account</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          
+                          <tr>
+                            <form method="post">
+                                
+                                    <td>First Name: <input type="text" name="firstname" ></td>
+                                    <td>Last Name: <input type="text" name="lastname" ></td>
+                                    <td>Email: <input type="text" name="email" ></td>
+                                    <td><button type="submit" name="searchAccount" type="submit" class="button-secondary pure-button">Search</button></td>
+                                    <td><button type="submit" name="searchAccount" type="submit" class="button-secondary pure-button" onclick="accountList.jsp">Show all</button></td>
+                                    
+                            </form>
+                          </tr>
+                      </tbody>
+                  </table>
+              </div>
+              
+              <%
+            if(request.getParameter("searchAccount") == null){
+                dbUsers = connector.loadUsers();
+                users = dbUsers.getList();
+                totalAccount = users.size();
+            }
+           
+            else{
+                
+                if (!request.getParameter("firstname").isEmpty() ){
+                   String firstName = request.getParameter("firstname");
+                    dbUsers = connector.findUsersByFirstName(firstName);
+                    users = dbUsers.getList();
+                    totalAccount = users.size(); 
+                }
+                else if(!request.getParameter("lastname").isEmpty()){
+                    String lastName = request.getParameter("lastname");
+                    dbUsers = connector.findUsersByLastName(lastName);
+                    users = dbUsers.getList();
+                    totalAccount = users.size();
+                    
+                }
+                else if(!request.getParameter("email").isEmpty()){
+                    String email = request.getParameter("email");
+                    dbUsers = connector.findUsersByEmail(email);
+                    users = dbUsers.getList();
+                    totalAccount = users.size();
+                    
+                }
+                else{
+                   dbUsers = connector.loadUsers();
+                    users = dbUsers.getList();
+                    totalAccount = users.size();
+                    
+                }
+                
+            }
+
+            
+
+
+                     
+               %>
               <h2>Account List</h2>
+              
             <table class="pure-table pure-table-horizontal">
                 <span class="pure-form-message-inline">Total user: <%=totalAccount%></span>
                 <thead>
@@ -102,8 +165,11 @@
                     <%}%>
                 </tbody>
             </table>
+                
+                
             
             </div>
+                
              
     </body>
 </html>
