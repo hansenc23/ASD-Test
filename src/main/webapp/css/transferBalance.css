@@ -27,17 +27,8 @@ p {
     font-size: 16px;
     font-weight: bold;
 }
-     
-/*.box input[type=select] {
-    margin-bottom: 20px;
-}
-
-.box br {
-    margin-bottom: 20px;
-}*/
 
 .box input[type=submit]{
-    /*width: 40%;*/
     width: fit-content;
     background-color: #004d80;
     margin: 20px 0 0 0;
@@ -70,7 +61,6 @@ button {
 }
 
 .history {
-/*    margin-left: 240px;*/
     float: left;
     padding: 10px 10px 10px 10px;
     border: 1px solid #00B1F5;
@@ -98,7 +88,6 @@ button {
 }
 
 h3 {
-/*    margin-left: 240px;*/
     color: #0088cc;
 }
 
@@ -133,8 +122,6 @@ h3 {
 }
 
 .container {
-/*    display: flex;
-    flex-direction: column;*/
     margin-left: 240px;
     
 }
