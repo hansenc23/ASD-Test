@@ -17,10 +17,10 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="css/transferBalance.css">
-        <title>Transfer Balance History</title>
+        <title>Transfer Balance</title>
     </head>
     <body>
-        <h3>Transfer Balance History</h3>
+        <div class="container">
         <%
             MongoDBConnector connector = new MongoDBConnector();
             
@@ -54,10 +54,10 @@
                 for (TransferBalance record : records) {
         %>
                     <tr>
-                        <td><p id="fromOpalID"><%=record.getFromOpalID()%></p></td>
-                        <td><p id="toOpalID"><%=record.getToOpalID()%></p></td>
-                        <td><p id="transferValue">$<%=record.getValue()%></p></td>
-                        <td><p id="transferDate"><%=record.getTransferDate()%></p></td>
+                        <td id="fromOpalID"><%=record.getFromOpalID()%></td>
+                        <td id="toOpalID"><%=record.getToOpalID()%></td>
+                        <td id="transferValue">$<%=record.getValue()%></td>
+                        <td id="transferDate"><%=record.getTransferDate()%></td>
                     </tr>
         <%
                 }
@@ -75,10 +75,10 @@
                             <tr>
                                 <td><input type="submit" name="searchTransID" id="searchTransID" value="Search"></td>
                             </tr>
-                            <tr>
-                                <td><input type="submit" name="ShowAllTrans" id="ShowAllTrans" value="Show All"></td>
-                            </tr>
                         </table>
+                    </form>
+                    <form method="POST" action="transferHistory.jsp">
+                        <input type="submit" name="ShowAllTrans" id="ShowAllTrans" value="Show All">
                     </form>
                 </div>
             </div>

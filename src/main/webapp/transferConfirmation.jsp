@@ -46,11 +46,11 @@
                 <div class="box">
                     <table>
                         <tr><td><b>From Opal</b></td>
-                            <td><p id="fromOpalID">: <%=newRecord.getFromOpalID()%></p></td></tr>
+                            <td id="fromOpalID">: <%=newRecord.getFromOpalID()%></td></tr>
                         <tr><td><b>To Opal</b></td>
-                            <td><p id="toOpalID">: <%=newRecord.getToOpalID()%></p></td></tr>
+                            <td id="toOpalID">: <%=newRecord.getToOpalID()%></td></tr>
                         <tr><td><b>Value</b></td>
-                            <td><p id="transferValue">: $<%=newRecord.getValue()%></p></td></tr>
+                            <td id="transferValue">: $<%=newRecord.getValue()%></td></tr>
                     </table>
                     <div class="transferButtons">
                         <div class="btn">
