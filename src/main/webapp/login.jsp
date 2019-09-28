@@ -50,7 +50,7 @@
                     
                     <br>
 
-                    <button type="submit" class="pure-button pure-button-primary">Login</button>
+                    <button id="login_submit" type="submit" class="pure-button pure-button-primary">Login</button>
                     <button class="pure-button pure-button-primary" type="button" onclick="location.href = 'main.jsp'" > Home Page </button>
                     
                     

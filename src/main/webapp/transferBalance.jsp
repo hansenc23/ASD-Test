@@ -26,7 +26,7 @@
             
             String customerID = connector.getCustomerID(user.getEmail(), user.getPassword());
             String validForTransfer = connector.validForTransfer(customerID);
-            // Customer has min 2 cards and at least 1 card has balance > 0
+            // Customer has min 2 cards and at least 1 card has balance >= 5
             if (validForTransfer.equalsIgnoreCase("transferOK")) {
                 ArrayList<OpalCard> cards = new ArrayList<OpalCard>();
                 cards = connector.getOpalCards(user);
@@ -38,11 +38,11 @@
                             <%
                                 String fromOpalID = "";
                                 for (OpalCard card: cards) {
-                                    // From Opal card should have balance > 0
+                                    // From Opal card should have balance >= 5
                                     if (card.getBalance() > 0) {
                                         fromOpalID = card.getOpalID();
                             %>
-                                <option value = "<%=fromOpalID%>"><%=fromOpalID%></option>
+                                <option value="<%=fromOpalID%>" id="<%=fromOpalID%>"><%=fromOpalID%></option>
                             <%
                                     }
                                 }
@@ -57,7 +57,7 @@
                                 for (OpalCard card: cards) {
                                     toOpalID = card.getOpalID();
                             %>
-                                    <option value = "<%=toOpalID%>" ><%=toOpalID%></option>
+                                    <option value="<%=toOpalID%>" id="<%=toOpalID%>"><%=toOpalID%></option>
                             <%
                                 }
                             %>
@@ -74,7 +74,7 @@
         <div class="box">
             <p>Linked Opal cards does not meet the transfer balance requirement
             <br>Minimum 2 Opal cards
-            <br>At least 1 Opal card balance is not $0.00</p>
+            <br>At least 1 Opal card balance is $5.00</p>
         </div>
         <%
             }

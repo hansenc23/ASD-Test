@@ -25,18 +25,81 @@
            Users dbUsers = new Users();
            ArrayList<User> users = new ArrayList<User>();
            
-           dbUsers = connector.loadUsers();
-           users = dbUsers.getList();
-           int totalAccount = users.size();
-
+           
+           int totalAccount = 0;
          %>
 
-      <div class="box">
-            
-            
-      </div>
+      
           <div class="list"> 
+              <div class="search">
+                  <table class="tablesearch">
+                      <thead>
+                          <tr>
+                              <th colspan="5">Search account</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          
+                          <tr>
+                            <form method="post">
+                                
+                                    <td>First Name: <input type="text" name="firstname" ></td>
+                                    <td>Last Name: <input type="text" name="lastname" ></td>
+                                    <td>Email: <input type="text" name="email" ></td>
+                                    <td><button type="submit" name="searchAccount" type="submit" class="button-secondary pure-button">Search</button></td>
+                                    <td><button type="submit" name="searchAccount" type="submit" class="button-secondary pure-button" onclick="accountList.jsp">Show all</button></td>
+                                    
+                            </form>
+                          </tr>
+                      </tbody>
+                  </table>
+              </div>
+              
+              <%
+            if(request.getParameter("searchAccount") == null){
+                dbUsers = connector.loadUsers();
+                users = dbUsers.getList();
+                totalAccount = users.size();
+            }
+           
+            else{
+                
+                if (!request.getParameter("firstname").isEmpty() ){
+                   String firstName = request.getParameter("firstname");
+                    dbUsers = connector.findUsersByFirstName(firstName);
+                    users = dbUsers.getList();
+                    totalAccount = users.size(); 
+                }
+                else if(!request.getParameter("lastname").isEmpty()){
+                    String lastName = request.getParameter("lastname");
+                    dbUsers = connector.findUsersByLastName(lastName);
+                    users = dbUsers.getList();
+                    totalAccount = users.size();
+                    
+                }
+                else if(!request.getParameter("email").isEmpty()){
+                    String email = request.getParameter("email");
+                    dbUsers = connector.findUsersByEmail(email);
+                    users = dbUsers.getList();
+                    totalAccount = users.size();
+                    
+                }
+                else{
+                   dbUsers = connector.loadUsers();
+                    users = dbUsers.getList();
+                    totalAccount = users.size();
+                    
+                }
+                
+            }
+
+            
+
+
+                     
+               %>
               <h2>Account List</h2>
+              
             <table class="pure-table pure-table-horizontal">
                 <span class="pure-form-message-inline">Total user: <%=totalAccount%></span>
                 <thead>
@@ -51,6 +114,8 @@
                         <th>Position</th>
                         <th>isStaff</th>
                         <th></th>
+                        <th></th>
+                      
                     </tr>
                 </thead>
                 
@@ -79,16 +144,32 @@
                                 <input type="hidden" name="userPosition" value="<%=user1.getPosition()%>">
                                 <input type="hidden" name="userIsStaff" value="<%=user1.getIsStaff()%>">
                             </form>
+                        </td>
+                        <td>
+                            <form action="staffEdit.jsp" method="post">
+                                <button type="submit" class="button-success pure-button">Edit</button>
+                                <input type="hidden" name="userID" value="<%=user1.getUserID()%>">
+                                <input type="hidden" name="userEmail" value="<%=user1.getEmail()%>">
+                                <input type="hidden" name="userPassword" value="<%=user1.getPassword()%>">
+                                <input type="hidden" name="userFirstName" value="<%=user1.getFirstName()%>">
+                                <input type="hidden" name="userLastName" value="<%=user1.getLastName()%>">
+                                <input type="hidden" name="userAddress" value="<%=user1.getAddress()%>">
+                                <input type="hidden" name="userPhoneNumber" value="<%=user1.getPhoneNumber()%>">
+                                <input type="hidden" name="userPosition" value="<%=user1.getPosition()%>">
+                                <input type="hidden" name="userIsStaff" value="<%=user1.getIsStaff()%>">
+                            </form>
                             
                         </td>
-                              
-
+                        
                     </tr>
                     <%}%>
-                
+                </tbody>
             </table>
+                
+                
             
             </div>
+                
              
     </body>
 </html>

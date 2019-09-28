@@ -27,17 +27,8 @@ p {
     font-size: 16px;
     font-weight: bold;
 }
-     
-/*.box input[type=select] {
-    margin-bottom: 20px;
-}
-
-.box br {
-    margin-bottom: 20px;
-}*/
 
 .box input[type=submit]{
-    /*width: 40%;*/
     width: fit-content;
     background-color: #004d80;
     margin: 20px 0 0 0;
@@ -70,13 +61,17 @@ button {
 }
 
 .history {
-    margin-left: 240px;
+    float: left;
     padding: 10px 10px 10px 10px;
-    border: 1px solid #005580;
+    border: 1px solid #00B1F5;
     border-radius: 5px;
+    min-width: 40%;
+    max-width: 60%;
+    margin-right: 3%;
     color: #0088cc;
     width: fit-content;
     height: fit-content;
+    overflow: hidden;
 }
 
 .history tr {
@@ -88,11 +83,59 @@ button {
     padding: 10px 35px 10px 5px;
 }
 
-tr:hover {
+.history tbody tr:hover {
     background-color: #e6f7ff;
 }
 
 h3 {
-    margin-left: 240px;
     color: #0088cc;
+}
+
+.searchBox {
+    display: block;
+    width: auto;
+    min-width: 20%;
+    max-width: 30%;
+    border: 1px solid #00B1F5;
+    border-radius: 5px;
+    padding: 2%;
+    overflow: hidden;
+    color: #0088cc;
+}
+
+.searchBox input[type=submit]{
+    background-color: #004d80;
+    float: left;
+    margin: 10% 0 0 0;
+    color: white;
+    cursor: pointer;
+    padding: 4px 10px;
+    border: 0;
+}
+
+.searchBox h3, h6 {
+    margin-bottom: 20px;
+}
+
+.searchBox input[type=submit]:hover{
+    opacity: 0.7;
+}
+
+.container {
+    margin-left: 240px;
+    
+}
+
+.transferButtons{
+    display: flex;
+    flex-direction: row;
+}
+
+.transferButtons input[type=submit] {
+    text-align: center;
+    width: 80px;
+}
+
+.transferButtons .btn {
+    margin-right: 2px;
 }

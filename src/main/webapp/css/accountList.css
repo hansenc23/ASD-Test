@@ -29,11 +29,31 @@ and open the template in the editor.
     }
     
  
-    
+    .button-error,
+    .button-success,
     .button-secondary {
         color: white;
-        padding: 7.5px;
+        
         border-radius: 4px;
         text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-        background: #1C88CC;
+        
+    }
+    
+    .button-error {
+            background: rgb(202, 60, 60); /* this is a maroon */
+    }
+    
+    .button-secondary {
+            background: #1C88CC; 
+    }
+    
+    .button-success {
+            background: rgb(28, 184, 65); /* this is a green */
+    }
+    
+    .tablesearch tr,
+    .tablesearch td,
+    .tablesearch th{
+        padding: 7px;
+        border-bottom: 1px solid black;
     }

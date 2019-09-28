@@ -21,34 +21,50 @@
         <title>Transfer Balance Confirmation</title>
     </head>
     <body>
-        <h2>Transfer Balance</h2>
+        <h2>Transfer Balance Confirmation</h2>
         <%
             MongoDBConnector connector = new MongoDBConnector();
             
-            if (request.getParameter("Next") != null) {
+            if (request.getParameter("Next") != null || request.getParameter("submitEdit") != null) {
                 TransferBalance record = (TransferBalance) session.getAttribute("record");
+                // Get the required transfer balance details from either transferDetail / transferEdit page
                 double value = Double.parseDouble(request.getParameter("value"));
-                TransferBalance newRecord = new TransferBalance(record.getFromOpalID(), record.getToOpalID(), value, record.getCustomerID(), "");
+                String fromOpalID = "";
+                String toOpalID = "";
+                String customerID = connector.getCustomerID(user.getEmail(), user.getPassword());
+                if (request.getParameter("Next") != null) {
+                    fromOpalID = record.getFromOpalID();
+                    toOpalID = record.getToOpalID();
+                } else if (request.getParameter("submitEdit") != null) {
+                    fromOpalID = request.getParameter("fromOpalID");
+                    toOpalID = request.getParameter("toOpalID");
+                }
+                TransferBalance newRecord = new TransferBalance(fromOpalID, toOpalID, value, customerID, "");
                 session.removeAttribute("record");
                 session.setAttribute("newRecord", newRecord);
         %>
                 <div class="box">
                     <table>
-                        <h6>Confirmation</h6>
                         <tr><td><b>From Opal</b></td>
-                        <td>: <%=newRecord.getFromOpalID()%></td></tr>
+                            <td id="fromOpalID">: <%=newRecord.getFromOpalID()%></td></tr>
                         <tr><td><b>To Opal</b></td>
-                        <td>: <%=newRecord.getToOpalID()%></td></tr>
+                            <td id="toOpalID">: <%=newRecord.getToOpalID()%></td></tr>
                         <tr><td><b>Value</b></td>
-                        <td>: $<%=newRecord.getValue()%></td></tr>
+                            <td id="transferValue">: $<%=newRecord.getValue()%></td></tr>
                     </table>
                     <div class="transferButtons">
+                        <div class="btn">
                         <form method="POST" action="transferConfirmation.jsp">
-                        <input type="submit" value="Cancel" name="Cancel"></form>
+                        <input type="submit" id="cancelTransfer" value="Cancel" name="Cancel"></form>
+                        </div>
+                        <div class="btn">
+                        <form method="POST" action="transferEdit.jsp">
+                        <input type="submit" id="editTransfer" value="Edit" name="Edit"></form>
+                        </div>
+                        <div class="btn">
                         <form method="POST" action="transferConfirmation.jsp">
-                        <input type="submit" value="Confirm" name="Confirm"></form>
-                        <form method="POST" action="transferConfirmation.jsp">
-                        <input type="submit" value="Edit" name="Edit"></form>
+                        <input type="submit" id="confirmTransfer" value="Confirm" name="Confirm"></form>
+                        </div>
                     </div>
                 </div>
                 <%
@@ -65,7 +81,7 @@
                 %>
                 <div class="message">
                     <p>Transfer Balance from <%=confirmTransfer.getFromOpalID()%> to <%=confirmTransfer.getToOpalID()%> is success!</p>
-                    <button onclick=location.href="main.jsp">Back to Main Page</button>
+                    <button id="backMain" onclick=location.href="main.jsp">Back to Main Page</button>
                 </div>
                 <%
                 // If user click CANCEL
@@ -74,46 +90,10 @@
                 %>
                 <div class="message">
                     <p>Transfer Balance from <%=cancelTransfer.getFromOpalID()%> to <%=cancelTransfer.getToOpalID()%> has been cancelled!</p>
-                    <button onclick=location.href="main.jsp">Back to Main Page</button>
+                    <button id="backMain" onclick=location.href="main.jsp">Back to Main Page</button>
                 </div>
                 <%
                     session.removeAttribute("cancelTransfer");
-                // If user click EDIT
-                } else if (request.getParameter("Edit") != null) {
-                    TransferBalance editTransfer = (TransferBalance) session.getAttribute("newRecord");
-                    ArrayList<OpalCard> cards = new ArrayList<OpalCard>();
-                    cards = connector.getOpalCards(user);
-                %>
-                <div class="box">
-                    <form method="POST" action="transferConfirmation.jsp">
-                        <table>
-                            <tr><td><b>From Opal: </b></td>
-                                <td><select name = "fromOpalID" id="fromOpalID" required>
-                                    <option value="<%=editTransfer.getFromOpalID()%>"><%=editTransfer.getFromOpalID()%></option>
-                                    <%
-                                        String fromOpalID = "";
-                                        for (OpalCard card: cards) {
-                                            // From Opal card should have balance > 0
-                                            if (card.getBalance() > 0) {
-                                                fromOpalID = card.getOpalID();
-                                    %>
-                                    </select>
-                                    <%
-                                            }
-                                        }
-                                    %>
-                                </td>
-                            </tr>
-                            <tr><td><b>To: </b></td>
-                                <td><%=editTransfer.getToOpalID()%></td>
-                            </tr>
-                            <tr><td><b>Value: </b></td>
-                                <td><%=editTransfer.getValue()%></td>
-                            </tr>
-                        </table>
-                    </form>
-                </div>
-                <%
                     }
                 %>
     </body>

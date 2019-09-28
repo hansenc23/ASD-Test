@@ -17,6 +17,8 @@
         <div class="sidenav">
             <a id="sidebar_main" href="main.jsp">Home</a>
             <a id="order_opal_card" href="chooseOpalCard.jsp">Order an additional Opal card</a>
+            <a id="sidebar_FAQ" href="FAQsView.jsp">FAQs</a>
+            <a id="sidebar_articleView"href="articleView.jsp">News</a>
             <% 
                 User userno = (User)session.getAttribute("user");
                 if(userno != null){
@@ -30,7 +32,7 @@
 
                     <a id ="sidebar_enqiry" href="enqiryList.jsp">Enqiry</a>
 
-                    <a id="sidebar_articleView"href="articleView.jsp">News</a>
+                    
 
                     <a href="userAccessManager.jsp">See history</a>
             <%  
@@ -39,9 +41,11 @@
             %>
                     <a href="plsLogin.jsp">Link existing Opal card to your account</a>
                     <a href="plsLogin.jsp">Unlink Opal card from your account</a>
-                    <a href="plsLogin.jsp">Top-up Opal card</a>
                     <a href="plsLogin.jsp">Add payment method</a>
-                    
+                    <a href="plsLogin.jsp">Top-up Opal card</a>
+                    <a href="plsLogin.jsp">Manage your payment</a>
+                    <a href="plsLogin.jsp">Transfer Balance</a>
+                    <a href="plsLogin.jsp">See history</a>   
             <%
                 }
             %>
