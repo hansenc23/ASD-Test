@@ -1540,17 +1540,69 @@ public class MongoDBConnector {
             enqirylist.deleteOne(eq("enqiryID", enqiryID));
         }
     }
-     public void answerEnqiries(String enqiryID, String answer) {
-        MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
-        try (MongoClient client = new MongoClient(uri)) {
-            MongoDatabase db = client.getDatabase(uri.getDatabase());            
-            MongoCollection<Document> enqirylist = db.getCollection("ASD-app-enqiries"); //
-            enqirylist.updateOne(eq("enqiryID", enqiryID),new Document("$set", new Document("answer",answer)));
-        }
-    }
-
-
-    
+//     public void answerEnqiries(String enqiryID, String answer) {
+//        MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
+//        try (MongoClient client = new MongoClient(uri)) {
+//            MongoDatabase db = client.getDatabase(uri.getDatabase());            
+//            MongoCollection<Document> enqirylist = db.getCollection("ASD-app-enqiries");
+//            Document doc = enqirylist.find(eq("enqiryID", enqiryID)).first();//
+//            if(doc != null){
+//            enqirylist.updateOne(eq("enqiryID", enqiryID),new Document("$set", new Document("answer",answer)));
+//            }
+//        }
+//  }   //  public void editEnqiries(Enqiry enqiry, String question) {
+//        MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
+//        try (MongoClient client = new MongoClient(uri)) {
+//            MongoDatabase db = client.getDatabase(uri.getDatabase());            
+//            MongoCollection<Document> enqirylist = db.getCollection("ASD-app-enqiries");
+//            String enqiryID = enqiry.getEnqiryID();
+//            //Bson filter = eq("enqiryID", enqiryID);
+//            Bson query = new Document("$set", new Document("question",question));
+//            Document doc = enqirylist.find(eq("enqiryID", enqiryID)).first();//
+//             Bson filter = eq("enqiryID", enqiryID);
+//          
+//            //if(doc != null){
+//            enqirylist.updateOne(filter,query);
+//            //}
+//        }
+//    }
+      public void updateEnqiry(Enqiry enqiry){
+         MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
+         
+         try(MongoClient client = new MongoClient(uri)){
+            MongoDatabase db = client.getDatabase(uri.getDatabase());
+            MongoCollection<Document> enqirylist = db.getCollection("ASD-app-enqiries");
+            Document doc =  enqirylist.find(eq("enqiryID", enqiry.getEnqiryID())).first();
+            ObjectId _id = new ObjectId(doc.get("_id").toString());
+            Bson filter = Filters.and(Filters.eq("_id", _id));
+            Bson updateQuestion = Updates.set("question", enqiry.getQuestion());
+            Bson updateAnswer = Updates.set("answer", enqiry.getAnswer());
+            enqirylist.updateOne(filter, combine(updateQuestion,updateAnswer));
+       }
+      }
+//         
+//         
+//        return outcome;
+//    }
+//    //add the paymentmethod in an order
+//    public void add(Paymentmethod payment, Order order){
+//        MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
+//        try(MongoClient client = new MongoClient(uri)){
+//            MongoDatabase db = client.getDatabase(uri.getDatabase());
+//            MongoCollection<Document> orderlist = db.getCollection("ASD-app-orders");
+//            Document doc = new Document().append("FirstName", payment.getFirstName()).append("LastName", payment.getLastName()).append("CardNumber", payment.getCardNumber()).append("ExpiryMonth", payment.getExpiryMonth()).append("ExpiryYear", payment.getExpiryYear()).append("CVV", payment.getCvv());     
+//            orderlist.updateOne(eq("OpalID", order.getOpalId()), new Document("$set", new Document("PaymentMethod",doc))); 
+//        }
+//    }
+//  public void linkCard(OpalCard card, User user) {
+//        MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
+//        try (MongoClient client = new MongoClient(uri)) {
+//            MongoDatabase db = client.getDatabase(uri.getDatabase());
+//            MongoCollection<Document> opallist = db.getCollection("ASD-app-opalCards");
+//            String customerID = getCustomerID(user.getEmail(), user.getPassword());
+//            opallist.updateOne(eq("OpalID", card.getOpalID()), new Document("$set", new Document("CustomerID", customerID))); 
+//        }
+//    }
    public String testAdd(Time time) {
         MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
         String test;

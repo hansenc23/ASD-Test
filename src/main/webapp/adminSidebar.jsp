@@ -18,7 +18,7 @@
             <a href="accountList.jsp">Account Management</a>
             <a id="card_management" href="cardManagement.jsp">Card Management</a>
             <a id="order_management" href="orderManagement.jsp">Order Management</a>
-            <a href="enqiryListStaff">Enquiry Management</a>
+            <a id="enqiry_management" href="enqiryListStaff.jsp">Enquiry Management</a>
             <a href="FAQsCreate.jsp">FAQs Management</a>
             <a href="articleCreate.jsp">Transport News Management</a>
             <a href="#">Notification Management</a>

@@ -4,8 +4,8 @@
     Author     : kevin
 --%>
 
-<%@include file="navbar.jsp"%>
-<%@include file="sidebar.jsp" %>
+<%@include file="adminNavbar.jsp"%>
+<%@include file="adminSidebar.jsp" %>
 <%@page import="asd.model.dao.MongoDBConnector"%>
 <%@page import="asd.model.*"%>
 <%@page import="java.text.SimpleDateFormat"%>
@@ -35,27 +35,31 @@
             //String answer = selectedEnqiry.getAnswer();
             String customerID = selectedEnqiry.getCustomerID();
           %>
-              <div>          
+              <div class="title">          
                 <h1>
                    <%=title%>
                 </h1>
                    <p><%=customerID%></p>
               </div>
 
-               <div id = question >
-                   <table><tr><%=question%><tr/></table>
-               </div>
-        <p>insert your answer here<P>
-        <form method='POST' action='enqiryPageAnswer.jsp'>
-            <textarea rows="7" cols="50" name="theAnswer" >
-            </textarea>
-            <%String answer = request.getParameter("theAnswer"); %>
-            <input type="submit" value="AEnqiry" name="AEnqiry" >         
-        </form>
+               <div class="Acontainer" >
+                  <div class="row"><%=question%></div>
+              
         
+           <div class="row">
+               <label>insert your answer here</label>
+                <form method='POST' action='enqiryPageAnswer.jsp'>
+                  <textarea rows="7" cols="50" placeholder="Write the answer..." name="theAnswer"></textarea>
+                    <%String theAnswer = request.getParameter("theAnswer"); %>
+                   <input type="submit" value="Name" name="AEnqiry">      
+                  <input type="hidden" value="<%=selectedEnqiry.getEnqiryID()%>" name="EnqiryID">
+                 </form>
+           </div>
+         </div>
           <% if(request.getParameter("AEnqiry")!=null)
              {  
-                  connector.answerEnqiries(enqiryID,answer);
+                  Enqiry enqiry = new Enqiry(customerID,question,theAnswer,enqiryID,title);
+                  connector.updateEnqiry(enqiry);
              }%> 
     </body>
 </html>

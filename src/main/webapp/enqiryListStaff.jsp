@@ -32,11 +32,14 @@
             enqiries = dbEnqiries.getList();   
         %>    
                 <div class="table" style="max-width: 50%">
-            <h1>Users enqiries </h1>
+           <h1 class = "title">
+            Users enqiries
+           </h1> 
             <table>
                 <thead>
                     <th>Title</th>
                     <th>User</th>
+                    <th>&nbsp;</th>
                     <th>&nbsp;</th>
                 </thead>
         <%
@@ -54,11 +57,24 @@
                                 <input type="Submit" value="Details">
                             </form>
                         </td>
+                        <td>
+                            <form method='POST' >
+                                <input type="hidden" value="<%=enqiry.getEnqiryID()%>" name="EnqiryID">
+                                <input type="Submit" value="Remove" name="Remove">
+                            </form>
+                        </td>
                         
                     </tr>
         <%
             }               
         %>
+         
+        
+                    <% if(request.getParameter("Remove")!=null)
+               {  
+                 String enqiryID = request.getParameter("EnqiryID") ;     
+                 connector.removeEnqiries(enqiryID);%><%--delete the databse entry withe the specific info --%>
+             <%}%> 
             </table>
         </div>  
     </body>

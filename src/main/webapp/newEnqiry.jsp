@@ -30,14 +30,17 @@
         <h1 class ="title">new enqiry</h1>
         
         <form  method="post" action="newEnqiry.jsp">
-            <div class ="new"   >
-            <label>Title</label>
-                    <input id="enqiry_title" type="text" placeholder="Enter title" name="title" required>
+            <div class="Acontainer">
+              <div class="row"> 
+                <div class="col-75"><label>Title:</label></div>
+                <div class="col-25"><input id="enqiry_title" type="text" placeholder="Enter title" name="title" required></div>
+             </div>
+            
+             <div class="row">          
+                <div class="col-75"><label>Question:</label> </div>       
+                <div class="col-25"><textarea  rows="4" cols="80" id="enqiry_text" type="text" placeholder="enter your enqiry" name="question" required></textarea></div>
+              </div>
             </div>
-            <div class ="new"  >           
-            <label>Question</label>        
-                <textarea  rows="4" cols="80" id="enqiry_text" type="text" placeholder="enter your enqiry" name="question" required></textarea>
-            </div>    
             <div ><button type="submit" id="submit" class="button" name ="submitB">Add new</button></div>
         </form>
         
@@ -57,7 +60,7 @@
                 String enqiryID = "" + (new Random()).nextInt(999999);
                 Enqiry selectedEnqiry = new Enqiry(customerID,question,answer,enqiryID,title) ;
                 connector.add(selectedEnqiry);%>
-                <h1>New enqiry has been posted click <a href="main.jsp">here</a> to get back to the main page</h1>
+                <h5>New enqiry has been posted click <a href="main.jsp">here</a> to get back to the main page</h5>
         
           <%}%>
     </body>

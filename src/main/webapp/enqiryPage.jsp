@@ -36,6 +36,7 @@
             String question = selectedEnqiry.getQuestion();
             String answer = selectedEnqiry.getAnswer();
             String customerID = selectedEnqiry.getCustomerID();
+            String userID = user.getEmail();
         %>  
     </head>
     <body>
@@ -43,22 +44,38 @@
            <h1 class = "title">
             <%=title%>
            </h1>
+           
        <div class = "new">   
-            <p ><%=customerID%></p>
+            <p><b>a Question by: <%=customerID%></b></p>
        </div>
+       <hr>
+        <div class="Acontainer"  >
+            <div class ="row">
+             <p><b>Question: </b><%=question%><p>
+            </div>
+        <div class="row">
+            <div>
+                <h4>Admin answer: </h4>
+            </div>
+            </div>
+            <%if(answer != null)
+                {%>
        
-        <div id = question >
-            <table><th><%=question%></th></table>
+                 <div><p><%=answer%></p></div>
         
-        <%if(answer != null)
-          {%>
-       
-            <table><th><%=answer%></th></table>
+                <%}else{%>
         
-        <%}else{%>
-        
-              <table><th>there are currently no answer</th></table>
-        <%}%>
+              <div><p class="blue">there are currently no answer</p></div>
+             <%}%>
         </div>
-    </body>
+            
+        
+            
+     
+             <%if(customerID.equals(userID)){%>
+           <form method='POST' action='enqiryEdit.jsp'>
+             <input type="hidden" value="<%=enqiryID%>" name="EnqiryID">
+             <input type="Submit" class ="button" value="Edit your inqiry">
+            </form>
+       <%}%>
 </html>
