@@ -1158,19 +1158,19 @@ public class MongoDBConnector {
             int linkedCard = 0;
             int empty = 0;
             for (Document doc : opallist.find(and(eq("CustomerID", customerID)))) {
-                if ((double) doc.get("Balance") <= 0){
+                if ((double) doc.get("Balance") <= 5){
                     empty += 1;
                 }
                 linkedCard += 1;
             }
-            // If user has more than 2 cards and at least 1 card is not 0
-            // OR user has 2 cards and 0-valued card is 0 or 1 card
+            // If user has more than 2 cards and at least 1 card is more than $5
+            // OR user has 2 cards and not valid card is 0 or 1 card
             if ((linkedCard >= 2 && empty <= (linkedCard-1)) || (linkedCard == 2 && empty < 2)) {
                 result = "transferOK";
             // If user has less than 2 cards
             } else if (linkedCard < 2) {
                 result = "cardsNO";
-            // If user has more than 2 cards but all card's value is 0
+            // If user has more than 2 cards but all card's value is invalid
             } else {
                 result = "transferNO";
             }
@@ -1197,19 +1197,101 @@ public class MongoDBConnector {
     }
     
     // Get all transfer balance record of a user
-    public ArrayList<TransferBalance> transferHistory(String customerID) {
+    public ArrayList<TransferBalance> transferHistory(String input, String type) {
         MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
         ArrayList<TransferBalance> records = new ArrayList<TransferBalance>();
         try (MongoClient client = new MongoClient(uri)) {
             MongoDatabase db = client.getDatabase(uri.getDatabase());
             MongoCollection<Document> transferlist = db.getCollection("ASD-app-transferBalance");
-            for (Document doc : transferlist.find(eq("CustomerID", customerID))) {
+            // If the input is a date, change the date format from DD/MM/YYYY tp DD-MM-YYYY
+            if (type.equalsIgnoreCase("TransferDate")) {
+                input = input.substring(8,10) + "-" + input.substring(5,7) + "-" + input.substring(0,4);
+            }
+            
+            for (Document doc : transferlist.find(eq(type, input))) {
                 TransferBalance record = new TransferBalance((String) doc.get("FromOpalID"), (String) doc.get("ToOpalID"), (double) doc.get("Value"), (String) doc.get("CustomerID"), (String) doc.get("TransferDate"));
                 records.add(record);
             }
         }
         return records;
-    }     
+    }  
+    
+    public String testValidForTransfer(String customerID) {
+        MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
+        String test;
+        String result = "";
+        try (MongoClient client = new MongoClient(uri)) {
+            MongoDatabase db = client.getDatabase(uri.getDatabase());
+            MongoCollection<Document> opallist = db.getCollection("ASD-app-opalCards");
+            int linkedCard = 0;
+            int empty = 0;
+            for (Document doc : opallist.find(and(eq("CustomerID", customerID)))) {
+                if ((double) doc.get("Balance") <= 5){
+                    empty += 1;
+                }
+                linkedCard += 1;
+            }
+            // If user has more than 2 cards and at least 1 card is more than $5
+            // OR user has 2 cards and not valid card is 0 or 1 card
+            if ((linkedCard >= 2 && empty <= (linkedCard-1)) || (linkedCard == 2 && empty < 2)) {
+                result = "transferOK";
+            // If user has less than 2 cards
+            } else if (linkedCard < 2) {
+                result = "cardsNO";
+            // If user has more than 2 cards but all card's value is invalid
+            } else {
+                result = "transferNO";
+            }
+            test = "Test success";
+        } catch (Exception error) {
+            test = "Test error";
+        }
+        return test;
+     }
+
+    public String testTransferBalance(TransferBalance record) {
+        MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
+        String test;
+        try (MongoClient client = new MongoClient(uri)) {
+            MongoDatabase db = client.getDatabase(uri.getDatabase());
+            MongoCollection<Document> opallist = db.getCollection("ASD-app-opalCards");
+            MongoCollection<Document> transferlist = db.getCollection("ASD-app-transferBalance");
+            // Create new transfer balance record
+            Document transferdoc = new Document().append("FromOpalID", record.getFromOpalID()).append("ToOpalID", record.getToOpalID()).append("Value", record.getValue()).append("CustomerID", record.getCustomerID()).append("TransferDate", record.getTransferDate());
+            transferlist.insertOne(transferdoc);
+            double value = record.getValue();
+            // Deduct value from FromOpalID's balance
+            opallist.updateOne(eq("OpalID", record.getFromOpalID()), new Document("$inc", new Document("Balance", ((double) -value)))); 
+            // Add value to ToOpalID's balance
+            opallist.updateOne(eq("OpalID", record.getToOpalID()), new Document("$inc", new Document("Balance", ((double) value)))); 
+            test = "Test success";
+        } catch (Exception error) {
+            test = "Test error";
+        }
+        return test;
+    }
+    
+    public String testTransferHistory(String input, String type) {
+        MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
+        String test;
+        ArrayList<TransferBalance> records = new ArrayList<TransferBalance>();
+        try (MongoClient client = new MongoClient(uri)) {
+            MongoDatabase db = client.getDatabase(uri.getDatabase());
+            MongoCollection<Document> transferlist = db.getCollection("ASD-app-transferBalance");
+            // If the input is a date, change the date format from YYYY/MM/DD tp DD-MM-YYYY
+            if (type.equalsIgnoreCase("TransferDate")) {
+                input = input.substring(8,10) + "-" + input.substring(5,7) + "-" + input.substring(0,4);
+            }
+            for (Document doc : transferlist.find(eq(type, input))) {
+                TransferBalance record = new TransferBalance((String) doc.get("FromOpalID"), (String) doc.get("ToOpalID"), (double) doc.get("Value"), (String) doc.get("CustomerID"), (String) doc.get("TransferDate"));
+                records.add(record);
+            }
+        test = "Test success";
+        } catch (Exception error) {
+            test = "Test error";
+        } 
+        return test;
+    }
 // 
 
     

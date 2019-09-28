@@ -33,7 +33,7 @@
         %>
                 <div class="box">
                     <p>Destination Opal Card should not be the same as origin Opal Card</p>
-                    <button onClick="location.href='transferBalance.jsp'" >Back</button>
+                    <button id="backmain" onClick="location.href='transferBalance.jsp'" >Back</button>
                 </div>
         <%
             // If the cards are different cards
@@ -46,12 +46,24 @@
                 <div class="box">
                     <form method="POST" action="transferConfirmation.jsp">
                         <p>Available balance to be transfered : <%=card.getBalance()%></p>
-                        <input type="number" min="0" max="<%=card.getBalance()%>" step=".1" maxlength="6"
-                               placeholder="0.00" name="value" required> <br>
-                        <input type="submit" value="Next" name="Next">
+                            <select id="transferValue" name="value" required>
+                                <option id="5" value = "5.00">$5.00</option>
+                                <% if (card.getBalance() >= 10.00 ) { %>
+                                <option id="10" value = "10.0">$10.00</option>
+                                <% } if (card.getBalance() >= 15.00 ) { %>
+                                <option id="15" value = "15.0">$15.00</option>
+                                <% } if (card.getBalance() >= 30.00 ) { %>
+                                <option id="30" value = "30.0">$30.00</option>
+                                <% } if (card.getBalance() >= 50.00 ) { %>
+                                <option id="50" value = "50.0">$50.00</option>
+                                <% } %>
+                            </select>
+                        <br>
+                        <input type="submit" id="transferNext" value="Next" name="Next">
                     </form>
                 </div>
         <%
             }
         %>
+    </body>
 </html>
