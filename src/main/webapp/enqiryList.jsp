@@ -31,12 +31,13 @@
         %>    
                 <div class="table" style="max-width: 50%">
             <h1 class ="title">Users enqiries </h1>
-            <p class ="new">Create new <a href="newEnqiry.jsp"> enqiry</a> </p>
+            <p class ="new">Create new <a id="new_enqiry_" href="newEnqiry.jsp"> enqiry</a> </p>
             <table>
                 <thead>
                     <th>Title</th>
                     <th>User</th>
                     <th>&nbsp;</th>
+                    <th>is Answered?</th>
                 </thead>
         <%
             
@@ -50,10 +51,13 @@
                         <td>
                             <form method='POST' action='enqiryPage.jsp'>
                                 <input type="hidden" value="<%=enqiry.getEnqiryID()%>" name="EnqiryID">
-                                <input type="Submit" value="Details">
+                                <input type="Submit" id="enqiry_detail" value="Details">
                             </form>
                         </td>
-                        
+                        <td>
+                            <%if(enqiry.getAnswer() != null){%>YES<%}
+                            else{%>No<%}%>
+                        </td>
                     </tr>
         <%
             }               

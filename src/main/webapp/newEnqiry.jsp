@@ -60,7 +60,7 @@
                 String enqiryID = "" + (new Random()).nextInt(999999);
                 Enqiry selectedEnqiry = new Enqiry(customerID,question,answer,enqiryID,title) ;
                 connector.add(selectedEnqiry);%>
-                <h5>New enqiry has been posted click <a href="main.jsp">here</a> to get back to the main page</h5>
+                <h5>New enqiry has been posted click <a id ="main"href="main.jsp">here</a> to get back to the main page</h5>
         
           <%}%>
     </body>

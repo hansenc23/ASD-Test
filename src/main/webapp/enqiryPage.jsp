@@ -75,7 +75,7 @@
              <%if(customerID.equals(userID)){%>
            <form method='POST' action='enqiryEdit.jsp'>
              <input type="hidden" value="<%=enqiryID%>" name="EnqiryID">
-             <input type="Submit" class ="button" value="Edit your inqiry">
+             <input id="edit_your_inqiry_" type="Submit" class ="button" value="Edit your inqiry">
             </form>
        <%}%>
 </html>

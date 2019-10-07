@@ -34,7 +34,7 @@
 
                     
 
-                    <a href="userAccessManager.jsp">See history</a>
+                    <a id="sidebar_AccessManager"href="userAccessManager.jsp">See history</a>
             <%  
                 }
                 else{

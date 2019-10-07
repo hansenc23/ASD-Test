@@ -19,7 +19,7 @@
         <link rel="stylesheet" href="./css/enqiry.css"/>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <title>answer enqiry</title>
+        <title>Answer enqiry</title>
     </head>
     <body>
           <% MongoDBConnector connector = new MongoDBConnector();
@@ -32,7 +32,7 @@
             
             String title = selectedEnqiry.getTitle();
             String question = selectedEnqiry.getQuestion();
-            //String answer = selectedEnqiry.getAnswer();
+            String answer = selectedEnqiry.getAnswer();
             String customerID = selectedEnqiry.getCustomerID();
           %>
               <div class="title">          
@@ -49,12 +49,17 @@
            <div class="row">
                <label>insert your answer here</label>
                 <form method='POST' action='enqiryPageAnswer.jsp'>
-                  <textarea rows="7" cols="50" placeholder="Write the answer..." name="theAnswer"></textarea>
+                    
+                  <textarea id="edit_answer_" rows="7" cols="50" placeholder="Write the answer..." name="theAnswer"><%=answer%></textarea>
                     <%String theAnswer = request.getParameter("theAnswer"); %>
-                   <input type="submit" value="Name" name="AEnqiry">      
-                  <input type="hidden" value="<%=selectedEnqiry.getEnqiryID()%>" name="EnqiryID">
+                   <input type="submit" value="Submit Answer" name="AEnqiry">      
+                  <input id="submit_answer_" type="hidden" value="<%=selectedEnqiry.getEnqiryID()%>" name="EnqiryID">
                  </form>
            </div>
+                 <% if( selectedEnqiry.getAnswer()!= null)
+             {%>  
+                 <h5>Answer already exist.</h5>
+             <%}%> 
          </div>
           <% if(request.getParameter("AEnqiry")!=null)
              {  

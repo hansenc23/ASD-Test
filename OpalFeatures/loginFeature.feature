@@ -17,7 +17,7 @@
 #       And User fill user information
 #       And User click the "login_submit"
 #       And User click the "loginAction_success"
-#       And User click the "sidebar_accessManager"
+#       And User click the "sidebar_AccessManager"
 #       And User click the "delete"
 #       And User refresh page
 #       Then page should be navigated to "Access manager"

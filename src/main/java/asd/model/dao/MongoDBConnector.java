@@ -1804,8 +1804,86 @@ public class MongoDBConnector {
             enqirylist.updateOne(filter, combine(updateQuestion,updateAnswer));
        }
       }
-
-
+    //Test
+     //=================================================================================================================
+    public String testAdd(Enqiry enqiry) {
+        String test;
+        MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
+        try (MongoClient client = new MongoClient(uri)) {
+            MongoDatabase db = client.getDatabase(uri.getDatabase());
+            enqiries.add(new Document("customerID", enqiry.getCustomerID()).append("question", enqiry. getQuestion()).append("answer", enqiry.getAnswer()).append("enqiryID", enqiry.getEnqiryID()).append("title", enqiry.getTitle()));
+            MongoCollection<Document> enqirylist = db.getCollection("ASD-app-enqiries"); //Create a collection ASD-app-times on mLab
+           enqirylist.insertMany(enqiries);
+           test = "test succeed";
+        }catch(Exception error){
+              test = "error";
+             }
+        return test;
+    }  
+    public String testloadEnqiries() {
+        MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
+        Enqiries enqiries;
+        String test;
+        try (MongoClient client = new MongoClient(uri)) {
+            MongoDatabase db = client.getDatabase(uri.getDatabase());
+            enqiries = new Enqiries();
+            MongoCollection<Document> enqirylist = db.getCollection("ASD-app-enqiries");
+            for (Document doc : enqirylist.find()) {
+                Enqiry enqiry = new Enqiry((String) doc.get("customerID"), (String) doc.get("question"), (String) doc.get("answer"), (String) doc.get("enqiryID"),(String) doc.get("title"));
+                enqiries.addEnqiry(enqiry);
+            }
+            test = "test succeed"; 
+        }catch(Exception error){
+            test = "error";
+        }      
+        return test;
+    }      
+    public String testFindEnqiry(String enqiryID) {
+        MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
+        String test;
+        try (MongoClient client = new MongoClient(uri)) {
+            MongoDatabase db = client.getDatabase(uri.getDatabase());       
+            MongoCollection<Document> enqirylist = db.getCollection("ASD-app-enqiries");
+            Document doc = enqirylist.find(eq("enqiryID", enqiryID)).first();
+            Enqiry enqiry = new Enqiry((String) doc.get("customerID"), (String) doc.get("question"), (String) doc.get("answer"), (String) doc.get("enqiryID"),(String) doc.get("title"));
+            test = "test succeed";
+        }catch(Exception error){
+            test = "error";
+        }
+      return test;
+    }
+     public String testRemoveEnqiries(String enqiryID) {
+        MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
+        String test;
+        try (MongoClient client = new MongoClient(uri)) {
+            MongoDatabase db = client.getDatabase(uri.getDatabase());           
+            MongoCollection<Document> enqirylist = db.getCollection("ASD-app-enqiries"); //
+            enqirylist.deleteOne(eq("enqiryID", enqiryID));
+            test = "test succeed";
+        }catch(Exception error){
+            test = "error";
+        }
+        return test;
+    }
+    public String testUpdateEnqiry(Enqiry enqiry){
+         MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
+         String test;
+         try(MongoClient client = new MongoClient(uri)){
+            MongoDatabase db = client.getDatabase(uri.getDatabase());
+            MongoCollection<Document> enqirylist = db.getCollection("ASD-app-enqiries");
+            Document doc =  enqirylist.find(eq("enqiryID", enqiry.getEnqiryID())).first();
+            ObjectId _id = new ObjectId(doc.get("_id").toString());
+            Bson filter = Filters.and(Filters.eq("_id", _id));
+            Bson updateQuestion = Updates.set("question", enqiry.getQuestion());
+            Bson updateAnswer = Updates.set("answer", enqiry.getAnswer());
+            enqirylist.updateOne(filter, combine(updateQuestion,updateAnswer));
+        test = "test succeed";
+        }catch(Exception error){
+            test = "error";
+        }
+        return test;       
+      }
+   
     
    public String testAdd(Time time) {
         MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
@@ -1845,5 +1923,6 @@ public class MongoDBConnector {
         }
         return test;
     }
+     //=================================================================================================================
 }
 

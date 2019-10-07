@@ -20,7 +20,7 @@
         <link rel="stylesheet" href="./css/enqiry.css"/>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <title>JSP Page</title>
+        <title>Enqiry List</title>
     </head>
     <body>
          <%
@@ -41,6 +41,7 @@
                     <th>User</th>
                     <th>&nbsp;</th>
                     <th>&nbsp;</th>
+                    <th>is answered?</th>
                 </thead>
         <%
             
@@ -54,16 +55,19 @@
                         <td>
                             <form method='POST' action='enqiryPageAnswer.jsp'>
                                 <input type="hidden" value="<%=enqiry.getEnqiryID()%>" name="EnqiryID">
-                                <input type="Submit" value="Details">
+                                <input id="answer_enqiry_"type="Submit" value="Details">
                             </form>
                         </td>
                         <td>
                             <form method='POST' >
                                 <input type="hidden" value="<%=enqiry.getEnqiryID()%>" name="EnqiryID">
-                                <input type="Submit" value="Remove" name="Remove">
+                                <input id="remove_enqiry_" type="Submit" value="Remove" name="Remove">
                             </form>
                         </td>
-                        
+                        <td>
+                            <%if(enqiry.getAnswer() != null){%>YES<%}
+                            else{%>No<%}%>
+                        </td>
                     </tr>
         <%
             }               
