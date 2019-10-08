@@ -48,6 +48,15 @@ public class MongoDBConnector {
         
     }
     
+    public void removeUser(String userID) {
+        MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
+        try (MongoClient client = new MongoClient(uri)) {
+            MongoDatabase db = client.getDatabase(uri.getDatabase());
+            MongoCollection<Document> userlist = db.getCollection("ASD-app-users"); 
+            userlist.deleteOne(eq("UserID", userID));
+        }
+    }
+    
     public Users findUsersByID(String userID) {
         MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
         Users users;

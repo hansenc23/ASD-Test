@@ -21,7 +21,6 @@
     <body>
          <%
            MongoDBConnector connector = new MongoDBConnector();
-           
            Users dbUsers = new Users();
            ArrayList<User> users = new ArrayList<User>();
            
@@ -115,6 +114,7 @@
                         <th>isStaff</th>
                         <th></th>
                         <th></th>
+                        <th></th>
                       
                     </tr>
                 </thead>
@@ -160,13 +160,34 @@
                             </form>
                             
                         </td>
+                        <td>
+                            <form action="deletePage.jsp" method="post">
+                                <button type="submit" name="deleteBtn" class="button-error pure-button">Delete</button>
+                                <input type="hidden" name="userID" value="<%=user1.getUserID()%>">
+                                <input type="hidden" name="userEmail" value="<%=user1.getEmail()%>">
+                                <input type="hidden" name="userPassword" value="<%=user1.getPassword()%>">
+                                <input type="hidden" name="userFirstName" value="<%=user1.getFirstName()%>">
+                                <input type="hidden" name="userLastName" value="<%=user1.getLastName()%>">
+                                <input type="hidden" name="userAddress" value="<%=user1.getAddress()%>">
+                                <input type="hidden" name="userPhoneNumber" value="<%=user1.getPhoneNumber()%>">
+                                <input type="hidden" name="userPosition" value="<%=user1.getPosition()%>">
+                                <input type="hidden" name="userIsStaff" value="<%=user1.getIsStaff()%>">
+                            </form>
+                        </td>
                         
                     </tr>
                     <%}%>
                 </tbody>
             </table>
-                
-                
+                <%
+                    if(request.getParameter("deleteBtn") != null){
+                        
+                        String userID = request.getParameter("userID");
+                        connector.removeUser(userID);
+                       
+                    }
+                %>
+               
             
             </div>
                 

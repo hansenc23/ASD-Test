@@ -49,13 +49,20 @@ table td, table th {
     border: 0;
 }*/
 
-.button-secondary {
+.button-secondary,
+.button-error{
         color: white;
         padding: 7.5px;
         border-radius: 4px;
         text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
         background: #1C88CC;
     }
+    
+.button-error {
+
+   background: rgb(202, 60, 60); /* this is a maroon */
+
+}
 
 button:hover{
     opacity: 0.7;
