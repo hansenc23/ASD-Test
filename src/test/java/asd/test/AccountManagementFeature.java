@@ -47,7 +47,7 @@
 //    
 //    @Given("the page is {string}")
 //    public void the_page_is(String url) {
-//        driver.get("http://localhost:8080/ASD-Test/"+ url);
+//        driver.get("https://asd-test-app.herokuapp.com/"+ url);
 //    }
 //    
 //    @When("the user chooses {string}")
@@ -74,7 +74,7 @@
 //    
 //    @Given("user is on the page called {string}")
 //    public void user_is_on_the_page_called(String url) {
-//        driver.get("http://localhost:8080/ASD-Test/"+url);
+//        driver.get("https://asd-test-app.herokuapp.com/"+url);
 //    }
 //
 //    @When("the user clicks on a button {string}")
@@ -118,12 +118,12 @@
 ////    ////////////////////////////////////////////////////////////////////////////////////////////
 ////    
 ////    
-////    /*////////////SCENARIO: Succesfully forget password*///////////////////////////////////////
+////    /*////////////SCENARIO: Succesfully delete an account*///////////////////////////////////////
 ////
 //    @Given("USER is at the page called {string}")
 //    public void USER_is_at_the_page_called(String url) {
 //        // Write code here that turns the phrase above into concrete actions
-//        driver.get("http://localhost:8080/ASD-Test/"+url);
+//        driver.get("https://asd-test-app.herokuapp.com/"+url);
 //    }
 //
 //    @When("USER views account list {string}")
