@@ -133,7 +133,7 @@
                         <td><%=user1.getIsStaff()%></td>
                         <td>
                             <form action="viewProfile.jsp" method="get">
-                                <button type="submit" class="button-secondary pure-button">View</button>
+                                <button id="view_profile" type="submit" class="button-secondary pure-button">View</button>
                                 <input type="hidden" name="userID" value="<%=user1.getUserID()%>">
                                 <input type="hidden" name="userEmail" value="<%=user1.getEmail()%>">
                                 <input type="hidden" name="userPassword" value="<%=user1.getPassword()%>">
@@ -147,7 +147,7 @@
                         </td>
                         <td>
                             <form action="staffEdit.jsp" method="post">
-                                <button type="submit" class="button-success pure-button">Edit</button>
+                                <button id="edit_profile" type="submit" class="button-success pure-button">Edit</button>
                                 <input type="hidden" name="userID" value="<%=user1.getUserID()%>">
                                 <input type="hidden" name="userEmail" value="<%=user1.getEmail()%>">
                                 <input type="hidden" name="userPassword" value="<%=user1.getPassword()%>">
@@ -162,7 +162,7 @@
                         </td>
                         <td>
                             <form action="deletePage.jsp" method="post">
-                                <button type="submit" name="deleteBtn" class="button-error pure-button">Delete</button>
+                                <button id="delete_profile" type="submit" name="deleteBtn" class="button-error pure-button">Delete</button>
                                 <input type="hidden" name="userID" value="<%=user1.getUserID()%>">
                                 <input type="hidden" name="userEmail" value="<%=user1.getEmail()%>">
                                 <input type="hidden" name="userPassword" value="<%=user1.getPassword()%>">

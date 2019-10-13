@@ -15,7 +15,7 @@
     <body>
         <div class="sidenav">
             <a href="adminPage.jsp">Home</a>
-            <a href="accountList.jsp">Account Management</a>
+            <a id="account_management" href="accountList.jsp">Account Management</a>
             <a id="card_management" href="cardManagement.jsp">Card Management</a>
             <a id="order_management" href="orderManagement.jsp">Order Management</a>
             <a id="enqiry_management" href="enqiryListStaff.jsp">Enquiry Management</a>
