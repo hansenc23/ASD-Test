@@ -53,7 +53,14 @@
 //    driver.findElement(By.id("login_email")).sendKeys("tom@gmail.com");
 //    driver.findElement(By.id("login_password")).sendKeys("tomcruise");
 //    
-//}        
+//}      
+//@When("User fill user admin information")
+//public void user_fill_admin_user_information() {
+//    
+//    driver.findElement(By.id("login_email")).sendKeys("kevinroderick12@gmail.com");
+//    driver.findElement(By.id("login_password")).sendKeys("123");
+//    
+//}  
 //@When("User refresh page")
 //       public void user_refresh_page(){
 //           driver.navigate().refresh();
