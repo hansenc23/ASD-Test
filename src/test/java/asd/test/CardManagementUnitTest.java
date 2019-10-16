@@ -36,7 +36,7 @@
 //    public static void setUpClass() throws UnknownHostException {
 //        connector = new MongoDBConnector();
 //        System.out.println("Establish connection to DB");
-//        User user = new User("Yuna", "Natalie", "yuna@gmail.com", "1234567", "Araya Tahap 2", "123421521", "false", "");
+//        User user = new User("Yuna", "Natalie", "yuna@gmail.com", "1234567", "Araya Tahap 2", "123421521", "false", "98989");
 //        connector.add(user);
 //    }
 //    

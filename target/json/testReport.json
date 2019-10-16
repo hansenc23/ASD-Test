@@ -1,643 +1,1615 @@
 [
   {
-    "line": 5,
+    "line": 1,
     "elements": [
       {
-        "start_timestamp": "2019-10-16T11:00:45.708Z",
-        "line": 8,
-        "name": "Successfully view account details",
+        "start_timestamp": "2019-10-16T13:43:23.855Z",
+        "line": 3,
+        "name": "Successfully link Opal card to account",
         "description": "",
-        "id": "account-management;successfully-view-account-details",
+        "id": "card-management-feature;successfully-link-opal-card-to-account",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 4386634258,
+              "duration": 10871113500,
               "status": "passed"
             },
-            "line": 9,
-            "name": "the page is \"adminPage.jsp\"",
+            "line": 4,
+            "name": "the User is logged in to the website",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"adminPage.jsp\"",
-                  "offset": 12
-                }
-              ],
-              "location": "AccountManagementFeature.the_page_is(String)"
+              "location": "CardManagementFeature.the_User_is_logged_in_to_the_website()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 942128335,
+              "duration": 513214300,
               "status": "passed"
             },
-            "line": 10,
-            "name": "the user chooses \"account_management\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"account_management\"",
-                  "offset": 17
-                }
-              ],
-              "location": "AccountManagementFeature.the_user_chooses(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 861926377,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "the user views \"view_profile\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"view_profile\"",
-                  "offset": 15
-                }
-              ],
-              "location": "AccountManagementFeature.the_user_views(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 122743970,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "the user should be directed to a page called \"Profile\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Profile\"",
-                  "offset": 45
-                }
-              ],
-              "location": "AccountManagementFeature.the_user_should_be_directed_to_a_page_called(String)"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2019-10-16T11:00:52.025Z",
-        "line": 15,
-        "name": "Successfully edit account details",
-        "description": "",
-        "id": "account-management;successfully-edit-account-details",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 3540353984,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "user is on the page called \"adminPage.jsp\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"adminPage.jsp\"",
-                  "offset": 27
-                }
-              ],
-              "location": "AccountManagementFeature.user_is_on_the_page_called(String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 768527264,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "the user clicks on a button \"account_management\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"account_management\"",
-                  "offset": 28
-                }
-              ],
-              "location": "AccountManagementFeature.the_user_clicks_on_a_button(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 593743474,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "the user wants to edit account details \"edit_profile\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"edit_profile\"",
-                  "offset": 39
-                }
-              ],
-              "location": "AccountManagementFeature.the_user_wants_to_edit_account_details(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1719395374,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "the user fill in new details",
-            "match": {
-              "location": "AccountManagementFeature.the_user_fill_in_new_details()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1260230214,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "the user goes back to account list \"back_to_profile\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"back_to_profile\"",
-                  "offset": 35
-                }
-              ],
-              "location": "AccountManagementFeature.the_user_goes_back_to_account_list(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 113372020,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "the page title should be \"Account List\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Account List\"",
-                  "offset": 25
-                }
-              ],
-              "location": "AccountManagementFeature.the_page_title_should_be(String)"
-            },
-            "keyword": "Then "
-          }
-        ]
-      }
-    ],
-    "name": "Account Management",
-    "description": "",
-    "id": "account-management",
-    "keyword": "Feature",
-    "uri": "file:OpalFeatures/AccountManagementFeature.feature",
-    "tags": []
-  },
-  {
-    "line": 3,
-    "elements": [
-      {
-        "start_timestamp": "2019-10-16T11:01:00.024Z",
-        "line": 5,
-        "name": "Successfully created an account",
-        "description": "",
-        "id": "online-user-registration;successfully-created-an-account",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 3545960351,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "User is at \"main.jsp\"",
+            "line": 5,
+            "name": "is now in the \"main.jsp\"",
             "match": {
               "arguments": [
                 {
                   "val": "\"main.jsp\"",
-                  "offset": 11
+                  "offset": 14
                 }
               ],
-              "location": "RegisterFeature.User_is_at(String)"
+              "location": "CardManagementFeature.is_in_the(String)"
             },
-            "keyword": "Given "
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 676143631,
+              "duration": 829384300,
               "status": "passed"
             },
-            "line": 7,
-            "name": "User taps \"navbar_register\"",
+            "line": 6,
+            "name": "User clicks \"sidebar_linkCard\" button",
             "match": {
               "arguments": [
                 {
-                  "val": "\"navbar_register\"",
-                  "offset": 10
+                  "val": "\"sidebar_linkCard\"",
+                  "offset": 12
                 }
               ],
-              "location": "RegisterFeature.user_taps(String)"
+              "location": "CardManagementFeature.user_clicks(String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 1359405056,
+              "duration": 602518700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User fill in \"OpalID\" with \"\u003cOpalID\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"OpalID\"",
+                  "offset": 13
+                },
+                {
+                  "val": "\"\u003cOpalID\u003e\"",
+                  "offset": 27
+                }
+              ],
+              "location": "CardManagementFeature.user_fill_in_with(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 184486000,
               "status": "passed"
             },
             "line": 8,
-            "name": "User fill in the registration detail",
+            "name": "User fill in \"securityCode\" with \"\u003csecurityCode\u003e\"",
             "match": {
-              "location": "RegisterFeature.User_fill_in_the_registration_detail()"
+              "arguments": [
+                {
+                  "val": "\"securityCode\"",
+                  "offset": 13
+                },
+                {
+                  "val": "\"\u003csecurityCode\u003e\"",
+                  "offset": 33
+                }
+              ],
+              "location": "CardManagementFeature.user_fill_in_with(String,String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 495804865,
+              "duration": 812820300,
               "status": "passed"
             },
             "line": 9,
-            "name": "User backs \"back\"",
+            "name": "User submit the form by clicking \"link\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"back\"",
-                  "offset": 11
+                  "val": "\"link\"",
+                  "offset": 33
                 }
               ],
-              "location": "RegisterFeature.User_backs(String)"
+              "location": "CardManagementFeature.user_submit_by_clicking(String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 128147030,
+              "duration": 819559000,
               "status": "passed"
             },
             "line": 10,
-            "name": "user should be directed to \"Card Page\"",
+            "name": "the page should give a green success feedback",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"Card Page\"",
-                  "offset": 27
-                }
-              ],
-              "location": "RegisterFeature.user_should_be_directed_to(String)"
+              "location": "CardManagementFeature.the_page_should_give_a_green_success_feedback()"
             },
             "keyword": "Then "
           }
         ]
       },
       {
-        "start_timestamp": "2019-10-16T11:01:06.231Z",
-        "line": 12,
-        "name": "Successfully update account details",
+        "start_timestamp": "2019-10-16T13:43:38.495Z",
+        "line": 22,
+        "name": "Failed linking Opal card with wrong Opal details",
         "description": "",
-        "id": "online-user-registration;successfully-update-account-details",
+        "id": "card-management-feature;failed-linking-opal-card-with-wrong-opal-details;;2",
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 3478465876,
+              "duration": 10151081900,
               "status": "passed"
             },
             "line": 13,
-            "name": "page is on \"login.jsp\"",
+            "name": "the User is logged in to the website",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"login.jsp\"",
-                  "offset": 11
-                }
-              ],
-              "location": "RegisterFeature.page_is_on(String)"
+              "location": "CardManagementFeature.the_User_is_logged_in_to_the_website()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 738499030,
+              "duration": 451325700,
               "status": "passed"
             },
             "line": 14,
-            "name": "user fills login credentials",
-            "match": {
-              "location": "RegisterFeature.user_fills_login_credentials()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 922572207,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "user login success \"loginAction_success\"",
+            "name": "is now in the \"main.jsp\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"loginAction_success\"",
-                  "offset": 19
-                }
-              ],
-              "location": "RegisterFeature.user_click(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 815914063,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "user open profile \"navbar_profile\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"navbar_profile\"",
-                  "offset": 18
-                }
-              ],
-              "location": "RegisterFeature.user_open_profile(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 650283421,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "user click edit \"edit_profile\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"edit_profile\"",
-                  "offset": 16
-                }
-              ],
-              "location": "RegisterFeature.user_click_edit(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 882527676,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "User updates account details",
-            "match": {
-              "location": "RegisterFeature.User_updates_account_details()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 523184434,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "user goes back \"back_to_profile\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"back_to_profile\"",
-                  "offset": 15
-                }
-              ],
-              "location": "RegisterFeature.user_goes_back(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 411036332,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "user wants to change password \"change_password\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"change_password\"",
-                  "offset": 30
-                }
-              ],
-              "location": "RegisterFeature.user_wants_to_change_password(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 674909496,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "User fill in new password",
-            "match": {
-              "location": "RegisterFeature.User_fill_in_new_password()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 675647980,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "user tap back \"back_to_profile\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"back_to_profile\"",
+                  "val": "\"main.jsp\"",
                   "offset": 14
                 }
               ],
-              "location": "RegisterFeature.user_tap_back(String)"
+              "location": "CardManagementFeature.is_in_the(String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 337513931,
+              "duration": 618879500,
               "status": "passed"
             },
-            "line": 23,
-            "name": "user wants to add question \"add_question\"",
+            "line": 15,
+            "name": "User clicks \"sidebar_linkCard\" button",
             "match": {
               "arguments": [
                 {
-                  "val": "\"add_question\"",
+                  "val": "\"sidebar_linkCard\"",
+                  "offset": 12
+                }
+              ],
+              "location": "CardManagementFeature.user_clicks(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 351170500,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User fill in \"OpalID\" with \"0000 0000 0000 0000\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"OpalID\"",
+                  "offset": 13
+                },
+                {
+                  "val": "\"0000 0000 0000 0000\"",
                   "offset": 27
                 }
               ],
-              "location": "RegisterFeature.user_wants_to_add_question(String)"
+              "location": "CardManagementFeature.user_fill_in_with(String,String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 758317760,
+              "duration": 158820400,
               "status": "passed"
             },
-            "line": 24,
-            "name": "user select the necessary question",
-            "match": {
-              "location": "RegisterFeature.user_select_the_necessary_question()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 742301187,
-              "status": "passed"
-            },
-            "line": 25,
-            "name": "User go previous page \"back_to_profile\"",
+            "line": 17,
+            "name": "User fill in \"securityCode\" with \"0000\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"back_to_profile\"",
-                  "offset": 22
+                  "val": "\"securityCode\"",
+                  "offset": 13
+                },
+                {
+                  "val": "\"0000\"",
+                  "offset": 33
                 }
               ],
-              "location": "RegisterFeature.User_go_previous_page(String)"
+              "location": "CardManagementFeature.user_fill_in_with(String,String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 107706072,
+              "duration": 792083900,
               "status": "passed"
             },
-            "line": 26,
-            "name": "User should see profile page \"Profile\"",
+            "line": 18,
+            "name": "User submit the form by clicking \"link\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Profile\"",
-                  "offset": 29
+                  "val": "\"link\"",
+                  "offset": 33
                 }
               ],
-              "location": "RegisterFeature.User_should_see_profile_page(String)"
+              "location": "CardManagementFeature.user_submit_by_clicking(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 719642300,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "the page should give a red fail feedback",
+            "match": {
+              "location": "CardManagementFeature.the_page_should_give_a_red_fail_feedback()"
             },
             "keyword": "Then "
           }
         ]
       },
       {
-        "start_timestamp": "2019-10-16T11:01:17.953Z",
-        "line": 28,
-        "name": "Successfully forget password",
+        "start_timestamp": "2019-10-16T13:43:51.739Z",
+        "line": 24,
+        "name": "Successfully unlink Opal card from account",
         "description": "",
-        "id": "online-user-registration;successfully-forget-password",
+        "id": "card-management-feature;successfully-unlink-opal-card-from-account",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 4177614237,
+              "duration": 10336157100,
               "status": "passed"
             },
-            "line": 29,
-            "name": "the page shows \"login.jsp\"",
+            "line": 25,
+            "name": "the User is logged in to the website",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"login.jsp\"",
-                  "offset": 15
-                }
-              ],
-              "location": "RegisterFeature.the_page_shows(String)"
+              "location": "CardManagementFeature.the_User_is_logged_in_to_the_website()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 722068140,
+              "duration": 467219800,
               "status": "passed"
             },
-            "line": 30,
-            "name": "user forgets \"forget_button\"",
+            "line": 26,
+            "name": "is now in the \"main.jsp\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"forget_button\"",
-                  "offset": 13
+                  "val": "\"main.jsp\"",
+                  "offset": 14
                 }
               ],
-              "location": "RegisterFeature.user_forgets(String)"
+              "location": "CardManagementFeature.is_in_the(String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 812017066,
+              "duration": 631000500,
               "status": "passed"
             },
-            "line": 31,
-            "name": "User types email",
+            "line": 27,
+            "name": "User clicks \"sidebar_unlinkCard\" button",
             "match": {
-              "location": "RegisterFeature.User_types_email()"
+              "arguments": [
+                {
+                  "val": "\"sidebar_unlinkCard\"",
+                  "offset": 12
+                }
+              ],
+              "location": "CardManagementFeature.user_clicks(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 260454600,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "User click on \"unlink\" for \"opalID\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"unlink\"",
+                  "offset": 14
+                },
+                {
+                  "val": "\"opalID\"",
+                  "offset": 27
+                }
+              ],
+              "location": "CardManagementFeature.user_click_on_for(String,String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 1008848751,
+              "duration": 1398822100,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "User should not see \"opalID\" in the \"Unlink Card Page\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"opalID\"",
+                  "offset": 20
+                },
+                {
+                  "val": "\"Unlink Card Page\"",
+                  "offset": 36
+                }
+              ],
+              "location": "CardManagementFeature.user_should_not_see_in_the(String,String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-10-16T13:44:04.835Z",
+        "line": 31,
+        "name": "Successfully search an Opal Card by Opal ID",
+        "description": "",
+        "id": "card-management-feature;successfully-search-an-opal-card-by-opal-id",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9835322000,
               "status": "passed"
             },
             "line": 32,
-            "name": "user answer the question",
+            "name": "the User is logged in to the website",
             "match": {
-              "location": "RegisterFeature.user_answer_the_question()"
+              "location": "CardManagementFeature.the_User_is_logged_in_to_the_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 419592400,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "is now in the \"main.jsp\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"main.jsp\"",
+                  "offset": 14
+                }
+              ],
+              "location": "CardManagementFeature.is_in_the(String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 114534096,
+              "duration": 83094900,
               "status": "passed"
             },
-            "line": 33,
-            "name": "page will show old password \"Forget Password\"",
+            "line": 34,
+            "name": "User select an \"OpalID\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Forget Password\"",
+                  "val": "\"OpalID\"",
+                  "offset": 15
+                }
+              ],
+              "location": "CardManagementFeature.user_select_an(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 531746300,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "User submit the form by clicking \"Search\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Search\"",
+                  "offset": 33
+                }
+              ],
+              "location": "CardManagementFeature.user_submit_by_clicking(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 756656900,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "the searched \"OpalID\" should be shown in the page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"OpalID\"",
+                  "offset": 13
+                }
+              ],
+              "location": "CardManagementFeature.the_searched_should_be_shown_in_the_page(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-10-16T13:44:16.462Z",
+        "line": 38,
+        "name": "Successfully view the details of the Opal card",
+        "description": "",
+        "id": "card-management-feature;successfully-view-the-details-of-the-opal-card",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 10522933500,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "the User is logged in to the website",
+            "match": {
+              "location": "CardManagementFeature.the_User_is_logged_in_to_the_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 600965200,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "is now in the \"main.jsp\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"main.jsp\"",
+                  "offset": 14
+                }
+              ],
+              "location": "CardManagementFeature.is_in_the(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 741797500,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "User click on \"Details\" for \"opalID\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Details\"",
+                  "offset": 14
+                },
+                {
+                  "val": "\"opalID\"",
                   "offset": 28
                 }
               ],
-              "location": "RegisterFeature.page_will_show_old_password(String)"
+              "location": "CardManagementFeature.user_click_on_for(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 706224300,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "the page should be navigated to \"Card Details Page\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Card Details Page\"",
+                  "offset": 32
+                }
+              ],
+              "location": "CardManagementFeature.the_page_should_be_navigated_to(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-10-16T13:44:29.036Z",
+        "line": 46,
+        "name": "Successfully register an Opal Card",
+        "description": "",
+        "id": "card-management-feature;successfully-register-an-opal-card",
+        "after": [
+          {
+            "result": {
+              "duration": 5277618000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CardManagementFeature.removeTestCard()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9407590200,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "the Staff is logged in to the website",
+            "match": {
+              "location": "CardManagementFeature.the_Staff_is_loggied_in_to_the_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 692449100,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "the Staff click on \"card_management\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"card_management\"",
+                  "offset": 19
+                }
+              ],
+              "location": "CardManagementFeature.the_Staff_click_on(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 716494300,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "the Staff click on \"register_card\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"register_card\"",
+                  "offset": 19
+                }
+              ],
+              "location": "CardManagementFeature.the_Staff_click_on(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 641731300,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "the Staff fill in the new Opal Card details for \"OpalID\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"OpalID\"",
+                  "offset": 48
+                }
+              ],
+              "location": "CardManagementFeature.the_Staff_fill_in_the_new_Opal_Card_details_for(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 615328500,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "the Staff submit by clicking \"link\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"link\"",
+                  "offset": 29
+                }
+              ],
+              "location": "CardManagementFeature.the_Staff_submit_by_clicking(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 713746800,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "the page should shows a green success feedback",
+            "match": {
+              "location": "CardManagementFeature.the_page_should_shows_a_green_success_feedback()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@register_card"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-10-16T13:44:47.107Z",
+        "line": 63,
+        "name": "Failed register an Opal Card",
+        "description": "",
+        "id": "card-management-feature;failed-register-an-opal-card;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 9786503200,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "the Staff is logged in to the website",
+            "match": {
+              "location": "CardManagementFeature.the_Staff_is_loggied_in_to_the_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 672578800,
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "the Staff click on \"card_management\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"card_management\"",
+                  "offset": 19
+                }
+              ],
+              "location": "CardManagementFeature.the_Staff_click_on(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 741990200,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "the Staff click on \"register_card\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"register_card\"",
+                  "offset": 19
+                }
+              ],
+              "location": "CardManagementFeature.the_Staff_click_on(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 580105000,
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "the Staff fill in the new Opal Card details for \"8888 8888 8888 8888\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"8888 8888 8888 8888\"",
+                  "offset": 48
+                }
+              ],
+              "location": "CardManagementFeature.the_Staff_fill_in_the_new_Opal_Card_details_for(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 531952000,
+              "status": "passed"
+            },
+            "line": 59,
+            "name": "the Staff submit by clicking \"link\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"link\"",
+                  "offset": 29
+                }
+              ],
+              "location": "CardManagementFeature.the_Staff_submit_by_clicking(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 711467500,
+              "status": "passed"
+            },
+            "line": 60,
+            "name": "the page should shows a red fail feedback",
+            "match": {
+              "location": "CardManagementFeature.the_page_should_shows_a_red_fail_feedback()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-10-16T13:45:00.132Z",
+        "line": 65,
+        "name": "Successfully list all Opal cards",
+        "description": "",
+        "id": "card-management-feature;successfully-list-all-opal-cards",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9626010000,
+              "status": "passed"
+            },
+            "line": 66,
+            "name": "the Staff is logged in to the website",
+            "match": {
+              "location": "CardManagementFeature.the_Staff_is_loggied_in_to_the_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 703053800,
+              "status": "passed"
+            },
+            "line": 67,
+            "name": "the Staff click on \"card_management\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"card_management\"",
+                  "offset": 19
+                }
+              ],
+              "location": "CardManagementFeature.the_Staff_click_on(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1067542900,
+              "status": "passed"
+            },
+            "line": 68,
+            "name": "the Staff click on \"show_all_cards\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"show_all_cards\"",
+                  "offset": 19
+                }
+              ],
+              "location": "CardManagementFeature.the_Staff_click_on(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 993126300,
+              "status": "passed"
+            },
+            "line": 69,
+            "name": "the page should show all Opal cards",
+            "match": {
+              "location": "CardManagementFeature.the_page_should_show_all_Opal_cards()"
             },
             "keyword": "Then "
           }
         ]
       }
     ],
-    "name": "Online User Registration",
+    "name": "Card Management Feature",
     "description": "",
-    "id": "online-user-registration",
+    "id": "card-management-feature",
     "keyword": "Feature",
-    "uri": "file:OpalFeatures/UserRegistrationFeature.feature",
+    "uri": "file:OpalFeatures/CardManagementFeature.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2019-10-16T13:45:12.523Z",
+        "line": 3,
+        "name": "Successfully transfer balance",
+        "description": "",
+        "id": "transfer-balance-management;successfully-transfer-balance",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 10051758300,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the User is already logs in to the website",
+            "match": {
+              "location": "TransferBalanceFeature.the_User_is_already_logs_in_to_the_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 912945200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the User clicks the \"sidebar_transferBalance\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"sidebar_transferBalance\"",
+                  "offset": 20
+                }
+              ],
+              "location": "TransferBalanceFeature.the_User_clicks_the(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 157194700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the User choose the \"fromOpalID\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"fromOpalID\"",
+                  "offset": 20
+                }
+              ],
+              "location": "TransferBalanceFeature.the_User_choose_the(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 216504900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the User choose the \"toOpalID\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"toOpalID\"",
+                  "offset": 20
+                }
+              ],
+              "location": "TransferBalanceFeature.the_User_choose_the(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 549263300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the User submit it by clicks on \"transferContinue\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"transferContinue\"",
+                  "offset": 32
+                }
+              ],
+              "location": "TransferBalanceFeature.the_User_submit_it_by_clicks_on(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 171676700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the User choose the \"transferValue\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"transferValue\"",
+                  "offset": 20
+                }
+              ],
+              "location": "TransferBalanceFeature.the_User_choose_the(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 610981600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the User submit it by clicks on \"transferNext\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"transferNext\"",
+                  "offset": 32
+                }
+              ],
+              "location": "TransferBalanceFeature.the_User_submit_it_by_clicks_on(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 314991900,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the User see that the details are correct",
+            "match": {
+              "location": "TransferBalanceFeature.the_User_see_that_the_details_are_correct()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 600771700,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the User clicks on \"confirmTransfer\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"confirmTransfer\"",
+                  "offset": 19
+                }
+              ],
+              "location": "TransferBalanceFeature.the_User_clicks_on(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 861078100,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "the User should see transfer success message",
+            "match": {
+              "location": "TransferBalanceFeature.the_User_should_see_transfer_success_message()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-10-16T13:45:26.972Z",
+        "line": 15,
+        "name": "Successfully edit transfer balance before confirmation",
+        "description": "",
+        "id": "transfer-balance-management;successfully-edit-transfer-balance-before-confirmation",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9842174400,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "the User is already logs in to the website",
+            "match": {
+              "location": "TransferBalanceFeature.the_User_is_already_logs_in_to_the_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 945683100,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "the User clicks the \"sidebar_transferBalance\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"sidebar_transferBalance\"",
+                  "offset": 20
+                }
+              ],
+              "location": "TransferBalanceFeature.the_User_clicks_the(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 102445300,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "the User choose the \"fromOpalID\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"fromOpalID\"",
+                  "offset": 20
+                }
+              ],
+              "location": "TransferBalanceFeature.the_User_choose_the(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 138989500,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "the User choose the \"toOpalID\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"toOpalID\"",
+                  "offset": 20
+                }
+              ],
+              "location": "TransferBalanceFeature.the_User_choose_the(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 557419300,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "the User submit it by clicks on \"transferContinue\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"transferContinue\"",
+                  "offset": 32
+                }
+              ],
+              "location": "TransferBalanceFeature.the_User_submit_it_by_clicks_on(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 93989900,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "the User choose the \"transferValue\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"transferValue\"",
+                  "offset": 20
+                }
+              ],
+              "location": "TransferBalanceFeature.the_User_choose_the(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 520280200,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "the User submit it by clicks on \"transferNext\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"transferNext\"",
+                  "offset": 32
+                }
+              ],
+              "location": "TransferBalanceFeature.the_User_submit_it_by_clicks_on(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 186246800,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "the User see that the details are correct",
+            "match": {
+              "location": "TransferBalanceFeature.the_User_see_that_the_details_are_correct()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 672427700,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "the User clicks on \"editTransfer\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"editTransfer\"",
+                  "offset": 19
+                }
+              ],
+              "location": "TransferBalanceFeature.the_User_clicks_on(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 478011000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "the User edit the transfer balance details",
+            "match": {
+              "location": "TransferBalanceFeature.the_User_edit_the_transfer_balance_details()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 649694500,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "the User clicks on \"submitEdit\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"submitEdit\"",
+                  "offset": 19
+                }
+              ],
+              "location": "TransferBalanceFeature.the_User_clicks_on(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 615854200,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "the User clicks on \"confirmTransfer\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"confirmTransfer\"",
+                  "offset": 19
+                }
+              ],
+              "location": "TransferBalanceFeature.the_User_clicks_on(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 851516400,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "the User should see transfer success message",
+            "match": {
+              "location": "TransferBalanceFeature.the_User_should_see_transfer_success_message()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-10-16T13:45:42.629Z",
+        "line": 30,
+        "name": "Successfully cancel transfer balance",
+        "description": "",
+        "id": "transfer-balance-management;successfully-cancel-transfer-balance",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9934996700,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "the User is already logs in to the website",
+            "match": {
+              "location": "TransferBalanceFeature.the_User_is_already_logs_in_to_the_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 908372800,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "the User clicks the \"sidebar_transferBalance\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"sidebar_transferBalance\"",
+                  "offset": 20
+                }
+              ],
+              "location": "TransferBalanceFeature.the_User_clicks_the(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 77823200,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "the User choose the \"fromOpalID\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"fromOpalID\"",
+                  "offset": 20
+                }
+              ],
+              "location": "TransferBalanceFeature.the_User_choose_the(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 122620800,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "the User choose the \"toOpalID\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"toOpalID\"",
+                  "offset": 20
+                }
+              ],
+              "location": "TransferBalanceFeature.the_User_choose_the(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 452272200,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "the User submit it by clicks on \"transferContinue\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"transferContinue\"",
+                  "offset": 32
+                }
+              ],
+              "location": "TransferBalanceFeature.the_User_submit_it_by_clicks_on(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 97085700,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "the User choose the \"transferValue\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"transferValue\"",
+                  "offset": 20
+                }
+              ],
+              "location": "TransferBalanceFeature.the_User_choose_the(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 433413800,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "the User submit it by clicks on \"transferNext\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"transferNext\"",
+                  "offset": 32
+                }
+              ],
+              "location": "TransferBalanceFeature.the_User_submit_it_by_clicks_on(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 179253200,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "the User see that the details are correct",
+            "match": {
+              "location": "TransferBalanceFeature.the_User_see_that_the_details_are_correct()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 456471000,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "the User clicks on \"cancelTransfer\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"cancelTransfer\"",
+                  "offset": 19
+                }
+              ],
+              "location": "TransferBalanceFeature.the_User_clicks_on(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 849493300,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "the User should see cancelled transfer message",
+            "match": {
+              "location": "TransferBalanceFeature.the_User_should_see_cancelled_transfer_message()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-10-16T13:45:56.142Z",
+        "line": 42,
+        "name": "Successfully list transfer balance history",
+        "description": "",
+        "id": "transfer-balance-management;successfully-list-transfer-balance-history",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 10388645400,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "the User is already logs in to the website",
+            "match": {
+              "location": "TransferBalanceFeature.the_User_is_already_logs_in_to_the_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 875694000,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "the User clicks the \"sidebar_transferBalance\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"sidebar_transferBalance\"",
+                  "offset": 20
+                }
+              ],
+              "location": "TransferBalanceFeature.the_User_clicks_the(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 580424300,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "the User clicks on \"showTransferHistory\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"showTransferHistory\"",
+                  "offset": 19
+                }
+              ],
+              "location": "TransferBalanceFeature.the_User_clicks_on(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 820372200,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "the User should see the list of transfer balance history",
+            "match": {
+              "location": "TransferBalanceFeature.the_User_should_see_the_list_of_transfer_balance_history()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-10-16T13:46:08.808Z",
+        "line": 48,
+        "name": "Successfully search transfer balance history by date",
+        "description": "",
+        "id": "transfer-balance-management;successfully-search-transfer-balance-history-by-date",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9765060800,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "the User is already logs in to the website",
+            "match": {
+              "location": "TransferBalanceFeature.the_User_is_already_logs_in_to_the_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 832402200,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "the User clicks the \"sidebar_transferBalance\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"sidebar_transferBalance\"",
+                  "offset": 20
+                }
+              ],
+              "location": "TransferBalanceFeature.the_User_clicks_the(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 463426700,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "the User clicks on \"showTransferHistory\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"showTransferHistory\"",
+                  "offset": 19
+                }
+              ],
+              "location": "TransferBalanceFeature.the_User_clicks_on(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 96556700,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "the User choose the \"enterDate\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"enterDate\"",
+                  "offset": 20
+                }
+              ],
+              "location": "TransferBalanceFeature.the_User_choose_the(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 571501900,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "the User clicks on \"searchTransID\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"searchTransID\"",
+                  "offset": 19
+                }
+              ],
+              "location": "TransferBalanceFeature.the_User_clicks_on(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 785065400,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "the User should see record on the searched date",
+            "match": {
+              "location": "TransferBalanceFeature.the_User_should_see_record_on_the_searched_date()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Transfer Balance Management",
+    "description": "",
+    "id": "transfer-balance-management",
+    "keyword": "Feature",
+    "uri": "file:OpalFeatures/TransferBalanceFeature.feature",
     "tags": []
   }
 ]

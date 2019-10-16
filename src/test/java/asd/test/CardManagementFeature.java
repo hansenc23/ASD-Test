@@ -45,12 +45,12 @@
 //        driver.findElement(By.id("loginAction_success")).click();
 //    }
 //
-//    @Given("is in the {string}")
+//    @Given("is now in the {string}")
 //    public void is_in_the(String url) {
 //        driver.get("https://asd-test-app.herokuapp.com/"+ url);
 //    }
 //   
-//        @When("User clicks {string}")
+//        @When("User clicks {string} button")
 //    public void user_clicks(String buttonName) {
 //        driver.findElement(By.id(buttonName)).click();
 //    }
@@ -91,7 +91,7 @@
 //        driver.quit();
 //    }
 ////     
-//    @When("User submit by clicking {string}")
+//    @When("User submit the form by clicking {string}")
 //    public void user_submit_by_clicking(String submitName) {
 //         driver.findElement(By.name(submitName)).click();
 //    }
@@ -152,7 +152,7 @@
 //    @Given("the Staff is logged in to the website")
 //    public void the_Staff_is_loggied_in_to_the_website() {
 //        driver.get("https://asd-test-app.herokuapp.com/login.jsp");
-//        driver.findElement(By.id("login_email")).sendKeys("staff@gmail.com");
+//        driver.findElement(By.id("login_email")).sendKeys("staff1@gmail.com");
 //        driver.findElement(By.id("login_password")).sendKeys("staff");
 //        driver.findElement(By.id("login_submit")).click();
 //        driver.findElement(By.id("loginAction_success")).click();

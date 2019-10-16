@@ -2,20 +2,20 @@
 #     
 #     Scenario: Successfully link Opal card to account    
 #       Given the User is logged in to the website
-#       And is in the "main.jsp"
-#       When User clicks "sidebar_linkCard"
+#       And is now in the "main.jsp"
+#       When User clicks "sidebar_linkCard" button
 #       And User fill in "OpalID" with "<OpalID>"
 #       And User fill in "securityCode" with "<securityCode>"
-#       And User submit by clicking "link"
+#       And User submit the form by clicking "link"
 #       Then the page should give a green success feedback
 #   
 #     Scenario Outline: Failed linking Opal card with wrong Opal details
 #       Given the User is logged in to the website
-#       And is in the "main.jsp"
-#       When User clicks "sidebar_linkCard"
+#       And is now in the "main.jsp"
+#       When User clicks "sidebar_linkCard" button
 #       And User fill in "OpalID" with "<FailOpalID>"
 #       And User fill in "securityCode" with "<FailSecurityCode>"
-#       And User submit by clicking "link"
+#       And User submit the form by clicking "link"
 #       Then the page should give a red fail feedback
 #       Examples:
 #       |FailOpalID|FailSecurityCode|
@@ -23,21 +23,21 @@
 #   
 #     Scenario: Successfully unlink Opal card from account    
 #       Given the User is logged in to the website
-#       And is in the "main.jsp"
-#       When User clicks "sidebar_unlinkCard"
+#       And is now in the "main.jsp"
+#       When User clicks "sidebar_unlinkCard" button
 #       And User click on "unlink" for "opalID"
 #       Then User should not see "opalID" in the "Unlink Card Page"
 #   
 #     Scenario: Successfully search an Opal Card by Opal ID
 #       Given the User is logged in to the website
-#       And is in the "main.jsp"
+#       And is now in the "main.jsp"
 #       When User select an "OpalID"
-#       And User submit by clicking "Search"
+#       And User submit the form by clicking "Search"
 #       Then the searched "OpalID" should be shown in the page
 #   
 #     Scenario: Successfully view the details of the Opal card
 #       Given the User is logged in to the website
-#       And is in the "main.jsp"
+#       And is now in the "main.jsp"
 #       When User click on "Details" for "opalID"
 #       Then the page should be navigated to "Card Details Page"
 #   
