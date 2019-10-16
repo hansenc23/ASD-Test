@@ -2,7 +2,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="asd.test.RunTest" time="75.291" tests="5" errors="0" skipped="0" failures="0">
+=======
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="asd.test.RunTest" time="71.027" tests="5" errors="0" skipped="0" failures="0">
+>>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
 =======
 <testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="asd.test.RunTest" time="71.027" tests="5" errors="0" skipped="0" failures="0">
 >>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
@@ -75,12 +79,15 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   <testcase name="Successfully transfer balance" classname="Transfer Balance Management" time="13.82"/>
   <testcase name="Successfully edit transfer balance before confirmation" classname="Transfer Balance Management" time="24.649"/>
   <testcase name="Successfully cancel transfer balance" classname="Transfer Balance Management" time="12.661"/>
   <testcase name="Successfully list transfer balance history" classname="Transfer Balance Management" time="11.544"/>
   <testcase name="Successfully search transfer balance history by date" classname="Transfer Balance Management" time="11.963"/>
 =======
+=======
+>>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
 =======
 >>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
 =======
@@ -92,6 +99,9 @@
   <testcase name="Successfully search transfer balance history by date" classname="Transfer Balance Management" time="12.476"/>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
+=======
 >>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
 =======
 >>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
