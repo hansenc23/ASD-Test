@@ -1,3 +1,5 @@
-asd\test\AccountManagementFeature.class
 asd\test\Driver.class
+asd\test\TransportNewsManagementUnitTest.class
+asd\test\AccountManagementFeature.class
+asd\test\TransportNewsManagementFeature.class
 asd\test\RunTest.class
