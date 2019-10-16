@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2019-10-16T14:16:35.565Z",
+        "start_timestamp": "2019-10-16T14:27:51.207Z",
         "line": 3,
         "name": "Successfully transfer balance",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 11495162500,
+              "duration": 11501149400,
               "status": "passed"
             },
             "line": 4,
@@ -25,7 +25,7 @@
           },
           {
             "result": {
-              "duration": 862221700,
+              "duration": 900212100,
               "status": "passed"
             },
             "line": 5,
@@ -43,7 +43,7 @@
           },
           {
             "result": {
-              "duration": 138402700,
+              "duration": 113943500,
               "status": "passed"
             },
             "line": 6,
@@ -61,7 +61,7 @@
           },
           {
             "result": {
-              "duration": 150741700,
+              "duration": 155957100,
               "status": "passed"
             },
             "line": 7,
@@ -79,7 +79,7 @@
           },
           {
             "result": {
-              "duration": 494342500,
+              "duration": 461969700,
               "status": "passed"
             },
             "line": 8,
@@ -97,7 +97,7 @@
           },
           {
             "result": {
-              "duration": 83857700,
+              "duration": 109301100,
               "status": "passed"
             },
             "line": 9,
@@ -115,7 +115,7 @@
           },
           {
             "result": {
-              "duration": 511815200,
+              "duration": 536737700,
               "status": "passed"
             },
             "line": 10,
@@ -133,7 +133,7 @@
           },
           {
             "result": {
-              "duration": 197273900,
+              "duration": 179553800,
               "status": "passed"
             },
             "line": 11,
@@ -145,7 +145,7 @@
           },
           {
             "result": {
-              "duration": 537362400,
+              "duration": 521423100,
               "status": "passed"
             },
             "line": 12,
@@ -163,7 +163,7 @@
           },
           {
             "result": {
-              "duration": 717276700,
+              "duration": 770761000,
               "status": "passed"
             },
             "line": 13,
@@ -176,7 +176,7 @@
         ]
       },
       {
-        "start_timestamp": "2019-10-16T14:16:50.762Z",
+        "start_timestamp": "2019-10-16T14:28:06.465Z",
         "line": 15,
         "name": "Successfully edit transfer balance before confirmation",
         "description": "",
@@ -186,7 +186,7 @@
         "steps": [
           {
             "result": {
-              "duration": 10117606300,
+              "duration": 10423810500,
               "status": "passed"
             },
             "line": 16,
@@ -198,7 +198,7 @@
           },
           {
             "result": {
-              "duration": 901977500,
+              "duration": 934520300,
               "status": "passed"
             },
             "line": 17,
@@ -216,7 +216,7 @@
           },
           {
             "result": {
-              "duration": 74902500,
+              "duration": 106737500,
               "status": "passed"
             },
             "line": 18,
@@ -234,7 +234,7 @@
           },
           {
             "result": {
-              "duration": 155510500,
+              "duration": 107872800,
               "status": "passed"
             },
             "line": 19,
@@ -252,7 +252,7 @@
           },
           {
             "result": {
-              "duration": 525251500,
+              "duration": 512528300,
               "status": "passed"
             },
             "line": 20,
@@ -270,7 +270,7 @@
           },
           {
             "result": {
-              "duration": 104757800,
+              "duration": 196831700,
               "status": "passed"
             },
             "line": 21,
@@ -288,7 +288,7 @@
           },
           {
             "result": {
-              "duration": 497772200,
+              "duration": 581055700,
               "status": "passed"
             },
             "line": 22,
@@ -306,7 +306,7 @@
           },
           {
             "result": {
-              "duration": 143494700,
+              "duration": 330263400,
               "status": "passed"
             },
             "line": 23,
@@ -318,7 +318,7 @@
           },
           {
             "result": {
-              "duration": 581173100,
+              "duration": 693066800,
               "status": "passed"
             },
             "line": 24,
@@ -336,7 +336,7 @@
           },
           {
             "result": {
-              "duration": 238894400,
+              "duration": 362787100,
               "status": "passed"
             },
             "line": 25,
@@ -348,7 +348,7 @@
           },
           {
             "result": {
-              "duration": 457506000,
+              "duration": 563094700,
               "status": "passed"
             },
             "line": 26,
@@ -366,7 +366,7 @@
           },
           {
             "result": {
-              "duration": 464875700,
+              "duration": 532529700,
               "status": "passed"
             },
             "line": 27,
@@ -384,7 +384,7 @@
           },
           {
             "result": {
-              "duration": 835311800,
+              "duration": 835636900,
               "status": "passed"
             },
             "line": 28,
@@ -397,7 +397,7 @@
         ]
       },
       {
-        "start_timestamp": "2019-10-16T14:17:05.863Z",
+        "start_timestamp": "2019-10-16T14:28:22.648Z",
         "line": 30,
         "name": "Successfully cancel transfer balance",
         "description": "",
@@ -407,7 +407,7 @@
         "steps": [
           {
             "result": {
-              "duration": 10167413100,
+              "duration": 10686379300,
               "status": "passed"
             },
             "line": 31,
@@ -419,7 +419,7 @@
           },
           {
             "result": {
-              "duration": 950483500,
+              "duration": 924346600,
               "status": "passed"
             },
             "line": 32,
@@ -437,7 +437,7 @@
           },
           {
             "result": {
-              "duration": 97539500,
+              "duration": 190633200,
               "status": "passed"
             },
             "line": 33,
@@ -455,7 +455,7 @@
           },
           {
             "result": {
-              "duration": 104194000,
+              "duration": 253619500,
               "status": "passed"
             },
             "line": 34,
@@ -473,7 +473,7 @@
           },
           {
             "result": {
-              "duration": 550917100,
+              "duration": 503582100,
               "status": "passed"
             },
             "line": 35,
@@ -491,7 +491,7 @@
           },
           {
             "result": {
-              "duration": 172999700,
+              "duration": 132643300,
               "status": "passed"
             },
             "line": 36,
@@ -509,7 +509,7 @@
           },
           {
             "result": {
-              "duration": 640871300,
+              "duration": 547666900,
               "status": "passed"
             },
             "line": 37,
@@ -527,7 +527,7 @@
           },
           {
             "result": {
-              "duration": 308608400,
+              "duration": 139144400,
               "status": "passed"
             },
             "line": 38,
@@ -539,7 +539,7 @@
           },
           {
             "result": {
-              "duration": 514051100,
+              "duration": 367824500,
               "status": "passed"
             },
             "line": 39,
@@ -557,7 +557,7 @@
           },
           {
             "result": {
-              "duration": 835442400,
+              "duration": 690635000,
               "status": "passed"
             },
             "line": 40,
@@ -570,7 +570,7 @@
         ]
       },
       {
-        "start_timestamp": "2019-10-16T14:17:20.207Z",
+        "start_timestamp": "2019-10-16T14:28:37.086Z",
         "line": 42,
         "name": "Successfully list transfer balance history",
         "description": "",
@@ -580,7 +580,7 @@
         "steps": [
           {
             "result": {
-              "duration": 10479056500,
+              "duration": 9560052500,
               "status": "passed"
             },
             "line": 43,
@@ -592,7 +592,7 @@
           },
           {
             "result": {
-              "duration": 1006879200,
+              "duration": 864320800,
               "status": "passed"
             },
             "line": 44,
@@ -610,7 +610,7 @@
           },
           {
             "result": {
-              "duration": 605072000,
+              "duration": 667549600,
               "status": "passed"
             },
             "line": 45,
@@ -628,7 +628,7 @@
           },
           {
             "result": {
-              "duration": 941310200,
+              "duration": 836577900,
               "status": "passed"
             },
             "line": 46,
@@ -641,7 +641,7 @@
         ]
       },
       {
-        "start_timestamp": "2019-10-16T14:17:33.241Z",
+        "start_timestamp": "2019-10-16T14:28:49.015Z",
         "line": 48,
         "name": "Successfully search transfer balance history by date",
         "description": "",
@@ -651,7 +651,7 @@
         "steps": [
           {
             "result": {
-              "duration": 10045926100,
+              "duration": 9665350100,
               "status": "passed"
             },
             "line": 49,
@@ -663,7 +663,7 @@
           },
           {
             "result": {
-              "duration": 892153200,
+              "duration": 938425000,
               "status": "passed"
             },
             "line": 50,
@@ -681,7 +681,7 @@
           },
           {
             "result": {
-              "duration": 635890400,
+              "duration": 503458500,
               "status": "passed"
             },
             "line": 51,
@@ -699,7 +699,7 @@
           },
           {
             "result": {
-              "duration": 167237600,
+              "duration": 132779200,
               "status": "passed"
             },
             "line": 52,
@@ -717,7 +717,7 @@
           },
           {
             "result": {
-              "duration": 654646100,
+              "duration": 500166400,
               "status": "passed"
             },
             "line": 53,
@@ -735,7 +735,7 @@
           },
           {
             "result": {
-              "duration": 726880600,
+              "duration": 734918300,
               "status": "passed"
             },
             "line": 54,

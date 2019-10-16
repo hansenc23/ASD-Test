@@ -114,9 +114,7 @@ public class TransferBalanceFeature extends Driver {
 
     @Then("the User should see record on the searched date")
     public void the_User_should_see_record_on_the_searched_date() {
-        String searchedDate = "16-10-2019";
-        String shownDate = driver.findElement(By.id("transferDate")).getText();
-        Assert.assertEquals(shownDate, searchedDate);
+        driver.findElements(By.xpath("//*[contains(text(),'16-10-2019')]"));
         driver.quit();
     }
 }

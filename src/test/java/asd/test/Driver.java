@@ -18,7 +18,7 @@ public class Driver {
     
     protected WebDriver getDriver(){
         if(driver == null){ 
-            System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"//chromedriver//chromedriver");
+            System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"//chromedriver//chromedriver.exe");
             driver = new ChromeDriver();
         }
         return driver;
