@@ -3,610 +3,21 @@
     "line": 5,
     "elements": [
       {
-        "start_timestamp": "2019-10-15T19:49:44.300Z",
-        "line": 8,
-        "name": "Successfully view account details",
+        "start_timestamp": "2019-10-16T08:17:15.340Z",
+        "line": 6,
+        "name": "A user want to Create new enqiry and edit",
         "description": "",
-        "id": "account-management;successfully-view-account-details",
+        "id": "enqiry-manager;a-user-want-to-create-new-enqiry-and-edit",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 8605139300,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "the page is \"adminPage.jsp\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"adminPage.jsp\"",
-                  "offset": 12
-                }
-              ],
-              "location": "AccountManagementFeature.the_page_is(String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 1296347800,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "the user chooses \"account_management\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"account_management\"",
-                  "offset": 17
-                }
-              ],
-              "location": "AccountManagementFeature.the_user_chooses(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 739778100,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "the user views \"view_profile\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"view_profile\"",
-                  "offset": 15
-                }
-              ],
-              "location": "AccountManagementFeature.the_user_views(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 665811200,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "the user should be directed to a page called \"Profile\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Profile\"",
-                  "offset": 45
-                }
-              ],
-              "location": "AccountManagementFeature.the_user_should_be_directed_to_a_page_called(String)"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2019-10-15T19:49:55.611Z",
-        "line": 15,
-        "name": "Successfully edit account details",
-        "description": "",
-        "id": "account-management;successfully-edit-account-details",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 7315554100,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "user is on the page called \"adminPage.jsp\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"adminPage.jsp\"",
-                  "offset": 27
-                }
-              ],
-              "location": "AccountManagementFeature.user_is_on_the_page_called(String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 1122569800,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "the user clicks on a button \"account_management\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"account_management\"",
-                  "offset": 28
-                }
-              ],
-              "location": "AccountManagementFeature.the_user_clicks_on_a_button(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 728578700,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "the user wants to edit account details \"edit_profile\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"edit_profile\"",
-                  "offset": 39
-                }
-              ],
-              "location": "AccountManagementFeature.the_user_wants_to_edit_account_details(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2289175000,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "the user fill in new details",
-            "match": {
-              "location": "AccountManagementFeature.the_user_fill_in_new_details()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 707851100,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "the user goes back to account list \"back_to_profile\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"back_to_profile\"",
-                  "offset": 35
-                }
-              ],
-              "location": "AccountManagementFeature.the_user_goes_back_to_account_list(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 670449300,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "the page title should be \"Account List\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Account List\"",
-                  "offset": 25
-                }
-              ],
-              "location": "AccountManagementFeature.the_page_title_should_be(String)"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2019-10-15T19:50:08.445Z",
-        "line": 23,
-        "name": "Successfully delete an account",
-        "description": "",
-        "id": "account-management;successfully-delete-an-account",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 16703723200,
-              "status": "passed"
-            },
-            "line": 24,
-            "name": "USER is at the page called \"adminPage.jsp\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"adminPage.jsp\"",
-                  "offset": 27
-                }
-              ],
-              "location": "AccountManagementFeature.USER_is_at_the_page_called(String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 1142075800,
-              "status": "passed"
-            },
-            "line": 25,
-            "name": "USER views account list \"account_management\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"account_management\"",
-                  "offset": 24
-                }
-              ],
-              "location": "AccountManagementFeature.USER_views_account_list(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 727259300,
-              "status": "passed"
-            },
-            "line": 26,
-            "name": "the User wants to delete an account \"delete_profile\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"delete_profile\"",
-                  "offset": 36
-                }
-              ],
-              "location": "AccountManagementFeature.the_User_wants_to_delete_an_account(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 793122700,
-              "status": "passed"
-            },
-            "line": 27,
-            "name": "the user confirms to delete account \"delete_button\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"delete_button\"",
-                  "offset": 36
-                }
-              ],
-              "location": "AccountManagementFeature.the_user_confirms_to_delete_account(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 692337600,
-              "status": "passed"
-            },
-            "line": 28,
-            "name": "the user chooses to go back to account list \"back_to_profile\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"back_to_profile\"",
-                  "offset": 44
-                }
-              ],
-              "location": "AccountManagementFeature.the_user_chooses_to_go_back_to_account_list(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 658421700,
-              "status": "passed"
-            },
-            "line": 29,
-            "name": "USER should be directed to page \"Account List\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Account List\"",
-                  "offset": 32
-                }
-              ],
-              "location": "AccountManagementFeature.USER_should_be_directed_to_page(String)"
-            },
-            "keyword": "Then "
-          }
-        ]
-      }
-    ],
-    "name": "Account Management",
-    "description": "",
-    "id": "account-management",
-    "keyword": "Feature",
-    "uri": "file:OpalFeatures/AccountManagementFeature.feature",
-    "tags": []
-  },
-  {
-    "line": 2,
-    "elements": [
-      {
-        "start_timestamp": "2019-10-15T19:50:29.164Z",
-        "line": 4,
-        "name": "Successfuly create, edit, delete an Article",
-        "description": "",
-        "id": "transport-news-management;successfuly-create--edit--delete-an-article",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 7262643200,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "User is staying at \"login.jsp\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"login.jsp\"",
-                  "offset": 19
-                }
-              ],
-              "location": "TransportNewsManagementFeature.user_is_staying_at(String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 444165200,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "User has been identified as an admin",
-            "match": {
-              "location": "TransportNewsManagementFeature.user_has_been_identified_as_an_admin()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 573288800,
+              "duration": 7593588600,
               "status": "passed"
             },
             "line": 7,
-            "name": "User smash on the button \"login_submit\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"login_submit\"",
-                  "offset": 25
-                }
-              ],
-              "location": "TransportNewsManagementFeature.user_smash_on_the_button(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 691843300,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "User smash on the button \"loginAction_success\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"loginAction_success\"",
-                  "offset": 25
-                }
-              ],
-              "location": "TransportNewsManagementFeature.user_smash_on_the_button(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 785382300,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "User smash on the button \"News_management\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"News_management\"",
-                  "offset": 25
-                }
-              ],
-              "location": "TransportNewsManagementFeature.user_smash_on_the_button(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 467819700,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "User entered all article details",
-            "match": {
-              "location": "TransportNewsManagementFeature.user_entered_all_article_details()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 576349800,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "User smash on the button \"createArticle_submit\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"createArticle_submit\"",
-                  "offset": 25
-                }
-              ],
-              "location": "TransportNewsManagementFeature.user_smash_on_the_button(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 584830600,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "User smash on the button \"Cucumber Test\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Cucumber Test\"",
-                  "offset": 25
-                }
-              ],
-              "location": "TransportNewsManagementFeature.user_smash_on_the_button(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 625644800,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "User entered all update details",
-            "match": {
-              "location": "TransportNewsManagementFeature.user_entered_all_update_details()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 496092300,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "User smash on the button \"updateArticle_update\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"updateArticle_update\"",
-                  "offset": 25
-                }
-              ],
-              "location": "TransportNewsManagementFeature.user_smash_on_the_button(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 607381400,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "User smash on the button \"articleUpdate_back\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"articleUpdate_back\"",
-                  "offset": 25
-                }
-              ],
-              "location": "TransportNewsManagementFeature.user_smash_on_the_button(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 521057700,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "User smash on the updated button \"Cucumber Test updated\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Cucumber Test updated\"",
-                  "offset": 33
-                }
-              ],
-              "location": "TransportNewsManagementFeature.user_smash_on_the_updated_button(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 519769300,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "User smash on the button \"updateArticle_delete\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"updateArticle_delete\"",
-                  "offset": 25
-                }
-              ],
-              "location": "TransportNewsManagementFeature.user_smash_on_the_button(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 500930900,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "User smash on the button \"articleUpdate_back\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"articleUpdate_back\"",
-                  "offset": 25
-                }
-              ],
-              "location": "TransportNewsManagementFeature.user_smash_on_the_button(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 664021700,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "The User should be navigated to \"Create Article\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Create Article\"",
-                  "offset": 32
-                }
-              ],
-              "location": "TransportNewsManagementFeature.the_User_should_be_navigated_to(String)"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2019-10-15T19:50:44.486Z",
-        "line": 21,
-        "name": "Customer successfully view the Article",
-        "description": "",
-        "id": "transport-news-management;customer-successfully-view-the-article",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 7462049400,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "User is staying at \"main.jsp\"",
+            "name": "the User is in the \"main.jsp\"",
             "match": {
               "arguments": [
                 {
@@ -614,54 +25,756 @@
                   "offset": 19
                 }
               ],
-              "location": "TransportNewsManagementFeature.user_is_staying_at(String)"
+              "location": "loginFeature.user_is_in_the(String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 864461100,
+              "duration": 567100500,
               "status": "passed"
             },
-            "line": 23,
-            "name": "User smash on the button \"sidebar_articleView\"",
+            "line": 8,
+            "name": "User click the \"navbar_login\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"sidebar_articleView\"",
-                  "offset": 25
+                  "val": "\"navbar_login\"",
+                  "offset": 15
                 }
               ],
-              "location": "TransportNewsManagementFeature.user_smash_on_the_button(String)"
+              "location": "loginFeature.user_click_on(String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 654719400,
+              "duration": 123383200,
               "status": "passed"
             },
-            "line": 24,
-            "name": "The User should be navigated to \"View Article\"",
+            "line": 9,
+            "name": "User fill user information",
+            "match": {
+              "location": "loginFeature.user_fill_user_information()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 416753100,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User click the \"login_submit\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"View Article\"",
-                  "offset": 32
+                  "val": "\"login_submit\"",
+                  "offset": 15
                 }
               ],
-              "location": "TransportNewsManagementFeature.the_User_should_be_navigated_to(String)"
+              "location": "loginFeature.user_click_on(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 429339700,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User click the \"loginAction_success\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"loginAction_success\"",
+                  "offset": 15
+                }
+              ],
+              "location": "loginFeature.user_click_on(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 620485600,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User click the \"sidebar_enqiry\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"sidebar_enqiry\"",
+                  "offset": 15
+                }
+              ],
+              "location": "loginFeature.user_click_on(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 328380200,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User click the \"new_enqiry_\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"new_enqiry_\"",
+                  "offset": 15
+                }
+              ],
+              "location": "loginFeature.user_click_on(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 148204100,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User fill in Question",
+            "match": {
+              "location": "loginFeature.user_fill_in_Question()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 467248600,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User click the \"submit\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"submit\"",
+                  "offset": 15
+                }
+              ],
+              "location": "loginFeature.user_click_on(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 494433000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User click the \"main\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"main\"",
+                  "offset": 15
+                }
+              ],
+              "location": "loginFeature.user_click_on(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 389374600,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User click the \"sidebar_enqiry\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"sidebar_enqiry\"",
+                  "offset": 15
+                }
+              ],
+              "location": "loginFeature.user_click_on(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 410008400,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User click the \"enqiry_detail\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"enqiry_detail\"",
+                  "offset": 15
+                }
+              ],
+              "location": "loginFeature.user_click_on(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 398578900,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User click the \"edit_your_inqiry_\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"edit_your_inqiry_\"",
+                  "offset": 15
+                }
+              ],
+              "location": "loginFeature.user_click_on(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 62546500,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User fill in edited question",
+            "match": {
+              "location": "loginFeature.user_fill_in_edited_question()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.ElementNotInteractableException: element not interactable\n  (Session info: chrome\u003d77.0.3865.120)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-RG37MRS\u0027, ip: \u0027192.168.20.2\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027x86\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_201\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.120, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\\Users\\kevin\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55637}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 64a631ae23a7f81942297baba84847a8\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)\r\n\tat asd.test.loginFeature.user_click_on(loginFeature.java:47)\r\n\tat ✽.User click the \"submit_edit_\"(file:OpalFeatures/enqiryFeature.feature:21)\r\n",
+              "duration": 32832600,
+              "status": "failed"
+            },
+            "line": 21,
+            "name": "User click the \"submit_edit_\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"submit_edit_\"",
+                  "offset": 15
+                }
+              ],
+              "location": "loginFeature.user_click_on(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6700,
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "User click the \"sidebar_main\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"sidebar_main\"",
+                  "offset": 15
+                }
+              ],
+              "location": "loginFeature.user_click_on(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3500,
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "page should be navigated to \"Card Page\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Card Page\"",
+                  "offset": 28
+                }
+              ],
+              "location": "loginFeature.the_page_should_be_navigated_to(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-10-16T08:17:27.827Z",
+        "line": 28,
+        "name": "A user want to Answer Question and then delete it",
+        "description": "",
+        "id": "enqiry-manager;a-user-want-to-answer-question-and-then-delete-it",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7236943500,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "the User is in the \"login.jsp\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"login.jsp\"",
+                  "offset": 19
+                }
+              ],
+              "location": "loginFeature.user_is_in_the(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1079913600,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "User is login as an admin",
+            "match": {
+              "location": "loginFeature.user_is_login_as_an_admin()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 631223900,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "User click the \"enqiry_management\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"enqiry_management\"",
+                  "offset": 15
+                }
+              ],
+              "location": "loginFeature.user_click_on(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 403844700,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "User click the \"answer_enqiry_\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"answer_enqiry_\"",
+                  "offset": 15
+                }
+              ],
+              "location": "loginFeature.user_click_on(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 60138000,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "User fill in answer",
+            "match": {
+              "location": "loginFeature.user_fill_in_answer()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.ElementNotInteractableException: element not interactable\n  (Session info: chrome\u003d77.0.3865.120)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-RG37MRS\u0027, ip: \u0027192.168.20.2\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027x86\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_201\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.120, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\\Users\\kevin\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55659}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 46087ccf175acccea27591b308a0fbbb\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)\r\n\tat asd.test.loginFeature.user_click_on(loginFeature.java:47)\r\n\tat ✽.User click the \"submit_answer_\"(file:OpalFeatures/enqiryFeature.feature:34)\r\n",
+              "duration": 24645300,
+              "status": "failed"
+            },
+            "line": 34,
+            "name": "User click the \"submit_answer_\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"submit_answer_\"",
+                  "offset": 15
+                }
+              ],
+              "location": "loginFeature.user_click_on(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4900,
+              "status": "skipped"
+            },
+            "line": 36,
+            "name": "User click the \"enqiry_management\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"enqiry_management\"",
+                  "offset": 15
+                }
+              ],
+              "location": "loginFeature.user_click_on(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3300,
+              "status": "skipped"
+            },
+            "line": 37,
+            "name": "User click the \"remove_enqiry_\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"remove_enqiry_\"",
+                  "offset": 15
+                }
+              ],
+              "location": "loginFeature.user_click_on(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3000,
+              "status": "skipped"
+            },
+            "line": 39,
+            "name": "page should be navigated to \"Enqiry List\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Enqiry List\"",
+                  "offset": 28
+                }
+              ],
+              "location": "loginFeature.the_page_should_be_navigated_to(String)"
             },
             "keyword": "Then "
           }
         ]
       }
     ],
-    "name": "Transport News Management",
+    "name": "enqiry Manager",
     "description": "",
-    "id": "transport-news-management",
+    "id": "enqiry-manager",
     "keyword": "Feature",
-    "uri": "file:OpalFeatures/TransportNewsManagement.feature",
+    "uri": "file:OpalFeatures/enqiryFeature.feature",
+    "tags": []
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2019-10-16T08:17:37.264Z",
+        "line": 4,
+        "name": "A user will be able to login , and logout",
+        "description": "",
+        "id": "access-manager;a-user-will-be-able-to-login---and-logout",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7230619400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the User is in the \"main.jsp\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"main.jsp\"",
+                  "offset": 19
+                }
+              ],
+              "location": "loginFeature.user_is_in_the(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 567316200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User click the \"navbar_login\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"navbar_login\"",
+                  "offset": 15
+                }
+              ],
+              "location": "loginFeature.user_click_on(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 117732800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User fill user information",
+            "match": {
+              "location": "loginFeature.user_fill_user_information()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 429109900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User click the \"login_submit\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"login_submit\"",
+                  "offset": 15
+                }
+              ],
+              "location": "loginFeature.user_click_on(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 507546600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User click the \"loginAction_success\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"loginAction_success\"",
+                  "offset": 15
+                }
+              ],
+              "location": "loginFeature.user_click_on(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#navbar_logout\"}\n  (Session info: chrome\u003d77.0.3865.120)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-RG37MRS\u0027, ip: \u0027192.168.20.2\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027x86\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_201\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.120, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\\Users\\kevin\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55681}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 0e9caf37a2a0d8a4c961fe05e5b66718\n*** Element info: {Using\u003did, value\u003dnavbar_logout}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\r\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat asd.test.loginFeature.user_click_on(loginFeature.java:47)\r\n\tat ✽.User click the \"navbar_logout\"(file:OpalFeatures/loginFeature.feature:10)\r\n",
+              "duration": 15133800,
+              "status": "failed"
+            },
+            "line": 10,
+            "name": "User click the \"navbar_logout\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"navbar_logout\"",
+                  "offset": 15
+                }
+              ],
+              "location": "loginFeature.user_click_on(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4000,
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "page should be navigated to \"logout.jsp\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"logout.jsp\"",
+                  "offset": 28
+                }
+              ],
+              "location": "loginFeature.the_page_should_be_navigated_to(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-10-16T08:17:46.133Z",
+        "line": 14,
+        "name": "A user want to delete their access history",
+        "description": "",
+        "id": "access-manager;a-user-want-to-delete-their-access-history",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7240562100,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "the User is in the \"main.jsp\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"main.jsp\"",
+                  "offset": 19
+                }
+              ],
+              "location": "loginFeature.user_is_in_the(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 568257400,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User click the \"navbar_login\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"navbar_login\"",
+                  "offset": 15
+                }
+              ],
+              "location": "loginFeature.user_click_on(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 127703700,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User fill user admin information",
+            "match": {
+              "location": "loginFeature.user_fill_admin_user_information()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 460009000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User click the \"login_submit\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"login_submit\"",
+                  "offset": 15
+                }
+              ],
+              "location": "loginFeature.user_click_on(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 569690200,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User click the \"loginAction_success\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"loginAction_success\"",
+                  "offset": 15
+                }
+              ],
+              "location": "loginFeature.user_click_on(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#sidebar_AccessManager\"}\n  (Session info: chrome\u003d77.0.3865.120)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-RG37MRS\u0027, ip: \u0027192.168.20.2\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027x86\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_201\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.120, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\\Users\\kevin\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55707}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 7bc1e50d48861f94c3029dbd8a3cf877\n*** Element info: {Using\u003did, value\u003dsidebar_AccessManager}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\r\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat asd.test.loginFeature.user_click_on(loginFeature.java:47)\r\n\tat ✽.User click the \"sidebar_AccessManager\"(file:OpalFeatures/loginFeature.feature:20)\r\n",
+              "duration": 12495800,
+              "status": "failed"
+            },
+            "line": 20,
+            "name": "User click the \"sidebar_AccessManager\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"sidebar_AccessManager\"",
+                  "offset": 15
+                }
+              ],
+              "location": "loginFeature.user_click_on(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4600,
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "User click the \"delete\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"delete\"",
+                  "offset": 15
+                }
+              ],
+              "location": "loginFeature.user_click_on(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3400,
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "User refresh page",
+            "match": {
+              "location": "loginFeature.user_refresh_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3200,
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "page should be navigated to \"Access manager\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Access manager\"",
+                  "offset": 28
+                }
+              ],
+              "location": "loginFeature.the_page_should_be_navigated_to(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Access Manager",
+    "description": "",
+    "id": "access-manager",
+    "keyword": "Feature",
+    "uri": "file:OpalFeatures/loginFeature.feature",
     "tags": []
   }
 ]

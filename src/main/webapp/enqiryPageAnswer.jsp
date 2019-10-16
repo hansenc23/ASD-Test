@@ -52,8 +52,8 @@
                     
                   <textarea id="edit_answer_" rows="7" cols="50" placeholder="Write the answer..." name="theAnswer"><%=answer%></textarea>
                     <%String theAnswer = request.getParameter("theAnswer"); %>
-                   <input type="submit" value="Submit Answer" name="AEnqiry">      
-                  <input id="submit_answer_" type="hidden" value="<%=selectedEnqiry.getEnqiryID()%>" name="EnqiryID">
+                   <input id="submit_answer_" type="submit" value="Submit Answer" name="AEnqiry">      
+                  <input  type="hidden" value="<%=selectedEnqiry.getEnqiryID()%>" name="EnqiryID">
                  </form>
            </div>
                  <% if( selectedEnqiry.getAnswer()!= null)

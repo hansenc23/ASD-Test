@@ -35,7 +35,7 @@
              <ul>
                 <li><a id="navbar_profile" href="accountProfile.jsp">Welcome <%=name%></a></li>
                 <li><a id="order_history" href="orderHistory.jsp">Order History</a></li>
-                <li><a href="logout.jsp">Logout</a></li>
+                <li><a id= "navbar_logout" href="logout.jsp">Logout</a></li>
                 <li><a href="main.jsp">Home</a></li>
               
                 

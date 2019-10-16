@@ -87,7 +87,7 @@
                                     </select>
                                 </td>
                             </tr>
-                            <tr><td><input type="submit" name="submitEdit" value="Submit"></td></tr>
+                            <tr><td><input id="submitEdit" type="submit" name="submitEdit" value="Submit"></td></tr>
                         </table>
                     </form>
                 </div>

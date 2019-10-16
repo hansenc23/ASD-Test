@@ -73,8 +73,8 @@ public void user_fill_admin_user_information() {
     }
         @Given("User is login as an admin")
     public void user_is_login_as_an_admin() {
-        driver.findElement(By.id("login_email")).sendKeys("staff@gmail.com");
-        driver.findElement(By.id("login_password")).sendKeys("staff");
+        driver.findElement(By.id("login_email")).sendKeys("kevinroderick12@gmail.com");
+        driver.findElement(By.id("login_password")).sendKeys("123");
         driver.findElement(By.id("login_submit")).click();
         driver.findElement(By.id("loginAction_success")).click();
     }

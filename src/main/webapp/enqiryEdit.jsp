@@ -53,8 +53,8 @@
             <form method='POST'>
                 <textarea id="edit_enqiry_" rows="7" cols="100" name="newQuestion" ></textarea>
                 <%String newQuestion = request.getParameter("newQuestion");%>
-                <input type="submit" value="Edit" name="AEnqiry" >        
-                <input id="submit_edit_"type="hidden" value="<%=selectedEnqiry.getEnqiryID()%>" name="EnqiryID">
+                <input id="submit_edit_" type="submit" value="Edit" name="AEnqiry" >        
+                <input type="hidden" value="<%=selectedEnqiry.getEnqiryID()%>" name="EnqiryID">
             </form>
             <% if (request.getParameter("AEnqiry") != null) {
                     Enqiry enqiry = new Enqiry(customerID, newQuestion, answer, enqiryID, title);
