@@ -1,1526 +1,341 @@
 [
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        "start_timestamp": "2019-10-16T15:17:06.592Z",
-=======
-        "start_timestamp": "2019-10-16T14:27:51.207Z",
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-        "start_timestamp": "2019-10-16T14:27:51.207Z",
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-        "start_timestamp": "2019-10-16T14:27:51.207Z",
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-        "start_timestamp": "2019-10-16T14:27:51.207Z",
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-        "line": 3,
-        "name": "Successfully transfer balance",
+        "start_timestamp": "2019-10-16T16:44:42.884Z",
+        "line": 4,
+        "name": "Successfuly create, edit, delete an Article",
         "description": "",
-        "id": "transfer-balance-management;successfully-transfer-balance",
+        "id": "transport-news-management;successfuly-create--edit--delete-an-article",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-              "duration": 10229544900,
-=======
-              "duration": 11501149400,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 11501149400,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 11501149400,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 11501149400,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "the User is already logs in to the website",
-            "match": {
-              "location": "TransferBalanceFeature.the_User_is_already_logs_in_to_the_website()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-              "duration": 850656300,
-=======
-              "duration": 900212100,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 900212100,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 900212100,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 900212100,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
+              "duration": 9701318600,
               "status": "passed"
             },
             "line": 5,
-            "name": "the User clicks the \"sidebar_transferBalance\"",
+            "name": "User is staying at \"login.jsp\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"sidebar_transferBalance\"",
-                  "offset": 20
+                  "val": "\"login.jsp\"",
+                  "offset": 19
                 }
               ],
-              "location": "TransferBalanceFeature.the_User_clicks_the(String)"
+              "location": "TransportNewsManagementFeature.user_is_staying_at(String)"
             },
-            "keyword": "When "
+            "keyword": "Given "
           },
           {
             "result": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-              "duration": 134779700,
-=======
-              "duration": 113943500,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 113943500,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 113943500,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 113943500,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
+              "duration": 439792800,
               "status": "passed"
             },
             "line": 6,
-            "name": "the User choose the \"fromOpalID\"",
+            "name": "User has been identified as an admin",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"fromOpalID\"",
-                  "offset": 20
-                }
-              ],
-              "location": "TransferBalanceFeature.the_User_choose_the(String)"
+              "location": "TransportNewsManagementFeature.user_has_been_identified_as_an_admin()"
             },
             "keyword": "And "
           },
           {
             "result": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-              "duration": 161469900,
-=======
-              "duration": 155957100,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 155957100,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 155957100,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 155957100,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
+              "duration": 1396027000,
               "status": "passed"
             },
             "line": 7,
-            "name": "the User choose the \"toOpalID\"",
+            "name": "User smash on the button \"login_submit\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"toOpalID\"",
-                  "offset": 20
+                  "val": "\"login_submit\"",
+                  "offset": 25
                 }
               ],
-              "location": "TransferBalanceFeature.the_User_choose_the(String)"
+              "location": "TransportNewsManagementFeature.user_smash_on_the_button(String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-              "duration": 455932700,
-=======
-              "duration": 461969700,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 461969700,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 461969700,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 461969700,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
+              "duration": 778441300,
               "status": "passed"
             },
             "line": 8,
-            "name": "the User submit it by clicks on \"transferContinue\"",
+            "name": "User smash on the button \"loginAction_success\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"transferContinue\"",
-                  "offset": 32
+                  "val": "\"loginAction_success\"",
+                  "offset": 25
                 }
               ],
-              "location": "TransferBalanceFeature.the_User_submit_it_by_clicks_on(String)"
+              "location": "TransportNewsManagementFeature.user_smash_on_the_button(String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-              "duration": 120870300,
-=======
-              "duration": 109301100,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 109301100,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 109301100,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 109301100,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
+              "duration": 977461400,
               "status": "passed"
             },
             "line": 9,
-            "name": "the User choose the \"transferValue\"",
+            "name": "User smash on the button \"News_management\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"transferValue\"",
-                  "offset": 20
+                  "val": "\"News_management\"",
+                  "offset": 25
                 }
               ],
-              "location": "TransferBalanceFeature.the_User_choose_the(String)"
+              "location": "TransportNewsManagementFeature.user_smash_on_the_button(String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-              "duration": 521061400,
-=======
-              "duration": 536737700,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 536737700,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 536737700,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 536737700,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
+              "duration": 463410000,
               "status": "passed"
             },
             "line": 10,
-            "name": "the User submit it by clicks on \"transferNext\"",
+            "name": "User entered all article details",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"transferNext\"",
-                  "offset": 32
-                }
-              ],
-              "location": "TransferBalanceFeature.the_User_submit_it_by_clicks_on(String)"
+              "location": "TransportNewsManagementFeature.user_entered_all_article_details()"
             },
             "keyword": "And "
           },
           {
             "result": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-              "duration": 209287600,
-=======
-              "duration": 179553800,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 179553800,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 179553800,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 179553800,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
+              "duration": 674530400,
               "status": "passed"
             },
             "line": 11,
-            "name": "the User see that the details are correct",
+            "name": "User smash on the button \"createArticle_submit\"",
             "match": {
-              "location": "TransferBalanceFeature.the_User_see_that_the_details_are_correct()"
+              "arguments": [
+                {
+                  "val": "\"createArticle_submit\"",
+                  "offset": 25
+                }
+              ],
+              "location": "TransportNewsManagementFeature.user_smash_on_the_button(String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-              "duration": 481872400,
-=======
-              "duration": 521423100,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 521423100,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 521423100,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 521423100,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
+              "duration": 601908300,
               "status": "passed"
             },
             "line": 12,
-            "name": "the User clicks on \"confirmTransfer\"",
+            "name": "User smash on the button \"Cucumber Test\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"confirmTransfer\"",
-                  "offset": 19
+                  "val": "\"Cucumber Test\"",
+                  "offset": 25
                 }
               ],
-              "location": "TransferBalanceFeature.the_User_clicks_on(String)"
+              "location": "TransportNewsManagementFeature.user_smash_on_the_button(String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-              "duration": 646651800,
-=======
-              "duration": 770761000,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 770761000,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 770761000,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 770761000,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
+              "duration": 547890200,
               "status": "passed"
             },
             "line": 13,
-            "name": "the User should see transfer success message",
+            "name": "User entered all update details",
             "match": {
-              "location": "TransferBalanceFeature.the_User_should_see_transfer_success_message()"
+              "location": "TransportNewsManagementFeature.user_entered_all_update_details()"
             },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        "start_timestamp": "2019-10-16T15:17:20.410Z",
-=======
-        "start_timestamp": "2019-10-16T14:28:06.465Z",
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-        "start_timestamp": "2019-10-16T14:28:06.465Z",
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-        "start_timestamp": "2019-10-16T14:28:06.465Z",
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-        "start_timestamp": "2019-10-16T14:28:06.465Z",
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-        "line": 15,
-        "name": "Successfully edit transfer balance before confirmation",
-        "description": "",
-        "id": "transfer-balance-management;successfully-edit-transfer-balance-before-confirmation",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
+            "keyword": "And "
+          },
           {
             "result": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-              "duration": 19052945300,
-=======
-              "duration": 10423810500,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 10423810500,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 10423810500,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 10423810500,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
+              "duration": 506231100,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User smash on the button \"updateArticle_update\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"updateArticle_update\"",
+                  "offset": 25
+                }
+              ],
+              "location": "TransportNewsManagementFeature.user_smash_on_the_button(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 556078300,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User smash on the button \"articleUpdate_back\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"articleUpdate_back\"",
+                  "offset": 25
+                }
+              ],
+              "location": "TransportNewsManagementFeature.user_smash_on_the_button(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 485768300,
               "status": "passed"
             },
             "line": 16,
-            "name": "the User is already logs in to the website",
+            "name": "User smash on the updated button \"Cucumber Test updated\"",
             "match": {
-              "location": "TransferBalanceFeature.the_User_is_already_logs_in_to_the_website()"
+              "arguments": [
+                {
+                  "val": "\"Cucumber Test updated\"",
+                  "offset": 33
+                }
+              ],
+              "location": "TransportNewsManagementFeature.user_smash_on_the_updated_button(String)"
             },
-            "keyword": "Given "
+            "keyword": "And "
           },
           {
             "result": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-              "duration": 1002688100,
-=======
-              "duration": 934520300,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 934520300,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 934520300,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 934520300,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
+              "duration": 492884700,
               "status": "passed"
             },
             "line": 17,
-            "name": "the User clicks the \"sidebar_transferBalance\"",
+            "name": "User smash on the button \"updateArticle_delete\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"sidebar_transferBalance\"",
-                  "offset": 20
+                  "val": "\"updateArticle_delete\"",
+                  "offset": 25
                 }
               ],
-              "location": "TransferBalanceFeature.the_User_clicks_the(String)"
+              "location": "TransportNewsManagementFeature.user_smash_on_the_button(String)"
             },
-            "keyword": "When "
+            "keyword": "And "
           },
           {
             "result": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-              "duration": 127954400,
-=======
-              "duration": 106737500,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 106737500,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 106737500,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 106737500,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
+              "duration": 454359700,
               "status": "passed"
             },
             "line": 18,
-            "name": "the User choose the \"fromOpalID\"",
+            "name": "User smash on the button \"articleUpdate_back\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"fromOpalID\"",
-                  "offset": 20
+                  "val": "\"articleUpdate_back\"",
+                  "offset": 25
                 }
               ],
-              "location": "TransferBalanceFeature.the_User_choose_the(String)"
+              "location": "TransportNewsManagementFeature.user_smash_on_the_button(String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-              "duration": 164460600,
-=======
-              "duration": 107872800,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 107872800,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 107872800,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 107872800,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
+              "duration": 641850500,
               "status": "passed"
             },
             "line": 19,
-            "name": "the User choose the \"toOpalID\"",
+            "name": "The User should be navigated to \"Create Article\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"toOpalID\"",
-                  "offset": 20
-                }
-              ],
-              "location": "TransferBalanceFeature.the_User_choose_the(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-              "duration": 486041400,
-=======
-              "duration": 512528300,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 512528300,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 512528300,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 512528300,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "the User submit it by clicks on \"transferContinue\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"transferContinue\"",
+                  "val": "\"Create Article\"",
                   "offset": 32
                 }
               ],
-              "location": "TransferBalanceFeature.the_User_submit_it_by_clicks_on(String)"
+              "location": "TransportNewsManagementFeature.the_User_should_be_navigated_to(String)"
             },
-            "keyword": "And "
-          },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-10-16T16:45:01.608Z",
+        "line": 21,
+        "name": "Customer successfully view the Article",
+        "description": "",
+        "id": "transport-news-management;customer-successfully-view-the-article",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
           {
             "result": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-              "duration": 119194500,
-=======
-              "duration": 196831700,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 196831700,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 196831700,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 196831700,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "the User choose the \"transferValue\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"transferValue\"",
-                  "offset": 20
-                }
-              ],
-              "location": "TransferBalanceFeature.the_User_choose_the(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-              "duration": 491415600,
-=======
-              "duration": 581055700,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 581055700,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 581055700,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 581055700,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
+              "duration": 7532826400,
               "status": "passed"
             },
             "line": 22,
-            "name": "the User submit it by clicks on \"transferNext\"",
+            "name": "User is staying at \"main.jsp\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"transferNext\"",
-                  "offset": 32
+                  "val": "\"main.jsp\"",
+                  "offset": 19
                 }
               ],
-              "location": "TransferBalanceFeature.the_User_submit_it_by_clicks_on(String)"
+              "location": "TransportNewsManagementFeature.user_is_staying_at(String)"
             },
-            "keyword": "And "
+            "keyword": "Given "
           },
           {
             "result": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-              "duration": 239724600,
-=======
-              "duration": 330263400,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 330263400,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 330263400,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 330263400,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
+              "duration": 840023100,
               "status": "passed"
             },
             "line": 23,
-            "name": "the User see that the details are correct",
+            "name": "User smash on the button \"sidebar_articleView\"",
             "match": {
-              "location": "TransferBalanceFeature.the_User_see_that_the_details_are_correct()"
+              "arguments": [
+                {
+                  "val": "\"sidebar_articleView\"",
+                  "offset": 25
+                }
+              ],
+              "location": "TransportNewsManagementFeature.user_smash_on_the_button(String)"
             },
-            "keyword": "And "
+            "keyword": "When "
           },
           {
             "result": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-              "duration": 909318900,
-=======
-              "duration": 693066800,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 693066800,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 693066800,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 693066800,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
+              "duration": 619309900,
               "status": "passed"
             },
             "line": 24,
-            "name": "the User clicks on \"editTransfer\"",
+            "name": "The User should be navigated to \"View Article\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"editTransfer\"",
-                  "offset": 19
-                }
-              ],
-              "location": "TransferBalanceFeature.the_User_clicks_on(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-              "duration": 313673100,
-=======
-              "duration": 362787100,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 362787100,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 362787100,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 362787100,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-              "status": "passed"
-            },
-            "line": 25,
-            "name": "the User edit the transfer balance details",
-            "match": {
-              "location": "TransferBalanceFeature.the_User_edit_the_transfer_balance_details()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-              "duration": 642605200,
-=======
-              "duration": 563094700,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 563094700,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 563094700,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 563094700,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-              "status": "passed"
-            },
-            "line": 26,
-            "name": "the User clicks on \"submitEdit\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"submitEdit\"",
-                  "offset": 19
-                }
-              ],
-              "location": "TransferBalanceFeature.the_User_clicks_on(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-              "duration": 469360100,
-=======
-              "duration": 532529700,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 532529700,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 532529700,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 532529700,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-              "status": "passed"
-            },
-            "line": 27,
-            "name": "the User clicks on \"confirmTransfer\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"confirmTransfer\"",
-                  "offset": 19
-                }
-              ],
-              "location": "TransferBalanceFeature.the_User_clicks_on(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-              "duration": 635798300,
-=======
-              "duration": 835636900,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 835636900,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 835636900,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 835636900,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-              "status": "passed"
-            },
-            "line": 28,
-            "name": "the User should see transfer success message",
-            "match": {
-              "location": "TransferBalanceFeature.the_User_should_see_transfer_success_message()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        "start_timestamp": "2019-10-16T15:17:45.066Z",
-=======
-        "start_timestamp": "2019-10-16T14:28:22.648Z",
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-        "start_timestamp": "2019-10-16T14:28:22.648Z",
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-        "start_timestamp": "2019-10-16T14:28:22.648Z",
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-        "start_timestamp": "2019-10-16T14:28:22.648Z",
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-        "line": 30,
-        "name": "Successfully cancel transfer balance",
-        "description": "",
-        "id": "transfer-balance-management;successfully-cancel-transfer-balance",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-              "duration": 9151534200,
-=======
-              "duration": 10686379300,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 10686379300,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 10686379300,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 10686379300,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-              "status": "passed"
-            },
-            "line": 31,
-            "name": "the User is already logs in to the website",
-            "match": {
-              "location": "TransferBalanceFeature.the_User_is_already_logs_in_to_the_website()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-              "duration": 899018900,
-=======
-              "duration": 924346600,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 924346600,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 924346600,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 924346600,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-              "status": "passed"
-            },
-            "line": 32,
-            "name": "the User clicks the \"sidebar_transferBalance\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"sidebar_transferBalance\"",
-                  "offset": 20
-                }
-              ],
-              "location": "TransferBalanceFeature.the_User_clicks_the(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-              "duration": 115318600,
-=======
-              "duration": 190633200,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 190633200,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 190633200,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 190633200,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-              "status": "passed"
-            },
-            "line": 33,
-            "name": "the User choose the \"fromOpalID\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"fromOpalID\"",
-                  "offset": 20
-                }
-              ],
-              "location": "TransferBalanceFeature.the_User_choose_the(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-              "duration": 161167800,
-=======
-              "duration": 253619500,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 253619500,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 253619500,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 253619500,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-              "status": "passed"
-            },
-            "line": 34,
-            "name": "the User choose the \"toOpalID\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"toOpalID\"",
-                  "offset": 20
-                }
-              ],
-              "location": "TransferBalanceFeature.the_User_choose_the(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-              "duration": 467202600,
-=======
-              "duration": 503582100,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 503582100,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 503582100,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 503582100,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-              "status": "passed"
-            },
-            "line": 35,
-            "name": "the User submit it by clicks on \"transferContinue\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"transferContinue\"",
+                  "val": "\"View Article\"",
                   "offset": 32
                 }
               ],
-              "location": "TransferBalanceFeature.the_User_submit_it_by_clicks_on(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-              "duration": 117953300,
-=======
-              "duration": 132643300,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 132643300,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 132643300,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 132643300,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-              "status": "passed"
-            },
-            "line": 36,
-            "name": "the User choose the \"transferValue\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"transferValue\"",
-                  "offset": 20
-                }
-              ],
-              "location": "TransferBalanceFeature.the_User_choose_the(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-              "duration": 481053000,
-=======
-              "duration": 547666900,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 547666900,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 547666900,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 547666900,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-              "status": "passed"
-            },
-            "line": 37,
-            "name": "the User submit it by clicks on \"transferNext\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"transferNext\"",
-                  "offset": 32
-                }
-              ],
-              "location": "TransferBalanceFeature.the_User_submit_it_by_clicks_on(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-              "duration": 209897400,
-=======
-              "duration": 139144400,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 139144400,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 139144400,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 139144400,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-              "status": "passed"
-            },
-            "line": 38,
-            "name": "the User see that the details are correct",
-            "match": {
-              "location": "TransferBalanceFeature.the_User_see_that_the_details_are_correct()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-              "duration": 418405000,
-=======
-              "duration": 367824500,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 367824500,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 367824500,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 367824500,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-              "status": "passed"
-            },
-            "line": 39,
-            "name": "the User clicks on \"cancelTransfer\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"cancelTransfer\"",
-                  "offset": 19
-                }
-              ],
-              "location": "TransferBalanceFeature.the_User_clicks_on(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-              "duration": 637911500,
-=======
-              "duration": 690635000,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 690635000,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 690635000,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 690635000,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-              "status": "passed"
-            },
-            "line": 40,
-            "name": "the User should see cancelled transfer message",
-            "match": {
-              "location": "TransferBalanceFeature.the_User_should_see_cancelled_transfer_message()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        "start_timestamp": "2019-10-16T15:17:57.727Z",
-=======
-        "start_timestamp": "2019-10-16T14:28:37.086Z",
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-        "start_timestamp": "2019-10-16T14:28:37.086Z",
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-        "start_timestamp": "2019-10-16T14:28:37.086Z",
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-        "start_timestamp": "2019-10-16T14:28:37.086Z",
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-        "line": 42,
-        "name": "Successfully list transfer balance history",
-        "description": "",
-        "id": "transfer-balance-management;successfully-list-transfer-balance-history",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-              "duration": 9286139800,
-=======
-              "duration": 9560052500,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 9560052500,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 9560052500,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 9560052500,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-              "status": "passed"
-            },
-            "line": 43,
-            "name": "the User is already logs in to the website",
-            "match": {
-              "location": "TransferBalanceFeature.the_User_is_already_logs_in_to_the_website()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-              "duration": 973855900,
-=======
-              "duration": 864320800,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 864320800,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 864320800,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 864320800,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-              "status": "passed"
-            },
-            "line": 44,
-            "name": "the User clicks the \"sidebar_transferBalance\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"sidebar_transferBalance\"",
-                  "offset": 20
-                }
-              ],
-              "location": "TransferBalanceFeature.the_User_clicks_the(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-              "duration": 565997300,
-=======
-              "duration": 667549600,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 667549600,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 667549600,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 667549600,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-              "status": "passed"
-            },
-            "line": 45,
-            "name": "the User clicks on \"showTransferHistory\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"showTransferHistory\"",
-                  "offset": 19
-                }
-              ],
-              "location": "TransferBalanceFeature.the_User_clicks_on(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-              "duration": 717265800,
-=======
-              "duration": 836577900,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 836577900,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 836577900,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 836577900,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-              "status": "passed"
-            },
-            "line": 46,
-            "name": "the User should see the list of transfer balance history",
-            "match": {
-              "location": "TransferBalanceFeature.the_User_should_see_the_list_of_transfer_balance_history()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        "start_timestamp": "2019-10-16T15:18:09.271Z",
-=======
-        "start_timestamp": "2019-10-16T14:28:49.015Z",
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-        "start_timestamp": "2019-10-16T14:28:49.015Z",
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-        "start_timestamp": "2019-10-16T14:28:49.015Z",
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-        "start_timestamp": "2019-10-16T14:28:49.015Z",
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-        "line": 48,
-        "name": "Successfully search transfer balance history by date",
-        "description": "",
-        "id": "transfer-balance-management;successfully-search-transfer-balance-history-by-date",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-              "duration": 9127061100,
-=======
-              "duration": 9665350100,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 9665350100,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 9665350100,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 9665350100,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-              "status": "passed"
-            },
-            "line": 49,
-            "name": "the User is already logs in to the website",
-            "match": {
-              "location": "TransferBalanceFeature.the_User_is_already_logs_in_to_the_website()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-              "duration": 884487700,
-=======
-              "duration": 938425000,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 938425000,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 938425000,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 938425000,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-              "status": "passed"
-            },
-            "line": 50,
-            "name": "the User clicks the \"sidebar_transferBalance\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"sidebar_transferBalance\"",
-                  "offset": 20
-                }
-              ],
-              "location": "TransferBalanceFeature.the_User_clicks_the(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-              "duration": 597985200,
-=======
-              "duration": 503458500,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 503458500,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 503458500,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 503458500,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-              "status": "passed"
-            },
-            "line": 51,
-            "name": "the User clicks on \"showTransferHistory\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"showTransferHistory\"",
-                  "offset": 19
-                }
-              ],
-              "location": "TransferBalanceFeature.the_User_clicks_on(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-              "duration": 154159600,
-=======
-              "duration": 132779200,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 132779200,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 132779200,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 132779200,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-              "status": "passed"
-            },
-            "line": 52,
-            "name": "the User choose the \"enterDate\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"enterDate\"",
-                  "offset": 20
-                }
-              ],
-              "location": "TransferBalanceFeature.the_User_choose_the(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-              "duration": 568060600,
-=======
-              "duration": 500166400,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 500166400,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 500166400,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 500166400,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-              "status": "passed"
-            },
-            "line": 53,
-            "name": "the User clicks on \"searchTransID\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"searchTransID\"",
-                  "offset": 19
-                }
-              ],
-              "location": "TransferBalanceFeature.the_User_clicks_on(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-              "duration": 629764300,
-=======
-              "duration": 734918300,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 734918300,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 734918300,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-              "duration": 734918300,
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-              "status": "passed"
-            },
-            "line": 54,
-            "name": "the User should see record on the searched date",
-            "match": {
-              "location": "TransferBalanceFeature.the_User_should_see_record_on_the_searched_date()"
+              "location": "TransportNewsManagementFeature.the_User_should_be_navigated_to(String)"
             },
             "keyword": "Then "
           }
         ]
       }
     ],
-    "name": "Transfer Balance Management",
+    "name": "Transport News Management",
     "description": "",
-    "id": "transfer-balance-management",
+    "id": "transport-news-management",
     "keyword": "Feature",
-    "uri": "file:OpalFeatures/TransferBalanceFeature.feature",
+    "uri": "file:OpalFeatures/TransportNewsManagement.feature",
     "tags": []
   }
 ]

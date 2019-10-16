@@ -1,21 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="asd.test.RunTest" time="75.291" tests="5" errors="0" skipped="0" failures="0">
-=======
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="asd.test.RunTest" time="71.027" tests="5" errors="0" skipped="0" failures="0">
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="asd.test.RunTest" time="71.027" tests="5" errors="0" skipped="0" failures="0">
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="asd.test.RunTest" time="71.027" tests="5" errors="0" skipped="0" failures="0">
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="asd.test.RunTest" time="71.027" tests="5" errors="0" skipped="0" failures="0">
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="asd.test.RunTest" time="28.31" tests="2" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_201\jre\bin"/>
@@ -76,35 +60,6 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-  <testcase name="Successfully transfer balance" classname="Transfer Balance Management" time="13.82"/>
-  <testcase name="Successfully edit transfer balance before confirmation" classname="Transfer Balance Management" time="24.649"/>
-  <testcase name="Successfully cancel transfer balance" classname="Transfer Balance Management" time="12.661"/>
-  <testcase name="Successfully list transfer balance history" classname="Transfer Balance Management" time="11.544"/>
-  <testcase name="Successfully search transfer balance history by date" classname="Transfer Balance Management" time="11.963"/>
-=======
-=======
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-  <testcase name="Successfully transfer balance" classname="Transfer Balance Management" time="15.258"/>
-  <testcase name="Successfully edit transfer balance before confirmation" classname="Transfer Balance Management" time="16.18"/>
-  <testcase name="Successfully cancel transfer balance" classname="Transfer Balance Management" time="14.436"/>
-  <testcase name="Successfully list transfer balance history" classname="Transfer Balance Management" time="11.929"/>
-  <testcase name="Successfully search transfer balance history by date" classname="Transfer Balance Management" time="12.476"/>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
-=======
->>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
+  <testcase name="Successfuly create, edit, delete an Article" classname="Transport News Management" time="18.725"/>
+  <testcase name="Customer successfully view the Article" classname="Transport News Management" time="8.986"/>
 </testsuite>
