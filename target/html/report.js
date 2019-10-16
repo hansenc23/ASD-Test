@@ -1,457 +1,378 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:OpalFeatures/enqiryFeature.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:OpalFeatures/AccountManagementFeature.feature");
 formatter.feature({
-  "name": "enqiry Manager",
+  "name": "Account Management",
   "description": "",
   "keyword": "Feature"
 });
 formatter.scenario({
-  "name": "A user want to Create new enqiry and edit",
+  "name": "Successfully view account details",
   "description": "",
   "keyword": "Scenario"
 });
 formatter.step({
-  "name": "the User is in the \"main.jsp\"",
+  "name": "the page is \"adminPage.jsp\"",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "loginFeature.user_is_in_the(String)"
+  "location": "AccountManagementFeature.the_page_is(String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User click the \"navbar_login\"",
+  "name": "the user chooses \"account_management\"",
   "keyword": "When "
 });
 formatter.match({
-  "location": "loginFeature.user_click_on(String)"
+  "location": "AccountManagementFeature.the_user_chooses(String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User fill user information",
+  "name": "the user views \"view_profile\"",
   "keyword": "And "
 });
 formatter.match({
-  "location": "loginFeature.user_fill_user_information()"
+  "location": "AccountManagementFeature.the_user_views(String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User click the \"login_submit\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "loginFeature.user_click_on(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User click the \"loginAction_success\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "loginFeature.user_click_on(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User click the \"sidebar_enqiry\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "loginFeature.user_click_on(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User click the \"new_enqiry_\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "loginFeature.user_click_on(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User fill in Question",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "loginFeature.user_fill_in_Question()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User click the \"submit\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "loginFeature.user_click_on(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User click the \"main\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "loginFeature.user_click_on(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User click the \"sidebar_enqiry\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "loginFeature.user_click_on(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User click the \"enqiry_detail\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "loginFeature.user_click_on(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User click the \"edit_your_inqiry_\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "loginFeature.user_click_on(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User fill in edited question",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "loginFeature.user_fill_in_edited_question()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User click the \"submit_edit_\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "loginFeature.user_click_on(String)"
-});
-formatter.result({
-  "error_message": "org.openqa.selenium.ElementNotInteractableException: element not interactable\n  (Session info: chrome\u003d77.0.3865.120)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-RG37MRS\u0027, ip: \u0027192.168.20.2\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027x86\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_201\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.120, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\\Users\\kevin\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55637}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 64a631ae23a7f81942297baba84847a8\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)\r\n\tat asd.test.loginFeature.user_click_on(loginFeature.java:47)\r\n\tat ✽.User click the \"submit_edit_\"(file:OpalFeatures/enqiryFeature.feature:21)\r\n",
-  "status": "failed"
-});
-formatter.step({
-  "name": "User click the \"sidebar_main\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "loginFeature.user_click_on(String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "page should be navigated to \"Card Page\"",
+  "name": "the user should be directed to a page called \"Profile\"",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "loginFeature.the_page_should_be_navigated_to(String)"
+  "location": "AccountManagementFeature.the_user_should_be_directed_to_a_page_called(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.scenario({
-  "name": "A user want to Answer Question and then delete it",
+  "name": "Successfully edit account details",
   "description": "",
   "keyword": "Scenario"
 });
 formatter.step({
-  "name": "the User is in the \"login.jsp\"",
+  "name": "user is on the page called \"adminPage.jsp\"",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "loginFeature.user_is_in_the(String)"
+  "location": "AccountManagementFeature.user_is_on_the_page_called(String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User is login as an admin",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "loginFeature.user_is_login_as_an_admin()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User click the \"enqiry_management\"",
+  "name": "the user clicks on a button \"account_management\"",
   "keyword": "When "
 });
 formatter.match({
-  "location": "loginFeature.user_click_on(String)"
+  "location": "AccountManagementFeature.the_user_clicks_on_a_button(String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User click the \"answer_enqiry_\"",
+  "name": "the user wants to edit account details \"edit_profile\"",
   "keyword": "And "
 });
 formatter.match({
-  "location": "loginFeature.user_click_on(String)"
+  "location": "AccountManagementFeature.the_user_wants_to_edit_account_details(String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User fill in answer",
+  "name": "the user fill in new details",
   "keyword": "And "
 });
 formatter.match({
-  "location": "loginFeature.user_fill_in_answer()"
+  "location": "AccountManagementFeature.the_user_fill_in_new_details()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User click the \"submit_answer_\"",
+  "name": "the user goes back to account list \"back_to_profile\"",
   "keyword": "And "
 });
 formatter.match({
-  "location": "loginFeature.user_click_on(String)"
+  "location": "AccountManagementFeature.the_user_goes_back_to_account_list(String)"
 });
 formatter.result({
-  "error_message": "org.openqa.selenium.ElementNotInteractableException: element not interactable\n  (Session info: chrome\u003d77.0.3865.120)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-RG37MRS\u0027, ip: \u0027192.168.20.2\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027x86\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_201\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.120, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\\Users\\kevin\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55659}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 46087ccf175acccea27591b308a0fbbb\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)\r\n\tat asd.test.loginFeature.user_click_on(loginFeature.java:47)\r\n\tat ✽.User click the \"submit_answer_\"(file:OpalFeatures/enqiryFeature.feature:34)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.step({
-  "name": "User click the \"enqiry_management\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "loginFeature.user_click_on(String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "User click the \"remove_enqiry_\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "loginFeature.user_click_on(String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "page should be navigated to \"Enqiry List\"",
+  "name": "the page title should be \"Account List\"",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "loginFeature.the_page_should_be_navigated_to(String)"
+  "location": "AccountManagementFeature.the_page_title_should_be(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
-formatter.uri("file:OpalFeatures/loginFeature.feature");
+formatter.uri("file:OpalFeatures/UserRegistrationFeature.feature");
 formatter.feature({
-  "name": "Access Manager",
+  "name": "Online User Registration",
   "description": "",
   "keyword": "Feature"
 });
 formatter.scenario({
-  "name": "A user will be able to login , and logout",
+  "name": "Successfully created an account",
   "description": "",
   "keyword": "Scenario"
 });
 formatter.step({
-  "name": "the User is in the \"main.jsp\"",
+  "name": "User is at \"main.jsp\"",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "loginFeature.user_is_in_the(String)"
+  "location": "RegisterFeature.User_is_at(String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User click the \"navbar_login\"",
+  "name": "User taps \"navbar_register\"",
   "keyword": "When "
 });
 formatter.match({
-  "location": "loginFeature.user_click_on(String)"
+  "location": "RegisterFeature.user_taps(String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User fill user information",
+  "name": "User fill in the registration detail",
   "keyword": "And "
 });
 formatter.match({
-  "location": "loginFeature.user_fill_user_information()"
+  "location": "RegisterFeature.User_fill_in_the_registration_detail()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User click the \"login_submit\"",
+  "name": "User backs \"back\"",
   "keyword": "And "
 });
 formatter.match({
-  "location": "loginFeature.user_click_on(String)"
+  "location": "RegisterFeature.User_backs(String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User click the \"loginAction_success\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "loginFeature.user_click_on(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User click the \"navbar_logout\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "loginFeature.user_click_on(String)"
-});
-formatter.result({
-  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#navbar_logout\"}\n  (Session info: chrome\u003d77.0.3865.120)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-RG37MRS\u0027, ip: \u0027192.168.20.2\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027x86\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_201\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.120, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\\Users\\kevin\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55681}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 0e9caf37a2a0d8a4c961fe05e5b66718\n*** Element info: {Using\u003did, value\u003dnavbar_logout}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\r\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat asd.test.loginFeature.user_click_on(loginFeature.java:47)\r\n\tat ✽.User click the \"navbar_logout\"(file:OpalFeatures/loginFeature.feature:10)\r\n",
-  "status": "failed"
-});
-formatter.step({
-  "name": "page should be navigated to \"logout.jsp\"",
+  "name": "user should be directed to \"Card Page\"",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "loginFeature.the_page_should_be_navigated_to(String)"
+  "location": "RegisterFeature.user_should_be_directed_to(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.scenario({
-  "name": "A user want to delete their access history",
+  "name": "Successfully update account details",
   "description": "",
   "keyword": "Scenario"
 });
 formatter.step({
-  "name": "the User is in the \"main.jsp\"",
+  "name": "page is on \"login.jsp\"",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "loginFeature.user_is_in_the(String)"
+  "location": "RegisterFeature.page_is_on(String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User click the \"navbar_login\"",
-  "keyword": "When "
+  "name": "user fills login credentials",
+  "keyword": "And "
 });
 formatter.match({
-  "location": "loginFeature.user_click_on(String)"
+  "location": "RegisterFeature.user_fills_login_credentials()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User fill user admin information",
+  "name": "user login success \"loginAction_success\"",
   "keyword": "And "
 });
 formatter.match({
-  "location": "loginFeature.user_fill_admin_user_information()"
+  "location": "RegisterFeature.user_click(String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User click the \"login_submit\"",
+  "name": "user open profile \"navbar_profile\"",
   "keyword": "And "
 });
 formatter.match({
-  "location": "loginFeature.user_click_on(String)"
+  "location": "RegisterFeature.user_open_profile(String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User click the \"loginAction_success\"",
+  "name": "user click edit \"edit_profile\"",
   "keyword": "And "
 });
 formatter.match({
-  "location": "loginFeature.user_click_on(String)"
+  "location": "RegisterFeature.user_click_edit(String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User click the \"sidebar_AccessManager\"",
+  "name": "User updates account details",
   "keyword": "And "
 });
 formatter.match({
-  "location": "loginFeature.user_click_on(String)"
+  "location": "RegisterFeature.User_updates_account_details()"
 });
 formatter.result({
-  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#sidebar_AccessManager\"}\n  (Session info: chrome\u003d77.0.3865.120)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-RG37MRS\u0027, ip: \u0027192.168.20.2\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027x86\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_201\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.120, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\\Users\\kevin\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55707}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 7bc1e50d48861f94c3029dbd8a3cf877\n*** Element info: {Using\u003did, value\u003dsidebar_AccessManager}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\r\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat asd.test.loginFeature.user_click_on(loginFeature.java:47)\r\n\tat ✽.User click the \"sidebar_AccessManager\"(file:OpalFeatures/loginFeature.feature:20)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.step({
-  "name": "User click the \"delete\"",
+  "name": "user goes back \"back_to_profile\"",
   "keyword": "And "
 });
 formatter.match({
-  "location": "loginFeature.user_click_on(String)"
+  "location": "RegisterFeature.user_goes_back(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
-  "name": "User refresh page",
+  "name": "user wants to change password \"change_password\"",
   "keyword": "And "
 });
 formatter.match({
-  "location": "loginFeature.user_refresh_page()"
+  "location": "RegisterFeature.user_wants_to_change_password(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
-  "name": "page should be navigated to \"Access manager\"",
+  "name": "User fill in new password",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "RegisterFeature.User_fill_in_new_password()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user tap back \"back_to_profile\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "RegisterFeature.user_tap_back(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user wants to add question \"add_question\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "RegisterFeature.user_wants_to_add_question(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user select the necessary question",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "RegisterFeature.user_select_the_necessary_question()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User go previous page \"back_to_profile\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "RegisterFeature.User_go_previous_page(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User should see profile page \"Profile\"",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "loginFeature.the_page_should_be_navigated_to(String)"
+  "location": "RegisterFeature.User_should_see_profile_page(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Successfully forget password",
+  "description": "",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "name": "the page shows \"login.jsp\"",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "RegisterFeature.the_page_shows(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user forgets \"forget_button\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "RegisterFeature.user_forgets(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User types email",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "RegisterFeature.User_types_email()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user answer the question",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "RegisterFeature.user_answer_the_question()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "page will show old password \"Forget Password\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "RegisterFeature.page_will_show_old_password(String)"
+});
+formatter.result({
+  "status": "passed"
 });
 });

@@ -64,7 +64,7 @@
                     <input type="hidden" name ="isStaff" value = "false">
                     <br>
 
-                    <button type="submit" class="pure-button pure-button-primary">Register</button>
+                    <button id="register_submit" type="submit" class="pure-button pure-button-primary">Register</button>
                     <button class="pure-button pure-button-primary" type="button" onclick="location.href = 'index.jsp'" > Home Page </button>
                 </fieldset>
 

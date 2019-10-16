@@ -1,7 +1,1 @@
-asd\test\Driver.class
-asd\test\enqiryUnitTest.class
-asd\test\loginFeature.class
-asd\test\AccountManagementFeature.class
-asd\test\TransportNewsManagementFeature.class
-asd\test\RunTest.class
-asd\test\TransportNewsManagementUnitTest.class
+asd/test/AccountManagementUnitTest.class
