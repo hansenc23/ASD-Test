@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="asd.test.RunTest" time="71.027" tests="5" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="asd.test.RunTest" time="72.937" tests="5" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_202\jre\bin"/>
@@ -60,9 +60,9 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="Successfully transfer balance" classname="Transfer Balance Management" time="15.258"/>
-  <testcase name="Successfully edit transfer balance before confirmation" classname="Transfer Balance Management" time="16.18"/>
-  <testcase name="Successfully cancel transfer balance" classname="Transfer Balance Management" time="14.436"/>
-  <testcase name="Successfully list transfer balance history" classname="Transfer Balance Management" time="11.929"/>
-  <testcase name="Successfully search transfer balance history by date" classname="Transfer Balance Management" time="12.476"/>
+  <testcase name="Successfully transfer balance" classname="Transfer Balance Management" time="16.181"/>
+  <testcase name="Successfully edit transfer balance before confirmation" classname="Transfer Balance Management" time="15.209"/>
+  <testcase name="Successfully cancel transfer balance" classname="Transfer Balance Management" time="14.343"/>
+  <testcase name="Successfully list transfer balance history" classname="Transfer Balance Management" time="12.337"/>
+  <testcase name="Successfully search transfer balance history by date" classname="Transfer Balance Management" time="13.581"/>
 </testsuite>
