@@ -22,7 +22,7 @@
             <a id="FAQs_management" href="FAQsCreate.jsp">FAQs Management</a>
             <a id="News_management"href="articleCreate.jsp">Transport News Management</a>
             <a href="#">Notification Management</a>
-            <a id="access_management" href="accessManager.jsp">Access Manager</a>  
+            <a id="sidebar_AccessManager" href="accessManager.jsp">Access Manager</a>  
         </div>
     </body>
 </html>

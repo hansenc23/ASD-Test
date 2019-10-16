@@ -43,7 +43,7 @@
          <div class="navigation-bar">
              <ul>
                 <li><a href="accountProfile.jsp">Welcome <%=name%></a></li>
-                <li><a href="logout.jsp">Logout</a></li>
+                <li><a id="navbar_logout" href="logout.jsp">Logout</a></li>
                 <li><a href="adminPage.jsp">Home</a></li>
               
                 
