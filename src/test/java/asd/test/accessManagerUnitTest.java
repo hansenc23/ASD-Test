@@ -53,21 +53,21 @@ public class accessManagerUnitTest {
         String testOutcome = dbconnector.testUserSearchTimes(customerID,loginT);
         assertEquals("test succeed", testOutcome);
     }
-    @AfterClass
+   @AfterClass
     public static void tearDownClass() {
-          
+//          
     MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
        try (MongoClient client = new MongoClient(uri)) {
-           MongoDatabase db = client.getDatabase(uri.getDatabase());
+          MongoDatabase db = client.getDatabase(uri.getDatabase());
             MongoCollection<Document> timelist = db.getCollection("ASD-app-times");
-            MongoCollection<Document> userlist = db.getCollection("ASD-app-users");
-            Document userdoc = userlist.find(and(eq("Username", "test@gmail.com"), eq("Password", "123"))).first();
-            userlist.deleteOne(userdoc);
-           Document timedoc = timelist.find(eq("loginID", "123456")).first();
-           timelist.deleteOne(timedoc);
-    }
-  }
-   
+//            MongoCollection<Document> userlist = db.getCollection("ASD-app-users");
+//            Document userdoc = userlist.find(and(eq("Username", "test@gmail.com"), eq("Password", "123"))).first();
+//            userlist.deleteOne(userdoc);
+          Document timedoc = timelist.find(eq("loginID", "123456")).first();
+          timelist.deleteOne(timedoc);
+   }
+ }
+//   
 
  
 }
