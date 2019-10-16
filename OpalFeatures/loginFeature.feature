@@ -8,7 +8,7 @@
       And User click the "login_submit"
       And User click the "loginAction_success"
       And User click the "navbar_logout"
-      Then page should be navigated to "logout"
+      Then page should be navigated to "JSP Page"
  
     
   Scenario: A user want to delete their access history 
