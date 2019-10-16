@@ -91,7 +91,7 @@ public class TransferBalanceFeature extends Driver {
     @When("the User edit the transfer balance details")
     public void the_User_edit_the_transfer_balance_details() {
         String[] inputField = {"fromOpalID", "toOpalID", "transferValue"};
-        String[] input = {"7777 7777 8888 8888", "1111 2222 1111 2222", "5.00"};
+        String[] input = {"9098 9098 9098 9098", "1111 2222 1111 2222", "5.00"};
         for (int i=0; i < input.length-1; i++) {
             Select inputType = new Select(driver.findElement(By.id(inputField[i])));
             inputType.selectByValue(input[i]);

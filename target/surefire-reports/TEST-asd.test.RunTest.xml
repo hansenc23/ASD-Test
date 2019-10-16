@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="asd.test.RunTest" time="178.422" tests="13" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="asd.test.RunTest" time="71.763" tests="5" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_202\jre\bin"/>
@@ -60,17 +60,9 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="Successfully link Opal card to account" classname="Card Management Feature" time="14.639"/>
-  <testcase name="Failed linking Opal card with wrong Opal details" classname="Card Management Feature" time="13.244"/>
-  <testcase name="Successfully unlink Opal card from account" classname="Card Management Feature" time="13.095"/>
-  <testcase name="Successfully search an Opal Card by Opal ID" classname="Card Management Feature" time="11.627"/>
-  <testcase name="Successfully view the details of the Opal card" classname="Card Management Feature" time="12.573"/>
-  <testcase name="Successfully register an Opal Card" classname="Card Management Feature" time="18.065"/>
-  <testcase name="Failed register an Opal Card" classname="Card Management Feature" time="13.025"/>
-  <testcase name="Successfully list all Opal cards" classname="Card Management Feature" time="12.391"/>
-  <testcase name="Successfully transfer balance" classname="Transfer Balance Management" time="14.449"/>
-  <testcase name="Successfully edit transfer balance before confirmation" classname="Transfer Balance Management" time="15.657"/>
-  <testcase name="Successfully cancel transfer balance" classname="Transfer Balance Management" time="13.513"/>
-  <testcase name="Successfully list transfer balance history" classname="Transfer Balance Management" time="12.666"/>
-  <testcase name="Successfully search transfer balance history by date" classname="Transfer Balance Management" time="12.515"/>
+  <testcase name="Successfully transfer balance" classname="Transfer Balance Management" time="15.198"/>
+  <testcase name="Successfully edit transfer balance before confirmation" classname="Transfer Balance Management" time="15.097"/>
+  <testcase name="Successfully cancel transfer balance" classname="Transfer Balance Management" time="14.344"/>
+  <testcase name="Successfully list transfer balance history" classname="Transfer Balance Management" time="13.033"/>
+  <testcase name="Successfully search transfer balance history by date" classname="Transfer Balance Management" time="13.123"/>
 </testsuite>

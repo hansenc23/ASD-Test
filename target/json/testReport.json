@@ -3,864 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2019-10-16T13:43:23.855Z",
-        "line": 3,
-        "name": "Successfully link Opal card to account",
-        "description": "",
-        "id": "card-management-feature;successfully-link-opal-card-to-account",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 10871113500,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "the User is logged in to the website",
-            "match": {
-              "location": "CardManagementFeature.the_User_is_logged_in_to_the_website()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 513214300,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "is now in the \"main.jsp\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"main.jsp\"",
-                  "offset": 14
-                }
-              ],
-              "location": "CardManagementFeature.is_in_the(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 829384300,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "User clicks \"sidebar_linkCard\" button",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"sidebar_linkCard\"",
-                  "offset": 12
-                }
-              ],
-              "location": "CardManagementFeature.user_clicks(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 602518700,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "User fill in \"OpalID\" with \"\u003cOpalID\u003e\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"OpalID\"",
-                  "offset": 13
-                },
-                {
-                  "val": "\"\u003cOpalID\u003e\"",
-                  "offset": 27
-                }
-              ],
-              "location": "CardManagementFeature.user_fill_in_with(String,String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 184486000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "User fill in \"securityCode\" with \"\u003csecurityCode\u003e\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"securityCode\"",
-                  "offset": 13
-                },
-                {
-                  "val": "\"\u003csecurityCode\u003e\"",
-                  "offset": 33
-                }
-              ],
-              "location": "CardManagementFeature.user_fill_in_with(String,String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 812820300,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "User submit the form by clicking \"link\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"link\"",
-                  "offset": 33
-                }
-              ],
-              "location": "CardManagementFeature.user_submit_by_clicking(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 819559000,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "the page should give a green success feedback",
-            "match": {
-              "location": "CardManagementFeature.the_page_should_give_a_green_success_feedback()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2019-10-16T13:43:38.495Z",
-        "line": 22,
-        "name": "Failed linking Opal card with wrong Opal details",
-        "description": "",
-        "id": "card-management-feature;failed-linking-opal-card-with-wrong-opal-details;;2",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 10151081900,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "the User is logged in to the website",
-            "match": {
-              "location": "CardManagementFeature.the_User_is_logged_in_to_the_website()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 451325700,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "is now in the \"main.jsp\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"main.jsp\"",
-                  "offset": 14
-                }
-              ],
-              "location": "CardManagementFeature.is_in_the(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 618879500,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "User clicks \"sidebar_linkCard\" button",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"sidebar_linkCard\"",
-                  "offset": 12
-                }
-              ],
-              "location": "CardManagementFeature.user_clicks(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 351170500,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "User fill in \"OpalID\" with \"0000 0000 0000 0000\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"OpalID\"",
-                  "offset": 13
-                },
-                {
-                  "val": "\"0000 0000 0000 0000\"",
-                  "offset": 27
-                }
-              ],
-              "location": "CardManagementFeature.user_fill_in_with(String,String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 158820400,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "User fill in \"securityCode\" with \"0000\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"securityCode\"",
-                  "offset": 13
-                },
-                {
-                  "val": "\"0000\"",
-                  "offset": 33
-                }
-              ],
-              "location": "CardManagementFeature.user_fill_in_with(String,String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 792083900,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "User submit the form by clicking \"link\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"link\"",
-                  "offset": 33
-                }
-              ],
-              "location": "CardManagementFeature.user_submit_by_clicking(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 719642300,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "the page should give a red fail feedback",
-            "match": {
-              "location": "CardManagementFeature.the_page_should_give_a_red_fail_feedback()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2019-10-16T13:43:51.739Z",
-        "line": 24,
-        "name": "Successfully unlink Opal card from account",
-        "description": "",
-        "id": "card-management-feature;successfully-unlink-opal-card-from-account",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 10336157100,
-              "status": "passed"
-            },
-            "line": 25,
-            "name": "the User is logged in to the website",
-            "match": {
-              "location": "CardManagementFeature.the_User_is_logged_in_to_the_website()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 467219800,
-              "status": "passed"
-            },
-            "line": 26,
-            "name": "is now in the \"main.jsp\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"main.jsp\"",
-                  "offset": 14
-                }
-              ],
-              "location": "CardManagementFeature.is_in_the(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 631000500,
-              "status": "passed"
-            },
-            "line": 27,
-            "name": "User clicks \"sidebar_unlinkCard\" button",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"sidebar_unlinkCard\"",
-                  "offset": 12
-                }
-              ],
-              "location": "CardManagementFeature.user_clicks(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 260454600,
-              "status": "passed"
-            },
-            "line": 28,
-            "name": "User click on \"unlink\" for \"opalID\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"unlink\"",
-                  "offset": 14
-                },
-                {
-                  "val": "\"opalID\"",
-                  "offset": 27
-                }
-              ],
-              "location": "CardManagementFeature.user_click_on_for(String,String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1398822100,
-              "status": "passed"
-            },
-            "line": 29,
-            "name": "User should not see \"opalID\" in the \"Unlink Card Page\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"opalID\"",
-                  "offset": 20
-                },
-                {
-                  "val": "\"Unlink Card Page\"",
-                  "offset": 36
-                }
-              ],
-              "location": "CardManagementFeature.user_should_not_see_in_the(String,String)"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2019-10-16T13:44:04.835Z",
-        "line": 31,
-        "name": "Successfully search an Opal Card by Opal ID",
-        "description": "",
-        "id": "card-management-feature;successfully-search-an-opal-card-by-opal-id",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 9835322000,
-              "status": "passed"
-            },
-            "line": 32,
-            "name": "the User is logged in to the website",
-            "match": {
-              "location": "CardManagementFeature.the_User_is_logged_in_to_the_website()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 419592400,
-              "status": "passed"
-            },
-            "line": 33,
-            "name": "is now in the \"main.jsp\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"main.jsp\"",
-                  "offset": 14
-                }
-              ],
-              "location": "CardManagementFeature.is_in_the(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 83094900,
-              "status": "passed"
-            },
-            "line": 34,
-            "name": "User select an \"OpalID\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"OpalID\"",
-                  "offset": 15
-                }
-              ],
-              "location": "CardManagementFeature.user_select_an(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 531746300,
-              "status": "passed"
-            },
-            "line": 35,
-            "name": "User submit the form by clicking \"Search\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Search\"",
-                  "offset": 33
-                }
-              ],
-              "location": "CardManagementFeature.user_submit_by_clicking(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 756656900,
-              "status": "passed"
-            },
-            "line": 36,
-            "name": "the searched \"OpalID\" should be shown in the page",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"OpalID\"",
-                  "offset": 13
-                }
-              ],
-              "location": "CardManagementFeature.the_searched_should_be_shown_in_the_page(String)"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2019-10-16T13:44:16.462Z",
-        "line": 38,
-        "name": "Successfully view the details of the Opal card",
-        "description": "",
-        "id": "card-management-feature;successfully-view-the-details-of-the-opal-card",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 10522933500,
-              "status": "passed"
-            },
-            "line": 39,
-            "name": "the User is logged in to the website",
-            "match": {
-              "location": "CardManagementFeature.the_User_is_logged_in_to_the_website()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 600965200,
-              "status": "passed"
-            },
-            "line": 40,
-            "name": "is now in the \"main.jsp\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"main.jsp\"",
-                  "offset": 14
-                }
-              ],
-              "location": "CardManagementFeature.is_in_the(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 741797500,
-              "status": "passed"
-            },
-            "line": 41,
-            "name": "User click on \"Details\" for \"opalID\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Details\"",
-                  "offset": 14
-                },
-                {
-                  "val": "\"opalID\"",
-                  "offset": 28
-                }
-              ],
-              "location": "CardManagementFeature.user_click_on_for(String,String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 706224300,
-              "status": "passed"
-            },
-            "line": 42,
-            "name": "the page should be navigated to \"Card Details Page\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Card Details Page\"",
-                  "offset": 32
-                }
-              ],
-              "location": "CardManagementFeature.the_page_should_be_navigated_to(String)"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2019-10-16T13:44:29.036Z",
-        "line": 46,
-        "name": "Successfully register an Opal Card",
-        "description": "",
-        "id": "card-management-feature;successfully-register-an-opal-card",
-        "after": [
-          {
-            "result": {
-              "duration": 5277618000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "CardManagementFeature.removeTestCard()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 9407590200,
-              "status": "passed"
-            },
-            "line": 47,
-            "name": "the Staff is logged in to the website",
-            "match": {
-              "location": "CardManagementFeature.the_Staff_is_loggied_in_to_the_website()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 692449100,
-              "status": "passed"
-            },
-            "line": 48,
-            "name": "the Staff click on \"card_management\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"card_management\"",
-                  "offset": 19
-                }
-              ],
-              "location": "CardManagementFeature.the_Staff_click_on(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 716494300,
-              "status": "passed"
-            },
-            "line": 49,
-            "name": "the Staff click on \"register_card\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"register_card\"",
-                  "offset": 19
-                }
-              ],
-              "location": "CardManagementFeature.the_Staff_click_on(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 641731300,
-              "status": "passed"
-            },
-            "line": 50,
-            "name": "the Staff fill in the new Opal Card details for \"OpalID\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"OpalID\"",
-                  "offset": 48
-                }
-              ],
-              "location": "CardManagementFeature.the_Staff_fill_in_the_new_Opal_Card_details_for(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 615328500,
-              "status": "passed"
-            },
-            "line": 51,
-            "name": "the Staff submit by clicking \"link\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"link\"",
-                  "offset": 29
-                }
-              ],
-              "location": "CardManagementFeature.the_Staff_submit_by_clicking(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 713746800,
-              "status": "passed"
-            },
-            "line": 52,
-            "name": "the page should shows a green success feedback",
-            "match": {
-              "location": "CardManagementFeature.the_page_should_shows_a_green_success_feedback()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@register_card"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2019-10-16T13:44:47.107Z",
-        "line": 63,
-        "name": "Failed register an Opal Card",
-        "description": "",
-        "id": "card-management-feature;failed-register-an-opal-card;;2",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 9786503200,
-              "status": "passed"
-            },
-            "line": 55,
-            "name": "the Staff is logged in to the website",
-            "match": {
-              "location": "CardManagementFeature.the_Staff_is_loggied_in_to_the_website()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 672578800,
-              "status": "passed"
-            },
-            "line": 56,
-            "name": "the Staff click on \"card_management\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"card_management\"",
-                  "offset": 19
-                }
-              ],
-              "location": "CardManagementFeature.the_Staff_click_on(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 741990200,
-              "status": "passed"
-            },
-            "line": 57,
-            "name": "the Staff click on \"register_card\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"register_card\"",
-                  "offset": 19
-                }
-              ],
-              "location": "CardManagementFeature.the_Staff_click_on(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 580105000,
-              "status": "passed"
-            },
-            "line": 58,
-            "name": "the Staff fill in the new Opal Card details for \"8888 8888 8888 8888\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"8888 8888 8888 8888\"",
-                  "offset": 48
-                }
-              ],
-              "location": "CardManagementFeature.the_Staff_fill_in_the_new_Opal_Card_details_for(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 531952000,
-              "status": "passed"
-            },
-            "line": 59,
-            "name": "the Staff submit by clicking \"link\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"link\"",
-                  "offset": 29
-                }
-              ],
-              "location": "CardManagementFeature.the_Staff_submit_by_clicking(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 711467500,
-              "status": "passed"
-            },
-            "line": 60,
-            "name": "the page should shows a red fail feedback",
-            "match": {
-              "location": "CardManagementFeature.the_page_should_shows_a_red_fail_feedback()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2019-10-16T13:45:00.132Z",
-        "line": 65,
-        "name": "Successfully list all Opal cards",
-        "description": "",
-        "id": "card-management-feature;successfully-list-all-opal-cards",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 9626010000,
-              "status": "passed"
-            },
-            "line": 66,
-            "name": "the Staff is logged in to the website",
-            "match": {
-              "location": "CardManagementFeature.the_Staff_is_loggied_in_to_the_website()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 703053800,
-              "status": "passed"
-            },
-            "line": 67,
-            "name": "the Staff click on \"card_management\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"card_management\"",
-                  "offset": 19
-                }
-              ],
-              "location": "CardManagementFeature.the_Staff_click_on(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1067542900,
-              "status": "passed"
-            },
-            "line": 68,
-            "name": "the Staff click on \"show_all_cards\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"show_all_cards\"",
-                  "offset": 19
-                }
-              ],
-              "location": "CardManagementFeature.the_Staff_click_on(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 993126300,
-              "status": "passed"
-            },
-            "line": 69,
-            "name": "the page should show all Opal cards",
-            "match": {
-              "location": "CardManagementFeature.the_page_should_show_all_Opal_cards()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      }
-    ],
-    "name": "Card Management Feature",
-    "description": "",
-    "id": "card-management-feature",
-    "keyword": "Feature",
-    "uri": "file:OpalFeatures/CardManagementFeature.feature",
-    "tags": []
-  },
-  {
-    "line": 1,
-    "elements": [
-      {
-        "start_timestamp": "2019-10-16T13:45:12.523Z",
+        "start_timestamp": "2019-10-16T14:16:35.565Z",
         "line": 3,
         "name": "Successfully transfer balance",
         "description": "",
@@ -870,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 10051758300,
+              "duration": 11495162500,
               "status": "passed"
             },
             "line": 4,
@@ -882,7 +25,7 @@
           },
           {
             "result": {
-              "duration": 912945200,
+              "duration": 862221700,
               "status": "passed"
             },
             "line": 5,
@@ -900,7 +43,7 @@
           },
           {
             "result": {
-              "duration": 157194700,
+              "duration": 138402700,
               "status": "passed"
             },
             "line": 6,
@@ -918,7 +61,7 @@
           },
           {
             "result": {
-              "duration": 216504900,
+              "duration": 150741700,
               "status": "passed"
             },
             "line": 7,
@@ -936,7 +79,7 @@
           },
           {
             "result": {
-              "duration": 549263300,
+              "duration": 494342500,
               "status": "passed"
             },
             "line": 8,
@@ -954,7 +97,7 @@
           },
           {
             "result": {
-              "duration": 171676700,
+              "duration": 83857700,
               "status": "passed"
             },
             "line": 9,
@@ -972,7 +115,7 @@
           },
           {
             "result": {
-              "duration": 610981600,
+              "duration": 511815200,
               "status": "passed"
             },
             "line": 10,
@@ -990,7 +133,7 @@
           },
           {
             "result": {
-              "duration": 314991900,
+              "duration": 197273900,
               "status": "passed"
             },
             "line": 11,
@@ -1002,7 +145,7 @@
           },
           {
             "result": {
-              "duration": 600771700,
+              "duration": 537362400,
               "status": "passed"
             },
             "line": 12,
@@ -1020,7 +163,7 @@
           },
           {
             "result": {
-              "duration": 861078100,
+              "duration": 717276700,
               "status": "passed"
             },
             "line": 13,
@@ -1033,7 +176,7 @@
         ]
       },
       {
-        "start_timestamp": "2019-10-16T13:45:26.972Z",
+        "start_timestamp": "2019-10-16T14:16:50.762Z",
         "line": 15,
         "name": "Successfully edit transfer balance before confirmation",
         "description": "",
@@ -1043,7 +186,7 @@
         "steps": [
           {
             "result": {
-              "duration": 9842174400,
+              "duration": 10117606300,
               "status": "passed"
             },
             "line": 16,
@@ -1055,7 +198,7 @@
           },
           {
             "result": {
-              "duration": 945683100,
+              "duration": 901977500,
               "status": "passed"
             },
             "line": 17,
@@ -1073,7 +216,7 @@
           },
           {
             "result": {
-              "duration": 102445300,
+              "duration": 74902500,
               "status": "passed"
             },
             "line": 18,
@@ -1091,7 +234,7 @@
           },
           {
             "result": {
-              "duration": 138989500,
+              "duration": 155510500,
               "status": "passed"
             },
             "line": 19,
@@ -1109,7 +252,7 @@
           },
           {
             "result": {
-              "duration": 557419300,
+              "duration": 525251500,
               "status": "passed"
             },
             "line": 20,
@@ -1127,7 +270,7 @@
           },
           {
             "result": {
-              "duration": 93989900,
+              "duration": 104757800,
               "status": "passed"
             },
             "line": 21,
@@ -1145,7 +288,7 @@
           },
           {
             "result": {
-              "duration": 520280200,
+              "duration": 497772200,
               "status": "passed"
             },
             "line": 22,
@@ -1163,7 +306,7 @@
           },
           {
             "result": {
-              "duration": 186246800,
+              "duration": 143494700,
               "status": "passed"
             },
             "line": 23,
@@ -1175,7 +318,7 @@
           },
           {
             "result": {
-              "duration": 672427700,
+              "duration": 581173100,
               "status": "passed"
             },
             "line": 24,
@@ -1193,7 +336,7 @@
           },
           {
             "result": {
-              "duration": 478011000,
+              "duration": 238894400,
               "status": "passed"
             },
             "line": 25,
@@ -1205,7 +348,7 @@
           },
           {
             "result": {
-              "duration": 649694500,
+              "duration": 457506000,
               "status": "passed"
             },
             "line": 26,
@@ -1223,7 +366,7 @@
           },
           {
             "result": {
-              "duration": 615854200,
+              "duration": 464875700,
               "status": "passed"
             },
             "line": 27,
@@ -1241,7 +384,7 @@
           },
           {
             "result": {
-              "duration": 851516400,
+              "duration": 835311800,
               "status": "passed"
             },
             "line": 28,
@@ -1254,7 +397,7 @@
         ]
       },
       {
-        "start_timestamp": "2019-10-16T13:45:42.629Z",
+        "start_timestamp": "2019-10-16T14:17:05.863Z",
         "line": 30,
         "name": "Successfully cancel transfer balance",
         "description": "",
@@ -1264,7 +407,7 @@
         "steps": [
           {
             "result": {
-              "duration": 9934996700,
+              "duration": 10167413100,
               "status": "passed"
             },
             "line": 31,
@@ -1276,7 +419,7 @@
           },
           {
             "result": {
-              "duration": 908372800,
+              "duration": 950483500,
               "status": "passed"
             },
             "line": 32,
@@ -1294,7 +437,7 @@
           },
           {
             "result": {
-              "duration": 77823200,
+              "duration": 97539500,
               "status": "passed"
             },
             "line": 33,
@@ -1312,7 +455,7 @@
           },
           {
             "result": {
-              "duration": 122620800,
+              "duration": 104194000,
               "status": "passed"
             },
             "line": 34,
@@ -1330,7 +473,7 @@
           },
           {
             "result": {
-              "duration": 452272200,
+              "duration": 550917100,
               "status": "passed"
             },
             "line": 35,
@@ -1348,7 +491,7 @@
           },
           {
             "result": {
-              "duration": 97085700,
+              "duration": 172999700,
               "status": "passed"
             },
             "line": 36,
@@ -1366,7 +509,7 @@
           },
           {
             "result": {
-              "duration": 433413800,
+              "duration": 640871300,
               "status": "passed"
             },
             "line": 37,
@@ -1384,7 +527,7 @@
           },
           {
             "result": {
-              "duration": 179253200,
+              "duration": 308608400,
               "status": "passed"
             },
             "line": 38,
@@ -1396,7 +539,7 @@
           },
           {
             "result": {
-              "duration": 456471000,
+              "duration": 514051100,
               "status": "passed"
             },
             "line": 39,
@@ -1414,7 +557,7 @@
           },
           {
             "result": {
-              "duration": 849493300,
+              "duration": 835442400,
               "status": "passed"
             },
             "line": 40,
@@ -1427,7 +570,7 @@
         ]
       },
       {
-        "start_timestamp": "2019-10-16T13:45:56.142Z",
+        "start_timestamp": "2019-10-16T14:17:20.207Z",
         "line": 42,
         "name": "Successfully list transfer balance history",
         "description": "",
@@ -1437,7 +580,7 @@
         "steps": [
           {
             "result": {
-              "duration": 10388645400,
+              "duration": 10479056500,
               "status": "passed"
             },
             "line": 43,
@@ -1449,7 +592,7 @@
           },
           {
             "result": {
-              "duration": 875694000,
+              "duration": 1006879200,
               "status": "passed"
             },
             "line": 44,
@@ -1467,7 +610,7 @@
           },
           {
             "result": {
-              "duration": 580424300,
+              "duration": 605072000,
               "status": "passed"
             },
             "line": 45,
@@ -1485,7 +628,7 @@
           },
           {
             "result": {
-              "duration": 820372200,
+              "duration": 941310200,
               "status": "passed"
             },
             "line": 46,
@@ -1498,7 +641,7 @@
         ]
       },
       {
-        "start_timestamp": "2019-10-16T13:46:08.808Z",
+        "start_timestamp": "2019-10-16T14:17:33.241Z",
         "line": 48,
         "name": "Successfully search transfer balance history by date",
         "description": "",
@@ -1508,7 +651,7 @@
         "steps": [
           {
             "result": {
-              "duration": 9765060800,
+              "duration": 10045926100,
               "status": "passed"
             },
             "line": 49,
@@ -1520,7 +663,7 @@
           },
           {
             "result": {
-              "duration": 832402200,
+              "duration": 892153200,
               "status": "passed"
             },
             "line": 50,
@@ -1538,7 +681,7 @@
           },
           {
             "result": {
-              "duration": 463426700,
+              "duration": 635890400,
               "status": "passed"
             },
             "line": 51,
@@ -1556,7 +699,7 @@
           },
           {
             "result": {
-              "duration": 96556700,
+              "duration": 167237600,
               "status": "passed"
             },
             "line": 52,
@@ -1574,7 +717,7 @@
           },
           {
             "result": {
-              "duration": 571501900,
+              "duration": 654646100,
               "status": "passed"
             },
             "line": 53,
@@ -1592,7 +735,7 @@
           },
           {
             "result": {
-              "duration": 785065400,
+              "duration": 726880600,
               "status": "passed"
             },
             "line": 54,
