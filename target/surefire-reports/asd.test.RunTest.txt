@@ -1,4 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: asd.test.RunTest
 -------------------------------------------------------------------------------
+<<<<<<< HEAD
 Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 75.291 sec - in asd.test.RunTest
+=======
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 71.027 sec - in asd.test.RunTest
+>>>>>>> parent of 77e3107... Modifies transfer balance acceptance test
