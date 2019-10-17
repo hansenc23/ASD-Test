@@ -30,10 +30,10 @@
             // If the user clicks on SEARCH
             if (request.getParameter("searchTransID") != null) {
                 String searchDate = request.getParameter("searchDate");
-                records = connector.transferHistory(searchDate, "TransferDate");
+                records = connector.transferHistory(searchDate, "TransferDate", customerID);
             // If the user clicks on SHOW ALL
             } else if (request.getParameter("ShowAllTrans") != null || request.getParameter("searchTransID") == null){
-                records = connector.transferHistory(customerID, "CustomerID");
+                records = connector.transferHistory(customerID, "CustomerID", customerID);
             }
             
             // If the user has transfer balance record(s)

@@ -1237,7 +1237,7 @@ public class MongoDBConnector {
     }
     
     // Get all transfer balance record of a user
-    public ArrayList<TransferBalance> transferHistory(String input, String type) {
+    public ArrayList<TransferBalance> transferHistory(String input, String type, String customerID) {
         MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
         ArrayList<TransferBalance> records = new ArrayList<TransferBalance>();
         try (MongoClient client = new MongoClient(uri)) {
@@ -1248,7 +1248,7 @@ public class MongoDBConnector {
                 input = input.substring(8,10) + "-" + input.substring(5,7) + "-" + input.substring(0,4);
             }
             
-            for (Document doc : transferlist.find(eq(type, input))) {
+            for (Document doc : transferlist.find(and(eq(type, input), eq("CustomerID", customerID)))) {
                 TransferBalance record = new TransferBalance((String) doc.get("FromOpalID"), (String) doc.get("ToOpalID"), (double) doc.get("Value"), (String) doc.get("CustomerID"), (String) doc.get("TransferDate"));
                 records.add(record);
             }
@@ -1311,7 +1311,7 @@ public class MongoDBConnector {
         return test;
     }
     
-    public String testTransferHistory(String input, String type) {
+    public String testTransferHistory(String input, String type, String customerID) {
         MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
         String test;
         ArrayList<TransferBalance> records = new ArrayList<TransferBalance>();
@@ -1322,7 +1322,7 @@ public class MongoDBConnector {
             if (type.equalsIgnoreCase("TransferDate")) {
                 input = input.substring(8,10) + "-" + input.substring(5,7) + "-" + input.substring(0,4);
             }
-            for (Document doc : transferlist.find(eq(type, input))) {
+            for (Document doc : transferlist.find(and(eq(type, input), eq("CustomerID", customerID)))) {
                 TransferBalance record = new TransferBalance((String) doc.get("FromOpalID"), (String) doc.get("ToOpalID"), (double) doc.get("Value"), (String) doc.get("CustomerID"), (String) doc.get("TransferDate"));
                 records.add(record);
             }
