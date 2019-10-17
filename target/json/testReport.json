@@ -1,341 +1,643 @@
 [
   {
-    "line": 2,
+    "line": 5,
     "elements": [
       {
-        "start_timestamp": "2019-10-16T16:44:42.884Z",
-        "line": 4,
-        "name": "Successfuly create, edit, delete an Article",
+        "start_timestamp": "2019-10-17T07:30:44.756Z",
+        "line": 8,
+        "name": "Successfully view account details",
         "description": "",
-        "id": "transport-news-management;successfuly-create--edit--delete-an-article",
+        "id": "account-management;successfully-view-account-details",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 9701318600,
+              "duration": 15798484245,
               "status": "passed"
             },
-            "line": 5,
-            "name": "User is staying at \"login.jsp\"",
+            "line": 9,
+            "name": "the page is \"adminPage.jsp\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"login.jsp\"",
-                  "offset": 19
+                  "val": "\"adminPage.jsp\"",
+                  "offset": 12
                 }
               ],
-              "location": "TransportNewsManagementFeature.user_is_staying_at(String)"
+              "location": "AccountManagementFeature.the_page_is(String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 439792800,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "User has been identified as an admin",
-            "match": {
-              "location": "TransportNewsManagementFeature.user_has_been_identified_as_an_admin()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1396027000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "User smash on the button \"login_submit\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"login_submit\"",
-                  "offset": 25
-                }
-              ],
-              "location": "TransportNewsManagementFeature.user_smash_on_the_button(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 778441300,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "User smash on the button \"loginAction_success\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"loginAction_success\"",
-                  "offset": 25
-                }
-              ],
-              "location": "TransportNewsManagementFeature.user_smash_on_the_button(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 977461400,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "User smash on the button \"News_management\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"News_management\"",
-                  "offset": 25
-                }
-              ],
-              "location": "TransportNewsManagementFeature.user_smash_on_the_button(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 463410000,
+              "duration": 1973475166,
               "status": "passed"
             },
             "line": 10,
-            "name": "User entered all article details",
+            "name": "the user chooses \"account_management\"",
             "match": {
-              "location": "TransportNewsManagementFeature.user_entered_all_article_details()"
+              "arguments": [
+                {
+                  "val": "\"account_management\"",
+                  "offset": 17
+                }
+              ],
+              "location": "AccountManagementFeature.the_user_chooses(String)"
             },
-            "keyword": "And "
+            "keyword": "When "
           },
           {
             "result": {
-              "duration": 674530400,
+              "duration": 804615658,
               "status": "passed"
             },
             "line": 11,
-            "name": "User smash on the button \"createArticle_submit\"",
+            "name": "the user views \"view_profile\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"createArticle_submit\"",
-                  "offset": 25
+                  "val": "\"view_profile\"",
+                  "offset": 15
                 }
               ],
-              "location": "TransportNewsManagementFeature.user_smash_on_the_button(String)"
+              "location": "AccountManagementFeature.the_user_views(String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 601908300,
+              "duration": 123734757,
               "status": "passed"
             },
             "line": 12,
-            "name": "User smash on the button \"Cucumber Test\"",
+            "name": "the user should be directed to a page called \"Profile\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Cucumber Test\"",
-                  "offset": 25
+                  "val": "\"Profile\"",
+                  "offset": 45
                 }
               ],
-              "location": "TransportNewsManagementFeature.user_smash_on_the_button(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 547890200,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "User entered all update details",
-            "match": {
-              "location": "TransportNewsManagementFeature.user_entered_all_update_details()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 506231100,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "User smash on the button \"updateArticle_update\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"updateArticle_update\"",
-                  "offset": 25
-                }
-              ],
-              "location": "TransportNewsManagementFeature.user_smash_on_the_button(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 556078300,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "User smash on the button \"articleUpdate_back\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"articleUpdate_back\"",
-                  "offset": 25
-                }
-              ],
-              "location": "TransportNewsManagementFeature.user_smash_on_the_button(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 485768300,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "User smash on the updated button \"Cucumber Test updated\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Cucumber Test updated\"",
-                  "offset": 33
-                }
-              ],
-              "location": "TransportNewsManagementFeature.user_smash_on_the_updated_button(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 492884700,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "User smash on the button \"updateArticle_delete\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"updateArticle_delete\"",
-                  "offset": 25
-                }
-              ],
-              "location": "TransportNewsManagementFeature.user_smash_on_the_button(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 454359700,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "User smash on the button \"articleUpdate_back\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"articleUpdate_back\"",
-                  "offset": 25
-                }
-              ],
-              "location": "TransportNewsManagementFeature.user_smash_on_the_button(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 641850500,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "The User should be navigated to \"Create Article\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Create Article\"",
-                  "offset": 32
-                }
-              ],
-              "location": "TransportNewsManagementFeature.the_User_should_be_navigated_to(String)"
+              "location": "AccountManagementFeature.the_user_should_be_directed_to_a_page_called(String)"
             },
             "keyword": "Then "
           }
         ]
       },
       {
-        "start_timestamp": "2019-10-16T16:45:01.608Z",
-        "line": 21,
-        "name": "Customer successfully view the Article",
+        "start_timestamp": "2019-10-17T07:31:03.460Z",
+        "line": 15,
+        "name": "Successfully edit account details",
         "description": "",
-        "id": "transport-news-management;customer-successfully-view-the-article",
+        "id": "account-management;successfully-edit-account-details",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 7532826400,
+              "duration": 4404069204,
               "status": "passed"
             },
-            "line": 22,
-            "name": "User is staying at \"main.jsp\"",
+            "line": 16,
+            "name": "user is on the page called \"adminPage.jsp\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"main.jsp\"",
-                  "offset": 19
+                  "val": "\"adminPage.jsp\"",
+                  "offset": 27
                 }
               ],
-              "location": "TransportNewsManagementFeature.user_is_staying_at(String)"
+              "location": "AccountManagementFeature.user_is_on_the_page_called(String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 840023100,
+              "duration": 1195118987,
               "status": "passed"
             },
-            "line": 23,
-            "name": "User smash on the button \"sidebar_articleView\"",
+            "line": 17,
+            "name": "the user clicks on a button \"account_management\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"sidebar_articleView\"",
-                  "offset": 25
+                  "val": "\"account_management\"",
+                  "offset": 28
                 }
               ],
-              "location": "TransportNewsManagementFeature.user_smash_on_the_button(String)"
+              "location": "AccountManagementFeature.the_user_clicks_on_a_button(String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 619309900,
+              "duration": 827720037,
               "status": "passed"
             },
-            "line": 24,
-            "name": "The User should be navigated to \"View Article\"",
+            "line": 18,
+            "name": "the user wants to edit account details \"edit_profile\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"View Article\"",
-                  "offset": 32
+                  "val": "\"edit_profile\"",
+                  "offset": 39
                 }
               ],
-              "location": "TransportNewsManagementFeature.the_User_should_be_navigated_to(String)"
+              "location": "AccountManagementFeature.the_user_wants_to_edit_account_details(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1765177097,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "the user fill in new details",
+            "match": {
+              "location": "AccountManagementFeature.the_user_fill_in_new_details()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 716349357,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "the user goes back to account list \"back_to_profile\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"back_to_profile\"",
+                  "offset": 35
+                }
+              ],
+              "location": "AccountManagementFeature.the_user_goes_back_to_account_list(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 138989618,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "the page title should be \"Account List\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Account List\"",
+                  "offset": 25
+                }
+              ],
+              "location": "AccountManagementFeature.the_page_title_should_be(String)"
             },
             "keyword": "Then "
           }
         ]
       }
     ],
-    "name": "Transport News Management",
+    "name": "Account Management",
     "description": "",
-    "id": "transport-news-management",
+    "id": "account-management",
     "keyword": "Feature",
-    "uri": "file:OpalFeatures/TransportNewsManagement.feature",
+    "uri": "file:OpalFeatures/AccountManagementFeature.feature",
+    "tags": []
+  },
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2019-10-17T07:31:12.510Z",
+        "line": 5,
+        "name": "Successfully created an account",
+        "description": "",
+        "id": "online-user-registration;successfully-created-an-account",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3919721599,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is at \"main.jsp\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"main.jsp\"",
+                  "offset": 11
+                }
+              ],
+              "location": "RegisterFeature.User_is_at(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 686352035,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User taps \"navbar_register\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"navbar_register\"",
+                  "offset": 10
+                }
+              ],
+              "location": "RegisterFeature.user_taps(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1420701854,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User fill in the registration detail",
+            "match": {
+              "location": "RegisterFeature.User_fill_in_the_registration_detail()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 453337736,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User backs \"back\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"back\"",
+                  "offset": 11
+                }
+              ],
+              "location": "RegisterFeature.User_backs(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 117038412,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user should be directed to \"Card Page\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Card Page\"",
+                  "offset": 27
+                }
+              ],
+              "location": "RegisterFeature.user_should_be_directed_to(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-10-17T07:31:19.110Z",
+        "line": 12,
+        "name": "Successfully update account details",
+        "description": "",
+        "id": "online-user-registration;successfully-update-account-details",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4076951353,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "page is on \"login.jsp\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"login.jsp\"",
+                  "offset": 11
+                }
+              ],
+              "location": "RegisterFeature.page_is_on(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 836022150,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user fills login credentials",
+            "match": {
+              "location": "RegisterFeature.user_fills_login_credentials()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 817444686,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user login success \"loginAction_success\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"loginAction_success\"",
+                  "offset": 19
+                }
+              ],
+              "location": "RegisterFeature.user_click(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1028863104,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user open profile \"navbar_profile\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"navbar_profile\"",
+                  "offset": 18
+                }
+              ],
+              "location": "RegisterFeature.user_open_profile(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 604689612,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user click edit \"edit_profile\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"edit_profile\"",
+                  "offset": 16
+                }
+              ],
+              "location": "RegisterFeature.user_click_edit(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1142843460,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User updates account details",
+            "match": {
+              "location": "RegisterFeature.User_updates_account_details()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 509339741,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user goes back \"back_to_profile\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"back_to_profile\"",
+                  "offset": 15
+                }
+              ],
+              "location": "RegisterFeature.user_goes_back(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 422066178,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user wants to change password \"change_password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"change_password\"",
+                  "offset": 30
+                }
+              ],
+              "location": "RegisterFeature.user_wants_to_change_password(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 685826317,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User fill in new password",
+            "match": {
+              "location": "RegisterFeature.User_fill_in_new_password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 453463301,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "user tap back \"back_to_profile\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"back_to_profile\"",
+                  "offset": 14
+                }
+              ],
+              "location": "RegisterFeature.user_tap_back(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 482279402,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "user wants to add question \"add_question\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"add_question\"",
+                  "offset": 27
+                }
+              ],
+              "location": "RegisterFeature.user_wants_to_add_question(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 805552402,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "user select the necessary question",
+            "match": {
+              "location": "RegisterFeature.user_select_the_necessary_question()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 449467404,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "User go previous page \"back_to_profile\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"back_to_profile\"",
+                  "offset": 22
+                }
+              ],
+              "location": "RegisterFeature.User_go_previous_page(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 121636980,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "User should see profile page \"Profile\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Profile\"",
+                  "offset": 29
+                }
+              ],
+              "location": "RegisterFeature.User_should_see_profile_page(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-10-17T07:31:31.548Z",
+        "line": 28,
+        "name": "Successfully forget password",
+        "description": "",
+        "id": "online-user-registration;successfully-forget-password",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4865499741,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "the page shows \"login.jsp\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"login.jsp\"",
+                  "offset": 15
+                }
+              ],
+              "location": "RegisterFeature.the_page_shows(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 728834436,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "user forgets \"forget_button\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"forget_button\"",
+                  "offset": 13
+                }
+              ],
+              "location": "RegisterFeature.user_forgets(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 650128548,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "User types email",
+            "match": {
+              "location": "RegisterFeature.User_types_email()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 671237568,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "user answer the question",
+            "match": {
+              "location": "RegisterFeature.user_answer_the_question()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 134084255,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "page will show old password \"Forget Password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Forget Password\"",
+                  "offset": 28
+                }
+              ],
+              "location": "RegisterFeature.page_will_show_old_password(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Online User Registration",
+    "description": "",
+    "id": "online-user-registration",
+    "keyword": "Feature",
+    "uri": "file:OpalFeatures/UserRegistrationFeature.feature",
     "tags": []
   }
 ]
