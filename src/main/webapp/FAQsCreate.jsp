@@ -22,13 +22,14 @@
         <%
             MongoDBConnector connector = new MongoDBConnector();
             
+            //if the submit button is clicked 
             if(request.getParameter("submit") != null){
+                //get the data from this page and add new faq to the database
                 String question = request.getParameter("question");
                 String answer = request.getParameter("answer");
                 FAQ faq = new FAQ(question, answer);
                 connector.add(faq);
             }
-            //click on label can go to the input with it for id
         %>
         <div class="container">
           <form action="FAQsCreate.jsp">
@@ -54,9 +55,12 @@
           </form>
         </div>
         <%
+            
+            //get the list of the faq from the database
             ArrayList<FAQ> faqs = new ArrayList<FAQ>(); 
             faqs = connector.listFAQs();
             
+            //list all the faq if the arraylist is not empty
             if(!faqs.isEmpty()){
                 for(FAQ faq: faqs){
         %>

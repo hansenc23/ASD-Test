@@ -1421,6 +1421,7 @@ public class MongoDBConnector {
     
 //FAQs
     
+    //add faq
     public void add(FAQ faq) {
         MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
         try (MongoClient client = new MongoClient(uri)) {
@@ -1431,6 +1432,7 @@ public class MongoDBConnector {
         }
     }
     
+    //list all the faq
     public ArrayList<FAQ> listFAQs() {
         MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
         ArrayList<FAQ> FAQs = new ArrayList<FAQ>();
@@ -1445,6 +1447,7 @@ public class MongoDBConnector {
         return FAQs;   
     }
     
+    //get the faq id by faq question
     public String getFAQid(FAQ faq) {
         MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
         String FAQid;
@@ -1457,6 +1460,7 @@ public class MongoDBConnector {
         return FAQid;
     }
     
+    //update the faq by faq id and new faq data
     public String updateFAQs(String id, FAQ faq){
          MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
          String outcome;
@@ -1478,7 +1482,8 @@ public class MongoDBConnector {
          
         return outcome;
     }
-
+    
+    //delete the faq by faq id
     public String deleteFAQs(FAQ faq){
         MongoClientURI uri = new MongoClientURI("mongodb://nxhieuqn1:qwe123456@ds031965.mlab.com:31965/heroku_5s97hssp");
         String outcome;

@@ -23,9 +23,11 @@
         <%
             MongoDBConnector connector = new MongoDBConnector();
             
+            //get all the faqs from the database
             ArrayList<FAQ> faqs = new ArrayList<FAQ>(); 
             faqs = connector.listFAQs();
             
+            //if faqs in database is not empty list all the faqs
             if(!faqs.isEmpty()){
                 for(FAQ faq: faqs){
         %>

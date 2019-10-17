@@ -22,9 +22,11 @@
         <%
             MongoDBConnector connector = new MongoDBConnector();
             
+            //get the question and the answer in FAQsCreate.jsp page
             String questionList = request.getParameter("questionList");
             String answerList = request.getParameter("answerList");
             
+            //get the update parameter from this page, if it is null means that the faq have not been updated
             if(request.getParameter("update") == null){
                       
         %>
@@ -56,10 +58,14 @@
         </div>
         <%
             }
+            //the update button has been clicked
             else{
+                //get the data from this page to show the correct placeholder
                 String updateQuestion = request.getParameter("updateQuestion");
                 String updateAnswer = request.getParameter("updateAnswer");
                 FAQ faq = new FAQ(updateQuestion, updateAnswer);
+                
+                //to update the faq and get the outcome of the updata to know whether it succeed or not
                 String originQuestion = request.getParameter("questionList");
                 String originAnswer = request.getParameter("answerList");
                 FAQ originFAQ = new FAQ(originQuestion, originAnswer);
@@ -93,26 +99,34 @@
                     </form>
                   </div>
         <%
+                //if the update succeed
                 if(outcome.equalsIgnoreCase("Update was successful !")){
         %>
                     <div class="success"><%=outcome%>&nbsp;Click <a href="FAQsCreate.jsp">here</a> to go back</div>
         <%        
-                }else{
+                }
+                //if the update fail
+                else{
         %>
                     <div class="fail"><%=outcome%>&nbsp;Click <a href="FAQsCreate.jsp">here</a> to go back</div>
         <%
                 }
             }
+            //if the delete button in this page has been clicked
             if(request.getParameter("delete") != null){
+                //get the data from this page and delete the faq
                 String updateQuestion = request.getParameter("updateQuestion");
                 String updateAnswer = request.getParameter("updateAnswer");
                 FAQ faq = new FAQ(updateQuestion, updateAnswer);
                 String outcome = connector.deleteFAQs(faq);
+                //the delete is succeed
                 if(outcome.equalsIgnoreCase("Delete was successful !")){
         %>
                     <div class="success"><%=outcome%>&nbsp;Click <a id="delete_success" href="FAQsCreate.jsp">here</a> to go back</div>
         <%        
-                }else{
+                }
+                //delete is failed
+                else{
         %>
                     <div class="fail"><%=outcome%>&nbsp;Click <a href="FAQsCreate.jsp">here</a> to go back</div>
         <%
