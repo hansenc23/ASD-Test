@@ -120,35 +120,35 @@ public class AccountManagementFeature extends Driver{
     
     /*////////////SCENARIO: Succesfully delete an account*///////////////////////////////////////
 
-    @Given("USER is at the page called {string}")
-    public void USER_is_at_the_page_called(String url) {
-        // Write code here that turns the phrase above into concrete actions
-        driver.get("https://asd-test-app.herokuapp.com/"+url);
-    }
-
-    @When("USER views account list {string}")
-    public void USER_views_account_list(String type) {
-        driver.findElement(By.id(type)).click();
-    }
-    
-    @When("the User wants to delete an account {string}")
-    public void the_User_wants_to_delete_an_account(String type) {
-        driver.findElement(By.id(type)).click();
-    }
-    
-    @When("the user confirms to delete account {string}")
-    public void the_user_confirms_to_delete_account(String type) {
-        driver.findElement(By.id(type)).click();
-    }
-    
-     @When("the user chooses to go back to account list {string}")
-    public void the_user_chooses_to_go_back_to_account_list(String type) {
-        driver.findElement(By.id(type)).click();
-    }
-
-    @Then("USER should be directed to page {string}")
-    public void USER_should_be_directed_to_page(String title) {
-        Assert.assertTrue(driver.getTitle().contains(title));
-       driver.quit();
-   }
+//    @Given("USER is at the page called {string}")
+//    public void USER_is_at_the_page_called(String url) {
+//        // Write code here that turns the phrase above into concrete actions
+//        driver.get("https://asd-test-app.herokuapp.com/"+url);
+//    }
+//
+//    @When("USER views account list {string}")
+//    public void USER_views_account_list(String type) {
+//        driver.findElement(By.id(type)).click();
+//    }
+//    
+//    @When("the User wants to delete an account {string}")
+//    public void the_User_wants_to_delete_an_account(String type) {
+//        driver.findElement(By.id(type)).click();
+//    }
+//    
+//    @When("the user confirms to delete account {string}")
+//    public void the_user_confirms_to_delete_account(String type) {
+//        driver.findElement(By.id(type)).click();
+//    }
+//    
+//     @When("the user chooses to go back to account list {string}")
+//    public void the_user_chooses_to_go_back_to_account_list(String type) {
+//        driver.findElement(By.id(type)).click();
+//    }
+//
+//    @Then("USER should be directed to page {string}")
+//    public void USER_should_be_directed_to_page(String title) {
+//        Assert.assertTrue(driver.getTitle().contains(title));
+//       driver.quit();
+//   }
 }
